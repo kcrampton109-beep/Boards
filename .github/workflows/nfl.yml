@@ -14,7 +14,7 @@ on:
         type: boolean
         default: false
 concurrency:
-  group: boards-git   # shared with every board workflow: one at a time touches the repo
+  group: nfl   # one run at a time per board; boards publish independently (tools/publish_site.sh)
   cancel-in-progress: false
 permissions:
   contents: write
@@ -58,8 +58,10 @@ jobs:
           git add -A board
           if ! git diff --cached --quiet; then
             git commit -q -m "NFL board update $(date '+%a %b %d %I:%M %p ET')"
-            git pull -q --rebase origin main
-            git push -q origin HEAD:main
+            for i in 1 2 3 4 5; do   # another board may have pushed first: rebase onto it and retry
+              git pull -q --rebase origin main && git push -q origin HEAD:main && break
+              [ "$i" = 5 ] && exit 1; sleep $((i * 5))
+            done
           fi
       - name: Keep the regenerated model tables
         if: steps.commit.outputs.refreshed == 'true' || steps.setup.outputs.work-hit != 'true'

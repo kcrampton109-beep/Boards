@@ -7,7 +7,7 @@ on:
     - cron: "30 13 * * 2"
   workflow_dispatch:
 concurrency:
-  group: boards-git
+  group: nfl   # one run at a time per board; boards publish independently (tools/publish_site.sh)
   cancel-in-progress: false
 permissions:
   contents: write
@@ -42,8 +42,10 @@ jobs:
           git add -A board
           if ! git diff --cached --quiet; then
             git commit -q -m "NFL weekly refresh $(date '+%a %b %d')"
-            git pull -q --rebase origin main
-            git push -q origin HEAD:main
+            for i in 1 2 3 4 5; do   # another board may have pushed first: rebase onto it and retry
+              git pull -q --rebase origin main && git push -q origin HEAD:main && break
+              [ "$i" = 5 ] && exit 1; sleep $((i * 5))
+            done
           fi
       - uses: actions/cache/save@v4
         with:
