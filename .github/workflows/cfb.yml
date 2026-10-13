@@ -60,9 +60,11 @@ jobs:
         run: |
           python engine.py --force ${{ inputs.refresh && '--refresh' || '' }}
           tail -n 1 board/engine.log
-          # run logs are owner-only; post an engine error as a run annotation so it can be read without signing in
-          if tail -n 1 board/engine.log | grep -q "ERROR\|Error\|error:" || grep -q "ERROR$" <(tail -n 60 board/engine.log); then
-            msg=$(awk '/ ERROR$/{buf=""} {buf=buf $0 "%0A"} END{print buf}' board/engine.log | tail -c 3500)
+          # run logs are owner-only; post an engine error as a run annotation so it can be read without signing in.
+          # The engine appends one entry per run: a "YYYY-MM-DD HH:MM ok ..." line, or "YYYY-MM-DD HH:MM ERROR" + traceback.
+          last=$(grep -E '^20[0-9]{2}-' board/engine.log | tail -n 1)
+          if echo "$last" | grep -q ' ERROR$'; then
+            msg=$(awk '/^20[0-9][0-9]-.* ERROR$/{buf=""} {buf=buf $0 "%0A"} END{print buf}' board/engine.log | tail -c 3500)
             echo "::error title=CFB engine::$msg"
             exit 1
           fi
