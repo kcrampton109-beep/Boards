@@ -3196,5 +3196,31 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_06_BUF_LV:LEAN:spread:away",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "team": "BUF",
+  "pid": null,
+  "game_id": "2026_06_BUF_LV",
+  "week": 6,
+  "matchup": "BUF @ LV",
+  "kickoff": "Sun Oct 18, 4:25 PM ET",
+  "pick": "BUF -5",
+  "line": -5,
+  "odds": -110,
+  "book": "MGM",
+  "stake": 0.5,
+  "edge": 2.3,
+  "note": null,
+  "model_line": 7.3,
+  "flagged": "2026-10-13T12:15:53.081549-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
