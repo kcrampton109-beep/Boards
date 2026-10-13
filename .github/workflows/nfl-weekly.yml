@@ -1,0 +1,68 @@
+# Tuesday weekly refresh: grade last week's plays, price the new week, write the recap + Excel workbook
+# (published next to the board as NFL_weekly.xlsx) and send the recap to the phone.
+# 13:30 UTC = 9:30 AM Eastern until Nov 1 (8:30 AM after clocks fall back).
+name: NFL weekly refresh
+on:
+  schedule:
+    - cron: "30 13 * * 2"
+  workflow_dispatch:
+concurrency:
+  group: boards-git
+  cancel-in-progress: false
+permissions:
+  contents: write
+env:
+  TZ: America/New_York
+  NTFY_TOPIC: boards-pk9lpcuxti4v
+  BOARD_URL: https://kcrampton109-beep.github.io/Boards/nfl/
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: nfl
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/nfl-setup
+      - name: Weekly refresh, recap and workbook
+        run: |
+          python weekly.py ../_site_nfl | tail -n 1 > ../weekly.json
+          python - <<'EOF'
+          import json, shutil
+          d = json.load(open("../weekly.json"))
+          shutil.copy(d["workbook"], "../_site_nfl/NFL_weekly.xlsx")
+          open("../report.txt", "w").write("\n".join([d["message"]] + d["report"]))
+          EOF
+          cat ../report.txt
+      - name: Save ledger
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A board
+          if ! git diff --cached --quiet; then
+            git commit -q -m "NFL weekly refresh $(date '+%a %b %d')"
+            git pull -q --rebase origin main
+            git push -q origin HEAD:main
+          fi
+      - uses: actions/cache/save@v4
+        with:
+          path: |
+            nfl/data/games.parquet
+            nfl/data/tg.parquet
+            nfl/data/qb.parquet
+            nfl/data/rz.parquet
+            nfl/data/preds.parquet
+            nfl/data/raw/games.csv
+            nfl/data/raw/pbp_2026.parquet
+            nfl/data/raw/roster_2026.parquet
+          key: nfl-work-${{ github.run_id }}
+      - name: Publish board + workbook
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash ../tools/publish_site.sh nfl ../_site_nfl
+      - name: Send weekly recap
+        run: |
+          curl -fsS -H "Title: NFL weekly recap" -H "Tags: football" -H "Click: $BOARD_URL" \
+            -H "Actions: view, Workbook, ${BOARD_URL}NFL_weekly.xlsx" \
+            --data-binary @../report.txt "https://ntfy.sh/$NTFY_TOPIC" > /dev/null

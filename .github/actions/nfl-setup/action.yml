@@ -1,0 +1,60 @@
+# Shared setup for the NFL jobs: Python + packages, historical data, regenerated model tables, line snapshots.
+# Data lives in the Actions cache (not the public repo); the workflows save new versions when something changed.
+name: NFL setup
+description: Prepare the nfl/ folder to run the engine
+outputs:
+  work-hit:
+    description: "'true' when the regenerated model tables came back from the cache"
+    value: ${{ steps.work.outputs.cache-matched-key != '' }}
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+        cache: pip
+        cache-dependency-path: nfl/requirements.txt
+    - shell: bash
+      working-directory: nfl
+      run: pip install -q -r requirements.txt
+    # 1. history: nflverse play-by-play, Action Network scoreboards, SportsbookReview archive (downloaded once)
+    - id: raw
+      uses: actions/cache/restore@v4
+      with:
+        path: nfl/data/raw
+        key: nfl-raw-v1
+    - name: Download history (first run or cache lost)
+      if: steps.raw.outputs.cache-hit != 'true'
+      shell: bash
+      working-directory: nfl
+      run: python bootstrap.py
+    - if: steps.raw.outputs.cache-hit != 'true'
+      uses: actions/cache/save@v4
+      with:
+        path: nfl/data/raw
+        key: nfl-raw-v1
+    # 2. tables the engine regenerates on its daily refresh (+ the refreshed current-season files)
+    - id: work
+      uses: actions/cache/restore@v4
+      with:
+        path: |
+          nfl/data/games.parquet
+          nfl/data/tg.parquet
+          nfl/data/qb.parquet
+          nfl/data/rz.parquet
+          nfl/data/preds.parquet
+          nfl/data/raw/games.csv
+          nfl/data/raw/pbp_2026.parquet
+          nfl/data/raw/roster_2026.parquet
+        key: nfl-work-${{ github.run_id }}
+        restore-keys: nfl-work-
+    - name: Build play-by-play tables (first run or cache lost)
+      shell: bash
+      working-directory: nfl
+      run: '[ -f data/tg.parquet ] || python bootstrap.py tables'
+    # 3. line snapshots (Action Network + CBS lines every run)
+    - uses: actions/cache/restore@v4
+      with:
+        path: nfl/snapshots
+        key: nfl-snap-${{ github.run_id }}
+        restore-keys: nfl-snap-

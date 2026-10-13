@@ -1,0 +1,517 @@
+{
+ "wx": {
+  "2026_05_PHI_JAX": {
+   "ts": "2026-10-10T19:33:34.976483-04:00",
+   "wx": {
+    "wind": 10.1,
+    "gust": 23.0,
+    "temp": 74.0,
+    "precip": 37
+   }
+  },
+  "2026_05_LV_NE": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "wx": {
+    "wind": 5.8,
+    "gust": 14.5,
+    "temp": 63.0,
+    "precip": 8
+   }
+  },
+  "2026_05_NYG_WAS": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "wx": {
+    "wind": 14.3,
+    "gust": 34.4,
+    "temp": 67.0,
+    "precip": 74
+   }
+  },
+  "2026_05_IND_PIT": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "wx": {
+    "wind": 9.1,
+    "gust": 29.3,
+    "temp": 66.0,
+    "precip": 82
+   }
+  },
+  "2026_05_CIN_MIA": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "wx": {
+    "wind": 10.3,
+    "gust": 14.1,
+    "temp": 90.0,
+    "precip": 2
+   }
+  },
+  "2026_05_CLE_NYJ": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "wx": {
+    "wind": 11.6,
+    "gust": 25.3,
+    "temp": 65.0,
+    "precip": 93
+   }
+  },
+  "2026_05_HOU_TEN": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "wx": {
+    "wind": 7.6,
+    "gust": 15.2,
+    "temp": 65.0,
+    "precip": 2
+   }
+  },
+  "2026_05_CHI_GB": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "wx": {
+    "wind": 11.9,
+    "gust": 21.0,
+    "temp": 76.0,
+    "precip": 0
+   }
+  },
+  "2026_05_SF_SEA": {
+   "ts": "2026-10-11T15:45:20.549335-04:00",
+   "wx": {
+    "wind": 8.7,
+    "gust": 18.3,
+    "temp": 57.0,
+    "precip": 0
+   }
+  },
+  "2026_06_SEA_DEN": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "wx": {
+    "wind": 4.0,
+    "gust": 15.2,
+    "temp": 51.0,
+    "precip": 56
+   }
+  }
+ },
+ "props": {
+  "290902": {
+   "ts": "2026-10-05T13:51:19.986666-04:00",
+   "odds": {
+    "zadarius smith": {
+     "name": "Za'Darius Smith",
+     "info": "ATL - DE",
+     "DK": 5000
+    },
+    "cameron jordan": {
+     "name": "Cameron Jordan",
+     "info": "NO - DE",
+     "DK": 5000
+    },
+    "austin hooper": {
+     "name": "Austin Hooper",
+     "info": "ATL - TE",
+     "DK": 850,
+     "FD": 800
+    },
+    "davon godchaux": {
+     "name": "Davon Godchaux",
+     "info": "NO - DE",
+     "DK": 5500
+    },
+    "alvin kamara": {
+     "name": "Alvin Kamara",
+     "info": "NO - RB",
+     "DK": 145,
+     "FD": 140
+    },
+    "nathan shepherd": {
+     "name": "Nathan Shepherd",
+     "info": "NO - DE",
+     "DK": 6000
+    },
+    "mike hughes": {
+     "name": "Mike Hughes",
+     "info": "ATL - CB",
+     "DK": 5500
+    },
+    "jessie bates": {
+     "name": "Jessie Bates",
+     "info": "ATL - S",
+     "DK": 4000
+    },
+    "justin reid": {
+     "name": "Justin Reid",
+     "info": "NO - S",
+     "DK": 4500
+    },
+    "olamide zaccheaus": {
+     "name": "Olamide Zaccheaus",
+     "info": "ATL - WR",
+     "DK": 750,
+     "FD": 750
+    },
+    "noah fant": {
+     "name": "Noah Fant",
+     "info": "NO - TE",
+     "DK": 550,
+     "FD": 550
+    },
+    "chase young": {
+     "name": "Chase Young",
+     "info": "NO - DE",
+     "DK": 4500
+    },
+    "cj henderson": {
+     "name": "C.J. Henderson",
+     "info": "ATL - CB",
+     "DK": 5000
+    },
+    "julian blackmon": {
+     "name": "Julian Blackmon",
+     "info": "NO - S",
+     "DK": 5500
+    },
+    "charlie woerner": {
+     "name": "Charlie Woerner",
+     "info": "ATL - TE",
+     "DK": 2500,
+     "FD": 3000
+    },
+    "lacale london": {
+     "name": "LaCale London",
+     "info": "ATL - DT",
+     "DK": 6000
+    },
+    "juwan johnson": {
+     "name": "Juwan Johnson",
+     "info": "NO - TE",
+     "DK": 235,
+     "FD": 240
+    },
+    "chris blair": {
+     "name": "Chris Blair",
+     "info": "ATL - WR",
+     "DK": 1400,
+     "FD": 1900
+    },
+    "kyle pitts": {
+     "name": "Kyle Pitts",
+     "info": "ATL - TE",
+     "DK": 295,
+     "FD": 300
+    },
+    "chris rumph": {
+     "name": "Chris Rumph",
+     "info": "NO - LB",
+     "DK": 6000
+    },
+    "chris olave": {
+     "name": "Chris Olave",
+     "info": "NO - WR",
+     "DK": 125,
+     "FD": 125
+    },
+    "drake london": {
+     "name": "Drake London",
+     "info": "ATL - WR",
+     "DK": 110,
+     "FD": 115
+    },
+    "jahan dotson": {
+     "name": "Jahan Dotson",
+     "info": "ATL - WR",
+     "DK": 425,
+     "FD": 430
+    },
+    "cameron thomas": {
+     "name": "Cameron Thomas",
+     "info": "ATL - DE",
+     "DK": 6000
+    },
+    "brian robinson": {
+     "name": "Brian Robinson",
+     "info": "ATL - RB",
+     "DK": 400,
+     "FD": 370
+    },
+    "nick muse": {
+     "name": "Nick Muse",
+     "info": "ATL - TE",
+     "DK": 3500,
+     "FD": 5500
+    },
+    "kevin austin": {
+     "name": "Kevin Austin",
+     "info": "NO - WR",
+     "DK": 1100,
+     "FD": 1300
+    },
+    "defense": {
+     "name": " Defense",
+     "info": "NO - D",
+     "FD": 700
+    },
+    "bijan robinson": {
+     "name": "Bijan Robinson",
+     "info": "ATL - RB",
+     "DK": -215,
+     "FD": -210
+    },
+    "tyree wilson": {
+     "name": "Tyree Wilson",
+     "info": "NO - DE",
+     "DK": 5500
+    },
+    "sydney brown": {
+     "name": "Sydney Brown",
+     "info": "ATL - DB",
+     "DK": 6000
+    },
+    "gervon dexter": {
+     "name": "Gervon Dexter",
+     "info": "ATL - DT",
+     "DK": 6000
+    },
+    "zach harrison": {
+     "name": "Zach Harrison",
+     "info": "ATL - DE",
+     "DK": 6000
+    },
+    "kendre miller": {
+     "name": "Kendre Miller",
+     "info": "NO - RB",
+     "DK": 240,
+     "FD": 300
+    },
+    "michael penix": {
+     "name": "Michael Penix",
+     "info": "ATL - QB",
+     "DK": 950,
+     "FD": 1000
+    },
+    "kool-aid mckinstry": {
+     "name": "Kool-Aid McKinstry",
+     "info": "NO - DB",
+     "DK": 5000
+    },
+    "brandon dorlus": {
+     "name": "Brandon Dorlus",
+     "info": "ATL - DE",
+     "DK": 5500
+    },
+    "devaughn vele": {
+     "name": "Devaughn Vele",
+     "info": "NO - WR",
+     "DK": 240,
+     "FD": 230
+    },
+    "treyton welch": {
+     "name": "Treyton Welch",
+     "info": "NO - TE",
+     "DK": 1200,
+     "FD": 900
+    },
+    "jayden price": {
+     "name": "Jayden Price",
+     "info": "NO - CB",
+     "DK": 3500
+    },
+    "tyler shough": {
+     "name": "Tyler Shough",
+     "info": "NO - QB",
+     "DK": 285,
+     "FD": 280
+    },
+    "vernon broughton": {
+     "name": "Vernon Broughton",
+     "info": "NO - DE",
+     "DK": 6000
+    },
+    "jonas sanker": {
+     "name": "Jonas Sanker",
+     "info": "NO - S",
+     "DK": 6000
+    },
+    "xavier watts": {
+     "name": "Xavier Watts",
+     "info": "ATL - S",
+     "DK": 4500
+    },
+    "danny stutsman": {
+     "name": "Danny Stutsman",
+     "info": "NO - LB",
+     "DK": 6500
+    },
+    "billy bowman": {
+     "name": "Billy Bowman",
+     "info": "ATL - CB",
+     "DK": 5000
+    },
+    "quincy riley": {
+     "name": "Quincy Riley",
+     "info": "NO - CB",
+     "DK": 5000
+    },
+    "avieon terrell": {
+     "name": "Avieon Terrell",
+     "info": "ATL - CB",
+     "DK": 5500
+    },
+    "oscar delp": {
+     "name": "Oscar Delp",
+     "info": "NO - TE",
+     "DK": 1200,
+     "FD": 900
+    },
+    "zachariah branch": {
+     "name": "Zachariah Branch",
+     "info": "ATL - WR",
+     "DK": 1100,
+     "FD": 1000
+    },
+    "kendal daniels": {
+     "name": "Kendal Daniels",
+     "info": "ATL - LB",
+     "DK": 6000
+    },
+    "bryce lance": {
+     "name": "Bryce Lance",
+     "info": "NO - WR",
+     "DK": 425,
+     "FD": 500
+    },
+    "barion brown": {
+     "name": "Barion Brown",
+     "info": "NO - WR",
+     "DK": 1100,
+     "FD": 1300
+    },
+    "harold perkins": {
+     "name": "Harold Perkins",
+     "info": "ATL - LB",
+     "DK": 6000
+    },
+    "cj donaldson": {
+     "name": "CJ Donaldson",
+     "info": "NO - RB",
+     "DK": 800,
+     "FD": 600
+    }
+   }
+  },
+  "290903": {
+   "ts": "2026-10-08T13:15:07.175779-04:00",
+   "odds": {}
+  },
+  "290820": {
+   "ts": "2026-10-10T19:33:34.976483-04:00",
+   "odds": {}
+  },
+  "290910": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "odds": {}
+  },
+  "290904": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "odds": {}
+  },
+  "290906": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "odds": {}
+  },
+  "290909": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "odds": {}
+  },
+  "290907": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "odds": {}
+  },
+  "290908": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "odds": {}
+  },
+  "290905": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "odds": {}
+  },
+  "290914": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "odds": {}
+  },
+  "290911": {
+   "ts": "2026-10-11T11:26:31.862032-04:00",
+   "odds": {}
+  },
+  "290913": {
+   "ts": "2026-10-11T15:45:20.549335-04:00",
+   "odds": {}
+  },
+  "290912": {
+   "ts": "2026-10-11T15:45:20.549335-04:00",
+   "odds": {}
+  },
+  "290915": {
+   "ts": "2026-10-11T15:45:20.549335-04:00",
+   "odds": {}
+  },
+  "290916": {
+   "ts": "2026-10-12T17:15:09.456705-04:00",
+   "odds": {}
+  },
+  "290917": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  },
+  "290821": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  },
+  "290924": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  },
+  "290921": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  },
+  "290922": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  },
+  "290920": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  },
+  "290923": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  },
+  "290918": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  },
+  "290919": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  },
+  "290925": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  },
+  "290926": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  },
+  "290927": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  },
+  "290928": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  },
+  "290929": {
+   "ts": "2026-10-13T09:47:40.722348-04:00",
+   "odds": {}
+  }
+ }
+}

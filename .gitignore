@@ -19,3 +19,9 @@ cfb/board/*.parquet
 cfb/board/state.json
 cfb/board/publish/
 cfb/exports/
+# NFL: third-party history (nflverse, Action Network, SportsbookReview) and regenerated tables live in the Actions cache
+nfl/data/
+nfl/snapshots/
+nfl/board/state.json
+nfl/stage/
+nfl/exports/

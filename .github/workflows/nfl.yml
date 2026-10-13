@@ -1,0 +1,95 @@
+# NFL Game Day Board: snapshot lines, run the model engine, publish the board, alert the phone about new plays.
+# Same timing as the laptop tasks: engine + snapshots every 30 minutes, every day.
+name: NFL board
+on:
+  schedule:
+    - cron: "17,47 * * * *"
+  push:   # my code changes run straight away (the workflow's own commits never trigger runs)
+    branches: [main]
+    paths: [".github/actions/nfl-setup/**", ".github/workflows/nfl.yml", "nfl/*.py", "nfl/requirements.txt", "nfl/page/**", "tools/**"]
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: Force a data refresh (nflverse scores, play-by-play, roster; rebuild ratings)
+        type: boolean
+        default: false
+concurrency:
+  group: boards-git   # shared with every board workflow: one at a time touches the repo
+  cancel-in-progress: false
+permissions:
+  contents: write
+env:
+  TZ: America/New_York   # naive local times in the engine are Eastern, as on the laptop
+  NTFY_TOPIC: boards-pk9lpcuxti4v
+  BOARD_URL: https://kcrampton109-beep.github.io/Boards/nfl/
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45   # first run downloads all history and builds the tables; normal runs take 1-2 min
+    defaults:
+      run:
+        working-directory: nfl
+    steps:
+      - uses: actions/checkout@v4
+      - id: setup
+        uses: ./.github/actions/nfl-setup
+      - name: Snapshot lines
+        run: python snap.py
+      - name: Run engine
+        run: |
+          # run logs are owner-only; post an engine crash as a run annotation so it can be read without signing in
+          if ! python engine.py ${{ inputs.refresh && '--refresh' || '' }}; then
+            msg=$(awk '/ CRASH /{buf=""} {buf=buf $0 "%0A"} END{print buf}' board/engine.log | tail -c 3500)
+            echo "::error title=NFL engine::$msg"
+            exit 1
+          fi
+          tail -n 1 board/engine.log
+      - name: Stage board + new-play alert text
+        run: |
+          python sync_prep.py ../_site_nfl | tail -n 1 > ../sync.json
+          cat ../sync.json
+          python -c "import json;print(json.load(open('../sync.json'))['notify_text'])" > ../notify.txt
+      - id: commit
+        name: Save ledger and line history
+        run: |
+          git diff --quiet -- board/refresh.json && echo "refreshed=false" >> "$GITHUB_OUTPUT" || echo "refreshed=true" >> "$GITHUB_OUTPUT"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A board
+          if ! git diff --cached --quiet; then
+            git commit -q -m "NFL board update $(date '+%a %b %d %I:%M %p ET')"
+            git pull -q --rebase origin main
+            git push -q origin HEAD:main
+          fi
+      - name: Keep the regenerated model tables
+        if: steps.commit.outputs.refreshed == 'true' || steps.setup.outputs.work-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            nfl/data/games.parquet
+            nfl/data/tg.parquet
+            nfl/data/qb.parquet
+            nfl/data/rz.parquet
+            nfl/data/preds.parquet
+            nfl/data/raw/games.csv
+            nfl/data/raw/pbp_2026.parquet
+            nfl/data/raw/roster_2026.parquet
+          key: nfl-work-${{ github.run_id }}
+      - name: Keep line snapshots
+        uses: actions/cache/save@v4
+        with:
+          path: nfl/snapshots
+          key: nfl-snap-${{ github.run_id }}
+      - name: Publish board
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash ../tools/publish_site.sh nfl ../_site_nfl
+      - name: Phone alert
+        run: |
+          if [ -s ../notify.txt ] && [ -n "$(tr -d '[:space:]' < ../notify.txt)" ]; then
+            curl -fsS -H "Title: NFL board" -H "Tags: football" -H "Click: $BOARD_URL" \
+              --data-binary @../notify.txt "https://ntfy.sh/$NTFY_TOPIC" > /dev/null
+            echo "sent: $(cat ../notify.txt)"
+          else
+            echo "nothing new"
+          fi
