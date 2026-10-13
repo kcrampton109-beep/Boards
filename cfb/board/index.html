@@ -56,6 +56,7 @@ header .meta { display: grid; gap: 2px; text-align: right; font-size: 13px }
 .tab[aria-selected="true"] { background: var(--card); border-color: var(--rule); color: var(--ink) }
 .tab:focus-visible, .chip:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px }
 section.panel { display: grid; gap: 16px }
+[hidden] { display: none !important }   /* a panel's own display rule would otherwise beat the hidden attribute */
 .group { display: grid; gap: 10px }
 .group-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px }
 .group-head p { margin: 0; font-size: 13px; color: var(--muted); max-width: 70ch }
@@ -92,6 +93,8 @@ tr.flag td:first-child { box-shadow: inset 3px 0 0 var(--gold) }
 @media (max-width: 520px) { h1 { font-size: 28px } header .meta { text-align: left } .card .pick { font-size: 23px } }
 @media (prefers-reduced-motion: no-preference) { .cell, .chip, .tab { transition: background-color .15s } }
 </style>
+<link rel="stylesheet" href="../bets.css">
+<script src="../bets.js"></script>
 
 <div class="wrap">
   <header>
@@ -143,7 +146,8 @@ const TIER = {
   ANGLE: { name: "Angles", code: "A", note: "The only two situations that beat the closing line in both 2014-19 and 2020-25. Shown as context, not logged." },
 };
 // Bets tab: the plays to put money on, $ at this unit size
-const BET = ["STRONG", "FCS", "WEATHER"];
+const BET = ["STRONG", "FCS", "WEATHER"];   // money tiers on the Bets tab
+const NEED = { STRONG: 7, FCS: 5 };   // gap a spread play needs (engine RULES strong_fbs / strong_fcs)
 const UNIT = 10;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const sgn = (v, d = 1) => v == null || isNaN(v) ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d).replace(/\.0$/, "");
@@ -246,45 +250,43 @@ function render(S) {
       ${ps.length ? `<div class="cards">${ps.map(card).join("")}</div>` : `<div class="muted">None at current prices.</div>`}</div>`;
   }).join("");
 
-  // bets: every play to put money on, open first, then settled
-  const usd = u => u == null ? "–" : (u < 0 ? "−$" : "$") + Math.abs(u * UNIT).toFixed(2).replace(/\.00$/, "");
+  // bets: every play to put money on, drawn by the shared ../bets.js (same look on every board)
   const etTxt = s => { try { return new Date(String(s).replace(" ", "T")).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " ET"; } catch (e) { return s || ""; } };
   const playBy = {};
   plays.forEach(p => { if (BET.includes(p.tier)) playBy[p.ledger_id || p.id] = p; });
   const betLed = (S.ledger || []).filter(e => BET.includes(e.tier) && e.status !== "void");
-  const openE = betLed.filter(e => e.status === "open");
-  const fresh = plays.filter(p => BET.includes(p.tier) && !p.provisional && !(le(p) && le(p).tier === p.tier && le(p).status !== "void"));
-  const openRows = [...openE.map(e => ({ e, p: playBy[e.id] && playBy[e.id].tier === e.tier ? playBy[e.id] : null, g: games[e.game_id] })),
-                    ...fresh.map(p => ({ e: null, p, g: games[p.game_id] }))]
-    .sort((a, b) => String((a.e || {}).kickoff || "").localeCompare(String((b.e || {}).kickoff || "")));
-  const nowTxt = r => {
-    if (!r.g) return '<span class="muted">Kicked off, result pending</span>';
-    if (!r.p) return `<span class="neg">No longer a play at current prices: skip if you haven't bet it</span>`;
-    const lim = r.p.market === "spread" && r.p.limit != null ? ` · playable to ${line(r.p.limit)}` : "";
-    return `<span class="pos">Still a play</span>: ${esc(r.p.pick)} ${odds(r.p.odds)} ${BOOKN[r.p.book] || esc(r.p.book)}${lim}`;
+  const tierName = t => ({ STRONG: "Strong", FCS: "FCS", WEATHER: "Wind under" })[t] || t;
+  // worst line still worth betting: the model's current limit, else the one logged, else rebuilt from the logged model number
+  const playTo = (v, p) => {
+    if (v.market === "total") return v.side === "under" ? `Under ${v.line} or higher` : `Over ${v.line} or lower`;
+    const team = String(v.pick).replace(/\s[-+]?[\d.]+$/, "");
+    const lim = p && p.tier === v.tier && p.limit != null ? p.limit : v.limit != null ? v.limit
+      : v.model != null && NEED[v.tier] ? Math.ceil((v.model + NEED[v.tier]) * 2) / 2 : v.line;
+    return `${team} ${line(lim)}`;
   };
-  const tierName = t => t === "STRONG" ? "Strong" : t === "FCS" ? "FCS" : "Wind under";
-  const betSum = BET.map(t => { const r = sm[t] || {}; const u = r.units || 0; return `<span><b>${TIER[t].name}</b> ${r.w || 0}-${r.l || 0}${r.p ? "-" + r.p : ""} · <span class="${u > 0 ? "pos" : u < 0 ? "neg" : ""}">${sgn(u, 2)}u (${usd(u)})</span></span>`; }).join(" &nbsp;·&nbsp; ");
-  const settled = betLed.filter(e => e.status !== "open").sort((a, b) => (b.flagged || "").localeCompare(a.flagged || ""));
-  document.getElementById("p-bets").innerHTML = `<div class="prose"><p>Only the plays to put money on: <b>strong plays</b>, <b>FCS plays</b> and <b>wind unders</b>. Leans and research plays stay on the other tabs. Dollars use $${UNIT} a unit. Each bet shows the line and app it was logged at; bet it at that number or better, never past the "playable to" line.</p>
-    <p class="num">${betSum}</p></div>
-    <h2>Open bets <span class="muted num">${openRows.length}</span></h2>
-    <div class="tbl"><table><thead><tr><th>Logged</th><th>Game</th><th>Kickoff</th><th>Bet</th><th class="r">Line</th><th class="r">Odds</th><th>App</th><th class="r">Stake</th><th>Now</th></tr></thead><tbody>
-    ${openRows.length ? openRows.map(r => { const v = r.e || r.p; const g = r.g; const st = r.e ? r.e.stake : r.p.stake;
-      return `<tr><td>${r.e ? esc(etTxt(r.e.flagged)) : '<span class="pill">New</span>'}</td><td>${esc(r.e ? r.e.matchup : `${g.away} ${g.neutral ? "vs" : "@"} ${g.home}`)}</td><td>${esc(r.e ? etTxt(r.e.kickoff) : g.kickoff)}</td>
-      <td><span class="pill ${v.tier}">${tierName(v.tier)}</span> <b>${esc(v.pick)}</b></td>
-      <td class="r">${v.market === "total" ? (v.line ?? "–") : line(v.line)}</td><td class="r">${odds(v.odds)}</td><td>${BOOKN[v.book] || esc(v.book || "")}</td>
-      <td class="r">${st}u · ${usd(st)}</td><td class="now">${nowTxt(r)}</td></tr>`; }).join("")
-      : `<tr><td colspan="9" class="muted">No open bets. Openers for next week post Sunday morning; alerts go to your phone when a play appears.</td></tr>`}
-    </tbody></table></div>
-    <h2>Settled <span class="muted num">${settled.length}</span></h2>
-    <div class="tbl"><table><thead><tr><th>Result</th><th>Logged</th><th>Game</th><th>Bet</th><th class="r">Odds</th><th>App</th><th class="r">Stake</th><th class="r">Units</th><th class="r">$</th><th class="r">CLV</th><th>Final</th></tr></thead><tbody>
-    ${settled.length ? settled.map(e => `<tr><td><span class="pill ${e.status}">${e.status}</span></td><td>${esc(etTxt(e.flagged))}</td><td>${esc(e.matchup)} <span class="muted">${esc(etTxt(e.kickoff))}</span></td>
-      <td><b>${esc(e.pick)}</b></td><td class="r">${odds(e.odds)}</td><td>${BOOKN[e.book] || esc(e.book || "")}</td><td class="r">${e.stake}u</td>
-      <td class="r ${e.units > 0 ? "pos" : e.units < 0 ? "neg" : ""}">${e.units == null ? "–" : sgn(e.units, 2)}</td><td class="r ${e.units > 0 ? "pos" : e.units < 0 ? "neg" : ""}">${usd(e.units)}</td>
-      <td class="r ${e.clv > 0 ? "pos" : e.clv < 0 ? "neg" : ""}">${e.clv == null ? "–" : sgn(e.clv)}</td><td class="muted">${esc(e.final || "")}</td></tr>`).join("")
-      : `<tr><td colspan="11" class="muted">Nothing settled yet.</td></tr>`}
-    </tbody></table></div>`;
+  const nowOf = (g, p) => !g ? { kind: "live", text: "Kicked off, result pending" }
+    : !p ? { kind: "gone", text: "No longer a play at current prices: skip it if you haven't bet it" }
+    : { kind: "ok", text: `Still a play: ${p.pick} ${odds(p.odds)} at ${BOOKN[p.book] || p.book}` };
+  const openBets = betLed.filter(e => e.status === "open").map(e => {
+    const p = playBy[e.id] && playBy[e.id].tier === e.tier ? playBy[e.id] : null, g = games[e.game_id];
+    return { label: tierName(e.tier), pick: e.pick, odds: odds(e.odds), app: BOOKN[e.book] || e.book, stake: e.stake, matchup: e.matchup,
+             kickoff: etTxt(e.kickoff), sortKey: String(e.kickoff), logged: etTxt(e.flagged), playTo: playTo(e, p), now: nowOf(g, p) };
+  });
+  plays.filter(p => BET.includes(p.tier) && !p.provisional && !(le(p) && le(p).tier === p.tier && le(p).status !== "void")).forEach(p => {
+    const g = games[p.game_id];
+    openBets.push({ label: tierName(p.tier), pick: p.pick, odds: odds(p.odds), app: BOOKN[p.book] || p.book, stake: p.stake,
+                    matchup: `${g.away} ${g.neutral ? "vs" : "@"} ${g.home}`, kickoff: g.kickoff, sortKey: "~", logged: null, playTo: playTo(p, p), now: nowOf(g, p) });
+  });
+  Bets.render(document.getElementById("p-bets"), {
+    unit: UNIT,
+    intro: "Only the plays to put money on: <b>strong plays</b>, <b>FCS plays</b> and <b>wind unders</b>. Leans and research plays stay on the other tabs.",
+    summary: BET.map(t => { const r = sm[t] || {}; return { label: { STRONG: "Strong", FCS: "FCS", WEATHER: "Wind unders" }[t], rec: `${r.w || 0}-${r.l || 0}${r.p ? "-" + r.p : ""}`, units: r.units || 0 }; }),
+    open: openBets,
+    settled: betLed.filter(e => e.status !== "open").sort((a, b) => (b.flagged || "").localeCompare(a.flagged || "")).map(e => ({
+      status: e.status, label: tierName(e.tier), pick: e.pick, matchup: e.matchup, kickoff: etTxt(e.kickoff), odds: odds(e.odds),
+      app: BOOKN[e.book] || e.book, stake: e.stake, units: e.units, clv: e.clv, final: e.final })),
+    emptyOpen: "No open bets. Openers for next week post late Saturday night to early Sunday morning; a phone alert goes out within about 30 minutes of a play appearing.",
+  });
 
   // all games
   const flagged = new Set(plays.filter(p => main.includes(p.tier)).map(p => p.game_id));
@@ -340,15 +342,18 @@ function render(S) {
     <h2>Schedule</h2>
     <p>Prices are checked every 30 minutes on Sunday and Monday (when openers post) and hourly the rest of the week. Results and ratings update each morning.</p></div>`;
 
-  // tabs
+  // tabs (a tap scrolls to the section; the tab restored on load does not)
+  let booted = false;
   document.querySelectorAll(".tab").forEach(t => t.onclick = () => {
     document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
     document.querySelectorAll("section.panel").forEach(p => p.hidden = p.id !== "p-" + t.dataset.tab);
     try { localStorage.setItem("cfb-tab", t.dataset.tab); } catch (e) {}
+    if (booted) document.querySelector(".tabs").scrollIntoView({ behavior: "smooth", block: "start" });
   });
   let saved = null; try { saved = localStorage.getItem("cfb-tab"); } catch (e) {}
   const want = location.hash && /^#(plays|bets|games|records|ratings|how)$/.test(location.hash) ? location.hash.slice(1) : saved;
   if (want) document.querySelector(`.tab[data-tab="${want}"]`)?.click();
+  booted = true;
 }
 load().then(render);
 </script>

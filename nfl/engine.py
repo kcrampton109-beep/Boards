@@ -717,7 +717,7 @@ def main(args=()):
         gm = by_game[p["game_id"]]
         e = dict(id=pid, tier=p["tier"], market=p["market"], side=p.get("side"), team=p.get("team"), pid=p.get("pid"),
                  game_id=p["game_id"], week=gm["week"], matchup=gm["matchup"], kickoff=gm["kickoff"], pick=p["pick"],
-                 line=p["line"], odds=p["odds"], book=p["book"], stake=p["stake"], edge=p.get("edge"), note=p.get("note"),
+                 line=p["line"], odds=p["odds"], book=p["book"], stake=p["stake"], edge=p.get("edge"), note=p.get("note"), limit=p.get("limit"),
                  model_line=gm["model_line"], flagged=now.isoformat(), status="open", units=None, close=None, clv=None, final=None)
         ledger.append(e)
         have.add(pid)

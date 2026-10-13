@@ -469,7 +469,8 @@ def update_ledger(fl, games, ml, live):
         led.append(dict(id=eid, base=base, flagged=ts, season=SEASON, week=g["week"], game_id=f["game_id"],
                         matchup=f"{g['away']} {'vs' if g['neutral'] else '@'} {g['home']}", kickoff=str(g["kickoff"]),
                         tier=f["tier"], market=f["market"], side=f["side"], pick=f["pick"], book=f["book"], line=f["line"],
-                        odds=f["odds"], stake=stake_for(f), edge=f["edge"], model=f["model"], grp=f["grp"], status="open"))
+                        odds=f["odds"], stake=stake_for(f), edge=f["edge"], model=f["model"], grp=f["grp"], limit=f.get("limit"),
+                        status="open"))
         have[base] = rank
     # remember the last consensus line seen before kickoff = our closing line
     seen = load_json(SEEN, {})

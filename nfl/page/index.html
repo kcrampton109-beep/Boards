@@ -62,6 +62,7 @@ header .meta { display: grid; gap: 2px; text-align: right; font-size: 13px }
 .tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--flag) }
 .tab:focus-visible, .chip:focus-visible, .cell:focus-visible { outline: 2px solid var(--wx); outline-offset: 2px }
 section.panel { display: grid; gap: 16px }
+[hidden] { display: none !important }   /* a panel's own display rule would otherwise beat the hidden attribute */
 section.panel > * { min-width: 0 }
 .group { display: grid; gap: 10px }
 .group-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px }
@@ -101,6 +102,8 @@ tr:last-child td { border-bottom: 0 }
 @media (max-width: 520px) { h1 { font-size: 31px } header .meta { text-align: left } .card .pick { font-size: 24px } }
 @media (prefers-reduced-motion: no-preference) { .cell, .chip, .tab { transition: background-color .15s } }
 </style>
+<link rel="stylesheet" href="../bets.css">
+<script src="../bets.js"></script>
 
 <div class="wrap">
   <header>
@@ -160,7 +163,7 @@ const TIER = {
 const ORDER = ["STRONG", "WEATHER", "TEASER", "LEAN", "RLM", "TREND", "TD"];
 const MAIN = ["STRONG", "WEATHER", "TEASER"];
 // Bets tab: the plays to put money on (strong spreads + the research plays with a proven edge), $ at this unit size
-const BET = ["STRONG", "WEATHER", "TEASER"];
+const BET = ["STRONG", "WEATHER"];   // straight bets on the Bets tab; teaser legs are paired into 2-team teasers there
 const UNIT = 10;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const sgn = (v, d = 1) => v == null || isNaN(v) ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d).replace(/\.0+$/, "");
@@ -259,42 +262,58 @@ function render(S) {
       ${ps.length ? `<div class="cards">${ps.map(card).join("")}</div>` : `<div class="muted">None at current prices.</div>`}</div>`;
   }).join("");
 
-  // bets: every play to put money on, open first, then settled
-  const usd = u => u == null ? "–" : (u < 0 ? "−$" : "$") + Math.abs(u * UNIT).toFixed(2).replace(/\.00$/, "");
+  // bets: every play to put money on, drawn by the shared ../bets.js (same look on every board)
   const etTxt = iso => { try { return new Date(iso).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " ET"; } catch (e) { return iso || ""; } };
   const playBy = Object.fromEntries(plays.map(p => [p.id, p]));
-  const betLed = (S.ledger || []).filter(e => BET.includes(e.tier) && e.status !== "void");
-  const openE = betLed.filter(e => e.status === "open");
-  const fresh = plays.filter(p => BET.includes(p.tier) && !p.lookahead && !games[p.game_id].started && !openE.some(e => e.id === p.id) && !betLed.some(e => e.id === p.id));
-  const openRows = [...openE.map(e => ({ e, p: playBy[e.id], g: games[e.game_id] })), ...fresh.map(p => ({ e: null, p, g: games[p.game_id] }))]
-    .sort((a, b) => ((a.g && a.g.kickoff_iso) || "").localeCompare((b.g && b.g.kickoff_iso) || ""));
-  const nowTxt = r => {
-    if (!r.g || r.g.started) return '<span class="muted">Kicked off, result pending</span>';
-    if (!r.p) return `<span class="neg">No longer a play at current prices: skip if you haven't bet it</span>`;
-    const lim = r.p.limit != null ? ` · playable to ${esc(r.p.team)} ${line(r.p.limit)}` : "";
-    return `<span class="pos">Still a play</span>: ${esc(r.p.pick)} ${r.p.market === "teaser" ? "" : odds(r.p.odds)} ${BOOKN[r.p.book] || esc(r.p.book)}${lim}`;
+  const live = (S.ledger || []).filter(e => e.status !== "void");
+  const betLed = live.filter(e => BET.includes(e.tier));
+  const tierName = t => ({ STRONG: "Strong", WEATHER: "Wind under" })[t] || t;
+  // worst line still worth betting: the model's current limit, else the one logged, else rebuilt from the logged model line
+  const playTo = (v, p) => {
+    if (v.market === "total") return v.side === "under" ? `Under ${v.line} or higher` : `Over ${v.line} or lower`;
+    const mp = v.model_line == null ? null : (v.side === "home" ? v.model_line : -v.model_line);
+    const lim = p && p.tier === v.tier && p.limit != null ? p.limit : v.limit != null ? v.limit
+      : mp != null ? Math.round((mp + (v.tier === "LEAN" ? 2 : 3)) * 2) / 2 : v.line;
+    return `${v.team} ${line(lim)}`;
   };
-  const x = r => r.e || r.p;
-  const betSum = BET.map(t => { const r = sm[t] || {}; return `<span><b>${TIER[t].name}</b> ${r.w || 0}-${r.l || 0}${r.p ? "-" + r.p : ""} · <span class="${(r.units || 0) > 0 ? "pos" : (r.units || 0) < 0 ? "neg" : ""}">${sgn(r.units || 0, 2)}u (${usd(r.units || 0)})</span></span>`; }).join(" &nbsp;·&nbsp; ");
-  const settled = betLed.filter(e => e.status !== "open").sort((a, b) => (b.flagged || "").localeCompare(a.flagged || ""));
-  document.getElementById("p-bets").innerHTML = `<div class="prose"><p>Only the plays to put money on: <b>strong spreads</b>, <b>weather unders</b> and <b>teaser legs</b> (pair any two legs into a 2-team 6-point teaser, 1 unit, at -130 or better). Leans, reverse line moves, trends and TD props stay on the other tabs as research. Dollars use $${UNIT} a unit. Each bet shows the line and app it was logged at; bet it at that number or better, never past the "playable to" line.</p>
-    <p class="num">${betSum}</p></div>
-    <h2>Open bets <span class="muted num">${openRows.length}</span></h2>
-    <div class="tbl"><table><thead><tr><th>Logged</th><th>Game</th><th>Kickoff</th><th>Bet</th><th class="r">Line</th><th class="r">Odds</th><th>App</th><th class="r">Stake</th><th>Now</th></tr></thead><tbody>
-    ${openRows.length ? openRows.map(r => { const v = x(r); return `<tr><td>${r.e ? esc(etTxt(r.e.flagged)) : '<span class="pill">New</span>'}</td><td>${esc((r.g && r.g.matchup) || v.matchup || "")}</td><td>${esc((r.g && r.g.kickoff) || v.kickoff || "")}</td>
-      <td><span class="pill ${v.tier}">${v.tier === "STRONG" ? "Strong" : v.tier === "WEATHER" ? "Wind under" : "Teaser leg"}</span> <b>${esc(v.pick)}</b></td>
-      <td class="r">${v.market === "total" ? (v.line ?? "–") : line(v.line)}</td><td class="r">${v.market === "teaser" ? "tsr" : odds(v.odds)}</td><td>${BOOKN[v.book] || esc(v.book || "")}</td>
-      <td class="r">${v.stake ?? 1}u · ${usd(v.stake ?? 1)}</td><td class="wrap">${nowTxt(r)}</td></tr>`; }).join("")
-      : `<tr><td colspan="9" class="muted">No open bets. New-week openers post Sunday night; alerts go to your phone when a play appears.</td></tr>`}
-    </tbody></table></div>
-    <h2>Settled <span class="muted num">${settled.length}</span></h2>
-    <div class="tbl"><table><thead><tr><th>Result</th><th>Logged</th><th>Game</th><th>Bet</th><th class="r">Odds</th><th>App</th><th class="r">Stake</th><th class="r">Units</th><th class="r">$</th><th class="r">CLV</th><th>Final</th></tr></thead><tbody>
-    ${settled.length ? settled.map(e => `<tr><td><span class="pill ${e.status}">${e.status}</span></td><td>${esc(etTxt(e.flagged))}</td><td>${esc(e.matchup)} <span class="muted">${esc(e.kickoff || "")}</span></td>
-      <td><b>${esc(e.pick)}</b></td><td class="r">${e.market === "teaser" ? "tsr" : odds(e.odds)}</td><td>${BOOKN[e.book] || esc(e.book || "")}</td><td class="r">${e.stake}u</td>
-      <td class="r ${e.units > 0 ? "pos" : e.units < 0 ? "neg" : ""}">${e.units == null ? "–" : sgn(e.units, 2)}</td><td class="r ${e.units > 0 ? "pos" : e.units < 0 ? "neg" : ""}">${usd(e.units)}</td>
-      <td class="r ${e.clv > 0 ? "pos" : e.clv < 0 ? "neg" : ""}">${e.clv == null ? "–" : sgn(e.clv)}</td><td class="muted">${esc(e.final || "")}</td></tr>`).join("")
-      : `<tr><td colspan="11" class="muted">Nothing settled yet.</td></tr>`}
-    </tbody></table></div>`;
+  const nowOf = (g, p) => !g || g.started ? { kind: "live", text: "Kicked off, result pending" }
+    : !p ? { kind: "gone", text: "No longer a play at current prices: skip it if you haven't bet it" }
+    : { kind: "ok", text: `Still a play: ${p.pick} ${odds(p.odds)} at ${BOOKN[p.book] || p.book}` };
+  const openBets = betLed.filter(e => e.status === "open").map(e => {
+    const g = games[e.game_id], p = playBy[e.id];
+    return { label: tierName(e.tier), pick: e.pick, odds: odds(e.odds), app: BOOKN[e.book] || e.book, stake: e.stake, matchup: e.matchup,
+             kickoff: e.kickoff, sortKey: (g && g.kickoff_iso) || e.kickoff, logged: etTxt(e.flagged), playTo: playTo(e, p), now: nowOf(g, p) };
+  });
+  plays.filter(p => BET.includes(p.tier) && !p.lookahead && !games[p.game_id].started && !betLed.some(e => e.id === p.id)).forEach(p => {
+    const g = games[p.game_id];
+    openBets.push({ label: tierName(p.tier), pick: p.pick, odds: odds(p.odds), app: BOOKN[p.book] || p.book, stake: p.stake, matchup: g.matchup,
+                    kickoff: g.kickoff, sortKey: g.kickoff_iso, logged: null, playTo: playTo(p, p), now: nowOf(g, p) });
+  });
+  // teasers: legs that still qualify, paired in logging order (two different games) into 2-team 6-point teasers
+  const legs = [...live.filter(e => e.tier === "TEASER" && e.status === "open" && playBy[e.id] && games[e.game_id] && !games[e.game_id].started),
+                ...plays.filter(p => p.tier === "TEASER" && !p.lookahead && !games[p.game_id].started && !live.some(e => e.id === p.id))]
+    .sort((a, b) => (a.flagged || "~").localeCompare(b.flagged || "~"));
+  const pairs = [], spare = [];
+  legs.forEach(l => { const i = spare.findIndex(s => s.game_id !== l.game_id); if (i >= 0) pairs.push([spare.splice(i, 1)[0], l]); else spare.push(l); });
+  const legOf = l => ({ pick: l.pick, matchup: games[l.game_id].matchup, kickoff: games[l.game_id].kickoff });
+  const teaserCards = pairs.map(([a, b]) => ({ legs: [legOf(a), legOf(b)], stake: 1, price: "2-team, 6 points, at −130 or better",
+    playTo: "each leg +1.5 to +2.5 before the tease", logged: a.flagged ? etTxt([a.flagged, b.flagged].filter(Boolean).sort().pop()) : null,
+    now: { kind: "ok", text: "Both legs still qualify: bet them together as one teaser" } }))
+    .concat(spare.map(l => ({ legs: [legOf(l)], stake: 1, price: "Waiting for a second leg", playTo: "+1.5 to +2.5 before the tease",
+      logged: l.flagged ? etTxt(l.flagged) : null, now: { kind: "live", text: "Don't bet a single leg: a partner appears when another game qualifies" } })));
+  const tz = sm.TEASER || {};
+  Bets.render(document.getElementById("p-bets"), {
+    unit: UNIT,
+    intro: "Only the plays to put money on: <b>strong spreads</b>, <b>wind unders</b> and <b>2-team teasers</b> made from the teaser legs (each teaser card is one bet: both legs together). Leans, reverse line moves, trends and TD props stay on the other tabs as research.",
+    summary: [...BET.map(t => { const r = sm[t] || {}; return { label: { STRONG: "Strong", WEATHER: "Wind unders" }[t], rec: `${r.w || 0}-${r.l || 0}${r.p ? "-" + r.p : ""}`, units: r.units || 0 }; }),
+              { label: "2-team teasers", rec: `${tz.pairs_w || 0}-${tz.pairs_l || 0}`, units: tz.units || 0 }],
+    open: openBets,
+    pairs: teaserCards,
+    settled: betLed.filter(e => e.status !== "open").sort((a, b) => (b.flagged || "").localeCompare(a.flagged || "")).map(e => ({
+      status: e.status, label: tierName(e.tier), pick: e.pick, matchup: e.matchup, kickoff: e.kickoff, odds: odds(e.odds),
+      app: BOOKN[e.book] || e.book, stake: e.stake, units: e.units, clv: e.clv, final: e.final })),
+    emptyOpen: "No open bets. Next week's openers post Sunday night after the games; a phone alert goes out within about 30 minutes of a play appearing.",
+  });
 
   // all games
   const flagged = new Set(plays.filter(p => MAIN.includes(p.tier)).map(p => p.game_id));
@@ -380,15 +399,18 @@ function render(S) {
     <h2>Schedule</h2>
     <p>Lines, bets/money splits and CBS opens are checked every 30 minutes while this computer is on. Ratings and scores refresh each morning and after games finish; injuries and forecasts on every check.</p></div>`;
 
-  // tabs
+  // tabs (a tap scrolls to the section; the tab restored on load does not)
+  let booted = false;
   document.querySelectorAll(".tab").forEach(t => t.onclick = () => {
     document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
     document.querySelectorAll("section.panel").forEach(p => p.hidden = p.id !== "p-" + t.dataset.tab);
     try { localStorage.setItem("nfl-tab", t.dataset.tab); } catch (e) {}
+    if (booted) document.querySelector(".tabs").scrollIntoView({ behavior: "smooth", block: "start" });
   });
   let saved = null; try { saved = localStorage.getItem("nfl-tab"); } catch (e) {}
   const want = location.hash && /^#(plays|bets|games|td|inj|rlm|records|ratings|how)$/.test(location.hash) ? location.hash.slice(1) : saved;
   if (want) document.querySelector(`.tab[data-tab="${want}"]`)?.click();
+  booted = true;
 }
 load().then(render);
 </script>

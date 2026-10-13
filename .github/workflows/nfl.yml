@@ -6,7 +6,7 @@ on:
     - cron: "17,47 * * * *"
   push:   # my code changes run straight away (the workflow's own commits never trigger runs)
     branches: [main]
-    paths: [".github/actions/nfl-setup/**", ".github/workflows/nfl.yml", "nfl/*.py", "nfl/requirements.txt", "nfl/page/**", "tools/**"]
+    paths: [".github/actions/nfl-setup/**", ".github/workflows/nfl.yml", "nfl/*.py", "nfl/requirements.txt", "nfl/page/**", "site/**", "tools/**"]
   workflow_dispatch:
     inputs:
       refresh:
@@ -89,7 +89,7 @@ jobs:
       - name: Phone alert
         run: |
           if [ -s ../notify.txt ] && [ -n "$(tr -d '[:space:]' < ../notify.txt)" ]; then
-            curl -fsS -H "Title: NFL board" -H "Tags: football" -H "Click: $BOARD_URL" \
+            curl -fsS -H "Title: NFL board" -H "Tags: football" -H "Priority: high" -H "Click: $BOARD_URL" \
               --data-binary @../notify.txt "https://ntfy.sh/$NTFY_TOPIC" > /dev/null
             echo "sent: $(cat ../notify.txt)"
           else

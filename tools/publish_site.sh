@@ -21,7 +21,7 @@ for attempt in 1 2 3 4 5; do
   fi
   mkdir -p "$work/$board"
   cp -r "$src"/. "$work/$board/"
-  cp "$here/../site/index.html" "$work/index.html"
+  cp -r "$here/../site/." "$work/"   # landing page + shared files (bets.js, bets.css)
   touch "$work/.nojekyll"
   if (
     cd "$work"

@@ -8,7 +8,7 @@ on:
     - cron: "37 * * * *"
   push:   # my code changes run straight away (the workflow's own commits never trigger runs)
     branches: [main]
-    paths: [".github/**", "cfb/*.py", "cfb/requirements.txt", "cfb/board/index.html", "tools/**"]
+    paths: [".github/**", "cfb/*.py", "cfb/requirements.txt", "cfb/board/index.html", "site/**", "tools/**"]
   workflow_dispatch:
     inputs:
       refresh:
@@ -120,7 +120,7 @@ jobs:
         if: steps.plan.outputs.engine == 'true'
         run: |
           if [ -s ../notify.txt ] && [ -n "$(tr -d '[:space:]' < ../notify.txt)" ]; then
-            curl -fsS -H "Title: CFB board" -H "Tags: football" -H "Click: $BOARD_URL" \
+            curl -fsS -H "Title: CFB board" -H "Tags: football" -H "Priority: high" -H "Click: $BOARD_URL" \
               --data-binary @../notify.txt "https://ntfy.sh/$NTFY_TOPIC" > /dev/null
             echo "sent: $(cat ../notify.txt)"
           else
