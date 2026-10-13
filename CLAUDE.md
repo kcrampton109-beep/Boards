@@ -23,6 +23,14 @@ matter more than win-loss; judge changes by CLV first. Ask the owner before chan
 
 Weekly crons are fixed UTC: after Nov 1 (EST) they fire an hour earlier in Eastern time.
 
+## Board rules worth knowing
+- **Bets tab** (both pages): the money tiers only. CFB: STRONG, FCS, WEATHER. NFL: STRONG, WEATHER, TEASER legs.
+  Change the `BET` list at the top of each page's script (`cfb/board/index.html`, `nfl/page/index.html`) if the owner
+  changes what they bet. `UNIT = 10` is the dollar size of a unit.
+- **NFL look-ahead**: a next-week game counts once 2 of DK/FD/MGM have posted it (DraftKings posts look-ahead lines
+  days early). Before that its plays are shown labelled "Look-ahead" but never logged, alerted or put on the Bets tab.
+- **CFB stale lines**: a book 3+ points off consensus is ignored (`RULES["stale_pts"]`).
+
 ## Data (public repo: no third-party data committed)
 - Committed: code, `*/board/` ledgers + state the engine needs between runs, `cfb/data/calls.log`.
 - Actions cache: `cfb-raw-v1` / `nfl-raw-v1` (history, downloaded by `*/bootstrap.py` on a miss; CFB ≈106 CFBD
