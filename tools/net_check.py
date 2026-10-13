@@ -3,8 +3,16 @@
 Makes the same requests the laptop engines make and prints one line per source:
 OK / BLOCKED with the HTTP status and a sanity count (games, markets, rows).
 No API keys are needed: CFBD is checked for reachability only (401 without a key = reachable)."""
-import sys
+import builtins, os, sys
 import requests
+
+if os.environ.get("GITHUB_ACTIONS"):  # also post each line as a run annotation (readable without signing in)
+    _print = builtins.print
+    def print(*a, **k):
+        _print(*a, **k)
+        line = " ".join(map(str, a)).strip()
+        if line:
+            _print(f"::notice title=net check::{line}")
 
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 AN = "https://api.actionnetwork.com/web"
