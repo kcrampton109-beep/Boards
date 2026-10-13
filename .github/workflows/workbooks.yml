@@ -1,0 +1,49 @@
+# Monday 9 AM Eastern: rebuild both Excel workbooks from the boards as published and put them on the site
+# (CFB_Model_2026.xlsx and NFL_weekly.xlsx, linked from each board). No data refresh, no alerts.
+# 13:00 UTC = 9 AM Eastern until Nov 1 (8 AM after clocks fall back).
+name: Monday workbooks
+on:
+  schedule:
+    - cron: "0 13 * * 1"
+  push:   # changes to the workbook code run straight away
+    branches: [main]
+    paths: [".github/workflows/workbooks.yml", "cfb/workbook.py"]
+  workflow_dispatch:
+concurrency:
+  group: workbooks   # one run at a time per board; boards publish independently (tools/publish_site.sh)
+  cancel-in-progress: false
+permissions:
+  contents: write
+env:
+  TZ: America/New_York
+jobs:
+  workbooks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/cfb-setup
+        with:
+          cfbd-key: ${{ secrets.CFBD_KEY }}
+      - run: pip install -q -r nfl/requirements.txt
+      - name: Boards as published
+        run: |
+          git fetch -q --depth=1 origin site
+          git show FETCH_HEAD:cfb/state.json > "$RUNNER_TEMP/cfb_state.json"
+          git show FETCH_HEAD:nfl/state.json > "$RUNNER_TEMP/nfl_state.json"
+      - name: CFB workbook
+        working-directory: cfb
+        run: python workbook.py "$RUNNER_TEMP/cfb_state.json" ../_wb_cfb/CFB_Model_2026.xlsx
+      - name: NFL workbook
+        working-directory: nfl
+        run: |
+          mkdir -p ../_wb_nfl
+          python -c "import json, sys, weekly; weekly.workbook(json.load(open(sys.argv[1])), sys.argv[2])" \
+            "$RUNNER_TEMP/nfl_state.json" ../_wb_nfl/NFL_weekly.xlsx
+          ls -la ../_wb_nfl
+      - name: Publish workbooks
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          bash tools/publish_site.sh cfb _wb_cfb
+          bash tools/publish_site.sh nfl _wb_nfl

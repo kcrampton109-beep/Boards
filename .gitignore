@@ -25,3 +25,5 @@ nfl/snapshots/
 nfl/board/state.json
 nfl/stage/
 nfl/exports/
+_checkin/
+_wb_*/
