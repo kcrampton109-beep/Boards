@@ -8,7 +8,7 @@ on:
     - cron: "37 * * * *"
   push:   # my code changes run straight away (the workflow's own commits never trigger runs)
     branches: [main]
-    paths: [".github/**", "cfb/*.py", "cfb/requirements.txt", "tools/**"]
+    paths: [".github/**", "cfb/*.py", "cfb/requirements.txt", "cfb/board/index.html", "tools/**"]
   workflow_dispatch:
     inputs:
       refresh:

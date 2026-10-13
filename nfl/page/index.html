@@ -125,6 +125,7 @@ tr:last-child td { border-bottom: 0 }
 
   <nav class="tabs" role="tablist" aria-label="Board sections">
     <button class="tab" role="tab" aria-selected="true" data-tab="plays">Plays</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="bets">Bets</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="games">All games</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="td">TD sheet</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="inj">Injuries</button>
@@ -135,6 +136,7 @@ tr:last-child td { border-bottom: 0 }
   </nav>
 
   <section class="panel" id="p-plays" role="tabpanel"></section>
+  <section class="panel" id="p-bets" role="tabpanel" hidden></section>
   <section class="panel" id="p-games" role="tabpanel" hidden></section>
   <section class="panel" id="p-td" role="tabpanel" hidden></section>
   <section class="panel" id="p-inj" role="tabpanel" hidden></section>
@@ -157,6 +159,9 @@ const TIER = {
 };
 const ORDER = ["STRONG", "WEATHER", "TEASER", "LEAN", "RLM", "TREND", "TD"];
 const MAIN = ["STRONG", "WEATHER", "TEASER"];
+// Bets tab: the plays to put money on (strong spreads + the research plays with a proven edge), $ at this unit size
+const BET = ["STRONG", "WEATHER", "TEASER"];
+const UNIT = 10;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const sgn = (v, d = 1) => v == null || isNaN(v) ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d).replace(/\.0+$/, "");
 const odds = v => v == null ? "" : (v > 0 ? "+" : "−") + Math.abs(Math.round(v));
@@ -206,8 +211,8 @@ function render(S) {
 
   // wristband
   const counters = {};
-  plays.forEach(p => { if (MAIN.includes(p.tier)) { counters[p.tier] = (counters[p.tier] || 0) + 1; p.code = TIER[p.tier].code + counters[p.tier]; } });
-  const bandPlays = plays.filter(p => MAIN.includes(p.tier));
+  plays.forEach(p => { if (MAIN.includes(p.tier) && !p.lookahead) { counters[p.tier] = (counters[p.tier] || 0) + 1; p.code = TIER[p.tier].code + counters[p.tier]; } });
+  const bandPlays = plays.filter(p => MAIN.includes(p.tier) && !p.lookahead);
   document.getElementById("bandcount").textContent = `${bandPlays.length} play${bandPlays.length === 1 ? "" : "s"}`;
   document.getElementById("bandgrid").innerHTML = bandPlays.length ? bandPlays.map(p =>
     `<a class="cell" href="#${esc(p.code)}"><span class="code ${p.tier}">${p.code}</span><span class="pk">${esc(p.pick)}</span><span class="px num">${p.stake && p.market !== "teaser" ? p.stake + "u · " : ""}${odds(p.odds)} ${BOOKN[p.book] || p.book || ""} · ${esc(games[p.game_id].kickoff)}</span></a>`).join("")
@@ -237,10 +242,11 @@ function render(S) {
     const log = e ? (e.status === "open"
       ? `Logged ${esc(shortT(e.flagged))} at ${esc(e.pick)} ${odds(e.odds)} (${BOOKN[e.book] || esc(e.book)}), ${e.stake}u`
       : `<span class="pill ${e.status}">${e.status}</span> ${e.units == null ? "" : sgn(e.units, 2) + "u"} · ${esc(e.final || "")}${e.clv != null ? " · CLV " + sgn(e.clv) : ""}`)
+      : p.lookahead ? "Look-ahead line: only DraftKings has posted this game, so it isn't on your apps yet. Not logged or alerted until 2 of your books post the openers."
       : "Not logged yet (logs on the next check)";
     const angles = (g.angles || []).map(t => `<div class="tag">Angle: ${esc(t)}</div>`).join("");
     return `<article class="card ${p.tier}" id="${esc(p.code || p.id)}">
-      <div class="top"><span class="match">${esc(g.matchup)} · ${esc(g.kickoff)}</span><span class="pill ${p.tier}">${p.code || p.tier}</span></div>
+      <div class="top"><span class="match">${esc(g.matchup)} · ${esc(g.kickoff)}</span><span class="pill ${p.lookahead ? "" : p.tier}">${p.lookahead ? "Look-ahead" : p.code || p.tier}</span></div>
       <div><div class="pick">${esc(p.pick)}</div><div class="price num">${p.market === "teaser" ? "2-team 6-pt teaser leg" : (p.stake ? "<b>" + p.stake + "u</b> · " : "") + odds(p.odds)} at ${BOOKN[p.book] || esc(p.book) || "–"}</div></div>
       <div class="kv">${kv}${tix}</div>
       ${p.note ? `<div class="note">${esc(p.note)}</div>` : ""}${angles}
@@ -252,6 +258,43 @@ function render(S) {
     return `<div class="group"><div class="group-head"><h2>${TIER[t].name}</h2><span class="muted num">${ps.length}</span><p>${TIER[t].note}</p></div>
       ${ps.length ? `<div class="cards">${ps.map(card).join("")}</div>` : `<div class="muted">None at current prices.</div>`}</div>`;
   }).join("");
+
+  // bets: every play to put money on, open first, then settled
+  const usd = u => u == null ? "–" : (u < 0 ? "−$" : "$") + Math.abs(u * UNIT).toFixed(2).replace(/\.00$/, "");
+  const etTxt = iso => { try { return new Date(iso).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " ET"; } catch (e) { return iso || ""; } };
+  const playBy = Object.fromEntries(plays.map(p => [p.id, p]));
+  const betLed = (S.ledger || []).filter(e => BET.includes(e.tier) && e.status !== "void");
+  const openE = betLed.filter(e => e.status === "open");
+  const fresh = plays.filter(p => BET.includes(p.tier) && !p.lookahead && !games[p.game_id].started && !openE.some(e => e.id === p.id) && !betLed.some(e => e.id === p.id));
+  const openRows = [...openE.map(e => ({ e, p: playBy[e.id], g: games[e.game_id] })), ...fresh.map(p => ({ e: null, p, g: games[p.game_id] }))]
+    .sort((a, b) => ((a.g && a.g.kickoff_iso) || "").localeCompare((b.g && b.g.kickoff_iso) || ""));
+  const nowTxt = r => {
+    if (!r.g || r.g.started) return '<span class="muted">Kicked off, result pending</span>';
+    if (!r.p) return `<span class="neg">No longer a play at current prices: skip if you haven't bet it</span>`;
+    const lim = r.p.limit != null ? ` · playable to ${esc(r.p.team)} ${line(r.p.limit)}` : "";
+    return `<span class="pos">Still a play</span>: ${esc(r.p.pick)} ${r.p.market === "teaser" ? "" : odds(r.p.odds)} ${BOOKN[r.p.book] || esc(r.p.book)}${lim}`;
+  };
+  const x = r => r.e || r.p;
+  const betSum = BET.map(t => { const r = sm[t] || {}; return `<span><b>${TIER[t].name}</b> ${r.w || 0}-${r.l || 0}${r.p ? "-" + r.p : ""} · <span class="${(r.units || 0) > 0 ? "pos" : (r.units || 0) < 0 ? "neg" : ""}">${sgn(r.units || 0, 2)}u (${usd(r.units || 0)})</span></span>`; }).join(" &nbsp;·&nbsp; ");
+  const settled = betLed.filter(e => e.status !== "open").sort((a, b) => (b.flagged || "").localeCompare(a.flagged || ""));
+  document.getElementById("p-bets").innerHTML = `<div class="prose"><p>Only the plays to put money on: <b>strong spreads</b>, <b>weather unders</b> and <b>teaser legs</b> (pair any two legs into a 2-team 6-point teaser, 1 unit, at -130 or better). Leans, reverse line moves, trends and TD props stay on the other tabs as research. Dollars use $${UNIT} a unit. Each bet shows the line and app it was logged at; bet it at that number or better, never past the "playable to" line.</p>
+    <p class="num">${betSum}</p></div>
+    <h2>Open bets <span class="muted num">${openRows.length}</span></h2>
+    <div class="tbl"><table><thead><tr><th>Logged</th><th>Game</th><th>Kickoff</th><th>Bet</th><th class="r">Line</th><th class="r">Odds</th><th>App</th><th class="r">Stake</th><th>Now</th></tr></thead><tbody>
+    ${openRows.length ? openRows.map(r => { const v = x(r); return `<tr><td>${r.e ? esc(etTxt(r.e.flagged)) : '<span class="pill">New</span>'}</td><td>${esc((r.g && r.g.matchup) || v.matchup || "")}</td><td>${esc((r.g && r.g.kickoff) || v.kickoff || "")}</td>
+      <td><span class="pill ${v.tier}">${v.tier === "STRONG" ? "Strong" : v.tier === "WEATHER" ? "Wind under" : "Teaser leg"}</span> <b>${esc(v.pick)}</b></td>
+      <td class="r">${v.market === "total" ? (v.line ?? "–") : line(v.line)}</td><td class="r">${v.market === "teaser" ? "tsr" : odds(v.odds)}</td><td>${BOOKN[v.book] || esc(v.book || "")}</td>
+      <td class="r">${v.stake ?? 1}u · ${usd(v.stake ?? 1)}</td><td class="wrap">${nowTxt(r)}</td></tr>`; }).join("")
+      : `<tr><td colspan="9" class="muted">No open bets. New-week openers post Sunday night; alerts go to your phone when a play appears.</td></tr>`}
+    </tbody></table></div>
+    <h2>Settled <span class="muted num">${settled.length}</span></h2>
+    <div class="tbl"><table><thead><tr><th>Result</th><th>Logged</th><th>Game</th><th>Bet</th><th class="r">Odds</th><th>App</th><th class="r">Stake</th><th class="r">Units</th><th class="r">$</th><th class="r">CLV</th><th>Final</th></tr></thead><tbody>
+    ${settled.length ? settled.map(e => `<tr><td><span class="pill ${e.status}">${e.status}</span></td><td>${esc(etTxt(e.flagged))}</td><td>${esc(e.matchup)} <span class="muted">${esc(e.kickoff || "")}</span></td>
+      <td><b>${esc(e.pick)}</b></td><td class="r">${e.market === "teaser" ? "tsr" : odds(e.odds)}</td><td>${BOOKN[e.book] || esc(e.book || "")}</td><td class="r">${e.stake}u</td>
+      <td class="r ${e.units > 0 ? "pos" : e.units < 0 ? "neg" : ""}">${e.units == null ? "–" : sgn(e.units, 2)}</td><td class="r ${e.units > 0 ? "pos" : e.units < 0 ? "neg" : ""}">${usd(e.units)}</td>
+      <td class="r ${e.clv > 0 ? "pos" : e.clv < 0 ? "neg" : ""}">${e.clv == null ? "–" : sgn(e.clv)}</td><td class="muted">${esc(e.final || "")}</td></tr>`).join("")
+      : `<tr><td colspan="11" class="muted">Nothing settled yet.</td></tr>`}
+    </tbody></table></div>`;
 
   // all games
   const flagged = new Set(plays.filter(p => MAIN.includes(p.tier)).map(p => p.game_id));
@@ -344,7 +387,7 @@ function render(S) {
     try { localStorage.setItem("nfl-tab", t.dataset.tab); } catch (e) {}
   });
   let saved = null; try { saved = localStorage.getItem("nfl-tab"); } catch (e) {}
-  const want = location.hash && /^#(plays|games|td|inj|rlm|records|ratings|how)$/.test(location.hash) ? location.hash.slice(1) : saved;
+  const want = location.hash && /^#(plays|bets|games|td|inj|rlm|records|ratings|how)$/.test(location.hash) ? location.hash.slice(1) : saved;
   if (want) document.querySelector(`.tab[data-tab="${want}"]`)?.click();
 }
 load().then(render);

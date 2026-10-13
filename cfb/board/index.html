@@ -81,6 +81,7 @@ table { border-collapse: collapse; width: 100%; font-size: 12.5px }
 th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--rule); white-space: nowrap; vertical-align: top }
 th { font: 600 11px/1.2 var(--body); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--soft); position: sticky; top: 0 }
 td.r, th.r { text-align: right }
+td.now { white-space: normal; min-width: 220px }
 tr.flag td:first-child { box-shadow: inset 3px 0 0 var(--gold) }
 .chips { display: flex; flex-wrap: wrap; gap: 6px }
 .chip { font: 500 12px/1 var(--body); padding: 6px 10px; border-radius: 999px; border: 1px solid var(--rule); background: var(--card); color: var(--ink); cursor: pointer }
@@ -115,6 +116,7 @@ tr.flag td:first-child { box-shadow: inset 3px 0 0 var(--gold) }
 
   <nav class="tabs" role="tablist" aria-label="Board sections">
     <button class="tab" role="tab" id="t-plays" aria-selected="true" data-tab="plays">Plays</button>
+    <button class="tab" role="tab" id="t-bets" aria-selected="false" data-tab="bets">Bets</button>
     <button class="tab" role="tab" id="t-games" aria-selected="false" data-tab="games">All games</button>
     <button class="tab" role="tab" id="t-records" aria-selected="false" data-tab="records">Records</button>
     <button class="tab" role="tab" id="t-ratings" aria-selected="false" data-tab="ratings">Ratings</button>
@@ -122,6 +124,7 @@ tr.flag td:first-child { box-shadow: inset 3px 0 0 var(--gold) }
   </nav>
 
   <section class="panel" id="p-plays" role="tabpanel" aria-labelledby="t-plays"></section>
+  <section class="panel" id="p-bets" role="tabpanel" aria-labelledby="t-bets" hidden></section>
   <section class="panel" id="p-games" role="tabpanel" aria-labelledby="t-games" hidden></section>
   <section class="panel" id="p-records" role="tabpanel" aria-labelledby="t-records" hidden></section>
   <section class="panel" id="p-ratings" role="tabpanel" aria-labelledby="t-ratings" hidden></section>
@@ -139,6 +142,9 @@ const TIER = {
   RESEARCH: { name: "Research", code: "R", note: "Totals, moneyline alternatives and near-miss weather. Untested or unproven markets, logged small: model-total unders 1u, overs and near-miss wind 0.5u, moneyline alts 0.25u." },
   ANGLE: { name: "Angles", code: "A", note: "The only two situations that beat the closing line in both 2014-19 and 2020-25. Shown as context, not logged." },
 };
+// Bets tab: the plays to put money on, $ at this unit size
+const BET = ["STRONG", "FCS", "WEATHER"];
+const UNIT = 10;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const sgn = (v, d = 1) => v == null || isNaN(v) ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d).replace(/\.0$/, "");
 const odds = v => v == null ? "" : (v > 0 ? "+" : "−") + Math.abs(Math.round(v));
@@ -240,6 +246,46 @@ function render(S) {
       ${ps.length ? `<div class="cards">${ps.map(card).join("")}</div>` : `<div class="muted">None at current prices.</div>`}</div>`;
   }).join("");
 
+  // bets: every play to put money on, open first, then settled
+  const usd = u => u == null ? "–" : (u < 0 ? "−$" : "$") + Math.abs(u * UNIT).toFixed(2).replace(/\.00$/, "");
+  const etTxt = s => { try { return new Date(String(s).replace(" ", "T")).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " ET"; } catch (e) { return s || ""; } };
+  const playBy = {};
+  plays.forEach(p => { if (BET.includes(p.tier)) playBy[p.ledger_id || p.id] = p; });
+  const betLed = (S.ledger || []).filter(e => BET.includes(e.tier) && e.status !== "void");
+  const openE = betLed.filter(e => e.status === "open");
+  const fresh = plays.filter(p => BET.includes(p.tier) && !p.provisional && !(le(p) && le(p).tier === p.tier && le(p).status !== "void"));
+  const openRows = [...openE.map(e => ({ e, p: playBy[e.id] && playBy[e.id].tier === e.tier ? playBy[e.id] : null, g: games[e.game_id] })),
+                    ...fresh.map(p => ({ e: null, p, g: games[p.game_id] }))]
+    .sort((a, b) => String((a.e || {}).kickoff || "").localeCompare(String((b.e || {}).kickoff || "")));
+  const nowTxt = r => {
+    if (!r.g) return '<span class="muted">Kicked off, result pending</span>';
+    if (!r.p) return `<span class="neg">No longer a play at current prices: skip if you haven't bet it</span>`;
+    const lim = r.p.market === "spread" && r.p.limit != null ? ` · playable to ${line(r.p.limit)}` : "";
+    return `<span class="pos">Still a play</span>: ${esc(r.p.pick)} ${odds(r.p.odds)} ${BOOKN[r.p.book] || esc(r.p.book)}${lim}`;
+  };
+  const tierName = t => t === "STRONG" ? "Strong" : t === "FCS" ? "FCS" : "Wind under";
+  const betSum = BET.map(t => { const r = sm[t] || {}; const u = r.units || 0; return `<span><b>${TIER[t].name}</b> ${r.w || 0}-${r.l || 0}${r.p ? "-" + r.p : ""} · <span class="${u > 0 ? "pos" : u < 0 ? "neg" : ""}">${sgn(u, 2)}u (${usd(u)})</span></span>`; }).join(" &nbsp;·&nbsp; ");
+  const settled = betLed.filter(e => e.status !== "open").sort((a, b) => (b.flagged || "").localeCompare(a.flagged || ""));
+  document.getElementById("p-bets").innerHTML = `<div class="prose"><p>Only the plays to put money on: <b>strong plays</b>, <b>FCS plays</b> and <b>wind unders</b>. Leans and research plays stay on the other tabs. Dollars use $${UNIT} a unit. Each bet shows the line and app it was logged at; bet it at that number or better, never past the "playable to" line.</p>
+    <p class="num">${betSum}</p></div>
+    <h2>Open bets <span class="muted num">${openRows.length}</span></h2>
+    <div class="tbl"><table><thead><tr><th>Logged</th><th>Game</th><th>Kickoff</th><th>Bet</th><th class="r">Line</th><th class="r">Odds</th><th>App</th><th class="r">Stake</th><th>Now</th></tr></thead><tbody>
+    ${openRows.length ? openRows.map(r => { const v = r.e || r.p; const g = r.g; const st = r.e ? r.e.stake : r.p.stake;
+      return `<tr><td>${r.e ? esc(etTxt(r.e.flagged)) : '<span class="pill">New</span>'}</td><td>${esc(r.e ? r.e.matchup : `${g.away} ${g.neutral ? "vs" : "@"} ${g.home}`)}</td><td>${esc(r.e ? etTxt(r.e.kickoff) : g.kickoff)}</td>
+      <td><span class="pill ${v.tier}">${tierName(v.tier)}</span> <b>${esc(v.pick)}</b></td>
+      <td class="r">${v.market === "total" ? (v.line ?? "–") : line(v.line)}</td><td class="r">${odds(v.odds)}</td><td>${BOOKN[v.book] || esc(v.book || "")}</td>
+      <td class="r">${st}u · ${usd(st)}</td><td class="now">${nowTxt(r)}</td></tr>`; }).join("")
+      : `<tr><td colspan="9" class="muted">No open bets. Openers for next week post Sunday morning; alerts go to your phone when a play appears.</td></tr>`}
+    </tbody></table></div>
+    <h2>Settled <span class="muted num">${settled.length}</span></h2>
+    <div class="tbl"><table><thead><tr><th>Result</th><th>Logged</th><th>Game</th><th>Bet</th><th class="r">Odds</th><th>App</th><th class="r">Stake</th><th class="r">Units</th><th class="r">$</th><th class="r">CLV</th><th>Final</th></tr></thead><tbody>
+    ${settled.length ? settled.map(e => `<tr><td><span class="pill ${e.status}">${e.status}</span></td><td>${esc(etTxt(e.flagged))}</td><td>${esc(e.matchup)} <span class="muted">${esc(etTxt(e.kickoff))}</span></td>
+      <td><b>${esc(e.pick)}</b></td><td class="r">${odds(e.odds)}</td><td>${BOOKN[e.book] || esc(e.book || "")}</td><td class="r">${e.stake}u</td>
+      <td class="r ${e.units > 0 ? "pos" : e.units < 0 ? "neg" : ""}">${e.units == null ? "–" : sgn(e.units, 2)}</td><td class="r ${e.units > 0 ? "pos" : e.units < 0 ? "neg" : ""}">${usd(e.units)}</td>
+      <td class="r ${e.clv > 0 ? "pos" : e.clv < 0 ? "neg" : ""}">${e.clv == null ? "–" : sgn(e.clv)}</td><td class="muted">${esc(e.final || "")}</td></tr>`).join("")
+      : `<tr><td colspan="11" class="muted">Nothing settled yet.</td></tr>`}
+    </tbody></table></div>`;
+
   // all games
   const flagged = new Set(plays.filter(p => main.includes(p.tier)).map(p => p.game_id));
   const bk = (g, k) => { const v = g.books?.[k]; return v ? `${line(v.sp_home)} <span class="muted">${odds(v.sp_home_odds)}</span>` : "–"; };
@@ -301,7 +347,7 @@ function render(S) {
     try { localStorage.setItem("cfb-tab", t.dataset.tab); } catch (e) {}
   });
   let saved = null; try { saved = localStorage.getItem("cfb-tab"); } catch (e) {}
-  const want = location.hash && /^#(plays|games|records|ratings|how)$/.test(location.hash) ? location.hash.slice(1) : saved;
+  const want = location.hash && /^#(plays|bets|games|records|ratings|how)$/.test(location.hash) ? location.hash.slice(1) : saved;
   if (want) document.querySelector(`.tab[data-tab="${want}"]`)?.click();
 }
 load().then(render);

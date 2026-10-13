@@ -542,7 +542,7 @@ def main(args=()):
     cache = load_json(CACHE, {})
     seen = load_json(SEEN, {})
     ledger = load_json(LEDGER, [])
-    have = {e["id"] for e in ledger}
+    have = {e["id"] for e in ledger if e.get("status") != "void"}   # a voided play can log again later
 
     # results for grading (Action Network finals; nflverse scores as a fallback)
     results = {}
@@ -579,6 +579,10 @@ def main(args=()):
         books = x.get("books", {})
         bp = best_prices(books)
         cons = books.get("15", {})
+        # Look-ahead: next week's game while only one of the user's books has posted it (DraftKings posts look-ahead
+        # lines days before the openers). Shown on the board, never logged or alerted; the backtest used the openers.
+        posted = sum(books.get(k, {}).get("sp_home") is not None for k in ("68", "69", "75"))
+        lookahead = int(r.week) > int(open_weeks[0]) and posted < 2
         gm = dict(game_id=r.game_id, week=int(r.week), kickoff=fmt_et(r.start), kickoff_ts=r.start, kickoff_iso=r.start.isoformat(),
                   away=r.away, home=r.home,
                   matchup=f"{r.away} {'vs' if r.neutral else '@'} {r.home}", neutral=bool(r.neutral), roof=r.roof,
@@ -589,7 +593,7 @@ def main(args=()):
                   books={BOOKN_K: books.get(k, {}) for k, BOOKN_K in (("68", "DK"), ("69", "FD"), ("75", "MGM"))},
                   best=bp, tix_home=x.get("tix_home"), money_home=x.get("money_home"), tix_over=x.get("tix_over"),
                   money_over=x.get("money_over"), cbs=cb, qb={s: qbs.get(getattr(r, s)) for s in ("home", "away")},
-                  rest=dict(home=r.home_rest, away=r.away_rest))
+                  rest=dict(home=r.home_rest, away=r.away_rest), lookahead=bool(lookahead))
         # remember the last pre-kickoff numbers (closing line for CLV)
         if not started and cons.get("sp_home") is not None:
             seen[r.game_id] = dict(ts=now.isoformat(), close_spread=cons.get("sp_home"), close_total=cons.get("total"),
@@ -694,14 +698,21 @@ def main(args=()):
                           edge=round(v["prob"] - v["book_prob"], 3), pick=f"{v['player']} anytime TD", game_id=v["game_id"],
                           pid=v["pid"], note=f"model {v['prob']:.0%} vs {v['book']} {v['book_prob']:.0%}"))
 
-    # log new plays (once, at the price available now)
+    # log new plays (once, at the price available now); look-ahead games are not bettable yet
     by_game = {gm["game_id"]: gm for gm in games}
+    for p in plays:
+        p["lookahead"] = bool(by_game.get(p["game_id"], {}).get("lookahead"))
+    for e in ledger:   # entries logged at a look-ahead line before this rule (Oct 13): void, they log again at the openers
+        if e.get("status") == "open" and by_game.get(e["game_id"], {}).get("lookahead"):
+            e["status"] = "void"
+            e["note"] = ("Voided: logged at a DraftKings look-ahead line before your books posted the game; "
+                         "it logs again at the opening line")
     new = []
     for p in plays:
         pid = f"{p['game_id']}:{p['tier']}:{p['market']}:{p.get('side') or p.get('pid')}"
         p["id"] = pid
         p["stake"] = stake_for(p["tier"], p.get("edge"))
-        if pid in have:
+        if pid in have or p["lookahead"]:
             continue
         gm = by_game[p["game_id"]]
         e = dict(id=pid, tier=p["tier"], market=p["market"], side=p.get("side"), team=p.get("team"), pid=p.get("pid"),

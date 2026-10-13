@@ -20,7 +20,7 @@ def main(dest):
     games = {g["game_id"]: g for g in state["games"]}
     lines, new_ids = [], []
     for p in state["plays"]:
-        if p["tier"] not in NOTIFY_TIERS or p["id"] in notified:
+        if p["tier"] not in NOTIFY_TIERS or p["id"] in notified or p.get("lookahead"):
             continue
         g = games.get(p["game_id"], {})
         if g.get("started"):
