@@ -1,6 +1,21 @@
 .venv/
 __pycache__/
 *.pyc
+*.tmp
 .cfbd_key
 *.key
 .env
+_site_*/
+# CFB: third-party data (CFBD, Action Network, line snapshots) and the tables the engine regenerates
+# live in the Actions cache, not in this public repo
+cfb/data/raw/
+cfb/data/an_raw/
+cfb/data/an_team_map.json
+cfb/snapshots/
+cfb/data/*.parquet
+!cfb/data/market_proj.parquet
+!cfb/data/weather.parquet
+cfb/board/*.parquet
+cfb/board/state.json
+cfb/board/publish/
+cfb/exports/

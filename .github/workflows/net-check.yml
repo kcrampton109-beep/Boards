@@ -1,9 +1,7 @@
 # One-off test: can GitHub's servers reach the sportsbook-price and data sources both models use?
 name: Network check
 on:
-  push:
-    paths: ["tools/net_check.py", ".github/workflows/net-check.yml"]
-  workflow_dispatch:
+  workflow_dispatch:   # run by hand from the Actions tab if a data source ever seems blocked
 jobs:
   check:
     runs-on: ubuntu-latest

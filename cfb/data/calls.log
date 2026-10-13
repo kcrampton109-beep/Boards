@@ -1,0 +1,228 @@
+2026-10-02 13:09:36	200	998	/games	{'year': 2024, 'seasonType': 'both'}
+2026-10-02 13:09:38	200	997	/lines	{'year': 2024, 'seasonType': 'both'}
+2026-10-02 13:09:48	200	996	/stats/game/advanced	{'year': 2024, 'seasonType': 'both'}
+2026-10-02 13:09:49	200	995	/stats/game/havoc	{'year': 2024, 'seasonType': 'both'}
+2026-10-02 13:10:11	200	994	/venues	{}
+2026-10-02 13:10:12	200	993	/teams	{}
+2026-10-02 13:10:13	200	992	/games	{'year': 2014, 'seasonType': 'both'}
+2026-10-02 13:10:15	200	991	/lines	{'year': 2014, 'seasonType': 'both'}
+2026-10-02 13:10:29	200	990	/stats/game/advanced	{'year': 2014, 'seasonType': 'both'}
+2026-10-02 13:10:39	200	989	/stats/game/advanced	{'year': 2014, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:10:40	200	988	/stats/game/havoc	{'year': 2014, 'seasonType': 'both'}
+2026-10-02 13:10:50	200	987	/drives	{'year': 2014, 'seasonType': 'both'}
+2026-10-02 13:10:51	200	986	/talent	{'year': 2014}
+2026-10-02 13:10:51	200	985	/player/returning	{'year': 2014}
+2026-10-02 13:10:52	200	984	/recruiting/teams	{'year': 2014}
+2026-10-02 13:10:52	200	983	/ratings/sp	{'year': 2014}
+2026-10-02 13:10:53	200	982	/ratings/srs/expanded	{'year': 2014}
+2026-10-02 13:10:54	200	981	/ratings/fpi	{'year': 2014}
+2026-10-02 13:10:55	200	980	/games	{'year': 2015, 'seasonType': 'both'}
+2026-10-02 13:10:56	200	979	/lines	{'year': 2015, 'seasonType': 'both'}
+2026-10-02 13:11:05	200	978	/stats/game/advanced	{'year': 2015, 'seasonType': 'both'}
+2026-10-02 13:11:17	200	977	/stats/game/advanced	{'year': 2015, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:11:18	200	976	/stats/game/havoc	{'year': 2015, 'seasonType': 'both'}
+2026-10-02 13:11:24	200	975	/drives	{'year': 2015, 'seasonType': 'both'}
+2026-10-02 13:11:25	200	974	/talent	{'year': 2015}
+2026-10-02 13:11:26	200	973	/player/returning	{'year': 2015}
+2026-10-02 13:11:26	200	972	/recruiting/teams	{'year': 2015}
+2026-10-02 13:11:27	200	971	/ratings/sp	{'year': 2015}
+2026-10-02 13:11:27	200	970	/ratings/srs/expanded	{'year': 2015}
+2026-10-02 13:11:28	200	969	/ratings/fpi	{'year': 2015}
+2026-10-02 13:11:29	200	968	/games	{'year': 2016, 'seasonType': 'both'}
+2026-10-02 13:11:30	200	967	/lines	{'year': 2016, 'seasonType': 'both'}
+2026-10-02 13:11:35	200	966	/stats/game/advanced	{'year': 2016, 'seasonType': 'both'}
+2026-10-02 13:11:42	200	965	/stats/game/advanced	{'year': 2016, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:11:44	200	964	/stats/game/havoc	{'year': 2016, 'seasonType': 'both'}
+2026-10-02 13:11:53	200	963	/drives	{'year': 2016, 'seasonType': 'both'}
+2026-10-02 13:11:54	200	962	/talent	{'year': 2016}
+2026-10-02 13:11:54	200	961	/player/returning	{'year': 2016}
+2026-10-02 13:11:55	200	960	/recruiting/teams	{'year': 2016}
+2026-10-02 13:11:55	200	959	/ratings/sp	{'year': 2016}
+2026-10-02 13:11:56	200	958	/ratings/srs/expanded	{'year': 2016}
+2026-10-02 13:11:57	200	957	/ratings/fpi	{'year': 2016}
+2026-10-02 13:11:58	200	956	/games	{'year': 2017, 'seasonType': 'both'}
+2026-10-02 13:11:59	200	955	/lines	{'year': 2017, 'seasonType': 'both'}
+2026-10-02 13:12:05	200	954	/stats/game/advanced	{'year': 2017, 'seasonType': 'both'}
+2026-10-02 13:12:13	200	953	/stats/game/advanced	{'year': 2017, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:12:14	200	952	/stats/game/havoc	{'year': 2017, 'seasonType': 'both'}
+2026-10-02 13:12:23	200	951	/drives	{'year': 2017, 'seasonType': 'both'}
+2026-10-02 13:12:24	200	950	/talent	{'year': 2017}
+2026-10-02 13:12:25	200	949	/player/returning	{'year': 2017}
+2026-10-02 13:12:25	200	948	/recruiting/teams	{'year': 2017}
+2026-10-02 13:12:26	200	947	/ratings/sp	{'year': 2017}
+2026-10-02 13:12:26	200	946	/ratings/srs/expanded	{'year': 2017}
+2026-10-02 13:12:27	200	945	/ratings/fpi	{'year': 2017}
+2026-10-02 13:12:28	200	944	/games	{'year': 2018, 'seasonType': 'both'}
+2026-10-02 13:12:29	200	943	/lines	{'year': 2018, 'seasonType': 'both'}
+2026-10-02 13:12:42	200	942	/stats/game/advanced	{'year': 2018, 'seasonType': 'both'}
+2026-10-02 13:12:54	200	941	/stats/game/advanced	{'year': 2018, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:12:55	200	940	/stats/game/havoc	{'year': 2018, 'seasonType': 'both'}
+2026-10-02 13:13:02	200	939	/drives	{'year': 2018, 'seasonType': 'both'}
+2026-10-02 13:13:03	200	938	/talent	{'year': 2018}
+2026-10-02 13:13:04	200	937	/player/returning	{'year': 2018}
+2026-10-02 13:13:04	200	936	/recruiting/teams	{'year': 2018}
+2026-10-02 13:13:05	200	935	/ratings/sp	{'year': 2018}
+2026-10-02 13:13:05	200	934	/ratings/srs/expanded	{'year': 2018}
+2026-10-02 13:13:06	200	933	/ratings/fpi	{'year': 2018}
+2026-10-02 13:13:07	200	932	/games	{'year': 2019, 'seasonType': 'both'}
+2026-10-02 13:13:08	200	931	/lines	{'year': 2019, 'seasonType': 'both'}
+2026-10-02 13:13:14	200	930	/stats/game/advanced	{'year': 2019, 'seasonType': 'both'}
+2026-10-02 13:13:19	200	929	/stats/game/advanced	{'year': 2019, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:13:20	200	928	/stats/game/havoc	{'year': 2019, 'seasonType': 'both'}
+2026-10-02 13:13:26	200	927	/drives	{'year': 2019, 'seasonType': 'both'}
+2026-10-02 13:13:26	200	926	/talent	{'year': 2019}
+2026-10-02 13:13:27	200	925	/player/returning	{'year': 2019}
+2026-10-02 13:13:27	200	924	/recruiting/teams	{'year': 2019}
+2026-10-02 13:13:28	200	923	/ratings/sp	{'year': 2019}
+2026-10-02 13:13:29	200	922	/ratings/srs/expanded	{'year': 2019}
+2026-10-02 13:13:29	200	921	/ratings/fpi	{'year': 2019}
+2026-10-02 13:13:30	200	920	/games	{'year': 2020, 'seasonType': 'both'}
+2026-10-02 13:13:31	200	919	/lines	{'year': 2020, 'seasonType': 'both'}
+2026-10-02 13:13:36	200	918	/stats/game/advanced	{'year': 2020, 'seasonType': 'both'}
+2026-10-02 13:13:39	200	917	/stats/game/advanced	{'year': 2020, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:13:39	200	916	/stats/game/havoc	{'year': 2020, 'seasonType': 'both'}
+2026-10-02 13:13:42	200	915	/drives	{'year': 2020, 'seasonType': 'both'}
+2026-10-02 13:13:42	200	914	/talent	{'year': 2020}
+2026-10-02 13:13:43	200	913	/player/returning	{'year': 2020}
+2026-10-02 13:13:44	200	912	/recruiting/teams	{'year': 2020}
+2026-10-02 13:13:45	200	911	/ratings/sp	{'year': 2020}
+2026-10-02 13:13:46	200	910	/ratings/srs/expanded	{'year': 2020}
+2026-10-02 13:13:46	200	909	/ratings/fpi	{'year': 2020}
+2026-10-02 13:13:48	200	908	/games	{'year': 2021, 'seasonType': 'both'}
+2026-10-02 13:13:50	200	907	/lines	{'year': 2021, 'seasonType': 'both'}
+2026-10-02 13:14:00	200	906	/stats/game/advanced	{'year': 2021, 'seasonType': 'both'}
+2026-10-02 13:14:05	200	905	/stats/game/advanced	{'year': 2021, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:14:06	200	904	/stats/game/havoc	{'year': 2021, 'seasonType': 'both'}
+2026-10-02 13:14:15	200	903	/drives	{'year': 2021, 'seasonType': 'both'}
+2026-10-02 13:14:16	200	902	/talent	{'year': 2021}
+2026-10-02 13:14:16	200	901	/player/returning	{'year': 2021}
+2026-10-02 13:14:17	200	900	/recruiting/teams	{'year': 2021}
+2026-10-02 13:14:18	200	899	/ratings/sp	{'year': 2021}
+2026-10-02 13:14:18	200	898	/ratings/srs/expanded	{'year': 2021}
+2026-10-02 13:14:19	200	897	/ratings/fpi	{'year': 2021}
+2026-10-02 13:14:20	200	896	/player/portal	{'year': 2021}
+2026-10-02 13:14:21	200	895	/games	{'year': 2022, 'seasonType': 'both'}
+2026-10-02 13:14:23	200	894	/lines	{'year': 2022, 'seasonType': 'both'}
+2026-10-02 13:14:33	200	893	/stats/game/advanced	{'year': 2022, 'seasonType': 'both'}
+2026-10-02 13:14:44	200	892	/stats/game/advanced	{'year': 2022, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:14:45	200	891	/stats/game/havoc	{'year': 2022, 'seasonType': 'both'}
+2026-10-02 13:14:54	200	890	/drives	{'year': 2022, 'seasonType': 'both'}
+2026-10-02 13:14:54	200	889	/talent	{'year': 2022}
+2026-10-02 13:14:56	200	888	/player/returning	{'year': 2022}
+2026-10-02 13:14:56	200	887	/recruiting/teams	{'year': 2022}
+2026-10-02 13:14:57	200	886	/ratings/sp	{'year': 2022}
+2026-10-02 13:14:58	200	885	/ratings/srs/expanded	{'year': 2022}
+2026-10-02 13:14:58	200	884	/ratings/fpi	{'year': 2022}
+2026-10-02 13:14:59	200	883	/player/portal	{'year': 2022}
+2026-10-02 13:15:07	200	882	/games	{'year': 2023, 'seasonType': 'both'}
+2026-10-02 13:15:13	200	881	/lines	{'year': 2023, 'seasonType': 'both'}
+2026-10-02 13:15:24	200	880	/stats/game/advanced	{'year': 2023, 'seasonType': 'both'}
+2026-10-02 13:15:33	200	879	/stats/game/advanced	{'year': 2023, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:15:35	200	878	/stats/game/havoc	{'year': 2023, 'seasonType': 'both'}
+2026-10-02 13:15:47	200	877	/drives	{'year': 2023, 'seasonType': 'both'}
+2026-10-02 13:15:48	200	876	/talent	{'year': 2023}
+2026-10-02 13:15:49	200	875	/player/returning	{'year': 2023}
+2026-10-02 13:15:50	200	874	/recruiting/teams	{'year': 2023}
+2026-10-02 13:15:50	200	873	/ratings/sp	{'year': 2023}
+2026-10-02 13:15:51	200	872	/ratings/srs/expanded	{'year': 2023}
+2026-10-02 13:15:51	200	871	/ratings/fpi	{'year': 2023}
+2026-10-02 13:15:52	200	870	/player/portal	{'year': 2023}
+2026-10-02 13:16:05	200	869	/stats/game/advanced	{'year': 2024, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:16:13	200	868	/drives	{'year': 2024, 'seasonType': 'both'}
+2026-10-02 13:16:14	200	867	/talent	{'year': 2024}
+2026-10-02 13:16:15	200	866	/player/returning	{'year': 2024}
+2026-10-02 13:16:15	200	865	/recruiting/teams	{'year': 2024}
+2026-10-02 13:16:17	200	864	/ratings/sp	{'year': 2024}
+2026-10-02 13:16:18	200	863	/ratings/srs/expanded	{'year': 2024}
+2026-10-02 13:16:21	200	862	/ratings/fpi	{'year': 2024}
+2026-10-02 13:16:21	200	861	/player/portal	{'year': 2024}
+2026-10-02 13:16:22	200	860	/games	{'year': 2025, 'seasonType': 'both'}
+2026-10-02 13:16:25	200	859	/lines	{'year': 2025, 'seasonType': 'both'}
+2026-10-02 13:16:39	200	858	/stats/game/advanced	{'year': 2025, 'seasonType': 'both'}
+2026-10-02 13:16:51	200	857	/stats/game/advanced	{'year': 2025, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:16:52	200	856	/stats/game/havoc	{'year': 2025, 'seasonType': 'both'}
+2026-10-02 13:17:00	200	855	/drives	{'year': 2025, 'seasonType': 'both'}
+2026-10-02 13:17:02	200	854	/talent	{'year': 2025}
+2026-10-02 13:17:03	200	853	/player/returning	{'year': 2025}
+2026-10-02 13:17:03	200	852	/recruiting/teams	{'year': 2025}
+2026-10-02 13:17:04	200	851	/ratings/sp	{'year': 2025}
+2026-10-02 13:17:05	200	850	/ratings/srs/expanded	{'year': 2025}
+2026-10-02 13:17:05	200	849	/ratings/fpi	{'year': 2025}
+2026-10-02 13:17:06	200	848	/player/portal	{'year': 2025}
+2026-10-02 13:17:07	200	847	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-02 13:17:09	200	846	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-02 13:17:14	200	845	/stats/game/advanced	{'year': 2026, 'seasonType': 'both'}
+2026-10-02 13:17:18	200	844	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:17:19	200	843	/stats/game/havoc	{'year': 2026, 'seasonType': 'both'}
+2026-10-02 13:17:25	200	842	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-02 13:17:26	200	841	/talent	{'year': 2026}
+2026-10-02 13:17:26	200	840	/player/returning	{'year': 2026}
+2026-10-02 13:17:27	200	839	/recruiting/teams	{'year': 2026}
+2026-10-02 13:17:28	200	838	/ratings/sp	{'year': 2026}
+2026-10-02 13:17:28	200	837	/ratings/srs/expanded	{'year': 2026}
+2026-10-02 13:17:29	200	836	/ratings/fpi	{'year': 2026}
+2026-10-02 13:17:30	200	835	/player/portal	{'year': 2026}
+2026-10-02 13:56:38	200	834	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-02 13:56:40	200	833	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-02 13:56:43	200	832	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-02 13:56:48	200	831	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-03 11:05:11	200	830	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-03 11:05:20	200	829	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-03 11:05:36	200	828	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-03 11:05:53	200	827	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-04 08:50:28	200	826	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-04 08:50:29	200	825	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-04 08:50:35	200	824	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-04 08:50:40	200	823	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-04 08:53:05	200	822	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-04 08:53:07	200	821	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-04 08:53:12	200	820	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-04 08:53:18	200	819	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-04 08:55:09	200	818	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-04 08:55:10	200	817	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-04 08:55:15	200	816	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-04 08:55:21	200	815	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-04 13:05:06	200	814	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-04 13:05:11	200	813	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-04 13:05:19	200	812	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-04 13:05:25	200	811	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-05 10:03:14	200	810	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-05 10:03:18	200	809	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-05 10:03:26	200	808	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-05 10:03:39	200	807	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-06 10:05:08	200	806	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-06 10:05:13	200	805	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-06 10:05:23	200	804	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-06 10:05:33	200	803	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-07 01:05:10	200	802	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-07 01:05:14	200	801	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-07 01:05:18	200	800	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-07 01:05:25	200	799	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-08 10:13:23	200	798	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-08 10:13:26	200	797	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-08 10:13:33	200	796	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-08 10:13:39	200	795	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-09 00:05:19	200	794	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-09 00:05:22	200	793	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-09 00:05:31	200	792	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-09 00:05:38	200	791	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-09 18:05:17	200	790	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-09 18:05:21	200	789	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-09 18:05:29	200	788	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-09 18:05:41	200	787	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-10 15:27:27	200	786	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-10 15:27:29	200	785	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-10 15:27:34	200	784	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-10 15:27:39	200	783	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-11 11:32:19	200	782	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-11 11:32:21	200	781	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-11 11:32:34	200	780	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-11 11:32:39	200	779	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-11 12:06:28	200	778	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-11 12:06:31	200	777	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-11 12:06:35	200	776	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-11 12:06:54	200	775	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-12 14:12:19	200	774	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-12 14:12:21	200	773	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-12 14:12:30	200	772	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-12 14:12:48	200	771	/drives	{'year': 2026, 'seasonType': 'both'}

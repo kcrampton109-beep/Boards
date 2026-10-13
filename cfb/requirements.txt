@@ -1,0 +1,8 @@
+# Same versions as the laptop venv (C:/Users/kcram/cfb/.venv) so the cloud produces the same numbers
+numpy==2.5.3
+pandas==3.0.6
+pyarrow==25.0.1
+requests==2.34.2
+scikit-learn==1.9.1
+scipy==1.18.1
+openpyxl==3.1.5

@@ -1,0 +1,11 @@
+CFB weekly refresh, Sun Oct 11 12:09 PM ET
+Last week: Strong 6-4 (+1.8u, CLV +1.6); FCS 17-4 (+11.4u, CLV +0.7); Wind 5-5 (-0.5u, CLV +0.5)
+Research tiers last week: Leans 37-23-1 (+7.2u, CLV +0.9); Research 49-34 (+8.6u, CLV +0.7)
+Season: Strong 8-4 (+3.9u, CLV +1.4); FCS 18-4 (+12.3u, CLV +0.8); Wind 5-5 (-0.5u, CLV +0.5)
+This week's card so far: 4 plays
+  Strong: Alabama -1.5 -110 MGM (Alabama @ Tennessee, playable to -3.5)
+  Strong: Texas Tech -12.5 -110 DK (Arizona State @ Texas Tech, playable to -14.5)
+  Strong: Houston -3.5 -110 DK (Oklahoma State @ Houston, playable to -6.5)
+  Strong: Pittsburgh -6.5 -105 DK (Pittsburgh @ Boston College, playable to -6.5)
+Biggest FBS rating moves: UL Monroe +0.0, Charlotte +0.0, Ball State +0.0, Ohio State +0.0, Notre Dame +0.0, Georgia +0.0
+Health: 1 engine errors, longest gap between checks 20.1h, 139 line snapshots this week, 775 data calls left this month

@@ -1,0 +1,74 @@
+# Sunday weekly refresh: Saturday's results, re-rate every team, grade the ledger, price the new week,
+# write the report + Excel workbook (published next to the board), and send the report to the phone.
+# 12:45 UTC = 8:45 AM Eastern until Nov 1 (7:45 AM after clocks fall back).
+name: CFB weekly refresh
+on:
+  schedule:
+    - cron: "45 12 * * 0"
+  workflow_dispatch:
+concurrency:
+  group: boards-git
+  cancel-in-progress: false
+permissions:
+  contents: write
+env:
+  TZ: America/New_York
+  NTFY_TOPIC: boards-pk9lpcuxti4v
+  BOARD_URL: https://kcrampton109-beep.github.io/Boards/cfb/
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: cfb
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/cfb-setup
+        with:
+          cfbd-key: ${{ secrets.CFBD_KEY }}
+      - id: weekly
+        name: Weekly refresh, report and workbook
+        env:
+          CFBD_KEY: ${{ secrets.CFBD_KEY }}
+        run: |
+          python weekly.py ../_site_cfb | tail -n 1 > ../weekly.json
+          cp exports/CFB_Model_2026.xlsx ../_site_cfb/
+          python - <<'EOF'
+          import json
+          d = json.load(open("../weekly.json"))
+          open("../report.txt", "w").write("\n".join(d["report"]))
+          EOF
+          cat ../report.txt
+      - name: Save ledger and ratings history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A board data/calls.log
+          if ! git diff --cached --quiet; then
+            git commit -q -m "CFB weekly refresh $(date '+%a %b %d')"
+            git pull -q --rebase origin main
+            git push -q origin HEAD:main
+          fi
+      - uses: actions/cache/save@v4
+        with:
+          path: |
+            cfb/data/games.parquet
+            cfb/data/tg.parquet
+            cfb/data/preds.parquet
+            cfb/data/preds_long.parquet
+            cfb/data/sit.parquet
+            cfb/data/an_team_map.json
+            cfb/data/raw/*2026*.json
+            cfb/board/model_lines.parquet
+            cfb/board/ratings.parquet
+          key: cfb-work-${{ github.run_id }}
+      - name: Publish board + workbook
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash ../tools/publish_site.sh cfb ../_site_cfb
+      - name: Send weekly report
+        run: |
+          curl -fsS -H "Title: CFB weekly report" -H "Tags: football" -H "Click: $BOARD_URL" \
+            -H "Actions: view, Workbook, ${BOARD_URL}CFB_Model_2026.xlsx" \
+            --data-binary @../report.txt "https://ntfy.sh/$NTFY_TOPIC" > /dev/null
