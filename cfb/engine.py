@@ -91,8 +91,9 @@ def rebuild():
     """Rebuild tables, ratings and this season's model lines from cached data (no API calls)."""
     import build, run_models, evaluate as ev
     build.main()
-    wide, _ = run_models.run_all(0)
+    wide, long = run_models.run_all(0)
     wide.to_parquet(ROOT / "data" / "preds.parquet")
+    long.to_parquet(ROOT / "data" / "preds_long.parquet")  # ratings() reads it; was never rewritten after Oct 2
     g = ev.frame()
     g = g[g["season"] >= 2015].copy()
     g["blend"] = ev.blend(g, ["margin_hat_pts", "margin_hat_ppa", "margin_hat_sr"])
