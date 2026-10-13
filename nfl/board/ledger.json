@@ -3843,5 +3843,32 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_KC_SEA:LEAN:spread:away",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "team": "KC",
+  "pid": null,
+  "game_id": "2026_07_KC_SEA",
+  "week": 7,
+  "matchup": "KC @ SEA",
+  "kickoff": "Sun Oct 25, 8:20 PM ET",
+  "pick": "KC +3",
+  "line": 3,
+  "odds": -110,
+  "book": "DK",
+  "stake": 0.5,
+  "edge": 2.0,
+  "note": null,
+  "limit": 3.0,
+  "model_line": -1.0,
+  "flagged": "2026-10-13T15:12:07.188749-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
