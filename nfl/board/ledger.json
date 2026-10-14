@@ -4032,5 +4032,32 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_06_CAR_PHI:RLM:spread:away",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "away",
+  "team": "CAR",
+  "pid": null,
+  "game_id": "2026_06_CAR_PHI",
+  "week": 6,
+  "matchup": "CAR @ PHI",
+  "kickoff": "Sun Oct 18, 1:00 PM ET",
+  "pick": "CAR +1.5",
+  "line": 1.5,
+  "odds": -120,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "57% of bets on PHI, line moved -1.5 \u2192 +1.5",
+  "limit": null,
+  "model_line": 0.3,
+  "flagged": "2026-10-14T11:54:43.298469-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
