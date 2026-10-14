@@ -4113,5 +4113,32 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_06_DAL_GB:RLM:spread:home",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team": "GB",
+  "pid": null,
+  "game_id": "2026_06_DAL_GB",
+  "week": 6,
+  "matchup": "DAL @ GB",
+  "kickoff": "Sun Oct 18, 8:20 PM ET",
+  "pick": "GB -1.5",
+  "line": -1.5,
+  "odds": -105,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": null,
+  "note": "57% of bets on DAL, line moved -1.5 \u2192 +1.5 for DAL",
+  "limit": null,
+  "model_line": -1.2,
+  "flagged": "2026-10-14T19:37:06.090202-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
