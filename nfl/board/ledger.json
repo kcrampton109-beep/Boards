@@ -4005,5 +4005,32 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_06_CAR_PHI:TEASER:teaser:home",
+  "tier": "TEASER",
+  "market": "teaser",
+  "side": "home",
+  "team": "PHI",
+  "pid": null,
+  "game_id": "2026_06_CAR_PHI",
+  "week": 6,
+  "matchup": "CAR @ PHI",
+  "kickoff": "Sun Oct 18, 1:00 PM ET",
+  "pick": "PHI +1.5 \u2192 +7.5",
+  "line": 1.5,
+  "odds": -120,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": null,
+  "note": "total 40.5",
+  "limit": null,
+  "model_line": 0.3,
+  "flagged": "2026-10-14T11:16:20.958291-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
