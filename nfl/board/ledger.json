@@ -4086,5 +4086,32 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_06_PIT_TB:WEATHER:total:under",
+  "tier": "WEATHER",
+  "market": "total",
+  "side": "under",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_06_PIT_TB",
+  "week": 6,
+  "matchup": "PIT @ TB",
+  "kickoff": "Sun Oct 18, 1:00 PM ET",
+  "pick": "Under 39.5 (20 mph wind)",
+  "line": 39.5,
+  "odds": -105,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": 20.2,
+  "note": "gusts 28 mph, 81F",
+  "limit": null,
+  "model_line": 1.6,
+  "flagged": "2026-10-14T13:14:40.134276-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
