@@ -3951,5 +3951,32 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_IND_MIN:RLM:total:under",
+  "tier": "RLM",
+  "market": "total",
+  "side": "under",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_07_IND_MIN",
+  "week": 7,
+  "matchup": "IND @ MIN",
+  "kickoff": "Sun Oct 25, 1:00 PM ET",
+  "pick": "Under 43.5",
+  "line": 43.5,
+  "odds": -105,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "82% of bets on the over, total moved 45.5 \u2192 43.5",
+  "limit": null,
+  "model_line": -6.4,
+  "flagged": "2026-10-14T08:51:57.852022-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
