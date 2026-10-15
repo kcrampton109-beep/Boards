@@ -7024,5 +7024,28 @@
   "grp": "FCS-FCS",
   "limit": 22.0,
   "status": "open"
+ },
+ {
+  "id": "401862801|total|under|wx|WEATHER",
+  "base": "401862801|total|under|wx",
+  "flagged": "2026-10-15T02:34-04:00",
+  "season": 2026,
+  "week": 7,
+  "game_id": 401862801,
+  "matchup": "Memphis @ Tulane",
+  "kickoff": "2026-10-16 19:30:00-04:00",
+  "tier": "WEATHER",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 55.5 (wind 17 mph)",
+  "book": "DK",
+  "line": 55.5,
+  "odds": -108.0,
+  "stake": 1.0,
+  "edge": 16.7,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
