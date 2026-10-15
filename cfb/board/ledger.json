@@ -7047,5 +7047,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401867993|spread|home|m",
+  "base": "401867993|spread|home|m",
+  "flagged": "2026-10-15T08:34-04:00",
+  "season": 2026,
+  "week": 7,
+  "game_id": 401867993,
+  "matchup": "Lafayette @ Bucknell",
+  "kickoff": "2026-10-17 15:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Bucknell +4.5",
+  "book": "FD",
+  "line": 4.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 4.0,
+  "model": 0.5,
+  "grp": "FCS-FCS",
+  "limit": 4.0,
+  "status": "open"
  }
 ]
