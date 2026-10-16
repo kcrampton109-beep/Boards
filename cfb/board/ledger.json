@@ -8335,5 +8335,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401864521|total|under|wx",
+  "base": "401864521|total|under|wx",
+  "flagged": "2026-10-15T23:27-04:00",
+  "season": 2026,
+  "week": 7,
+  "game_id": 401864521,
+  "matchup": "New Mexico @ Hawai'i",
+  "kickoff": "2026-10-17 22:30:00-04:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 44.5 (wind 13 mph)",
+  "book": "DK",
+  "line": 44.5,
+  "odds": -112.0,
+  "stake": 0.5,
+  "edge": 12.9,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
