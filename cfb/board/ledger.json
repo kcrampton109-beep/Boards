@@ -8715,5 +8715,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401866664|total|under|wx|WEATHER",
+  "base": "401866664|total|under|wx",
+  "flagged": "2026-10-17T06:23-04:00",
+  "season": 2026,
+  "week": 7,
+  "game_id": 401866664,
+  "matchup": "Bryant @ Maine",
+  "kickoff": "2026-10-17 13:00:00-04:00",
+  "tier": "WEATHER",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 46.5 (wind 15 mph)",
+  "book": "DK",
+  "line": 46.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 15.4,
+  "model": null,
+  "grp": "FCS-FCS",
+  "limit": null,
+  "status": "open"
  }
 ]
