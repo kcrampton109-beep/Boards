@@ -8692,5 +8692,28 @@
   "grp": "FBS",
   "limit": 17.5,
   "status": "open"
+ },
+ {
+  "id": "401866443|total|under|wx",
+  "base": "401866443|total|under|wx",
+  "flagged": "2026-10-17T05:24-04:00",
+  "season": 2026,
+  "week": 7,
+  "game_id": 401866443,
+  "matchup": "Western Michigan @ Central Michigan",
+  "kickoff": "2026-10-17 13:30:00-04:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 43.5 (wind 12 mph)",
+  "book": "FD",
+  "line": 43.5,
+  "odds": -118.0,
+  "stake": 0.5,
+  "edge": 12.0,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
