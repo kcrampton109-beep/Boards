@@ -4383,5 +4383,32 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_NE_CHI:LEAN:spread:away",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "team": "NE",
+  "pid": null,
+  "game_id": "2026_07_NE_CHI",
+  "week": 7,
+  "matchup": "NE @ CHI",
+  "kickoff": "Thu Oct 22, 8:15 PM ET",
+  "pick": "NE +1.5",
+  "line": 1.5,
+  "odds": -110,
+  "book": "DK",
+  "stake": 0.5,
+  "edge": 2.9,
+  "note": null,
+  "limit": 0.5,
+  "model_line": 1.4,
+  "flagged": "2026-10-17T09:43:45.239143-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
