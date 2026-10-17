@@ -8657,5 +8657,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401856720|spread|away|m",
+  "base": "401856720|spread|away|m",
+  "flagged": "2026-10-16T20:33-04:00",
+  "season": 2026,
+  "week": 7,
+  "game_id": 401856720,
+  "matchup": "Mississippi State @ LSU",
+  "kickoff": "2026-10-17 12:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "pick": "Mississippi State +17.5",
+  "book": "DK",
+  "line": 17.5,
+  "odds": -118.0,
+  "stake": 0.5,
+  "edge": 5.2,
+  "model": 12.3,
+  "grp": "FBS",
+  "limit": 17.5,
+  "status": "open"
  }
 ]
