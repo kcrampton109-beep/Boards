@@ -6977,7 +6977,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 50.5,
+  "units": -1.0,
+  "final": "Washington 38 - Purdue 26"
  },
  {
   "id": "401862801|total|under|wx",
@@ -7000,7 +7004,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 55.5,
+  "units": 0.463,
+  "final": "Memphis 17 - Tulane 31"
  },
  {
   "id": "401869132|spread|home|m|FCS",
@@ -7046,7 +7054,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 55.5,
+  "units": 0.926,
+  "final": "Memphis 17 - Tulane 31"
  },
  {
   "id": "401867993|spread|home|m",
