@@ -9353,5 +9353,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401862804|spread|home|m",
+  "base": "401862804|spread|home|m",
+  "flagged": "2026-10-17T19:18-04:00",
+  "season": 2026,
+  "week": 7,
+  "game_id": 401862804,
+  "matchup": "Navy @ UTSA",
+  "kickoff": "2026-10-17 20:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "UTSA -5.5",
+  "book": "MGM",
+  "line": -5.5,
+  "odds": -108.0,
+  "stake": 0.5,
+  "edge": 5.7,
+  "model": -11.2,
+  "grp": "FBS",
+  "limit": -6.0,
+  "status": "open"
  }
 ]
