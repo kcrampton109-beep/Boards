@@ -8899,5 +8899,28 @@
   "grp": "FCS-FCS",
   "limit": -8.0,
   "status": "open"
+ },
+ {
+  "id": "401868257|total|under|m",
+  "base": "401868257|total|under|m",
+  "flagged": "2026-10-17T10:22-04:00",
+  "season": 2026,
+  "week": 7,
+  "game_id": 401868257,
+  "matchup": "Marist @ Drake",
+  "kickoff": "2026-10-17 13:00:00-04:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 53.5",
+  "book": "FD",
+  "line": 53.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.9,
+  "model": 47.6,
+  "grp": "FCS-FCS",
+  "limit": null,
+  "status": "open"
  }
 ]
