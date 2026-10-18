@@ -1527,11 +1527,11 @@
   "note": "BAL QB Lamar Jackson questionable",
   "model_line": 5.4,
   "flagged": "2026-10-06T14:15:07.420821-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": -3,
+  "clv": 0,
+  "final": "BAL 10 - CLE 13"
  },
  {
   "id": "2026_05_TB_DAL:RLM:spread:away",
@@ -1735,11 +1735,11 @@
   "note": "total 40.5",
   "model_line": 5.4,
   "flagged": "2026-10-06T15:21:46.774410-04:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 3,
+  "clv": -0.5,
+  "final": "BAL 10 - CLE 13"
  },
  {
   "id": "2026_06_ARI_LA:LEAN:spread:away",
@@ -1865,11 +1865,11 @@
   "note": "85% of bets on the over, total moved 42.5 \u2192 40.5",
   "model_line": 5.1,
   "flagged": "2026-10-07T11:45:02.261325-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 39.5,
+  "clv": 1.0,
+  "final": "BAL 10 - CLE 13"
  },
  {
   "id": "2026_05_CHI_GB:WEATHER:total:under",
