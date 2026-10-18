@@ -747,11 +747,11 @@
   "note": null,
   "model_line": -2.6,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.5,
+  "close": -2.5,
+  "clv": 4.0,
+  "final": "HOU 34 - JAX 31"
  },
  {
   "id": "2026_06_HOU_JAX:TEASER:teaser:home",
@@ -773,11 +773,11 @@
   "note": "total 40.5",
   "model_line": -2.6,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": -2.5,
+  "clv": 4.0,
+  "final": "HOU 34 - JAX 31"
  },
  {
   "id": "2026_06_HOU_JAX:TEASER:teaser:away",
@@ -799,11 +799,11 @@
   "note": "total 40.5",
   "model_line": -2.6,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 2.5,
+  "clv": -1.0,
+  "final": "HOU 34 - JAX 31"
  },
  {
   "id": "2026_06_HOU_JAX:RLM:spread:away",
@@ -825,11 +825,11 @@
   "note": "68% of bets on JAX, line moved -1.5 \u2192 +1.5",
   "model_line": -2.6,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.83,
+  "close": 2.5,
+  "clv": -1.0,
+  "final": "HOU 34 - JAX 31"
  },
  {
   "id": "2026_06_TEN_IND:STRONG:spread:home",
@@ -2203,11 +2203,11 @@
   "note": null,
   "model_line": -3.6,
   "flagged": "2026-10-11T11:32:17.952126-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": -2.5,
+  "clv": 1.0,
+  "final": "HOU 34 - JAX 31"
  },
  {
   "id": "2026_05_SF_SEA:LEAN:spread:away",
