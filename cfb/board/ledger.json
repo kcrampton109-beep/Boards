@@ -9792,5 +9792,28 @@
   "grp": "FBS",
   "limit": 16.5,
   "status": "open"
+ },
+ {
+  "id": "401871055|spread|home|m",
+  "base": "401871055|spread|home|m",
+  "flagged": "2026-10-18T07:00-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401871055,
+  "matchup": "Middle Tennessee @ Florida International",
+  "kickoff": "2026-10-20 19:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Florida International -9.5",
+  "book": "FD",
+  "line": -9.5,
+  "odds": -122.0,
+  "stake": 0.5,
+  "edge": 5.0,
+  "model": -14.5,
+  "grp": "FBS",
+  "limit": -9.5,
+  "status": "open"
  }
 ]
