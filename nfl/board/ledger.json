@@ -1059,11 +1059,11 @@
   "note": null,
   "model_line": -10.0,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 1.82,
+  "close": -7.5,
+  "clv": 5.0,
+  "final": "LAC 6 - KC 22"
  },
  {
   "id": "2026_06_LAC_KC:TEASER:teaser:away",
@@ -1085,11 +1085,11 @@
   "note": "total 46.5",
   "model_line": -10.0,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
+  "status": "L",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 7.5,
+  "clv": -5.0,
+  "final": "LAC 6 - KC 22"
  },
  {
   "id": "2026_06_DAL_GB:STRONG:spread:away",
@@ -1371,11 +1371,11 @@
   "note": "KC \u2014 3+ more days of rest than the opponent: 6-0-2 ATS this season (2023-25: covered 50% of 177)",
   "model_line": -10.0,
   "flagged": "2026-10-06T10:15:02.179460-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": -7.5,
+  "clv": 5.0,
+  "final": "LAC 6 - KC 22"
  },
  {
   "id": "2026_06_DAL_GB:TREND:spread:away",
@@ -1787,11 +1787,11 @@
   "note": null,
   "model_line": -10.0,
   "flagged": "2026-10-06T15:21:46.774410-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.46,
+  "close": -7.5,
+  "clv": 0.0,
+  "final": "LAC 6 - KC 22"
  },
  {
   "id": "2026_05_BAL_ATL:RLM:total:under",
@@ -1995,11 +1995,11 @@
   "note": "68% of bets on the over, total moved 46.5 \u2192 45.5",
   "model_line": -10.1,
   "flagged": "2026-10-08T10:13:17.128257-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 41.5,
+  "clv": 4.0,
+  "final": "LAC 6 - KC 22"
  },
  {
   "id": "2026_06_DAL_GB:LEAN:spread:home",
@@ -3217,11 +3217,11 @@
   "note": null,
   "model_line": 7.3,
   "flagged": "2026-10-13T12:15:53.081549-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": -5.5,
+  "clv": 0.5,
+  "final": "BUF 33 - LV 30"
  },
  {
   "id": "2026_07_NE_CHI:STRONG:spread:away",
@@ -4216,11 +4216,11 @@
   "limit": null,
   "model_line": -10.1,
   "flagged": "2026-10-15T17:43:00.397348-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 7.5,
+  "clv": 1.0,
+  "final": "LAC 6 - KC 22"
  },
  {
   "id": "2026_07_NE_CHI:RLM:total:under",
