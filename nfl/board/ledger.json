@@ -851,11 +851,11 @@
   "note": null,
   "model_line": -7.0,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": -6.5,
+  "clv": 3.0,
+  "final": "TEN 26 - IND 20"
  },
  {
   "id": "2026_06_NYJ_NE:STRONG:spread:away",
@@ -877,11 +877,11 @@
   "note": null,
   "model_line": -5.1,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 1.36,
+  "close": 7.5,
+  "clv": 2.0,
+  "final": "NYJ 19 - NE 26"
  },
  {
   "id": "2026_06_NO_NYG:LEAN:spread:away",
@@ -903,11 +903,11 @@
   "note": null,
   "model_line": -0.2,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.45,
+  "close": -1.5,
+  "clv": 4.0,
+  "final": "NO 34 - NYG 27"
  },
  {
   "id": "2026_06_NO_NYG:TEASER:teaser:away",
@@ -929,11 +929,11 @@
   "note": "total 44.5",
   "model_line": -0.2,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": -1.5,
+  "clv": 4.0,
+  "final": "NO 34 - NYG 27"
  },
  {
   "id": "2026_06_PIT_TB:STRONG:spread:away",
@@ -1007,11 +1007,11 @@
   "note": null,
   "model_line": -0.5,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 1.82,
+  "close": -3,
+  "clv": 9.5,
+  "final": "CAR 25 - PHI 14"
  },
  {
   "id": "2026_06_ARI_LA:STRONG:spread:away",
@@ -1293,11 +1293,11 @@
   "note": "NO \u2014 Off a loss by 20+: 8-2-1 ATS this season (2023-25: covered 47% of 147)",
   "model_line": -1.3,
   "flagged": "2026-10-06T10:15:02.179460-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": -1.5,
+  "clv": 4.0,
+  "final": "NO 34 - NYG 27"
  },
  {
   "id": "2026_06_PIT_TB:TREND:spread:home",
@@ -1345,11 +1345,11 @@
   "note": "CAR \u2014 3+ more days of rest than the opponent: 6-0-2 ATS this season (2023-25: covered 50% of 177)",
   "model_line": 0.0,
   "flagged": "2026-10-06T10:15:02.179460-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": -3,
+  "clv": 9.5,
+  "final": "CAR 25 - PHI 14"
  },
  {
   "id": "2026_06_LAC_KC:TREND:spread:home",
@@ -1449,11 +1449,11 @@
   "note": null,
   "model_line": -1.3,
   "flagged": "2026-10-06T14:15:07.420821-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": 1.5,
+  "clv": 0.0,
+  "final": "NO 34 - NYG 27"
  },
  {
   "id": "2026_06_NO_NYG:TEASER:teaser:home",
@@ -1475,11 +1475,11 @@
   "note": "total 44.5",
   "model_line": -1.3,
   "flagged": "2026-10-06T14:15:07.420821-04:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 1.5,
+  "clv": 0.0,
+  "final": "NO 34 - NYG 27"
  },
  {
   "id": "2026_06_PIT_TB:TEASER:teaser:home",
@@ -1631,11 +1631,11 @@
   "note": null,
   "model_line": -4.9,
   "flagged": "2026-10-06T15:21:46.774410-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "P",
+  "units": 0.0,
+  "close": 7.5,
+  "clv": -0.5,
+  "final": "NYJ 19 - NE 26"
  },
  {
   "id": "2026_06_CAR_PHI:LEAN:spread:away",
@@ -1657,11 +1657,11 @@
   "note": null,
   "model_line": 0.0,
   "flagged": "2026-10-06T15:21:46.774410-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.45,
+  "close": -3,
+  "clv": 5.5,
+  "final": "CAR 25 - PHI 14"
  },
  {
   "id": "2026_06_CAR_PHI:TEASER:teaser:away",
@@ -1683,11 +1683,11 @@
   "note": "total 42.5",
   "model_line": 0.0,
   "flagged": "2026-10-06T15:21:46.774410-04:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": -3,
+  "clv": 5.5,
+  "final": "CAR 25 - PHI 14"
  },
  {
   "id": "2026_06_CHI_ATL:TEASER:teaser:home",
@@ -1709,11 +1709,11 @@
   "note": "total 47.5",
   "model_line": 1.4,
   "flagged": "2026-10-06T15:21:46.774410-04:00",
-  "status": "open",
+  "status": "L",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 1.5,
+  "clv": 0.0,
+  "final": "CHI 31 - ATL 23"
  },
  {
   "id": "2026_06_BAL_CLE:TEASER:teaser:home",
@@ -1839,11 +1839,11 @@
   "note": "85% of bets on the over, total moved 46.5 \u2192 43.5",
   "model_line": -7.3,
   "flagged": "2026-10-07T11:45:02.261325-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 43.5,
+  "clv": 1.0,
+  "final": "TEN 26 - IND 20"
  },
  {
   "id": "2026_06_BAL_CLE:RLM:total:under",
@@ -2281,11 +2281,11 @@
   "note": null,
   "model_line": 1.0,
   "flagged": "2026-10-11T21:42:12.713818-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.43,
+  "close": -1.5,
+  "clv": 3.0,
+  "final": "CHI 31 - ATL 23"
  },
  {
   "id": "2026_06_CHI_ATL:TEASER:teaser:away",
@@ -2307,11 +2307,11 @@
   "note": "total 48",
   "model_line": 1.0,
   "flagged": "2026-10-11T21:42:12.713818-04:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": -1.5,
+  "clv": 3.0,
+  "final": "CHI 31 - ATL 23"
  },
  {
   "id": "2026_06_SEA_DEN:RLM:total:under",
@@ -2359,11 +2359,11 @@
   "note": "TEN \u2014 Off scoring 10 or fewer: 14-2-1 ATS this season (2023-25: covered 51% of 199)",
   "model_line": -7.9,
   "flagged": "2026-10-12T14:06:19.853037-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.89,
+  "close": 6.5,
+  "clv": 0.5,
+  "final": "TEN 26 - IND 20"
  },
  {
   "id": "2026_06_NO_NYG:STRONG:spread:home",
@@ -2385,11 +2385,11 @@
   "note": null,
   "model_line": -1.5,
   "flagged": "2026-10-12T14:06:19.853037-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 1.5,
+  "clv": 0.0,
+  "final": "NO 34 - NYG 27"
  },
  {
   "id": "2026_06_CAR_PHI:RLM:total:under",
@@ -2411,11 +2411,11 @@
   "note": "71% of bets on the over, total moved 42.5 \u2192 41.5",
   "model_line": 0.2,
   "flagged": "2026-10-12T14:06:19.853037-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 39.5,
+  "clv": 2.5,
+  "final": "CAR 25 - PHI 14"
  },
  {
   "id": "2026_06_CHI_ATL:LEAN:spread:home",
@@ -2437,11 +2437,11 @@
   "note": "ATL QB Michael Penix Jr. questionable; demoted: QB status uncertain",
   "model_line": -0.5,
   "flagged": "2026-10-12T14:06:19.853037-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": 1.5,
+  "clv": 2.0,
+  "final": "CHI 31 - ATL 23"
  },
  {
   "id": "2026_06_CHI_ATL:RLM:spread:away",
@@ -2463,11 +2463,11 @@
   "note": "71% of bets on ATL, line moved +1.5 \u2192 +3.5",
   "model_line": -0.5,
   "flagged": "2026-10-12T14:06:19.853037-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.83,
+  "close": -1.5,
+  "clv": -1.5,
+  "final": "CHI 31 - ATL 23"
  },
  {
   "id": "2026_06_CHI_ATL:TREND:spread:away",
@@ -2489,11 +2489,11 @@
   "note": "CHI \u2014 Off scoring 10 or fewer: 14-2-1 ATS this season (2023-25: covered 51% of 199)",
   "model_line": -0.5,
   "flagged": "2026-10-12T14:06:19.853037-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.83,
+  "close": -1.5,
+  "clv": -1.5,
+  "final": "CHI 31 - ATL 23"
  },
  {
   "id": "2026_06_WAS_SF:LEAN:spread:home",
@@ -3191,11 +3191,11 @@
   "note": "61% of bets on NYG, line moved -1.5 \u2192 +1.5",
   "model_line": -1.4,
   "flagged": "2026-10-13T11:15:02.488800-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.83,
+  "close": -1.5,
+  "clv": 3.0,
+  "final": "NO 34 - NYG 27"
  },
  {
   "id": "2026_06_BUF_LV:LEAN:spread:away",
@@ -4027,11 +4027,11 @@
   "limit": null,
   "model_line": 0.3,
   "flagged": "2026-10-14T11:16:20.958291-04:00",
-  "status": "open",
+  "status": "L",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 3,
+  "clv": -1.5,
+  "final": "CAR 25 - PHI 14"
  },
  {
   "id": "2026_06_CAR_PHI:RLM:spread:away",
@@ -4054,11 +4054,11 @@
   "limit": null,
   "model_line": 0.3,
   "flagged": "2026-10-14T11:54:43.298469-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.83,
+  "close": -3,
+  "clv": 4.5,
+  "final": "CAR 25 - PHI 14"
  },
  {
   "id": "2026_07_MIA_NYJ:RLM:total:under",
@@ -4432,10 +4432,10 @@
   "limit": null,
   "model_line": -6.5,
   "flagged": "2026-10-18T08:02:09.335128-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 43,
+  "clv": 0.5,
+  "final": "NYJ 19 - NE 26"
  }
 ]
