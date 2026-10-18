@@ -314,3 +314,4 @@
 2026-10-17T20:54:36.861554-04:00 plays=40 new=0 games=28 live_ok=True CBS week 6 failed: HTTPError('406 Client Error: Not Acceptable for url: https://www.cbssports.com/nfl/odds/2026/regular/week-6/'); CBS week 7 failed: HTTPError('406 Client Error: Not Acceptable for url: https://www.cbssports.com/nfl/odds/2026/regular/week-7/')
 2026-10-17T21:39:42.833112-04:00 plays=50 new=0 games=28 live_ok=True 
 2026-10-17T22:08:33.777994-04:00 plays=50 new=0 games=28 live_ok=True 
+2026-10-17T22:40:39.741941-04:00 plays=50 new=0 games=28 live_ok=True 
