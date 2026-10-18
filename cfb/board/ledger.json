@@ -5448,7 +5448,9 @@
   "edge": 7.1,
   "model": 75.4,
   "grp": "FBS",
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Alabama 10 - Tennessee 26"
  },
  {
   "id": "401856724|spread|home|m",
@@ -5494,7 +5496,11 @@
   "edge": 9.4,
   "model": -21.9,
   "grp": "FBS",
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": -16.5,
+  "units": 1.364,
+  "final": "Arizona State 25 - Texas Tech 53"
  },
  {
   "id": "401856830|spread|away|m",
@@ -5582,7 +5588,11 @@
   "edge": 5.1,
   "model": 4.9,
   "grp": "FBS",
-  "status": "open"
+  "status": "P",
+  "clv": 1.5,
+  "close": 8.5,
+  "units": 0.0,
+  "final": "Georgia Tech 24 - Virginia Tech 34"
  },
  {
   "id": "401858267|spread|away|m",
@@ -5672,7 +5682,11 @@
   "edge": 6.5,
   "model": -3.5,
   "grp": "FBS",
-  "status": "open"
+  "status": "W",
+  "clv": 1.5,
+  "close": 1.5,
+  "units": 0.417,
+  "final": "UNLV 31 - Air Force 41"
  },
  {
   "id": "401869934|spread|home|m",
@@ -5735,7 +5749,11 @@
   "edge": 5.0,
   "model": -0.5,
   "grp": "FBS",
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": 4.0,
+  "units": -0.5,
+  "final": "Tulsa 38 - Rice 17"
  },
  {
   "id": "401856833|spread|away|m",
@@ -6294,7 +6312,11 @@
   "model": 12.3,
   "grp": "FCS-FCS",
   "limit": 15.5,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 14.5,
+  "units": -0.5,
+  "final": "Eastern Kentucky 20 - Tennessee Tech 49"
  },
  {
   "id": "401868181|spread|home|m",
@@ -6317,7 +6339,11 @@
   "model": -5.1,
   "grp": "FCS-FCS",
   "limit": 0.0,
-  "status": "open"
+  "status": "L",
+  "clv": 4.0,
+  "close": -1.5,
+  "units": -1.0,
+  "final": "Lindenwood 20 - Eastern Illinois 13"
  },
  {
   "id": "401868181|moneyline|home|m",
@@ -6340,7 +6366,9 @@
   "model": 62.8,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Lindenwood 20 - Eastern Illinois 13"
  },
  {
   "id": "401868207|total|under|m",
@@ -6363,7 +6391,11 @@
   "model": 49.8,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 5.0,
+  "close": 51.5,
+  "units": -1.0,
+  "final": "Western Illinois 30 - Southeast Missouri State 40"
  },
  {
   "id": "401868213|spread|home|m",
@@ -6521,7 +6553,11 @@
   "model": -11.5,
   "grp": "FCS-FCS",
   "limit": -8.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.5,
+  "close": -7.0,
+  "units": 0.833,
+  "final": "Grambling 31 - Alabama A&M 61"
  },
  {
   "id": "401868301|total|over|m",
@@ -6544,7 +6580,11 @@
   "model": 63.3,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": 59.5,
+  "units": 0.442,
+  "final": "Grambling 31 - Alabama A&M 61"
  },
  {
   "id": "401868361|spread|home|m",
@@ -6567,7 +6607,11 @@
   "model": -9.3,
   "grp": "FCS-FCS",
   "limit": -4.0,
-  "status": "open"
+  "status": "L",
+  "clv": 4.5,
+  "close": -8.0,
+  "units": -1.0,
+  "final": "Alcorn State 38 - Prairie View A&M 41"
  },
  {
   "id": "401868361|moneyline|home|m",
@@ -6590,7 +6634,9 @@
   "model": 72.5,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.136,
+  "final": "Alcorn State 38 - Prairie View A&M 41"
  },
  {
   "id": "401868398|spread|home|m",
@@ -6640,7 +6686,11 @@
   "model": 4.2,
   "grp": "FCS-FCS",
   "limit": 7.5,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 6.5,
+  "units": -1.0,
+  "final": "Bethune-Cookman 34 - Mississippi Valley State 14"
  },
  {
   "id": "401869132|spread|home|m",
@@ -6690,7 +6740,11 @@
   "model": 2.6,
   "grp": "FCS-FCS",
   "limit": 8.0,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": 6.5,
+  "units": -1.0,
+  "final": "Illinois State 35 - Southern Illinois 14"
  },
  {
   "id": "401867849|moneyline|home|m",
@@ -6713,7 +6767,9 @@
   "model": 43.4,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Illinois State 35 - Southern Illinois 14"
  },
  {
   "id": "401867870|spread|home|m",
@@ -6736,7 +6792,11 @@
   "model": 25.5,
   "grp": "FCS-FCS",
   "limit": 29.0,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 28.5,
+  "units": 0.885,
+  "final": "South Dakota 48 - Murray State 20"
  },
  {
   "id": "401867968|spread|home|m",
@@ -6805,7 +6865,11 @@
   "model": 3.5,
   "grp": "FCS-FCS",
   "limit": 8.5,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": 7.5,
+  "units": -1.0,
+  "final": "Villanova 38 - Fordham 17"
  },
  {
   "id": "401868012|moneyline|home|m",
@@ -6828,7 +6892,9 @@
   "model": 41.1,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Villanova 38 - Fordham 17"
  },
  {
   "id": "401868079|spread|home|m",
@@ -6920,7 +6986,11 @@
   "model": 1.5,
   "grp": "FCS-FCS",
   "limit": 6.5,
-  "status": "open"
+  "status": "W",
+  "clv": 2.5,
+  "close": 5.0,
+  "units": 0.885,
+  "final": "Idaho State 20 - Weber State 27"
  },
  {
   "id": "401868105|moneyline|home|m",
@@ -6943,7 +7013,9 @@
   "model": 46.2,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.625,
+  "final": "Idaho State 20 - Weber State 27"
  },
  {
   "id": "401868125|spread|away|m",
@@ -7035,7 +7107,11 @@
   "model": -0.1,
   "grp": "FCS-FCS",
   "limit": 5.0,
-  "status": "open"
+  "status": "L",
+  "clv": 2.5,
+  "close": 3.0,
+  "units": -1.0,
+  "final": "Alabama State 21 - Arkansas-Pine Bluff 15"
  },
  {
   "id": "401868330|moneyline|home|m",
@@ -7058,7 +7134,9 @@
   "model": 50.3,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Alabama State 21 - Arkansas-Pine Bluff 15"
  },
  {
   "id": "401858493|total|under|wx",
@@ -7189,7 +7267,11 @@
   "model": 0.5,
   "grp": "FCS-FCS",
   "limit": 4.0,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 3.5,
+  "units": -1.0,
+  "final": "Lafayette 20 - Bucknell 7"
  },
  {
   "id": "401858267|total|under|wx",
@@ -7833,7 +7915,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": -1.0,
+  "close": 52.5,
+  "units": 0.442,
+  "final": "Lafayette 20 - Bucknell 7"
  },
  {
   "id": "401868145|total|under|wx",
@@ -7856,7 +7942,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 51.5,
+  "units": -0.5,
+  "final": "Eastern Kentucky 20 - Tennessee Tech 49"
  },
  {
   "id": "401868943|total|under|wx",
@@ -7879,7 +7969,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 8.0,
+  "close": 50.5,
+  "units": 0.442,
+  "final": "Bethune-Cookman 34 - Mississippi Valley State 14"
  },
  {
   "id": "401856720|total|under|wx",
@@ -7929,7 +8023,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": -1.0,
+  "close": 41.5,
+  "units": -1.0,
+  "final": "Northern Illinois 23 - Wyoming 41"
  },
  {
   "id": "401866667|total|under|wx",
@@ -7952,7 +8050,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 6.0,
+  "close": 57.5,
+  "units": 0.885,
+  "final": "Towson 20 - Campbell 24"
  },
  {
   "id": "401867901|total|under|wx",
@@ -8002,7 +8104,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": 45.5,
+  "units": -1.0,
+  "final": "Villanova 38 - Fordham 17"
  },
  {
   "id": "401868222|total|under|wx|WEATHER",
@@ -8121,7 +8227,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 50.5,
+  "units": 0.49,
+  "final": "Alabama 10 - Tennessee 26"
  },
  {
   "id": "401858264|total|under|wx",
@@ -8144,7 +8254,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 55.5,
+  "units": -0.5,
+  "final": "Georgia Tech 24 - Virginia Tech 34"
  },
  {
   "id": "401868066|total|under|wx",
@@ -8194,7 +8308,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": -1.0,
+  "close": 59.5,
+  "units": -0.5,
+  "final": "Grambling 31 - Alabama A&M 61"
  },
  {
   "id": "401868943|total|under|wx|WEATHER",
@@ -8217,7 +8335,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 8.0,
+  "close": 50.5,
+  "units": 0.885,
+  "final": "Bethune-Cookman 34 - Mississippi Valley State 14"
  },
  {
   "id": "401856719|total|under|wx",
@@ -8240,7 +8362,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 49.5,
+  "units": -0.5,
+  "final": "Auburn 27 - Georgia 24"
  },
  {
   "id": "401856720|total|under|wx|WEATHER",
@@ -8290,7 +8416,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 57.5,
+  "units": 0.463,
+  "final": "Missouri 3 - Ole Miss 31"
  },
  {
   "id": "401856829|total|under|wx",
@@ -8340,7 +8470,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 46.5,
+  "units": 0.435,
+  "final": "North Carolina 24 - Duke 20"
  },
  {
   "id": "401858489|total|under|wx|WEATHER",
@@ -8498,7 +8632,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": -1.0,
+  "close": 59.5,
+  "units": -1.0,
+  "final": "Grambling 31 - Alabama A&M 61"
  },
  {
   "id": "401868330|total|under|wx",
@@ -8521,7 +8659,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 5.0,
+  "close": 54.5,
+  "units": 0.417,
+  "final": "Alabama State 21 - Arkansas-Pine Bluff 15"
  },
  {
   "id": "401868398|total|under|wx|WEATHER",
@@ -8571,7 +8713,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 54.5,
+  "units": 0.442,
+  "final": "Florida A&M 17 - Jackson State 27"
  },
  {
   "id": "401869966|total|under|wx",
@@ -8594,7 +8740,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 49.5,
+  "units": 0.446,
+  "final": "Troy 6 - Louisiana 33"
  },
  {
   "id": "401864521|total|under|wx",
@@ -8640,7 +8790,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 57.5,
+  "units": 0.926,
+  "final": "Missouri 3 - Ole Miss 31"
  },
  {
   "id": "401866668|total|under|wx|WEATHER",
@@ -8690,7 +8844,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 54.5,
+  "units": 0.885,
+  "final": "Florida A&M 17 - Jackson State 27"
  },
  {
   "id": "401858261|total|under|wx|WEATHER",
@@ -8794,7 +8952,11 @@
   "model": 13.4,
   "grp": "FCS-FCS",
   "limit": 16.5,
-  "status": "open"
+  "status": "W",
+  "clv": 1.5,
+  "close": 16.0,
+  "units": 0.885,
+  "final": "Idaho 42 - Montana 35"
  },
  {
   "id": "401868096|total|over|m",
@@ -8817,7 +8979,11 @@
   "model": 65.5,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 5.0,
+  "close": 64.5,
+  "units": 0.446,
+  "final": "Idaho 42 - Montana 35"
  },
  {
   "id": "401868096|total|under|wx",
@@ -8840,7 +9006,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": -5.0,
+  "close": 64.5,
+  "units": -0.5,
+  "final": "Idaho 42 - Montana 35"
  },
  {
   "id": "401868250|spread|home|m",
@@ -8936,7 +9106,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": -3.0,
+  "close": 64.5,
+  "units": -1.0,
+  "final": "Idaho 42 - Montana 35"
  },
  {
   "id": "401856720|spread|away|m",
@@ -9148,7 +9322,11 @@
   "model": 52.0,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": -1.0,
+  "close": 45.5,
+  "units": 0.463,
+  "final": "Villanova 38 - Fordham 17"
  },
  {
   "id": "401868222|spread|home|m",
@@ -9306,7 +9484,11 @@
   "model": 4.5,
   "grp": "FCS-FCS",
   "limit": 7.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": 7.0,
+  "units": -0.5,
+  "final": "Valparaiso 13 - San Diego 38"
  },
  {
   "id": "401868310|total|under|wx",
@@ -9329,7 +9511,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 49.5,
+  "units": -0.5,
+  "final": "Stephen F. Austin 56 - Nicholls 0"
  },
  {
   "id": "401868943|total|over|m",
@@ -9352,7 +9538,11 @@
   "model": 56.2,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 50.5,
+  "units": -0.5,
+  "final": "Bethune-Cookman 34 - Mississippi Valley State 14"
  },
  {
   "id": "401862804|spread|home|m",
