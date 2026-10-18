@@ -9999,5 +9999,28 @@
   "grp": "FBS",
   "limit": 3.5,
   "status": "open"
+ },
+ {
+  "id": "401869935|spread|home|m",
+  "base": "401869935|spread|home|m",
+  "flagged": "2026-10-18T17:00-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401869935,
+  "matchup": "Georgia State @ Arkansas State",
+  "kickoff": "2026-10-24 19:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Arkansas State +2.5",
+  "book": "DK",
+  "line": 2.5,
+  "odds": -112.0,
+  "stake": 0.5,
+  "edge": 5.1,
+  "model": -2.6,
+  "grp": "FBS",
+  "limit": 2.5,
+  "status": "open"
  }
 ]
