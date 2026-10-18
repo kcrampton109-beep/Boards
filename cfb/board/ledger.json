@@ -5546,7 +5546,11 @@
   "edge": 10.1,
   "model": -13.6,
   "grp": "FBS",
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -3.5,
+  "units": -1.5,
+  "final": "Oklahoma State 32 - Houston 35"
  },
  {
   "id": "401856831|moneyline|home|m",
@@ -5567,7 +5571,9 @@
   "edge": 30.3,
   "model": 80.9,
   "grp": "FBS",
-  "status": "open"
+  "status": "W",
+  "units": 0.152,
+  "final": "Oklahoma State 32 - Houston 35"
  },
  {
   "id": "401858264|spread|away|m",
@@ -5661,7 +5667,11 @@
   "edge": 6.6,
   "model": -10.1,
   "grp": "FBS",
-  "status": "open"
+  "status": "W",
+  "clv": -2.0,
+  "close": -1.5,
+  "units": 0.5,
+  "final": "Wisconsin 7 - UCLA 17"
  },
  {
   "id": "401864524|spread|home|m",
@@ -5707,7 +5717,11 @@
   "edge": 6.9,
   "model": 0.6,
   "grp": "FBS",
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 5.5,
+  "units": -0.5,
+  "final": "Arkansas State 23 - Southern Miss 13"
  },
  {
   "id": "401858494|moneyline|home|m",
@@ -5728,7 +5742,9 @@
   "edge": 22.6,
   "model": 74.3,
   "grp": "FBS",
-  "status": "open"
+  "status": "W",
+  "units": 0.162,
+  "final": "Wisconsin 7 - UCLA 17"
  },
  {
   "id": "401862805|spread|home|m",
@@ -5795,7 +5811,11 @@
   "edge": 7.0,
   "model": 8.5,
   "grp": "FBS",
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 14.5,
+  "units": 0.435,
+  "final": "Louisville 34 - Syracuse 26"
  },
  {
   "id": "401858494|spread|home|m|STRONG",
@@ -5817,7 +5837,11 @@
   "edge": 7.6,
   "model": -10.1,
   "grp": "FBS",
-  "status": "open"
+  "status": "W",
+  "clv": -1.0,
+  "close": -1.5,
+  "units": 0.952,
+  "final": "Wisconsin 7 - UCLA 17"
  },
  {
   "id": "401856725|spread|home|m",
@@ -5917,7 +5941,11 @@
   "edge": 8.3,
   "model": 24.2,
   "grp": "FBS-FCS",
-  "status": "open"
+  "status": "W",
+  "clv": -2.0,
+  "close": 34.5,
+  "units": 0.909,
+  "final": "Elon 7 - Stanford 34"
  },
  {
   "id": "401866663|spread|home|m",
@@ -6819,7 +6847,11 @@
   "model": 1.6,
   "grp": "FCS-FCS",
   "limit": 7.0,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": 5.5,
+  "units": 0.885,
+  "final": "Morgan State 16 - Tennessee State 25"
  },
  {
   "id": "401867968|moneyline|home|m",
@@ -6842,7 +6874,9 @@
   "model": 45.9,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.662,
+  "final": "Morgan State 16 - Tennessee State 25"
  },
  {
   "id": "401868012|spread|home|m",
@@ -6917,7 +6951,11 @@
   "model": 0.0,
   "grp": "FCS-FCS",
   "limit": 3.5,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 3.5,
+  "units": 0.417,
+  "final": "Cal Poly 18 - Northern Colorado 28"
  },
  {
   "id": "401868088|spread|home|m",
@@ -6940,7 +6978,11 @@
   "model": 15.1,
   "grp": "FCS-FCS",
   "limit": 20.5,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 20.5,
+  "units": -1.0,
+  "final": "Montana State 56 - Eastern Washington 20"
  },
  {
   "id": "401868088|total|under|m",
@@ -6963,7 +7005,11 @@
   "model": 58.5,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 63.5,
+  "units": -1.0,
+  "final": "Montana State 56 - Eastern Washington 20"
  },
  {
   "id": "401868105|spread|home|m",
@@ -7038,7 +7084,11 @@
   "model": 16.6,
   "grp": "FCS-FCS",
   "limit": 20.0,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": 17.5,
+  "units": 0.472,
+  "final": "Portland State 25 - Northern Arizona 38"
  },
  {
   "id": "401868161|spread|home|m",
@@ -7061,7 +7111,11 @@
   "model": -2.2,
   "grp": "FCS-FCS",
   "limit": 3.0,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": 4.5,
+  "units": 0.885,
+  "final": "UC Davis 17 - Southern Utah 38"
  },
  {
   "id": "401868161|moneyline|home|m",
@@ -7084,7 +7138,9 @@
   "model": 55.6,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.45,
+  "final": "UC Davis 17 - Southern Utah 38"
  },
  {
   "id": "401868330|spread|home|m",
@@ -8158,7 +8214,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 56.5,
+  "units": -1.0,
+  "final": "Florida State 35 - Miami 43"
  },
  {
   "id": "401862806|total|under|wx",
@@ -8181,7 +8241,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": -1.0,
+  "close": 46.5,
+  "units": 0.87,
+  "final": "Kent State 2 - South Florida 29"
  },
  {
   "id": "401868088|total|under|wx",
@@ -8204,7 +8268,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": 63.5,
+  "units": -0.5,
+  "final": "Montana State 56 - Eastern Washington 20"
  },
  {
   "id": "401856723|total|under|wx",
@@ -9033,7 +9101,11 @@
   "model": -6.5,
   "grp": "FCS-FCS",
   "limit": -3.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.5,
+  "close": -3.5,
+  "units": 0.442,
+  "final": "UT Rio Grande Valley 16 - Incarnate Word 41"
  },
  {
   "id": "401868383|total|under|m",
@@ -9056,7 +9128,11 @@
   "model": 46.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": 48.5,
+  "units": 0.885,
+  "final": "Mercer 31 - Samford 21"
  },
  {
   "id": "401867841|total|under|wx|WEATHER",
