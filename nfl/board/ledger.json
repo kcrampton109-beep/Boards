@@ -955,11 +955,11 @@
   "note": null,
   "model_line": 1.8,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": -2.5,
+  "clv": 4.0,
+  "final": "PIT 26 - TB 19"
  },
  {
   "id": "2026_06_PIT_TB:TEASER:teaser:away",
@@ -981,11 +981,11 @@
   "note": "total 45.5",
   "model_line": 1.8,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": -2.5,
+  "clv": 4.0,
+  "final": "PIT 26 - TB 19"
  },
  {
   "id": "2026_06_CAR_PHI:STRONG:spread:away",
@@ -1319,11 +1319,11 @@
   "note": "TB \u2014 3+ more days of rest than the opponent: 6-0-2 ATS this season (2023-25: covered 50% of 177)",
   "model_line": 2.0,
   "flagged": "2026-10-06T10:15:02.179460-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 2.5,
+  "clv": -4.0,
+  "final": "PIT 26 - TB 19"
  },
  {
   "id": "2026_06_CAR_PHI:TREND:spread:away",
@@ -1501,11 +1501,11 @@
   "note": "total 45.5",
   "model_line": 2.0,
   "flagged": "2026-10-06T14:15:07.420821-04:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 2.5,
+  "clv": 0.0,
+  "final": "PIT 26 - TB 19"
  },
  {
   "id": "2026_06_BAL_CLE:LEAN:spread:away",
@@ -1917,11 +1917,11 @@
   "note": "90% of bets on the over, total moved 43.5 \u2192 38.5",
   "model_line": 1.8,
   "flagged": "2026-10-07T15:59:04.593893-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 38.5,
+  "clv": 1.0,
+  "final": "PIT 26 - TB 19"
  },
  {
   "id": "2026_05_CHI_GB:LEAN:spread:home",
@@ -4108,11 +4108,11 @@
   "limit": null,
   "model_line": 1.6,
   "flagged": "2026-10-14T13:14:40.134276-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 38.5,
+  "clv": 1.0,
+  "final": "PIT 26 - TB 19"
  },
  {
   "id": "2026_06_DAL_GB:RLM:spread:home",
