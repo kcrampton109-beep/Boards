@@ -10022,5 +10022,28 @@
   "grp": "FBS",
   "limit": 2.5,
   "status": "open"
+ },
+ {
+  "id": "401871055|total|under|wx",
+  "base": "401871055|total|under|wx",
+  "flagged": "2026-10-18T19:20-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401871055,
+  "matchup": "Middle Tennessee @ Florida International",
+  "kickoff": "2026-10-20 19:00:00-04:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 45.5 (wind 14 mph)",
+  "book": "MGM",
+  "line": 45.5,
+  "odds": -108.0,
+  "stake": 0.5,
+  "edge": 14.2,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
