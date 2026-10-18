@@ -1033,11 +1033,11 @@
   "note": null,
   "model_line": -9.3,
   "flagged": "2026-10-06T05:34:07.146126-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 1.39,
+  "close": 12.5,
+  "clv": 1.0,
+  "final": "ARI 18 - LA 16"
  },
  {
   "id": "2026_06_LAC_KC:STRONG:spread:home",
@@ -1761,11 +1761,11 @@
   "note": null,
   "model_line": -9.2,
   "flagged": "2026-10-06T15:21:46.774410-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.43,
+  "close": 12.5,
+  "clv": -1.0,
+  "final": "ARI 18 - LA 16"
  },
  {
   "id": "2026_06_LAC_KC:LEAN:spread:home",
