@@ -9641,6 +9641,10 @@
   "model": -11.2,
   "grp": "FBS",
   "limit": -6.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -5.5,
+  "units": -0.5,
+  "final": "Navy 34 - UTSA 38"
  }
 ]
