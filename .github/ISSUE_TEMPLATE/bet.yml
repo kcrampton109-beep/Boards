@@ -1,0 +1,78 @@
+# "I took this" form: the boards open it pre-filled from a play; .github/workflows/mybets.yml records it in
+# <board>/board/mybets/<issue number>.json and closes the issue. Only the repo owner's issues are recorded.
+name: Log a bet
+description: Record a bet you placed (opened from a board's "I took this" button)
+title: "Bet: "
+body:
+  - type: markdown
+    attributes:
+      value: "Check the line, odds, sportsbook and amount match what you actually got, then submit. To change it later, edit this issue; to delete it, comment `remove`."
+  - type: input
+    id: board
+    attributes:
+      label: Board
+      description: CFB or NFL
+    validations:
+      required: true
+  - type: input
+    id: bet
+    attributes:
+      label: Bet
+      description: "What you bet, e.g. Texas Tech -14.5 or Under 47.5"
+    validations:
+      required: true
+  - type: input
+    id: line
+    attributes:
+      label: Line you got
+      description: "Your team's spread (e.g. -14.5 or +3) or the total (e.g. 47.5). Leave empty for a moneyline or teaser."
+  - type: input
+    id: odds
+    attributes:
+      label: Odds you got
+      description: "American odds, e.g. -110 or +105"
+    validations:
+      required: true
+  - type: input
+    id: book
+    attributes:
+      label: Sportsbook
+      description: DraftKings, FanDuel or BetMGM
+    validations:
+      required: true
+  - type: input
+    id: amount
+    attributes:
+      label: Amount bet ($)
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: Game
+  - type: input
+    id: kickoff
+    attributes:
+      label: Kickoff
+  - type: input
+    id: play
+    attributes:
+      label: Board play (leave as is)
+      description: "Links the bet to the board's play so it is graded automatically. game:<id> for another bet on a board game."
+  - type: dropdown
+    id: type
+    attributes:
+      label: Bet type (only for a bet that is not a board play)
+      options:
+        - From the board play
+        - Away team spread
+        - Home team spread
+        - Over
+        - Under
+        - Away team moneyline
+        - Home team moneyline
+      default: 0
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes

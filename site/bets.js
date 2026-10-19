@@ -19,6 +19,9 @@
     const stake = u => `${units(u)} · ${usd(u)}`;
     const facts = rows => `<div class="facts">${rows.filter(r => r[1]).map(([k, v]) => `<span>${k}</span><span>${v}</span>`).join("")}</div>`;
     const now = n => n ? `<div class="now ${n.kind}">${esc(n.text)}</div>` : "";
+    // "I took this" (MyBets form link, x.take) and the owner's logged bets on the play (x.mine: short descriptions)
+    const took = x => (x.mine && x.mine.length ? `<div class="b-mine">✓ You bet ${x.mine.map(esc).join("; ")}</div>` : "")
+      + (x.take ? `<a class="b-take" href="${esc(x.take)}" target="_blank" rel="noopener">${x.mine && x.mine.length ? "Log another bet on this" : "I took this"}</a>` : "");
 
     const betCard = b => `<article class="bet ${b.now ? b.now.kind : ""}">
         <div class="top"><span class="tag">${esc(b.label)}</span><span class="num">${stake(b.stake)}</span></div>
@@ -26,14 +29,14 @@
         <div class="price num"><b>${esc(b.odds)}</b> at <b>${esc(b.app)}</b></div>
         ${facts([["Game", esc(b.matchup)], ["Kickoff", esc(b.kickoff)], ["Playable to", `<span class="play-to">${esc(b.playTo)}</span>`],
                  ["Logged", esc(b.logged || "new: logs on the next check")]])}
-        ${now(b.now)}</article>`;
+        ${took(b)}${now(b.now)}</article>`;
     const pairCard = p => `<article class="bet ${p.now ? p.now.kind : ""}">
         <div class="top"><span class="tag">2-team teaser</span><span class="num">${stake(p.stake)}</span></div>
         <div class="legs">${p.legs.map(l => `<span>${esc(l.pick)}</span>`).join("")}</div>
         <div class="price num"><b>${esc(p.price)}</b></div>
         ${facts([["Games", p.legs.map(l => `${esc(l.matchup)} · ${esc(l.kickoff)}`).join("<br>")], ["Playable to", `<span class="play-to">${esc(p.playTo)}</span>`],
                  ["Logged", esc(p.logged || "new")]])}
-        ${now(p.now)}</article>`;
+        ${took(p)}${now(p.now)}</article>`;
 
     const open = (d.open || []).slice().sort((a, b) => String(a.sortKey || "").localeCompare(String(b.sortKey || "")));
     const gone = open.filter(b => b.now && b.now.kind === "gone"), active = open.filter(b => !(b.now && b.now.kind === "gone"));

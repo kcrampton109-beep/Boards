@@ -13,6 +13,12 @@ out.mkdir(parents=True, exist_ok=True)
 shutil.copy(B / "index.html", out / "index.html")
 shutil.copy(B / "state.json", out / "state.json")
 shutil.copy(B / "ledger.json", out / "ledger.json")   # full history for the Today / Results tabs
+# My Bets: the owner's logged bets (one file per bet, .github/workflows/mybets.yml) and the scores that grade them
+bets = sorted((json.loads(p.read_text(encoding="utf-8")) for p in (B / "mybets").glob("*.json")),
+              key=lambda b: (b.get("logged") or "", b.get("id") or 0))
+(out / "mybets.json").write_text(json.dumps(bets), encoding="utf-8")
+if (B / "scores.json").exists():
+    shutil.copy(B / "scores.json", out / "scores.json")
 
 st = json.loads((B / "state.json").read_text())
 memo_p = B / "notified.json"

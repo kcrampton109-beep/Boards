@@ -50,10 +50,12 @@
         <div class="pick">${esc(r.pick)}</div>
         <div class="price num"><b>${esc(r.odds)}</b> at <b>${esc(r.app)}</b></div>
         <div class="facts">${facts.map(([k, v]) => `<span>${k}</span><span>${v}</span>`).join("")}</div>
+        ${r.mine && r.mine.length ? `<div class="b-mine">✓ You bet ${r.mine.map(esc).join("; ")}</div>` : ""}
+        ${r.take ? `<a class="b-take" href="${esc(r.take)}" target="_blank" rel="noopener">${r.mine && r.mine.length ? "Log another bet on this" : "I took this"}</a>` : ""}
         ${result ? `<div class="now ${result.kind}">${esc(result.text)}</div>` : ""}</article>`;
     };
     const draw = () => {
-      const rows = d.rows.filter(r => r.date === day && (scope === "all" || r.money)).sort(bySort);
+      const rows = d.rows.filter(r => r.date === day && r.tier !== "MINE" && (scope === "all" || r.money)).sort(bySort);
       const s = stats(rows), open = rows.filter(r => r.status === "open").length;
       el.innerHTML = `<div class="trk">
         <div class="trk-nav">

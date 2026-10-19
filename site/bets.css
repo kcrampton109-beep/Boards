@@ -39,3 +39,9 @@
 .bets .res { display: inline-block; min-width: 22px; text-align: center; font-weight: 700; font-size: 12px; padding: 2px 6px; border-radius: 4px; background: var(--soft) }
 .bets .res.W { background: var(--win); color: var(--card) } .bets .res.L { background: var(--loss); color: var(--card) }
 .bets .pos { color: var(--win) } .bets .neg { color: var(--loss) }
+/* My Bets hooks on every card (site/mybets.js) */
+.b-take { justify-self: start; display: inline-block; font: 600 13px/1 "Public Sans", system-ui, sans-serif; padding: 9px 12px; border-radius: 8px;
+          border: 1px solid var(--ink); color: var(--ink); background: var(--card); text-decoration: none }
+.b-take:hover, .b-take:focus-visible { background: var(--ink); color: var(--card); outline: none }
+.b-mine { font-size: 13px; font-weight: 600; color: var(--win) }
+.bets p a { color: var(--ink) }

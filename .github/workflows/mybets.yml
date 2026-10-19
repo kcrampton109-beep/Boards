@@ -1,0 +1,57 @@
+# My Bets: record a bet from a "Log a bet" issue (opened by a board's "I took this" button), reply, close the issue
+# and republish that board's mybets.json. Only the repo owner's issues and comments are acted on (the repo is public).
+# Edit the issue to change a bet; comment "remove" to delete it.
+name: Log my bet
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created]
+permissions:
+  contents: write
+  issues: write
+jobs:
+  log:
+    if: >-
+      startsWith(github.event.issue.title, 'Bet') && contains(github.event.issue.body, '### Odds you got') &&
+      github.event.issue.user.login == github.repository_owner &&
+      (github.event_name == 'issues' ||
+       (github.event.comment.user.login == github.repository_owner && contains(github.event.comment.body, 'remove')))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: America/New_York
+    steps:
+      - uses: actions/checkout@v4
+      - id: rec
+        name: Record the bet
+        run: python tools/log_bet.py
+      - name: Save it
+        if: steps.rec.outputs.ok == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A "${{ steps.rec.outputs.board }}/board/mybets"
+          if ! git diff --cached --quiet; then
+            git commit -q -m "My bets: issue #${{ github.event.issue.number }}"
+            for i in 1 2 3 4 5; do   # a board run may have pushed first: rebase onto it and retry
+              git pull -q --rebase origin main && git push -q origin HEAD:main && break
+              [ "$i" = 5 ] && exit 1; sleep $((i * 5))
+            done
+          fi
+      - name: Publish My Bets
+        if: steps.rec.outputs.ok == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python tools/log_bet.py --combine "${{ steps.rec.outputs.board }}" _mb
+          bash tools/publish_site.sh "${{ steps.rec.outputs.board }}" _mb
+      - name: Reply on the issue
+        if: always() && steps.rec.outcome != 'skipped'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --body-file _mybets_reply.md
+          if [ "${{ steps.rec.outputs.close }}" = "true" ] && [ "${{ github.event.issue.state }}" = "open" ]; then
+            gh issue close "${{ github.event.issue.number }}"
+          fi

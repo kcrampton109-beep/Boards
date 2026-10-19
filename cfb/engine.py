@@ -599,6 +599,20 @@ def watchdog(t0, limit=900):
     threading.Thread(target=run, daemon=True).start()
 
 
+def write_scores(ml):
+    """Final scores + closing lines of this season's finished games (board/scores.json): the My Bets tab grades the
+    user's own bets with them, at the user's own line."""
+    seen = load_json(SEEN, {})
+    out = {}
+    for r in ml[(ml["completed"] == True) & ml["home_pts"].notna()].itertuples():
+        c = seen.get(str(r.game_id), {})
+        cs = c.get("sp_home") if c.get("sp_home") is not None else (None if pd.isna(r.close) else float(r.close))
+        ct = c.get("tot") if c.get("tot") is not None else (None if pd.isna(r.tclose) else float(r.tclose))
+        out[str(r.game_id)] = dict(away=r.away, home=r.home, away_pts=int(r.away_pts), home_pts=int(r.home_pts),
+                                   close_spread=cs, close_total=ct)
+    save_json(BOARD / "scores.json", out)
+
+
 def main(force_refresh=False, dry=False):
     log = BOARD / "engine.log"
     t0 = time.time()
@@ -634,6 +648,7 @@ def main(force_refresh=False, dry=False):
         fl = flags(games, sit)
         led = load_json(LEDGER, []) if dry else update_ledger(fl, games, ml, live)
         st = write_state(games, fl, led, live_ok)
+        write_scores(ml)
         msg = (f"{now_et():%Y-%m-%d %H:%M} ok refreshed={refreshed} games={len(games)} plays="
                f"{sum(f['tier'] in ('STRONG', 'FCS') for f in fl)} ({time.time() - t0:.0f}s)")
     except Exception:

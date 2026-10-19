@@ -770,6 +770,10 @@ def main(args=()):
                  ledger=ledger, td=sheet, injuries=inj_rows, ratings=ratings, rlm=rlm_list,
                  qbs={t: q for t, q in qbs.items()}, new_ids=[e["id"] for e in new])
     save_json(STATE, clean(state))
+    # final scores + closing lines (board/scores.json): the My Bets tab grades the user's own bets at their own line
+    save_json(BOARD / "scores.json", clean({str(gid): dict(f, close_spread=(seen.get(gid) or {}).get("close_spread"),
+                                                          close_total=(seen.get(gid) or {}).get("close_total"))
+                                            for gid, f in results.items()}))
     save_json(LEDGER, clean(ledger))
     save_json(SEEN, clean(seen))
     save_json(CACHE, clean(cache))
