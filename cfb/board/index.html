@@ -140,9 +140,9 @@ const BOOKN = { DK: "DraftKings", FD: "FanDuel", MGM: "BetMGM" };
 const TIER = {
   STRONG: { name: "Strong plays", code: "S", note: "FBS and FBS-vs-FCS games where the model differs from your best book by 7+ points. Backtest: 55.5% against the opening line (485 bets, 2021-26)." },
   FCS: { name: "FCS plays", code: "F", note: "FCS-vs-FCS games, model gap 5+ points. DraftKings and FanDuel only. Backtest: 58.2% against the opener (557 bets). Paper-only until they earn a record." },
-  WEATHER: { name: "Weather unders", code: "W", note: "Forecast wind 15+ mph at kickoff. Backtest: unders hit 56.6-59% against the closing total in both 2014-19 and 2020-26." },
+  WEATHER: { name: "Weather unders", code: "W", note: "Forecast wind 18+ mph at kickoff, logged only within 24 hours of kickoff (since Oct 19; it was 15+ mph within 48 hours, and forecasts that far out ran windy). Backtest, using wind measured at kickoff: unders hit 56.6-59% against the closing total in both 2014-19 and 2020-26." },
   LEAN: { name: "Leans", code: "L", note: "Smaller gaps (FBS 5-7, FCS 3-5) or games the model knows too little about. Logged at 0.5u (FCS leans with a 4+ point gap: 1u)." },
-  RESEARCH: { name: "Research", code: "R", note: "Totals, moneyline alternatives and near-miss weather. Untested or unproven markets, logged small: model-total unders 1u, overs and near-miss wind 0.5u, moneyline alts 0.25u." },
+  RESEARCH: { name: "Research", code: "R", note: "Totals, moneyline alternatives and near-miss weather (forecast wind 15-18 mph, or 24-48 hours before kickoff). Untested or unproven markets, logged small: model-total unders 1u, overs and near-miss wind 0.5u, moneyline alts 0.25u." },
   ANGLE: { name: "Angles", code: "A", note: "The only two situations that beat the closing line in both 2014-19 and 2020-25. Shown as context, not logged." },
 };
 // Bets tab: the plays to put money on, $ at this unit size

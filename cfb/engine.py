@@ -32,7 +32,7 @@ LEDGER = BOARD / "ledger.json"
 STATE = BOARD / "state.json"
 SEEN = BOARD / "lines_seen.json"
 RULES = dict(strong_fbs=7.0, strong_fcs=5.0, lean_fbs=5.0, lean_fcs=3.0, tot_fcs=5.0, tot_fbs=9.0,
-             ml_ev=0.06, worst_odds=-125, margin_sd=15.5, wind_under=15.0,
+             ml_ev=0.06, worst_odds=-125, margin_sd=15.5, wind_under=18.0, wind_hours=24.0,
              stale_pts=3.0)  # a book this far off the market is treated as a stale, unbettable line
 TIER_RANK = {"RESEARCH": 0, "LEAN": 1, "STRONG": 2, "FCS": 2, "WEATHER": 2}
 BACKTEST = {  # median-open results 2021-25 (+2026 YTD), research/opener.py
@@ -426,13 +426,16 @@ def flags(games, sit):
                     out.append(dict(game_id=g["game_id"], market="total", side=side, pick=f"{side.title()} {line:g}",
                                     team=None, line=line, odds=odds, book=book, edge=round(edge, 1), tier="RESEARCH",
                                     grp=g["grp"], model=round(g["model_total"], 1)))
-        # weather: wind 15+ mph at kickoff -> under (backtest: 56.6-59% vs close, both periods)
+        # weather -> under. Backtest (56.6-59% vs close) used wind MEASURED at kickoff; the board only has forecasts, which
+        # run windy 1-2 days out (Oct 15-17: 31 plays on 15-18 mph forecasts went 14-17). Since Oct 19 a WEATHER play
+        # needs an 18+ mph forecast within 24 h of kickoff; 15+ mph or 24-48 h out is logged as near-miss research.
         wx = g.get("wx")
-        if wx and wx["wind"] >= RULES["wind_under"] - 3:
+        if wx and wx["wind"] >= 15.0:
             b = best(g["books"], "tot", "under_odds", higher_better=True)
             if b:
                 line, odds, book = b
-                tier = "WEATHER" if wx["wind"] >= RULES["wind_under"] else "RESEARCH"
+                hrs = (g["kickoff"] - now_et()).total_seconds() / 3600
+                tier = "WEATHER" if wx["wind"] >= RULES["wind_under"] and hrs <= RULES["wind_hours"] else "RESEARCH"
                 out.append(dict(game_id=g["game_id"], market="total", side="under", pick=f"Under {line:g} (wind {wx['wind']:.0f} mph)",
                                 team=None, line=line, odds=odds, book=book, edge=round(wx["wind"], 1), tier=tier,
                                 grp=g["grp"], model=None))
