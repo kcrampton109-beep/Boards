@@ -1,0 +1,23 @@
+{
+ "id": 1,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/1",
+ "board": "NFL",
+ "pick": "CIN  3",
+ "odds": -125,
+ "book": "BetMGM",
+ "amount": 15.0,
+ "notes": "",
+ "matchup": "CIN @ BAL",
+ "kickoff": "2026-10-25T13:00:00-04:00",
+ "play": "2026_07_CIN_BAL:STRONG:spread:away",
+ "logged": "2026-10-19T22:32:47Z",
+ "updated": "2026-10-19T22:32:55+00:00",
+ "tier": "STRONG",
+ "game_id": "2026_07_CIN_BAL",
+ "board_line": 3.5,
+ "board_odds": -110,
+ "board_book": "DK",
+ "market": "spread",
+ "side": "away",
+ "line": 3.0
+}
