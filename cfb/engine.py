@@ -137,21 +137,30 @@ def ratings(g):
 
 # ---------------------------------------------------------------- 2. live prices
 def fetch_live():
-    games = []
-    for div in ("FBS", "FCS"):
-        for attempt in range(3):  # retry: a run right after wake can beat the network
+    def an(div, **extra):
+        for attempt in range(3):  # retry: the network can hiccup
             try:
-                r = requests.get(AN, params={"bookIds": ALLB, "periods": "event,firsthalf", "division": div},
+                r = requests.get(AN, params={"bookIds": ALLB, "periods": "event,firsthalf", "division": div, **extra},
                                  headers={"User-Agent": "Mozilla/5.0"}, timeout=60)
                 r.raise_for_status()
-                break
+                return r.json().get("games", [])
             except Exception:
                 if attempt == 2:
                     raise
                 time.sleep(30)
-        for gm in r.json().get("games", []):
+    games = []
+    for div in ("FBS", "FCS"):
+        cur = an(div)
+        for gm in cur:
             gm["_div"] = div
-            games.append(gm)
+        games += cur
+        # Saturday night Action Network keeps the finished week as "current" until about 5 AM Sunday, so next week's
+        # openers would be missed for hours: once nothing is left to play, also fetch next week (marked _next)
+        if cur and not any(g.get("status") == "scheduled" for g in cur):
+            nxt = an(div, week=max(g.get("week") or 0 for g in cur) + 1)
+            for gm in nxt:
+                gm["_div"], gm["_next"] = div, True
+            games += nxt
     return games
 
 
@@ -189,7 +198,8 @@ def parse_live(games, ml, tmap):
         if r is None:
             continue
         same = ah == r.home_id
-        rec = dict(game_id=r.game_id, an_id=gm["id"], status=gm.get("status"), kickoff=start, div=gm["_div"])
+        rec = dict(game_id=r.game_id, an_id=gm["id"], status=gm.get("status"), kickoff=start, div=gm["_div"],
+                   next=bool(gm.get("_next")))
         for bid, mk in (gm.get("markets") or {}).items():
             bid = int(bid)
             ev_ = mk.get("event") or {}
@@ -328,6 +338,8 @@ def price(ml, live):
     cons = live[live["book"] == 15].set_index("game_id")
     rows = []
     for gid, d in up.groupby("game_id"):
+        if "next" in d and d["next"].any() and (d["sp_home"].notna().sum() if "sp_home" in d else 0) < 2:
+            continue  # next week's game posted at only one of the user's books: a look-ahead line, not bettable yet
         r0 = d.iloc[0]
         grp = "FCS-FCS" if (r0.home_cls == "fcs" and r0.away_cls == "fcs") else ("FBS-FCS" if "fcs" in (r0.home_cls, r0.away_cls) else "FBS")
         model_line = -r0.blend if pd.notna(r0.blend) else np.nan
@@ -589,7 +601,14 @@ def main(force_refresh=False, dry=False):
     t0 = time.time()
     watchdog(t0)
     try:
-        refreshed = refresh(force_refresh)
+        try:
+            refreshed = refresh(force_refresh)
+        except Exception as e:
+            if not (BOARD / "model_lines.parquet").exists():
+                raise
+            refreshed = False
+            with log.open("a") as fh:
+                fh.write(f"{now_et():%Y-%m-%d %H:%M} refresh failed, priced with the last good data: {str(e)[:160]}\n")
         ml = pd.read_parquet(BOARD / "model_lines.parquet")
         ml["start"] = pd.to_datetime(ml["start"], utc=True)
         live_ok = True

@@ -1,10 +1,11 @@
 # Monday 9 AM Eastern: rebuild both Excel workbooks from the boards as published and put them on the site
 # (CFB_Model_2026.xlsx and NFL_weekly.xlsx, linked from each board). No data refresh, no alerts.
-# 13:00 UTC = 9 AM Eastern until Nov 1 (8 AM after clocks fall back).
+# 9 AM Eastern all season: 13:00 UTC while on daylight time, 14:00 UTC on standard time (gate job picks).
 name: Monday workbooks
 on:
   schedule:
     - cron: "0 13 * * 1"
+    - cron: "0 14 * * 1"
   push:   # changes to the workbook code run straight away
     branches: [main]
     paths: [".github/workflows/workbooks.yml", "cfb/workbook.py"]
@@ -17,7 +18,24 @@ permissions:
 env:
   TZ: America/New_York
 jobs:
+  gate:   # the cron that matches today's Eastern offset runs; the other exits (manual runs always go)
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.g.outputs.go }}
+    steps:
+      - id: g
+        run: |
+          off=$(TZ=America/New_York date +%z)
+          sched="${{ github.event.schedule }}"
+          go=false
+          if [ "${{ github.event_name }}" != "schedule" ]; then go=true
+          elif [ "$sched" = "0 13 * * 1" ] && [ "$off" = "-0400" ]; then go=true
+          elif [ "$sched" = "0 14 * * 1" ] && [ "$off" = "-0500" ]; then go=true
+          fi
+          echo "go=$go" >> "$GITHUB_OUTPUT"; echo "schedule '$sched', Eastern offset $off -> go=$go"
   workbooks:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:

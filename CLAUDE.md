@@ -14,14 +14,19 @@ matter more than win-loss; judge changes by CLV first. Ask the owner before chan
 
 | Workflow | When (cron is UTC) | What |
 | --- | --- | --- |
-| `cfb.yml` | :07 and :37 hourly; plan step applies ET rules (engine every 30 min Sun/Mon else hourly; snapshots 30 min Fri/Sat) | snapshot, engine, ledger commit, publish, ntfy |
-| `cfb-weekly.yml` | Sun 12:45 | forced refresh, report + workbook, ntfy report |
-| `nfl.yml` | :17 and :47 | snapshot, engine, ledger commit, publish, ntfy |
-| `nfl-weekly.yml` | Tue 13:30 | recap + workbook, ntfy |
-| `workbooks.yml` | Mon 13:00 | both workbooks rebuilt from the published boards |
+| `cfb.yml` | :07 and :37 hourly + every 15 min Sun 8-14 UTC (openers); plan step: snapshots 30 min Fri/Sat else hourly | snapshot, engine, ledger commit, publish, ntfy |
+| `cfb-weekly.yml` | Sun 8:45 AM ET (12:45 UTC EDT / 13:45 EST, gate job picks) | forced refresh, report + workbook, ntfy report |
+| `nfl.yml` | :17 and :47 + :02/:32 Tue 18-21 UTC (FanDuel posts next week ~2:40 PM ET Tuesday) | snapshot, engine, ledger commit, publish, ntfy |
+| `nfl-weekly.yml` | Tue 9:30 AM ET (13:30 / 14:30 UTC, gate) | recap + workbook, ntfy |
+| `workbooks.yml` | Mon 9 AM ET (13:00 / 14:00 UTC, gate) | both workbooks rebuilt from the published boards |
 | `net-check.yml` | manual | can GitHub reach every data source? |
 
-Weekly crons are fixed UTC: after Nov 1 (EST) they fire an hour earlier in Eastern time.
+GitHub skips some scheduled runs under load (~1 in 8 in week 1), so gaps of ~1 h happen. Keep Pages publishes under
+~10 an hour (GitHub's soft limit for branch-based Pages builds): each engine run publishes once.
+
+When lines post (measured Oct 2026): NFL DraftKings + opener right after Monday Night Football (Tue 4-10 AM ET),
+FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Action Network flips to the new week about
+5 AM Sunday; the engine also fetches next week once no games are left to play (Saturday night).
 
 ## Board rules worth knowing
 - **Bets tab** (both pages) is drawn by the shared `site/bets.js` + `site/bets.css` (published at the site root, loaded as

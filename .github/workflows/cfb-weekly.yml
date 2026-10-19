@@ -1,10 +1,11 @@
 # Sunday weekly refresh: Saturday's results, re-rate every team, grade the ledger, price the new week,
 # write the report + Excel workbook (published next to the board), and send the report to the phone.
-# 12:45 UTC = 8:45 AM Eastern until Nov 1 (7:45 AM after clocks fall back).
+# 8:45 AM Eastern all season: 12:45 UTC while on daylight time, 13:45 UTC on standard time (gate job picks).
 name: CFB weekly refresh
 on:
   schedule:
     - cron: "45 12 * * 0"
+    - cron: "45 13 * * 0"
   workflow_dispatch:
 concurrency:
   group: cfb   # one run at a time per board; boards publish independently (tools/publish_site.sh)
@@ -16,7 +17,24 @@ env:
   NTFY_TOPIC: boards-pk9lpcuxti4v
   BOARD_URL: https://kcrampton109-beep.github.io/Boards/cfb/
 jobs:
+  gate:   # the cron that matches today's Eastern offset runs; the other exits (manual runs always go)
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.g.outputs.go }}
+    steps:
+      - id: g
+        run: |
+          off=$(TZ=America/New_York date +%z)
+          sched="${{ github.event.schedule }}"
+          go=false
+          if [ "${{ github.event_name }}" != "schedule" ]; then go=true
+          elif [ "$sched" = "45 12 * * 0" ] && [ "$off" = "-0400" ]; then go=true
+          elif [ "$sched" = "45 13 * * 0" ] && [ "$off" = "-0500" ]; then go=true
+          fi
+          echo "go=$go" >> "$GITHUB_OUTPUT"; echo "schedule '$sched', Eastern offset $off -> go=$go"
   weekly:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     defaults:

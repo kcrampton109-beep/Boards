@@ -1,9 +1,11 @@
 # NFL Game Day Board: snapshot lines, run the model engine, publish the board, alert the phone about new plays.
-# Same timing as the laptop tasks: engine + snapshots every 30 minutes, every day.
+# Engine + snapshots every 30 minutes, every day, and every 15 min on Tuesday 18-21 UTC (about 2-6 PM Eastern), when
+# FanDuel posts next week's lines (Oct 6 and Oct 13 both at 2:40 PM ET).
 name: NFL board
 on:
   schedule:
     - cron: "17,47 * * * *"
+    - cron: "2,32 18-21 * * 2"   # Tuesday opener window (with :17 and :47 above, a run every 15 min)
   push:   # my code changes run straight away (the workflow's own commits never trigger runs)
     branches: [main]
     paths: [".github/actions/nfl-setup/**", ".github/workflows/nfl.yml", "nfl/*.py", "nfl/requirements.txt", "nfl/page/**", "site/**", "tools/**"]

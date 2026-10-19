@@ -1,11 +1,12 @@
 # CFB Play Card: snapshot lines, run the model engine, publish the board, alert the phone about new plays.
-# Same timing as the laptop tasks: engine every 30 min Sun/Mon (when openers post) and hourly otherwise;
-# line snapshots every 30 min Fri/Sat and hourly otherwise. Cron is UTC, so the Eastern-time rules are applied in "plan".
+# Engine every 30 min every day, and every 15 min on Sunday 8-14 UTC (about 4-10 AM Eastern) when next week's openers
+# post; line snapshots every 30 min Fri/Sat and hourly otherwise. Cron is UTC; Eastern-time rules are applied in "plan".
 name: CFB board
 on:
   schedule:
     - cron: "7 * * * *"
     - cron: "37 * * * *"
+    - cron: "*/15 8-14 * * 0"   # Sunday opener window: engine only
   push:   # my code changes run straight away (the workflow's own commits never trigger runs)
     branches: [main]
     paths: [".github/**", "cfb/*.py", "cfb/requirements.txt", "cfb/board/index.html", "site/**", "tools/**"]
@@ -38,11 +39,12 @@ jobs:
         run: |
           dow=$(date +%u)   # 1 Mon ... 7 Sun, Eastern because of TZ
           half=${{ github.event_name == 'schedule' && github.event.schedule == '37 * * * *' }}
+          window=${{ github.event_name == 'schedule' && github.event.schedule == '*/15 8-14 * * 0' }}
           engine=true; snap=true
           if [ "$half" = "true" ]; then
-            case "$dow" in 7|1) ;; *) engine=false ;; esac
             case "$dow" in 5|6) ;; *) snap=false ;; esac
           fi
+          if [ "$window" = "true" ]; then snap=false; fi
           echo "engine=$engine" >> "$GITHUB_OUTPUT"; echo "snap=$snap" >> "$GITHUB_OUTPUT"
           echo "engine=$engine snap=$snap (weekday $dow, half-hour run: $half)"
       - id: setup

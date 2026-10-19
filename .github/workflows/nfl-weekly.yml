@@ -1,10 +1,11 @@
 # Tuesday weekly refresh: grade last week's plays, price the new week, write the recap + Excel workbook
 # (published next to the board as NFL_weekly.xlsx) and send the recap to the phone.
-# 13:30 UTC = 9:30 AM Eastern until Nov 1 (8:30 AM after clocks fall back).
+# 9:30 AM Eastern all season: 13:30 UTC while on daylight time, 14:30 UTC on standard time (gate job picks).
 name: NFL weekly refresh
 on:
   schedule:
     - cron: "30 13 * * 2"
+    - cron: "30 14 * * 2"
   workflow_dispatch:
 concurrency:
   group: nfl   # one run at a time per board; boards publish independently (tools/publish_site.sh)
@@ -16,7 +17,24 @@ env:
   NTFY_TOPIC: boards-pk9lpcuxti4v
   BOARD_URL: https://kcrampton109-beep.github.io/Boards/nfl/
 jobs:
+  gate:   # the cron that matches today's Eastern offset runs; the other exits (manual runs always go)
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.g.outputs.go }}
+    steps:
+      - id: g
+        run: |
+          off=$(TZ=America/New_York date +%z)
+          sched="${{ github.event.schedule }}"
+          go=false
+          if [ "${{ github.event_name }}" != "schedule" ]; then go=true
+          elif [ "$sched" = "30 13 * * 2" ] && [ "$off" = "-0400" ]; then go=true
+          elif [ "$sched" = "30 14 * * 2" ] && [ "$off" = "-0500" ]; then go=true
+          fi
+          echo "go=$go" >> "$GITHUB_OUTPUT"; echo "schedule '$sched', Eastern offset $off -> go=$go"
   weekly:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     defaults:

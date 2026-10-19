@@ -20,11 +20,21 @@ def get(path, refresh=False, **params):
     f = RAW / _name(path, params)
     if f.exists() and not refresh:
         return json.loads(f.read_text(encoding="utf-8"))
-    r = requests.get(BASE + path, params=params, timeout=120,
-                     headers={"Authorization": f"Bearer {KEY}", "Accept": "application/json"})
-    left = r.headers.get("X-CallLimit-Remaining")
-    with LOG.open("a") as fh:
-        fh.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')}\t{r.status_code}\t{left}\t{path}\t{params}\n")
+    for attempt in range(4):   # CFBD returns 502/504 at busy times (Saturday night, Sunday morning): retry with backoff
+        try:
+            r = requests.get(BASE + path, params=params, timeout=120,
+                             headers={"Authorization": f"Bearer {KEY}", "Accept": "application/json"})
+        except (requests.ConnectionError, requests.Timeout):
+            if attempt == 3:
+                raise
+            time.sleep(20 * (attempt + 1))
+            continue
+        left = r.headers.get("X-CallLimit-Remaining")
+        with LOG.open("a") as fh:
+            fh.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')}\t{r.status_code}\t{left}\t{path}\t{params}\n")
+        if r.status_code < 500 or attempt == 3:
+            break
+        time.sleep(20 * (attempt + 1))
     r.raise_for_status()
     data = r.json()
     f.write_text(json.dumps(data), encoding="utf-8")
