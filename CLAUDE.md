@@ -34,6 +34,14 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   CFB STRONG, FCS, WEATHER; NFL STRONG, WEATHER + 2-team teasers (legs paired in logging order, different games).
   Change the `BET` list at the top of each page's script if the owner changes what they bet; `UNIT = 10` is $ per unit.
   Every bet shows a playable-to number (ledger `limit`, stored since Oct 13; older entries rebuild it from the logged model).
+- **Today + Results tabs** (both pages): shared `site/track.js` + `site/track.css`. Each page builds `trackRows` from the
+  full ledger (`ledger.json`, published next to `state.json` by `sync_prep.py` / `weekly.py`; state.json only carries recent
+  entries) placed on the game's Eastern date (CFB `kickoff`, NFL `kickoff_iso`; NFL teaser legs are paired into 2-team
+  teaser rows exactly like the engine's record). Results = tier chips, period tiles, month calendar (green/red by units,
+  signed value always printed), by-week table; tap a day/week for its plays. Prefix shared class names (`b-`, `t-`,
+  `trk-`): the pages' own `.rec`, `.empty`, `.tag` rules leak into generic names.
+- **Wind unders** (both boards): forecast 18+ mph within 24 h of kickoff (owner's call, Oct 19; was 15+ mph up to 2-4 days
+  out). CFB logs 15+ mph or 24-48 h as near-miss RESEARCH.
 - Pages hide inactive tab panels with `hidden`; keep the `[hidden] { display: none !important }` rule (panel CSS beats it).
 - **NFL look-ahead**: a next-week game counts once 2 of DK/FD/MGM have posted it (DraftKings posts look-ahead lines
   days early). Before that its plays are shown labelled "Look-ahead" but never logged, alerted or put on the Bets tab.
