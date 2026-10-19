@@ -12,7 +12,8 @@ Rules come from the backtest (research/r1-r8):
   SIZING (2026-10-06, user switched to sized bets): strong 3-4 pt edge 1u, 4-6 pts 1.5u, 6+ pts 2u; lean 0.5u;
                  weather and teaser pairs 1u; tracked tiers (RLM, TREND, TD) 1u. Bands from 2008-25 win rate by edge
                  (57.5% / 61.5% / ~70%; leans ~54%).
-  WEATHER under  forecast wind 15+ mph at an open-air stadium: unders 56-60% vs the CLOSING total in every era
+  WEATHER under  forecast wind 18+ mph within 24 h of kickoff at an open-air stadium (since 2026-10-19; was 15+ up to 4
+                 days out, and forecasts that far out run windy): unders 56-60% vs the CLOSING total in every era
   TEASER legs    6-pt teaser underdogs +1.5..+2.5 with a total of 49.5 or less: legs won 75-78% (73.9% needed at -120)
   RLM (tracked)  the user's rule: 57%+ of bets on one side and the CBS line moved 1+ pt from its open the other way.
                  Backtest 2018-25 at the closing line: 49% - shown and tracked, not a play.
@@ -36,7 +37,7 @@ STATE = BOARD / "state.json"
 SEEN = BOARD / "lines_seen.json"
 CACHE = BOARD / "cache.json"
 BOOKN = {"DK": "DraftKings", "FD": "FanDuel", "MGM": "BetMGM"}
-RULES = dict(strong=3.0, lean=2.0, wind_under=15.0, teaser_lo=1.5, teaser_hi=2.5, teaser_total_max=49.5, rlm_tix=57.0,
+RULES = dict(strong=3.0, lean=2.0, wind_under=18.0, wind_hours=24.0, teaser_lo=1.5, teaser_hi=2.5, teaser_total_max=49.5, rlm_tix=57.0,
              rlm_move=1.0, td_value=0.05, td_min_prob=0.15, resid_sd=13.3)
 FEATS = ["mkt_margin", "pts_margin", "epa_margin", "qb_exp", "rest_diff"]
 TFEATS = ["mkt_total", "pts_total", "epa_off_sum"]
@@ -542,6 +543,10 @@ def main(args=()):
     cache = load_json(CACHE, {})
     seen = load_json(SEEN, {})
     ledger = load_json(LEDGER, [])
+    starts = dict(zip(cur["game_id"], cur["start"]))
+    for e in ledger:   # entries logged before Oct 19 have only a display kickoff: add the exact one
+        if not e.get("kickoff_iso") and e.get("game_id") in starts:
+            e["kickoff_iso"] = pd.Timestamp(starts[e["game_id"]]).isoformat()
     have = {e["id"] for e in ledger if e.get("status") != "void"}   # a voided play can log again later
 
     # results for grading (Action Network finals; nflverse scores as a fallback)
@@ -649,7 +654,8 @@ def main(args=()):
         sp = spread_play(gm, bp, qbs)
         if sp:
             plays.append(dict(sp, game_id=r.game_id))
-        if wx and wx.get("wind") is not None and wx["wind"] >= RULES["wind_under"] and bp.get("under"):
+        if (wx and wx.get("wind") is not None and wx["wind"] >= RULES["wind_under"] and bp.get("under")
+                and r.start - now <= pd.Timedelta(hours=RULES["wind_hours"])):
             u = bp["under"]
             plays.append(dict(tier="WEATHER", market="total", side="under", team=None, line=u["line"], odds=u["odds"],
                               book=u["book"], edge=wx["wind"], pick=f"Under {u['line']:g} ({wx['wind']:.0f} mph wind)",
@@ -718,7 +724,7 @@ def main(args=()):
         e = dict(id=pid, tier=p["tier"], market=p["market"], side=p.get("side"), team=p.get("team"), pid=p.get("pid"),
                  game_id=p["game_id"], week=gm["week"], matchup=gm["matchup"], kickoff=gm["kickoff"], pick=p["pick"],
                  line=p["line"], odds=p["odds"], book=p["book"], stake=p["stake"], edge=p.get("edge"), note=p.get("note"), limit=p.get("limit"),
-                 model_line=gm["model_line"], flagged=now.isoformat(), status="open", units=None, close=None, clv=None, final=None)
+                 model_line=gm["model_line"], flagged=now.isoformat(), kickoff_iso=gm["kickoff_iso"], status="open", units=None, close=None, clv=None, final=None)
         ledger.append(e)
         have.add(pid)
         new.append(e)

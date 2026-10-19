@@ -95,6 +95,8 @@ tr.flag td:first-child { box-shadow: inset 3px 0 0 var(--gold) }
 </style>
 <link rel="stylesheet" href="../bets.css">
 <script src="../bets.js"></script>
+<link rel="stylesheet" href="../track.css">
+<script src="../track.js"></script>
 
 <div class="wrap">
   <header>
@@ -120,6 +122,8 @@ tr.flag td:first-child { box-shadow: inset 3px 0 0 var(--gold) }
   <nav class="tabs" role="tablist" aria-label="Board sections">
     <button class="tab" role="tab" id="t-plays" aria-selected="true" data-tab="plays">Plays</button>
     <button class="tab" role="tab" id="t-bets" aria-selected="false" data-tab="bets">Bets</button>
+    <button class="tab" role="tab" id="t-today" aria-selected="false" data-tab="today">Today</button>
+    <button class="tab" role="tab" id="t-results" aria-selected="false" data-tab="results">Results</button>
     <button class="tab" role="tab" id="t-games" aria-selected="false" data-tab="games">All games</button>
     <button class="tab" role="tab" id="t-records" aria-selected="false" data-tab="records">Records</button>
     <button class="tab" role="tab" id="t-ratings" aria-selected="false" data-tab="ratings">Ratings</button>
@@ -128,6 +132,8 @@ tr.flag td:first-child { box-shadow: inset 3px 0 0 var(--gold) }
 
   <section class="panel" id="p-plays" role="tabpanel" aria-labelledby="t-plays"></section>
   <section class="panel" id="p-bets" role="tabpanel" aria-labelledby="t-bets" hidden></section>
+  <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today" hidden></section>
+  <section class="panel" id="p-results" role="tabpanel" aria-labelledby="t-results" hidden></section>
   <section class="panel" id="p-games" role="tabpanel" aria-labelledby="t-games" hidden></section>
   <section class="panel" id="p-records" role="tabpanel" aria-labelledby="t-records" hidden></section>
   <section class="panel" id="p-ratings" role="tabpanel" aria-labelledby="t-ratings" hidden></section>
@@ -162,11 +168,12 @@ function favText(g, l) { // home-spread convention -> "Team −x"
 }
 
 async function load() {
-  try {
-    const r = await fetch("state.json", { cache: "no-store" });
-    if (r.ok) return await r.json();
-  } catch (e) {}
-  try { return JSON.parse(document.getElementById("seed").textContent); } catch (e) { return {}; }
+  let S = {};
+  try { const r = await fetch("state.json", { cache: "no-store" }); if (r.ok) S = await r.json(); } catch (e) {}
+  if (!S.games) { try { S = JSON.parse(document.getElementById("seed").textContent); } catch (e) {} }
+  // full play history for the Today / Results tabs (state.json carries only the recent part)
+  try { const r = await fetch("ledger.json", { cache: "no-store" }); if (r.ok) S.fullLedger = await r.json(); } catch (e) {}
+  return S;
 }
 
 function render(S) {
@@ -208,7 +215,7 @@ function render(S) {
   document.getElementById("bandcount").textContent = `${bandPlays.length} play${bandPlays.length === 1 ? "" : "s"}`;
   document.getElementById("bandgrid").innerHTML = bandPlays.length ? bandPlays.map(p =>
     `<a class="cell" href="#${esc(p.code)}"><span class="code ${p.tier}">${p.code}</span><span class="pk">${esc(p.pick)}</span><span class="px num"><b>${stk(p)}u</b> · ${odds(p.odds)} ${BOOKN[p.book] || p.book || ""}${p.provisional ? " · provisional" : ""}</span></a>`).join("")
-    : `<div class="empty">No plays at current prices. Openers for next week usually post Sunday afternoon; the board checks every 30 minutes.</div>`;
+    : `<div class="empty">No plays at current prices. Openers for next week usually post early Sunday morning; the board checks every 15-30 minutes.</div>`;
 
   // plays panel
   const tagsBy = {};
@@ -288,6 +295,23 @@ function render(S) {
     emptyOpen: "No open bets. Openers for next week post late Saturday night to early Sunday morning; a phone alert goes out within about 30 minutes of a play appearing.",
   });
 
+  // Today + Results tabs (shared ../track.js): every logged play on its game's Eastern date
+  const etDate = s => { try { return new Date(String(s).replace(" ", "T")).toLocaleDateString("en-CA", { timeZone: "America/New_York" }); } catch (e) { return ""; } };
+  const anyPlay = {};
+  plays.forEach(p => { anyPlay[p.ledger_id || p.id] = p; });
+  const TL = { STRONG: "Strong", FCS: "FCS", WEATHER: "Wind under", LEAN: "Lean", RESEARCH: "Research" };
+  const trackRows = (S.fullLedger || S.ledger || []).filter(e => e.status !== "void").map(e => {
+    const p = anyPlay[e.id] && anyPlay[e.id].tier === e.tier ? anyPlay[e.id] : null;
+    return { id: e.id, date: etDate(e.kickoff), kickoff: etTxt(e.kickoff), sortKey: String(e.kickoff), week: e.week, tier: e.tier,
+             label: TL[e.tier] || e.tier, money: BET.includes(e.tier), status: e.status, units: e.units, stake: e.stake, clv: e.clv,
+             pick: e.pick, matchup: e.matchup, odds: odds(e.odds), app: BOOKN[e.book] || e.book, final: e.final, logged: etTxt(e.flagged),
+             playTo: e.market === "moneyline" ? null : playTo(e, p), now: e.status === "open" ? nowOf(games[e.game_id], p) : null };
+  });
+  const todayET = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+  Track.renderToday(document.getElementById("p-today"), { rows: trackRows, unit: UNIT, today: todayET });
+  Track.renderResults(document.getElementById("p-results"), { rows: trackRows, unit: UNIT, today: todayET, week: S.week,
+    tiers: [["money", "Money plays"], ["STRONG", "Strong"], ["FCS", "FCS"], ["WEATHER", "Wind unders"], ["LEAN", "Leans"], ["RESEARCH", "Research"], ["all", "All plays"]] });
+
   // all games
   const flagged = new Set(plays.filter(p => main.includes(p.tier)).map(p => p.game_id));
   const bk = (g, k) => { const v = g.books?.[k]; return v ? `${line(v.sp_home)} <span class="muted">${odds(v.sp_home_odds)}</span>` : "–"; };
@@ -351,7 +375,7 @@ function render(S) {
     if (booted) document.querySelector(".tabs").scrollIntoView({ behavior: "smooth", block: "start" });
   });
   let saved = null; try { saved = localStorage.getItem("cfb-tab"); } catch (e) {}
-  const want = location.hash && /^#(plays|bets|games|records|ratings|how)$/.test(location.hash) ? location.hash.slice(1) : saved;
+  const want = location.hash && /^#(plays|bets|today|results|games|records|ratings|how)$/.test(location.hash) ? location.hash.slice(1) : saved;
   if (want) document.querySelector(`.tab[data-tab="${want}"]`)?.click();
   booted = true;
 }

@@ -14,6 +14,7 @@ def main(dest):
     state = json.loads((BOARD / "state.json").read_text())
     shutil.copy(ROOT / "page" / "index.html", dest / "index.html")
     shutil.copy(BOARD / "state.json", dest / "state.json")
+    shutil.copy(BOARD / "ledger.json", dest / "ledger.json")   # full history for the Today / Results tabs
     gen = dt.datetime.fromisoformat(state["generated_iso"])
     stale = (dt.datetime.now(gen.tzinfo) - gen).total_seconds() > 2 * 3600
     notified = set(json.loads((BOARD / "notified.json").read_text())) if (BOARD / "notified.json").exists() else set()

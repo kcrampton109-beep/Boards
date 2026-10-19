@@ -12,6 +12,7 @@ out = pathlib.Path(sys.argv[1])
 out.mkdir(parents=True, exist_ok=True)
 shutil.copy(B / "index.html", out / "index.html")
 shutil.copy(B / "state.json", out / "state.json")
+shutil.copy(B / "ledger.json", out / "ledger.json")   # full history for the Today / Results tabs
 
 st = json.loads((B / "state.json").read_text())
 memo_p = B / "notified.json"

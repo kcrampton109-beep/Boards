@@ -1,15 +1,15 @@
 /* Shared Bets tab (site/bets.js): the same look on every board. Uses the page's --card / --ink / --muted / --rule /
    --soft / --win / --loss colours (every board defines them, light and dark) and nothing board-specific. */
 .bets { display: grid; gap: 18px; font-family: "Public Sans", "Segoe UI", system-ui, sans-serif; color: var(--ink) }
-.bets h2 { font: 700 19px/1.2 "Public Sans", "Segoe UI", system-ui, sans-serif; margin: 6px 0 0; letter-spacing: 0 }
+.bets h2 { text-transform: none; font: 700 19px/1.2 "Public Sans", "Segoe UI", system-ui, sans-serif; margin: 6px 0 0; letter-spacing: 0 }
 .bets h2 .n { color: var(--muted); font-weight: 500; margin-left: 6px }
 .bets p { margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted); max-width: 72ch }
 .bets .num { font-variant-numeric: tabular-nums }
 .bets-sum { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 10px }
 .bets-sum div { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; display: grid; gap: 2px }
-.bets-sum .lab { font-size: 11px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--muted) }
-.bets-sum .rec { font-size: 24px; font-weight: 700; line-height: 1.1 }
-.bets-sum .u { font-size: 13px }
+.bets-sum .b-lab { font-size: 11px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--muted) }
+.bets-sum .b-rec { font-size: 24px; font-weight: 700; line-height: 1.1 }
+.bets-sum .b-u { font-size: 13px }
 .bets-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 10px }
 .bet { background: var(--card); border: 1px solid var(--rule); border-left: 4px solid var(--ink); border-radius: 8px;
        padding: 12px 14px; display: grid; gap: 6px; min-width: 0 }

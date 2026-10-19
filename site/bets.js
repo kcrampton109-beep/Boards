@@ -41,8 +41,8 @@
     const settled = d.settled || [];
     el.innerHTML = `<div class="bets">
       <p>${d.intro} Dollars use $${unit} a unit. Bet at the price shown or better and never past the <b>playable to</b> number.</p>
-      <div class="bets-sum">${(d.summary || []).map(s => `<div><span class="lab">${esc(s.label)}</span><span class="rec num">${esc(s.rec)}</span>
-        <span class="u num ${cls(s.units)}">${sgn(s.units || 0, 2)}u · ${usd(s.units || 0)}</span></div>`).join("")}</div>
+      <div class="bets-sum">${(d.summary || []).map(s => `<div><span class="b-lab">${esc(s.label)}</span><span class="b-rec num">${esc(s.rec)}</span>
+        <span class="b-u num ${cls(s.units)}">${sgn(s.units || 0, 2)}u · ${usd(s.units || 0)}</span></div>`).join("")}</div>
       <h2>Open bets<span class="n num">${active.length + pairs.length}</span></h2>
       ${active.length || pairs.length ? `<div class="bets-grid">${active.map(betCard).join("")}${pairs.map(pairCard).join("")}</div>`
         : `<div class="bets-empty">${esc(d.emptyOpen || "No open bets right now.")}</div>`}

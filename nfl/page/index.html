@@ -57,7 +57,7 @@ header .meta { display: grid; gap: 2px; text-align: right; font-size: 13px }
 .cell .pk { font-weight: 700; overflow-wrap: anywhere } .cell .px { font-size: 12px; color: var(--muted) }
 .empty { padding: 16px; color: var(--muted) }
 /* tabs */
-.tabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--rule) }
+.tabs { display: flex; flex-wrap: wrap; gap: 2px; border-bottom: 1px solid var(--rule) }   /* wraps: every tab visible on a phone */
 .tab { font: 700 12.5px/1 var(--body); letter-spacing: .06em; text-transform: uppercase; padding: 10px 11px 9px; border: 0; border-bottom: 3px solid transparent; background: none; color: var(--muted); cursor: pointer; white-space: nowrap }
 .tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--flag) }
 .tab:focus-visible, .chip:focus-visible, .cell:focus-visible { outline: 2px solid var(--wx); outline-offset: 2px }
@@ -104,6 +104,8 @@ tr:last-child td { border-bottom: 0 }
 </style>
 <link rel="stylesheet" href="../bets.css">
 <script src="../bets.js"></script>
+<link rel="stylesheet" href="../track.css">
+<script src="../track.js"></script>
 
 <div class="wrap">
   <header>
@@ -129,6 +131,8 @@ tr:last-child td { border-bottom: 0 }
   <nav class="tabs" role="tablist" aria-label="Board sections">
     <button class="tab" role="tab" aria-selected="true" data-tab="plays">Plays</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="bets">Bets</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="today">Today</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="results">Results</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="games">All games</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="td">TD sheet</button>
     <button class="tab" role="tab" aria-selected="false" data-tab="inj">Injuries</button>
@@ -140,6 +144,8 @@ tr:last-child td { border-bottom: 0 }
 
   <section class="panel" id="p-plays" role="tabpanel"></section>
   <section class="panel" id="p-bets" role="tabpanel" hidden></section>
+  <section class="panel" id="p-today" role="tabpanel" hidden></section>
+  <section class="panel" id="p-results" role="tabpanel" hidden></section>
   <section class="panel" id="p-games" role="tabpanel" hidden></section>
   <section class="panel" id="p-td" role="tabpanel" hidden></section>
   <section class="panel" id="p-inj" role="tabpanel" hidden></section>
@@ -153,7 +159,7 @@ tr:last-child td { border-bottom: 0 }
 const BOOKN = { DK: "DraftKings", FD: "FanDuel", MGM: "BetMGM" };
 const TIER = {
   STRONG: { name: "Strong spreads", code: "S", note: "Model differs from your best book by 3+ points. Backtest: 59.5% against the opening line in 2008-21 and 65% in 2023-25. Against the closing line the same picks hit 52-56%, so the value is in betting early in the week, at the playable number or better. Sized by edge: 3-4 pts 1u, 4-6 pts 1.5u, 6+ pts 2u." },
-  WEATHER: { name: "Weather unders", code: "W", note: "Forecast wind of 15+ mph at an open-air stadium. Backtest: unders hit 56-58% against the closing total in every era since 2008." },
+  WEATHER: { name: "Weather unders", code: "W", note: "Forecast wind of 18+ mph at an open-air stadium, logged only within 24 hours of kickoff (since Oct 19; it was 15+ mph up to 4 days out, and forecasts that far out ran windy). Backtest: unders hit 56-58% against the closing total in every era since 2008." },
   TEASER: { name: "Teaser legs", code: "T", note: "6-point teaser underdogs at +1.5 to +2.5 (teased through 3 and 7) when the total is 49.5 or less. Legs won 75-78% in every era; a 2-team teaser at -120 needs 73.9% per leg. Pair any two legs; check your book's teaser price (-130 or better)." },
   LEAN: { name: "Leans", code: "L", note: "Model gap of 2 to 3 points, or a strong gap with a questionable starting QB. Logged at 0.5 unit to learn from." },
   RLM: { name: "Reverse line moves (tracked)", code: "R", note: "Your rule: 57%+ of bets on one side and the CBS line moved 1+ point from its open the other way. Tracked at 1 unit. Backtest 2018-25 at the closing line: 48.7%, so it is not treated as a play." },
@@ -181,8 +187,12 @@ const sideSplit = (g, side) => side === "home" ? [g.tix_home, g.money_home] : si
 const shortT = iso => { try { return new Date(iso).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", hour: "numeric", minute: "2-digit" }) + " ET"; } catch (e) { return iso || ""; } };
 
 async function load() {
-  try { const r = await fetch("state.json", { cache: "no-store" }); if (r.ok) return await r.json(); } catch (e) {}
-  return {};
+  let S = {};
+  try { const r = await fetch("state.json", { cache: "no-store" }); if (r.ok) S = await r.json(); } catch (e) {}
+  if (!S.games) { try { S = JSON.parse(document.getElementById("seed").textContent); } catch (e) {} }
+  // full play history for the Today / Results tabs (state.json carries only the recent part)
+  try { const r = await fetch("ledger.json", { cache: "no-store" }); if (r.ok) S.fullLedger = await r.json(); } catch (e) {}
+  return S;
 }
 
 function render(S) {
@@ -312,8 +322,45 @@ function render(S) {
     settled: betLed.filter(e => e.status !== "open").sort((a, b) => (b.flagged || "").localeCompare(a.flagged || "")).map(e => ({
       status: e.status, label: tierName(e.tier), pick: e.pick, matchup: e.matchup, kickoff: e.kickoff, odds: odds(e.odds),
       app: BOOKN[e.book] || e.book, stake: e.stake, units: e.units, clv: e.clv, final: e.final })),
-    emptyOpen: "No open bets. Next week's openers post Sunday night after the games; a phone alert goes out within about 30 minutes of a play appearing.",
+    emptyOpen: "No open bets. Next week's lines reach your books Tuesday afternoon (FanDuel about 2:40 PM ET); a phone alert goes out within about 30 minutes of a play appearing.",
   });
+
+  // Today + Results tabs (shared ../track.js): every logged play on its game's Eastern date
+  const MON = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11 };
+  const gameDate = e => {
+    if (e.kickoff_iso) return new Date(e.kickoff_iso).toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+    const m = /([A-Z][a-z]{2}) (\d{1,2})/.exec(e.kickoff || "");   // older entries: "Sun Oct 18, 1:00 PM ET"
+    if (!m || MON[m[1]] == null) return "";
+    let y = +String(e.flagged).slice(0, 4);
+    if (MON[m[1]] + 6 < +String(e.flagged).slice(5, 7) - 1) y += 1;   // a January game logged in December
+    return `${y}-${String(MON[m[1]] + 1).padStart(2, "0")}-${m[2].padStart(2, "0")}`;
+  };
+  const TL = { STRONG: "Strong", WEATHER: "Wind under", TEASER: "Teaser leg", LEAN: "Lean", RLM: "RLM (tracked)", TREND: "Trend (tracked)", TD: "Anytime TD" };
+  const full = (S.fullLedger || S.ledger || []).filter(e => e.status !== "void");
+  const trackRows = full.map(e => {
+    const p = playBy[e.id];
+    return { id: e.id, date: gameDate(e), kickoff: e.kickoff, sortKey: e.kickoff_iso || e.kickoff, week: e.week, tier: e.tier, label: TL[e.tier] || e.tier,
+             // teaser legs: open ones show on Today with the money plays; graded ones count as 2-team teasers below
+             money: BET.includes(e.tier) || (e.tier === "TEASER" && e.status === "open"), inAll: e.tier !== "TEASER",
+             status: e.status, units: e.units, stake: e.stake, clv: e.clv, pick: e.pick, matchup: e.matchup,
+             odds: e.market === "teaser" ? "teaser" : odds(e.odds), app: BOOKN[e.book] || e.book, final: e.final, logged: etTxt(e.flagged),
+             playTo: e.market === "spread" || e.market === "total" ? playTo(e, p) : e.market === "teaser" ? "+1.5 to +2.5 before the tease" : null,
+             now: e.status === "open" ? nowOf(games[e.game_id], p) : null };
+  });
+  // 2-team teasers: graded legs paired in logging order, exactly as the board's teaser record counts them
+  const tlegs = full.filter(e => e.tier === "TEASER" && (e.status === "W" || e.status === "L"));
+  for (let i = 0; i + 1 < tlegs.length; i += 2) {
+    const a = tlegs[i], b = tlegs[i + 1], won = a.status === "W" && b.status === "W", later = gameDate(a) > gameDate(b) ? a : b;
+    trackRows.push({ id: a.id + "+" + b.id, date: gameDate(later), kickoff: later.kickoff, sortKey: later.kickoff_iso || later.kickoff,
+                     week: Math.max(a.week, b.week), tier: "TEASER2", label: "2-team teaser", money: true, status: won ? "W" : "L",
+                     units: won ? 100 / 120 : -1, stake: 1, clv: null, pick: `${a.pick} + ${b.pick}`, matchup: `${a.matchup} / ${b.matchup}`,
+                     odds: "−120", app: BOOKN[a.book] || a.book, final: [a.final, b.final].filter(Boolean).join(" · "), logged: etTxt(b.flagged) });
+  }
+  const todayET = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+  Track.renderToday(document.getElementById("p-today"), { rows: trackRows, unit: UNIT, today: todayET });
+  Track.renderResults(document.getElementById("p-results"), { rows: trackRows, unit: UNIT, today: todayET, week: S.week,
+    tiers: [["money", "Money plays"], ["STRONG", "Strong"], ["WEATHER", "Wind unders"], ["TEASER2", "2-team teasers"], ["LEAN", "Leans"],
+            ["RLM", "RLM"], ["TREND", "Trends"], ["TD", "Anytime TD"], ["all", "All plays"]] });
 
   // all games
   const flagged = new Set(plays.filter(p => MAIN.includes(p.tier)).map(p => p.game_id));
@@ -408,7 +455,7 @@ function render(S) {
     if (booted) document.querySelector(".tabs").scrollIntoView({ behavior: "smooth", block: "start" });
   });
   let saved = null; try { saved = localStorage.getItem("nfl-tab"); } catch (e) {}
-  const want = location.hash && /^#(plays|bets|games|td|inj|rlm|records|ratings|how)$/.test(location.hash) ? location.hash.slice(1) : saved;
+  const want = location.hash && /^#(plays|bets|today|results|games|td|inj|rlm|records|ratings|how)$/.test(location.hash) ? location.hash.slice(1) : saved;
   if (want) document.querySelector(`.tab[data-tab="${want}"]`)?.click();
   booted = true;
 }

@@ -117,6 +117,7 @@ def main(out):
     out.mkdir(parents=True, exist_ok=True)
     shutil.copy(B / "index.html", out / "index.html")
     shutil.copy(B / "state.json", out / "state.json")
+    shutil.copy(B / "ledger.json", out / "ledger.json")
     memo_p = B / "notified.json"
     memo = json.loads(memo_p.read_text()) if memo_p.exists() else {"ids": [], "stale_warned": ""}
     memo["ids"] = sorted(set(memo["ids"]) | {p["id"] for p in card})

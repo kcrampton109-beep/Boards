@@ -111,6 +111,7 @@ def main(dest):
     dest.mkdir(parents=True, exist_ok=True)
     shutil.copy(ROOT / "page" / "index.html", dest / "index.html")
     shutil.copy(engine.STATE, dest / "state.json")
+    shutil.copy(engine.LEDGER, dest / "ledger.json")
     msg = f"NFL weekly: week {week - 1} graded, new week priced. Workbook attached."
     print(json.dumps(dict(message=msg, report=lines, workbook=str(wbp.resolve()), page=str((dest / "index.html").resolve()),
                           state=str((dest / "state.json").resolve()))))
