@@ -23,7 +23,8 @@
   "units": -0.5,
   "close": -1.5,
   "clv": 0.5,
-  "final": "ATL 45 - NO 24"
+  "final": "ATL 45 - NO 24",
+  "kickoff_iso": "2026-10-05T20:15:00-04:00"
  },
  {
   "id": "2026_04_ATL_NO:TEASER:teaser:away",
@@ -49,7 +50,8 @@
   "units": null,
   "close": 1.5,
   "clv": 0.0,
-  "final": "ATL 45 - NO 24"
+  "final": "ATL 45 - NO 24",
+  "kickoff_iso": "2026-10-05T20:15:00-04:00"
  },
  {
   "id": "2026_04_ATL_NO:TREND:spread:home",
@@ -75,7 +77,8 @@
   "units": -1.0,
   "close": -1.5,
   "clv": 0.5,
-  "final": "ATL 45 - NO 24"
+  "final": "ATL 45 - NO 24",
+  "kickoff_iso": "2026-10-05T20:15:00-04:00"
  },
  {
   "id": "2026_05_TB_DAL:STRONG:spread:away",
@@ -101,7 +104,8 @@
   "units": 1.43,
   "close": 9,
   "clv": 0.5,
-  "final": "TB 24 - DAL 16"
+  "final": "TB 24 - DAL 16",
+  "kickoff_iso": "2026-10-08T20:15:00-04:00"
  },
  {
   "id": "2026_05_LV_NE:RLM:total:under",
@@ -127,7 +131,8 @@
   "units": -1.0,
   "close": 45.5,
   "clv": 0.0,
-  "final": "LV 17 - NE 45"
+  "final": "LV 17 - NE 45",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_NYG_WAS:STRONG:spread:away",
@@ -153,7 +158,8 @@
   "units": 1.32,
   "close": 3.5,
   "clv": 0.0,
-  "final": "NYG 27 - WAS 27"
+  "final": "NYG 27 - WAS 27",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_NYG_WAS:RLM:total:under",
@@ -179,7 +185,8 @@
   "units": -1.0,
   "close": 41.5,
   "clv": 2.5,
-  "final": "NYG 27 - WAS 27"
+  "final": "NYG 27 - WAS 27",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_MIN_NO:LEAN:spread:away",
@@ -205,7 +212,8 @@
   "units": 0.48,
   "close": -2.5,
   "clv": 1.0,
-  "final": "MIN 23 - NO 13"
+  "final": "MIN 23 - NO 13",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_MIN_NO:TEASER:teaser:home",
@@ -231,7 +239,8 @@
   "units": null,
   "close": 2.5,
   "clv": -1.0,
-  "final": "MIN 23 - NO 13"
+  "final": "MIN 23 - NO 13",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_MIN_NO:RLM:total:under",
@@ -257,7 +266,8 @@
   "units": 0.91,
   "close": 41.5,
   "clv": 1.0,
-  "final": "MIN 23 - NO 13"
+  "final": "MIN 23 - NO 13",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_IND_PIT:LEAN:spread:away",
@@ -283,7 +293,8 @@
   "units": -0.5,
   "close": 3,
   "clv": -0.5,
-  "final": "IND 22 - PIT 34"
+  "final": "IND 22 - PIT 34",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_IND_PIT:TEASER:teaser:away",
@@ -309,7 +320,8 @@
   "units": null,
   "close": 3,
   "clv": -0.5,
-  "final": "IND 22 - PIT 34"
+  "final": "IND 22 - PIT 34",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_CIN_MIA:RLM:spread:home",
@@ -335,7 +347,8 @@
   "units": 0.87,
   "close": 7,
   "clv": 0.5,
-  "final": "CIN 31 - MIA 24"
+  "final": "CIN 31 - MIA 24",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_CIN_MIA:RLM:total:under",
@@ -361,7 +374,8 @@
   "units": -1.0,
   "close": 44.5,
   "clv": -2.0,
-  "final": "CIN 31 - MIA 24"
+  "final": "CIN 31 - MIA 24",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_CIN_MIA:TREND:spread:home",
@@ -387,7 +401,8 @@
   "units": 0.87,
   "close": 7,
   "clv": 0.5,
-  "final": "CIN 31 - MIA 24"
+  "final": "CIN 31 - MIA 24",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_CLE_NYJ:TEASER:teaser:away",
@@ -413,7 +428,8 @@
   "units": null,
   "close": 2.5,
   "clv": -1.0,
-  "final": "CLE 12 - NYJ 17"
+  "final": "CLE 12 - NYJ 17",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_CHI_GB:STRONG:spread:home",
@@ -439,7 +455,8 @@
   "units": 0.95,
   "close": 1.5,
   "clv": 1.0,
-  "final": "CHI 7 - GB 31"
+  "final": "CHI 7 - GB 31",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_CHI_GB:TEASER:teaser:home",
@@ -465,7 +482,8 @@
   "units": null,
   "close": 1.5,
   "clv": 1.0,
-  "final": "CHI 7 - GB 31"
+  "final": "CHI 7 - GB 31",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_CHI_GB:RLM:total:under",
@@ -491,7 +509,8 @@
   "units": 0.88,
   "close": 47,
   "clv": -2.5,
-  "final": "CHI 7 - GB 31"
+  "final": "CHI 7 - GB 31",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_DEN_LAC:RLM:total:under",
@@ -517,7 +536,8 @@
   "units": 0.93,
   "close": 42.5,
   "clv": 0.0,
-  "final": "DEN 23 - LAC 17"
+  "final": "DEN 23 - LAC 17",
+  "kickoff_iso": "2026-10-11T16:05:00-04:00"
  },
  {
   "id": "2026_05_BAL_ATL:LEAN:spread:away",
@@ -543,7 +563,8 @@
   "units": 0.5,
   "close": 3.5,
   "clv": -7.0,
-  "final": "BAL 30 - ATL 23"
+  "final": "BAL 30 - ATL 23",
+  "kickoff_iso": "2026-10-11T20:20:00-04:00"
  },
  {
   "id": "2026_05_BUF_LA:LEAN:spread:away",
@@ -569,7 +590,8 @@
   "units": 0.49,
   "close": 3.5,
   "clv": -1.0,
-  "final": "BUF 37 - LA 34"
+  "final": "BUF 37 - LA 34",
+  "kickoff_iso": "2026-10-12T20:15:00-04:00"
  },
  {
   "id": "2026_04_ATL_NO:TD:td:00-0035644",
@@ -595,7 +617,8 @@
   "units": -1.0,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-05T20:15:00-04:00"
  },
  {
   "id": "2026_05_PHI_JAX:LEAN:spread:away",
@@ -621,7 +644,8 @@
   "units": 0.43,
   "close": 7.5,
   "clv": -0.5,
-  "final": "PHI 17 - JAX 19"
+  "final": "PHI 17 - JAX 19",
+  "kickoff_iso": "2026-10-11T09:30:00-04:00"
  },
  {
   "id": "2026_05_BAL_ATL:TEASER:teaser:home",
@@ -647,7 +671,8 @@
   "units": null,
   "close": -3.5,
   "clv": 6.0,
-  "final": "BAL 30 - ATL 23"
+  "final": "BAL 30 - ATL 23",
+  "kickoff_iso": "2026-10-11T20:20:00-04:00"
  },
  {
   "id": "2026_05_PHI_JAX:TD:td:00-0040024",
@@ -673,7 +698,8 @@
   "units": 4.75,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-11T09:30:00-04:00"
  },
  {
   "id": "2026_05_BAL_ATL:TEASER:teaser:away",
@@ -699,7 +725,8 @@
   "units": null,
   "close": 3.5,
   "clv": -1.0,
-  "final": "BAL 30 - ATL 23"
+  "final": "BAL 30 - ATL 23",
+  "kickoff_iso": "2026-10-11T20:20:00-04:00"
  },
  {
   "id": "2026_06_SEA_DEN:TEASER:teaser:home",
@@ -725,7 +752,8 @@
   "units": null,
   "close": 2.5,
   "clv": -1.0,
-  "final": "SEA 14 - DEN 17"
+  "final": "SEA 14 - DEN 17",
+  "kickoff_iso": "2026-10-15T20:15:00-04:00"
  },
  {
   "id": "2026_06_HOU_JAX:STRONG:spread:home",
@@ -751,7 +779,8 @@
   "units": -1.5,
   "close": -2.5,
   "clv": 4.0,
-  "final": "HOU 34 - JAX 31"
+  "final": "HOU 34 - JAX 31",
+  "kickoff_iso": "2026-10-18T09:30:00-04:00"
  },
  {
   "id": "2026_06_HOU_JAX:TEASER:teaser:home",
@@ -777,7 +806,8 @@
   "units": null,
   "close": -2.5,
   "clv": 4.0,
-  "final": "HOU 34 - JAX 31"
+  "final": "HOU 34 - JAX 31",
+  "kickoff_iso": "2026-10-18T09:30:00-04:00"
  },
  {
   "id": "2026_06_HOU_JAX:TEASER:teaser:away",
@@ -803,7 +833,8 @@
   "units": null,
   "close": 2.5,
   "clv": -1.0,
-  "final": "HOU 34 - JAX 31"
+  "final": "HOU 34 - JAX 31",
+  "kickoff_iso": "2026-10-18T09:30:00-04:00"
  },
  {
   "id": "2026_06_HOU_JAX:RLM:spread:away",
@@ -829,7 +860,8 @@
   "units": 0.83,
   "close": 2.5,
   "clv": -1.0,
-  "final": "HOU 34 - JAX 31"
+  "final": "HOU 34 - JAX 31",
+  "kickoff_iso": "2026-10-18T09:30:00-04:00"
  },
  {
   "id": "2026_06_TEN_IND:STRONG:spread:home",
@@ -855,7 +887,8 @@
   "units": -1.0,
   "close": -6.5,
   "clv": 3.0,
-  "final": "TEN 26 - IND 20"
+  "final": "TEN 26 - IND 20",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_NYJ_NE:STRONG:spread:away",
@@ -881,7 +914,8 @@
   "units": 1.36,
   "close": 7.5,
   "clv": 2.0,
-  "final": "NYJ 19 - NE 26"
+  "final": "NYJ 19 - NE 26",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_NO_NYG:LEAN:spread:away",
@@ -907,7 +941,8 @@
   "units": 0.45,
   "close": -1.5,
   "clv": 4.0,
-  "final": "NO 34 - NYG 27"
+  "final": "NO 34 - NYG 27",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_NO_NYG:TEASER:teaser:away",
@@ -933,7 +968,8 @@
   "units": null,
   "close": -1.5,
   "clv": 4.0,
-  "final": "NO 34 - NYG 27"
+  "final": "NO 34 - NYG 27",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_PIT_TB:STRONG:spread:away",
@@ -959,7 +995,8 @@
   "units": 0.91,
   "close": -2.5,
   "clv": 4.0,
-  "final": "PIT 26 - TB 19"
+  "final": "PIT 26 - TB 19",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_PIT_TB:TEASER:teaser:away",
@@ -985,7 +1022,8 @@
   "units": null,
   "close": -2.5,
   "clv": 4.0,
-  "final": "PIT 26 - TB 19"
+  "final": "PIT 26 - TB 19",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_CAR_PHI:STRONG:spread:away",
@@ -1011,7 +1049,8 @@
   "units": 1.82,
   "close": -3,
   "clv": 9.5,
-  "final": "CAR 25 - PHI 14"
+  "final": "CAR 25 - PHI 14",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_ARI_LA:STRONG:spread:away",
@@ -1037,7 +1076,8 @@
   "units": 1.39,
   "close": 12.5,
   "clv": 1.0,
-  "final": "ARI 18 - LA 16"
+  "final": "ARI 18 - LA 16",
+  "kickoff_iso": "2026-10-18T16:05:00-04:00"
  },
  {
   "id": "2026_06_LAC_KC:STRONG:spread:home",
@@ -1063,7 +1103,8 @@
   "units": 1.82,
   "close": -7.5,
   "clv": 5.0,
-  "final": "LAC 6 - KC 22"
+  "final": "LAC 6 - KC 22",
+  "kickoff_iso": "2026-10-18T16:25:00-04:00"
  },
  {
   "id": "2026_06_LAC_KC:TEASER:teaser:away",
@@ -1089,7 +1130,8 @@
   "units": null,
   "close": 7.5,
   "clv": -5.0,
-  "final": "LAC 6 - KC 22"
+  "final": "LAC 6 - KC 22",
+  "kickoff_iso": "2026-10-18T16:25:00-04:00"
  },
  {
   "id": "2026_06_DAL_GB:STRONG:spread:away",
@@ -1115,7 +1157,8 @@
   "units": -1.5,
   "close": -1.5,
   "clv": 4.5,
-  "final": "DAL 13 - GB 23"
+  "final": "DAL 13 - GB 23",
+  "kickoff_iso": "2026-10-18T20:20:00-04:00"
  },
  {
   "id": "2026_06_WAS_SF:STRONG:spread:home",
@@ -1141,7 +1184,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-19T20:15:00-04:00"
  },
  {
   "id": "2026_05_CLE_NYJ:TD:td:00-0036842",
@@ -1167,7 +1211,8 @@
   "units": -1.0,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_MIN_NO:STRONG:spread:away",
@@ -1193,7 +1238,8 @@
   "units": 1.3,
   "close": -2.5,
   "clv": 1.0,
-  "final": "MIN 23 - NO 13"
+  "final": "MIN 23 - NO 13",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_MIN_NO:TREND:spread:home",
@@ -1219,7 +1265,8 @@
   "units": -1.0,
   "close": 2.5,
   "clv": -0.5,
-  "final": "MIN 23 - NO 13"
+  "final": "MIN 23 - NO 13",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_IND_PIT:TREND:spread:home",
@@ -1245,7 +1292,8 @@
   "units": 0.85,
   "close": -3,
   "clv": 1.5,
-  "final": "IND 22 - PIT 34"
+  "final": "IND 22 - PIT 34",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_CLE_NYJ:TREND:spread:away",
@@ -1271,7 +1319,8 @@
   "units": -1.0,
   "close": 2.5,
   "clv": 0.0,
-  "final": "CLE 12 - NYJ 17"
+  "final": "CLE 12 - NYJ 17",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_06_NO_NYG:TREND:spread:away",
@@ -1297,7 +1346,8 @@
   "units": 0.91,
   "close": -1.5,
   "clv": 4.0,
-  "final": "NO 34 - NYG 27"
+  "final": "NO 34 - NYG 27",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_PIT_TB:TREND:spread:home",
@@ -1323,7 +1373,8 @@
   "units": -1.0,
   "close": 2.5,
   "clv": -4.0,
-  "final": "PIT 26 - TB 19"
+  "final": "PIT 26 - TB 19",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_CAR_PHI:TREND:spread:away",
@@ -1349,7 +1400,8 @@
   "units": 0.91,
   "close": -3,
   "clv": 9.5,
-  "final": "CAR 25 - PHI 14"
+  "final": "CAR 25 - PHI 14",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_LAC_KC:TREND:spread:home",
@@ -1375,7 +1427,8 @@
   "units": 0.91,
   "close": -7.5,
   "clv": 5.0,
-  "final": "LAC 6 - KC 22"
+  "final": "LAC 6 - KC 22",
+  "kickoff_iso": "2026-10-18T16:25:00-04:00"
  },
  {
   "id": "2026_06_DAL_GB:TREND:spread:away",
@@ -1401,7 +1454,8 @@
   "units": -1.0,
   "close": -1.5,
   "clv": 4.5,
-  "final": "DAL 13 - GB 23"
+  "final": "DAL 13 - GB 23",
+  "kickoff_iso": "2026-10-18T20:20:00-04:00"
  },
  {
   "id": "2026_05_HOU_TEN:RLM:total:under",
@@ -1427,7 +1481,8 @@
   "units": 0.95,
   "close": 37.5,
   "clv": 1.0,
-  "final": "HOU 26 - TEN 3"
+  "final": "HOU 26 - TEN 3",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_06_NO_NYG:LEAN:spread:home",
@@ -1453,7 +1508,8 @@
   "units": -0.5,
   "close": 1.5,
   "clv": 0.0,
-  "final": "NO 34 - NYG 27"
+  "final": "NO 34 - NYG 27",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_NO_NYG:TEASER:teaser:home",
@@ -1479,7 +1535,8 @@
   "units": null,
   "close": 1.5,
   "clv": 0.0,
-  "final": "NO 34 - NYG 27"
+  "final": "NO 34 - NYG 27",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_PIT_TB:TEASER:teaser:home",
@@ -1505,7 +1562,8 @@
   "units": null,
   "close": 2.5,
   "clv": 0.0,
-  "final": "PIT 26 - TB 19"
+  "final": "PIT 26 - TB 19",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_BAL_CLE:LEAN:spread:away",
@@ -1531,7 +1589,8 @@
   "units": -0.5,
   "close": -3,
   "clv": 0,
-  "final": "BAL 10 - CLE 13"
+  "final": "BAL 10 - CLE 13",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_05_TB_DAL:RLM:spread:away",
@@ -1557,7 +1616,8 @@
   "units": 0.93,
   "close": 9,
   "clv": -0.5,
-  "final": "TB 24 - DAL 16"
+  "final": "TB 24 - DAL 16",
+  "kickoff_iso": "2026-10-08T20:15:00-04:00"
  },
  {
   "id": "2026_05_PHI_JAX:STRONG:spread:away",
@@ -1583,7 +1643,8 @@
   "units": 0.87,
   "close": 7.5,
   "clv": 0.0,
-  "final": "PHI 17 - JAX 19"
+  "final": "PHI 17 - JAX 19",
+  "kickoff_iso": "2026-10-11T09:30:00-04:00"
  },
  {
   "id": "2026_05_SF_SEA:RLM:total:under",
@@ -1609,7 +1670,8 @@
   "units": -1.0,
   "close": 47,
   "clv": 0.5,
-  "final": "SF 32 - SEA 29"
+  "final": "SF 32 - SEA 29",
+  "kickoff_iso": "2026-10-11T16:25:00-04:00"
  },
  {
   "id": "2026_06_NYJ_NE:LEAN:spread:away",
@@ -1635,7 +1697,8 @@
   "units": 0.0,
   "close": 7.5,
   "clv": -0.5,
-  "final": "NYJ 19 - NE 26"
+  "final": "NYJ 19 - NE 26",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_CAR_PHI:LEAN:spread:away",
@@ -1661,7 +1724,8 @@
   "units": 0.45,
   "close": -3,
   "clv": 5.5,
-  "final": "CAR 25 - PHI 14"
+  "final": "CAR 25 - PHI 14",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_CAR_PHI:TEASER:teaser:away",
@@ -1687,7 +1751,8 @@
   "units": null,
   "close": -3,
   "clv": 5.5,
-  "final": "CAR 25 - PHI 14"
+  "final": "CAR 25 - PHI 14",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_CHI_ATL:TEASER:teaser:home",
@@ -1713,7 +1778,8 @@
   "units": null,
   "close": 1.5,
   "clv": 0.0,
-  "final": "CHI 31 - ATL 23"
+  "final": "CHI 31 - ATL 23",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_BAL_CLE:TEASER:teaser:home",
@@ -1739,7 +1805,8 @@
   "units": null,
   "close": 3,
   "clv": -0.5,
-  "final": "BAL 10 - CLE 13"
+  "final": "BAL 10 - CLE 13",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_ARI_LA:LEAN:spread:away",
@@ -1765,7 +1832,8 @@
   "units": 0.43,
   "close": 12.5,
   "clv": -1.0,
-  "final": "ARI 18 - LA 16"
+  "final": "ARI 18 - LA 16",
+  "kickoff_iso": "2026-10-18T16:05:00-04:00"
  },
  {
   "id": "2026_06_LAC_KC:LEAN:spread:home",
@@ -1791,7 +1859,8 @@
   "units": 0.46,
   "close": -7.5,
   "clv": 0.0,
-  "final": "LAC 6 - KC 22"
+  "final": "LAC 6 - KC 22",
+  "kickoff_iso": "2026-10-18T16:25:00-04:00"
  },
  {
   "id": "2026_05_BAL_ATL:RLM:total:under",
@@ -1817,7 +1886,8 @@
   "units": -1.0,
   "close": 43.5,
   "clv": 0.0,
-  "final": "BAL 30 - ATL 23"
+  "final": "BAL 30 - ATL 23",
+  "kickoff_iso": "2026-10-11T20:20:00-04:00"
  },
  {
   "id": "2026_06_TEN_IND:RLM:total:under",
@@ -1843,7 +1913,8 @@
   "units": -1.0,
   "close": 43.5,
   "clv": 1.0,
-  "final": "TEN 26 - IND 20"
+  "final": "TEN 26 - IND 20",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_BAL_CLE:RLM:total:under",
@@ -1869,7 +1940,8 @@
   "units": 0.91,
   "close": 39.5,
   "clv": 1.0,
-  "final": "BAL 10 - CLE 13"
+  "final": "BAL 10 - CLE 13",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_05_CHI_GB:WEATHER:total:under",
@@ -1895,7 +1967,8 @@
   "units": 0.93,
   "close": 47,
   "clv": -1.5,
-  "final": "CHI 7 - GB 31"
+  "final": "CHI 7 - GB 31",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_06_PIT_TB:RLM:total:under",
@@ -1921,7 +1994,8 @@
   "units": -1.0,
   "close": 38.5,
   "clv": 1.0,
-  "final": "PIT 26 - TB 19"
+  "final": "PIT 26 - TB 19",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_05_CHI_GB:LEAN:spread:home",
@@ -1947,7 +2021,8 @@
   "units": 0.49,
   "close": 1.5,
   "clv": 0.0,
-  "final": "CHI 7 - GB 31"
+  "final": "CHI 7 - GB 31",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_BUF_LA:STRONG:spread:away",
@@ -1973,7 +2048,8 @@
   "units": 0.85,
   "close": 3.5,
   "clv": 0.0,
-  "final": "BUF 37 - LA 34"
+  "final": "BUF 37 - LA 34",
+  "kickoff_iso": "2026-10-12T20:15:00-04:00"
  },
  {
   "id": "2026_06_LAC_KC:RLM:total:under",
@@ -1999,7 +2075,8 @@
   "units": 0.91,
   "close": 41.5,
   "clv": 4.0,
-  "final": "LAC 6 - KC 22"
+  "final": "LAC 6 - KC 22",
+  "kickoff_iso": "2026-10-18T16:25:00-04:00"
  },
  {
   "id": "2026_06_DAL_GB:LEAN:spread:home",
@@ -2025,7 +2102,8 @@
   "units": 0.45,
   "close": 1.5,
   "clv": 1.0,
-  "final": "DAL 13 - GB 23"
+  "final": "DAL 13 - GB 23",
+  "kickoff_iso": "2026-10-18T20:20:00-04:00"
  },
  {
   "id": "2026_06_DAL_GB:RLM:total:under",
@@ -2051,7 +2129,8 @@
   "units": 0.95,
   "close": 53.5,
   "clv": -3.0,
-  "final": "DAL 13 - GB 23"
+  "final": "DAL 13 - GB 23",
+  "kickoff_iso": "2026-10-18T20:20:00-04:00"
  },
  {
   "id": "2026_06_WAS_SF:RLM:total:under",
@@ -2077,7 +2156,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-19T20:15:00-04:00"
  },
  {
   "id": "2026_05_BAL_ATL:STRONG:spread:away",
@@ -2103,7 +2183,8 @@
   "units": 1.69,
   "close": 3.5,
   "clv": 0.0,
-  "final": "BAL 30 - ATL 23"
+  "final": "BAL 30 - ATL 23",
+  "kickoff_iso": "2026-10-11T20:20:00-04:00"
  },
  {
   "id": "2026_05_IND_PIT:RLM:total:under",
@@ -2129,7 +2210,8 @@
   "units": -1.0,
   "close": 41.5,
   "clv": 1.0,
-  "final": "IND 22 - PIT 34"
+  "final": "IND 22 - PIT 34",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_CLE_NYJ:RLM:total:under",
@@ -2155,7 +2237,8 @@
   "units": 0.95,
   "close": 38.5,
   "clv": 0.0,
-  "final": "CLE 12 - NYJ 17"
+  "final": "CLE 12 - NYJ 17",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_05_HOU_TEN:RLM:spread:home",
@@ -2181,7 +2264,8 @@
   "units": -1.0,
   "close": 6.5,
   "clv": 0.0,
-  "final": "HOU 26 - TEN 3"
+  "final": "HOU 26 - TEN 3",
+  "kickoff_iso": "2026-10-11T13:00:00-04:00"
  },
  {
   "id": "2026_06_HOU_JAX:LEAN:spread:home",
@@ -2207,7 +2291,8 @@
   "units": -0.5,
   "close": -2.5,
   "clv": 1.0,
-  "final": "HOU 34 - JAX 31"
+  "final": "HOU 34 - JAX 31",
+  "kickoff_iso": "2026-10-18T09:30:00-04:00"
  },
  {
   "id": "2026_05_SF_SEA:LEAN:spread:away",
@@ -2233,7 +2318,8 @@
   "units": 0.4,
   "close": 3,
   "clv": 0.5,
-  "final": "SF 32 - SEA 29"
+  "final": "SF 32 - SEA 29",
+  "kickoff_iso": "2026-10-11T16:25:00-04:00"
  },
  {
   "id": "2026_06_SEA_DEN:LEAN:spread:home",
@@ -2259,7 +2345,8 @@
   "units": 0.44,
   "close": 2.5,
   "clv": 0.5,
-  "final": "SEA 14 - DEN 17"
+  "final": "SEA 14 - DEN 17",
+  "kickoff_iso": "2026-10-15T20:15:00-04:00"
  },
  {
   "id": "2026_06_CHI_ATL:LEAN:spread:away",
@@ -2285,7 +2372,8 @@
   "units": 0.43,
   "close": -1.5,
   "clv": 3.0,
-  "final": "CHI 31 - ATL 23"
+  "final": "CHI 31 - ATL 23",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_CHI_ATL:TEASER:teaser:away",
@@ -2311,7 +2399,8 @@
   "units": null,
   "close": -1.5,
   "clv": 3.0,
-  "final": "CHI 31 - ATL 23"
+  "final": "CHI 31 - ATL 23",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_SEA_DEN:RLM:total:under",
@@ -2337,7 +2426,8 @@
   "units": 0.87,
   "close": 40.5,
   "clv": 1.0,
-  "final": "SEA 14 - DEN 17"
+  "final": "SEA 14 - DEN 17",
+  "kickoff_iso": "2026-10-15T20:15:00-04:00"
  },
  {
   "id": "2026_06_TEN_IND:TREND:spread:away",
@@ -2363,7 +2453,8 @@
   "units": 0.89,
   "close": 6.5,
   "clv": 0.5,
-  "final": "TEN 26 - IND 20"
+  "final": "TEN 26 - IND 20",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_NO_NYG:STRONG:spread:home",
@@ -2389,7 +2480,8 @@
   "units": -1.0,
   "close": 1.5,
   "clv": 0.0,
-  "final": "NO 34 - NYG 27"
+  "final": "NO 34 - NYG 27",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_CAR_PHI:RLM:total:under",
@@ -2415,7 +2507,8 @@
   "units": 0.91,
   "close": 39.5,
   "clv": 2.5,
-  "final": "CAR 25 - PHI 14"
+  "final": "CAR 25 - PHI 14",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_CHI_ATL:LEAN:spread:home",
@@ -2441,7 +2534,8 @@
   "units": -0.5,
   "close": 1.5,
   "clv": 2.0,
-  "final": "CHI 31 - ATL 23"
+  "final": "CHI 31 - ATL 23",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_CHI_ATL:RLM:spread:away",
@@ -2467,7 +2561,8 @@
   "units": 0.83,
   "close": -1.5,
   "clv": -1.5,
-  "final": "CHI 31 - ATL 23"
+  "final": "CHI 31 - ATL 23",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_CHI_ATL:TREND:spread:away",
@@ -2493,7 +2588,8 @@
   "units": 0.83,
   "close": -1.5,
   "clv": -1.5,
-  "final": "CHI 31 - ATL 23"
+  "final": "CHI 31 - ATL 23",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_WAS_SF:LEAN:spread:home",
@@ -2519,7 +2615,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-19T20:15:00-04:00"
  },
  {
   "id": "2026_07_NE_CHI:LEAN:spread:away",
@@ -2545,7 +2642,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-22T20:15:00-04:00"
  },
  {
   "id": "2026_07_NE_CHI:TEASER:teaser:away",
@@ -2571,7 +2669,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-22T20:15:00-04:00"
  },
  {
   "id": "2026_07_NE_CHI:TREND:spread:home",
@@ -2597,7 +2696,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-22T20:15:00-04:00"
  },
  {
   "id": "2026_07_PIT_NO:STRONG:spread:away",
@@ -2623,7 +2723,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T09:30:00-04:00"
  },
  {
   "id": "2026_07_PIT_NO:TEASER:teaser:home",
@@ -2649,7 +2750,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T09:30:00-04:00"
  },
  {
   "id": "2026_07_PIT_NO:RLM:spread:away",
@@ -2675,7 +2777,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T09:30:00-04:00"
  },
  {
   "id": "2026_07_CIN_BAL:STRONG:spread:away",
@@ -2701,7 +2804,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_CIN_BAL:TREND:spread:away",
@@ -2727,7 +2831,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_CLE_TEN:STRONG:spread:away",
@@ -2753,7 +2858,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_CLE_TEN:TEASER:teaser:away",
@@ -2779,7 +2885,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_CLE_TEN:TREND:spread:home",
@@ -2805,7 +2912,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_IND_MIN:STRONG:spread:home",
@@ -2831,7 +2939,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_IND_MIN:TEASER:teaser:away",
@@ -2857,7 +2966,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_IND_MIN:TREND:spread:home",
@@ -2883,7 +2993,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_MIA_NYJ:TEASER:teaser:away",
@@ -2909,7 +3020,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_MIA_NYJ:TREND:spread:away",
@@ -2935,7 +3047,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_NYG_HOU:TREND:spread:home",
@@ -2961,7 +3074,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_TB_CAR:STRONG:spread:home",
@@ -2987,7 +3101,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_TB_CAR:TEASER:teaser:home",
@@ -3013,7 +3128,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_DEN_ARI:TREND:spread:away",
@@ -3039,7 +3155,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T16:05:00-04:00"
  },
  {
   "id": "2026_07_GB_DET:LEAN:spread:home",
@@ -3065,7 +3182,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T16:25:00-04:00"
  },
  {
   "id": "2026_07_GB_DET:TREND:spread:home",
@@ -3091,7 +3209,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T16:25:00-04:00"
  },
  {
   "id": "2026_07_KC_SEA:LEAN:spread:away",
@@ -3117,7 +3236,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T20:20:00-04:00"
  },
  {
   "id": "2026_07_KC_SEA:TREND:spread:home",
@@ -3143,7 +3263,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T20:20:00-04:00"
  },
  {
   "id": "2026_07_DAL_PHI:LEAN:spread:away",
@@ -3169,7 +3290,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-26T20:15:00-04:00"
  },
  {
   "id": "2026_06_NO_NYG:RLM:spread:away",
@@ -3195,7 +3317,8 @@
   "units": 0.83,
   "close": -1.5,
   "clv": 3.0,
-  "final": "NO 34 - NYG 27"
+  "final": "NO 34 - NYG 27",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_BUF_LV:LEAN:spread:away",
@@ -3221,7 +3344,8 @@
   "units": -0.5,
   "close": -5.5,
   "clv": 0.5,
-  "final": "BUF 33 - LV 30"
+  "final": "BUF 33 - LV 30",
+  "kickoff_iso": "2026-10-18T16:25:00-04:00"
  },
  {
   "id": "2026_07_NE_CHI:STRONG:spread:away",
@@ -3248,7 +3372,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-22T20:15:00-04:00"
  },
  {
   "id": "2026_07_NE_CHI:TEASER:teaser:away",
@@ -3275,7 +3400,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-22T20:15:00-04:00"
  },
  {
   "id": "2026_07_NE_CHI:TREND:spread:home",
@@ -3302,7 +3428,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-22T20:15:00-04:00"
  },
  {
   "id": "2026_07_CIN_BAL:STRONG:spread:away",
@@ -3329,7 +3456,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_CIN_BAL:TREND:spread:away",
@@ -3356,7 +3484,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_CLE_TEN:STRONG:spread:away",
@@ -3383,7 +3512,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_CLE_TEN:TEASER:teaser:home",
@@ -3410,7 +3540,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_CLE_TEN:TEASER:teaser:away",
@@ -3437,7 +3568,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_CLE_TEN:TREND:spread:home",
@@ -3464,7 +3596,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_IND_MIN:STRONG:spread:home",
@@ -3491,7 +3624,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_IND_MIN:TREND:spread:home",
@@ -3518,7 +3652,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_MIA_NYJ:TREND:spread:away",
@@ -3545,7 +3680,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_NYG_HOU:TREND:spread:home",
@@ -3572,7 +3708,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_TB_CAR:STRONG:spread:home",
@@ -3599,7 +3736,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_TB_CAR:TEASER:teaser:home",
@@ -3626,7 +3764,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_TB_CAR:TEASER:teaser:away",
@@ -3653,7 +3792,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_DEN_ARI:LEAN:spread:away",
@@ -3680,7 +3820,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T16:05:00-04:00"
  },
  {
   "id": "2026_07_DEN_ARI:TREND:spread:away",
@@ -3707,7 +3848,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T16:05:00-04:00"
  },
  {
   "id": "2026_07_GB_DET:LEAN:spread:home",
@@ -3734,7 +3876,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T16:25:00-04:00"
  },
  {
   "id": "2026_07_GB_DET:TREND:spread:home",
@@ -3761,7 +3904,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T16:25:00-04:00"
  },
  {
   "id": "2026_07_KC_SEA:TREND:spread:home",
@@ -3788,7 +3932,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T20:20:00-04:00"
  },
  {
   "id": "2026_07_DAL_PHI:LEAN:spread:away",
@@ -3815,7 +3960,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-26T20:15:00-04:00"
  },
  {
   "id": "2026_07_DAL_PHI:TEASER:teaser:home",
@@ -3842,7 +3988,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-26T20:15:00-04:00"
  },
  {
   "id": "2026_07_KC_SEA:LEAN:spread:away",
@@ -3869,7 +4016,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T20:20:00-04:00"
  },
  {
   "id": "2026_07_TB_CAR:LEAN:spread:home",
@@ -3896,7 +4044,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_KC_SEA:TEASER:teaser:away",
@@ -3923,7 +4072,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T20:20:00-04:00"
  },
  {
   "id": "2026_07_DAL_PHI:TEASER:teaser:away",
@@ -3950,7 +4100,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-26T20:15:00-04:00"
  },
  {
   "id": "2026_07_IND_MIN:RLM:total:under",
@@ -3977,7 +4128,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_CLE_TEN:RLM:total:under",
@@ -4004,7 +4156,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_06_CAR_PHI:TEASER:teaser:home",
@@ -4031,7 +4184,8 @@
   "units": null,
   "close": 3,
   "clv": -1.5,
-  "final": "CAR 25 - PHI 14"
+  "final": "CAR 25 - PHI 14",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_CAR_PHI:RLM:spread:away",
@@ -4058,7 +4212,8 @@
   "units": 0.83,
   "close": -3,
   "clv": 4.5,
-  "final": "CAR 25 - PHI 14"
+  "final": "CAR 25 - PHI 14",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_07_MIA_NYJ:RLM:total:under",
@@ -4085,7 +4240,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_06_PIT_TB:WEATHER:total:under",
@@ -4112,7 +4268,8 @@
   "units": -1.0,
   "close": 38.5,
   "clv": 1.0,
-  "final": "PIT 26 - TB 19"
+  "final": "PIT 26 - TB 19",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_06_DAL_GB:RLM:spread:home",
@@ -4139,7 +4296,8 @@
   "units": 0.95,
   "close": 1.5,
   "clv": -3.0,
-  "final": "DAL 13 - GB 23"
+  "final": "DAL 13 - GB 23",
+  "kickoff_iso": "2026-10-18T20:20:00-04:00"
  },
  {
   "id": "2026_06_DAL_GB:WEATHER:total:under",
@@ -4166,7 +4324,8 @@
   "units": 0.87,
   "close": 53.5,
   "clv": 0.0,
-  "final": "DAL 13 - GB 23"
+  "final": "DAL 13 - GB 23",
+  "kickoff_iso": "2026-10-18T20:20:00-04:00"
  },
  {
   "id": "2026_07_DAL_PHI:RLM:total:under",
@@ -4193,7 +4352,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-26T20:15:00-04:00"
  },
  {
   "id": "2026_06_LAC_KC:RLM:spread:away",
@@ -4220,7 +4380,8 @@
   "units": -1.0,
   "close": 7.5,
   "clv": 1.0,
-  "final": "LAC 6 - KC 22"
+  "final": "LAC 6 - KC 22",
+  "kickoff_iso": "2026-10-18T16:25:00-04:00"
  },
  {
   "id": "2026_07_NE_CHI:RLM:total:under",
@@ -4247,7 +4408,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-22T20:15:00-04:00"
  },
  {
   "id": "2026_07_IND_MIN:LEAN:spread:home",
@@ -4274,7 +4436,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_DEN_ARI:STRONG:spread:away",
@@ -4301,7 +4464,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T16:05:00-04:00"
  },
  {
   "id": "2026_07_DEN_ARI:TREND:total:under",
@@ -4328,7 +4492,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T16:05:00-04:00"
  },
  {
   "id": "2026_07_DAL_PHI:STRONG:spread:away",
@@ -4355,7 +4520,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-26T20:15:00-04:00"
  },
  {
   "id": "2026_07_GB_DET:RLM:total:over",
@@ -4382,7 +4548,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T16:25:00-04:00"
  },
  {
   "id": "2026_07_NE_CHI:LEAN:spread:away",
@@ -4409,7 +4576,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-22T20:15:00-04:00"
  },
  {
   "id": "2026_06_NYJ_NE:RLM:total:under",
@@ -4436,7 +4604,8 @@
   "units": -1.0,
   "close": 43,
   "clv": 0.5,
-  "final": "NYJ 19 - NE 26"
+  "final": "NYJ 19 - NE 26",
+  "kickoff_iso": "2026-10-18T13:00:00-04:00"
  },
  {
   "id": "2026_07_MIA_NYJ:LEAN:spread:away",
@@ -4463,7 +4632,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_TB_CAR:RLM:total:under",
@@ -4490,7 +4660,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_DEN_ARI:RLM:total:under",
@@ -4517,7 +4688,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T16:05:00-04:00"
  },
  {
   "id": "2026_07_KC_SEA:RLM:total:under",
@@ -4544,7 +4716,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T20:20:00-04:00"
  },
  {
   "id": "2026_07_DAL_PHI:STRONG:spread:home",
@@ -4571,7 +4744,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-26T20:15:00-04:00"
  },
  {
   "id": "2026_07_NYG_HOU:RLM:spread:home",
@@ -4598,7 +4772,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
   "id": "2026_07_LA_LV:RLM:spread:home",
@@ -4625,7 +4800,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T16:25:00-04:00"
  },
  {
   "id": "2026_07_PIT_NO:LEAN:spread:away",
@@ -4652,7 +4828,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T09:30:00-04:00"
  },
  {
   "id": "2026_07_KC_SEA:RLM:spread:home",
@@ -4679,7 +4856,8 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-25T20:20:00-04:00"
  },
  {
   "id": "2026_07_DAL_PHI:LEAN:spread:home",
@@ -4706,6 +4884,7 @@
   "units": null,
   "close": null,
   "clv": null,
-  "final": null
+  "final": null,
+  "kickoff_iso": "2026-10-26T20:15:00-04:00"
  }
 ]
