@@ -10045,5 +10045,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401862808|spread|away|m",
+  "base": "401862808|spread|away|m",
+  "flagged": "2026-10-19T15:14-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401862808,
+  "matchup": "Army @ Tulsa",
+  "kickoff": "2026-10-23 20:30:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "pick": "Army +2",
+  "book": "MGM",
+  "line": 2.0,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 5.3,
+  "model": -3.3,
+  "grp": "FBS",
+  "limit": 2.0,
+  "status": "open"
  }
 ]
