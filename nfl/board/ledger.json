@@ -4680,5 +4680,32 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_DAL_PHI:LEAN:spread:home",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "team": "PHI",
+  "pid": null,
+  "game_id": "2026_07_DAL_PHI",
+  "week": 7,
+  "matchup": "DAL @ PHI",
+  "kickoff": "Mon Oct 26, 8:15 PM ET",
+  "pick": "PHI +4.5",
+  "line": 4.5,
+  "odds": -105,
+  "book": "FD",
+  "stake": 0.5,
+  "edge": 2.8,
+  "note": "PHI QB: Jalen Hurts injured reserve, model uses Tanner McKee",
+  "limit": 3.5,
+  "model_line": 1.7,
+  "flagged": "2026-10-19T04:50:10.224308-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
