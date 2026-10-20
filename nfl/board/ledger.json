@@ -4998,5 +4998,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_SF_ATL:RLM:spread:home",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team": "ATL",
+  "pid": null,
+  "game_id": "2026_07_SF_ATL",
+  "week": 7,
+  "matchup": "SF @ ATL",
+  "kickoff": "Sun Oct 25, 1:00 PM ET",
+  "pick": "ATL +3.5",
+  "line": 3.5,
+  "odds": -105,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": null,
+  "note": "72% of bets on SF, line moved -4.5 \u2192 -3.5 for SF",
+  "limit": null,
+  "model_line": 4.4,
+  "flagged": "2026-10-20T00:15:00.238804-04:00",
+  "kickoff_iso": "2026-10-25T13:00:00-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
