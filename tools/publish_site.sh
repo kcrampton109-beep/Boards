@@ -22,6 +22,9 @@ for attempt in 1 2 3 4 5; do
   mkdir -p "$work/$board"
   cp -r "$src"/. "$work/$board/"
   cp -r "$here/../site/." "$work/"   # landing page + shared files (bets.js, bets.css)
+  # pages load the shared files as ../x.js?v=__V__: stamp this publish so phones never mix a new page with old scripts
+  stamp="$(date -u +%Y%m%d%H%M%S)"
+  for f in "$work"/*/index.html; do [ -f "$f" ] && sed -i "s/?v=__V__/?v=$stamp/g" "$f"; done
   touch "$work/.nojekyll"
   if (
     cd "$work"
