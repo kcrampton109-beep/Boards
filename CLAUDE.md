@@ -52,8 +52,12 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
 - **Wind unders** (both boards): forecast 18+ mph within 24 h of kickoff (owner's call, Oct 19; was 15+ mph up to 2-4 days
   out). CFB logs 15+ mph or 24-48 h as near-miss RESEARCH.
 - Pages hide inactive tab panels with `hidden`; keep the `[hidden] { display: none !important }` rule (panel CSS beats it).
-- **NFL look-ahead**: a next-week game counts once 2 of DK/FD/MGM have posted it (DraftKings posts look-ahead lines
-  days early). Before that its plays are shown labelled "Look-ahead" but never logged, alerted or put on the Bets tab.
+- **NFL look-ahead**: books post the following week's lines ~10 days early (DK right after Monday night, FD Tuesday
+  afternoon); they move a lot and often aren't on the owner's apps. A next-week game counts only once 3/4 of this week's
+  games have started (Sunday evening) AND 2+ of DK/FD/MGM agree within 1.5 pts. Before that its plays show labelled
+  "Look-ahead" but are never logged, alerted or put on the Bets tab (open entries on such games are voided).
+- **NFL book agreement**: a book whose spread is 1.5+ pts off the median of DK/FD/MGM is ignored for prices (Oct 20:
+  DK and FD next-week lines up to 5 pts apart).
 - **CFB stale lines**: a book 3+ points off consensus is ignored (`RULES["stale_pts"]`).
 
 ## Data (public repo: no third-party data committed)

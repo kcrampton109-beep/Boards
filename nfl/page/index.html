@@ -263,7 +263,7 @@ function render(S) {
     const log = e ? (e.status === "open"
       ? `Logged ${esc(shortT(e.flagged))} at ${esc(e.pick)} ${odds(e.odds)} (${BOOKN[e.book] || esc(e.book)}), ${e.stake}u`
       : `<span class="pill ${e.status}">${e.status}</span> ${e.units == null ? "" : sgn(e.units, 2) + "u"} · ${esc(e.final || "")}${e.clv != null ? " · CLV " + sgn(e.clv) : ""}`)
-      : p.lookahead ? "Look-ahead line: only DraftKings has posted this game, so it isn't on your apps yet. Not logged or alerted until 2 of your books post the openers."
+      : p.lookahead ? "Look-ahead line: next week's line, posted before this week's games are played (or your books disagree on it), so it may not be on your apps and moves a lot. Not logged or alerted until this week's Sunday games have started and 2 of your books agree."
       : "Not logged yet (logs on the next check)";
     const angles = (g.angles || []).map(t => `<div class="tag">Angle: ${esc(t)}</div>`).join("");
     return `<article class="card ${p.tier}" id="${esc(p.code || p.id)}">

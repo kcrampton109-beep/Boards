@@ -576,18 +576,27 @@ def main(args=()):
         log.append(f"trends failed: {e!r}")
 
     games, plays, rlm_list = [], [], []
+    wk0 = sched[sched["week"] == int(open_weeks[0])]
+    cur_started = float((wk0["start"] <= now).mean()) if len(wk0) else 1.0   # share of this week's games already started
     wx_cache = cache.setdefault("wx", {})
     for r in sched[sched["week"].isin(open_weeks)].itertuples():
         x = an_by.get((r.away, r.home, r.week)) or {}
         cb = cbs.get((r.away, r.home, r.week)) or cbs.get((r.home, r.away, r.week))
         started = r.start <= now or x.get("status") in ("inprogress", "complete")
         books = x.get("books", {})
-        bp = best_prices(books)
+        # A book's line counts only if it agrees with the others: the user's books (DK/FD/MGM) whose spread is 1.5+
+        # points off their median are ignored for prices (two books 3+ apart -> neither). Oct 20: next week's DK and FD
+        # look-ahead lines were up to 5 points apart and neither matched the user's apps.
+        sp = {k: books[k]["sp_home"] for k in ("68", "69", "75") if (books.get(k) or {}).get("sp_home") is not None}
+        med = float(np.median(list(sp.values()))) if sp else None
+        agree = {k for k, v in sp.items() if abs(v - med) < 1.5}
+        bp = best_prices({k: v for k, v in books.items() if k not in ("68", "69", "75") or k in agree})
         cons = books.get("15", {})
-        # Look-ahead: next week's game while only one of the user's books has posted it (DraftKings posts look-ahead
-        # lines days before the openers). Shown on the board, never logged or alerted; the backtest used the openers.
-        posted = sum(books.get(k, {}).get("sp_home") is not None for k in ("68", "69", "75"))
-        lookahead = int(r.week) > int(open_weeks[0]) and posted < 2
+        # Look-ahead: books post next week's lines ~10 days early (DK right after Monday night, FD Tuesday afternoon) and
+        # they move a lot, are often off the user's apps, and are not what the backtest bet (openers, Sunday night on).
+        # Next week counts only once 3/4 of this week's games have started and 2+ of the user's books agree on it.
+        # Shown on the board, never logged or alerted.
+        lookahead = int(r.week) > int(open_weeks[0]) and (cur_started < 0.75 or len(agree) < 2)
         gm = dict(game_id=r.game_id, week=int(r.week), kickoff=fmt_et(r.start), kickoff_ts=r.start, kickoff_iso=r.start.isoformat(),
                   away=r.away, home=r.home,
                   matchup=f"{r.away} {'vs' if r.neutral else '@'} {r.home}", neutral=bool(r.neutral), roof=r.roof,
@@ -711,8 +720,8 @@ def main(args=()):
     for e in ledger:   # entries logged at a look-ahead line before this rule (Oct 13): void, they log again at the openers
         if e.get("status") == "open" and by_game.get(e["game_id"], {}).get("lookahead"):
             e["status"] = "void"
-            e["note"] = ("Voided: logged at a DraftKings look-ahead line before your books posted the game; "
-                         "it logs again at the opening line")
+            e["note"] = ("Voided: logged at a look-ahead line (next week's line, posted before this week was played, "
+                         "or books that disagreed); it logs again once the line is real")
     new = []
     for p in plays:
         pid = f"{p['game_id']}:{p['tier']}:{p['market']}:{p.get('side') or p.get('pid')}"
