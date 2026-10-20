@@ -1,0 +1,23 @@
+{
+ "id": 5,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/5",
+ "board": "NFL",
+ "pick": "NE +2.5",
+ "odds": -110,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "NE @ CHI",
+ "kickoff": "2026-10-22T20:15:00-04:00",
+ "play": "2026_07_NE_CHI:STRONG:spread:away",
+ "logged": "2026-10-20T17:58:40Z",
+ "updated": "2026-10-20T17:58:49+00:00",
+ "tier": "STRONG",
+ "game_id": "2026_07_NE_CHI",
+ "board_line": 2.5,
+ "board_odds": -110,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "away",
+ "line": 2.5
+}
