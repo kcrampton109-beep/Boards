@@ -5894,5 +5894,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_SF_ATL:RLM:total:under",
+  "tier": "RLM",
+  "market": "total",
+  "side": "under",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_07_SF_ATL",
+  "week": 7,
+  "matchup": "SF @ ATL",
+  "kickoff": "Sun Oct 25, 1:00 PM ET",
+  "pick": "Under 49",
+  "line": 49,
+  "odds": -110,
+  "book": "MGM",
+  "stake": 1.0,
+  "edge": null,
+  "note": "59% of bets on the over, total moved 49.5 \u2192 48.5",
+  "limit": null,
+  "model_line": 3.8,
+  "flagged": "2026-10-20T15:34:37.443878-04:00",
+  "kickoff_iso": "2026-10-25T13:00:00-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
