@@ -1,0 +1,23 @@
+{
+ "id": 6,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/6",
+ "board": "NFL",
+ "pick": "CAR -2.5",
+ "odds": -120,
+ "book": "FanDuel",
+ "amount": 20.0,
+ "notes": "",
+ "matchup": "TB @ CAR",
+ "kickoff": "2026-10-25T13:00:00-04:00",
+ "play": "2026_07_TB_CAR:STRONG:spread:home",
+ "logged": "2026-10-20T17:59:14Z",
+ "updated": "2026-10-20T17:59:23+00:00",
+ "tier": "STRONG",
+ "game_id": "2026_07_TB_CAR",
+ "board_line": 1.5,
+ "board_odds": -110,
+ "board_book": "DK",
+ "market": "spread",
+ "side": "home",
+ "line": -2.5
+}
