@@ -319,7 +319,7 @@ function render(S) {
   };
   const nowOf = (g, p) => !g || g.started ? { kind: "live", text: "Kicked off, result pending" }
     : !p ? { kind: "gone", text: "No longer a play at current prices: skip it if you haven't bet it" }
-    : { kind: "ok", text: `Still a play: ${p.pick} ${odds(p.odds)} at ${BOOKN[p.book] || p.book}` };
+    : { kind: "ok", text: `Still a play: ${p.pick} ${odds(p.odds)} at ${BOOKN[p.book] || p.book}${p.stake ? ` · bet ${+p.stake}u ($${+(p.stake * UNIT).toFixed(2)}) at this price` : ""}` };
   const openBets = betLed.filter(e => e.status === "open").map(e => {
     const g = games[e.game_id], p = playBy[e.id];
     return { label: tierName(e.tier), pick: e.pick, odds: odds(e.odds), app: BOOKN[e.book] || e.book, stake: e.stake, matchup: e.matchup,
