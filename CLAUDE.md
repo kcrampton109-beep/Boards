@@ -40,12 +40,15 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   teaser rows exactly like the engine's record). Results = tier chips, period tiles, month calendar (green/red by units,
   signed value always printed), by-week table; tap a day/week for its plays. Prefix shared class names (`b-`, `t-`,
   `trk-`): the pages' own `.rec`, `.empty`, `.tag` rules leak into generic names.
-- **My Bets** (owner's real bets): "I took this" on Bets/Today cards opens a pre-filled GitHub issue form
-  (`.github/ISSUE_TEMPLATE/bet.yml`, fields prefilled by id via query string). `.github/workflows/mybets.yml` acts only on
-  the repo owner's issues/comments (public repo), runs `tools/log_bet.py` (one file per bet: `<board>/board/mybets/<issue>.json`,
-  linked to the ledger entry by `play` id, `game:<id>` for other bets on a board game; edit the issue to change, comment
-  `remove` to delete), replies, closes the issue and republishes `mybets.json`. Engines write `board/scores.json` (finals +
-  closing lines); the page grades bets at the owner's line/odds (`site/mybets.js`). Results has a "My bets" chip.
+- **My Bets** (owner's real bets): "Log bet" on Bets/Today cards opens an in-board panel (`site/logbet.js` + `logbet.css`):
+  dropdowns for bet side, line, odds, book, amount (each with "Other…"), saved by creating a GitHub issue through the API
+  with the owner's fine-grained token (this repo, Issues read/write) kept in the phone's localStorage (never in the repo).
+  The issue body uses the issue-form layout (`.github/ISSUE_TEMPLATE/bet.yml`, still usable by hand). `.github/workflows/mybets.yml`
+  acts only on the owner's issues/comments (public repo), runs `tools/log_bet.py` (one file per bet: `<board>/board/mybets/<issue>.json`,
+  linked to the ledger entry by `play` id, `game:<id>` when the side differs from the board play), replies, closes the issue and
+  republishes `mybets.json`. Edit = PATCH the issue, Remove = a `remove` comment. Saved bets show at once as "pending"
+  (localStorage) until `mybets.json` has them. Engines write `board/scores.json` (finals + closing lines); `site/mybets.js`
+  grades at the owner's line/odds. Results has a "My bets" chip. Never prefill the GitHub form through the URL: it turns "+" into a space.
 - **Wind unders** (both boards): forecast 18+ mph within 24 h of kickoff (owner's call, Oct 19; was 15+ mph up to 2-4 days
   out). CFB logs 15+ mph or 24-48 h as near-miss RESEARCH.
 - Pages hide inactive tab panels with `hidden`; keep the `[hidden] { display: none !important }` rule (panel CSS beats it).

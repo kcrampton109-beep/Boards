@@ -45,3 +45,5 @@
 .b-take:hover, .b-take:focus-visible { background: var(--ink); color: var(--card); outline: none }
 .b-mine { font-size: 13px; font-weight: 600; color: var(--win) }
 .bets p a { color: var(--ink) }
+.b-link { font: inherit; color: var(--ink); background: none; border: 0; padding: 0; text-decoration: underline; cursor: pointer }
+button.b-take { cursor: pointer }

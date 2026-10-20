@@ -51,7 +51,7 @@
         <div class="price num"><b>${esc(r.odds)}</b> at <b>${esc(r.app)}</b></div>
         <div class="facts">${facts.map(([k, v]) => `<span>${k}</span><span>${v}</span>`).join("")}</div>
         ${r.mine && r.mine.length ? `<div class="b-mine">✓ You bet ${r.mine.map(esc).join("; ")}</div>` : ""}
-        ${r.take ? `<a class="b-take" href="${esc(r.take)}" target="_blank" rel="noopener">${r.mine && r.mine.length ? "Log another bet on this" : "I took this"}</a>` : ""}
+        ${r.take ? `<button class="b-take" type="button" data-take="${esc(r.take)}">${r.mine && r.mine.length ? "Log another bet on this" : "Log bet"}</button>` : ""}
         ${result ? `<div class="now ${result.kind}">${esc(result.text)}</div>` : ""}</article>`;
     };
     const draw = () => {

@@ -19,9 +19,10 @@
     const stake = u => `${units(u)} · ${usd(u)}`;
     const facts = rows => `<div class="facts">${rows.filter(r => r[1]).map(([k, v]) => `<span>${k}</span><span>${v}</span>`).join("")}</div>`;
     const now = n => n ? `<div class="now ${n.kind}">${esc(n.text)}</div>` : "";
-    // "I took this" (MyBets form link, x.take) and the owner's logged bets on the play (x.mine: short descriptions)
+    // "Log bet" (x.take: key of a play the page registered for the in-board panel, site/logbet.js) and the owner's
+    // logged bets on the play (x.mine: short descriptions)
     const took = x => (x.mine && x.mine.length ? `<div class="b-mine">✓ You bet ${x.mine.map(esc).join("; ")}</div>` : "")
-      + (x.take ? `<a class="b-take" href="${esc(x.take)}" target="_blank" rel="noopener">${x.mine && x.mine.length ? "Log another bet on this" : "I took this"}</a>` : "");
+      + (x.take ? `<button class="b-take" type="button" data-take="${esc(x.take)}">${x.mine && x.mine.length ? "Log another bet on this" : "Log bet"}</button>` : "");
 
     const betCard = b => `<article class="bet ${b.now ? b.now.kind : ""}">
         <div class="top"><span class="tag">${esc(b.label)}</span><span class="num">${stake(b.stake)}</span></div>

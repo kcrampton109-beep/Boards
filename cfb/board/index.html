@@ -98,6 +98,8 @@ tr.flag td:first-child { box-shadow: inset 3px 0 0 var(--gold) }
 <link rel="stylesheet" href="../track.css">
 <script src="../track.js"></script>
 <script src="../mybets.js"></script>
+<link rel="stylesheet" href="../logbet.css">
+<script src="../logbet.js"></script>
 
 <div class="wrap">
   <header>
@@ -263,13 +265,23 @@ function render(S) {
       ${ps.length ? `<div class="cards">${ps.map(card).join("")}</div>` : `<div class="muted">None at current prices.</div>`}</div>`;
   }).join("");
 
-  // My Bets hooks: "I took this" link for a logged play (prefilled with the best price now if it is still a play) and the
-  // owner's logged bets on it
+  // My Bets hooks: the owner's bets (published + saved on this phone but not recorded yet, minus ones just removed),
+  // a "Log bet" panel registered per play (site/logbet.js), and a redraw after a save
+  const goneIds = LogBet.removed();
+  const myBets = (S.myBets || []).filter(b => !goneIds.has(b.id)).concat(LogBet.pending("CFB", S.myBets || []));
   const mineBy = {};
-  (S.myBets || []).forEach(b => (mineBy[b.play] = mineBy[b.play] || []).push(`$${b.amount} at ${b.market === "total" ? b.line + " " : b.line != null && b.market !== "teaser" ? line(b.line) + " " : ""}${odds(b.odds)} ${b.book}`));
+  myBets.forEach(b => (mineBy[b.play] = mineBy[b.play] || []).push(`$${b.amount} at ${b.market === "total" ? b.line + " " : b.line != null && b.market !== "teaser" ? line(b.line) + " " : ""}${odds(b.odds)} ${b.book}${b.syncing ? " (saving)" : ""}`));
   const mineOf = id => mineBy[id] || [];
-  const takeFor = (e, p) => { const x = p || e; return MyBets.takeUrl({ board: "CFB", bet: x.pick, line: x.line, odds: x.odds, book: BOOKN[x.book] || x.book,
-    amount: Math.round((x.stake || e.stake || 1) * UNIT * 100) / 100, game: e.matchup, kickoff: e.kickoff, play: e.id }); };
+  const takes = window.__takes = {}, edits = window.__edits = {};
+  let nKey = 0;
+  const teamsOf = e => { const g = games[e.game_id]; return g ? [g.away, g.home] : String(e.matchup || "").split(/ @ | vs /); };
+  const editKey = b => { const k = "e" + (++nKey); edits[k] = b; return k; };
+  window.__afterLog = () => render(S);
+  const takeFor = (e, p) => { const x = p || e, [away, home] = teamsOf(e), k = "t" + (++nKey);
+    takes[k] = { board: "CFB", play: e.id, game_id: e.game_id, matchup: e.matchup, away, home, kickoff: e.kickoff, kickoffTxt: etTxt(e.kickoff),
+                 market: e.market, side: e.side, line: x.line, odds: x.odds, book: x.book, amount: Math.round((x.stake || e.stake || 1) * UNIT),
+                 pickLabel: x.pick, boardLine: e.line, boardTxt: `${e.pick} ${odds(e.odds)} ${BOOKN[e.book] || e.book}` };
+    return k; };
   // bets: every play to put money on, drawn by the shared ../bets.js (same look on every board)
   const etTxt = s => { try { return new Date(String(s).replace(" ", "T")).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " ET"; } catch (e) { return s || ""; } };
   const playBy = {};
@@ -324,9 +336,9 @@ function render(S) {
   });
   const todayET = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
   const ledAll = S.fullLedger || S.ledger || [];
-  trackRows.push(...MyBets.rows(S.myBets || [], S.scores || {}, UNIT, b => { const e = ledAll.find(x => x.id === String(b.play).split("+")[0]); return e ? e.week : null; }));
+  trackRows.push(...MyBets.rows(myBets, S.scores || {}, UNIT, b => { const e = ledAll.find(x => x.id === String(b.play).split("+")[0]); return e ? e.week : null; }));
   Track.renderToday(document.getElementById("p-today"), { rows: trackRows, unit: UNIT, today: todayET });
-  MyBets.render(document.getElementById("p-mine"), { bets: S.myBets || [], scores: S.scores || {}, unit: UNIT, board: "CFB" });
+  MyBets.render(document.getElementById("p-mine"), { bets: myBets, scores: S.scores || {}, unit: UNIT, board: "CFB", editKey });
 
   Track.renderResults(document.getElementById("p-results"), { rows: trackRows, unit: UNIT, today: todayET, week: S.week,
     tiers: [["money", "Money plays"], ["MINE", "My bets"], ["STRONG", "Strong"], ["FCS", "FCS"], ["WEATHER", "Wind unders"], ["LEAN", "Leans"], ["RESEARCH", "Research"], ["all", "All plays"]] });

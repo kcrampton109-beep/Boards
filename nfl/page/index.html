@@ -107,6 +107,8 @@ tr:last-child td { border-bottom: 0 }
 <link rel="stylesheet" href="../track.css">
 <script src="../track.js"></script>
 <script src="../mybets.js"></script>
+<link rel="stylesheet" href="../logbet.css">
+<script src="../logbet.js"></script>
 
 <div class="wrap">
   <header>
@@ -278,15 +280,29 @@ function render(S) {
       ${ps.length ? `<div class="cards">${ps.map(card).join("")}</div>` : `<div class="muted">None at current prices.</div>`}</div>`;
   }).join("");
 
-  // My Bets hooks: "I took this" link for a logged play (prefilled with the best price now if it is still a play) and the
-  // owner's logged bets on it
+  // My Bets hooks: the owner's bets (published + saved on this phone but not recorded yet, minus ones just removed),
+  // a "Log bet" panel registered per play (site/logbet.js), and a redraw after a save
+  const goneIds = LogBet.removed();
+  const myBets = (S.myBets || []).filter(b => !goneIds.has(b.id)).concat(LogBet.pending("NFL", S.myBets || []));
   const mineBy = {};
-  (S.myBets || []).forEach(b => (mineBy[b.play] = mineBy[b.play] || []).push(`$${b.amount} at ${b.market === "total" ? b.line + " " : b.line != null && b.market !== "teaser" ? line(b.line) + " " : ""}${odds(b.odds)} ${b.book}`));
+  myBets.forEach(b => (mineBy[b.play] = mineBy[b.play] || []).push(`$${b.amount} at ${b.market === "total" ? b.line + " " : b.line != null && b.market !== "teaser" ? line(b.line) + " " : ""}${odds(b.odds)} ${b.book}${b.syncing ? " (saving)" : ""}`));
   const mineOf = id => mineBy[id] || [];
-  const takeFor = (e, p) => { const x = p || e; return MyBets.takeUrl({ board: "NFL", bet: x.pick, line: x.line, odds: x.odds, book: BOOKN[x.book] || x.book,
-    amount: Math.round((x.stake || e.stake || 1) * UNIT * 100) / 100, game: e.matchup, kickoff: e.kickoff_iso || e.kickoff, play: e.id }); };
-  const takePair = (a, b) => MyBets.takeUrl({ board: "NFL", bet: `${a.pick} + ${b.pick}`, odds: -120, book: BOOKN[a.book] || a.book, amount: UNIT,
-    game: `${a.matchup} / ${b.matchup}`, kickoff: a.kickoff_iso || a.kickoff, play: `${a.id}+${b.id}` });
+  const takes = window.__takes = {}, edits = window.__edits = {};
+  let nKey = 0;
+  const teamsOf = e => { const g = games[e.game_id]; return g ? [g.away, g.home] : String(e.matchup || "").split(/ @ | vs /); };
+  const editKey = b => { const k = "e" + (++nKey); edits[k] = b; return k; };
+  window.__afterLog = () => render(S);
+  const isoOf = o => o.kickoff_iso || (games[o.game_id] || {}).kickoff_iso || o.kickoff;
+  const takeFor = (e, p) => { const x = p || e, [away, home] = teamsOf(e), k = "t" + (++nKey);
+    takes[k] = { board: "NFL", play: e.id, game_id: e.game_id, matchup: e.matchup, away, home, kickoff: isoOf(e), kickoffTxt: e.kickoff,
+                 market: e.market, side: e.side, line: x.line, odds: x.odds, book: x.book, amount: Math.round((x.stake || e.stake || 1) * UNIT),
+                 pickLabel: x.pick, boardLine: e.line, boardTxt: `${e.pick} ${odds(e.odds)} ${BOOKN[e.book] || e.book}` };
+    return k; };
+  const takePair = (a, b) => { const k = "t" + (++nKey), leg = o => ({ pick: o.pick, matchup: o.matchup || (games[o.game_id] || {}).matchup,
+      game_id: o.game_id, side: o.side, line: o.line, kickoff: isoOf(o) });
+    takes[k] = { board: "NFL", play: `${a.id}+${b.id}`, market: "teaser", side: null, teaser: [leg(a), leg(b)], odds: -120, book: a.book,
+                 amount: UNIT, matchup: `${leg(a).matchup} / ${leg(b).matchup}`, kickoff: isoOf(a), game_id: a.game_id, pickLabel: `${a.pick} + ${b.pick}` };
+    return k; };
   // bets: every play to put money on, drawn by the shared ../bets.js (same look on every board)
   const etTxt = iso => { try { return new Date(iso).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " ET"; } catch (e) { return iso || ""; } };
   const playBy = Object.fromEntries(plays.map(p => [p.id, p]));
@@ -376,9 +392,9 @@ function render(S) {
                      take: takePair(a, b), mine: mineOf(a.id + "+" + b.id) });
   }
   const todayET = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
-  trackRows.push(...MyBets.rows(S.myBets || [], S.scores || {}, UNIT, b => { const e = full.find(x => x.id === String(b.play).split("+")[0]); return e ? e.week : null; }));
+  trackRows.push(...MyBets.rows(myBets, S.scores || {}, UNIT, b => { const e = full.find(x => x.id === String(b.play).split("+")[0]); return e ? e.week : null; }));
   Track.renderToday(document.getElementById("p-today"), { rows: trackRows, unit: UNIT, today: todayET });
-  MyBets.render(document.getElementById("p-mine"), { bets: S.myBets || [], scores: S.scores || {}, unit: UNIT, board: "NFL" });
+  MyBets.render(document.getElementById("p-mine"), { bets: myBets, scores: S.scores || {}, unit: UNIT, board: "NFL", editKey });
 
   Track.renderResults(document.getElementById("p-results"), { rows: trackRows, unit: UNIT, today: todayET, week: S.week,
     tiers: [["money", "Money plays"], ["MINE", "My bets"], ["STRONG", "Strong"], ["WEATHER", "Wind unders"], ["TEASER2", "2-team teasers"], ["LEAN", "Leans"],

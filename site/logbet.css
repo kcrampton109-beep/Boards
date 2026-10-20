@@ -1,0 +1,29 @@
+/* Log-bet panel (site/logbet.js): a bottom sheet on phones, a centred card on wider screens. Page colour tokens only. */
+body.lb-open { overflow: hidden }
+.lb-overlay { position: fixed; inset: 0; z-index: 50; background: rgb(0 0 0 / .45); display: flex; align-items: flex-end; justify-content: center }
+.lb-sheet { background: var(--card); color: var(--ink); width: 100%; max-width: 480px; max-height: 92vh; overflow-y: auto;
+            border-radius: 14px 14px 0 0; box-shadow: 0 -8px 30px rgb(0 0 0 / .25); font-family: "Public Sans", "Segoe UI", system-ui, sans-serif;
+            padding-bottom: env(safe-area-inset-bottom, 0px) }
+@media (min-width: 640px) { .lb-overlay { align-items: center } .lb-sheet { border-radius: 14px } }
+.lb-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px 6px; position: sticky; top: 0; background: var(--card) }
+.lb-head h2 { margin: 0; font: 700 19px/1.2 "Public Sans", "Segoe UI", system-ui, sans-serif; text-transform: none; letter-spacing: 0 }
+.lb-x { width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--rule); background: var(--card); color: var(--ink); font-size: 22px; line-height: 1; cursor: pointer }
+.lb-body { padding: 6px 16px 18px; display: grid; gap: 12px; font-size: 15px }
+.lb-body p { margin: 0; line-height: 1.45 }
+.lb-body a { color: var(--ink) }
+.lb-play { display: grid; gap: 2px; padding: 10px 12px; border-radius: 8px; background: var(--soft) }
+.lb-play b { font-size: 18px } .lb-play span { font-size: 13px; color: var(--muted) }
+.lb-field { display: grid; gap: 5px }
+.lb-field > span { font-size: 12px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--muted) }
+.lb-field select, .lb-field input { font: 500 17px/1.2 "Public Sans", system-ui, sans-serif; color: var(--ink); background: var(--card);
+                                     border: 1px solid var(--rule); border-radius: 8px; padding: 11px 12px; width: 100%; box-sizing: border-box; min-height: 46px }
+.lb-field select:focus, .lb-field input:focus, .lb-x:focus-visible, .lb-actions button:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px }
+.lb-steps { margin: 0; padding-left: 20px; display: grid; gap: 6px; font-size: 14px; line-height: 1.4 }
+.lb-note { font-size: 13px; color: var(--muted) }
+.lb-err { padding: 10px 12px; border-radius: 8px; background: color-mix(in srgb, var(--loss) 14%, var(--card)); color: var(--loss); font-size: 14px }
+.lb-ok { font-size: 16px; color: var(--win) }
+.lb-actions { display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap; padding-top: 4px }
+.lb-actions button { font: 700 16px/1 "Public Sans", system-ui, sans-serif; border-radius: 10px; padding: 14px 18px; cursor: pointer; min-height: 48px }
+.lb-primary { background: var(--ink); color: var(--card); border: 1px solid var(--ink); flex: 1 1 auto }
+.lb-primary:disabled, .lb-danger:disabled { opacity: .6; cursor: default }
+.lb-danger { background: var(--card); color: var(--loss); border: 1px solid var(--loss) }

@@ -82,7 +82,8 @@
       const vs = vsBoard(b), started = b.kickoff && new Date(String(b.kickoff).replace(" ", "T")) < now;
       const boardTxt = b.board_line != null ? `${b.market === "total" ? b.board_line : line(b.board_line)} ${odds(b.board_odds)} ${esc(b.board_book || "")}` +
         (vs == null ? "" : vs === 0 ? " · same number" : ` · you got ${Math.abs(vs)} pt${Math.abs(vs) === 1 ? "" : "s"} <span class="${cls(vs)}">${vs > 0 ? "better" : "worse"}</span>`) : "";
-      const status = b.g.unlinked ? { kind: "live", text: "Not a board game: not graded automatically" }
+      const status = b.syncing ? { kind: "live", text: "Saving to GitHub: recorded within a couple of minutes" }
+        : b.g.unlinked ? { kind: "live", text: "Not a board game: not graded automatically" }
         : started ? { kind: "live", text: "Kicked off: graded when the final is in" } : { kind: "ok", text: "Pending" };
       const legs = b.market === "teaser" ? (b.legs || []).map(x => `${esc(x.pick)} → ${line(x.line + 6)} · ${esc(x.matchup)}`).join("<br>") : "";
       return `<article class="bet ${status.kind}">
@@ -91,13 +92,14 @@
         <div class="price num"><b>${price(b)}</b> at <b>${esc(b.book)}</b></div>
         <div class="facts">${[["Game", legs || esc(b.matchup)], ["Kickoff", esc(etTxt(b.market === "teaser" ? (b.legs || []).map(x => x.kickoff).sort().pop() : b.kickoff))],
           ["Board", boardTxt], ["Logged", esc(etTxt(b.logged))]].filter(x => x[1]).map(([k, v]) => `<span>${k}</span><span>${v}</span>`).join("")}</div>
-        <a class="b-take" href="${esc(b.issue)}" target="_blank" rel="noopener">Edit or remove</a>
+        ${d.editKey ? `<button class="b-take" type="button" data-edit="${esc(d.editKey(b))}">Edit or remove</button>` : ""}
         <div class="now ${status.kind}">${esc(status.text)}</div></article>`;
     };
     el.innerHTML = `<div class="bets">
-      <p>Your own bets, logged with the <b>I took this</b> button on the Bets and Today tabs: a GitHub form opens with the play filled in;
-         fix anything that was different (line, odds, app, amount) and submit, and it shows here within a minute or two.
-         Each bet is graded at <b>your</b> line and odds. <a href="${esc(takeUrl({ board: d.board, play: "" }))}" target="_blank" rel="noopener">Log a bet that isn't on the board</a> (not graded automatically).</p>
+      <p>Your own bets, logged with the <b>Log bet</b> button on the Bets and Today tabs: pick the line, odds, app and amount you
+         actually got and save. Each bet is graded at <b>your</b> line and odds. ${typeof LogBet !== "undefined" && LogBet.connected()
+         ? 'This phone is connected to GitHub. <button class="b-link" type="button" data-disconnect="1">Disconnect</button>'
+         : "The first time you log a bet, the board walks you through connecting it to GitHub."}</p>
       <div class="bets-sum">
         <div><span class="b-lab">Record</span><span class="b-rec num">${w}-${l}${p ? "-" + p : ""}</span><span class="b-u num">${done.length} settled</span></div>
         <div><span class="b-lab">Won / lost</span><span class="b-rec num ${cls(profit)}">${usd(profit)}</span><span class="b-u num">ROI ${risked ? sgn(100 * profit / risked, 1) + "%" : "–"} on $${risked.toFixed(0)}</span></div>
@@ -110,7 +112,7 @@
       <h2>Settled<span class="n num">${done.length}</span></h2>
       ${done.length ? `<div class="bets-tbl"><table><thead><tr><th>Result</th><th>Bet</th><th class="r">Price</th><th class="r">Stake</th><th class="r">Won / lost</th><th class="r">CLV</th><th class="r">vs board</th></tr></thead><tbody>
         ${done.map(b => { const vs = vsBoard(b); return `<tr><td><span class="res ${b.g.status}">${b.g.status}</span></td>
-          <td class="g"><b>${esc(b.pick)}</b><span class="sub">${esc(b.matchup)} · ${esc(b.g.final)} · <a href="${esc(b.issue)}" target="_blank" rel="noopener">edit</a></span></td>
+          <td class="g"><b>${esc(b.pick)}</b><span class="sub">${esc(b.matchup)} · ${esc(b.g.final)}${d.editKey ? ` · <button class="b-link" type="button" data-edit="${esc(d.editKey(b))}">edit</button>` : ""}</span></td>
           <td class="r num">${price(b)}<span class="sub">${esc(b.book)}</span></td><td class="r num">$${b.amount}</td>
           <td class="r num ${cls(b.g.profit)}">${usd(b.g.profit)}</td><td class="r num ${cls(b.g.clv)}">${b.g.clv == null ? "–" : sgn(b.g.clv)}</td>
           <td class="r num ${cls(vs)}">${vs == null ? "–" : sgn(vs)}</td></tr>`; }).join("")}</tbody></table></div>`
@@ -118,5 +120,10 @@
     </div>`;
   }
 
+  document.addEventListener("click", e => {
+    const t = e.target.closest && e.target.closest("[data-disconnect]");
+    if (t && typeof LogBet !== "undefined" && confirm("Disconnect this phone from GitHub? You'd paste the key again to log bets.")) {
+      LogBet.disconnect(); if (window.__afterLog) window.__afterLog(); }
+  });
   window.MyBets = { takeUrl, grade, rows, render };
 })();
