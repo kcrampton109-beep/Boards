@@ -1,0 +1,23 @@
+{
+ "id": 11,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/11",
+ "board": "CFB",
+ "pick": "Weber State +26.5",
+ "odds": -120,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Weber State @ Montana State",
+ "kickoff": "2026-10-24 15:00:00-04:00",
+ "play": "401868121|spread|away|m",
+ "logged": "2026-10-21T17:51:45Z",
+ "updated": "2026-10-21T17:51:54+00:00",
+ "tier": "FCS",
+ "game_id": 401868121,
+ "board_line": 26.5,
+ "board_odds": -120.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "away",
+ "line": 26.5
+}
