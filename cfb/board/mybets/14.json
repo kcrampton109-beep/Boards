@@ -1,0 +1,23 @@
+{
+ "id": 14,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/14",
+ "board": "CFB",
+ "pick": "Dayton -4.5",
+ "odds": -113,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "San Diego @ Dayton",
+ "kickoff": "2026-10-24 12:00:00-04:00",
+ "play": "401868230|spread|home|m",
+ "logged": "2026-10-21T17:52:27Z",
+ "updated": "2026-10-21T17:52:36+00:00",
+ "tier": "FCS",
+ "game_id": 401868230,
+ "board_line": -4.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": -4.5
+}
