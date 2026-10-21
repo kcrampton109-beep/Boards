@@ -5950,5 +5950,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_PIT_NO:RLM:spread:away",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "away",
+  "team": "PIT",
+  "pid": null,
+  "game_id": "2026_07_PIT_NO",
+  "week": 7,
+  "matchup": "PIT vs NO",
+  "kickoff": "Sun Oct 25, 9:30 AM ET",
+  "pick": "PIT -3",
+  "line": -3,
+  "odds": -118,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "57% of bets on NO, line moved +1.5 \u2192 +3.5",
+  "limit": null,
+  "model_line": 4.6,
+  "flagged": "2026-10-21T10:44:59.659102-04:00",
+  "kickoff_iso": "2026-10-25T09:30:00-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
