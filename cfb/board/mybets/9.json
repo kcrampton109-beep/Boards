@@ -1,0 +1,23 @@
+{
+ "id": 9,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/9",
+ "board": "CFB",
+ "pick": "North Alabama +13.5",
+ "odds": -113,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Austin Peay @ North Alabama",
+ "kickoff": "2026-10-24 19:00:00-04:00",
+ "play": "401868067|spread|home|m",
+ "logged": "2026-10-21T17:51:17Z",
+ "updated": "2026-10-21T17:51:26+00:00",
+ "tier": "FCS",
+ "game_id": 401868067,
+ "board_line": 13.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 13.5
+}
