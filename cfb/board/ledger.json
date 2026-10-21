@@ -10927,5 +10927,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401867871|spread|away|m",
+  "base": "401867871|spread|away|m",
+  "flagged": "2026-10-21T13:28-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401867871,
+  "matchup": "Murray State @ South Dakota State",
+  "kickoff": "2026-10-24 15:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "pick": "Murray State +40.5",
+  "book": "FD",
+  "line": 40.5,
+  "odds": -113.0,
+  "stake": 1.0,
+  "edge": 4.7,
+  "model": 35.8,
+  "grp": "FCS-FCS",
+  "limit": 39.0,
+  "status": "open"
  }
 ]
