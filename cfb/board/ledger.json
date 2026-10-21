@@ -9814,7 +9814,11 @@
   "model": -14.5,
   "grp": "FBS",
   "limit": -9.5,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": -10.5,
+  "units": -0.5,
+  "final": "Middle Tennessee 26 - Florida International 23"
  },
  {
   "id": "401858273|spread|home|m",
@@ -10044,7 +10048,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": -1.0,
+  "close": 46.5,
+  "units": -0.5,
+  "final": "Middle Tennessee 26 - Florida International 23"
  },
  {
   "id": "401862808|spread|away|m",
