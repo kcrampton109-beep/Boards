@@ -1,0 +1,23 @@
+{
+ "id": 12,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/12",
+ "board": "CFB",
+ "pick": "The Citadel +20.5",
+ "odds": -120,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Tennessee Tech @ The Citadel",
+ "kickoff": "2026-10-24 14:00:00-04:00",
+ "play": "401868392|spread|home|m",
+ "logged": "2026-10-21T17:52:00Z",
+ "updated": "2026-10-21T17:52:08+00:00",
+ "tier": "FCS",
+ "game_id": 401868392,
+ "board_line": 20.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 20.5
+}
