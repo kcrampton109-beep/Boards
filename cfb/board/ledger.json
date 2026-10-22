@@ -11000,5 +11000,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401858274|total|under|wx",
+  "base": "401858274|total|under|wx",
+  "flagged": "2026-10-22T12:10-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401858274,
+  "matchup": "Pittsburgh @ Miami",
+  "kickoff": "2026-10-24 12:00:00-04:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 49.5 (wind 17 mph)",
+  "book": "FD",
+  "line": 49.5,
+  "odds": -115.0,
+  "stake": 0.5,
+  "edge": 16.8,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
