@@ -11092,5 +11092,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401869138|total|under|wx",
+  "base": "401869138|total|under|wx",
+  "flagged": "2026-10-22T17:09-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401869138,
+  "matchup": "McNeese @ Incarnate Word",
+  "kickoff": "2026-10-24 17:00:00-04:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 56.5 (wind 16 mph)",
+  "book": "FD",
+  "line": 56.5,
+  "odds": -113.0,
+  "stake": 0.5,
+  "edge": 15.8,
+  "model": null,
+  "grp": "FCS-FCS",
+  "limit": null,
+  "status": "open"
  }
 ]
