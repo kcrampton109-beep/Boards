@@ -6118,5 +6118,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_TB_CAR:RLM:spread:away",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "away",
+  "team": "TB",
+  "pid": null,
+  "game_id": "2026_07_TB_CAR",
+  "week": 7,
+  "matchup": "TB @ CAR",
+  "kickoff": "Sun Oct 25, 1:00 PM ET",
+  "pick": "TB +3",
+  "line": 3,
+  "odds": 100,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": null,
+  "note": "65% of bets on CAR, line moved -3.5 \u2192 -2.5",
+  "limit": null,
+  "model_line": -7.2,
+  "flagged": "2026-10-22T15:43:57.050358-04:00",
+  "kickoff_iso": "2026-10-25T13:00:00-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
