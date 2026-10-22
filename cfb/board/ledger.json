@@ -10002,7 +10002,11 @@
   "model": -1.7,
   "grp": "FBS",
   "limit": 3.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 3.5,
+  "units": -0.5,
+  "final": "New Mexico State 30 - Sam Houston 24"
  },
  {
   "id": "401869935|spread|home|m",
