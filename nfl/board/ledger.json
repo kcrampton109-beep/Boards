@@ -6062,5 +6062,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_SF_ATL:TEASER:teaser:home",
+  "tier": "TEASER",
+  "market": "teaser",
+  "side": "home",
+  "team": "ATL",
+  "pid": null,
+  "game_id": "2026_07_SF_ATL",
+  "week": 7,
+  "matchup": "SF @ ATL",
+  "kickoff": "Sun Oct 25, 1:00 PM ET",
+  "pick": "ATL +2.5 \u2192 +8.5",
+  "line": 2.5,
+  "odds": -120,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": null,
+  "note": "total 49.5",
+  "limit": null,
+  "model_line": 3.8,
+  "flagged": "2026-10-22T12:14:29.193624-04:00",
+  "kickoff_iso": "2026-10-25T13:00:00-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
