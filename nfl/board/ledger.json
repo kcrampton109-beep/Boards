@@ -6090,5 +6090,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_DEN_ARI:LEAN:spread:away",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "team": "DEN",
+  "pid": null,
+  "game_id": "2026_07_DEN_ARI",
+  "week": 7,
+  "matchup": "DEN @ ARI",
+  "kickoff": "Sun Oct 25, 4:05 PM ET",
+  "pick": "DEN -4.5",
+  "line": -4.5,
+  "odds": -105,
+  "book": "FD",
+  "stake": 0.5,
+  "edge": 2.7,
+  "note": null,
+  "limit": -5.0,
+  "model_line": 7.2,
+  "flagged": "2026-10-22T14:49:35.096632-04:00",
+  "kickoff_iso": "2026-10-25T16:05:00-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
