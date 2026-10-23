@@ -11184,5 +11184,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401868348|spread|home|m",
+  "base": "401868348|spread|home|m",
+  "flagged": "2026-10-23T17:07-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401868348,
+  "matchup": "East Tennessee State @ VMI",
+  "kickoff": "2026-10-24 13:30:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "VMI +34.5",
+  "book": "FD",
+  "line": 34.5,
+  "odds": -113.0,
+  "stake": 0.5,
+  "edge": 3.4,
+  "model": 31.1,
+  "grp": "FCS-FCS",
+  "limit": 34.5,
+  "status": "open"
  }
 ]
