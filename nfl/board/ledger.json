@@ -6174,5 +6174,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_LA_LV:STRONG:spread:away",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "team": "LA",
+  "pid": null,
+  "game_id": "2026_07_LA_LV",
+  "week": 7,
+  "matchup": "LA @ LV",
+  "kickoff": "Sun Oct 25, 4:25 PM ET",
+  "pick": "LA -3",
+  "line": -3,
+  "odds": -118,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": 3.1,
+  "note": null,
+  "limit": -3.0,
+  "model_line": 6.1,
+  "flagged": "2026-10-23T17:13:10.638445-04:00",
+  "kickoff_iso": "2026-10-25T16:25:00-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
