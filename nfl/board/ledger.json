@@ -5049,11 +5049,11 @@
   "model_line": 0.3,
   "flagged": "2026-10-20T01:44:04.705188-04:00",
   "kickoff_iso": "2026-10-22T20:15:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 50.5,
+  "clv": -0.0,
+  "final": "NE 24 - CHI 30"
  },
  {
   "id": "2026_07_LA_LV:RLM:total:under",
@@ -5665,11 +5665,11 @@
   "model_line": 0.3,
   "flagged": "2026-10-20T14:18:44.133646-04:00",
   "kickoff_iso": "2026-10-22T20:15:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 3,
+  "clv": 0,
+  "final": "NE 24 - CHI 30"
  },
  {
   "id": "2026_07_CIN_BAL:STRONG:spread:away",
