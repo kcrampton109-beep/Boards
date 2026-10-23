@@ -11138,5 +11138,28 @@
   "grp": "FCS-FCS",
   "limit": 2.5,
   "status": "open"
+ },
+ {
+  "id": "401866476|spread|home|m",
+  "base": "401866476|spread|home|m",
+  "flagged": "2026-10-23T13:12-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401866476,
+  "matchup": "Miami (OH) @ Central Michigan",
+  "kickoff": "2026-10-24 13:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Central Michigan +3.5",
+  "book": "DK",
+  "line": 3.5,
+  "odds": -115.0,
+  "stake": 0.5,
+  "edge": 5.1,
+  "model": -1.6,
+  "grp": "FBS",
+  "limit": 3.5,
+  "status": "open"
  }
 ]
