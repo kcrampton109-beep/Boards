@@ -11161,5 +11161,28 @@
   "grp": "FBS",
   "limit": 3.5,
   "status": "open"
+ },
+ {
+  "id": "401868944|total|over|m",
+  "base": "401868944|total|over|m",
+  "flagged": "2026-10-23T16:03-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401868944,
+  "matchup": "Jackson State @ Bethune-Cookman",
+  "kickoff": "2026-10-24 13:00:00-04:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "over",
+  "pick": "Over 48.5",
+  "book": "DK",
+  "line": 48.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 5.2,
+  "model": 53.7,
+  "grp": "FCS-FCS",
+  "limit": null,
+  "status": "open"
  }
 ]
