@@ -6146,5 +6146,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_CLE_TEN:RLM:total:under",
+  "tier": "RLM",
+  "market": "total",
+  "side": "under",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_07_CLE_TEN",
+  "week": 7,
+  "matchup": "CLE @ TEN",
+  "kickoff": "Sun Oct 25, 1:00 PM ET",
+  "pick": "Under 37.5",
+  "line": 37.5,
+  "odds": -115,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "71% of bets on the over, total moved 37.5 \u2192 36.5",
+  "limit": null,
+  "model_line": 2.3,
+  "flagged": "2026-10-23T16:06:56.997760-04:00",
+  "kickoff_iso": "2026-10-25T13:00:00-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
