@@ -11115,5 +11115,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401868278|spread|away|m",
+  "base": "401868278|spread|away|m",
+  "flagged": "2026-10-22T23:09-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401868278,
+  "matchup": "Presbyterian @ Valparaiso",
+  "kickoff": "2026-10-24 13:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "pick": "Presbyterian +2.5",
+  "book": "FD",
+  "line": 2.5,
+  "odds": -113.0,
+  "stake": 0.5,
+  "edge": 3.0,
+  "model": -0.5,
+  "grp": "FCS-FCS",
+  "limit": 2.5,
+  "status": "open"
  }
 ]
