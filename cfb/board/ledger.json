@@ -11211,5 +11211,28 @@
   "grp": "FCS-FCS",
   "limit": 34.5,
   "status": "open"
+ },
+ {
+  "id": "401867808|spread|home|m",
+  "base": "401867808|spread|home|m",
+  "flagged": "2026-10-24T09:29-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401867808,
+  "matchup": "Cornell @ Brown",
+  "kickoff": "2026-10-24 12:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Brown +2.5",
+  "book": "FD",
+  "line": 2.5,
+  "odds": -118.0,
+  "stake": 0.5,
+  "edge": 3.7,
+  "model": -1.2,
+  "grp": "FCS-FCS",
+  "limit": 2.0,
+  "status": "open"
  }
 ]
