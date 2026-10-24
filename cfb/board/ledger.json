@@ -11349,5 +11349,28 @@
   "grp": "FCS-FCS",
   "limit": 36.5,
   "status": "open"
+ },
+ {
+  "id": "401868174|total|over|m",
+  "base": "401868174|total|over|m",
+  "flagged": "2026-10-24T13:04-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401868174,
+  "matchup": "Charleston Southern @ Tennessee State",
+  "kickoff": "2026-10-24 15:30:00-04:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "over",
+  "pick": "Over 38.5",
+  "book": "DK",
+  "line": 38.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 5.6,
+  "model": 44.1,
+  "grp": "FCS-FCS",
+  "limit": null,
+  "status": "open"
  }
 ]
