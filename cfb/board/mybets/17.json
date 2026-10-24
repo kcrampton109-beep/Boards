@@ -1,0 +1,23 @@
+{
+ "id": 17,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/17",
+ "board": "CFB",
+ "pick": "West Georgia +23.5",
+ "odds": -110,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Tarleton State @ West Georgia",
+ "kickoff": "2026-10-24 14:00:00-04:00",
+ "play": "401868238|spread|home|m",
+ "logged": "2026-10-24T11:16:01Z",
+ "updated": "2026-10-24T11:16:08+00:00",
+ "tier": "FCS",
+ "game_id": 401868238,
+ "board_line": 24.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 23.5
+}
