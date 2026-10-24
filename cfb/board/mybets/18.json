@@ -1,0 +1,23 @@
+{
+ "id": 18,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/18",
+ "board": "CFB",
+ "pick": "Chicago State +23.5",
+ "odds": -104,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Chicago State @ Lindenwood",
+ "kickoff": "2026-10-24 15:00:00-04:00",
+ "play": "401867689|spread|away|m",
+ "logged": "2026-10-24T11:16:39Z",
+ "updated": "2026-10-24T11:16:47+00:00",
+ "tier": "FCS",
+ "game_id": 401867689,
+ "board_line": 23.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "away",
+ "line": 23.5
+}
