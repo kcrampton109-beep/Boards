@@ -11372,5 +11372,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401868972|spread|away|m",
+  "base": "401868972|spread|away|m",
+  "flagged": "2026-10-24T13:22-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401868972,
+  "matchup": "Southern @ Texas Southern",
+  "kickoff": "2026-10-24 15:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "pick": "Southern +2",
+  "book": "MGM",
+  "line": 2.0,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 3.4,
+  "model": -1.4,
+  "grp": "FCS-FCS",
+  "limit": 2.0,
+  "status": "open"
  }
 ]
