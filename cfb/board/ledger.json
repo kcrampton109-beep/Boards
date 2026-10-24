@@ -10079,7 +10079,11 @@
   "model": -3.3,
   "grp": "FBS",
   "limit": 2.0,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": -1.0,
+  "units": 0.455,
+  "final": "Army 38 - Tulsa 35"
  },
  {
   "id": "401866671|spread|home|m",
