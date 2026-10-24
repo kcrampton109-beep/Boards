@@ -6202,5 +6202,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_GB_DET:RLM:total:over",
+  "tier": "RLM",
+  "market": "total",
+  "side": "over",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_07_GB_DET",
+  "week": 7,
+  "matchup": "GB @ DET",
+  "kickoff": "Sun Oct 25, 4:25 PM ET",
+  "pick": "Over 54.5",
+  "line": 54.5,
+  "odds": -105,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "67% of bets on the under, total moved 53.5 \u2192 54.5",
+  "limit": null,
+  "model_line": -5.6,
+  "flagged": "2026-10-24T19:35:51.716455-04:00",
+  "kickoff_iso": "2026-10-25T16:25:00-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
