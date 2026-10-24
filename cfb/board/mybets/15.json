@@ -1,0 +1,23 @@
+{
+ "id": 15,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/15",
+ "board": "CFB",
+ "pick": "Columbia +1.5",
+ "odds": -105,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Dartmouth @ Columbia",
+ "kickoff": "2026-10-24 13:30:00-04:00",
+ "play": "401867822|spread|home|m|FCS",
+ "logged": "2026-10-24T11:13:41Z",
+ "updated": "2026-10-24T11:13:48+00:00",
+ "tier": "FCS",
+ "game_id": 401867822,
+ "board_line": 1.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 1.5
+}
