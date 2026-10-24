@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Boards</title>
+<style>
+:root { --paper: #f2f4f7; --card: #ffffff; --ink: #15213a; --muted: #5a6478; --rule: #d8dde6; --gold: #9a6d0c }
+@media (prefers-color-scheme: dark) { :root { --paper: #0d1420; --card: #151e2e; --ink: #e5e9f1; --muted: #98a2b6; --rule: #273349; --gold: #e1b24c } }
+* { box-sizing: border-box }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.5 "Segoe UI", system-ui, -apple-system, sans-serif }
+main { max-width: 560px; margin: 0 auto; padding: 32px 16px; display: grid; gap: 12px }
+h1 { margin: 0 0 8px; font-size: 30px }
+a.card { display: grid; gap: 2px; padding: 16px; background: var(--card); border: 1px solid var(--rule); border-radius: 8px; color: inherit; text-decoration: none }
+a.card:hover, a.card:focus-visible { border-color: var(--gold); outline: none }
+a.card b { font-size: 19px } a.card span { color: var(--muted); font-size: 14px }
+</style>
+</head>
+<body>
+<main>
+  <h1>Boards</h1>
+  <a class="card" href="cfb/"><b>CFB Play Card</b><span>College football, FBS + FCS. Prices checked every 30 min Sun/Mon, hourly otherwise.</span></a>
+  <a class="card" href="nfl/"><b>NFL Game Day Board</b><span>NFL spreads, totals, teasers, weather and TD sheet. Prices checked every 30 min.</span></a>
+</main>
+</body>
+</html>
