@@ -11395,5 +11395,28 @@
   "grp": "FCS-FCS",
   "limit": 2.0,
   "status": "open"
+ },
+ {
+  "id": "401864527|total|under|wx",
+  "base": "401864527|total|under|wx",
+  "flagged": "2026-10-24T13:59-04:00",
+  "season": 2026,
+  "week": 8,
+  "game_id": 401864527,
+  "matchup": "North Dakota State @ New Mexico",
+  "kickoff": "2026-10-24 22:00:00-04:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 39.5 (wind 17 mph)",
+  "book": "DK",
+  "line": 39.5,
+  "odds": -105.0,
+  "stake": 0.5,
+  "edge": 16.9,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
