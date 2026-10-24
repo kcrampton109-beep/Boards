@@ -326,3 +326,9 @@
 2026-10-24 03:17:46	200	520	/lines	{'year': 2026, 'seasonType': 'both'}
 2026-10-24 03:17:50	200	519	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
 2026-10-24 03:17:59	200	518	/drives	{'year': 2026, 'seasonType': 'both'}
+2026-10-24 17:01:13	200	517	/games	{'year': 2026, 'seasonType': 'both'}
+2026-10-24 17:01:13	502	None	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-24 17:01:33	502	None	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-24 17:02:27	200	516	/lines	{'year': 2026, 'seasonType': 'both'}
+2026-10-24 17:02:35	200	515	/stats/game/advanced	{'year': 2026, 'seasonType': 'both', 'excludeGarbageTime': 'true'}
+2026-10-24 17:03:13	200	514	/drives	{'year': 2026, 'seasonType': 'both'}

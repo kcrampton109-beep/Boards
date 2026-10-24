@@ -9722,7 +9722,11 @@
   "model": -13.9,
   "grp": "FBS",
   "limit": -6.5,
-  "status": "open"
+  "status": "L",
+  "clv": 4.0,
+  "close": -10.5,
+  "units": -1.0,
+  "final": "West Virginia 24 - TCU 20"
  },
  {
   "id": "401856841|moneyline|home|m",
@@ -9745,7 +9749,9 @@
   "model": 81.5,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "West Virginia 24 - TCU 20"
  },
  {
   "id": "401858497|spread|away|m",
@@ -10106,7 +10112,11 @@
   "model": 8.9,
   "grp": "FCS-FCS",
   "limit": 12.0,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 10.5,
+  "units": -0.5,
+  "final": "Campbell 35 - Maine 6"
  },
  {
   "id": "401866672|total|over|m",
@@ -10129,7 +10139,11 @@
   "model": 58.9,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 5.0,
+  "close": 54.5,
+  "units": -0.5,
+  "final": "Stony Brook 27 - Bryant 17"
  },
  {
   "id": "401866674|spread|home|m",
@@ -10152,7 +10166,11 @@
   "model": -4.6,
   "grp": "FCS-FCS",
   "limit": -1.5,
-  "status": "open"
+  "status": "W",
+  "clv": 0.5,
+  "close": -2.0,
+  "units": 0.472,
+  "final": "New Hampshire 17 - Merrimack 24"
  },
  {
   "id": "401867808|total|over|m",
@@ -10175,7 +10193,11 @@
   "model": 49.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 5.0,
+  "close": 49.5,
+  "units": 0.442,
+  "final": "Cornell 31 - Brown 38"
  },
  {
   "id": "401867822|spread|home|m",
@@ -10198,7 +10220,11 @@
   "model": -5.0,
   "grp": "FCS-FCS",
   "limit": -2.0,
-  "status": "open"
+  "status": "L",
+  "clv": -4.5,
+  "close": 3.0,
+  "units": -0.5,
+  "final": "Dartmouth 38 - Columbia 18"
  },
  {
   "id": "401867822|total|over|m",
@@ -10221,7 +10247,11 @@
   "model": 51.3,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": 47.5,
+  "units": 0.442,
+  "final": "Dartmouth 38 - Columbia 18"
  },
  {
   "id": "401867921|total|over|m",
@@ -10267,7 +10297,11 @@
   "model": 11.3,
   "grp": "FCS-FCS",
   "limit": 16.5,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": 14.5,
+  "units": 0.885,
+  "final": "Norfolk State 7 - South Carolina State 22"
  },
  {
   "id": "401867975|total|over|m",
@@ -10290,7 +10324,11 @@
   "model": 63.3,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": -2.0,
+  "close": 54.5,
+  "units": -0.5,
+  "final": "Norfolk State 7 - South Carolina State 22"
  },
  {
   "id": "401867994|spread|home|m",
@@ -10313,7 +10351,11 @@
   "model": -14.1,
   "grp": "FCS-FCS",
   "limit": -9.0,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": -10.5,
+  "units": 0.885,
+  "final": "Bucknell 3 - Holy Cross 34"
  },
  {
   "id": "401868003|spread|away|m",
@@ -10359,7 +10401,11 @@
   "model": -9.8,
   "grp": "FCS-FCS",
   "limit": -4.5,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": -5.5,
+  "units": 0.885,
+  "final": "San Diego 32 - Dayton 37"
  },
  {
   "id": "401868230|moneyline|home|m",
@@ -10382,7 +10428,9 @@
   "model": 73.6,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.122,
+  "final": "San Diego 32 - Dayton 37"
  },
  {
   "id": "401868238|spread|home|m",
@@ -10428,7 +10476,11 @@
   "model": -1.0,
   "grp": "FCS-FCS",
   "limit": 2.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 3.5,
+  "units": -1.0,
+  "final": "St. Thomas (MN) 35 - Marist 13"
  },
  {
   "id": "401868392|spread|home|m",
@@ -10497,7 +10549,11 @@
   "model": 5.8,
   "grp": "FCS-FCS",
   "limit": 9.0,
-  "status": "open"
+  "status": "W",
+  "clv": 1.5,
+  "close": 8.0,
+  "units": 0.442,
+  "final": "Jackson State 21 - Bethune-Cookman 24"
  },
  {
   "id": "401868003|spread|away|m|FCS",
@@ -10980,7 +11036,11 @@
   "model": -5.0,
   "grp": "FCS-FCS",
   "limit": 0.0,
-  "status": "open"
+  "status": "L",
+  "clv": -1.5,
+  "close": 3.0,
+  "units": -1.0,
+  "final": "Dartmouth 38 - Columbia 18"
  },
  {
   "id": "401867822|moneyline|home|m",
@@ -11003,7 +11063,9 @@
   "model": 62.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Dartmouth 38 - Columbia 18"
  },
  {
   "id": "401858274|total|under|wx",
@@ -11026,7 +11088,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": -1.0,
+  "close": 50.5,
+  "units": -0.5,
+  "final": "Pittsburgh 23 - Miami 52"
  },
  {
   "id": "401868944|total|under|wx",
@@ -11049,7 +11115,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": -3.0,
+  "close": 53.5,
+  "units": 0.442,
+  "final": "Jackson State 21 - Bethune-Cookman 24"
  },
  {
   "id": "401867975|total|under|wx",
@@ -11072,7 +11142,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": 54.5,
+  "units": 0.442,
+  "final": "Norfolk State 7 - South Carolina State 22"
  },
  {
   "id": "401868392|total|under|wx",
@@ -11141,7 +11215,11 @@
   "model": -0.5,
   "grp": "FCS-FCS",
   "limit": 2.5,
-  "status": "open"
+  "status": "L",
+  "clv": -0.5,
+  "close": 3.0,
+  "units": -0.5,
+  "final": "Presbyterian 7 - Valparaiso 24"
  },
  {
   "id": "401866476|spread|home|m",
@@ -11164,7 +11242,11 @@
   "model": -1.6,
   "grp": "FBS",
   "limit": 3.5,
-  "status": "open"
+  "status": "W",
+  "clv": -0.5,
+  "close": 4.0,
+  "units": 0.435,
+  "final": "Miami (OH) 28 - Central Michigan 27"
  },
  {
   "id": "401868944|total|over|m",
@@ -11187,7 +11269,11 @@
   "model": 53.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 5.0,
+  "close": 53.5,
+  "units": -0.5,
+  "final": "Jackson State 21 - Bethune-Cookman 24"
  },
  {
   "id": "401868348|spread|home|m",
@@ -11210,7 +11296,11 @@
   "model": 31.1,
   "grp": "FCS-FCS",
   "limit": 34.5,
-  "status": "open"
+  "status": "L",
+  "clv": -1.5,
+  "close": 36.0,
+  "units": -0.5,
+  "final": "East Tennessee State 38 - VMI 0"
  },
  {
   "id": "401867808|spread|home|m",
@@ -11233,7 +11323,11 @@
   "model": -1.2,
   "grp": "FCS-FCS",
   "limit": 2.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 2.5,
+  "units": 0.424,
+  "final": "Cornell 31 - Brown 38"
  },
  {
   "id": "401867871|spread|away|m|FCS",
@@ -11279,7 +11373,11 @@
   "model": 57.8,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": 54.5,
+  "units": 0.455,
+  "final": "New Haven 20 - Central Connecticut 42"
  },
  {
   "id": "401868135|spread|home|m|FCS",
@@ -11348,7 +11446,11 @@
   "model": 31.1,
   "grp": "FCS-FCS",
   "limit": 36.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": 36.0,
+  "units": -1.0,
+  "final": "East Tennessee State 38 - VMI 0"
  },
  {
   "id": "401868174|total|over|m",
