@@ -11747,5 +11747,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401862812|total|over|m",
+  "base": "401862812|total|over|m",
+  "flagged": "2026-10-25T00:10-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401862812,
+  "matchup": "Florida Atlantic @ North Texas",
+  "kickoff": "2026-10-29 19:30:00-04:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "over",
+  "pick": "Over 66.5",
+  "book": "FD",
+  "line": 66.5,
+  "odds": -122.0,
+  "stake": 0.5,
+  "edge": 11.7,
+  "model": 78.2,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
