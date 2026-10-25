@@ -709,3 +709,4 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.collegefootba
 2026-10-25 08:29 ok refreshed=True games=38 plays=2 (81s)
 2026-10-25 09:09 ok refreshed=False games=38 plays=2 (1s)
 2026-10-25 09:13 ok refreshed=False games=38 plays=2 (2s)
+2026-10-25 09:18 ok refreshed=True games=38 plays=1 (137s)
