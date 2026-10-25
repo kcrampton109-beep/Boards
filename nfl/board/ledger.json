@@ -4684,11 +4684,11 @@
   "limit": null,
   "model_line": 7.5,
   "flagged": "2026-10-18T18:37:25.245491-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null,
+  "status": "L",
+  "units": -1.0,
+  "close": 44,
+  "clv": 1.5,
+  "final": "DEN 30 - ARI 16",
   "kickoff_iso": "2026-10-25T16:05:00-04:00"
  },
  {
@@ -4796,11 +4796,11 @@
   "limit": null,
   "model_line": 6.7,
   "flagged": "2026-10-18T21:43:19.633768-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null,
+  "status": "L",
+  "units": -1.0,
+  "close": 3.5,
+  "clv": 2.0,
+  "final": "LA 35 - LV 21",
   "kickoff_iso": "2026-10-25T16:25:00-04:00"
  },
  {
@@ -4937,11 +4937,11 @@
   "model_line": 6.1,
   "flagged": "2026-10-19T10:47:47.221533-04:00",
   "kickoff_iso": "2026-10-25T16:25:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 3.5,
+  "clv": 2.0,
+  "final": "LA 35 - LV 21"
  },
  {
   "id": "2026_07_DAL_PHI:TREND:spread:away",
@@ -4993,11 +4993,11 @@
   "model_line": 6.1,
   "flagged": "2026-10-19T22:09:47.760054-04:00",
   "kickoff_iso": "2026-10-25T16:25:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.45,
+  "close": -3.5,
+  "clv": -0.5,
+  "final": "LA 35 - LV 21"
  },
  {
   "id": "2026_07_SF_ATL:RLM:spread:home",
@@ -5077,11 +5077,11 @@
   "model_line": 6.1,
   "flagged": "2026-10-20T01:44:04.705188-04:00",
   "kickoff_iso": "2026-10-25T16:25:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 49,
+  "clv": -1.5,
+  "final": "LA 35 - LV 21"
  },
  {
   "id": "2026_08_CAR_GB:STRONG:spread:away",
@@ -5805,11 +5805,11 @@
   "model_line": 7.2,
   "flagged": "2026-10-20T14:18:44.133646-04:00",
   "kickoff_iso": "2026-10-25T16:05:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": -4.5,
+  "clv": 0.5,
+  "final": "DEN 30 - ARI 16"
  },
  {
   "id": "2026_07_DEN_ARI:TREND:total:under",
@@ -5833,11 +5833,11 @@
   "model_line": 7.2,
   "flagged": "2026-10-20T14:18:44.133646-04:00",
   "kickoff_iso": "2026-10-25T16:05:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 44,
+  "clv": -0.5,
+  "final": "DEN 30 - ARI 16"
  },
  {
   "id": "2026_07_GB_DET:LEAN:spread:home",
@@ -5861,11 +5861,11 @@
   "model_line": -5.6,
   "flagged": "2026-10-20T14:18:44.133646-04:00",
   "kickoff_iso": "2026-10-25T16:25:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "P",
+  "units": 0.0,
+  "close": -3.5,
+  "clv": 0.5,
+  "final": "GB 17 - DET 20"
  },
  {
   "id": "2026_07_KC_SEA:TEASER:teaser:away",
@@ -6113,11 +6113,11 @@
   "model_line": 7.2,
   "flagged": "2026-10-22T14:49:35.096632-04:00",
   "kickoff_iso": "2026-10-25T16:05:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.48,
+  "close": -4.5,
+  "clv": 0.0,
+  "final": "DEN 30 - ARI 16"
  },
  {
   "id": "2026_07_TB_CAR:RLM:spread:away",
@@ -6197,11 +6197,11 @@
   "model_line": 6.1,
   "flagged": "2026-10-23T17:13:10.638445-04:00",
   "kickoff_iso": "2026-10-25T16:25:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.85,
+  "close": -3.5,
+  "clv": 0.5,
+  "final": "LA 35 - LV 21"
  },
  {
   "id": "2026_07_GB_DET:RLM:total:over",
@@ -6225,11 +6225,11 @@
   "model_line": -5.6,
   "flagged": "2026-10-24T19:35:51.716455-04:00",
   "kickoff_iso": "2026-10-25T16:25:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 55.5,
+  "clv": 1.0,
+  "final": "GB 17 - DET 20"
  },
  {
   "id": "2026_08_ATL_TB:LEAN:spread:away",
