@@ -4824,11 +4824,11 @@
   "limit": -3.0,
   "model_line": 4.9,
   "flagged": "2026-10-19T00:17:31.975271-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null,
+  "status": "W",
+  "units": 0.46,
+  "close": -3,
+  "clv": 0.5,
+  "final": "PIT 16 - NO 10",
   "kickoff_iso": "2026-10-25T09:30:00-04:00"
  },
  {
@@ -5973,11 +5973,11 @@
   "model_line": 4.6,
   "flagged": "2026-10-21T10:44:59.659102-04:00",
   "kickoff_iso": "2026-10-25T09:30:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.85,
+  "close": -3,
+  "clv": 0,
+  "final": "PIT 16 - NO 10"
  },
  {
   "id": "2026_07_CIN_BAL:TEASER:teaser:away",
