@@ -4628,11 +4628,11 @@
   "limit": 5.5,
   "model_line": -3.5,
   "flagged": "2026-10-18T18:37:25.245491-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null,
+  "status": "W",
+  "units": 0.45,
+  "close": 3.5,
+  "clv": 2.0,
+  "final": "MIA 28 - NYJ 25",
   "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
@@ -4656,11 +4656,11 @@
   "limit": null,
   "model_line": -6.4,
   "flagged": "2026-10-18T18:37:25.245491-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null,
+  "status": "L",
+  "units": -1.0,
+  "close": 44.5,
+  "clv": 0.0,
+  "final": "TB 43 - CAR 13",
   "kickoff_iso": "2026-10-25T13:00:00-04:00"
  },
  {
@@ -4909,11 +4909,11 @@
   "model_line": 1.8,
   "flagged": "2026-10-19T10:47:47.221533-04:00",
   "kickoff_iso": "2026-10-25T13:00:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 3,
+  "clv": -5.5,
+  "final": "CIN 35 - BAL 13"
  },
  {
   "id": "2026_07_LA_LV:TREND:spread:home",
@@ -5693,11 +5693,11 @@
   "model_line": 1.8,
   "flagged": "2026-10-20T14:18:44.133646-04:00",
   "kickoff_iso": "2026-10-25T13:00:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 1.27,
+  "close": -3,
+  "clv": 6,
+  "final": "CIN 35 - BAL 13"
  },
  {
   "id": "2026_07_CLE_TEN:TEASER:teaser:home",
@@ -5749,11 +5749,11 @@
   "model_line": -6.7,
   "flagged": "2026-10-20T14:18:44.133646-04:00",
   "kickoff_iso": "2026-10-25T13:00:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 41.5,
+  "clv": 0.0,
+  "final": "IND 10 - MIN 16"
  },
  {
   "id": "2026_07_TB_CAR:STRONG:spread:home",
@@ -5777,11 +5777,11 @@
   "model_line": -7.2,
   "flagged": "2026-10-20T14:18:44.133646-04:00",
   "kickoff_iso": "2026-10-25T13:00:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.5,
+  "close": -3,
+  "clv": 0,
+  "final": "TB 43 - CAR 13"
  },
  {
   "id": "2026_07_DEN_ARI:STRONG:spread:away",
@@ -6001,11 +6001,11 @@
   "model_line": 1.8,
   "flagged": "2026-10-21T13:46:02.995791-04:00",
   "kickoff_iso": "2026-10-25T13:00:00-04:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": -3,
+  "clv": 4.5,
+  "final": "CIN 35 - BAL 13"
  },
  {
   "id": "2026_07_CIN_BAL:TEASER:teaser:home",
@@ -6029,11 +6029,11 @@
   "model_line": 1.8,
   "flagged": "2026-10-21T14:50:40.549739-04:00",
   "kickoff_iso": "2026-10-25T13:00:00-04:00",
-  "status": "open",
+  "status": "L",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 3,
+  "clv": -1.5,
+  "final": "CIN 35 - BAL 13"
  },
  {
   "id": "2026_07_NYG_HOU:LEAN:spread:away",
@@ -6141,11 +6141,11 @@
   "model_line": -7.2,
   "flagged": "2026-10-22T15:43:57.050358-04:00",
   "kickoff_iso": "2026-10-25T13:00:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 1.0,
+  "close": 3,
+  "clv": 0,
+  "final": "TB 43 - CAR 13"
  },
  {
   "id": "2026_07_CLE_TEN:RLM:total:under",
