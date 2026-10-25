@@ -9913,7 +9913,11 @@
   "model": -16.1,
   "grp": "FBS",
   "limit": -11.0,
-  "status": "open"
+  "status": "W",
+  "clv": -1.0,
+  "close": -10.0,
+  "units": 0.455,
+  "final": "Vanderbilt 17 - Kentucky 34"
  },
  {
   "id": "401864526|spread|home|m",
@@ -10017,7 +10021,11 @@
   "model": -2.1,
   "grp": "FBS",
   "limit": 3.0,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 3.0,
+  "units": -0.5,
+  "final": "UTSA 42 - Tulane 19"
  },
  {
   "id": "401871070|spread|home|m",
@@ -11792,6 +11800,52 @@
   "model": 5.2,
   "grp": "FBS",
   "limit": 10.5,
+  "status": "open"
+ },
+ {
+  "id": "401856733|spread|home|m",
+  "base": "401856733|spread|home|m",
+  "flagged": "2026-10-25T01:10-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401856733,
+  "matchup": "Missouri @ Arkansas",
+  "kickoff": "2026-10-31 19:45:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Arkansas +11.5",
+  "book": "DK",
+  "line": 11.5,
+  "odds": -115.0,
+  "stake": 0.5,
+  "edge": 5.2,
+  "model": 6.3,
+  "grp": "FBS",
+  "limit": 11.5,
+  "status": "open"
+ },
+ {
+  "id": "401858509|spread|away|m",
+  "base": "401858509|spread|away|m",
+  "flagged": "2026-10-25T01:10-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401858509,
+  "matchup": "Ohio State @ USC",
+  "kickoff": "2026-10-31 19:30:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "pick": "Ohio State -6.5",
+  "book": "FD",
+  "line": -6.5,
+  "odds": -112.0,
+  "stake": 0.5,
+  "edge": 6.4,
+  "model": -12.9,
+  "grp": "FBS",
+  "limit": -7.5,
   "status": "open"
  }
 ]
