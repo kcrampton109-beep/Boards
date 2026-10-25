@@ -11770,5 +11770,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401866451|spread|home|m",
+  "base": "401866451|spread|home|m",
+  "flagged": "2026-10-25T00:28-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401866451,
+  "matchup": "Kent State @ Sacramento State",
+  "kickoff": "2026-10-30 22:30:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Sacramento State +10.5",
+  "book": "FD",
+  "line": 10.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 5.3,
+  "model": 5.2,
+  "grp": "FBS",
+  "limit": 10.5,
+  "status": "open"
  }
 ]
