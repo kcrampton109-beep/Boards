@@ -9703,7 +9703,11 @@
   "model": -9.7,
   "grp": "FBS",
   "limit": -4.5,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": -6.5,
+  "units": 0.455,
+  "final": "Houston 13 - Utah 21"
  },
  {
   "id": "401856841|spread|home|m",
@@ -11681,7 +11685,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 39.5,
+  "units": 0.476,
+  "final": "North Dakota State 16 - New Mexico 21"
  },
  {
   "id": "401868097|total|under|m",
