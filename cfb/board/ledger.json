@@ -12085,5 +12085,28 @@
   "grp": "FBS",
   "limit": -14.0,
   "status": "open"
+ },
+ {
+  "id": "401859185|spread|away|m",
+  "base": "401859185|spread|away|m",
+  "flagged": "2026-10-25T17:02-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401859185,
+  "matchup": "Notre Dame vs Navy",
+  "kickoff": "2026-10-31 12:00:00-04:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "pick": "Notre Dame +30.5",
+  "book": "MGM",
+  "line": 30.5,
+  "odds": -110.0,
+  "stake": 1.5,
+  "edge": 63.8,
+  "model": -33.3,
+  "grp": "FBS",
+  "limit": -26.0,
+  "status": "open"
  }
 ]
