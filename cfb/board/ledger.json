@@ -12039,5 +12039,28 @@
   "grp": "FBS",
   "limit": -7.5,
   "status": "open"
+ },
+ {
+  "id": "401862815|spread|home|m",
+  "base": "401862815|spread|home|m",
+  "flagged": "2026-10-25T12:24-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401862815,
+  "matchup": "Temple @ East Carolina",
+  "kickoff": "2026-10-31 15:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "East Carolina -3.5",
+  "book": "FD",
+  "line": -3.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 5.8,
+  "model": -9.3,
+  "grp": "FBS",
+  "limit": -4.0,
+  "status": "open"
  }
 ]
