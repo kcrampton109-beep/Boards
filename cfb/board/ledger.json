@@ -9805,7 +9805,11 @@
   "model": 11.2,
   "grp": "FBS",
   "limit": 16.5,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 14.5,
+  "units": -0.5,
+  "final": "Boise State 31 - Washington State 10"
  },
  {
   "id": "401871055|spread|home|m",
@@ -9882,7 +9886,11 @@
   "model": -5.4,
   "grp": "FBS",
   "limit": 0.0,
-  "status": "open"
+  "status": "L",
+  "clv": 4.5,
+  "close": -3.0,
+  "units": -0.5,
+  "final": "Virginia Tech 20 - Clemson 16"
  },
  {
   "id": "401856729|spread|home|m",
@@ -9982,7 +9990,11 @@
   "model": -14.9,
   "grp": "FBS",
   "limit": -9.5,
-  "status": "open"
+  "status": "W",
+  "clv": 5.0,
+  "close": -13.5,
+  "units": 0.455,
+  "final": "Old Dominion 0 - Louisiana Tech 26"
  },
  {
   "id": "401862811|spread|home|m",
@@ -10055,7 +10067,11 @@
   "model": -2.6,
   "grp": "FBS",
   "limit": 2.5,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 2.5,
+  "units": 0.446,
+  "final": "Georgia State 32 - Arkansas State 38"
  },
  {
   "id": "401871055|total|under|wx",
@@ -10801,7 +10817,11 @@
   "model": 6.2,
   "grp": "FCS-FCS",
   "limit": 11.5,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": 9.5,
+  "units": 0.885,
+  "final": "Austin Peay 27 - North Alabama 21"
  },
  {
   "id": "401868067|moneyline|home|m",
@@ -10824,7 +10844,9 @@
   "model": 34.6,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Austin Peay 27 - North Alabama 21"
  },
  {
   "id": "401868080|spread|away|m",
@@ -10847,7 +10869,11 @@
   "model": 15.4,
   "grp": "FCS-FCS",
   "limit": 18.5,
-  "status": "open"
+  "status": "W",
+  "clv": 5.0,
+  "close": 14.5,
+  "units": 0.885,
+  "final": "Utah Tech 43 - Cal Poly 26"
  },
  {
   "id": "401868106|spread|away|m",
@@ -10870,7 +10896,11 @@
   "model": 13.3,
   "grp": "FCS-FCS",
   "limit": 16.5,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 14.5,
+  "units": -0.5,
+  "final": "Portland State 8 - Idaho State 38"
  },
  {
   "id": "401868106|total|under|m",
@@ -10893,7 +10923,11 @@
   "model": 56.4,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 62.5,
+  "units": 0.885,
+  "final": "Portland State 8 - Idaho State 38"
  },
  {
   "id": "401868121|spread|away|m",
@@ -10943,7 +10977,11 @@
   "model": 5.8,
   "grp": "FCS-FCS",
   "limit": 9.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": 10.0,
+  "units": -1.0,
+  "final": "Northern Colorado 6 - UC Davis 33"
  },
  {
   "id": "401868135|spread|home|m",
@@ -10966,7 +11004,11 @@
   "model": -7.7,
   "grp": "FCS-FCS",
   "limit": -4.5,
-  "status": "open"
+  "status": "L",
+  "clv": -1.0,
+  "close": -2.5,
+  "units": -1.0,
+  "final": "UT Rio Grande Valley 30 - Central Arkansas 27"
  },
  {
   "id": "401869133|spread|home|m",
@@ -11282,7 +11324,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 56.5,
+  "units": 0.442,
+  "final": "McNeese 6 - Incarnate Word 38"
  },
  {
   "id": "401868278|spread|away|m",
@@ -11494,7 +11540,11 @@
   "model": -7.7,
   "grp": "FCS-FCS",
   "limit": -2.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -2.5,
+  "units": -1.0,
+  "final": "UT Rio Grande Valley 30 - Central Arkansas 27"
  },
  {
   "id": "401868135|moneyline|home|m",
@@ -11517,7 +11567,9 @@
   "model": 69.0,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "UT Rio Grande Valley 30 - Central Arkansas 27"
  },
  {
   "id": "401868348|spread|home|m|FCS",
@@ -11644,6 +11696,10 @@
   "model": 63.6,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": 66.5,
+  "units": 0.84,
+  "final": "Southern Utah 28 - Idaho 31"
  }
 ]
