@@ -12062,5 +12062,28 @@
   "grp": "FBS",
   "limit": -4.0,
   "status": "open"
+ },
+ {
+  "id": "401866452|spread|home|m",
+  "base": "401866452|spread|home|m",
+  "flagged": "2026-10-25T13:59-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401866452,
+  "matchup": "Bowling Green @ Western Michigan",
+  "kickoff": "2026-10-31 12:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Western Michigan -14",
+  "book": "MGM",
+  "line": -14.0,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 5.1,
+  "model": -19.1,
+  "grp": "FBS",
+  "limit": -14.0,
+  "status": "open"
  }
 ]
