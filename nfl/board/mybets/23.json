@@ -1,0 +1,23 @@
+{
+ "id": 23,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/23",
+ "board": "NFL",
+ "pick": "BUF -3.5",
+ "odds": -102,
+ "book": "DraftKings",
+ "amount": 15.0,
+ "notes": "",
+ "matchup": "BAL @ BUF",
+ "kickoff": "2026-11-01T13:00:00-05:00",
+ "play": "2026_08_BAL_BUF:STRONG:spread:home",
+ "logged": "2026-10-26T13:58:14Z",
+ "updated": "2026-10-26T13:58:23+00:00",
+ "tier": "STRONG",
+ "game_id": "2026_08_BAL_BUF",
+ "board_line": -3,
+ "board_odds": -115,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": -3.5
+}
