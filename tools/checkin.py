@@ -48,7 +48,14 @@ def tier_stats(es):
 def board(key, cfg):
     raw, _ = get(f"{SITE}/{key}/state.json")
     st = json.loads(raw)
-    led = [e for e in st.get("ledger", []) if e.get("status") != "void"]
+    # season numbers need the FULL ledger: state.json carries only the newest 400 entries (Oct 26: CFB had 484, so the
+    # first weeks were missing and Strong showed 6-8 instead of 11-8)
+    try:
+        full, _ = get(f"{SITE}/{key}/ledger.json")
+        full = json.loads(full)
+    except Exception:
+        full = st.get("ledger", [])
+    led = [e for e in full if e.get("status") != "void"]
     gen = dt.datetime.fromisoformat(st["generated_iso"])
     weeks = sorted({e["week"] for e in led if e["status"] in ("W", "L", "P") and e.get("week") is not None})
     last_wk = weeks[-1] if weeks else None
