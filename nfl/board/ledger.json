@@ -7210,5 +7210,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_07_DAL_PHI:RLM:total:under",
+  "tier": "RLM",
+  "market": "total",
+  "side": "under",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_07_DAL_PHI",
+  "week": 7,
+  "matchup": "DAL @ PHI",
+  "kickoff": "Mon Oct 26, 8:15 PM ET",
+  "pick": "Under 44.5",
+  "line": 44.5,
+  "odds": -110,
+  "book": "MGM",
+  "stake": 1.0,
+  "edge": null,
+  "note": "57% of bets on the over, total moved 44.5 \u2192 43.5",
+  "limit": null,
+  "model_line": 2.3,
+  "flagged": "2026-10-26T15:25:33.760779-04:00",
+  "kickoff_iso": "2026-10-26T20:15:00-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
