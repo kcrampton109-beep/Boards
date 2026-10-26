@@ -59,9 +59,20 @@ def load_json(p, default):
         return default
 
 
+def _no_nan(o):
+    """JSON has no NaN: a missing number is written as null (a NaN in state.json blanks the whole board page)."""
+    if isinstance(o, float) and o != o:
+        return None
+    if isinstance(o, dict):
+        return {k: _no_nan(v) for k, v in o.items()}
+    if isinstance(o, (list, tuple)):
+        return [_no_nan(v) for v in o]
+    return o
+
+
 def save_json(p, obj):
     tmp = p.with_suffix(".tmp")
-    tmp.write_text(json.dumps(obj, indent=1, default=str))
+    tmp.write_text(json.dumps(_no_nan(obj), indent=1, default=str))
     tmp.replace(p)
 
 
@@ -217,9 +228,11 @@ def parse_live(games, ml, tmap):
                 if is_home:
                     row["tix_home"] = (bi.get("tickets") or {}).get("percent")
                     row["money_home"] = (bi.get("money") or {}).get("percent")
-            # a book's two spread sides must mirror each other; a pair that doesn't means an outcome was tagged to the
-            # wrong team, so that book's spread is dropped (Oct 25: BetMGM's Navy +30 was read as Notre Dame +30.5)
-            if row.get("sp_home") is not None and row.get("sp_away") is not None and abs(row["sp_home"] + row["sp_away"]) > 0.6:
+            # a sportsbook's two spread sides must mirror each other; a pair that doesn't means an outcome was tagged to the
+            # wrong team, so that book's spread is dropped (Oct 25: BetMGM's Navy +30 was read as Notre Dame +30.5).
+            # Only DK/FD/MGM: the consensus feed's two sides are separate averages and legitimately differ.
+            if bid in BOOKS and row.get("sp_home") is not None and row.get("sp_away") is not None \
+                    and abs(row["sp_home"] + row["sp_away"]) > 0.6:
                 for f in ("sp_home", "sp_home_odds", "sp_away", "sp_away_odds"):
                     row.pop(f, None)
             for o in ev_.get("total") or []:
