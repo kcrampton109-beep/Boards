@@ -69,6 +69,9 @@ def board(key, cfg):
         out["last_week"][t] = tier_stats([e for e in es if e.get("week") == last_wk]) if last_wk is not None else None
         out["doc_rows"].append(dict(tier=label, graded=s["graded"], units=f"{s['units']:+.2f}" if s["n"] else "0",
                                     avg_clv="none yet" if s["clv"] is None else f"{s['clv']:+.1f} pts", open_now=s["open"]))
+    if key == "cfb":  # strong plays added by the Oct 26 rule (FBS gap 5-7 from week 7), tracked on their own
+        out["new_strong_rule"] = tier_stats([e for e in led if e["tier"] == "STRONG" and e.get("flagged", "") >= "2026-10-26"
+                                             and (e.get("edge") or 0) < 7])
     sc = [e for e in led if e["tier"] in cfg["scorecard"]]
     s = tier_stats(sc)
     tg = cfg["target"]
