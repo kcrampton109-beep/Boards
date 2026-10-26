@@ -173,9 +173,15 @@ function favText(g, l) { // home-spread convention -> "Team −x"
 }
 
 async function load() {
-  let S = {};
-  try { const r = await fetch("state.json", { cache: "no-store" }); if (r.ok) S = await r.json(); } catch (e) {}
+  let S = {}, bad = "";
+  try { const r = await fetch("state.json", { cache: "no-store" }); if (r.ok) S = await r.json(); else bad = `HTTP ${r.status}`; }
+  catch (e) { bad = e.message || "unreadable data"; }
   if (!S.games) { try { S = JSON.parse(document.getElementById("seed").textContent); } catch (e) {} }
+  if (bad) {  // say so instead of showing an empty board (Oct 26: a NaN in state.json blanked the page)
+    const b = document.getElementById("banner");
+    b.hidden = false; b.className = "banner warn";
+    b.textContent = `The board's data couldn't be read (${bad}). Refresh in a few minutes; if it stays blank, the engine needs a fix.`;
+  }
   // full play history for the Today / Results tabs (state.json carries only the recent part)
   try { const r = await fetch("ledger.json", { cache: "no-store" }); if (r.ok) S.fullLedger = await r.json(); } catch (e) {}
   // My Bets: the owner's logged bets and the final scores that grade them
