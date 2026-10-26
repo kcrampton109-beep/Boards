@@ -6874,5 +6874,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_08_CAR_GB:RLM:total:over",
+  "tier": "RLM",
+  "market": "total",
+  "side": "over",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_08_CAR_GB",
+  "week": 8,
+  "matchup": "CAR @ GB",
+  "kickoff": "Thu Oct 29, 8:15 PM ET",
+  "pick": "Over 47.5",
+  "line": 47.5,
+  "odds": -106,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "71% of bets on the under, total moved 46.5 \u2192 47.5",
+  "limit": null,
+  "model_line": -1.2,
+  "flagged": "2026-10-25T22:45:23.682514-04:00",
+  "kickoff_iso": "2026-10-29T20:15:00-04:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
