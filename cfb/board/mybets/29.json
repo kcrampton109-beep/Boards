@@ -1,0 +1,23 @@
+{
+ "id": 29,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/29",
+ "board": "CFB",
+ "pick": "Pittsburgh -7.5",
+ "odds": -108,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Georgia Tech @ Pittsburgh",
+ "kickoff": "2026-10-31 19:30:00-04:00",
+ "play": "401858281|spread|home|m|STRONG",
+ "logged": "2026-10-26T14:52:56Z",
+ "updated": "2026-10-26T14:53:04+00:00",
+ "tier": "STRONG",
+ "game_id": 401858281,
+ "board_line": -7.5,
+ "board_odds": -108.0,
+ "board_book": "DK",
+ "market": "spread",
+ "side": "home",
+ "line": -7.5
+}
