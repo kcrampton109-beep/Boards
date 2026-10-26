@@ -1,0 +1,23 @@
+{
+ "id": 28,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/28",
+ "board": "CFB",
+ "pick": "Western Michigan -13.5",
+ "odds": -110,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Bowling Green @ Western Michigan",
+ "kickoff": "2026-10-31 12:00:00-04:00",
+ "play": "401866452|spread|home|m|STRONG",
+ "logged": "2026-10-26T14:51:33Z",
+ "updated": "2026-10-26T14:51:41+00:00",
+ "tier": "STRONG",
+ "game_id": 401866452,
+ "board_line": -13.5,
+ "board_odds": -122.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": -13.5
+}
