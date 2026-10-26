@@ -1,0 +1,23 @@
+{
+ "id": 26,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/26",
+ "board": "CFB",
+ "pick": "Sacramento State +10.5",
+ "odds": -118,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Kent State @ Sacramento State",
+ "kickoff": "2026-10-30 22:30:00-04:00",
+ "play": "401866451|spread|home|m|STRONG",
+ "logged": "2026-10-26T14:49:34Z",
+ "updated": "2026-10-26T14:49:43+00:00",
+ "tier": "STRONG",
+ "game_id": 401866451,
+ "board_line": 10.5,
+ "board_odds": -118.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 10.5
+}
