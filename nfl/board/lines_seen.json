@@ -1161,9 +1161,9 @@
   }
  },
  "2026_07_DAL_PHI": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
+  "ts": "2026-10-25T21:53:35.141080-04:00",
   "close_spread": 4.5,
-  "close_total": 44.5,
+  "close_total": 44,
   "best": {
    "home": {
     "line": 4.5,
@@ -1176,58 +1176,58 @@
     "book": "DK"
    },
    "over": {
-    "line": 44,
-    "odds": -110,
-    "book": "MGM"
+    "line": 43.5,
+    "odds": -118,
+    "book": "DK"
    },
    "under": {
     "line": 44.5,
-    "odds": -118,
-    "book": "DK"
+    "odds": -120,
+    "book": "FD"
    }
   }
  },
  "2026_08_CAR_GB": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
-  "close_spread": -3,
-  "close_total": 47,
+  "ts": "2026-10-25T21:53:35.141080-04:00",
+  "close_spread": -4.5,
+  "close_total": 47.5,
   "best": {
    "home": {
     "line": -3.5,
-    "odds": -110,
-    "book": "DK"
+    "odds": -115,
+    "book": "FD"
    },
    "away": {
-    "line": 4,
-    "odds": -110,
-    "book": "MGM"
+    "line": 4.5,
+    "odds": -112,
+    "book": "DK"
    },
    "over": {
     "line": 46.5,
-    "odds": -115,
+    "odds": -118,
     "book": "FD"
    },
    "under": {
     "line": 47.5,
-    "odds": -115,
+    "odds": -108,
     "book": "DK"
    }
   }
  },
  "2026_08_ARI_DAL": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
+  "ts": "2026-10-25T21:53:35.141080-04:00",
   "close_spread": -6.5,
   "close_total": 52.5,
   "best": {
    "home": {
     "line": -6.5,
-    "odds": -110,
-    "book": "DK"
+    "odds": -105,
+    "book": "MGM"
    },
    "away": {
     "line": 6.5,
-    "odds": -108,
-    "book": "MGM"
+    "odds": -110,
+    "book": "DK"
    },
    "over": {
     "line": 52.5,
@@ -1242,9 +1242,9 @@
   }
  },
  "2026_08_ATL_TB": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
+  "ts": "2026-10-25T21:53:35.141080-04:00",
   "close_spread": -1.5,
-  "close_total": 45,
+  "close_total": 45.5,
   "best": {
    "home": {
     "line": -1.5,
@@ -1257,36 +1257,36 @@
     "book": "FD"
    },
    "over": {
-    "line": 44.5,
+    "line": 45,
     "odds": -110,
-    "book": "DK"
+    "book": "MGM"
    },
    "under": {
     "line": 45.5,
-    "odds": -118,
-    "book": "FD"
+    "odds": -115,
+    "book": "DK"
    }
   }
  },
  "2026_08_BAL_BUF": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
+  "ts": "2026-10-25T21:53:35.141080-04:00",
   "close_spread": -3.5,
   "close_total": 53.5,
   "best": {
    "home": {
-    "line": -3,
-    "odds": -120,
-    "book": "DK"
+    "line": -3.5,
+    "odds": -104,
+    "book": "FD"
    },
    "away": {
     "line": 3.5,
     "odds": -110,
-    "book": "MGM"
+    "book": "DK"
    },
    "over": {
-    "line": 52.5,
+    "line": 53.5,
     "odds": -110,
-    "book": "DK"
+    "book": "MGM"
    },
    "under": {
     "line": 53.5,
@@ -1296,7 +1296,7 @@
   }
  },
  "2026_08_CLE_PIT": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
+  "ts": "2026-10-25T21:53:35.141080-04:00",
   "close_spread": -3.5,
   "close_total": 39.5,
   "best": {
@@ -1312,18 +1312,18 @@
    },
    "over": {
     "line": 39.5,
-    "odds": -108,
-    "book": "MGM"
+    "odds": -110,
+    "book": "DK"
    },
    "under": {
     "line": 39.5,
-    "odds": -110,
-    "book": "DK"
+    "odds": -108,
+    "book": "MGM"
    }
   }
  },
  "2026_08_IND_JAX": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
+  "ts": "2026-10-25T21:53:35.141080-04:00",
   "close_spread": -7.5,
   "close_total": 46.5,
   "best": {
@@ -1350,7 +1350,7 @@
   }
  },
  "2026_08_LV_NYJ": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
+  "ts": "2026-10-25T21:53:35.141080-04:00",
   "close_spread": -1.5,
   "close_total": 44.5,
   "best": {
@@ -1367,17 +1367,17 @@
    "over": {
     "line": 44.5,
     "odds": -105,
-    "book": "DK"
+    "book": "FD"
    },
    "under": {
     "line": 44.5,
     "odds": -110,
-    "book": "MGM"
+    "book": "DK"
    }
   }
  },
  "2026_08_MIN_DET": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
+  "ts": "2026-10-25T21:53:35.141080-04:00",
   "close_spread": -3,
   "close_total": 46.5,
   "best": {
@@ -1404,13 +1404,13 @@
   }
  },
  "2026_08_TEN_CIN": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
-  "close_spread": -10.5,
+  "ts": "2026-10-25T21:53:35.141080-04:00",
+  "close_spread": -10,
   "close_total": 47,
   "best": {
    "home": {
     "line": -10,
-    "odds": -110,
+    "odds": -112,
     "book": "DK"
    },
    "away": {
@@ -1425,40 +1425,40 @@
    },
    "under": {
     "line": 47.5,
-    "odds": -110,
+    "odds": -120,
     "book": "DK"
    }
   }
  },
  "2026_08_LAC_LA": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
-  "close_spread": -7.5,
-  "close_total": 45.5,
+  "ts": "2026-10-25T21:53:35.141080-04:00",
+  "close_spread": -7,
+  "close_total": 44.5,
   "best": {
    "home": {
-    "line": -7.5,
-    "odds": -102,
-    "book": "MGM"
+    "line": -7,
+    "odds": -112,
+    "book": "DK"
    },
    "away": {
     "line": 7.5,
-    "odds": -110,
-    "book": "DK"
+    "odds": -115,
+    "book": "FD"
    },
    "over": {
-    "line": 45,
+    "line": 44.5,
     "odds": -108,
-    "book": "MGM"
+    "book": "DK"
    },
    "under": {
-    "line": 45.5,
-    "odds": -110,
-    "book": "DK"
+    "line": 44.5,
+    "odds": -106,
+    "book": "FD"
    }
   }
  },
  "2026_08_NE_MIA": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
+  "ts": "2026-10-25T21:53:35.141080-04:00",
   "close_spread": 7.5,
   "close_total": 44.5,
   "best": {
@@ -1474,18 +1474,18 @@
    },
    "over": {
     "line": 44.5,
-    "odds": -110,
-    "book": "DK"
+    "odds": -108,
+    "book": "MGM"
    },
    "under": {
     "line": 44.5,
-    "odds": -108,
-    "book": "MGM"
+    "odds": -110,
+    "book": "DK"
    }
   }
  },
  "2026_08_KC_DEN": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
+  "ts": "2026-10-25T21:53:35.141080-04:00",
   "close_spread": 1.5,
   "close_total": 42,
   "best": {
@@ -1512,13 +1512,13 @@
   }
  },
  "2026_08_PHI_WAS": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
+  "ts": "2026-10-25T21:53:35.141080-04:00",
   "close_spread": -3.5,
-  "close_total": 41,
+  "close_total": 40.5,
   "best": {
    "home": {
     "line": -3.5,
-    "odds": -110,
+    "odds": -115,
     "book": "DK"
    },
    "away": {
@@ -1532,14 +1532,14 @@
     "book": "FD"
    },
    "under": {
-    "line": 41.5,
-    "odds": -110,
+    "line": 40.5,
+    "odds": -105,
     "book": "DK"
    }
   }
  },
  "2026_08_CHI_SEA": {
-  "ts": "2026-10-25T21:05:03.189269-04:00",
+  "ts": "2026-10-25T21:53:35.141080-04:00",
   "close_spread": -3,
   "close_total": 47,
   "best": {
