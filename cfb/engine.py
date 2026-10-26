@@ -33,10 +33,15 @@ STATE = BOARD / "state.json"
 SEEN = BOARD / "lines_seen.json"
 RULES = dict(strong_fbs=7.0, strong_fcs=5.0, lean_fbs=5.0, lean_fcs=3.0, tot_fcs=5.0, tot_fbs=9.0,
              ml_ev=0.06, worst_odds=-125, margin_sd=15.5, wind_under=18.0, wind_hours=24.0,
-             stale_pts=3.0)  # a book this far off the market is treated as a stale, unbettable line
+             stale_pts=3.0,  # a book this far off the market is treated as a stale, unbettable line
+             # Oct 26 (owner's call): from week 7 the model is sharper, and FBS gaps of 5+ vs the opener won 57.7% in 2021-25
+             # (260 bets; 7+ in weeks 1-6: 55.1%). FBS strong plays count only at early-week prices (the edge is in openers;
+             # FBS gaps first reached late in the week went 10-12 live with no CLV). FCS lines post midweek: no timing rule.
+             strong_fbs_late=5.0, late_from_week=7, early_days=3.5,
+             max_edge=20.0)  # a 20+ point gap between model and a book is a bad line (e.g. a sign flip), never a play
 TIER_RANK = {"RESEARCH": 0, "LEAN": 1, "STRONG": 2, "FCS": 2, "WEATHER": 2}
 BACKTEST = {  # median-open results 2021-25 (+2026 YTD), research/opener.py
-    "strong_fbs": "FBS & FBS-vs-FCS, gap 7+: 55.5% ATS vs opener in 2021-26 (485 bets); line moved our way about 1.2 pts on average",
+    "strong_fbs": "FBS & FBS-vs-FCS at early-week prices, gap 7+ in weeks 1-6: 55.1% ATS vs opener in 2021-25 (303 bets); gap 5+ from week 7: 57.7% (260 bets, about 6 a week), line moved our way 1.5 pts on average",
     "strong_fcs": "FCS-vs-FCS, gap 5+: 58.2% ATS vs opener (557 bets); line moved our way 1.9 pts on average",
     "weather": "Wind 15-20 mph at kickoff: unders hit 59.0% (2014-19) and 56.6% (2020-26) vs the CLOSING total (559 games)",
     "vs_close": "Against CLOSING lines the same model is ~50% (FBS) / ~52% (FCS): the edge is getting the early number",
@@ -212,6 +217,11 @@ def parse_live(games, ml, tmap):
                 if is_home:
                     row["tix_home"] = (bi.get("tickets") or {}).get("percent")
                     row["money_home"] = (bi.get("money") or {}).get("percent")
+            # a book's two spread sides must mirror each other; a pair that doesn't means an outcome was tagged to the
+            # wrong team, so that book's spread is dropped (Oct 25: BetMGM's Navy +30 was read as Notre Dame +30.5)
+            if row.get("sp_home") is not None and row.get("sp_away") is not None and abs(row["sp_home"] + row["sp_away"]) > 0.6:
+                for f in ("sp_home", "sp_home_odds", "sp_away", "sp_away_odds"):
+                    row.pop(f, None)
             for o in ev_.get("total") or []:
                 row["tot" ] = o.get("value")
                 row["over_odds" if o.get("side") == "over" else "under_odds"] = o.get("odds")
@@ -369,7 +379,13 @@ def drop_stale(rec):
     while every other book was at -6.5."""
     for key, fields, cons in (("sp_home", ("sp_home", "sp_home_odds", "sp_away", "sp_away_odds"), rec.get("cons_line")),
                               ("tot", ("tot", "over_odds", "under_odds"), rec.get("cons_total"))):
-        vals = {k: v[key] for k, v in rec["books"].items() if v.get(key) is not None}
+        vals = {}
+        for k, v in rec["books"].items():
+            val = v.get(key)
+            if key == "sp_home" and val is None and v.get("sp_away") is not None:
+                val = -v["sp_away"]  # a book listing only the away side is checked through it (Oct 25: Notre Dame +30.5)
+            if val is not None:
+                vals[k] = val
         for k, val in vals.items():
             others = [x for kk, x in vals.items() if kk != k]
             ref = cons if cons is not None and not pd.isna(cons) else (float(np.median(others)) if others else None)
@@ -377,6 +393,12 @@ def drop_stale(rec):
                 for f in fields:
                     rec["books"][k][f] = None
                 rec.setdefault("stale_books", []).append(f"{k} {'spread' if key == 'sp_home' else 'total'} {val:g}")
+
+
+def is_early(kickoff):
+    """Opener window for FBS strong plays: Sunday or Monday of game week, or 3.5+ days before kickoff."""
+    n = now_et()
+    return n.weekday() in (6, 0) or (kickoff - n).total_seconds() / 86400 >= RULES["early_days"]
 
 
 def best(books, line_key, odds_key, higher_better=True):
@@ -402,12 +424,19 @@ def flags(games, sit):
                 continue
             line, odds, book = b
             edge = line - sign * g["model_line"]
-            strong = RULES["strong_fcs"] if fcs else RULES["strong_fbs"]
+            if edge >= RULES["max_edge"]:
+                g.setdefault("suspect_lines", []).append(f"{book} {g[side]} {line:+g}")
+                continue
+            if fcs:
+                strong = RULES["strong_fcs"]
+            else:
+                strong = RULES["strong_fbs_late"] if g["week"] >= RULES["late_from_week"] else RULES["strong_fbs"]
             lean = RULES["lean_fcs"] if fcs else RULES["lean_fbs"]
             if edge >= lean:
                 # week 1 runs on preseason priors (backtested); programs new to D1 need 5 D1 games first
                 enough = (g["n_min"] >= (5 if g["new_team"] else 2)) or (g["week"] <= 1 and not g["new_team"])
-                tier = ("FCS" if fcs else "STRONG") if (edge >= strong and reg and enough) else "LEAN"
+                early = fcs or is_early(g["kickoff"])
+                tier = ("FCS" if fcs else "STRONG") if (edge >= strong and reg and enough and early) else "LEAN"
                 team = g[side]
                 need = strong if tier in ("STRONG", "FCS") else lean
                 out.append(dict(game_id=g["game_id"], market="spread", side=side, pick=f"{team} {line:+g}", team=team,

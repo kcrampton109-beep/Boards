@@ -149,7 +149,7 @@ tr.flag td:first-child { box-shadow: inset 3px 0 0 var(--gold) }
 <script>
 const BOOKN = { DK: "DraftKings", FD: "FanDuel", MGM: "BetMGM" };
 const TIER = {
-  STRONG: { name: "Strong plays", code: "S", note: "FBS and FBS-vs-FCS games where the model differs from your best book by 7+ points. Backtest: 55.5% against the opening line (485 bets, 2021-26)." },
+  STRONG: { name: "Strong plays", code: "S", note: "FBS and FBS-vs-FCS games at early-week prices (Sunday, Monday or 3.5+ days before kickoff) where the model differs from your best book by 7+ points in weeks 1-6, or 5+ points from week 7. Backtest against the opening line, 2021-25: 55.1% in weeks 1-6, 57.7% from week 7. A gap first reached later in the week is a lean." },
   FCS: { name: "FCS plays", code: "F", note: "FCS-vs-FCS games, model gap 5+ points. DraftKings and FanDuel only. Backtest: 58.2% against the opener (557 bets). Paper-only until they earn a record." },
   WEATHER: { name: "Weather unders", code: "W", note: "Forecast wind 18+ mph at kickoff, logged only within 24 hours of kickoff (since Oct 19; it was 15+ mph within 48 hours, and forecasts that far out ran windy). Backtest, using wind measured at kickoff: unders hit 56.6-59% against the closing total in both 2014-19 and 2020-26." },
   LEAN: { name: "Leans", code: "L", note: "Smaller gaps (FBS 5-7, FCS 3-5) or games the model knows too little about. Logged at 0.5u (FCS leans with a 4+ point gap: 1u)." },

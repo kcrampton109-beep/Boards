@@ -12107,6 +12107,7 @@
   "model": -33.3,
   "grp": "FBS",
   "limit": -26.0,
-  "status": "open"
+  "status": "void",
+  "note": "Voided Oct 26: BetMGM listed only one side of this spread and Navy's +30 was read as Notre Dame's line (Notre Dame is a 30-point favorite). The engine now drops one-sided or mismatched book lines."
  }
 ]

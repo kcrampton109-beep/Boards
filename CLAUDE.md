@@ -58,7 +58,12 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   "Look-ahead" but are never logged, alerted or put on the Bets tab (open entries on such games are voided).
 - **NFL book agreement**: a book whose spread is 1.5+ pts off the median of DK/FD/MGM is ignored for prices (Oct 20:
   DK and FD next-week lines up to 5 pts apart).
-- **CFB stale lines**: a book 3+ points off consensus is ignored (`RULES["stale_pts"]`).
+- **CFB stale lines**: a book 3+ points off consensus is ignored (`RULES["stale_pts"]`), checked through either side of
+  the spread; a book whose two spread sides don't mirror is dropped, and a 20+ point model gap is treated as a bad line
+  (`max_edge`). Oct 25: BetMGM listed one side of Notre Dame vs Navy and it was logged as Notre Dame +30.5 (voided).
+- **CFB strong tier** (owner's call, Oct 26): FBS gap 7+ in weeks 1-6, 5+ from week 7 (`strong_fbs_late`, `late_from_week`),
+  and only at early-week prices (`is_early`: Sunday/Monday or 3.5+ days before kickoff); a later gap logs as a lean.
+  FCS-vs-FCS (5+) has no timing rule: its lines post midweek.
 
 ## Data (public repo: no third-party data committed)
 - Committed: code, `*/board/` ledgers + state the engine needs between runs, `cfb/data/calls.log`.
