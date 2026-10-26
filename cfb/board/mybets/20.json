@@ -1,0 +1,23 @@
+{
+ "id": 20,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/20",
+ "board": "CFB",
+ "pick": "Illinois -2.5",
+ "odds": -115,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Illinois @ Maryland",
+ "kickoff": "2026-10-31 12:00:00-04:00",
+ "play": "401858503|spread|away|m",
+ "logged": "2026-10-26T13:54:47Z",
+ "updated": "2026-10-26T13:54:56+00:00",
+ "tier": "STRONG",
+ "game_id": 401858503,
+ "board_line": -2.5,
+ "board_odds": -112.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "away",
+ "line": -2.5
+}
