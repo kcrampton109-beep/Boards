@@ -6790,5 +6790,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_08_ARI_DAL:RLM:total:over",
+  "tier": "RLM",
+  "market": "total",
+  "side": "over",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_08_ARI_DAL",
+  "week": 8,
+  "matchup": "ARI @ DAL",
+  "kickoff": "Sun Nov 1, 1:00 PM ET",
+  "pick": "Over 52.5",
+  "line": 52.5,
+  "odds": -110,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": null,
+  "note": "88% of bets on the under, total moved 51.5 \u2192 52.5",
+  "limit": null,
+  "model_line": -8.0,
+  "flagged": "2026-10-25T20:00:27.639200-04:00",
+  "kickoff_iso": "2026-11-01T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
