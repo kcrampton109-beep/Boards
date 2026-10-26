@@ -6902,5 +6902,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_08_LV_NYJ:RLM:spread:home",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team": "NYJ",
+  "pid": null,
+  "game_id": "2026_08_LV_NYJ",
+  "week": 8,
+  "matchup": "LV @ NYJ",
+  "kickoff": "Sun Nov 1, 1:00 PM ET",
+  "pick": "NYJ -1",
+  "line": -1,
+  "odds": -105,
+  "book": "MGM",
+  "stake": 1.0,
+  "edge": null,
+  "note": "68% of bets on LV, line moved -1.5 \u2192 +1 for LV",
+  "limit": null,
+  "model_line": -0.7,
+  "flagged": "2026-10-26T00:18:34.474403-04:00",
+  "kickoff_iso": "2026-11-01T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
