@@ -6930,5 +6930,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_08_ATL_TB:STRONG:spread:away",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "team": "ATL",
+  "pid": null,
+  "game_id": "2026_08_ATL_TB",
+  "week": 8,
+  "matchup": "ATL @ TB",
+  "kickoff": "Sun Nov 1, 1:00 PM ET",
+  "pick": "ATL +2",
+  "line": 2,
+  "odds": -110,
+  "book": "MGM",
+  "stake": 1.0,
+  "edge": 3.1,
+  "note": null,
+  "limit": 2.0,
+  "model_line": 1.1,
+  "flagged": "2026-10-26T04:54:20.326444-04:00",
+  "kickoff_iso": "2026-11-01T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
