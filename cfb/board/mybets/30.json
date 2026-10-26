@@ -1,0 +1,23 @@
+{
+ "id": 30,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/30",
+ "board": "CFB",
+ "pick": "Ohio State -7",
+ "odds": -105,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Ohio State @ USC",
+ "kickoff": "2026-10-31 19:30:00-04:00",
+ "play": "401858509|spread|away|m|STRONG",
+ "logged": "2026-10-26T14:53:04Z",
+ "updated": "2026-10-26T14:53:13+00:00",
+ "tier": "STRONG",
+ "game_id": 401858509,
+ "board_line": -7.0,
+ "board_odds": -105.0,
+ "board_book": "MGM",
+ "market": "spread",
+ "side": "away",
+ "line": -7.0
+}
