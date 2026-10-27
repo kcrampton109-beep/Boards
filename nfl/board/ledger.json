@@ -7294,5 +7294,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_08_CLE_PIT:STRONG:spread:home",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "home",
+  "team": "PIT",
+  "pid": null,
+  "game_id": "2026_08_CLE_PIT",
+  "week": 8,
+  "matchup": "CLE @ PIT",
+  "kickoff": "Sun Nov 1, 1:00 PM ET",
+  "pick": "PIT -3",
+  "line": -3,
+  "odds": -115,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": 3.1,
+  "note": null,
+  "limit": -3.0,
+  "model_line": -6.1,
+  "flagged": "2026-10-27T13:30:11.853009-04:00",
+  "kickoff_iso": "2026-11-01T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
