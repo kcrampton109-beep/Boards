@@ -1,0 +1,23 @@
+{
+ "id": 31,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/31",
+ "board": "CFB",
+ "pick": "Kansas State +1",
+ "odds": -110,
+ "book": "BetMGM",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Kansas State @ Colorado",
+ "kickoff": "2026-10-31 14:00:00-04:00",
+ "play": "401856846|spread|away|m",
+ "logged": "2026-10-27T20:54:07Z",
+ "updated": "2026-10-27T20:54:16+00:00",
+ "tier": "STRONG",
+ "game_id": 401856846,
+ "board_line": -1.0,
+ "board_odds": -108.0,
+ "board_book": "MGM",
+ "market": "spread",
+ "side": "away",
+ "line": 1.0
+}
