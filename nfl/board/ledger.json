@@ -7322,5 +7322,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_08_ATL_TB:RLM:spread:home",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team": "TB",
+  "pid": null,
+  "game_id": "2026_08_ATL_TB",
+  "week": 8,
+  "matchup": "ATL @ TB",
+  "kickoff": "Sun Nov 1, 1:00 PM ET",
+  "pick": "TB -2.5",
+  "line": -2.5,
+  "odds": -102,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": null,
+  "note": "66% of bets on ATL, line moved +1.5 \u2192 +2.5 for ATL",
+  "limit": null,
+  "model_line": -1.8,
+  "flagged": "2026-10-27T18:44:10.735035-04:00",
+  "kickoff_iso": "2026-11-01T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
