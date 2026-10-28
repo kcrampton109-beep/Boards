@@ -79,7 +79,7 @@ def record(issue):
     ledger = json.loads((ROOT / folder / "board" / "ledger.json").read_text(encoding="utf-8"))
     by_id = {e["id"]: e for e in ledger if e.get("status") != "void"}
     play = bet["play"]
-    if play and not play.startswith("game:"):
+    if play and not play.startswith(("game:", "look:")):
         ents = [by_id.get(i) for i in play.split("+")]
         if any(e is None for e in ents):
             raise ValueError(f"board play '{play}' was not found; open the form from the board's button")
@@ -94,6 +94,16 @@ def record(issue):
         else:
             bet.update(market=e["market"], side=e["side"])
             bet["line"] = num(v.get("line"), "Line", required=e["market"] in ("spread", "total"))
+    elif play.startswith("look:"):
+        # a bet on an NFL look-ahead play (next week's line, shown on the board but never in its ledger):
+        # tied to the game and graded like any bet; play id is "<game_id>:<tier>:<market>:<side>"
+        parts = play[5:].split(":")
+        gid = parts[0]
+        t = TYPES.get((v.get("type") or "").strip()) or (tuple(parts[2:4]) if len(parts) >= 4 else None)
+        if not t or t[0] not in ("spread", "total", "moneyline"):
+            raise ValueError("pick the bet type (spread, total or moneyline)")
+        bet.update(tier="LOOKAHEAD", game_id=int(gid) if gid.isdigit() else gid, market=t[0], side=t[1],
+                   line=num(v.get("line"), "Line", required=t[0] != "moneyline"))
     elif play.startswith("game:"):
         t = TYPES.get((v.get("type") or "").strip())
         if not t:

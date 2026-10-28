@@ -164,8 +164,10 @@
       const team = s === "home" ? p.home : p.away;
       const pickTxt = teaser ? p.teaser.map(l => l.pick).join(" + ") : m === "total" ? `${s === "over" ? "Over" : "Under"} ${line}`
         : m === "moneyline" ? `${team} ML` : `${team} ${fmtLine(line)}`;
+      // look-ahead plays (NFL next-week lines) aren't in the board's ledger: "look:<play id>" plus the bet type
+      const look = !teaser && same && String(p.play || "").startsWith("look:");
       const f = { board: p.board, pick: pickTxt, line, odds, book, amount: amt, matchup: p.matchup, kickoff: p.kickoff,
-                  play: teaser || same ? p.play : `game:${p.game_id}`, type: teaser || same ? "" : TYPE_LABEL[`${m}|${s}`],
+                  play: teaser || same ? p.play : `game:${p.game_id}`, type: teaser || (same && !look) ? "" : TYPE_LABEL[`${m}|${s}`],
                   notes: root.querySelector("#lb-notes").value.trim() };
       const btn = root.querySelector("#lb-save"); btn.disabled = true; btn.textContent = "Saving…"; err("");
       try {

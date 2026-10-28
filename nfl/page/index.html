@@ -239,6 +239,39 @@ function render(S) {
     `<a class="cell" href="#${esc(p.code)}"><span class="code ${p.tier}">${p.code}</span><span class="pk">${esc(p.pick)}</span><span class="px num">${p.stake && p.market !== "teaser" ? p.stake + "u · " : ""}${odds(p.odds)} ${BOOKN[p.book] || p.book || ""} · ${esc(games[p.game_id].kickoff)}</span></a>`).join("")
     : `<div class="empty">No plays at current prices. New-week openers post Sunday night; the board checks every 30 minutes.</div>`;
 
+  // My Bets hooks: the owner's bets (published + saved on this phone but not recorded yet, minus ones just removed),
+  // a "Log bet" panel registered per play (site/logbet.js), and a redraw after a save
+  const goneIds = LogBet.removed();
+  const myBets = (S.myBets || []).filter(b => !goneIds.has(b.id)).concat(LogBet.pending("NFL", S.myBets || []));
+  const mineBy = {};
+  myBets.forEach(b => (mineBy[b.play] = mineBy[b.play] || []).push(`$${b.amount} at ${b.market === "total" ? b.line + " " : b.line != null && b.market !== "teaser" ? line(b.line) + " " : ""}${odds(b.odds)} ${b.book}${b.syncing ? " (saving)" : ""}`));
+  // a bet logged on a look-ahead play ("look:<play id>") also shows on that play once it becomes a regular play
+  const mineOf = id => (mineBy[id] || []).concat(mineBy["look:" + id] || []);
+  const takes = window.__takes = {}, edits = window.__edits = {};
+  let nKey = 0;
+  const teamsOf = e => { const g = games[e.game_id]; return g ? [g.away, g.home] : String(e.matchup || "").split(/ @ | vs /); };
+  const editKey = b => { const k = "e" + (++nKey); edits[k] = b; return k; };
+  window.__afterLog = () => render(S);
+  const isoOf = o => o.kickoff_iso || (games[o.game_id] || {}).kickoff_iso || o.kickoff;
+  const takeFor = (e, p) => { const x = p || e, [away, home] = teamsOf(e), k = "t" + (++nKey);
+    takes[k] = { board: "NFL", play: e.id, game_id: e.game_id, matchup: e.matchup, away, home, kickoff: isoOf(e), kickoffTxt: e.kickoff,
+                 market: e.market, side: e.side, line: x.line, odds: x.odds, book: x.book, amount: Math.round((x.stake || e.stake || 1) * UNIT),
+                 pickLabel: x.pick, boardLine: e.line, boardTxt: `${e.pick} ${odds(e.odds)} ${BOOKN[e.book] || e.book}` };
+    return k; };
+  const takePair = (a, b) => { const k = "t" + (++nKey), leg = o => ({ pick: o.pick, matchup: o.matchup || (games[o.game_id] || {}).matchup,
+      game_id: o.game_id, side: o.side, line: o.line, kickoff: isoOf(o) });
+    takes[k] = { board: "NFL", play: `${a.id}+${b.id}`, market: "teaser", side: null, teaser: [leg(a), leg(b)], odds: -120, book: a.book,
+                 amount: UNIT, matchup: `${leg(a).matchup} / ${leg(b).matchup}`, kickoff: isoOf(a), game_id: a.game_id, pickLabel: `${a.pick} + ${b.pick}` };
+    return k; };
+  // look-ahead plays stay display-only on the board (never logged or alerted), but the owner can log a real bet on one
+  const lookTake = (p, g) => {
+    if (!p.lookahead || g.started || !["spread", "total"].includes(p.market)) return "";
+    const mine = mineOf(p.id);
+    const k = takeFor(Object.assign({}, p, { id: "look:" + p.id, matchup: g.matchup, kickoff: g.kickoff, kickoff_iso: g.kickoff_iso }), p);
+    return (mine.length ? `<div class="b-mine">✓ You bet ${mine.map(esc).join("; ")}</div>` : "")
+      + `<button class="b-take" type="button" data-take="${k}">${mine.length ? "Log another bet on this" : "Log bet"}</button>`;
+  };
+
   // plays
   const card = p => {
     const g = games[p.game_id], e = ledger[p.id];
@@ -271,7 +304,7 @@ function render(S) {
       <div><div class="pick">${esc(p.pick)}</div><div class="price num">${p.market === "teaser" ? "2-team 6-pt teaser leg" : (p.stake ? "<b>" + p.stake + "u</b> · " : "") + odds(p.odds)} at ${BOOKN[p.book] || esc(p.book) || "–"}</div></div>
       <div class="kv">${kv}${tix}</div>
       ${p.note ? `<div class="note">${esc(p.note)}</div>` : ""}${angles}
-      <div class="logline">${log}</div></article>`;
+      <div class="logline">${log}</div>${lookTake(p, g)}</article>`;
   };
   document.getElementById("p-plays").innerHTML = ORDER.map(t => {
     const ps = plays.filter(p => p.tier === t);
@@ -280,29 +313,6 @@ function render(S) {
       ${ps.length ? `<div class="cards">${ps.map(card).join("")}</div>` : `<div class="muted">None at current prices.</div>`}</div>`;
   }).join("");
 
-  // My Bets hooks: the owner's bets (published + saved on this phone but not recorded yet, minus ones just removed),
-  // a "Log bet" panel registered per play (site/logbet.js), and a redraw after a save
-  const goneIds = LogBet.removed();
-  const myBets = (S.myBets || []).filter(b => !goneIds.has(b.id)).concat(LogBet.pending("NFL", S.myBets || []));
-  const mineBy = {};
-  myBets.forEach(b => (mineBy[b.play] = mineBy[b.play] || []).push(`$${b.amount} at ${b.market === "total" ? b.line + " " : b.line != null && b.market !== "teaser" ? line(b.line) + " " : ""}${odds(b.odds)} ${b.book}${b.syncing ? " (saving)" : ""}`));
-  const mineOf = id => mineBy[id] || [];
-  const takes = window.__takes = {}, edits = window.__edits = {};
-  let nKey = 0;
-  const teamsOf = e => { const g = games[e.game_id]; return g ? [g.away, g.home] : String(e.matchup || "").split(/ @ | vs /); };
-  const editKey = b => { const k = "e" + (++nKey); edits[k] = b; return k; };
-  window.__afterLog = () => render(S);
-  const isoOf = o => o.kickoff_iso || (games[o.game_id] || {}).kickoff_iso || o.kickoff;
-  const takeFor = (e, p) => { const x = p || e, [away, home] = teamsOf(e), k = "t" + (++nKey);
-    takes[k] = { board: "NFL", play: e.id, game_id: e.game_id, matchup: e.matchup, away, home, kickoff: isoOf(e), kickoffTxt: e.kickoff,
-                 market: e.market, side: e.side, line: x.line, odds: x.odds, book: x.book, amount: Math.round((x.stake || e.stake || 1) * UNIT),
-                 pickLabel: x.pick, boardLine: e.line, boardTxt: `${e.pick} ${odds(e.odds)} ${BOOKN[e.book] || e.book}` };
-    return k; };
-  const takePair = (a, b) => { const k = "t" + (++nKey), leg = o => ({ pick: o.pick, matchup: o.matchup || (games[o.game_id] || {}).matchup,
-      game_id: o.game_id, side: o.side, line: o.line, kickoff: isoOf(o) });
-    takes[k] = { board: "NFL", play: `${a.id}+${b.id}`, market: "teaser", side: null, teaser: [leg(a), leg(b)], odds: -120, book: a.book,
-                 amount: UNIT, matchup: `${leg(a).matchup} / ${leg(b).matchup}`, kickoff: isoOf(a), game_id: a.game_id, pickLabel: `${a.pick} + ${b.pick}` };
-    return k; };
   // bets: every play to put money on, drawn by the shared ../bets.js (same look on every board)
   const etTxt = iso => { try { return new Date(iso).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " ET"; } catch (e) { return iso || ""; } };
   const playBy = Object.fromEntries(plays.map(p => [p.id, p]));
