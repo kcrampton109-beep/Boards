@@ -11739,7 +11739,11 @@
   "model": -7.9,
   "grp": "FBS",
   "limit": -0.5,
-  "status": "open"
+  "status": "L",
+  "clv": 5.0,
+  "close": -2.5,
+  "units": -1.5,
+  "final": "Delaware 35 - Western Kentucky 21"
  },
  {
   "id": "401871071|moneyline|home|m",
@@ -11762,7 +11766,9 @@
   "model": 69.4,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Delaware 35 - Western Kentucky 21"
  },
  {
   "id": "401862812|total|over|m",
