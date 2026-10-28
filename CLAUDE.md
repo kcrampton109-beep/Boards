@@ -1,4 +1,4 @@
-# Boards: CFB + NFL betting models (paper + small real stakes)
+# Boards: CFB + NFL betting models (paper + small real stakes), CBB paper board
 
 Owner bets $10 units at DraftKings / FanDuel / BetMGM on STRONG (+FCS, WEATHER for CFB) plays; every other tier
 stays tracked on the boards. Both models' edge is beating OPENING lines (≈50% vs close), so timing and CLV
@@ -19,6 +19,7 @@ matter more than win-loss; judge changes by CLV first. Ask the owner before chan
 | `nfl.yml` | :17 and :47 + :02/:32 Tue 18-21 UTC (FanDuel posts next week ~2:40 PM ET Tuesday) | snapshot, engine, ledger commit, publish, ntfy |
 | `nfl-weekly.yml` | Tue 9:30 AM ET (13:30 / 14:30 UTC, gate) | recap + workbook, ntfy |
 | `workbooks.yml` | Mon 9 AM ET (13:00 / 14:00 UTC, gate) | both workbooks rebuilt from the published boards |
+| `cbb.yml` | :12 and :42, but :42 skipped 1-9 PM ET; Oct 25 - Apr 12 only | CBB paper board: fetch, refit, ledger commit, publish (no ntfy) |
 | `net-check.yml` | manual | can GitHub reach every data source? |
 
 GitHub skips some scheduled runs under load (~1 in 8 in week 1), so gaps of ~1 h happen. Keep Pages publishes under
@@ -64,11 +65,19 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
 - **CFB strong tier** (owner's call, Oct 26): FBS gap 7+ in weeks 1-6, 5+ from week 7 (`strong_fbs_late`, `late_from_week`),
   and only at early-week prices (`is_early`: Sunday/Monday or 3.5+ days before kickoff); a later gap logs as a lean.
   FCS-vs-FCS (5+) has no timing rule: its lines post midweek.
+- **CBB paper board** (built Oct 28 2026, `/cbb/`): paper only, flat 1u, no alerts, no Bets/My Bets tab. Model = blend of
+  a results ridge and a market-ratings ridge (fit to earlier games' closing lines), `cbb/research/REPORT.md`. Tiers
+  (`RULES`): spreads 3-4 / 4+, totals 5-6 / 6+, November games in their own tier; spread gaps 12+ not logged. ESPN
+  supplies the game list, neutral flag and conferences (Action's conference labels are current, not historical).
+  `board/seen_pending.json` + `first_seen.jsonl` record each book's first number vs Action's opener (Openers tab): the
+  backtest's CLV was from that opener, so this decides whether the edge is bettable. Money tiers are the owner's call.
+  Season rollover (July): the hist cache key is per season, so the first run re-runs `cbb/bootstrap.py` (adds last season).
 
 ## Data (public repo: no third-party data committed)
 - Committed: code, `*/board/` ledgers + state the engine needs between runs, `cfb/data/calls.log`.
 - Actions cache: `cfb-raw-v1` / `nfl-raw-v1` (history, downloaded by `*/bootstrap.py` on a miss; CFB ≈106 CFBD
-  calls of 1,000/month), `*-work-*` (regenerated tables), `*-snap-*` (line snapshots).
+  calls of 1,000/month), `*-work-*` (regenerated tables), `*-snap-*` (line snapshots). CBB: `cbb-hist-<season>`
+  (past seasons' scoreboards + derived prior, ~35 min to rebuild), `cbb-season-<season>-*` (this season's files, saved daily).
 - Secret `CFBD_KEY` (CollegeFootballData). NFL needs no key.
 
 ## Making changes

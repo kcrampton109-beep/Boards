@@ -22,12 +22,15 @@ def season_of(ts):
     return ts.year if ts.month >= 7 else ts.year - 1
 
 
-def load_espn():
+def load_espn(files=None, completed_only=True):
+    """ESPN events from the daily files (default: every file in data/espn_raw). completed_only=False also keeps
+    scheduled / live / postponed games (the live board), with their status in `state` and `status`."""
     rows = []
-    for f in sorted(glob.glob(str(DATA / "espn_raw" / "*.json.gz"))):
+    for f in sorted(files if files is not None else glob.glob(str(DATA / "espn_raw" / "*.json.gz"))):
         for ev in json.loads(gzip.decompress(pathlib.Path(f).read_bytes())).get("events", []):
             c = ev["competitions"][0]
-            if not c["status"]["type"].get("completed"):
+            done = bool(c["status"]["type"].get("completed"))
+            if completed_only and not done:
                 continue
             side = {t["homeAway"]: t for t in c["competitors"]}
             if set(side) != {"home", "away"}:
@@ -42,16 +45,19 @@ def load_espn():
                 home_name=h["team"].get("displayName"), away_name=a["team"].get("displayName"),
                 home_loc=h["team"].get("location"), away_loc=a["team"].get("location"),
                 home_conf_eid=h["team"].get("conferenceId"), away_conf_eid=a["team"].get("conferenceId"),
-                home_pts=float(h["score"]), away_pts=float(a["score"])))
-    e = pd.DataFrame(rows).drop_duplicates("espn_id")
+                home_pts=float(h["score"]) if done else None, away_pts=float(a["score"]) if done else None,
+                completed=done, state=c["status"]["type"].get("state"), status=c["status"]["type"].get("name")))
+    e = pd.DataFrame(rows).drop_duplicates("espn_id", keep="last")
+    if not len(e):
+        return e
     e["start"] = pd.to_datetime(e["start"], utc=True)
     e["season"] = e["start"].dt.tz_convert(ET).map(season_of)
     return e
 
 
-def load_action():
+def load_action(files=None):
     rows = []
-    for f in sorted(glob.glob(str(DATA / "an_raw" / "*.json.gz"))):
+    for f in sorted(files if files is not None else glob.glob(str(DATA / "an_raw" / "*.json.gz"))):
         for g in json.loads(gzip.decompress(pathlib.Path(f).read_bytes())).get("games", []):
             tm = {t["id"]: t for t in g.get("teams", [])}
             box = g.get("boxscore") or {}
@@ -75,6 +81,8 @@ def load_action():
                              cons_num_bets=o.get("num_bets"))
             rows.append(r)
     a = pd.DataFrame(rows).drop_duplicates("an_id", keep="last")
+    if not len(a):
+        return a
     a["an_start"] = pd.to_datetime(a["an_start"], utc=True)
     for c in [c for c in a.columns if c.endswith("_ts")]:
         a[c] = pd.to_datetime(a[c], utc=True, format="ISO8601")
@@ -84,6 +92,23 @@ def load_action():
 def _norm(s):
     s = (s or "").lower().replace("&", "and").replace("st.", "state").replace("saint ", "st ")
     return re.sub(r"[^a-z0-9 ]", "", s).strip()
+
+
+def to_espn_home(a):
+    """Put every Action number on ESPN's home team (rows where same_orient is False have home/away swapped)."""
+    a = a.copy()
+    flip = ~a["same_orient"].astype(bool)
+    for b in BOOKS.values():
+        if f"{b}_spread" not in a:
+            continue
+        for x, y in (("spread", "spread_away"), ("sp_odds_home", "sp_odds_away"), ("ml_home", "ml_away")):
+            a.loc[flip, [f"{b}_{x}", f"{b}_{y}"]] = a.loc[flip, [f"{b}_{y}", f"{b}_{x}"]].values
+    for c in ("cons_sp_tix_home", "cons_sp_money_home"):
+        if c in a:
+            a.loc[flip, c] = 100 - a.loc[flip, c]
+    a.loc[flip, ["an_home_conf", "an_away_conf"]] = a.loc[flip, ["an_away_conf", "an_home_conf"]].values
+    a.loc[flip, ["an_home_div", "an_away_div"]] = a.loc[flip, ["an_away_div", "an_home_div"]].values
+    return a
 
 
 def match(e, an):
@@ -141,18 +166,7 @@ def match(e, an):
         if hit:
             out.append((r.an_id, hit[0], r.home_e == hit[1]))
     m = pd.DataFrame(out, columns=["an_id", "espn_id", "same_orient"]).drop_duplicates("espn_id")
-    a = an.merge(m, on="an_id").drop(columns=["day", "home_e", "away_e"])
-    # put every Action number on ESPN's home team
-    flip = ~a["same_orient"]
-    for b in BOOKS.values():
-        if f"{b}_spread" not in a:
-            continue
-        for x, y in (("spread", "spread_away"), ("sp_odds_home", "sp_odds_away"), ("ml_home", "ml_away")):
-            a.loc[flip, [f"{b}_{x}", f"{b}_{y}"]] = a.loc[flip, [f"{b}_{y}", f"{b}_{x}"]].values
-    for c in ("cons_sp_tix_home", "cons_sp_money_home"):
-        a.loc[flip, c] = 100 - a.loc[flip, c]
-    a.loc[flip, ["an_home_conf", "an_away_conf"]] = a.loc[flip, ["an_away_conf", "an_home_conf"]].values
-    a.loc[flip, ["an_home_div", "an_away_div"]] = a.loc[flip, ["an_away_div", "an_home_div"]].values
+    a = to_espn_home(an.merge(m, on="an_id").drop(columns=["day", "home_e", "away_e"]))
     print(f"action: {len(an)} final games, {an['home_e'].notna().mean():.1%} home teams mapped, {len(a)} joined to ESPN")
     return a, tmap
 
@@ -161,6 +175,8 @@ def main():
     e = load_espn()
     an = load_action()
     a, tmap = match(e, an)
+    # Action team id -> ESPN team id, reused by the live board to place each day's lines on ESPN's games
+    (DATA / "an_team_map.json").write_text(json.dumps({str(k): int(v) for k, v in tmap.items()}))
     g = e.merge(a.drop(columns=["an_home", "an_away", "an_home_pts", "an_away_pts", "an_home_id", "an_away_id"]),
                 on="espn_id", how="left")
     # D1: a team with 10+ games against the ESPN D1 scoreboard that season (non-D1 visitors play one to three)

@@ -31,3 +31,4 @@ _checkin/
 _wb_*/
 # CBB research: third-party raw data (Action Network, ESPN) and derived tables stay out of the public repo
 cbb/data/
+cbb/board/state.json

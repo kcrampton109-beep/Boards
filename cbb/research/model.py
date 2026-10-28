@@ -175,6 +175,7 @@ def run(lam=4.0, half_life=60.0, seasons=None, verbose=False, target="pts", lag_
         mu, h, O, D = F.solve(pO, pD, 1.0, mu_prev, h_prev)
         finals[season] = tm.assign(O=O - O.mean(), D=D - D.mean())[["eid", "name", "conf_eid", "O", "D"]]
         mu_prev, h_prev = mu + O.mean() - D.mean(), h
+        coefs_log.setdefault("mu_h", {})[season] = (float(mu_prev), float(h_prev))  # next season's starting mu / h
         if verbose:
             print(season, "games", len(gs), "mu %.1f h %.2f" % (mu_prev, h_prev), "prior coefs", coefs)
     p = pd.concat(out, ignore_index=True)

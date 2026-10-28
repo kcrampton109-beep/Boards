@@ -1,0 +1,5 @@
+# Same versions as the laptop venv used for the backtest (C:/Users/kcram/cfb/.venv), so the cloud produces the same numbers
+numpy==2.5.3
+pandas==3.0.6
+pyarrow==25.0.1
+requests==2.34.2

@@ -1,0 +1,127 @@
+# CBB paper board: fetch the day's lines and scores, refit the ratings, log paper plays, publish /cbb/. No phone alerts.
+# Every 30 min from 9 PM to 1 PM Eastern (lines for the next day's games post about 11 PM to midnight ET), hourly in
+# the afternoon and evening. Runs Oct 25 - Apr 12 only. Cron is UTC; Eastern-time rules are applied in "plan".
+name: CBB board
+on:
+  schedule:
+    - cron: "12 * * * *"
+    - cron: "42 * * * *"
+  push:   # my code changes run straight away (the workflow's own commits never trigger runs)
+    branches: [main]
+    paths: [".github/workflows/cbb.yml", "cbb/*.py", "cbb/research/*.py", "cbb/requirements.txt", "cbb/board/index.html", "site/**", "tools/**"]
+  workflow_dispatch:
+concurrency:
+  group: cbb   # one run at a time; never share a group with another board (GitHub cancels pending runs in a group)
+  cancel-in-progress: false
+permissions:
+  contents: write
+env:
+  TZ: America/New_York   # naive local times are Eastern
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75   # the first run downloads five seasons of history (~35 min); normal runs take about a minute
+    defaults:
+      run:
+        working-directory: cbb
+    steps:
+      - uses: actions/checkout@v4
+      - id: plan
+        name: Plan this run (Eastern time rules)
+        run: |
+          md=$(date +%m%d); hour=$((10#$(date +%H))); month=$((10#$(date +%m))); year=$(date +%Y)
+          half=${{ github.event_name == 'schedule' && github.event.schedule == '42 * * * *' }}
+          engine=true
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            if [ "$md" -gt 0412 ] && [ "$md" -lt 1025 ]; then engine=false; fi                # off-season
+            if [ "$half" = "true" ] && [ "$hour" -ge 13 ] && [ "$hour" -lt 21 ]; then engine=false; fi   # afternoon: hourly
+          fi
+          season=$year; [ "$month" -lt 7 ] && season=$((year - 1))
+          # the season's daily files are cached once a day (first run after 6 AM) so the repo's 10 GB cache doesn't churn
+          save=false; [ "$hour" -eq 6 ] && [ "$half" != "true" ] && save=true
+          echo "engine=$engine" >> "$GITHUB_OUTPUT"; echo "season=$season" >> "$GITHUB_OUTPUT"; echo "save=$save" >> "$GITHUB_OUTPUT"
+          echo "engine=$engine season=$season save_season_cache=$save (Eastern $md $hour:xx, half-hour run: $half)"
+      - if: steps.plan.outputs.engine == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: cbb/requirements.txt
+      - if: steps.plan.outputs.engine == 'true'
+        run: pip install -q -r requirements.txt
+      # 1. history (Action Network + ESPN scoreboards of past seasons) and what's derived from it: the preseason prior
+      - id: hist
+        if: steps.plan.outputs.engine == 'true'
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            cbb/data/an_raw
+            cbb/data/espn_raw
+            cbb/data/finals_pts.parquet
+            cbb/data/finals_market.parquet
+            cbb/data/teams.parquet
+            cbb/data/an_team_map.json
+            cbb/data/hist.json
+          key: cbb-hist-${{ steps.plan.outputs.season }}
+          restore-keys: cbb-hist-
+      - name: Download history and build the prior (first run of a season, or cache lost)
+        if: steps.plan.outputs.engine == 'true' && steps.hist.outputs.cache-hit != 'true'
+        run: python bootstrap.py
+      - if: steps.plan.outputs.engine == 'true' && steps.hist.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            cbb/data/an_raw
+            cbb/data/espn_raw
+            cbb/data/finals_pts.parquet
+            cbb/data/finals_market.parquet
+            cbb/data/teams.parquet
+            cbb/data/an_team_map.json
+            cbb/data/hist.json
+          key: cbb-hist-${{ steps.plan.outputs.season }}
+      # 2. this season's daily scoreboards (the engine re-fetches yesterday .. 3 days ahead every run)
+      - id: season
+        if: steps.plan.outputs.engine == 'true'
+        uses: actions/cache/restore@v4
+        with:
+          path: cbb/data/season
+          key: cbb-season-${{ steps.plan.outputs.season }}-${{ github.run_id }}
+          restore-keys: cbb-season-${{ steps.plan.outputs.season }}-
+      - name: Run engine
+        if: steps.plan.outputs.engine == 'true'
+        run: |
+          python engine.py
+          # run logs are owner-only; post an engine error as a run annotation so it can be read without signing in
+          last=$(grep -E '^20[0-9]{2}-' board/engine.log | tail -n 1)
+          if echo "$last" | grep -q ' ERROR$'; then
+            msg=$(awk '/^20[0-9][0-9]-.* ERROR$/{buf=""} {buf=buf $0 "%0A"} END{print buf}' board/engine.log | tail -c 3500)
+            echo "::error title=CBB engine::$msg"
+            exit 1
+          fi
+      - name: Stage board
+        if: steps.plan.outputs.engine == 'true'
+        run: python sync_prep.py ../_site_cbb
+      - name: Save ledger and first-seen lines
+        if: steps.plan.outputs.engine == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A board
+          if ! git diff --cached --quiet; then
+            git commit -q -m "CBB board update $(date '+%a %b %d %I:%M %p ET')"
+            for i in 1 2 3 4 5; do   # another board may have pushed first: rebase onto it and retry
+              git pull -q --rebase origin main && git push -q origin HEAD:main && break
+              [ "$i" = 5 ] && exit 1; sleep $((i * 5))
+            done
+          fi
+      - name: Keep this season's scoreboards
+        if: steps.plan.outputs.engine == 'true' && (steps.plan.outputs.save == 'true' || steps.season.outputs.cache-matched-key == '')
+        uses: actions/cache/save@v4
+        with:
+          path: cbb/data/season
+          key: cbb-season-${{ steps.plan.outputs.season }}-${{ github.run_id }}
+      - name: Publish board
+        if: steps.plan.outputs.engine == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash ../tools/publish_site.sh cbb ../_site_cbb

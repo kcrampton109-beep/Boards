@@ -4,7 +4,8 @@
             inAll (false = left out of "All plays", e.g. teaser legs that are counted as 2-team teasers),
             status: "W" | "L" | "P" | "open", units, stake, clv, pick, matchup, odds, app, final, logged,
             playTo, now: {kind: ok | gone | live, text}}
-   Today:   {rows, unit, today}
+   Today:   {rows, unit, today, mainLabel?}   mainLabel names the default view of r.money rows (default "Money plays";
+            a paper-only board passes e.g. "Main plays")
    Results: {rows, unit, today, week (the board's current football week), tiers: [[key, label], ...]}
             tier key "money" = the Bets-tab plays, "all" = everything, else a row.tier value. */
 (function () {
@@ -65,12 +66,12 @@
           ${day !== d.today ? '<button class="trk-chip" data-d="0">Back to today</button>' : ""}
         </div>
         <div class="trk-chips" role="group" aria-label="Which plays">
-          <button class="trk-chip" data-s="money" aria-pressed="${scope === "money"}">Money plays</button>
+          <button class="trk-chip" data-s="money" aria-pressed="${scope === "money"}">${esc(d.mainLabel || "Money plays")}</button>
           <button class="trk-chip" data-s="all" aria-pressed="${scope === "all"}">All plays</button>
         </div>
         <p class="trk-line num">${rows.length ? `${rows.length} play${rows.length === 1 ? "" : "s"} · ${open} still open · settled ${rec(s)} · <span class="${cls(s.units)}">${sgn(s.units, 2)}u (${usd(s.units)})</span>` : ""}</p>
         ${rows.length ? `<div class="bets-grid">${rows.map(card).join("")}</div>`
-          : `<div class="bets-empty">No ${scope === "money" ? "money " : ""}plays on games ${day === d.today ? "today" : "this day"}.</div>`}
+          : `<div class="bets-empty">No ${scope === "money" ? esc((d.mainLabel || "Money plays").replace(/ plays$/i, "").toLowerCase()) + " " : ""}plays on games ${day === d.today ? "today" : "this day"}.</div>`}
       </div>`;
       el.querySelectorAll("[data-d]").forEach(b => b.onclick = () => { const n = +b.dataset.d; day = n ? shift(day, n) : d.today; draw(); });
       el.querySelectorAll("[data-s]").forEach(b => b.onclick = () => { scope = b.dataset.s; draw(); });
