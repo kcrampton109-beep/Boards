@@ -12414,5 +12414,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401867838|total|over|m",
+  "base": "401867838|total|over|m",
+  "flagged": "2026-10-28T18:34-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401867838,
+  "matchup": "Harvard @ Dartmouth",
+  "kickoff": "2026-10-30 19:00:00-04:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "over",
+  "pick": "Over 41.5",
+  "book": "FD",
+  "line": 41.5,
+  "odds": -113.0,
+  "stake": 0.5,
+  "edge": 7.0,
+  "model": 48.5,
+  "grp": "FCS-FCS",
+  "limit": null,
+  "status": "open"
  }
 ]
