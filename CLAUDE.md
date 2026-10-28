@@ -57,6 +57,10 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   afternoon); they move a lot and often aren't on the owner's apps. A next-week game counts only once 3/4 of this week's
   games have started (Sunday evening) AND 2+ of DK/FD/MGM agree within 1.5 pts. Before that its plays show labelled
   "Look-ahead" but are never logged, alerted or put on the Bets tab (open entries on such games are voided).
+- **Logging bets on look-ahead plays** (Oct 28, owner's request): look-ahead cards stay display-only (never logged or
+  alerted), but each spread/total look-ahead card on the NFL Plays tab has a "Log bet" button. The bet is saved with
+  play `look:<play id>` (`tools/log_bet.py` → tier LOOKAHEAD, "Look-ahead" on My Bets), tied to the game and graded
+  from scores.json; `mineOf` also matches `look:<id>`, so the later regular play shows "You bet".
 - **NFL book agreement**: a book whose spread is 1.5+ pts off the median of DK/FD/MGM is ignored for prices (Oct 20:
   DK and FD next-week lines up to 5 pts apart).
 - **CFB stale lines**: a book 3+ points off consensus is ignored (`RULES["stale_pts"]`), checked through either side of

@@ -87,7 +87,7 @@
         : started ? { kind: "live", text: "Kicked off: graded when the final is in" } : { kind: "ok", text: "Pending" };
       const legs = b.market === "teaser" ? (b.legs || []).map(x => `${esc(x.pick)} → ${line(x.line + 6)} · ${esc(x.matchup)}`).join("<br>") : "";
       return `<article class="bet ${status.kind}">
-        <div class="top"><span class="tag">${b.market === "teaser" ? "2-team teaser" : esc(b.tier === "OTHER" ? "Other bet" : "Board play")}</span><span class="num">$${b.amount} · to win $${(b.amount * payout(b.odds)).toFixed(2)}</span></div>
+        <div class="top"><span class="tag">${b.market === "teaser" ? "2-team teaser" : esc(b.tier === "OTHER" ? "Other bet" : b.tier === "LOOKAHEAD" ? "Look-ahead" : "Board play")}</span><span class="num">$${b.amount} · to win $${(b.amount * payout(b.odds)).toFixed(2)}</span></div>
         <div class="pick">${esc(b.pick)}</div>
         <div class="price num"><b>${price(b)}</b> at <b>${esc(b.book)}</b></div>
         <div class="facts">${[["Game", legs || esc(b.matchup)], ["Kickoff", esc(etTxt(b.market === "teaser" ? (b.legs || []).map(x => x.kickoff).sort().pop() : b.kickoff))],
