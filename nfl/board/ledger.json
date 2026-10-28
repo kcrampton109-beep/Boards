@@ -7350,5 +7350,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_08_PHI_WAS:STRONG:spread:away",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "team": "PHI",
+  "pid": null,
+  "game_id": "2026_08_PHI_WAS",
+  "week": 8,
+  "matchup": "PHI @ WAS",
+  "kickoff": "Sun Nov 1, 8:20 PM ET",
+  "pick": "PHI +6",
+  "line": 6,
+  "odds": -112,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": 3.1,
+  "note": null,
+  "limit": 6.0,
+  "model_line": -2.9,
+  "flagged": "2026-10-28T16:52:42.303925-04:00",
+  "kickoff_iso": "2026-11-01T20:20:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
