@@ -1,0 +1,23 @@
+{
+ "id": 38,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/38",
+ "board": "CFB",
+ "pick": "Utah Tech +18.5",
+ "odds": -118,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Idaho State @ Utah Tech",
+ "kickoff": "2026-10-31 15:00:00-04:00",
+ "play": "401868107|spread|home|m",
+ "logged": "2026-10-29T16:28:10Z",
+ "updated": "2026-10-29T16:28:19+00:00",
+ "tier": "FCS",
+ "game_id": 401868107,
+ "board_line": 20.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 18.5
+}
