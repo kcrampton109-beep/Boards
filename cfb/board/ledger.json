@@ -13219,5 +13219,28 @@
   "grp": "FCS-FCS",
   "limit": 7.0,
   "status": "open"
+ },
+ {
+  "id": "401862816|total|under|wx",
+  "base": "401862816|total|under|wx",
+  "flagged": "2026-10-29T12:29-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401862816,
+  "matchup": "UAB @ South Florida",
+  "kickoff": "2026-10-31 12:00:00-04:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 42.5 (wind 16 mph)",
+  "book": "MGM",
+  "line": 42.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 16.1,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
