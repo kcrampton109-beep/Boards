@@ -1,0 +1,23 @@
+{
+ "id": 37,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/37",
+ "board": "CFB",
+ "pick": "St. Thomas (MN) -27.5",
+ "odds": -113,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Davidson @ St. Thomas (MN)",
+ "kickoff": "2026-10-31 14:00:00-04:00",
+ "play": "401868223|spread|home|m",
+ "logged": "2026-10-29T16:27:29Z",
+ "updated": "2026-10-29T16:27:40+00:00",
+ "tier": "FCS",
+ "game_id": 401868223,
+ "board_line": -26.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": -27.5
+}
