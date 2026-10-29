@@ -1,0 +1,23 @@
+{
+ "id": 35,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/35",
+ "board": "CFB",
+ "pick": "Towson -17.5",
+ "odds": -113,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Hampton @ Towson",
+ "kickoff": "2026-10-31 13:00:00-04:00",
+ "play": "401866680|spread|home|m",
+ "logged": "2026-10-29T16:25:45Z",
+ "updated": "2026-10-29T16:25:53+00:00",
+ "tier": "FCS",
+ "game_id": 401866680,
+ "board_line": -17.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": -17.5
+}
