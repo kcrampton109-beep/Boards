@@ -13196,5 +13196,28 @@
   "grp": "FCS-FCS",
   "limit": -13.0,
   "status": "open"
+ },
+ {
+  "id": "401867969|spread|home|m",
+  "base": "401867969|spread|home|m",
+  "flagged": "2026-10-29T09:39-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401867969,
+  "matchup": "South Carolina State @ Morgan State",
+  "kickoff": "2026-10-29 19:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Morgan State +7.5",
+  "book": "FD",
+  "line": 7.5,
+  "odds": -120.0,
+  "stake": 0.5,
+  "edge": 3.5,
+  "model": 4.0,
+  "grp": "FCS-FCS",
+  "limit": 7.0,
+  "status": "open"
  }
 ]
