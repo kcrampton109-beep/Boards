@@ -13150,5 +13150,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401868342|spread|home|m",
+  "base": "401868342|spread|home|m",
+  "flagged": "2026-10-28T21:35-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401868342,
+  "matchup": "VMI @ Chattanooga",
+  "kickoff": "2026-10-31 13:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Chattanooga -35.5",
+  "book": "FD",
+  "line": -35.5,
+  "odds": -118.0,
+  "stake": 0.5,
+  "edge": 3.3,
+  "model": -38.8,
+  "grp": "FCS-FCS",
+  "limit": -35.5,
+  "status": "open"
  }
 ]
