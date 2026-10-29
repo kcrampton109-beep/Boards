@@ -13173,5 +13173,28 @@
   "grp": "FCS-FCS",
   "limit": -35.5,
   "status": "open"
+ },
+ {
+  "id": "401866678|spread|home|m",
+  "base": "401866678|spread|home|m",
+  "flagged": "2026-10-28T21:52-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401866678,
+  "matchup": "Bryant @ Monmouth",
+  "kickoff": "2026-10-31 13:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Monmouth -12.5",
+  "book": "FD",
+  "line": -12.5,
+  "odds": -115.0,
+  "stake": 0.5,
+  "edge": 3.8,
+  "model": -16.3,
+  "grp": "FCS-FCS",
+  "limit": -13.0,
+  "status": "open"
  }
 ]
