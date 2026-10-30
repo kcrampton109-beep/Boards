@@ -13323,5 +13323,28 @@
   "grp": "FBS",
   "limit": -5.0,
   "status": "open"
+ },
+ {
+  "id": "401866676|spread|home|m",
+  "base": "401866676|spread|home|m",
+  "flagged": "2026-10-30T19:30-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401866676,
+  "matchup": "Maine @ Rhode Island",
+  "kickoff": "2026-10-31 12:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Rhode Island -11.5",
+  "book": "FD",
+  "line": -11.5,
+  "odds": -113.0,
+  "stake": 1.0,
+  "edge": 4.3,
+  "model": -15.8,
+  "grp": "FCS-FCS",
+  "limit": -12.5,
+  "status": "open"
  }
 ]
