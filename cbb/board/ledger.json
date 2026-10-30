@@ -118,5 +118,29 @@
   "grp": "power 6",
   "limit": -1.5,
   "status": "open"
+ },
+ {
+  "id": "401906769|spread|home",
+  "base": "401906769|spread|home",
+  "flagged": "2026-10-30T19:40-04:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401906769,
+  "matchup": "Miami vs Florida",
+  "kickoff": "2026-11-02T18:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "pick": "Florida -4.5",
+  "book": "DK",
+  "line": -4.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 3.1,
+  "model": 7.6,
+  "opener": -6.5,
+  "grp": "power 6",
+  "limit": -4.5,
+  "status": "open"
  }
 ]
