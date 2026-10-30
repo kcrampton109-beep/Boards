@@ -6673,11 +6673,11 @@
   "model_line": -1.2,
   "flagged": "2026-10-25T18:04:36.022312-04:00",
   "kickoff_iso": "2026-10-29T20:15:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": 3.5,
+  "clv": 0.0,
+  "final": "CAR 19 - GB 27"
  },
  {
   "id": "2026_08_ARI_DAL:LEAN:spread:home",
@@ -6841,11 +6841,11 @@
   "model_line": -1.2,
   "flagged": "2026-10-25T21:53:35.141080-04:00",
   "kickoff_iso": "2026-10-29T20:15:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 3.5,
+  "clv": 1.0,
+  "final": "CAR 19 - GB 27"
  },
  {
   "id": "2026_08_BAL_BUF:RLM:total:over",
@@ -6897,11 +6897,11 @@
   "model_line": -1.2,
   "flagged": "2026-10-25T22:45:23.682514-04:00",
   "kickoff_iso": "2026-10-29T20:15:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 47.5,
+  "clv": -0.0,
+  "final": "CAR 19 - GB 27"
  },
  {
   "id": "2026_08_LV_NYJ:RLM:spread:home",
@@ -6981,11 +6981,11 @@
   "model_line": -2.7,
   "flagged": "2026-10-26T10:33:08.581337-04:00",
   "kickoff_iso": "2026-10-29T20:15:00-04:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 3.5,
+  "clv": 1.0,
+  "final": "CAR 19 - GB 27"
  },
  {
   "id": "2026_08_CLE_PIT:LEAN:spread:home",
