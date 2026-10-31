@@ -11960,7 +11960,11 @@
   "model": -9.6,
   "grp": "FBS",
   "limit": -2.5,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": -2.5,
+  "units": 0.893,
+  "final": "Illinois 20 - Maryland 17"
  },
  {
   "id": "401858503|moneyline|away|m",
@@ -11983,7 +11987,9 @@
   "model": 73.1,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.187,
+  "final": "Illinois 20 - Maryland 17"
  },
  {
   "id": "401856847|spread|home|m|STRONG",
@@ -12052,7 +12058,11 @@
   "model": -12.9,
   "grp": "FBS",
   "limit": -7.5,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": -7.5,
+  "units": 0.435,
+  "final": "UAB 10 - South Florida 30"
  },
  {
   "id": "401862815|spread|home|m",
@@ -12098,7 +12108,11 @@
   "model": -19.1,
   "grp": "FBS",
   "limit": -14.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -14.0,
+  "units": -0.5,
+  "final": "Bowling Green 10 - Western Michigan 23"
  },
  {
   "id": "401859185|spread|away|m",
@@ -12237,7 +12251,11 @@
   "model": -12.9,
   "grp": "FBS",
   "limit": -7.5,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": -7.5,
+  "units": 0.952,
+  "final": "UAB 10 - South Florida 30"
  },
  {
   "id": "401862816|moneyline|home|m",
@@ -12260,7 +12278,9 @@
   "model": 79.7,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.085,
+  "final": "UAB 10 - South Florida 30"
  },
  {
   "id": "401866451|spread|home|m|STRONG",
@@ -12335,7 +12355,11 @@
   "model": -19.1,
   "grp": "FBS",
   "limit": -14.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": -14.0,
+  "units": -1.0,
+  "final": "Bowling Green 10 - Western Michigan 23"
  },
  {
   "id": "401856846|spread|away|m",
@@ -12404,7 +12428,11 @@
   "model": -13.4,
   "grp": "FCS-FCS",
   "limit": -10.0,
-  "status": "open"
+  "status": "W",
+  "clv": -1.0,
+  "close": -7.5,
+  "units": 0.885,
+  "final": "Robert Morris 14 - Central Connecticut 49"
  },
  {
   "id": "401867969|total|over|m",
@@ -12481,7 +12509,11 @@
   "model": 54.1,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": 46.5,
+  "units": 0.435,
+  "final": "Michigan 28 - Rutgers 21"
  },
  {
   "id": "401866679|spread|home|m",
@@ -12504,7 +12536,11 @@
   "model": 5.7,
   "grp": "FCS-FCS",
   "limit": 11.0,
-  "status": "open"
+  "status": "W",
+  "clv": 3.5,
+  "close": 8.0,
+  "units": 0.885,
+  "final": "Elon 10 - North Carolina A&T 13"
  },
  {
   "id": "401866679|moneyline|home|m",
@@ -12527,7 +12563,9 @@
   "model": 35.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.875,
+  "final": "Elon 10 - North Carolina A&T 13"
  },
  {
   "id": "401866680|spread|home|m",
@@ -12550,7 +12588,11 @@
   "model": -23.8,
   "grp": "FCS-FCS",
   "limit": -18.5,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": -18.5,
+  "units": 0.885,
+  "final": "Hampton 13 - Towson 44"
  },
  {
   "id": "401867823|total|over|m",
@@ -12573,7 +12615,11 @@
   "model": 57.0,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": 52.5,
+  "units": -0.5,
+  "final": "Yale 26 - Columbia 8"
  },
  {
   "id": "401867831|total|over|m",
@@ -12596,7 +12642,11 @@
   "model": 52.2,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": 49.5,
+  "units": -0.5,
+  "final": "Cornell 20 - Princeton 21"
  },
  {
   "id": "401867932|total|under|m",
@@ -12619,7 +12669,11 @@
   "model": 47.1,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 9.0,
+  "close": 43.5,
+  "units": 0.901,
+  "final": "Wagner 14 - Merrimack 19"
  },
  {
   "id": "401868004|spread|home|m",
@@ -12642,7 +12696,11 @@
   "model": -16.5,
   "grp": "FCS-FCS",
   "limit": -11.0,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": -12.5,
+  "units": 0.885,
+  "final": "William & Mary 0 - Colgate 37"
  },
  {
   "id": "401868026|spread|home|m",
@@ -12665,7 +12723,11 @@
   "model": -4.2,
   "grp": "FCS-FCS",
   "limit": 1.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.5,
+  "close": 2.0,
+  "units": 0.943,
+  "final": "Richmond 14 - Holy Cross 33"
  },
  {
   "id": "401868026|moneyline|home|m",
@@ -12688,7 +12750,9 @@
   "model": 60.6,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.3,
+  "final": "Richmond 14 - Holy Cross 33"
  },
  {
   "id": "401868030|total|over|m",
@@ -12711,7 +12775,11 @@
   "model": 58.3,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 51.5,
+  "units": 0.442,
+  "final": "Villanova 44 - Lafayette 21"
  },
  {
   "id": "401868215|spread|home|m",
@@ -12734,7 +12802,11 @@
   "model": 6.8,
   "grp": "FCS-FCS",
   "limit": 10.0,
-  "status": "open"
+  "status": "L",
+  "clv": -1.0,
+  "close": 11.5,
+  "units": -0.5,
+  "final": "Butler 27 - Presbyterian 10"
  },
  {
   "id": "401858507|spread|home|m",
@@ -12757,7 +12829,11 @@
   "model": 9.9,
   "grp": "FBS",
   "limit": 15.0,
-  "status": "open"
+  "status": "W",
+  "clv": -1.5,
+  "close": 16.5,
+  "units": 0.455,
+  "final": "Michigan 28 - Rutgers 21"
  },
  {
   "id": "401867956|total|over|m",
@@ -13198,7 +13274,11 @@
   "model": -38.8,
   "grp": "FCS-FCS",
   "limit": -35.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -35.5,
+  "units": -0.5,
+  "final": "VMI 10 - Chattanooga 24"
  },
  {
   "id": "401866678|spread|home|m",
@@ -13221,7 +13301,11 @@
   "model": -16.3,
   "grp": "FCS-FCS",
   "limit": -13.0,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": -13.5,
+  "units": 0.435,
+  "final": "Bryant 21 - Monmouth 34"
  },
  {
   "id": "401867969|spread|home|m",
@@ -13271,7 +13355,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 42.5,
+  "units": 0.455,
+  "final": "UAB 10 - South Florida 30"
  },
  {
   "id": "401868938|spread|home|m",
@@ -13317,7 +13405,11 @@
   "model": -6.5,
   "grp": "FBS",
   "limit": -1.5,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": -2.5,
+  "units": 0.439,
+  "final": "Wisconsin 0 - Iowa 30"
  },
  {
   "id": "401869944|spread|home|m",
@@ -13363,7 +13455,11 @@
   "model": -15.8,
   "grp": "FCS-FCS",
   "limit": -12.5,
-  "status": "open"
+  "status": "L",
+  "clv": -1.0,
+  "close": -10.5,
+  "units": -1.0,
+  "final": "Maine 13 - Rhode Island 14"
  },
  {
   "id": "401867926|spread|home|m",
@@ -13386,7 +13482,11 @@
   "model": -9.2,
   "grp": "FCS-FCS",
   "limit": -6.0,
-  "status": "open"
+  "status": "P",
+  "clv": 1.0,
+  "close": -7.0,
+  "units": 0.0,
+  "final": "Mercyhurst 28 - Stonehill 34"
  },
  {
   "id": "401868215|spread|home|m|FCS",
@@ -13409,7 +13509,11 @@
   "model": 6.8,
   "grp": "FCS-FCS",
   "limit": 12.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": 11.5,
+  "units": -1.0,
+  "final": "Butler 27 - Presbyterian 10"
  },
  {
   "id": "401868215|moneyline|home|m",
@@ -13432,7 +13536,9 @@
   "model": 33.0,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Butler 27 - Presbyterian 10"
  },
  {
   "id": "401867903|spread|home|m|FCS",
@@ -13455,7 +13561,11 @@
   "model": -13.4,
   "grp": "FCS-FCS",
   "limit": -8.0,
-  "status": "open"
+  "status": "W",
+  "clv": -0.5,
+  "close": -7.5,
+  "units": 0.909,
+  "final": "Robert Morris 14 - Central Connecticut 49"
  },
  {
   "id": "401867956|spread|home|m",
@@ -13501,7 +13611,11 @@
   "model": -15.8,
   "grp": "FCS-FCS",
   "limit": -10.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -10.5,
+  "units": -1.0,
+  "final": "Maine 13 - Rhode Island 14"
  },
  {
   "id": "401867823|spread|home|m",
@@ -13524,7 +13638,11 @@
   "model": 7.0,
   "grp": "FCS-FCS",
   "limit": 10.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": 9.5,
+  "units": -0.5,
+  "final": "Yale 26 - Columbia 8"
  },
  {
   "id": "401867903|moneyline|home|m",
@@ -13547,7 +13665,9 @@
   "model": 80.6,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.083,
+  "final": "Robert Morris 14 - Central Connecticut 49"
  },
  {
   "id": "401867903|total|over|m",
@@ -13570,7 +13690,11 @@
   "model": 56.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": 53.5,
+  "units": 0.435,
+  "final": "Robert Morris 14 - Central Connecticut 49"
  },
  {
   "id": "401868384|spread|home|m",
