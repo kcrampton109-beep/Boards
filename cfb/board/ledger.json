@@ -13764,5 +13764,28 @@
   "grp": "FCS-FCS",
   "limit": 7.0,
   "status": "open"
+ },
+ {
+  "id": "401858280|spread|home|m",
+  "base": "401858280|spread|home|m",
+  "flagged": "2026-10-31T18:11-04:00",
+  "season": 2026,
+  "week": 9,
+  "game_id": 401858280,
+  "matchup": "Clemson @ Florida State",
+  "kickoff": "2026-10-31 19:00:00-04:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Florida State -4.5",
+  "book": "FD",
+  "line": -4.5,
+  "odds": -115.0,
+  "stake": 0.5,
+  "edge": 5.5,
+  "model": -10.0,
+  "grp": "FBS",
+  "limit": -4.5,
+  "status": "open"
  }
 ]
