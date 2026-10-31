@@ -1,0 +1,23 @@
+{
+ "id": 44,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/44",
+ "board": "CFB",
+ "pick": "Rhode Island -10.5",
+ "odds": -108,
+ "book": "BetMGM",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Maine @ Rhode Island",
+ "kickoff": "2026-10-31 12:00:00-04:00",
+ "play": "401866676|spread|home|m|FCS",
+ "logged": "2026-10-31T15:30:51Z",
+ "updated": "2026-10-31T15:30:59+00:00",
+ "tier": "FCS",
+ "game_id": 401866676,
+ "board_line": -10.5,
+ "board_odds": -108.0,
+ "board_book": "MGM",
+ "market": "spread",
+ "side": "home",
+ "line": -10.5
+}
