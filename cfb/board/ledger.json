@@ -11818,7 +11818,11 @@
   "model": 5.2,
   "grp": "FBS",
   "limit": 10.5,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": 7.5,
+  "units": 0.455,
+  "final": "Kent State 10 - Sacramento State 31"
  },
  {
   "id": "401856733|spread|home|m",
@@ -12279,7 +12283,11 @@
   "model": 5.4,
   "grp": "FBS",
   "limit": 10.5,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": 7.5,
+  "units": 0.847,
+  "final": "Kent State 10 - Sacramento State 31"
  },
  {
   "id": "401866451|moneyline|home|m",
@@ -12302,7 +12310,9 @@
   "model": 36.4,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.8,
+  "final": "Kent State 10 - Sacramento State 31"
  },
  {
   "id": "401866452|spread|home|m|STRONG",
