@@ -1,0 +1,23 @@
+{
+ "id": 41,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/41",
+ "board": "NFL",
+ "pick": "PIT -3",
+ "odds": -122,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "CLE @ PIT",
+ "kickoff": "2026-11-01T13:00:00-05:00",
+ "play": "2026_08_CLE_PIT:STRONG:spread:home",
+ "logged": "2026-10-31T12:10:36Z",
+ "updated": "2026-10-31T12:10:45+00:00",
+ "tier": "STRONG",
+ "game_id": "2026_08_CLE_PIT",
+ "board_line": -3,
+ "board_odds": -115,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": -3.0
+}
