@@ -142,5 +142,29 @@
   "grp": "power 6",
   "limit": -4.5,
   "status": "open"
+ },
+ {
+  "id": "401911390|spread|away",
+  "base": "401911390|spread|away",
+  "flagged": "2026-10-31T16:39-04:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401911390,
+  "matchup": "Gardner-Webb @ UConn",
+  "kickoff": "2026-11-02T21:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "pick": "Gardner-Webb +38.5",
+  "book": "DK",
+  "line": 38.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 3.1,
+  "model": -35.4,
+  "opener": 38.5,
+  "grp": "power 6",
+  "limit": 38.5,
+  "status": "open"
  }
 ]
