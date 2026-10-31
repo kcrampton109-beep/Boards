@@ -1,0 +1,420 @@
+<title>CFB Play Card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a QB wristband card up top (every play as a numbered cell), then detailed play cards, then tabs for all games, records, ratings. */
+:root {
+  --paper: #f2f4f7; --card: #ffffff; --ink: #15213a; --muted: #5a6478; --rule: #d8dde6; --soft: #e9edf3;
+  --gold: #9a6d0c; --gold-soft: #f6ecd4; --fcs: #2c63a8; --fcs-soft: #e2ebf7; --wx: #4f6f8a; --wx-soft: #e4ebf1;
+  --win: #1d7a4c; --win-soft: #def1e6; --loss: #ad3437; --loss-soft: #f7e1e1; --lean: #6b7286;
+  --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #0d1420; --card: #151e2e; --ink: #e5e9f1; --muted: #98a2b6; --rule: #273349; --soft: #1b2638;
+  --gold: #e1b24c; --gold-soft: #2c2512; --fcs: #73a7ec; --fcs-soft: #17263c; --wx: #8fb0cc; --wx-soft: #1a2633;
+  --win: #4fc58b; --win-soft: #12291f; --loss: #f07477; --loss-soft: #2f1719; --lean: #a2a9ba; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #0d1420; --card: #151e2e; --ink: #e5e9f1; --muted: #98a2b6; --rule: #273349; --soft: #1b2638;
+  --gold: #e1b24c; --gold-soft: #2c2512; --fcs: #73a7ec; --fcs-soft: #17263c; --wx: #8fb0cc; --wx-soft: #1a2633;
+  --win: #4fc58b; --win-soft: #12291f; --loss: #f07477; --loss-soft: #2f1719; --lean: #a2a9ba; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--paper); color: var(--ink); font: 14px/1.5 var(--body); }
+.wrap { max-width: 1100px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 48px; display: grid; gap: 20px }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; letter-spacing: .01em; margin: 0; text-wrap: balance }
+h1 { font-size: 34px; line-height: 1 } h2 { font-size: 22px } h3 { font-size: 18px }
+.num, td, .mono { font-variant-numeric: tabular-nums }
+.mono { font-family: var(--mono); font-size: 12.5px }
+.muted { color: var(--muted) }
+header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 12px 24px }
+header .meta { display: grid; gap: 2px; text-align: right; font-size: 13px }
+.eyebrow { font: 600 12px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--gold) }
+.banner { border: 1px solid var(--rule); background: var(--card); border-radius: 6px; padding: 10px 14px; font-size: 13px }
+.banner.warn { border-color: var(--loss); background: var(--loss-soft) }
+/* record strip */
+.records { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px }
+.rec { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; display: grid; gap: 4px; min-width: 0 }
+.rec .lab { font: 600 11px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
+.rec .wl { font: 700 28px/1 var(--display) }
+.rec .sub { font-size: 12.5px; color: var(--muted) }
+/* wristband */
+.band { background: var(--card); border: 2px solid var(--ink); border-radius: 8px; overflow: hidden }
+.band-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 8px 12px; background: var(--ink); color: var(--paper) }
+.band-head h2 { font-size: 18px; color: var(--paper) }
+.band-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) }
+.cell { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; padding: 8px 12px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); text-decoration: none; color: inherit; min-width: 0 }
+.cell:hover, .cell:focus-visible { background: var(--soft); outline: none }
+.code { grid-row: span 2; font: 700 22px/1 var(--display); align-self: center; min-width: 30px }
+.code.STRONG { color: var(--gold) } .code.FCS { color: var(--fcs) } .code.WEATHER { color: var(--wx) }
+.cell .pk { font-weight: 600; overflow-wrap: anywhere } .cell .px { font-size: 12px; color: var(--muted) }
+.empty { padding: 16px; color: var(--muted) }
+/* tabs */
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; border-bottom: 1px solid var(--rule); padding-bottom: 8px }
+.tab { font: 600 13px/1 var(--body); padding: 8px 12px; border-radius: 5px; border: 1px solid transparent; background: none; color: var(--muted); cursor: pointer }
+.tab[aria-selected="true"] { background: var(--card); border-color: var(--rule); color: var(--ink) }
+.tab:focus-visible, .chip:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px }
+section.panel { display: grid; gap: 16px }
+[hidden] { display: none !important }   /* a panel's own display rule would otherwise beat the hidden attribute */
+.group { display: grid; gap: 10px }
+.group-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px }
+.group-head p { margin: 0; font-size: 13px; color: var(--muted); max-width: 70ch }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px }
+.card { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; display: grid; gap: 8px; min-width: 0; scroll-margin-top: 16px }
+.card:target { border-color: var(--gold); box-shadow: 0 0 0 2px var(--gold-soft) }
+.card .top { display: flex; justify-content: space-between; gap: 8px; align-items: start }
+.card .match { font-size: 13px; color: var(--muted) }
+.card .pick { font: 700 26px/1.05 var(--display) }
+.card .price { font-size: 13px }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 4px 12px; font-size: 12.5px }
+.kv div { display: grid } .kv span:first-child { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .06em }
+.pill { display: inline-block; font: 600 11px/1 var(--body); letter-spacing: .06em; text-transform: uppercase; padding: 4px 7px; border-radius: 3px; white-space: nowrap }
+.pill.STRONG { background: var(--gold-soft); color: var(--gold) } .pill.FCS { background: var(--fcs-soft); color: var(--fcs) }
+.pill.WEATHER { background: var(--wx-soft); color: var(--wx) } .pill.LEAN, .pill.RESEARCH, .pill.ANGLE { background: var(--soft); color: var(--lean) }
+.pill.W { background: var(--win-soft); color: var(--win) } .pill.L { background: var(--loss-soft); color: var(--loss) } .pill.P, .pill.open, .pill.void, .pill.prov { background: var(--soft); color: var(--muted) }
+.pill.void { text-decoration: line-through }
+.logline { font-size: 12px; color: var(--muted); border-top: 1px dashed var(--rule); padding-top: 6px }
+.tag { font-size: 12px; color: var(--muted) }
+/* tables */
+.tbl { overflow-x: auto; background: var(--card); border: 1px solid var(--rule); border-radius: 6px }
+table { border-collapse: collapse; width: 100%; font-size: 12.5px }
+th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--rule); white-space: nowrap; vertical-align: top }
+th { font: 600 11px/1.2 var(--body); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--soft); position: sticky; top: 0 }
+td.r, th.r { text-align: right }
+td.now { white-space: normal; min-width: 220px }
+tr.flag td:first-child { box-shadow: inset 3px 0 0 var(--gold) }
+.chips { display: flex; flex-wrap: wrap; gap: 6px }
+.chip { font: 500 12px/1 var(--body); padding: 6px 10px; border-radius: 999px; border: 1px solid var(--rule); background: var(--card); color: var(--ink); cursor: pointer }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink) }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px }
+.prose { max-width: 72ch; display: grid; gap: 10px } .prose p { margin: 0 } .prose ul { margin: 0; padding-left: 20px; display: grid; gap: 4px }
+.pos { color: var(--win) } .neg { color: var(--loss) }
+@media (max-width: 520px) { h1 { font-size: 28px } header .meta { text-align: left } .card .pick { font-size: 23px } }
+@media (prefers-reduced-motion: no-preference) { .cell, .chip, .tab { transition: background-color .15s } }
+</style>
+<link rel="stylesheet" href="../bets.css?v=20261031161107">
+<script src="../bets.js?v=20261031161107"></script>
+<link rel="stylesheet" href="../track.css?v=20261031161107">
+<script src="../track.js?v=20261031161107"></script>
+<script src="../mybets.js?v=20261031161107"></script>
+<link rel="stylesheet" href="../logbet.css?v=20261031161107">
+<script src="../logbet.js?v=20261031161107"></script>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">College football · FBS + FCS · paper tracking</div>
+      <h1>CFB Play Card</h1>
+    </div>
+    <div class="meta">
+      <span id="slate" class="num"></span>
+      <span class="muted">Prices checked <span id="gen"></span></span>
+      <a class="muted" href="CFB_Model_2026.xlsx">Weekly workbook (Excel)</a>
+    </div>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+  <div class="records" id="records"></div>
+
+  <div class="band" id="band">
+    <div class="band-head"><h2>This week's card</h2><span class="mono" id="bandcount"></span></div>
+    <div class="band-grid" id="bandgrid"></div>
+  </div>
+
+  <nav class="tabs" role="tablist" aria-label="Board sections">
+    <button class="tab" role="tab" id="t-plays" aria-selected="true" data-tab="plays">Plays</button>
+    <button class="tab" role="tab" id="t-bets" aria-selected="false" data-tab="bets">Bets</button>
+    <button class="tab" role="tab" id="t-today" aria-selected="false" data-tab="today">Today</button>
+    <button class="tab" role="tab" id="t-results" aria-selected="false" data-tab="results">Results</button>
+    <button class="tab" role="tab" id="t-mine" aria-selected="false" data-tab="mine">My Bets</button>
+    <button class="tab" role="tab" id="t-games" aria-selected="false" data-tab="games">All games</button>
+    <button class="tab" role="tab" id="t-records" aria-selected="false" data-tab="records">Records</button>
+    <button class="tab" role="tab" id="t-ratings" aria-selected="false" data-tab="ratings">Ratings</button>
+    <button class="tab" role="tab" id="t-how" aria-selected="false" data-tab="how">How it works</button>
+  </nav>
+
+  <section class="panel" id="p-plays" role="tabpanel" aria-labelledby="t-plays"></section>
+  <section class="panel" id="p-bets" role="tabpanel" aria-labelledby="t-bets" hidden></section>
+  <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today" hidden></section>
+  <section class="panel" id="p-results" role="tabpanel" aria-labelledby="t-results" hidden></section>
+  <section class="panel" id="p-mine" role="tabpanel" aria-labelledby="t-mine" hidden></section>
+  <section class="panel" id="p-games" role="tabpanel" aria-labelledby="t-games" hidden></section>
+  <section class="panel" id="p-records" role="tabpanel" aria-labelledby="t-records" hidden></section>
+  <section class="panel" id="p-ratings" role="tabpanel" aria-labelledby="t-ratings" hidden></section>
+  <section class="panel" id="p-how" role="tabpanel" aria-labelledby="t-how" hidden></section>
+</div>
+
+<script type="application/json" id="seed">{}</script>
+<script>
+const BOOKN = { DK: "DraftKings", FD: "FanDuel", MGM: "BetMGM" };
+const TIER = {
+  STRONG: { name: "Strong plays", code: "S", note: "FBS and FBS-vs-FCS games at early-week prices (Sunday, Monday or 3.5+ days before kickoff) where the model differs from your best book by 7+ points in weeks 1-6, or 5+ points from week 7. Backtest against the opening line, 2021-25: 55.1% in weeks 1-6, 57.7% from week 7. A gap first reached later in the week is a lean." },
+  FCS: { name: "FCS plays", code: "F", note: "FCS-vs-FCS games, model gap 5+ points. DraftKings and FanDuel only. Backtest: 58.2% against the opener (557 bets). Paper-only until they earn a record." },
+  WEATHER: { name: "Weather unders", code: "W", note: "Forecast wind 18+ mph at kickoff, logged only within 24 hours of kickoff (since Oct 19; it was 15+ mph within 48 hours, and forecasts that far out ran windy). Backtest, using wind measured at kickoff: unders hit 56.6-59% against the closing total in both 2014-19 and 2020-26." },
+  LEAN: { name: "Leans", code: "L", note: "Smaller gaps (FBS 5-7, FCS 3-5) or games the model knows too little about. Logged at 0.5u (FCS leans with a 4+ point gap: 1u)." },
+  RESEARCH: { name: "Research", code: "R", note: "Totals, moneyline alternatives and near-miss weather (forecast wind 15-18 mph, or 24-48 hours before kickoff). Untested or unproven markets, logged small: model-total unders 1u, overs and near-miss wind 0.5u, moneyline alts 0.25u." },
+  ANGLE: { name: "Angles", code: "A", note: "The only two situations that beat the closing line in both 2014-19 and 2020-25. Shown as context, not logged." },
+};
+// Bets tab: the plays to put money on, $ at this unit size
+const BET = ["STRONG", "FCS", "WEATHER"];   // money tiers on the Bets tab
+const NEED = { STRONG: 7, FCS: 5 };   // gap a spread play needs (engine RULES strong_fbs / strong_fcs)
+const UNIT = 10;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const sgn = (v, d = 1) => v == null || isNaN(v) ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d).replace(/\.0$/, "");
+const odds = v => v == null ? "" : (v > 0 ? "+" : "−") + Math.abs(Math.round(v));
+const line = v => v == null ? "–" : (v === 0 ? "PK" : sgn(v));
+const pct = v => v == null ? "–" : (v * 100).toFixed(1) + "%";
+
+function favText(g, l) { // home-spread convention -> "Team −x"
+  if (l == null || isNaN(l)) return "–";
+  if (Math.abs(l) < 0.25) return "Pick'em";
+  return l < 0 ? `${g.home} ${sgn(l)}` : `${g.away} ${sgn(-l)}`;
+}
+
+async function load() {
+  let S = {}, bad = "";
+  try { const r = await fetch("state.json", { cache: "no-store" }); if (r.ok) S = await r.json(); else bad = `HTTP ${r.status}`; }
+  catch (e) { bad = e.message || "unreadable data"; }
+  if (!S.games) { try { S = JSON.parse(document.getElementById("seed").textContent); } catch (e) {} }
+  if (bad) {  // say so instead of showing an empty board (Oct 26: a NaN in state.json blanked the page)
+    const b = document.getElementById("banner");
+    b.hidden = false; b.className = "banner warn";
+    b.textContent = `The board's data couldn't be read (${bad}). Refresh in a few minutes; if it stays blank, the engine needs a fix.`;
+  }
+  // full play history for the Today / Results tabs (state.json carries only the recent part)
+  try { const r = await fetch("ledger.json", { cache: "no-store" }); if (r.ok) S.fullLedger = await r.json(); } catch (e) {}
+  // My Bets: the owner's logged bets and the final scores that grade them
+  try { const r = await fetch("mybets.json", { cache: "no-store" }); if (r.ok) S.myBets = await r.json(); } catch (e) {}
+  try { const r = await fetch("scores.json", { cache: "no-store" }); if (r.ok) S.scores = await r.json(); } catch (e) {}
+  return S;
+}
+
+function render(S) {
+  const games = Object.fromEntries((S.games || []).map(g => [g.game_id, g]));
+  const ledger = Object.fromEntries((S.ledger || []).map(e => [e.id, e]));
+  const gorder = Object.fromEntries((S.games || []).map((g, i) => [g.game_id, i]));
+  const torder = ["STRONG", "FCS", "WEATHER", "LEAN", "RESEARCH", "ANGLE"];
+  const plays = (S.plays || []).filter(p => games[p.game_id])
+    .sort((a, b) => torder.indexOf(a.tier) - torder.indexOf(b.tier) || gorder[a.game_id] - gorder[b.game_id]);
+  document.getElementById("gen").textContent = S.generated || "–";
+  const ks = (S.games || []).map(g => g.kickoff.slice(4, 10));
+  document.getElementById("slate").textContent = ks.length ? `Slate: ${ks[0]} – ${ks[ks.length - 1]}, ${S.season}` : "No games loaded";
+  const b = document.getElementById("banner");
+  // stale check against the viewer's clock: the board refreshes every 30-60 min on GitHub; old prices mean the last checks failed
+  const ageH = S.generated_iso ? (Date.now() - new Date(S.generated_iso).getTime()) / 36e5 : null;
+  const ageTxt = ageH == null ? "" : ageH < 48 ? `${Math.round(ageH)} hours` : `${Math.round(ageH / 24)} days`;
+  if (S.live_ok === false) { b.hidden = false; b.className = "banner warn"; b.textContent = "Live prices could not be loaded on the last check. Plays below are from the previous check."; }
+  else if (ageH != null && ageH > 2) { b.hidden = false; b.className = "banner warn"; b.innerHTML = `<b>Prices are ${ageTxt} old</b> (last checked ${esc(S.generated)}). The model's last checks didn't run, so lines may have moved. Check each price at the book and only bet at the "playable to" number or better.`; }
+
+  // records strip
+  const sm = S.summary || {};
+  const recs = [["STRONG", "Strong plays"], ["FCS", "FCS plays"], ["WEATHER", "Weather unders"], ["LEAN", "Leans (research)"]];
+  document.getElementById("records").innerHTML = recs.map(([k, lab]) => {
+    const r = sm[k] || {};
+    const u = r.units ?? 0;
+    return `<div class="rec"><span class="lab">${lab}</span><span class="wl num">${r.w || 0}-${r.l || 0}${r.p ? "-" + r.p : ""}</span>
+      <span class="sub num"><span class="${u > 0 ? "pos" : u < 0 ? "neg" : ""}">${sgn(u, 2)}u</span> · ROI ${r.roi == null ? "–" : sgn(r.roi * 100, 1) + "%"} · ${r.open || 0} pending</span>
+      <span class="sub num">Line moved our way ${r.clv_avg == null ? "–" : sgn(r.clv_avg, 1) + " pts"} · beat close ${pct(r.beat_close)}</span></div>`;
+  }).join("");
+
+  // stake: what was logged if it is in the ledger, else what it would log at now
+  const le = p => ledger[p.ledger_id || p.id]; // ledger_id: the entry logged at this tier (a lean can be upgraded)
+  const stk = p => le(p) && le(p).status !== "void" ? le(p).stake : p.stake;
+  // wristband
+  const main = ["STRONG", "FCS", "WEATHER"];
+  const counters = {};
+  plays.forEach(p => { if (main.includes(p.tier)) { counters[p.tier] = (counters[p.tier] || 0) + 1; p.code = TIER[p.tier].code + counters[p.tier]; } });
+  const bandPlays = plays.filter(p => main.includes(p.tier));
+  document.getElementById("bandcount").textContent = `${bandPlays.length} play${bandPlays.length === 1 ? "" : "s"}`;
+  document.getElementById("bandgrid").innerHTML = bandPlays.length ? bandPlays.map(p =>
+    `<a class="cell" href="#${esc(p.code)}"><span class="code ${p.tier}">${p.code}</span><span class="pk">${esc(p.pick)}</span><span class="px num"><b>${stk(p)}u</b> · ${odds(p.odds)} ${BOOKN[p.book] || p.book || ""}${p.provisional ? " · provisional" : ""}</span></a>`).join("")
+    : `<div class="empty">No plays at current prices. Openers for next week usually post early Sunday morning; the board checks every 15-30 minutes.</div>`;
+
+  // plays panel
+  const tagsBy = {};
+  plays.filter(p => p.tier === "ANGLE").forEach(p => (tagsBy[p.game_id] = tagsBy[p.game_id] || []).push(p.pick));
+  const card = p => {
+    const g = games[p.game_id], e = le(p);
+    const mk = p.market === "spread"
+      ? `<div><span>Model</span><span class="num">${esc(favText(g, g.model_line))}</span></div>
+         <div><span>Edge</span><span class="num">${p.edge} pts</span></div>
+         <div><span>Playable to</span><span class="num">${line(p.limit)}</span></div>
+         <div><span>Consensus</span><span class="num">${esc(favText(g, g.cons_line))}</span></div>`
+      : p.market === "total"
+      ? `<div><span>Model total</span><span class="num">${g.model_total ?? "–"}</span></div>
+         <div><span>Consensus</span><span class="num">${g.cons_total ?? "–"}</span></div>
+         <div><span>${p.pick.includes("wind") ? "Wind" : "Edge"}</span><span class="num">${p.pick.includes("wind") ? Math.round(g.wx?.wind) + " mph" : p.edge + " pts"}</span></div>`
+      : `<div><span>Model win %</span><span class="num">${p.model}%</span></div><div><span>Expected value</span><span class="num">+${p.edge}%</span></div>`;
+    const tix = g.tix_home != null && p.market === "spread"
+      ? `<div><span>Tickets / money</span><span class="num">${p.side === "home" ? g.tix_home : 100 - g.tix_home}% / ${g.money_home == null ? "–" : (p.side === "home" ? g.money_home : 100 - g.money_home) + "%"}</span></div>` : "";
+    const log = e ? (e.status === "open"
+      ? `Logged ${esc(e.flagged.slice(5, 16).replace("T", " "))} at ${esc(e.pick)} ${odds(e.odds)} (${esc(e.book)}), ${e.stake}u`
+      : e.status === "void" ? `<span class="pill void">Void</span> ${esc(e.note || "")}`
+      : `<span class="pill ${e.status}">${e.status}</span> ${sgn(e.units, 2)}u · ${esc(e.final || "")}${e.clv != null ? " · CLV " + sgn(e.clv) : ""}`)
+      : p.provisional ? "Provisional: last week's results aren't in the ratings yet, so this isn't logged or alerted. It logs once they are, if the edge holds."
+      : "Not logged yet (logs on the next scheduled check)";
+    return `<article class="card" id="${esc(p.code || p.id)}">
+      <div class="top"><span class="match">${esc(g.away)} ${g.neutral ? "vs" : "@"} ${esc(g.home)}<br>${esc(g.kickoff)}</span>
+        <span class="pill ${p.tier}">${p.code || p.tier}</span></div>
+      <div><div class="pick">${esc(p.pick)}</div><div class="price num">${stk(p) != null ? `<b>${stk(p)}u</b> · ` : ""}${odds(p.odds)} at ${BOOKN[p.book] || esc(p.book) || "–"}${p.grp ? " · " + p.grp : ""}</div></div>
+      <div class="kv">${mk}${tix}</div>
+      ${(tagsBy[p.game_id] || []).map(t => `<div class="tag">Angle: ${esc(t)}</div>`).join("")}
+      ${p.tier !== "ANGLE" ? `<div class="logline">${log}</div>` : ""}
+    </article>`;
+  };
+  const order = ["STRONG", "FCS", "WEATHER", "LEAN", "RESEARCH", "ANGLE"];
+  document.getElementById("p-plays").innerHTML = order.map(t => {
+    const ps = plays.filter(p => p.tier === t);
+    if (!ps.length && !main.includes(t)) return "";
+    return `<div class="group"><div class="group-head"><h2>${TIER[t].name}</h2><span class="muted num">${ps.length}</span><p>${TIER[t].note}</p></div>
+      ${ps.length ? `<div class="cards">${ps.map(card).join("")}</div>` : `<div class="muted">None at current prices.</div>`}</div>`;
+  }).join("");
+
+  // My Bets hooks: the owner's bets (published + saved on this phone but not recorded yet, minus ones just removed),
+  // a "Log bet" panel registered per play (site/logbet.js), and a redraw after a save
+  const goneIds = LogBet.removed();
+  const myBets = (S.myBets || []).filter(b => !goneIds.has(b.id)).concat(LogBet.pending("CFB", S.myBets || []));
+  const mineBy = {};
+  myBets.forEach(b => (mineBy[b.play] = mineBy[b.play] || []).push(`$${b.amount} at ${b.market === "total" ? b.line + " " : b.line != null && b.market !== "teaser" ? line(b.line) + " " : ""}${odds(b.odds)} ${b.book}${b.syncing ? " (saving)" : ""}`));
+  const mineOf = id => mineBy[id] || [];
+  const takes = window.__takes = {}, edits = window.__edits = {};
+  let nKey = 0;
+  const teamsOf = e => { const g = games[e.game_id]; return g ? [g.away, g.home] : String(e.matchup || "").split(/ @ | vs /); };
+  const editKey = b => { const k = "e" + (++nKey); edits[k] = b; return k; };
+  window.__afterLog = () => render(S);
+  const takeFor = (e, p) => { const x = p || e, [away, home] = teamsOf(e), k = "t" + (++nKey);
+    takes[k] = { board: "CFB", play: e.id, game_id: e.game_id, matchup: e.matchup, away, home, kickoff: e.kickoff, kickoffTxt: etTxt(e.kickoff),
+                 market: e.market, side: e.side, line: x.line, odds: x.odds, book: x.book, amount: Math.round((x.stake || e.stake || 1) * UNIT),
+                 pickLabel: x.pick, boardLine: e.line, boardTxt: `${e.pick} ${odds(e.odds)} ${BOOKN[e.book] || e.book}` };
+    return k; };
+  // bets: every play to put money on, drawn by the shared ../bets.js (same look on every board)
+  const etTxt = s => { try { return new Date(String(s).replace(" ", "T")).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " ET"; } catch (e) { return s || ""; } };
+  const playBy = {};
+  plays.forEach(p => { if (BET.includes(p.tier)) playBy[p.ledger_id || p.id] = p; });
+  const betLed = (S.ledger || []).filter(e => BET.includes(e.tier) && e.status !== "void");
+  const tierName = t => ({ STRONG: "Strong", FCS: "FCS", WEATHER: "Wind under" })[t] || t;
+  // worst line still worth betting: the model's current limit, else the one logged, else rebuilt from the logged model number
+  const playTo = (v, p) => {
+    if (v.market === "total") return v.side === "under" ? `Under ${v.line} or higher` : `Over ${v.line} or lower`;
+    const team = String(v.pick).replace(/\s[-+]?[\d.]+$/, "");
+    const lim = p && p.tier === v.tier && p.limit != null ? p.limit : v.limit != null ? v.limit
+      : v.model != null && NEED[v.tier] ? Math.ceil((v.model + NEED[v.tier]) * 2) / 2 : v.line;
+    return `${team} ${line(lim)}`;
+  };
+  const nowOf = (g, p) => !g ? { kind: "live", text: "Kicked off, result pending" }
+    : !p ? { kind: "gone", text: "No longer a play at current prices: skip it if you haven't bet it" }
+    : { kind: "ok", text: `Still a play: ${p.pick} ${odds(p.odds)} at ${BOOKN[p.book] || p.book}${p.stake ? ` · bet ${+p.stake}u ($${+(p.stake * UNIT).toFixed(2)}) at this price` : ""}` };
+  const openBets = betLed.filter(e => e.status === "open").map(e => {
+    const p = playBy[e.id] && playBy[e.id].tier === e.tier ? playBy[e.id] : null, g = games[e.game_id];
+    return { label: tierName(e.tier), pick: e.pick, odds: odds(e.odds), app: BOOKN[e.book] || e.book, stake: e.stake, matchup: e.matchup,
+             kickoff: etTxt(e.kickoff), sortKey: String(e.kickoff), logged: etTxt(e.flagged), playTo: playTo(e, p), now: nowOf(g, p),
+             take: takeFor(e, p), mine: mineOf(e.id) };
+  });
+  plays.filter(p => BET.includes(p.tier) && !p.provisional && !(le(p) && le(p).tier === p.tier && le(p).status !== "void")).forEach(p => {
+    const g = games[p.game_id];
+    openBets.push({ label: tierName(p.tier), pick: p.pick, odds: odds(p.odds), app: BOOKN[p.book] || p.book, stake: p.stake,
+                    matchup: `${g.away} ${g.neutral ? "vs" : "@"} ${g.home}`, kickoff: g.kickoff, sortKey: "~", logged: null, playTo: playTo(p, p), now: nowOf(g, p) });
+  });
+  Bets.render(document.getElementById("p-bets"), {
+    unit: UNIT,
+    intro: "Only the plays to put money on: <b>strong plays</b>, <b>FCS plays</b> and <b>wind unders</b>. Leans and research plays stay on the other tabs.",
+    summary: BET.map(t => { const r = sm[t] || {}; return { label: { STRONG: "Strong", FCS: "FCS", WEATHER: "Wind unders" }[t], rec: `${r.w || 0}-${r.l || 0}${r.p ? "-" + r.p : ""}`, units: r.units || 0 }; }),
+    open: openBets,
+    settled: betLed.filter(e => e.status !== "open").sort((a, b) => (b.flagged || "").localeCompare(a.flagged || "")).map(e => ({
+      status: e.status, label: tierName(e.tier), pick: e.pick, matchup: e.matchup, kickoff: etTxt(e.kickoff), odds: odds(e.odds),
+      app: BOOKN[e.book] || e.book, stake: e.stake, units: e.units, clv: e.clv, final: e.final })),
+    emptyOpen: "No open bets. Openers for next week post late Saturday night to early Sunday morning; a phone alert goes out within about 30 minutes of a play appearing.",
+  });
+
+  // Today + Results tabs (shared ../track.js): every logged play on its game's Eastern date
+  const etDate = s => { try { return new Date(String(s).replace(" ", "T")).toLocaleDateString("en-CA", { timeZone: "America/New_York" }); } catch (e) { return ""; } };
+  const anyPlay = {};
+  plays.forEach(p => { anyPlay[p.ledger_id || p.id] = p; });
+  const TL = { STRONG: "Strong", FCS: "FCS", WEATHER: "Wind under", LEAN: "Lean", RESEARCH: "Research" };
+  const trackRows = (S.fullLedger || S.ledger || []).filter(e => e.status !== "void").map(e => {
+    const p = anyPlay[e.id] && anyPlay[e.id].tier === e.tier ? anyPlay[e.id] : null;
+    return { id: e.id, date: etDate(e.kickoff), kickoff: etTxt(e.kickoff), sortKey: String(e.kickoff), week: e.week, tier: e.tier,
+             label: TL[e.tier] || e.tier, money: BET.includes(e.tier), status: e.status, units: e.units, stake: e.stake, clv: e.clv,
+             pick: e.pick, matchup: e.matchup, odds: odds(e.odds), app: BOOKN[e.book] || e.book, final: e.final, logged: etTxt(e.flagged),
+             playTo: e.market === "moneyline" ? null : playTo(e, p), now: e.status === "open" ? nowOf(games[e.game_id], p) : null,
+             take: takeFor(e, e.status === "open" ? p : null), mine: mineOf(e.id) };
+  });
+  const todayET = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+  const ledAll = S.fullLedger || S.ledger || [];
+  trackRows.push(...MyBets.rows(myBets, S.scores || {}, UNIT, b => { const e = ledAll.find(x => x.id === String(b.play).split("+")[0]); return e ? e.week : null; }));
+  Track.renderToday(document.getElementById("p-today"), { rows: trackRows, unit: UNIT, today: todayET });
+  MyBets.render(document.getElementById("p-mine"), { bets: myBets, scores: S.scores || {}, unit: UNIT, board: "CFB", editKey });
+
+  Track.renderResults(document.getElementById("p-results"), { rows: trackRows, unit: UNIT, today: todayET, week: S.week,
+    tiers: [["money", "Money plays"], ["MINE", "My bets"], ["STRONG", "Strong"], ["FCS", "FCS"], ["WEATHER", "Wind unders"], ["LEAN", "Leans"], ["RESEARCH", "Research"], ["all", "All plays"]] });
+
+  // all games
+  const flagged = new Set(plays.filter(p => main.includes(p.tier)).map(p => p.game_id));
+  const bk = (g, k) => { const v = g.books?.[k]; return v ? `${line(v.sp_home)} <span class="muted">${odds(v.sp_home_odds)}</span>` : "–"; };
+  document.getElementById("p-games").innerHTML = `<p class="muted" style="margin:0">Spreads are shown for the home team (negative = home favored). Highlighted rows have a play.</p>
+    <div class="tbl"><table><thead><tr><th>Matchup</th><th>Kickoff</th><th class="r">Model</th><th class="r">Consensus</th><th class="r">DK</th><th class="r">FD</th><th class="r">MGM</th><th class="r">Model total</th><th class="r">Total</th><th class="r">Home tix / $</th><th class="r">Wind</th></tr></thead><tbody>
+    ${(S.games || []).map(g => `<tr class="${flagged.has(g.game_id) ? "flag" : ""}"><td>${esc(g.away)} ${g.neutral ? "vs" : "@"} <b>${esc(g.home)}</b> <span class="muted">${g.grp === "FBS" ? "" : g.grp}</span></td>
+      <td class="muted">${esc(g.kickoff.replace(" ET", ""))}</td><td class="r">${line(g.model_line)}</td><td class="r">${line(g.cons_line)}</td>
+      <td class="r">${bk(g, "DK")}</td><td class="r">${bk(g, "FD")}</td><td class="r">${bk(g, "MGM")}</td>
+      <td class="r">${g.model_total ?? "–"}</td><td class="r">${g.cons_total ?? "–"}</td>
+      <td class="r">${g.tix_home == null ? "–" : g.tix_home + "% / " + (g.money_home ?? "–") + "%"}</td><td class="r">${g.wx ? Math.round(g.wx.wind) + " mph" : "–"}</td></tr>`).join("")}
+    </tbody></table></div>`;
+
+  // records
+  const led = (S.ledger || []).slice().reverse();
+  const tiers = ["ALL", "STRONG", "FCS", "WEATHER", "LEAN", "RESEARCH"];
+  let cur = "ALL";
+  const drawRec = () => {
+    const rows = led.filter(e => cur === "ALL" || e.tier === cur);
+    document.getElementById("rec-body").innerHTML = rows.length ? rows.map(e => `<tr><td><span class="pill ${e.status}" title="${esc(e.note || "")}">${e.status === "open" ? "Pending" : e.status === "void" ? "Void" : e.status}</span></td>
+      <td>${esc(e.flagged.slice(5, 16).replace("T", " "))}</td><td><span class="pill ${e.tier}">${e.tier}</span></td><td>${esc(e.matchup)}</td>
+      <td><b>${esc(e.pick)}</b></td><td class="r">${odds(e.odds)} ${esc(e.book || "")}</td><td class="r">${e.stake}u</td>
+      <td class="r">${e.close == null ? "–" : (e.market === "total" ? e.close : line(e.close))}</td><td class="r ${e.clv > 0 ? "pos" : e.clv < 0 ? "neg" : ""}">${e.clv == null ? "–" : sgn(e.clv)}</td>
+      <td class="r ${e.units > 0 ? "pos" : e.units < 0 ? "neg" : ""}">${e.units == null ? "–" : sgn(e.units, 2)}</td><td class="muted">${esc(e.final || "")}</td></tr>`).join("")
+      : `<tr><td colspan="11" class="muted">No paper bets yet. Every play the board flags is logged here at the price available when it was flagged, then graded with the final score and the closing line.</td></tr>`;
+  };
+  document.getElementById("p-records").innerHTML = `<div class="prose"><p>Every flagged play is logged once, at the book and price available at that moment, at the stake shown (sized by tier and edge; see How it works). The column that matters most early on is <b>CLV</b>: how many points the line moved toward our side after we "bet". The model's edge is beating early numbers, so a steady positive CLV is the first sign it works live; wins and losses take a full season to mean much.</p></div>
+    <div class="chips" role="group" aria-label="Filter by tier">${tiers.map(t => `<button class="chip" id="f-${t}" aria-pressed="${t === "ALL"}" data-t="${t}">${t === "ALL" ? "All" : TIER[t].name}</button>`).join("")}</div>
+    <div class="tbl"><table><thead><tr><th>Result</th><th>Logged</th><th>Tier</th><th>Game</th><th>Pick</th><th class="r">Price</th><th class="r">Stake</th><th class="r">Close</th><th class="r">CLV</th><th class="r">Units</th><th>Final</th></tr></thead><tbody id="rec-body"></tbody></table></div>`;
+  document.querySelectorAll("#p-records .chip").forEach(c => c.addEventListener("click", () => {
+    cur = c.dataset.t; document.querySelectorAll("#p-records .chip").forEach(x => x.setAttribute("aria-pressed", x === c)); drawRec();
+  }));
+  drawRec();
+
+  // ratings
+  const rt = (rows, title) => `<div class="group"><h2>${title}</h2><div class="tbl"><table><thead><tr><th class="r">#</th><th>Team</th><th class="r">Rating</th><th class="r">Offense</th><th class="r">Defense</th></tr></thead><tbody>
+    ${(rows || []).map(r => `<tr><td class="r">${r.rank}</td><td>${esc(r.team)}</td><td class="r"><b>${sgn(r.net)}</b></td><td class="r">${sgn(r.off)}</td><td class="r">${sgn(r.dfn)}</td></tr>`).join("")}</tbody></table></div></div>`;
+  document.getElementById("p-ratings").innerHTML = `<p class="muted" style="margin:0">Points better than an average FBS team on a neutral field, from this season's results blended with a preseason estimate (last season, returning production, talent, recruiting).</p>
+    <div class="two">${rt(S.ratings_fbs, "FBS top 25")}${rt(S.ratings_fcs, "FCS top 25")}</div>`;
+
+  // how it works
+  const bt = S.backtest || {};
+  document.getElementById("p-how").innerHTML = `<div class="prose">
+    <h2>What the model does</h2>
+    <p>Every FBS and FCS team gets an offense and defense rating, refit each week from this season's games (points, EPA per play and success rate with garbage time removed) and pulled toward a preseason estimate. The model's spread and total for each game are compared with the current DraftKings, FanDuel and BetMGM prices, and the best of the three is used.</p>
+    <h2>What the backtest found</h2>
+    <ul><li>${esc(bt.strong_fbs)}</li><li>${esc(bt.strong_fcs)}</li><li>${esc(bt.weather)}</li><li>${esc(bt.vs_close)}</li></ul>
+    <p>That last point is the whole strategy. The market ends up close to the model's number by kickoff, so the value is in betting soon after lines open (Sunday evening to Tuesday). A play flagged on Friday at a price that has already moved is worth much less.</p>
+    <h2>Tested and dropped</h2>
+    <p>Byes, short weeks, letdown and lookahead spots, revenge, turnover luck, travel distance, home underdogs, big favorites, fading the public, "sharp" money splits and reverse line moves all failed to beat the closing line in 2014-19 and 2020-25. Two angles survived and appear as tags: visitors climbing 1,000m+ in altitude, and teams with 7+ losses late in the season.</p>
+    <h2>Stakes</h2>
+    <p>Everything is paper for now. Stakes are sized by what the backtest says each kind of play is worth: strong plays with a 9+ point gap 1.5u; other strong, FCS and weather plays 1u; FCS leans with a 4+ point gap 1u; other leans 0.5u (FBS leans hit about 52% against the opener, close to break-even); research unders 1u, overs and near-miss wind 0.5u, moneyline alternatives 0.25u (they double up a spread bet on the same side). Plays logged before Oct 6 were restated to these sizes. If you start betting later, a unit of about 1% of your bankroll is a sensible size. Only bet at the "playable to" number or better.</p>
+    <h2>Schedule</h2>
+    <p>Prices are checked every 30 minutes on Sunday and Monday (when openers post) and hourly the rest of the week. Results and ratings update each morning.</p></div>`;
+
+  // tabs (a tap scrolls to the section; the tab restored on load does not)
+  let booted = false;
+  document.querySelectorAll(".tab").forEach(t => t.onclick = () => {
+    document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
+    document.querySelectorAll("section.panel").forEach(p => p.hidden = p.id !== "p-" + t.dataset.tab);
+    try { localStorage.setItem("cfb-tab", t.dataset.tab); } catch (e) {}
+    if (booted) document.querySelector(".tabs").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  let saved = null; try { saved = localStorage.getItem("cfb-tab"); } catch (e) {}
+  const want = location.hash && /^#(plays|bets|today|results|mine|games|records|ratings|how)$/.test(location.hash) ? location.hash.slice(1) : saved;
+  if (want) document.querySelector(`.tab[data-tab="${want}"]`)?.click();
+  booted = true;
+}
+load().then(render);
+</script>

@@ -1,0 +1,511 @@
+<title>NFL Game Day Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: a wristband card of this week's plays up top (numbered cells), then tabbed detail: plays, all games, TD sheet,
+   injuries, RLM and trends, paper records, ratings, how it works. Field-green ink, chalk ground, lime flag for plays. */
+:root {
+  --bg: #eef1ec; --card: #fbfcfa; --ink: #13233a; --muted: #5a6878; --rule: #d3d9cf; --soft: #e3e8e0;
+  --flag: #c7d21a; --flag-ink: #1f2400; --flag-soft: #f1f4c9;
+  --wx: #3f6f93; --wx-soft: #dfe9f2; --tz: #b5651d; --tz-soft: #f6e6d6;
+  --win: #23764a; --win-soft: #dcefe3; --loss: #b23a2e; --loss-soft: #f7e1de;
+  --display: "Big Shoulders Display", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e1620; --card: #16212d; --ink: #e6ebf0; --muted: #93a2b1; --rule: #283646; --soft: #1d2a38;
+  --flag: #d4df2c; --flag-ink: #1b1f00; --flag-soft: #2f3316;
+  --wx: #86b3d6; --wx-soft: #182a3a; --tz: #e3a265; --tz-soft: #36261a;
+  --win: #58b985; --win-soft: #173323; --loss: #e2695d; --loss-soft: #3a1c19; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0e1620; --card: #16212d; --ink: #e6ebf0; --muted: #93a2b1; --rule: #283646; --soft: #1d2a38;
+  --flag: #d4df2c; --flag-ink: #1b1f00; --flag-soft: #2f3316;
+  --wx: #86b3d6; --wx-soft: #182a3a; --tz: #e3a265; --tz-soft: #36261a;
+  --win: #58b985; --win-soft: #173323; --loss: #e2695d; --loss-soft: #3a1c19; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 14px/1.5 var(--body) }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 56px; display: grid; gap: 18px }
+.wrap > * { min-width: 0 }
+h1, h2, h3 { font-family: var(--display); font-weight: 800; letter-spacing: .01em; margin: 0; text-transform: uppercase; text-wrap: balance }
+h1 { font-size: 38px; line-height: .95 } h2 { font-size: 22px } h3 { font-size: 17px }
+.num, td, .mono { font-variant-numeric: tabular-nums }
+.mono { font-family: var(--mono); font-size: 12.5px }
+.muted { color: var(--muted) }
+header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 10px 24px }
+header .meta { display: grid; gap: 2px; text-align: right; font-size: 13px }
+.eyebrow { font: 700 11.5px/1 var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted) }
+.banner { border: 1px solid var(--loss); background: var(--loss-soft); border-radius: 6px; padding: 10px 14px; font-size: 13px }
+/* record strip */
+.records { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px }
+.rec { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; display: grid; gap: 3px; min-width: 0 }
+.rec .lab { font: 700 11px/1.2 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
+.rec .wl { font: 800 28px/1 var(--display) }
+.rec .sub { font-size: 12px; color: var(--muted) }
+.rec.tracked .wl { color: var(--muted) }
+/* wristband */
+.band { background: var(--card); border: 2px solid var(--ink); border-radius: 8px; overflow: hidden }
+.band-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 12px; padding: 8px 12px; background: var(--ink); color: var(--bg) }
+.band-head h2 { font-size: 19px; color: var(--bg) }
+.band-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)) }
+.cell { display: grid; grid-template-columns: auto 1fr; gap: 1px 10px; padding: 8px 12px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); text-decoration: none; color: inherit; min-width: 0 }
+.cell:hover, .cell:focus-visible { background: var(--soft); outline: none }
+.code { grid-row: span 2; font: 800 24px/1 var(--display); align-self: center; min-width: 32px }
+.code.STRONG { color: var(--ink); background: var(--flag); border-radius: 3px; padding: 3px 4px; text-align: center }
+.code.WEATHER { color: var(--wx) } .code.TEASER { color: var(--tz) }
+.cell .pk { font-weight: 700; overflow-wrap: anywhere } .cell .px { font-size: 12px; color: var(--muted) }
+.empty { padding: 16px; color: var(--muted) }
+/* tabs */
+.tabs { display: flex; flex-wrap: wrap; gap: 2px; border-bottom: 1px solid var(--rule) }   /* wraps: every tab visible on a phone */
+.tab { font: 700 12.5px/1 var(--body); letter-spacing: .06em; text-transform: uppercase; padding: 10px 11px 9px; border: 0; border-bottom: 3px solid transparent; background: none; color: var(--muted); cursor: pointer; white-space: nowrap }
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--flag) }
+.tab:focus-visible, .chip:focus-visible, .cell:focus-visible { outline: 2px solid var(--wx); outline-offset: 2px }
+section.panel { display: grid; gap: 16px }
+[hidden] { display: none !important }   /* a panel's own display rule would otherwise beat the hidden attribute */
+section.panel > * { min-width: 0 }
+.group { display: grid; gap: 10px }
+.group-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px }
+.group-head p { margin: 0; font-size: 13px; color: var(--muted); max-width: 72ch; flex-basis: 100% }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 310px), 1fr)); gap: 10px; align-items: start }
+.card { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; display: grid; gap: 8px; min-width: 0; scroll-margin-top: 16px }
+.card.STRONG { box-shadow: inset 4px 0 0 var(--flag) } .card.WEATHER { box-shadow: inset 4px 0 0 var(--wx) } .card.TEASER { box-shadow: inset 4px 0 0 var(--tz) }
+.card:target { border-color: var(--ink) }
+.card .top { display: flex; justify-content: space-between; gap: 8px; align-items: start }
+.card .match { font-size: 12.5px; color: var(--muted) }
+.card .pick { font: 800 27px/1.02 var(--display); text-transform: uppercase; overflow-wrap: anywhere }
+.card .price { font-size: 13px }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 4px 12px; font-size: 12.5px }
+.kv div { display: grid } .kv span:first-child { color: var(--muted); font-size: 10.5px; text-transform: uppercase; letter-spacing: .07em; font-weight: 700 }
+.pill { display: inline-block; font: 700 10.5px/1 var(--body); letter-spacing: .07em; text-transform: uppercase; padding: 4px 7px; border-radius: 3px; white-space: nowrap; background: var(--soft); color: var(--muted) }
+.pill.STRONG { background: var(--flag); color: var(--flag-ink) } .pill.WEATHER { background: var(--wx-soft); color: var(--wx) } .pill.TEASER { background: var(--tz-soft); color: var(--tz) }
+.pill.W { background: var(--win-soft); color: var(--win) } .pill.L { background: var(--loss-soft); color: var(--loss) }
+.pill.Out, .pill.Doubtful, .pill.IR { background: var(--loss-soft); color: var(--loss) }
+.logline, .note { font-size: 12px; color: var(--muted) }
+.logline { border-top: 1px dashed var(--rule); padding-top: 6px }
+.tag { font-size: 12px; color: var(--muted) }
+.tbl { overflow-x: auto; background: var(--card); border: 1px solid var(--rule); border-radius: 6px }
+table { border-collapse: collapse; width: 100%; font-size: 12.5px }
+th, td { padding: 6px 9px; text-align: left; border-bottom: 1px solid var(--rule); white-space: nowrap; vertical-align: top }
+th { font: 700 10.5px/1.2 var(--body); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); background: var(--soft) }
+td.r, th.r { text-align: right } td.wrap { white-space: normal; min-width: 220px }
+tr.flag td:first-child { box-shadow: inset 3px 0 0 var(--flag) }
+tr:last-child td { border-bottom: 0 }
+.chips { display: flex; flex-wrap: wrap; gap: 6px }
+.chip { font: 600 12px/1 var(--body); padding: 6px 10px; border-radius: 999px; border: 1px solid var(--rule); background: var(--card); color: var(--ink); cursor: pointer }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink) }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: 14px }
+.prose { max-width: 74ch; display: grid; gap: 10px } .prose p { margin: 0 } .prose ul { margin: 0; padding-left: 20px; display: grid; gap: 5px }
+.pos { color: var(--win) } .neg { color: var(--loss) }
+.val { color: var(--win); font-weight: 700 }
+.bar { display: inline-block; height: 6px; border-radius: 3px; background: var(--flag); vertical-align: middle }
+@media (max-width: 520px) { h1 { font-size: 31px } header .meta { text-align: left } .card .pick { font-size: 24px } }
+@media (prefers-reduced-motion: no-preference) { .cell, .chip, .tab { transition: background-color .15s } }
+</style>
+<link rel="stylesheet" href="../bets.css?v=20261031154954">
+<script src="../bets.js?v=20261031154954"></script>
+<link rel="stylesheet" href="../track.css?v=20261031154954">
+<script src="../track.js?v=20261031154954"></script>
+<script src="../mybets.js?v=20261031154954"></script>
+<link rel="stylesheet" href="../logbet.css?v=20261031154954">
+<script src="../logbet.js?v=20261031154954"></script>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">NFL · paper tracking · DraftKings, FanDuel, BetMGM</div>
+      <h1>NFL Game Day Board</h1>
+    </div>
+    <div class="meta">
+      <span id="slate" class="num"></span>
+      <span class="muted">Prices checked <span id="gen"></span></span>
+      <a class="muted" href="NFL_weekly.xlsx">Weekly workbook (Excel)</a>
+    </div>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+  <div class="records" id="records"></div>
+
+  <div class="band" id="band">
+    <div class="band-head"><h2>This week's card</h2><span class="mono" id="bandcount"></span></div>
+    <div class="band-grid" id="bandgrid"></div>
+  </div>
+
+  <nav class="tabs" role="tablist" aria-label="Board sections">
+    <button class="tab" role="tab" aria-selected="true" data-tab="plays">Plays</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="bets">Bets</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="today">Today</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="results">Results</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="mine">My Bets</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="games">All games</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="td">TD sheet</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="inj">Injuries</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="rlm">RLM &amp; trends</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="records">Records</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="ratings">Ratings</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="how">How it works</button>
+  </nav>
+
+  <section class="panel" id="p-plays" role="tabpanel"></section>
+  <section class="panel" id="p-bets" role="tabpanel" hidden></section>
+  <section class="panel" id="p-today" role="tabpanel" hidden></section>
+  <section class="panel" id="p-results" role="tabpanel" hidden></section>
+  <section class="panel" id="p-mine" role="tabpanel" hidden></section>
+  <section class="panel" id="p-games" role="tabpanel" hidden></section>
+  <section class="panel" id="p-td" role="tabpanel" hidden></section>
+  <section class="panel" id="p-inj" role="tabpanel" hidden></section>
+  <section class="panel" id="p-rlm" role="tabpanel" hidden></section>
+  <section class="panel" id="p-records" role="tabpanel" hidden></section>
+  <section class="panel" id="p-ratings" role="tabpanel" hidden></section>
+  <section class="panel" id="p-how" role="tabpanel" hidden></section>
+</div>
+
+<script>
+const BOOKN = { DK: "DraftKings", FD: "FanDuel", MGM: "BetMGM" };
+const TIER = {
+  STRONG: { name: "Strong spreads", code: "S", note: "Model differs from your best book by 3+ points. Backtest: 59.5% against the opening line in 2008-21 and 65% in 2023-25. Against the closing line the same picks hit 52-56%, so the value is in betting early in the week, at the playable number or better. Sized by edge: 3-4 pts 1u, 4-6 pts 1.5u, 6+ pts 2u." },
+  WEATHER: { name: "Weather unders", code: "W", note: "Forecast wind of 18+ mph at an open-air stadium, logged only within 24 hours of kickoff (since Oct 19; it was 15+ mph up to 4 days out, and forecasts that far out ran windy). Backtest: unders hit 56-58% against the closing total in every era since 2008." },
+  TEASER: { name: "Teaser legs", code: "T", note: "6-point teaser underdogs at +1.5 to +2.5 (teased through 3 and 7) when the total is 49.5 or less. Legs won 75-78% in every era; a 2-team teaser at -120 needs 73.9% per leg. Pair any two legs; check your book's teaser price (-130 or better)." },
+  LEAN: { name: "Leans", code: "L", note: "Model gap of 2 to 3 points, or a strong gap with a questionable starting QB. Logged at 0.5 unit to learn from." },
+  RLM: { name: "Reverse line moves (tracked)", code: "R", note: "Your rule: 57%+ of bets on one side and the CBS line moved 1+ point from its open the other way. Tracked at 1 unit. Backtest 2018-25 at the closing line: 48.7%, so it is not treated as a play." },
+  TREND: { name: "Trend picks (tracked)", code: "TR", note: "This-season situations at 80%+ over 6+ games (the old board's rule). 48.5% since 2019 in the replay; tracked at 1 unit." },
+  TD: { name: "Anytime TD value", code: "TD", note: "Model chance beats the best DraftKings/FanDuel price by 5+ points. Research tier, 1 unit." },
+};
+const ORDER = ["STRONG", "WEATHER", "TEASER", "LEAN", "RLM", "TREND", "TD"];
+const MAIN = ["STRONG", "WEATHER", "TEASER"];
+// Bets tab: the plays to put money on (strong spreads + the research plays with a proven edge), $ at this unit size
+const BET = ["STRONG", "WEATHER"];   // straight bets on the Bets tab; teaser legs are paired into 2-team teasers there
+const UNIT = 10;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const sgn = (v, d = 1) => v == null || isNaN(v) ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d).replace(/\.0+$/, "");
+const odds = v => v == null ? "" : (v > 0 ? "+" : "−") + Math.abs(Math.round(v));
+const line = v => v == null ? "–" : (Math.abs(v) < 0.25 ? "PK" : sgn(v));
+const pct = (v, d = 0) => v == null ? "–" : (v * 100).toFixed(d) + "%";
+const favText = (g, l) => {  // home-spread convention -> "Team −x"
+  if (l == null || isNaN(l)) return "–";
+  if (Math.abs(l) < 0.25) return "Pick'em";
+  return l < 0 ? `${g.home} ${sgn(l)}` : `${g.away} ${sgn(-l)}`;
+};
+const inv = v => v == null ? null : 100 - v;
+const sideSplit = (g, side) => side === "home" ? [g.tix_home, g.money_home] : side === "away" ? [inv(g.tix_home), inv(g.money_home)]
+  : side === "over" ? [g.tix_over, g.money_over] : side === "under" ? [inv(g.tix_over), inv(g.money_over)] : [null, null];
+const shortT = iso => { try { return new Date(iso).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", hour: "numeric", minute: "2-digit" }) + " ET"; } catch (e) { return iso || ""; } };
+
+async function load() {
+  let S = {};
+  try { const r = await fetch("state.json", { cache: "no-store" }); if (r.ok) S = await r.json(); } catch (e) {}
+  if (!S.games) { try { S = JSON.parse(document.getElementById("seed").textContent); } catch (e) {} }
+  // full play history for the Today / Results tabs (state.json carries only the recent part)
+  try { const r = await fetch("ledger.json", { cache: "no-store" }); if (r.ok) S.fullLedger = await r.json(); } catch (e) {}
+  // My Bets: the owner's logged bets and the final scores that grade them
+  try { const r = await fetch("mybets.json", { cache: "no-store" }); if (r.ok) S.myBets = await r.json(); } catch (e) {}
+  try { const r = await fetch("scores.json", { cache: "no-store" }); if (r.ok) S.scores = await r.json(); } catch (e) {}
+  return S;
+}
+
+function render(S) {
+  const games = Object.fromEntries((S.games || []).map(g => [g.game_id, g]));
+  const ledger = Object.fromEntries((S.ledger || []).map(e => [e.id, e]));
+  const plays = (S.plays || []).filter(p => games[p.game_id])
+    .sort((a, b) => ORDER.indexOf(a.tier) - ORDER.indexOf(b.tier) || (games[a.game_id].kickoff_iso || "").localeCompare(games[b.game_id].kickoff_iso || ""));
+  document.getElementById("gen").textContent = S.generated || "–";
+  document.getElementById("slate").textContent = S.weeks ? `${S.season} season · week${S.weeks.length > 1 ? "s" : ""} ${S.weeks.join(" & ")}` : "No games loaded";
+  const b = document.getElementById("banner");
+  const issues = [];
+  if (S.live_ok === false) issues.push("Live prices could not be loaded on the last check; plays below are from the previous check.");
+  if (S.injuries_ok === false) issues.push("The injury report could not be loaded; QB adjustments use the last starters.");
+  if (issues.length) { b.hidden = false; b.textContent = issues.join(" "); }
+
+  // record strip
+  const sm = S.summary || {};
+  const recs = [["STRONG", "Strong spreads"], ["WEATHER", "Weather unders"], ["TEASER", "Teaser legs"], ["LEAN", "Leans"], ["RLM", "RLM (tracked)"], ["TREND", "Trends (tracked)"], ["TD", "Anytime TD"]];
+  document.getElementById("records").innerHTML = recs.map(([k, lab]) => {
+    const r = sm[k] || {};
+    const u = r.units ?? 0;
+    const line2 = k === "TEASER"
+      ? `Legs ${pct(r.leg_pct)} · 2-team ${r.pairs_w || 0}-${r.pairs_l || 0} <span class="${u > 0 ? "pos" : u < 0 ? "neg" : ""}">${sgn(u, 2)}u</span>`
+      : `<span class="${u > 0 ? "pos" : u < 0 ? "neg" : ""}">${sgn(u, 2)}u</span> · ROI ${r.roi == null ? "–" : sgn(r.roi * 100, 1) + "%"}`;
+    return `<div class="rec${["RLM", "TREND", "TD"].includes(k) ? " tracked" : ""}"><span class="lab">${lab}</span><span class="wl num">${r.w || 0}-${r.l || 0}${r.p ? "-" + r.p : ""}</span>
+      <span class="sub num">${line2} · ${r.open || 0} pending</span>
+      ${k === "TEASER" || k === "TD" ? "" : `<span class="sub num">CLV ${r.clv_avg == null ? "–" : sgn(r.clv_avg, 1) + " pts"} · beat close ${pct(r.beat_close)}</span>`}</div>`;
+  }).join("");
+
+  // wristband
+  const counters = {};
+  plays.forEach(p => { if (MAIN.includes(p.tier) && !p.lookahead) { counters[p.tier] = (counters[p.tier] || 0) + 1; p.code = TIER[p.tier].code + counters[p.tier]; } });
+  const bandPlays = plays.filter(p => MAIN.includes(p.tier) && !p.lookahead);
+  document.getElementById("bandcount").textContent = `${bandPlays.length} play${bandPlays.length === 1 ? "" : "s"}`;
+  document.getElementById("bandgrid").innerHTML = bandPlays.length ? bandPlays.map(p =>
+    `<a class="cell" href="#${esc(p.code)}"><span class="code ${p.tier}">${p.code}</span><span class="pk">${esc(p.pick)}</span><span class="px num">${p.stake && p.market !== "teaser" ? p.stake + "u · " : ""}${odds(p.odds)} ${BOOKN[p.book] || p.book || ""} · ${esc(games[p.game_id].kickoff)}</span></a>`).join("")
+    : `<div class="empty">No plays at current prices. New-week openers post Sunday night; the board checks every 30 minutes.</div>`;
+
+  // My Bets hooks: the owner's bets (published + saved on this phone but not recorded yet, minus ones just removed),
+  // a "Log bet" panel registered per play (site/logbet.js), and a redraw after a save
+  const goneIds = LogBet.removed();
+  const myBets = (S.myBets || []).filter(b => !goneIds.has(b.id)).concat(LogBet.pending("NFL", S.myBets || []));
+  const mineBy = {};
+  myBets.forEach(b => (mineBy[b.play] = mineBy[b.play] || []).push(`$${b.amount} at ${b.market === "total" ? b.line + " " : b.line != null && b.market !== "teaser" ? line(b.line) + " " : ""}${odds(b.odds)} ${b.book}${b.syncing ? " (saving)" : ""}`));
+  // a bet logged on a look-ahead play ("look:<play id>") also shows on that play once it becomes a regular play
+  const mineOf = id => (mineBy[id] || []).concat(mineBy["look:" + id] || []);
+  const takes = window.__takes = {}, edits = window.__edits = {};
+  let nKey = 0;
+  const teamsOf = e => { const g = games[e.game_id]; return g ? [g.away, g.home] : String(e.matchup || "").split(/ @ | vs /); };
+  const editKey = b => { const k = "e" + (++nKey); edits[k] = b; return k; };
+  window.__afterLog = () => render(S);
+  const isoOf = o => o.kickoff_iso || (games[o.game_id] || {}).kickoff_iso || o.kickoff;
+  const takeFor = (e, p) => { const x = p || e, [away, home] = teamsOf(e), k = "t" + (++nKey);
+    takes[k] = { board: "NFL", play: e.id, game_id: e.game_id, matchup: e.matchup, away, home, kickoff: isoOf(e), kickoffTxt: e.kickoff,
+                 market: e.market, side: e.side, line: x.line, odds: x.odds, book: x.book, amount: Math.round((x.stake || e.stake || 1) * UNIT),
+                 pickLabel: x.pick, boardLine: e.line, boardTxt: `${e.pick} ${odds(e.odds)} ${BOOKN[e.book] || e.book}` };
+    return k; };
+  const takePair = (a, b) => { const k = "t" + (++nKey), leg = o => ({ pick: o.pick, matchup: o.matchup || (games[o.game_id] || {}).matchup,
+      game_id: o.game_id, side: o.side, line: o.line, kickoff: isoOf(o) });
+    takes[k] = { board: "NFL", play: `${a.id}+${b.id}`, market: "teaser", side: null, teaser: [leg(a), leg(b)], odds: -120, book: a.book,
+                 amount: UNIT, matchup: `${leg(a).matchup} / ${leg(b).matchup}`, kickoff: isoOf(a), game_id: a.game_id, pickLabel: `${a.pick} + ${b.pick}` };
+    return k; };
+  // look-ahead plays stay display-only on the board (never logged or alerted), but the owner can log a real bet on one
+  const lookTake = (p, g) => {
+    if (!p.lookahead || g.started || !["spread", "total"].includes(p.market)) return "";
+    const mine = mineOf(p.id);
+    const k = takeFor(Object.assign({}, p, { id: "look:" + p.id, matchup: g.matchup, kickoff: g.kickoff, kickoff_iso: g.kickoff_iso }), p);
+    return (mine.length ? `<div class="b-mine">✓ You bet ${mine.map(esc).join("; ")}</div>` : "")
+      + `<button class="b-take" type="button" data-take="${k}">${mine.length ? "Log another bet on this" : "Log bet"}</button>`;
+  };
+
+  // plays
+  const card = p => {
+    const g = games[p.game_id], e = ledger[p.id];
+    let kv = "";
+    if (p.market === "spread") {
+      kv = `<div><span>Model</span><span class="num">${esc(favText(g, g.model_line))}</span></div>
+        ${p.edge != null ? `<div><span>Edge</span><span class="num">${p.edge} pts</span></div>` : ""}
+        ${p.limit != null ? `<div><span>Playable to</span><span class="num">${p.team} ${line(p.limit)}</span></div>` : ""}
+        ${p.cover != null ? `<div><span>Cover chance</span><span class="num">${pct(p.cover)}</span></div>` : ""}
+        <div><span>Consensus</span><span class="num">${esc(favText(g, g.cons_spread))}</span></div>`;
+    } else if (p.market === "total") {
+      kv = `<div><span>Total now</span><span class="num">${g.cons_total ?? "–"}</span></div>
+        ${g.wx ? `<div><span>Wind</span><span class="num">${Math.round(g.wx.wind)} mph</span></div><div><span>Temp</span><span class="num">${Math.round(g.wx.temp)}°F</span></div>` : ""}
+        <div><span>Model total</span><span class="num">${g.model_total ?? "–"}</span></div>`;
+    } else if (p.market === "teaser") {
+      kv = `<div><span>Teased to</span><span class="num">${p.team} ${line(p.line + 6)}</span></div><div><span>Total</span><span class="num">${g.cons_total ?? "–"}</span></div><div><span>Model</span><span class="num">${esc(favText(g, g.model_line))}</span></div>`;
+    } else if (p.market === "td") {
+      kv = `<div><span>Edge</span><span class="num">${pct(p.edge, 0)}</span></div>`;
+    }
+    const [bt, bm] = sideSplit(g, p.side);
+    const tix = bt != null ? `<div><span>Bets / money</span><span class="num">${bt}% / ${bm ?? "–"}%</span></div>` : "";
+    const log = e ? (e.status === "open"
+      ? `Logged ${esc(shortT(e.flagged))} at ${esc(e.pick)} ${odds(e.odds)} (${BOOKN[e.book] || esc(e.book)}), ${e.stake}u`
+      : `<span class="pill ${e.status}">${e.status}</span> ${e.units == null ? "" : sgn(e.units, 2) + "u"} · ${esc(e.final || "")}${e.clv != null ? " · CLV " + sgn(e.clv) : ""}`)
+      : p.lookahead ? "Look-ahead line: next week's line, posted before this week's games are played (or your books disagree on it), so it may not be on your apps and moves a lot. Not logged or alerted until this week's Sunday games have started and 2 of your books agree."
+      : "Not logged yet (logs on the next check)";
+    const angles = (g.angles || []).map(t => `<div class="tag">Angle: ${esc(t)}</div>`).join("");
+    return `<article class="card ${p.tier}" id="${esc(p.code || p.id)}">
+      <div class="top"><span class="match">${esc(g.matchup)} · ${esc(g.kickoff)}</span><span class="pill ${p.lookahead ? "" : p.tier}">${p.lookahead ? "Look-ahead" : p.code || p.tier}</span></div>
+      <div><div class="pick">${esc(p.pick)}</div><div class="price num">${p.market === "teaser" ? "2-team 6-pt teaser leg" : (p.stake ? "<b>" + p.stake + "u</b> · " : "") + odds(p.odds)} at ${BOOKN[p.book] || esc(p.book) || "–"}</div></div>
+      <div class="kv">${kv}${tix}</div>
+      ${p.note ? `<div class="note">${esc(p.note)}</div>` : ""}${angles}
+      <div class="logline">${log}</div>${lookTake(p, g)}</article>`;
+  };
+  document.getElementById("p-plays").innerHTML = ORDER.map(t => {
+    const ps = plays.filter(p => p.tier === t);
+    if (!ps.length && !MAIN.includes(t)) return "";
+    return `<div class="group"><div class="group-head"><h2>${TIER[t].name}</h2><span class="muted num">${ps.length}</span><p>${TIER[t].note}</p></div>
+      ${ps.length ? `<div class="cards">${ps.map(card).join("")}</div>` : `<div class="muted">None at current prices.</div>`}</div>`;
+  }).join("");
+
+  // bets: every play to put money on, drawn by the shared ../bets.js (same look on every board)
+  const etTxt = iso => { try { return new Date(iso).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " ET"; } catch (e) { return iso || ""; } };
+  const playBy = Object.fromEntries(plays.map(p => [p.id, p]));
+  const live = (S.ledger || []).filter(e => e.status !== "void");
+  const betLed = live.filter(e => BET.includes(e.tier));
+  const tierName = t => ({ STRONG: "Strong", WEATHER: "Wind under" })[t] || t;
+  // worst line still worth betting: the model's current limit, else the one logged, else rebuilt from the logged model line
+  const playTo = (v, p) => {
+    if (v.market === "total") return v.side === "under" ? `Under ${v.line} or higher` : `Over ${v.line} or lower`;
+    const mp = v.model_line == null ? null : (v.side === "home" ? v.model_line : -v.model_line);
+    const lim = p && p.tier === v.tier && p.limit != null ? p.limit : v.limit != null ? v.limit
+      : mp != null ? Math.round((mp + (v.tier === "LEAN" ? 2 : 3)) * 2) / 2 : v.line;
+    return `${v.team} ${line(lim)}`;
+  };
+  const nowOf = (g, p) => !g || g.started ? { kind: "live", text: "Kicked off, result pending" }
+    : !p ? { kind: "gone", text: "No longer a play at current prices: skip it if you haven't bet it" }
+    : { kind: "ok", text: `Still a play: ${p.pick} ${odds(p.odds)} at ${BOOKN[p.book] || p.book}${p.stake ? ` · bet ${+p.stake}u ($${+(p.stake * UNIT).toFixed(2)}) at this price` : ""}` };
+  const openBets = betLed.filter(e => e.status === "open").map(e => {
+    const g = games[e.game_id], p = playBy[e.id];
+    return { label: tierName(e.tier), pick: e.pick, odds: odds(e.odds), app: BOOKN[e.book] || e.book, stake: e.stake, matchup: e.matchup,
+             kickoff: e.kickoff, sortKey: (g && g.kickoff_iso) || e.kickoff, logged: etTxt(e.flagged), playTo: playTo(e, p), now: nowOf(g, p),
+             take: takeFor(e, p), mine: mineOf(e.id) };
+  });
+  plays.filter(p => BET.includes(p.tier) && !p.lookahead && !games[p.game_id].started && !betLed.some(e => e.id === p.id)).forEach(p => {
+    const g = games[p.game_id];
+    openBets.push({ label: tierName(p.tier), pick: p.pick, odds: odds(p.odds), app: BOOKN[p.book] || p.book, stake: p.stake, matchup: g.matchup,
+                    kickoff: g.kickoff, sortKey: g.kickoff_iso, logged: null, playTo: playTo(p, p), now: nowOf(g, p) });
+  });
+  // teasers: legs that still qualify, paired in logging order (two different games) into 2-team 6-point teasers
+  const legs = [...live.filter(e => e.tier === "TEASER" && e.status === "open" && playBy[e.id] && games[e.game_id] && !games[e.game_id].started),
+                ...plays.filter(p => p.tier === "TEASER" && !p.lookahead && !games[p.game_id].started && !live.some(e => e.id === p.id))]
+    .sort((a, b) => (a.flagged || "~").localeCompare(b.flagged || "~"));
+  const pairs = [], spare = [];
+  legs.forEach(l => { const i = spare.findIndex(s => s.game_id !== l.game_id); if (i >= 0) pairs.push([spare.splice(i, 1)[0], l]); else spare.push(l); });
+  const legOf = l => ({ pick: l.pick, matchup: games[l.game_id].matchup, kickoff: games[l.game_id].kickoff });
+  const teaserCards = pairs.map(([a, b]) => ({ legs: [legOf(a), legOf(b)], stake: 1, price: "2-team, 6 points, at −130 or better",
+    playTo: "each leg +1.5 to +2.5 before the tease", logged: a.flagged ? etTxt([a.flagged, b.flagged].filter(Boolean).sort().pop()) : null,
+    now: { kind: "ok", text: "Both legs still qualify: bet them together as one teaser" },
+    take: a.id && b.id ? takePair(a, b) : null, mine: mineOf(a.id + "+" + b.id) }))
+    .concat(spare.map(l => ({ legs: [legOf(l)], stake: 1, price: "Waiting for a second leg", playTo: "+1.5 to +2.5 before the tease",
+      logged: l.flagged ? etTxt(l.flagged) : null, now: { kind: "live", text: "Don't bet a single leg: a partner appears when another game qualifies" } })));
+  const tz = sm.TEASER || {};
+  Bets.render(document.getElementById("p-bets"), {
+    unit: UNIT,
+    intro: "Only the plays to put money on: <b>strong spreads</b>, <b>wind unders</b> and <b>2-team teasers</b> made from the teaser legs (each teaser card is one bet: both legs together). Leans, reverse line moves, trends and TD props stay on the other tabs as research.",
+    summary: [...BET.map(t => { const r = sm[t] || {}; return { label: { STRONG: "Strong", WEATHER: "Wind unders" }[t], rec: `${r.w || 0}-${r.l || 0}${r.p ? "-" + r.p : ""}`, units: r.units || 0 }; }),
+              { label: "2-team teasers", rec: `${tz.pairs_w || 0}-${tz.pairs_l || 0}`, units: tz.units || 0 }],
+    open: openBets,
+    pairs: teaserCards,
+    settled: betLed.filter(e => e.status !== "open").sort((a, b) => (b.flagged || "").localeCompare(a.flagged || "")).map(e => ({
+      status: e.status, label: tierName(e.tier), pick: e.pick, matchup: e.matchup, kickoff: e.kickoff, odds: odds(e.odds),
+      app: BOOKN[e.book] || e.book, stake: e.stake, units: e.units, clv: e.clv, final: e.final })),
+    emptyOpen: "No open bets. Next week's lines reach your books Tuesday afternoon (FanDuel about 2:40 PM ET); a phone alert goes out within about 30 minutes of a play appearing.",
+  });
+
+  // Today + Results tabs (shared ../track.js): every logged play on its game's Eastern date
+  const MON = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11 };
+  const gameDate = e => {
+    if (e.kickoff_iso) return new Date(e.kickoff_iso).toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+    const m = /([A-Z][a-z]{2}) (\d{1,2})/.exec(e.kickoff || "");   // older entries: "Sun Oct 18, 1:00 PM ET"
+    if (!m || MON[m[1]] == null) return "";
+    let y = +String(e.flagged).slice(0, 4);
+    if (MON[m[1]] + 6 < +String(e.flagged).slice(5, 7) - 1) y += 1;   // a January game logged in December
+    return `${y}-${String(MON[m[1]] + 1).padStart(2, "0")}-${m[2].padStart(2, "0")}`;
+  };
+  const TL = { STRONG: "Strong", WEATHER: "Wind under", TEASER: "Teaser leg", LEAN: "Lean", RLM: "RLM (tracked)", TREND: "Trend (tracked)", TD: "Anytime TD" };
+  const full = (S.fullLedger || S.ledger || []).filter(e => e.status !== "void");
+  const trackRows = full.map(e => {
+    const p = playBy[e.id];
+    return { id: e.id, date: gameDate(e), kickoff: e.kickoff, sortKey: e.kickoff_iso || e.kickoff, week: e.week, tier: e.tier, label: TL[e.tier] || e.tier,
+             // teaser legs: open ones show on Today with the money plays; graded ones count as 2-team teasers below
+             money: BET.includes(e.tier) || (e.tier === "TEASER" && e.status === "open"), inAll: e.tier !== "TEASER",
+             status: e.status, units: e.units, stake: e.stake, clv: e.clv, pick: e.pick, matchup: e.matchup,
+             odds: e.market === "teaser" ? "teaser" : odds(e.odds), app: BOOKN[e.book] || e.book, final: e.final, logged: etTxt(e.flagged),
+             playTo: e.market === "spread" || e.market === "total" ? playTo(e, p) : e.market === "teaser" ? "+1.5 to +2.5 before the tease" : null,
+             now: e.status === "open" ? nowOf(games[e.game_id], p) : null,
+             take: e.tier === "TEASER" ? null : takeFor(e, e.status === "open" ? p : null), mine: mineOf(e.id) };
+  });
+  // 2-team teasers: graded legs paired in logging order, exactly as the board's teaser record counts them
+  const tlegs = full.filter(e => e.tier === "TEASER" && (e.status === "W" || e.status === "L"));
+  for (let i = 0; i + 1 < tlegs.length; i += 2) {
+    const a = tlegs[i], b = tlegs[i + 1], won = a.status === "W" && b.status === "W", later = gameDate(a) > gameDate(b) ? a : b;
+    trackRows.push({ id: a.id + "+" + b.id, date: gameDate(later), kickoff: later.kickoff, sortKey: later.kickoff_iso || later.kickoff,
+                     week: Math.max(a.week, b.week), tier: "TEASER2", label: "2-team teaser", money: true, status: won ? "W" : "L",
+                     units: won ? 100 / 120 : -1, stake: 1, clv: null, pick: `${a.pick} + ${b.pick}`, matchup: `${a.matchup} / ${b.matchup}`,
+                     odds: "−120", app: BOOKN[a.book] || a.book, final: [a.final, b.final].filter(Boolean).join(" · "), logged: etTxt(b.flagged),
+                     take: takePair(a, b), mine: mineOf(a.id + "+" + b.id) });
+  }
+  const todayET = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+  trackRows.push(...MyBets.rows(myBets, S.scores || {}, UNIT, b => { const e = full.find(x => x.id === String(b.play).split("+")[0]); return e ? e.week : null; }));
+  Track.renderToday(document.getElementById("p-today"), { rows: trackRows, unit: UNIT, today: todayET });
+  MyBets.render(document.getElementById("p-mine"), { bets: myBets, scores: S.scores || {}, unit: UNIT, board: "NFL", editKey });
+
+  Track.renderResults(document.getElementById("p-results"), { rows: trackRows, unit: UNIT, today: todayET, week: S.week,
+    tiers: [["money", "Money plays"], ["MINE", "My bets"], ["STRONG", "Strong"], ["WEATHER", "Wind unders"], ["TEASER2", "2-team teasers"], ["LEAN", "Leans"],
+            ["RLM", "RLM"], ["TREND", "Trends"], ["TD", "Anytime TD"], ["all", "All plays"]] });
+
+  // all games
+  const flagged = new Set(plays.filter(p => MAIN.includes(p.tier)).map(p => p.game_id));
+  const bk = (g, k) => { const v = g.books?.[k]; return v && v.sp_home != null ? `${line(v.sp_home)} <span class="muted">${odds(v.sp_home_odds)}</span>` : "–"; };
+  const qbtxt = q => q ? `${esc(q.expected)}${q.questionable ? " (Q)" : ""}${q.note ? " · " + esc(q.note) : ""}` : "–";
+  document.getElementById("p-games").innerHTML = `<p class="muted" style="margin:0">Spreads are the home team's line (negative = home favored). CBS shows the opening line and the best current line; bets / money are the share of tickets and dollars on the home side. Highlighted rows have a play.</p>
+    <div class="tbl"><table><thead><tr><th>Matchup</th><th>Kickoff</th><th class="r">Model</th><th class="r">Consensus</th><th class="r">DK</th><th class="r">FD</th><th class="r">MGM</th><th class="r">CBS open → now</th><th class="r">Home bets / $</th><th class="r">Model total</th><th class="r">Total</th><th class="r">Wind</th><th>QBs (away / home)</th></tr></thead><tbody>
+    ${(S.games || []).map(g => `<tr class="${flagged.has(g.game_id) ? "flag" : ""}"><td>${esc(g.away)} ${g.neutral ? "vs" : "@"} <b>${esc(g.home)}</b>${g.final ? ` <span class="muted">${g.final.away_pts}-${g.final.home_pts}</span>` : ""}</td>
+      <td class="muted">${esc(g.kickoff)}</td><td class="r">${line(g.model_line)}</td><td class="r">${line(g.cons_spread)}</td>
+      <td class="r">${bk(g, "DK")}</td><td class="r">${bk(g, "FD")}</td><td class="r">${bk(g, "MGM")}</td>
+      <td class="r">${g.cbs ? line(g.cbs.open_spread_home) + " → " + line(g.cbs.spread_home) : "–"}</td>
+      <td class="r">${g.tix_home == null ? "–" : g.tix_home + "% / " + (g.money_home ?? "–") + "%"}</td>
+      <td class="r">${g.model_total ?? "–"}</td><td class="r">${g.cons_total ?? "–"}</td><td class="r">${g.wx ? Math.round(g.wx.wind) + " mph" : g.roof && g.roof !== "outdoors" ? "roof" : "–"}</td>
+      <td class="muted">${qbtxt(g.qb?.away)} / ${qbtxt(g.qb?.home)}</td></tr>`).join("")}
+    </tbody></table></div>`;
+
+  // TD sheet
+  const td = S.td || [];
+  document.getElementById("p-td").innerHTML = `<div class="prose"><p>Each player's chance to score a rushing or receiving TD: his share of his team's touches and red-zone chances (this season and last, recent games weighted more) times the TDs his team is expected to score from the current spread and total. Prices are the best of DraftKings and FanDuel. <span class="val">Green</span> means the model beats the book by 5+ points.</p></div>
+    ${td.length ? `<div class="two">${td.map(gm => `<div class="group"><h3>${esc(gm.matchup)} <span class="muted mono">${esc(gm.kickoff)}</span></h3>
+      ${gm.teams.map(t => `<div class="tbl"><table><thead><tr><th>${esc(t.team)} · ${t.imp_pts} pts implied</th><th class="r">Model</th><th class="r">DK</th><th class="r">FD</th><th class="r">Book</th></tr></thead><tbody>
+        ${t.players.map(p => `<tr><td>${esc(p.player)} <span class="muted">${esc(p.pos || "")}${p.q ? " · Q" : ""}</span></td><td class="r ${p.value ? "val" : ""}"><span class="bar" style="width:${Math.round(p.prob * 60)}px"></span> ${pct(p.prob)}</td><td class="r">${odds(p.dk) || "–"}</td><td class="r">${odds(p.fd) || "–"}</td><td class="r">${pct(p.book_prob)}</td></tr>`).join("")}
+      </tbody></table></div>`).join("")}</div>`).join("")}</div>` : `<div class="empty">TD prices appear once books post them, usually Tuesday to Thursday.</div>`}`;
+
+  // injuries
+  const inj = S.injuries || [];
+  const byTeam = {};
+  inj.forEach(x => (byTeam[x.team] = byTeam[x.team] || []).push(x));
+  const qbs = S.qbs || {};
+  document.getElementById("p-inj").innerHTML = `<div class="prose"><p>From ESPN's injury report for every team on this week's board. The model adjusts for quarterbacks only: if the starter is Out, Doubtful or on IR it prices the game with the next quarterback (his own EPA per dropback, or replacement level for a rookie). A Questionable starter keeps his rating, and any strong play in that game drops to a lean.</p></div>
+    <div class="tbl"><table><thead><tr><th>Team</th><th>QB the model uses</th><th class="r">QB value</th><th class="r">Pts vs usual</th></tr></thead><tbody>
+    ${Object.entries(qbs).filter(([t]) => byTeam[t] || (S.games || []).some(g => g.home === t || g.away === t)).sort().map(([t, q]) => `<tr><td><b>${esc(t)}</b></td><td>${esc(q.expected)}${q.questionable ? ' <span class="pill">Questionable</span>' : ""}${q.note ? ` <span class="muted">(${esc(q.note)})</span>` : ""}</td><td class="r">${q.value == null ? "–" : sgn(q.value, 3)} EPA/db</td><td class="r ${q.adj > 0 ? "pos" : q.adj < 0 ? "neg" : ""}">${sgn(q.adj, 1)}</td></tr>`).join("")}
+    </tbody></table></div>
+    <div class="tbl"><table><thead><tr><th>Team</th><th>Player</th><th>Pos</th><th>Status</th><th>Injury</th><th>Latest</th></tr></thead><tbody>
+    ${inj.sort((a, b) => (a.team || "").localeCompare(b.team || "") || (a.pos === "QB" ? -1 : 0)).map(x => `<tr><td>${esc(x.team)}</td><td>${esc(x.player)}</td><td>${esc(x.pos || "")}</td><td><span class="pill ${x.status === "Injured Reserve" ? "IR" : esc(x.status)}">${x.status === "Injured Reserve" ? "IR" : esc(x.status)}</span></td><td class="muted">${esc(x.detail)}</td><td class="wrap muted">${esc(x.comment)}</td></tr>`).join("")}
+    </tbody></table></div>`;
+
+  // RLM & trends
+  const rlm = plays.filter(p => p.tier === "RLM"), tr = plays.filter(p => p.tier === "TREND");
+  document.getElementById("p-rlm").innerHTML = `<div class="prose"><p><b>Reverse line movement, your way.</b> The board compares the line CBS shows at open with the line now, and the share of bets on each side from Action Network's consensus count. A flag means 57%+ of bets are on one side while the line moved 1+ point toward the other side. Every flag is logged at 1 unit and graded; ${esc(S.backtest?.rlm || "")}.</p></div>
+    ${rlm.length ? `<div class="tbl"><table><thead><tr><th>Game</th><th>Kickoff</th><th>RLM side</th><th class="r">Price</th><th>Why</th></tr></thead><tbody>${rlm.map(p => `<tr><td>${esc(games[p.game_id].matchup)}</td><td class="muted">${esc(games[p.game_id].kickoff)}</td><td><b>${esc(p.pick)}</b></td><td class="r">${odds(p.odds)} ${esc(p.book)}</td><td class="wrap">${esc(p.note)}</td></tr>`).join("")}</tbody></table></div>` : `<div class="muted">No RLM flags right now.</div>`}
+    <div class="prose"><p><b>Trend picks.</b> ${esc(S.backtest?.trend || "")}. Kept on the board and tracked at 1 unit.</p></div>
+    ${tr.length ? `<div class="tbl"><table><thead><tr><th>Game</th><th>Pick</th><th class="r">Price</th><th>Reason</th></tr></thead><tbody>${tr.map(p => `<tr><td>${esc(games[p.game_id].matchup)}</td><td><b>${esc(p.pick)}</b></td><td class="r">${odds(p.odds)} ${esc(p.book)}</td><td class="wrap">${esc(p.note)}</td></tr>`).join("")}</tbody></table></div>` : `<div class="muted">No trend picks this week.</div>`}`;
+
+  // records
+  const led = (S.ledger || []).slice().reverse();
+  const tiers = ["ALL", ...ORDER];
+  let cur = "ALL";
+  const drawRec = () => {
+    const rows = led.filter(e => cur === "ALL" || e.tier === cur);
+    document.getElementById("rec-body").innerHTML = rows.length ? rows.map(e => `<tr><td><span class="pill ${e.status}">${e.status === "open" ? "Pending" : e.status}</span></td>
+      <td>${esc(shortT(e.flagged))}</td><td><span class="pill ${e.tier}">${e.tier}</span></td><td>${esc(e.matchup)}</td>
+      <td><b>${esc(e.pick)}</b></td><td class="r">${e.market === "teaser" ? "tsr" : odds(e.odds)} ${esc(e.book || "")}</td><td class="r">${e.stake}u</td>
+      <td class="r">${e.close == null ? "–" : (e.market === "total" ? e.close : line(e.close))}</td><td class="r ${e.clv > 0 ? "pos" : e.clv < 0 ? "neg" : ""}">${e.clv == null ? "–" : sgn(e.clv)}</td>
+      <td class="r ${e.units > 0 ? "pos" : e.units < 0 ? "neg" : ""}">${e.units == null ? "–" : sgn(e.units, 2)}</td><td class="muted">${esc(e.final || "")}</td></tr>`).join("")
+      : `<tr><td colspan="11" class="muted">No paper bets yet.</td></tr>`;
+  };
+  document.getElementById("p-records").innerHTML = `<div class="prose"><p>Every flagged play is logged once, at the book and price available at that moment, at its stake (strong spreads 1-2u by edge, leans 0.5u, everything else 1u), then graded with the final score and the closing line. The number to watch first is <b>CLV</b>: how many points the line moved toward our side after we "bet". The model's edge is beating early numbers, so a steady positive CLV is the first sign it works live; wins and losses take a full season to mean much. Teaser legs are graded one by one and paired in logging order into 2-team teasers at -120.</p></div>
+    <div class="chips" role="group" aria-label="Filter by tier">${tiers.map(t => `<button class="chip" aria-pressed="${t === "ALL"}" data-t="${t}">${t === "ALL" ? "All" : TIER[t].name}</button>`).join("")}</div>
+    <div class="tbl"><table><thead><tr><th>Result</th><th>Logged</th><th>Tier</th><th>Game</th><th>Pick</th><th class="r">Price</th><th class="r">Stake</th><th class="r">Close</th><th class="r">CLV</th><th class="r">Units</th><th>Final</th></tr></thead><tbody id="rec-body"></tbody></table></div>`;
+  document.querySelectorAll("#p-records .chip").forEach(c => c.addEventListener("click", () => {
+    cur = c.dataset.t; document.querySelectorAll("#p-records .chip").forEach(x => x.setAttribute("aria-pressed", x === c)); drawRec();
+  }));
+  drawRec();
+
+  // ratings
+  document.getElementById("p-ratings").innerHTML = `<p class="muted" style="margin:0">Points better than an average team on a neutral field: a blend of market ratings (what past closing lines imply), points scored and allowed, and EPA per play with garbage time removed, refit before every week with recent games weighted most. QB is the starter the model expects this week.</p>
+    <div class="tbl"><table><thead><tr><th class="r">#</th><th>Team</th><th class="r">Rating</th><th class="r">Market</th><th class="r">Points</th><th class="r">EPA/play net</th><th>QB</th><th class="r">QB EPA/db</th></tr></thead><tbody>
+    ${(S.ratings || []).map(r => `<tr><td class="r">${r.rank}</td><td><b>${esc(r.team)}</b></td><td class="r"><b>${sgn(r.net)}</b></td><td class="r">${sgn(r.mkt)}</td><td class="r">${sgn(r.pts)}</td><td class="r">${sgn(r.epa, 3)}</td><td>${esc(r.qb || "")}</td><td class="r">${r.qb_val == null ? "–" : sgn(r.qb_val, 3)}</td></tr>`).join("")}</tbody></table></div>`;
+
+  // how it works
+  const bt = S.backtest || {};
+  document.getElementById("p-how").innerHTML = `<div class="prose">
+    <h2>What the model does</h2>
+    <p>Every team gets four ratings, refit before each week from games already played: a market rating (what past closing lines say about the team), points scored and allowed, and offensive and defensive EPA per play with garbage time removed. Last season counts at a reduced weight and fades as the season goes. A quarterback layer prices the starter the injury report says will play. The blend of these was fitted on 2008-2025, one season at a time, so every backtest number below is out of sample.</p>
+    <h2>What the backtest found</h2>
+    <ul><li>${esc(bt.strong)}</li><li>${esc(bt.close)}</li><li>${esc(bt.weather)}</li><li>${esc(bt.teaser)}</li><li>${esc(bt.angles)}</li><li>${esc(bt.td)}</li></ul>
+    <p>As with the college card, the edge is in betting soon after lines open (Sunday night to Tuesday). A play flagged Friday at a price that has already moved toward the model is worth much less; the "playable to" number on each card is the worst line that still clears the bar.</p>
+    <h2>Tested and kept as tracking only</h2>
+    <ul><li>${esc(bt.rlm)}</li><li>${esc(bt.trend)}</li><li>Model totals against the opener were 50-53% outside 2008-13, so totals only become plays through the wind rule.</li></ul>
+    <h2>Stakes</h2>
+    <p>Bets are sized by the model's edge (switched 2026-10-06): strong spreads 1u at a 3-4 point gap, 1.5u at 4-6 and 2u at 6+ (2008-25 win rates 57.5%, 61.5% and about 70%); leans 0.5u (about 54%, barely above the 52.4% break-even); weather unders and 2-team teasers 1u; tracked tiers 1u. Over 2008-25 this sizing made +276u vs +204u flat on slightly less risked. Everything is paper for now; if you bet later, about 1% of bankroll per unit is sensible. Only bet at the playable number or better.</p>
+    <h2>Schedule</h2>
+    <p>Lines, bets/money splits and CBS opens are checked every 30 minutes while this computer is on. Ratings and scores refresh each morning and after games finish; injuries and forecasts on every check.</p></div>`;
+
+  // tabs (a tap scrolls to the section; the tab restored on load does not)
+  let booted = false;
+  document.querySelectorAll(".tab").forEach(t => t.onclick = () => {
+    document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
+    document.querySelectorAll("section.panel").forEach(p => p.hidden = p.id !== "p-" + t.dataset.tab);
+    try { localStorage.setItem("nfl-tab", t.dataset.tab); } catch (e) {}
+    if (booted) document.querySelector(".tabs").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  let saved = null; try { saved = localStorage.getItem("nfl-tab"); } catch (e) {}
+  const want = location.hash && /^#(plays|bets|today|results|mine|games|td|inj|rlm|records|ratings|how)$/.test(location.hash) ? location.hash.slice(1) : saved;
+  if (want) document.querySelector(`.tab[data-tab="${want}"]`)?.click();
+  booted = true;
+}
+load().then(render);
+</script>

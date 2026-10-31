@@ -1,0 +1,7890 @@
+{
+ "401866532": {
+  "away": "Maine",
+  "home": "Towson",
+  "away_pts": 21,
+  "home_pts": 18,
+  "close_spread": -2.5,
+  "close_total": 46.5
+ },
+ "401866615": {
+  "away": "Stony Brook",
+  "home": "Delaware State",
+  "away_pts": 34,
+  "home_pts": 41,
+  "close_spread": 4.5,
+  "close_total": 50.5
+ },
+ "401867894": {
+  "away": "Mercyhurst",
+  "home": "Youngstown State",
+  "away_pts": 10,
+  "home_pts": 43,
+  "close_spread": -30.5,
+  "close_total": 57.5
+ },
+ "401874035": {
+  "away": "Southern Illinois",
+  "home": "West Florida",
+  "away_pts": 31,
+  "home_pts": 34,
+  "close_spread": 19.5,
+  "close_total": 55.5
+ },
+ "401868962": {
+  "away": "Mississippi Valley State",
+  "home": "Nicholls",
+  "away_pts": 10,
+  "home_pts": 44,
+  "close_spread": -28.5,
+  "close_total": 51.5
+ },
+ "401868060": {
+  "away": "Gardner-Webb",
+  "home": "Austin Peay",
+  "away_pts": 17,
+  "home_pts": 35,
+  "close_spread": -14.5,
+  "close_total": 59.5
+ },
+ "401868169": {
+  "away": "Charleston Southern",
+  "home": "Lindenwood",
+  "away_pts": 17,
+  "home_pts": 20,
+  "close_spread": -7.5,
+  "close_total": 45.5
+ },
+ "401868315": {
+  "away": "Houston Christian",
+  "home": "SE Louisiana",
+  "away_pts": 34,
+  "home_pts": 28,
+  "close_spread": -24.5,
+  "close_total": 51.5
+ },
+ "401867865": {
+  "away": "Eastern Illinois",
+  "home": "Murray State",
+  "away_pts": 28,
+  "home_pts": 14,
+  "close_spread": -4.5,
+  "close_total": 49.5
+ },
+ "401868240": {
+  "away": "Chattanooga",
+  "home": "West Georgia",
+  "away_pts": 24,
+  "home_pts": 10,
+  "close_spread": 3.5,
+  "close_total": 50.5
+ },
+ "401868070": {
+  "away": "Central Arkansas",
+  "home": "UT Martin",
+  "away_pts": 36,
+  "home_pts": 24,
+  "close_spread": -3.0,
+  "close_total": 50.5
+ },
+ "401867874": {
+  "away": "Long Island University",
+  "home": "North Dakota",
+  "away_pts": 21,
+  "home_pts": 42,
+  "close_spread": -27.5,
+  "close_total": 44.5
+ },
+ "401868007": {
+  "away": "Colgate",
+  "home": "Fordham",
+  "away_pts": 24,
+  "home_pts": 14,
+  "close_spread": 8.5,
+  "close_total": 55.5
+ },
+ "401868040": {
+  "away": "William & Mary",
+  "home": "Villanova",
+  "away_pts": 35,
+  "home_pts": 32,
+  "close_spread": -12.5,
+  "close_total": 47.5
+ },
+ "401868261": {
+  "away": "Marist",
+  "home": "New Haven",
+  "away_pts": 21,
+  "home_pts": 22,
+  "close_spread": -2.5,
+  "close_total": 46.5
+ },
+ "401866617": {
+  "away": "Rhode Island",
+  "home": "Merrimack",
+  "away_pts": 34,
+  "home_pts": 7,
+  "close_spread": 21.0,
+  "close_total": 47.5
+ },
+ "401866616": {
+  "away": "New Hampshire",
+  "home": "UAlbany",
+  "away_pts": 14,
+  "home_pts": 28,
+  "close_spread": 10.0,
+  "close_total": 46.5
+ },
+ "401868129": {
+  "away": "Weber State",
+  "home": "Northern Colorado",
+  "away_pts": 30,
+  "home_pts": 29,
+  "close_spread": -3.0,
+  "close_total": 50.5
+ },
+ "401868073": {
+  "away": "Idaho",
+  "home": "Cal Poly",
+  "away_pts": 34,
+  "home_pts": 38,
+  "close_spread": 5.5,
+  "close_total": 53.5
+ },
+ "401856766": {
+  "away": "North Carolina",
+  "home": "TCU",
+  "away_pts": 15,
+  "home_pts": 10,
+  "close_spread": -7.5,
+  "close_total": 46.25
+ },
+ "401867916": {
+  "away": "Robert Morris",
+  "home": "Wagner",
+  "away_pts": 28,
+  "home_pts": 7,
+  "close_spread": -5.5,
+  "close_total": 40.5
+ },
+ "401867882": {
+  "away": "Central Connecticut",
+  "home": "South Dakota",
+  "away_pts": 20,
+  "home_pts": 59,
+  "close_spread": -20.5,
+  "close_total": 49.5
+ },
+ "401868324": {
+  "away": "Southern",
+  "home": "Alabama State",
+  "away_pts": 17,
+  "home_pts": 30,
+  "close_spread": 19.5,
+  "close_total": 56.5
+ },
+ "401864494": {
+  "away": "San Jos\u00e9 State",
+  "home": "USC",
+  "away_pts": 26,
+  "home_pts": 42,
+  "close_spread": -37.25,
+  "close_total": 61.0
+ },
+ "401868154": {
+  "away": "UC Davis",
+  "home": "Portland State",
+  "away_pts": 31,
+  "home_pts": 24,
+  "close_spread": 25.5,
+  "close_total": 60.5
+ },
+ "401868022": {
+  "away": "Lehigh",
+  "home": "Holy Cross",
+  "away_pts": 35,
+  "home_pts": 10,
+  "close_spread": 14.0,
+  "close_total": 47.5
+ },
+ "401858202": {
+  "away": "NC State",
+  "home": "Virginia",
+  "away_pts": 8,
+  "home_pts": 34,
+  "close_spread": -4.0,
+  "close_total": 50.5
+ },
+ "401868084": {
+  "away": "Eastern Washington",
+  "home": "Northern Arizona",
+  "away_pts": 27,
+  "home_pts": 34,
+  "close_spread": -5.5,
+  "close_total": 55.5
+ },
+ "401866620": {
+  "away": "Campbell",
+  "home": "East Tennessee State",
+  "away_pts": 49,
+  "home_pts": 37,
+  "close_spread": -7.0,
+  "close_total": 56.5
+ },
+ "401864577": {
+  "away": "Jacksonville State",
+  "home": "North Dakota State",
+  "away_pts": 7,
+  "home_pts": 33,
+  "close_spread": -6.75,
+  "close_total": 46.5
+ },
+ "401867855": {
+  "away": "Southeast Missouri State",
+  "home": "Indiana State",
+  "away_pts": 23,
+  "home_pts": 21,
+  "close_spread": -2.5,
+  "close_total": 52.5
+ },
+ "401866618": {
+  "away": "Morgan State",
+  "home": "North Carolina A&T",
+  "away_pts": 17,
+  "home_pts": 7,
+  "close_spread": 7.0,
+  "close_total": 49.5
+ },
+ "401866619": {
+  "away": "Bryant",
+  "home": "Stonehill",
+  "away_pts": 24,
+  "home_pts": 6,
+  "close_spread": 4.0,
+  "close_total": 45.5
+ },
+ "401868394": {
+  "away": "The Citadel",
+  "home": "Wofford",
+  "away_pts": 14,
+  "home_pts": 42,
+  "close_spread": -7.5,
+  "close_total": 45.5
+ },
+ "401867988": {
+  "away": "Bucknell",
+  "home": "Richmond",
+  "away_pts": 14,
+  "home_pts": 35,
+  "close_spread": -12.5,
+  "close_total": 48.5
+ },
+ "401868101": {
+  "away": "VMI",
+  "home": "Idaho State",
+  "away_pts": 10,
+  "home_pts": 38,
+  "close_spread": -34.5,
+  "close_total": 53.5
+ },
+ "401866408": {
+  "away": "Sacramento State",
+  "home": "Eastern Michigan",
+  "away_pts": 17,
+  "home_pts": 28,
+  "close_spread": -9.25,
+  "close_total": 52.75
+ },
+ "401868149": {
+  "away": "Samford",
+  "home": "North Alabama",
+  "away_pts": 10,
+  "home_pts": 22,
+  "close_spread": -7.0,
+  "close_total": 55.5
+ },
+ "401874042": {
+  "away": "East Texas A&M",
+  "home": "Mercer",
+  "away_pts": 15,
+  "home_pts": 23,
+  "close_spread": -22.5,
+  "close_total": 57.5
+ },
+ "401866621": {
+  "away": "Monmouth",
+  "home": "Tennessee Tech",
+  "away_pts": 14,
+  "home_pts": 38,
+  "close_spread": -8.5,
+  "close_total": 58.5
+ },
+ "401872615": {
+  "away": "Stetson",
+  "home": "South Dakota State",
+  "away_pts": 7,
+  "home_pts": 70,
+  "close_spread": -50.5,
+  "close_total": 58.5
+ },
+ "401864570": {
+  "away": "New Mexico State",
+  "home": "Florida State",
+  "away_pts": 17,
+  "home_pts": 34,
+  "close_spread": -30.75,
+  "close_total": 53.5
+ },
+ "401867977": {
+  "away": "North Carolina Central",
+  "home": "Texas Southern",
+  "away_pts": 30,
+  "home_pts": 42,
+  "close_spread": 10.5,
+  "close_total": 51.5
+ },
+ "401858201": {
+  "away": "Hawai'i",
+  "home": "Stanford",
+  "away_pts": 27,
+  "home_pts": 37,
+  "close_spread": -4.75,
+  "close_total": 48.5
+ },
+ "401868305": {
+  "away": "Stephen F. Austin",
+  "home": "McNeese",
+  "away_pts": 38,
+  "home_pts": 27,
+  "close_spread": 12.5,
+  "close_total": 49.5
+ },
+ "401868049": {
+  "away": "Abilene Christian",
+  "home": "Lamar",
+  "away_pts": 14,
+  "home_pts": 21,
+  "close_spread": 7.5,
+  "close_total": 49.5
+ },
+ "401868139": {
+  "away": "Eastern Kentucky",
+  "home": "Western Carolina",
+  "away_pts": 21,
+  "home_pts": 45,
+  "close_spread": -3.0,
+  "close_total": 54.5
+ },
+ "401867935": {
+  "away": "Alabama A&M",
+  "home": "Howard",
+  "away_pts": 24,
+  "home_pts": 31,
+  "close_spread": 1.5,
+  "close_total": 46.5
+ },
+ "401868194": {
+  "away": "Jackson State",
+  "home": "Tennessee State",
+  "away_pts": 26,
+  "home_pts": 24,
+  "close_spread": 12.5,
+  "close_total": 49.5
+ },
+ "401868235": {
+  "away": "Prairie View A&M",
+  "home": "Tarleton State",
+  "away_pts": 30,
+  "home_pts": 49,
+  "close_spread": -19.5,
+  "close_total": 54.5
+ },
+ "401868110": {
+  "away": "Southern Utah",
+  "home": "Montana",
+  "away_pts": 21,
+  "home_pts": 28,
+  "close_spread": -15.5,
+  "close_total": 59.5
+ },
+ "401868118": {
+  "away": "Montana State",
+  "home": "Utah Tech",
+  "away_pts": 54,
+  "home_pts": 0,
+  "close_spread": 32.5,
+  "close_total": 57.5
+ },
+ "401862693": {
+  "away": "Memphis",
+  "home": "UNLV",
+  "away_pts": 27,
+  "home_pts": 21,
+  "close_spread": -4.75,
+  "close_total": 55.5
+ },
+ "401858423": {
+  "away": "Massachusetts",
+  "home": "Rutgers",
+  "away_pts": 37,
+  "home_pts": 21,
+  "close_spread": -29.25,
+  "close_total": 55.0
+ },
+ "401856767": {
+  "away": "Bethune-Cookman",
+  "home": "UCF",
+  "away_pts": 6,
+  "home_pts": 73,
+  "close_spread": -43.5,
+  "close_total": 58.5
+ },
+ "401864424": {
+  "away": "Merrimack",
+  "home": "Delaware",
+  "away_pts": 7,
+  "home_pts": 42,
+  "close_spread": -31.5,
+  "close_total": 56.5
+ },
+ "401858204": {
+  "away": "Akron",
+  "home": "Wake Forest",
+  "away_pts": 16,
+  "home_pts": 38,
+  "close_spread": -27.5,
+  "close_total": 50.5
+ },
+ "401866622": {
+  "away": "Lindenwood",
+  "home": "Stony Brook",
+  "away_pts": 32,
+  "home_pts": 36,
+  "close_spread": -4.0,
+  "close_total": 50.5
+ },
+ "401864425": {
+  "away": "West Georgia",
+  "home": "Kennesaw State",
+  "away_pts": 0,
+  "home_pts": 47,
+  "close_spread": -22.5,
+  "close_total": 50.5
+ },
+ "401866409": {
+  "away": "UAlbany",
+  "home": "Buffalo",
+  "away_pts": 17,
+  "home_pts": 21,
+  "close_spread": -18.5,
+  "close_total": 47.5
+ },
+ "401867889": {
+  "away": "Southern Illinois",
+  "home": "Samford",
+  "away_pts": 22,
+  "home_pts": 18,
+  "close_spread": 20.5,
+  "close_total": 54.5
+ },
+ "401858422": {
+  "away": "Eastern Illinois",
+  "home": "Minnesota",
+  "away_pts": 7,
+  "home_pts": 59,
+  "close_spread": -42.5,
+  "close_total": 52.5
+ },
+ "401856663": {
+  "away": "Arkansas-Pine Bluff",
+  "home": "Missouri",
+  "away_pts": 14,
+  "home_pts": 54,
+  "close_spread": -55.5,
+  "close_total": 62.5
+ },
+ "401856776": {
+  "away": "Colorado",
+  "home": "Georgia Tech",
+  "away_pts": 14,
+  "home_pts": 13,
+  "close_spread": -6.5,
+  "close_total": 53.0
+ },
+ "401858424": {
+  "away": "UAB",
+  "home": "Illinois",
+  "away_pts": 23,
+  "home_pts": 42,
+  "close_spread": -26.0,
+  "close_total": 54.0
+ },
+ "401856768": {
+  "away": "Idaho",
+  "home": "Utah",
+  "away_pts": 14,
+  "home_pts": 66,
+  "close_spread": -38.5,
+  "close_total": 60.5
+ },
+ "401864495": {
+  "away": "San Jos\u00e9 State",
+  "home": "Eastern Michigan",
+  "away_pts": 27,
+  "home_pts": 21,
+  "close_spread": -1.5,
+  "close_total": 54.75
+ },
+ "401866623": {
+  "away": "North Carolina A&T",
+  "home": "Georgia State",
+  "away_pts": 10,
+  "home_pts": 59,
+  "close_spread": -28.25,
+  "close_total": 59.75
+ },
+ "401858435": {
+  "away": "Indiana State",
+  "home": "Purdue",
+  "away_pts": 19,
+  "home_pts": 44,
+  "close_spread": -35.5,
+  "close_total": 55.75
+ },
+ "401856769": {
+  "away": "Long Island University",
+  "home": "Kansas",
+  "away_pts": 6,
+  "home_pts": 51,
+  "close_spread": -43.25,
+  "close_total": 56.0
+ },
+ "401856664": {
+  "away": "UTEP",
+  "home": "Oklahoma",
+  "away_pts": 0,
+  "home_pts": 51,
+  "close_spread": -40.75,
+  "close_total": 51.25
+ },
+ "401858429": {
+  "away": "Toledo",
+  "home": "Michigan State",
+  "away_pts": 20,
+  "home_pts": 30,
+  "close_spread": -10.0,
+  "close_total": 48.5
+ },
+ "401858436": {
+  "away": "Fresno State",
+  "home": "USC",
+  "away_pts": 0,
+  "home_pts": 39,
+  "close_spread": -22.0,
+  "close_total": 51.25
+ },
+ "401858206": {
+  "away": "Miami",
+  "home": "Stanford",
+  "away_pts": 45,
+  "home_pts": 6,
+  "close_spread": 24.5,
+  "close_total": 46.5
+ },
+ "401869960": {
+  "away": "Liberty",
+  "home": "James Madison",
+  "away_pts": 13,
+  "home_pts": 20,
+  "close_spread": -6.0,
+  "close_total": 50.5
+ },
+ "401858425": {
+  "away": "North Texas",
+  "home": "Indiana",
+  "away_pts": 16,
+  "home_pts": 52,
+  "close_spread": -40.0,
+  "close_total": 56.75
+ },
+ "401858430": {
+  "away": "Ohio",
+  "home": "Nebraska",
+  "away_pts": 21,
+  "home_pts": 49,
+  "close_spread": -23.75,
+  "close_total": 47.0
+ },
+ "401867924": {
+  "away": "Stonehill",
+  "home": "New Haven",
+  "away_pts": 21,
+  "home_pts": 3,
+  "close_spread": -6.5,
+  "close_total": 42.5
+ },
+ "401861962": {
+  "away": "Lafayette",
+  "home": "UConn",
+  "away_pts": 7,
+  "home_pts": 56,
+  "close_spread": -20.5,
+  "close_total": 51.5
+ },
+ "401862701": {
+  "away": "Bryant",
+  "home": "Army",
+  "away_pts": 3,
+  "home_pts": 59,
+  "close_spread": -37.25,
+  "close_total": 51.0
+ },
+ "401856778": {
+  "away": "Oregon State",
+  "home": "Houston",
+  "away_pts": 20,
+  "home_pts": 33,
+  "close_spread": -20.75,
+  "close_total": 50.5
+ },
+ "401856634": {
+  "away": "East Carolina",
+  "home": "Alabama",
+  "away_pts": 10,
+  "home_pts": 48,
+  "close_spread": -28.25,
+  "close_total": 52.5
+ },
+ "401858208": {
+  "away": "New Hampshire",
+  "home": "Syracuse",
+  "away_pts": 3,
+  "home_pts": 66,
+  "close_spread": -35.0,
+  "close_total": 56.0
+ },
+ "401856780": {
+  "away": "Coastal Carolina",
+  "home": "West Virginia",
+  "away_pts": 24,
+  "home_pts": 31,
+  "close_spread": -21.0,
+  "close_total": 54.5
+ },
+ "401866410": {
+  "away": "Tarleton State",
+  "home": "Bowling Green",
+  "away_pts": 20,
+  "home_pts": 13,
+  "close_spread": -1.75,
+  "close_total": 48.75
+ },
+ "401868017": {
+  "away": "Lehigh",
+  "home": "Georgetown",
+  "away_pts": 45,
+  "home_pts": 14,
+  "close_spread": 22.5,
+  "close_total": 46.5
+ },
+ "401858207": {
+  "away": "Miami (OH)",
+  "home": "Pittsburgh",
+  "away_pts": 14,
+  "home_pts": 59,
+  "close_spread": -16.25,
+  "close_total": 47.25
+ },
+ "401858432": {
+  "away": "Ball State",
+  "home": "Ohio State",
+  "away_pts": 3,
+  "home_pts": 56,
+  "close_spread": -50.75,
+  "close_total": 56.0
+ },
+ "401856665": {
+  "away": "Kent State",
+  "home": "South Carolina",
+  "away_pts": 0,
+  "home_pts": 57,
+  "close_spread": -36.0,
+  "close_total": 53.0
+ },
+ "401864496": {
+  "away": "Duquesne",
+  "home": "Air Force",
+  "away_pts": 0,
+  "home_pts": 34,
+  "close_spread": -30.0,
+  "close_total": 56.5
+ },
+ "401856779": {
+  "away": "Southeast Missouri State",
+  "home": "Iowa State",
+  "away_pts": 10,
+  "home_pts": 38,
+  "close_spread": -29.5,
+  "close_total": 52.5
+ },
+ "401856659": {
+  "away": "Youngstown State",
+  "home": "Kentucky",
+  "away_pts": 13,
+  "home_pts": 45,
+  "close_spread": -22.25,
+  "close_total": 62.0
+ },
+ "401868000": {
+  "away": "Holy Cross",
+  "home": "Colgate",
+  "away_pts": 10,
+  "home_pts": 35,
+  "close_spread": -4.5,
+  "close_total": 49.5
+ },
+ "401868186": {
+  "away": "Gardner-Webb",
+  "home": "Wofford",
+  "away_pts": 13,
+  "home_pts": 17,
+  "close_spread": -8.5,
+  "close_total": 50.5
+ },
+ "401866624": {
+  "away": "Sacred Heart",
+  "home": "Monmouth",
+  "away_pts": 24,
+  "home_pts": 31,
+  "close_spread": -11.5,
+  "close_total": 58.5
+ },
+ "401862698": {
+  "away": "Rhode Island",
+  "home": "Temple",
+  "away_pts": 14,
+  "home_pts": 38,
+  "close_spread": -14.5,
+  "close_total": 51.25
+ },
+ "401868111": {
+  "away": "Drake",
+  "home": "Montana",
+  "away_pts": 10,
+  "home_pts": 45,
+  "close_spread": -35.5,
+  "close_total": 60.5
+ },
+ "401856658": {
+  "away": "Tennessee State",
+  "home": "Georgia",
+  "away_pts": 3,
+  "home_pts": 63,
+  "close_spread": -49.25,
+  "close_total": 55.25
+ },
+ "401856666": {
+  "away": "Furman",
+  "home": "Tennessee",
+  "away_pts": 9,
+  "home_pts": 56,
+  "close_spread": -49.25,
+  "close_total": 66.5
+ },
+ "401856777": {
+  "away": "Boston College",
+  "home": "Cincinnati",
+  "away_pts": 15,
+  "home_pts": 34,
+  "close_spread": -7.0,
+  "close_total": 51.25
+ },
+ "401862696": {
+  "away": "Towson",
+  "home": "Navy",
+  "away_pts": 15,
+  "home_pts": 42,
+  "close_spread": -31.0,
+  "close_total": 50.5
+ },
+ "401866627": {
+  "away": "Maine",
+  "home": "App State",
+  "away_pts": 3,
+  "home_pts": 55,
+  "close_spread": -21.0,
+  "close_total": 53.75
+ },
+ "401858209": {
+  "away": "Tulane",
+  "home": "Duke",
+  "away_pts": 3,
+  "home_pts": 17,
+  "close_spread": -8.75,
+  "close_total": 51.0
+ },
+ "401864499": {
+  "away": "Fordham",
+  "home": "North Dakota State",
+  "away_pts": 0,
+  "home_pts": 38,
+  "close_spread": -41.5,
+  "close_total": 54.25
+ },
+ "401858433": {
+  "away": "Boise State",
+  "home": "Oregon",
+  "away_pts": 27,
+  "home_pts": 34,
+  "close_spread": -24.75,
+  "close_total": 52.5
+ },
+ "401858434": {
+  "away": "Marshall",
+  "home": "Penn State",
+  "away_pts": 0,
+  "home_pts": 45,
+  "close_spread": -23.25,
+  "close_total": 52.75
+ },
+ "401862700": {
+  "away": "UT Rio Grande Valley",
+  "home": "UTSA",
+  "away_pts": 16,
+  "home_pts": 45,
+  "close_spread": -28.5,
+  "close_total": 59.5
+ },
+ "401862694": {
+  "away": "The Citadel",
+  "home": "Charlotte",
+  "away_pts": 43,
+  "home_pts": 41,
+  "close_spread": -20.5,
+  "close_total": 49.25
+ },
+ "401856636": {
+  "away": "Baylor",
+  "home": "Auburn",
+  "away_pts": 16,
+  "home_pts": 17,
+  "close_spread": -6.5,
+  "close_total": 58.5
+ },
+ "401856667": {
+  "away": "Texas State",
+  "home": "Texas",
+  "away_pts": 7,
+  "home_pts": 59,
+  "close_spread": -29.5,
+  "close_total": 60.75
+ },
+ "401856772": {
+  "away": "Oklahoma State",
+  "home": "Tulsa",
+  "away_pts": 10,
+  "home_pts": 24,
+  "close_spread": 13.25,
+  "close_total": 57.5
+ },
+ "401867875": {
+  "away": "St. Thomas (MN)",
+  "home": "North Dakota",
+  "away_pts": 26,
+  "home_pts": 62,
+  "close_spread": -28.5,
+  "close_total": 53.5
+ },
+ "401856635": {
+  "away": "North Alabama",
+  "home": "Arkansas",
+  "away_pts": 14,
+  "home_pts": 31,
+  "close_spread": -40.5,
+  "close_total": 63.25
+ },
+ "401858426": {
+  "away": "Northern Illinois",
+  "home": "Iowa",
+  "away_pts": 0,
+  "home_pts": 40,
+  "close_spread": -31.75,
+  "close_total": 44.5
+ },
+ "401868356": {
+  "away": "Alcorn State",
+  "home": "Southern Miss",
+  "away_pts": 3,
+  "home_pts": 49,
+  "close_spread": -20.0,
+  "close_total": 51.25
+ },
+ "401867989": {
+  "away": "Villanova",
+  "home": "Bucknell",
+  "away_pts": 17,
+  "home_pts": 16,
+  "close_spread": 22.5,
+  "close_total": 54.5
+ },
+ "401867973": {
+  "away": "Norfolk State",
+  "home": "Old Dominion",
+  "away_pts": 10,
+  "home_pts": 31,
+  "close_spread": -41.25,
+  "close_total": 52.25
+ },
+ "401860878": {
+  "away": "Wyoming",
+  "home": "Colorado State",
+  "away_pts": 13,
+  "home_pts": 35,
+  "close_spread": -2.75,
+  "close_total": 46.0
+ },
+ "401868336": {
+  "away": "Tennessee Tech",
+  "home": "Chattanooga",
+  "away_pts": 24,
+  "home_pts": 9,
+  "close_spread": 10.5,
+  "close_total": 48.5
+ },
+ "401867692": {
+  "away": "Delaware State",
+  "home": "William & Mary",
+  "away_pts": 15,
+  "home_pts": 22,
+  "close_spread": -9.5,
+  "close_total": 54.5
+ },
+ "401868274": {
+  "away": "Presbyterian",
+  "home": "Mercer",
+  "away_pts": 3,
+  "home_pts": 62,
+  "close_spread": -22.5,
+  "close_total": 54.5
+ },
+ "401866626": {
+  "away": "Elon",
+  "home": "Davidson",
+  "away_pts": 38,
+  "home_pts": 0,
+  "close_spread": 32.5,
+  "close_total": 58.5
+ },
+ "401869127": {
+  "away": "Richmond",
+  "home": "Howard",
+  "away_pts": 28,
+  "home_pts": 21,
+  "close_spread": 14.0,
+  "close_total": 43.5
+ },
+ "401856770": {
+  "away": "Abilene Christian",
+  "home": "Texas Tech",
+  "away_pts": 10,
+  "home_pts": 33,
+  "close_spread": -45.0,
+  "close_total": 61.0
+ },
+ "401856771": {
+  "away": "Nicholls",
+  "home": "Kansas State",
+  "away_pts": 3,
+  "home_pts": 71,
+  "close_spread": -41.25,
+  "close_total": 55.25
+ },
+ "401862699": {
+  "away": "Florida International",
+  "home": "South Florida",
+  "away_pts": 9,
+  "home_pts": 19,
+  "close_spread": -14.5,
+  "close_total": 53.25
+ },
+ "401868140": {
+  "away": "Eastern Kentucky",
+  "home": "Jacksonville State",
+  "away_pts": 7,
+  "home_pts": 49,
+  "close_spread": -22.25,
+  "close_total": 52.25
+ },
+ "401868170": {
+  "away": "Charleston Southern",
+  "home": "Georgia Southern",
+  "away_pts": 0,
+  "home_pts": 31,
+  "close_spread": -28.25,
+  "close_total": 52.0
+ },
+ "401856669": {
+  "away": "Austin Peay",
+  "home": "Vanderbilt",
+  "away_pts": 9,
+  "home_pts": 28,
+  "close_spread": -29.25,
+  "close_total": 58.25
+ },
+ "401856668": {
+  "away": "Missouri State",
+  "home": "Texas A&M",
+  "away_pts": 0,
+  "home_pts": 50,
+  "close_spread": -39.5,
+  "close_total": 53.5
+ },
+ "401862697": {
+  "away": "Houston Christian",
+  "home": "Rice",
+  "away_pts": 3,
+  "home_pts": 31,
+  "close_spread": -22.75,
+  "close_total": 47.5
+ },
+ "401870763": {
+  "away": "Sam Houston",
+  "home": "Troy",
+  "away_pts": 21,
+  "home_pts": 24,
+  "close_spread": -16.0,
+  "close_total": 52.75
+ },
+ "401860880": {
+  "away": "Idaho State",
+  "home": "Utah State",
+  "away_pts": 29,
+  "home_pts": 17,
+  "close_spread": -15.0,
+  "close_total": 59.75
+ },
+ "401862695": {
+  "away": "Arkansas State",
+  "home": "Memphis",
+  "away_pts": 24,
+  "home_pts": 42,
+  "close_spread": -10.5,
+  "close_total": 52.25
+ },
+ "401868085": {
+  "away": "Northern Iowa",
+  "home": "Eastern Washington",
+  "away_pts": 24,
+  "home_pts": 34,
+  "close_spread": -7.0,
+  "close_total": 52.5
+ },
+ "401868316": {
+  "away": "SE Louisiana",
+  "home": "South Alabama",
+  "away_pts": 14,
+  "home_pts": 39,
+  "close_spread": -13.75,
+  "close_total": 53.5
+ },
+ "401867866": {
+  "away": "Murray State",
+  "home": "Middle Tennessee",
+  "away_pts": 14,
+  "home_pts": 38,
+  "close_spread": -22.5,
+  "close_total": 55.75
+ },
+ "401868071": {
+  "away": "West Florida",
+  "home": "Central Arkansas",
+  "away_pts": 42,
+  "home_pts": 14,
+  "close_spread": -7.5,
+  "close_total": 55.5
+ },
+ "401867684": {
+  "away": "Chicago State",
+  "home": "UT Martin",
+  "away_pts": 7,
+  "home_pts": 42,
+  "close_spread": -45.5,
+  "close_total": 61.5
+ },
+ "401856660": {
+  "away": "Clemson",
+  "home": "LSU",
+  "away_pts": 10,
+  "home_pts": 51,
+  "close_spread": -10.0,
+  "close_total": 49.25
+ },
+ "401858428": {
+  "away": "Western Michigan",
+  "home": "Michigan",
+  "away_pts": 12,
+  "home_pts": 13,
+  "close_spread": -27.5,
+  "close_total": 50.0
+ },
+ "401869129": {
+  "away": "Northwestern State",
+  "home": "Louisiana Tech",
+  "away_pts": 6,
+  "home_pts": 80,
+  "close_spread": -44.5,
+  "close_total": 56.5
+ },
+ "401856662": {
+  "away": "UL Monroe",
+  "home": "Mississippi State",
+  "away_pts": 13,
+  "home_pts": 62,
+  "close_spread": -28.5,
+  "close_total": 54.75
+ },
+ "401858211": {
+  "away": "VMI",
+  "home": "Virginia Tech",
+  "away_pts": 3,
+  "home_pts": 73,
+  "close_spread": -54.5,
+  "close_total": 61.25
+ },
+ "401856637": {
+  "away": "Florida Atlantic",
+  "home": "Florida",
+  "away_pts": 21,
+  "home_pts": 66,
+  "close_spread": -26.5,
+  "close_total": 59.5
+ },
+ "401868158": {
+  "away": "Weber State",
+  "home": "Southern Utah",
+  "away_pts": 42,
+  "home_pts": 47,
+  "close_spread": -14.5,
+  "close_total": 58.5
+ },
+ "401868306": {
+  "away": "East Texas A&M",
+  "home": "Stephen F. Austin",
+  "away_pts": 7,
+  "home_pts": 44,
+  "close_spread": -23.5,
+  "close_total": 55.5
+ },
+ "401869142": {
+  "away": "Lamar",
+  "home": "Louisiana",
+  "away_pts": 7,
+  "home_pts": 38,
+  "close_spread": -20.25,
+  "close_total": 48.5
+ },
+ "401858431": {
+  "away": "South Dakota State",
+  "home": "Northwestern",
+  "away_pts": 18,
+  "home_pts": 34,
+  "close_spread": -13.25,
+  "close_total": 49.0
+ },
+ "401856775": {
+  "away": "Utah Tech",
+  "home": "BYU",
+  "away_pts": 7,
+  "home_pts": 63,
+  "close_spread": -50.0,
+  "close_total": 61.25
+ },
+ "401867845": {
+  "away": "Illinois State",
+  "home": "Western Illinois",
+  "away_pts": 41,
+  "home_pts": 10,
+  "close_spread": 20.5,
+  "close_total": 58.5
+ },
+ "401867883": {
+  "away": "South Dakota",
+  "home": "Northern Colorado",
+  "away_pts": 38,
+  "home_pts": 23,
+  "close_spread": 20.5,
+  "close_total": 56.5
+ },
+ "401858427": {
+  "away": "Hampton",
+  "home": "Maryland",
+  "away_pts": 0,
+  "home_pts": 62,
+  "close_spread": -45.5,
+  "close_total": 56.25
+ },
+ "401868119": {
+  "away": "Butler",
+  "home": "Montana State",
+  "away_pts": 24,
+  "home_pts": 51,
+  "close_spread": -45.5,
+  "close_total": 59.5
+ },
+ "401870790": {
+  "away": "Mercyhurst",
+  "home": "New Mexico State",
+  "away_pts": 14,
+  "home_pts": 51,
+  "close_spread": -29.0,
+  "close_total": 52.25
+ },
+ "401860879": {
+  "away": "Portland State",
+  "home": "San Diego State",
+  "away_pts": 20,
+  "home_pts": 53,
+  "close_spread": -39.5,
+  "close_total": 61.75
+ },
+ "401856773": {
+  "away": "Northern Arizona",
+  "home": "Arizona",
+  "away_pts": 7,
+  "home_pts": 35,
+  "close_spread": -32.5,
+  "close_total": 59.0
+ },
+ "401864498": {
+  "away": "Central Michigan",
+  "home": "New Mexico",
+  "away_pts": 7,
+  "home_pts": 38,
+  "close_spread": -11.25,
+  "close_total": 47.25
+ },
+ "401868163": {
+  "away": "UC Davis",
+  "home": "San Diego",
+  "away_pts": 49,
+  "home_pts": 17,
+  "close_spread": 14.5,
+  "close_total": 54.5
+ },
+ "401856774": {
+  "away": "Morgan State",
+  "home": "Arizona State",
+  "away_pts": 7,
+  "home_pts": 70,
+  "close_spread": -44.25,
+  "close_total": 52.5
+ },
+ "401864497": {
+  "away": "UNLV",
+  "home": "Hawai'i",
+  "away_pts": 21,
+  "home_pts": 6,
+  "close_spread": 2.75,
+  "close_total": 55.5
+ },
+ "401866411": {
+  "away": "Mississippi Valley State",
+  "home": "Sacramento State",
+  "away_pts": 0,
+  "home_pts": 52,
+  "close_spread": -38.5,
+  "close_total": 56.5
+ },
+ "401858210": {
+  "away": "UCLA",
+  "home": "California",
+  "away_pts": 45,
+  "home_pts": 24,
+  "close_spread": 2.5,
+  "close_total": 53.5
+ },
+ "401864432": {
+  "away": "Western Kentucky",
+  "home": "Nevada",
+  "away_pts": 14,
+  "home_pts": 49,
+  "close_spread": 0.25,
+  "close_total": 51.5
+ },
+ "401917058": {
+  "away": "Western Carolina",
+  "home": "Campbell",
+  "away_pts": 19,
+  "home_pts": 28,
+  "close_spread": 4.0,
+  "close_total": 70.5
+ },
+ "401868967": {
+  "away": "Texas Southern",
+  "home": "Prairie View A&M",
+  "away_pts": 14,
+  "home_pts": 52,
+  "close_spread": -10.5,
+  "close_total": 54.5
+ },
+ "401867939": {
+  "away": "South Carolina State",
+  "home": "Florida A&M",
+  "away_pts": 31,
+  "home_pts": 13,
+  "close_spread": 19.5,
+  "close_total": 52.5
+ },
+ "401858437": {
+  "away": "Washington State",
+  "home": "Washington",
+  "away_pts": 10,
+  "home_pts": 24,
+  "close_spread": -23.25,
+  "close_total": 51.25
+ },
+ "401856661": {
+  "away": "Louisville",
+  "home": "Ole Miss",
+  "away_pts": 38,
+  "home_pts": 41,
+  "close_spread": -6.5,
+  "close_total": 54.75
+ },
+ "401858438": {
+  "away": "Wisconsin",
+  "home": "Notre Dame",
+  "away_pts": 13,
+  "home_pts": 41,
+  "close_spread": -20.75,
+  "close_total": 46.0
+ },
+ "401858212": {
+  "away": "SMU",
+  "home": "Florida State",
+  "away_pts": 27,
+  "home_pts": 24,
+  "close_spread": 3.0,
+  "close_total": 53.5
+ },
+ "401858213": {
+  "away": "Florida A&M",
+  "home": "Miami",
+  "away_pts": 7,
+  "home_pts": 77,
+  "close_spread": -59.5,
+  "close_total": 65.75
+ },
+ "401858220": {
+  "away": "Norfolk State",
+  "home": "Virginia",
+  "away_pts": 3,
+  "home_pts": 59,
+  "close_spread": -47.25,
+  "close_total": 56.5
+ },
+ "401858215": {
+  "away": "Villanova",
+  "home": "Louisville",
+  "away_pts": 13,
+  "home_pts": 59,
+  "close_spread": -39.0,
+  "close_total": 56.75
+ },
+ "401858222": {
+  "away": "Richmond",
+  "home": "NC State",
+  "away_pts": 0,
+  "home_pts": 73,
+  "close_spread": -33.25,
+  "close_total": 50.5
+ },
+ "401858214": {
+  "away": "Rutgers",
+  "home": "Boston College",
+  "away_pts": 21,
+  "home_pts": 28,
+  "close_spread": -3.0,
+  "close_total": 53.5
+ },
+ "401856678": {
+  "away": "Missouri",
+  "home": "Kansas",
+  "away_pts": 38,
+  "home_pts": 21,
+  "close_spread": 4.0,
+  "close_total": 51.75
+ },
+ "401856683": {
+  "away": "Arizona State",
+  "home": "Texas A&M",
+  "away_pts": 20,
+  "home_pts": 48,
+  "close_spread": -15.25,
+  "close_total": 51.5
+ },
+ "401858218": {
+  "away": "East Tennessee State",
+  "home": "North Carolina",
+  "away_pts": 3,
+  "home_pts": 35,
+  "close_spread": -36.0,
+  "close_total": 55.25
+ },
+ "401864571": {
+  "away": "App State",
+  "home": "East Carolina",
+  "away_pts": 27,
+  "home_pts": 24,
+  "close_spread": -6.5,
+  "close_total": 55.75
+ },
+ "401866633": {
+  "away": "North Carolina A&T",
+  "home": "North Carolina Central",
+  "away_pts": 22,
+  "home_pts": 30,
+  "close_spread": -24.5,
+  "close_total": 55.5
+ },
+ "401868187": {
+  "away": "Gardner-Webb",
+  "home": "Liberty",
+  "away_pts": 23,
+  "home_pts": 24,
+  "close_spread": -28.5,
+  "close_total": 55.5
+ },
+ "401858221": {
+  "away": "Old Dominion",
+  "home": "Virginia Tech",
+  "away_pts": 21,
+  "home_pts": 44,
+  "close_spread": -17.75,
+  "close_total": 47.5
+ },
+ "401856782": {
+  "away": "Oregon",
+  "home": "Oklahoma State",
+  "away_pts": 31,
+  "home_pts": 39,
+  "close_spread": 24.25,
+  "close_total": 55.5
+ },
+ "401858439": {
+  "away": "Howard",
+  "home": "Indiana",
+  "away_pts": 0,
+  "home_pts": 55,
+  "close_spread": -57.5,
+  "close_total": 67.5
+ },
+ "401866628": {
+  "away": "Elon",
+  "home": "Rhode Island",
+  "away_pts": 10,
+  "home_pts": 31,
+  "close_spread": -8.5,
+  "close_total": 48.5
+ },
+ "401867929": {
+  "away": "Wagner",
+  "home": "James Madison",
+  "away_pts": 3,
+  "home_pts": 87,
+  "close_spread": -46.5,
+  "close_total": 56.75
+ },
+ "401856781": {
+  "away": "Washington State",
+  "home": "Kansas State",
+  "away_pts": 7,
+  "home_pts": 34,
+  "close_spread": -17.75,
+  "close_total": 48.25
+ },
+ "401862702": {
+  "away": "South Florida",
+  "home": "Army",
+  "away_pts": 28,
+  "home_pts": 24,
+  "close_spread": -3.0,
+  "close_total": 45.5
+ },
+ "401866416": {
+  "away": "Wofford",
+  "home": "Kent State",
+  "away_pts": 15,
+  "home_pts": 36,
+  "close_spread": -10.5,
+  "close_total": 46.25
+ },
+ "401858224": {
+  "away": "Wake Forest",
+  "home": "Purdue",
+  "away_pts": 38,
+  "home_pts": 36,
+  "close_spread": 2.5,
+  "close_total": 51.25
+ },
+ "401856679": {
+  "away": "Oklahoma",
+  "home": "Michigan",
+  "away_pts": 10,
+  "home_pts": 17,
+  "close_spread": 5.0,
+  "close_total": 43.5
+ },
+ "401866632": {
+  "away": "UAlbany",
+  "home": "Long Island University",
+  "away_pts": 35,
+  "home_pts": 13,
+  "close_spread": 2.5,
+  "close_total": 44.5
+ },
+ "401858442": {
+  "away": "Penn State",
+  "home": "Temple",
+  "away_pts": 27,
+  "home_pts": 9,
+  "close_spread": 24.25,
+  "close_total": 49.75
+ },
+ "401868028": {
+  "away": "Marist",
+  "home": "Lafayette",
+  "away_pts": 9,
+  "home_pts": 13,
+  "close_spread": -15.5,
+  "close_total": 47.5
+ },
+ "401856673": {
+  "away": "Western Kentucky",
+  "home": "Georgia",
+  "away_pts": 20,
+  "home_pts": 70,
+  "close_spread": -40.25,
+  "close_total": 55.75
+ },
+ "401856791": {
+  "away": "UT Martin",
+  "home": "West Virginia",
+  "away_pts": 7,
+  "home_pts": 52,
+  "close_spread": -41.5,
+  "close_total": 57.5
+ },
+ "401866415": {
+  "away": "Colgate",
+  "home": "Central Michigan",
+  "away_pts": 10,
+  "home_pts": 13,
+  "close_spread": -18.5,
+  "close_total": 48.75
+ },
+ "401866417": {
+  "away": "Holy Cross",
+  "home": "Miami (OH)",
+  "away_pts": 7,
+  "home_pts": 45,
+  "close_spread": -30.5,
+  "close_total": 46.75
+ },
+ "401867990": {
+  "away": "Bucknell",
+  "home": "VMI",
+  "away_pts": 14,
+  "home_pts": 3,
+  "close_spread": 8.5,
+  "close_total": 47.5
+ },
+ "401866413": {
+  "away": "Stony Brook",
+  "home": "Ball State",
+  "away_pts": 17,
+  "home_pts": 41,
+  "close_spread": -13.5,
+  "close_total": 52.75
+ },
+ "401867895": {
+  "away": "Duquesne",
+  "home": "Youngstown State",
+  "away_pts": 13,
+  "home_pts": 70,
+  "close_spread": -22.5,
+  "close_total": 54.5
+ },
+ "401867884": {
+  "away": "Eastern Washington",
+  "home": "South Dakota",
+  "away_pts": 23,
+  "home_pts": 41,
+  "close_spread": -15.5,
+  "close_total": 61.5
+ },
+ "401868255": {
+  "away": "Drake",
+  "home": "Northern Iowa",
+  "away_pts": 14,
+  "home_pts": 56,
+  "close_spread": -11.5,
+  "close_total": 59.5
+ },
+ "401868033": {
+  "away": "William & Mary",
+  "home": "Lehigh",
+  "away_pts": 20,
+  "home_pts": 44,
+  "close_spread": -13.5,
+  "close_total": 47.5
+ },
+ "401868112": {
+  "away": "Utah Tech",
+  "home": "Montana",
+  "away_pts": 14,
+  "home_pts": 35,
+  "close_spread": -37.0,
+  "close_total": 56.5
+ },
+ "401856677": {
+  "away": "Mississippi State",
+  "home": "Minnesota",
+  "away_pts": 38,
+  "home_pts": 13,
+  "close_spread": 0.25,
+  "close_total": 53.5
+ },
+ "401856810": {
+  "away": "Arizona",
+  "home": "BYU",
+  "away_pts": 17,
+  "home_pts": 28,
+  "close_spread": -6.75,
+  "close_total": 49.25
+ },
+ "401860884": {
+  "away": "UTSA",
+  "home": "Texas State",
+  "away_pts": 31,
+  "home_pts": 26,
+  "close_spread": -1.5,
+  "close_total": 65.5
+ },
+ "401858217": {
+  "away": "Duke",
+  "home": "Illinois",
+  "away_pts": 31,
+  "home_pts": 27,
+  "close_spread": -6.25,
+  "close_total": 51.5
+ },
+ "401856674": {
+  "away": "Alabama",
+  "home": "Kentucky",
+  "away_pts": 45,
+  "home_pts": 17,
+  "close_spread": 8.75,
+  "close_total": 47.25
+ },
+ "401858446": {
+  "away": "Utah State",
+  "home": "Washington",
+  "away_pts": 14,
+  "home_pts": 16,
+  "close_spread": -28.5,
+  "close_total": 55.5
+ },
+ "401859184": {
+  "away": "Rice",
+  "home": "Notre Dame",
+  "away_pts": 0,
+  "home_pts": 52,
+  "close_spread": -44.75,
+  "close_total": 54.5
+ },
+ "401858440": {
+  "away": "Eastern Michigan",
+  "home": "Michigan State",
+  "away_pts": 7,
+  "home_pts": 35,
+  "close_spread": -17.5,
+  "close_total": 49.75
+ },
+ "401858216": {
+  "away": "California",
+  "home": "Syracuse",
+  "away_pts": 21,
+  "home_pts": 18,
+  "close_spread": -4.0,
+  "close_total": 56.75
+ },
+ "401866419": {
+  "away": "Central Connecticut",
+  "home": "Toledo",
+  "away_pts": 10,
+  "home_pts": 63,
+  "close_spread": -36.5,
+  "close_total": 52.5
+ },
+ "401858444": {
+  "away": "Maryland",
+  "home": "UConn",
+  "away_pts": 38,
+  "home_pts": 14,
+  "close_spread": 11.5,
+  "close_total": 52.5
+ },
+ "401856785": {
+  "away": "Weber State",
+  "home": "Colorado",
+  "away_pts": 21,
+  "home_pts": 52,
+  "close_spread": -38.5,
+  "close_total": 57.5
+ },
+ "401856790": {
+  "away": "UCF",
+  "home": "Pittsburgh",
+  "away_pts": 7,
+  "home_pts": 12,
+  "close_spread": -7.25,
+  "close_total": 55.25
+ },
+ "401862708": {
+  "away": "UL Monroe",
+  "home": "UAB",
+  "away_pts": 20,
+  "home_pts": 26,
+  "close_spread": -9.25,
+  "close_total": 53.5
+ },
+ "401866412": {
+  "away": "Robert Morris",
+  "home": "Akron",
+  "away_pts": 10,
+  "home_pts": 45,
+  "close_spread": -26.5,
+  "close_total": 45.5
+ },
+ "401866420": {
+  "away": "Sacred Heart",
+  "home": "Massachusetts",
+  "away_pts": 10,
+  "home_pts": 37,
+  "close_spread": -23.5,
+  "close_total": 53.5
+ },
+ "401862705": {
+  "away": "UNLV",
+  "home": "North Texas",
+  "away_pts": 6,
+  "home_pts": 44,
+  "close_spread": 2.75,
+  "close_total": 58.25
+ },
+ "401868093": {
+  "away": "Lamar",
+  "home": "Idaho",
+  "away_pts": 23,
+  "home_pts": 17,
+  "close_spread": -4.5,
+  "close_total": 51.5
+ },
+ "401865252": {
+  "away": "Mercyhurst",
+  "home": "New Mexico",
+  "away_pts": 7,
+  "home_pts": 70,
+  "close_spread": -42.25,
+  "close_total": 54.5
+ },
+ "401864506": {
+  "away": "Northern Colorado",
+  "home": "Wyoming",
+  "away_pts": 13,
+  "home_pts": 21,
+  "close_spread": -23.5,
+  "close_total": 44.25
+ },
+ "401868285": {
+  "away": "Stetson",
+  "home": "Bethune-Cookman",
+  "away_pts": 18,
+  "home_pts": 43,
+  "close_spread": -14.5,
+  "close_total": 56.5
+ },
+ "401858223": {
+  "away": "UC Davis",
+  "home": "SMU",
+  "away_pts": 10,
+  "home_pts": 56,
+  "close_spread": -32.5,
+  "close_total": 59.25
+ },
+ "401868326": {
+  "away": "Alabama State",
+  "home": "Troy",
+  "away_pts": 17,
+  "home_pts": 34,
+  "close_spread": -23.75,
+  "close_total": 52.5
+ },
+ "401856684": {
+  "away": "Delaware",
+  "home": "Vanderbilt",
+  "away_pts": 26,
+  "home_pts": 35,
+  "close_spread": -20.75,
+  "close_total": 54.5
+ },
+ "401868123": {
+  "away": "Incarnate Word",
+  "home": "Northern Arizona",
+  "away_pts": 28,
+  "home_pts": 38,
+  "close_spread": -4.5,
+  "close_total": 54.5
+ },
+ "401868061": {
+  "away": "Morehead State",
+  "home": "Austin Peay",
+  "away_pts": 7,
+  "home_pts": 63,
+  "close_spread": -36.5,
+  "close_total": 62.5
+ },
+ "401866630": {
+  "away": "Merrimack",
+  "home": "Maine",
+  "away_pts": 23,
+  "home_pts": 14,
+  "close_spread": -10.0,
+  "close_total": 47.5
+ },
+ "401856672": {
+  "away": "Campbell",
+  "home": "Florida",
+  "away_pts": 3,
+  "home_pts": 52,
+  "close_spread": -51.5,
+  "close_total": 66.75
+ },
+ "401860881": {
+  "away": "Memphis",
+  "home": "Boise State",
+  "away_pts": 20,
+  "home_pts": 38,
+  "close_spread": -9.25,
+  "close_total": 54.5
+ },
+ "401866414": {
+  "away": "Buffalo",
+  "home": "Florida International",
+  "away_pts": 20,
+  "home_pts": 33,
+  "close_spread": -8.75,
+  "close_total": 47.5
+ },
+ "401866629": {
+  "away": "Bryant",
+  "home": "Hampton",
+  "away_pts": 31,
+  "home_pts": 3,
+  "close_spread": 3.5,
+  "close_total": 51.5
+ },
+ "401868102": {
+  "away": "San Diego",
+  "home": "Idaho State",
+  "away_pts": 17,
+  "home_pts": 59,
+  "close_spread": -22.5,
+  "close_total": 58.5
+ },
+ "401866418": {
+  "away": "Jacksonville State",
+  "home": "Ohio",
+  "away_pts": 27,
+  "home_pts": 29,
+  "close_spread": -1.75,
+  "close_total": 49.25
+ },
+ "401868374": {
+  "away": "Furman",
+  "home": "Mercer",
+  "away_pts": 20,
+  "home_pts": 13,
+  "close_spread": -15.5,
+  "close_total": 54.5
+ },
+ "401866631": {
+  "away": "Stonehill",
+  "home": "New Hampshire",
+  "away_pts": 35,
+  "home_pts": 42,
+  "close_spread": -13.5,
+  "close_total": 43.5
+ },
+ "401868141": {
+  "away": "Chattanooga",
+  "home": "Eastern Kentucky",
+  "away_pts": 17,
+  "home_pts": 22,
+  "close_spread": 3.0,
+  "close_total": 48.5
+ },
+ "401868171": {
+  "away": "Charleston Southern",
+  "home": "The Citadel",
+  "away_pts": 26,
+  "home_pts": 20,
+  "close_spread": -3.0,
+  "close_total": 45.5
+ },
+ "401866421": {
+  "away": "Monmouth",
+  "home": "Western Michigan",
+  "away_pts": 14,
+  "home_pts": 49,
+  "close_spread": -29.0,
+  "close_total": 54.5
+ },
+ "401868355": {
+  "away": "Arkansas-Pine Bluff",
+  "home": "Alcorn State",
+  "away_pts": 51,
+  "home_pts": 53,
+  "close_spread": -8.5,
+  "close_total": 49.5
+ },
+ "401868246": {
+  "away": "UT Rio Grande Valley",
+  "home": "Nicholls",
+  "away_pts": 28,
+  "home_pts": 31,
+  "close_spread": 5.5,
+  "close_total": 50.5
+ },
+ "401868236": {
+  "away": "Tarleton State",
+  "home": "McNeese",
+  "away_pts": 27,
+  "home_pts": 24,
+  "close_spread": 19.5,
+  "close_total": 56.5
+ },
+ "401856680": {
+  "away": "Towson",
+  "home": "South Carolina",
+  "away_pts": 9,
+  "home_pts": 45,
+  "close_spread": -44.5,
+  "close_total": 57.5
+ },
+ "401868386": {
+  "away": "Samford",
+  "home": "Tennessee Tech",
+  "away_pts": 19,
+  "home_pts": 45,
+  "close_spread": -26.5,
+  "close_total": 48.5
+ },
+ "401856786": {
+  "away": "Western Carolina",
+  "home": "Cincinnati",
+  "away_pts": 10,
+  "home_pts": 62,
+  "close_spread": -36.5,
+  "close_total": 61.5
+ },
+ "401868150": {
+  "away": "North Alabama",
+  "home": "SE Louisiana",
+  "away_pts": 25,
+  "home_pts": 30,
+  "close_spread": -6.5,
+  "close_total": 51.5
+ },
+ "401858441": {
+  "away": "Bowling Green",
+  "home": "Nebraska",
+  "away_pts": 7,
+  "home_pts": 56,
+  "close_spread": -30.5,
+  "close_total": 48.75
+ },
+ "401868241": {
+  "away": "West Georgia",
+  "home": "Arkansas State",
+  "away_pts": 7,
+  "home_pts": 52,
+  "close_spread": -31.5,
+  "close_total": 56.5
+ },
+ "401871046": {
+  "away": "Lindenwood",
+  "home": "Missouri State",
+  "away_pts": 14,
+  "home_pts": 48,
+  "close_spread": -16.75,
+  "close_total": 53.25
+ },
+ "401868195": {
+  "away": "Tennessee State",
+  "home": "Alabama A&M",
+  "away_pts": 3,
+  "home_pts": 30,
+  "close_spread": 3.5,
+  "close_total": 49.5
+ },
+ "401864503": {
+  "away": "Illinois State",
+  "home": "Northern Illinois",
+  "away_pts": 28,
+  "home_pts": 24,
+  "close_spread": 2.5,
+  "close_total": 47.75
+ },
+ "401867856": {
+  "away": "Indiana State",
+  "home": "Eastern Illinois",
+  "away_pts": 42,
+  "home_pts": 35,
+  "close_spread": 3.0,
+  "close_total": 49.5
+ },
+ "401871045": {
+  "away": "Middle Tennessee",
+  "home": "Marshall",
+  "away_pts": 26,
+  "home_pts": 28,
+  "close_spread": -12.25,
+  "close_total": 56.0
+ },
+ "401869955": {
+  "away": "Georgia State",
+  "home": "Kennesaw State",
+  "away_pts": 31,
+  "home_pts": 17,
+  "close_spread": -7.5,
+  "close_total": 55.5
+ },
+ "401864575": {
+  "away": "South Alabama",
+  "home": "Tulane",
+  "away_pts": 24,
+  "home_pts": 28,
+  "close_spread": -9.5,
+  "close_total": 48.0
+ },
+ "401862707": {
+  "away": "Tulsa",
+  "home": "Sam Houston",
+  "away_pts": 23,
+  "home_pts": 17,
+  "close_spread": 12.0,
+  "close_total": 51.75
+ },
+ "401856787": {
+  "away": "Southern",
+  "home": "Houston",
+  "away_pts": 6,
+  "home_pts": 77,
+  "close_spread": -51.75,
+  "close_total": 61.75
+ },
+ "401856681": {
+  "away": "Tennessee",
+  "home": "Georgia Tech",
+  "away_pts": 45,
+  "home_pts": 24,
+  "close_spread": 12.5,
+  "close_total": 55.5
+ },
+ "401860882": {
+  "away": "Southern Utah",
+  "home": "Colorado State",
+  "away_pts": 24,
+  "home_pts": 58,
+  "close_spread": -19.75,
+  "close_total": 57.25
+ },
+ "401867890": {
+  "away": "Southeast Missouri State",
+  "home": "Southern Illinois",
+  "away_pts": 20,
+  "home_pts": 34,
+  "close_spread": -7.5,
+  "close_total": 53.5
+ },
+ "401872616": {
+  "away": "New Haven",
+  "home": "South Dakota State",
+  "away_pts": 14,
+  "home_pts": 57,
+  "close_spread": -42.5,
+  "close_total": 54.5
+ },
+ "401869130": {
+  "away": "Northwestern State",
+  "home": "East Texas A&M",
+  "away_pts": 14,
+  "home_pts": 38,
+  "close_spread": -20.5,
+  "close_total": 53.5
+ },
+ "401867867": {
+  "away": "Valparaiso",
+  "home": "Murray State",
+  "away_pts": 18,
+  "home_pts": 27,
+  "close_spread": -14.0,
+  "close_total": 47.5
+ },
+ "401858447": {
+  "away": "Western Illinois",
+  "home": "Wisconsin",
+  "away_pts": 9,
+  "home_pts": 36,
+  "close_spread": -43.25,
+  "close_total": 53.25
+ },
+ "401858443": {
+  "away": "San Diego State",
+  "home": "UCLA",
+  "away_pts": 10,
+  "home_pts": 28,
+  "close_spread": -13.5,
+  "close_total": 53.5
+ },
+ "401856682": {
+  "away": "Ohio State",
+  "home": "Texas",
+  "away_pts": 23,
+  "home_pts": 24,
+  "close_spread": -2.25,
+  "close_total": 50.75
+ },
+ "401867796": {
+  "away": "Louisiana Tech",
+  "home": "LSU",
+  "away_pts": 14,
+  "home_pts": 45,
+  "close_spread": -34.75,
+  "close_total": 54.75
+ },
+ "401868008": {
+  "away": "Fordham",
+  "home": "Coastal Carolina",
+  "away_pts": 7,
+  "home_pts": 45,
+  "close_spread": -37.0,
+  "close_total": 54.5
+ },
+ "401862703": {
+  "away": "Navy",
+  "home": "Florida Atlantic",
+  "away_pts": 30,
+  "home_pts": 38,
+  "close_spread": 4.5,
+  "close_total": 59.5
+ },
+ "401856788": {
+  "away": "Iowa State",
+  "home": "Iowa",
+  "away_pts": 13,
+  "home_pts": 16,
+  "close_spread": -14.0,
+  "close_total": 42.5
+ },
+ "401858219": {
+  "away": "Georgia Southern",
+  "home": "Clemson",
+  "away_pts": 7,
+  "home_pts": 22,
+  "close_spread": -20.0,
+  "close_total": 54.5
+ },
+ "401856783": {
+  "away": "Texas Tech",
+  "home": "Oregon State",
+  "away_pts": 35,
+  "home_pts": 24,
+  "close_spread": 25.5,
+  "close_total": 52.5
+ },
+ "401856671": {
+  "away": "Southern Miss",
+  "home": "Auburn",
+  "away_pts": 8,
+  "home_pts": 43,
+  "close_spread": -32.75,
+  "close_total": 56.75
+ },
+ "401856676": {
+  "away": "Charlotte",
+  "home": "Ole Miss",
+  "away_pts": 9,
+  "home_pts": 41,
+  "close_spread": -44.5,
+  "close_total": 59.5
+ },
+ "401856789": {
+  "away": "Grambling",
+  "home": "TCU",
+  "away_pts": 7,
+  "home_pts": 63,
+  "close_spread": -44.5,
+  "close_total": 56.5
+ },
+ "401868050": {
+  "away": "Stephen F. Austin",
+  "home": "Abilene Christian",
+  "away_pts": 26,
+  "home_pts": 7,
+  "close_spread": 3.0,
+  "close_total": 50.5
+ },
+ "401856784": {
+  "away": "Prairie View A&M",
+  "home": "Baylor",
+  "away_pts": 3,
+  "home_pts": 44,
+  "close_spread": -37.5,
+  "close_total": 55.5
+ },
+ "401864504": {
+  "away": "Cal Poly",
+  "home": "San Jos\u00e9 State",
+  "away_pts": 20,
+  "home_pts": 30,
+  "close_spread": -21.5,
+  "close_total": 58.5
+ },
+ "401864505": {
+  "away": "Texas Southern",
+  "home": "UTEP",
+  "away_pts": 10,
+  "home_pts": 51,
+  "close_spread": -27.25,
+  "close_total": 53.5
+ },
+ "401867876": {
+  "away": "North Dakota",
+  "home": "Portland State",
+  "away_pts": 47,
+  "home_pts": 23,
+  "close_spread": 25.5,
+  "close_total": 60.5
+ },
+ "401864502": {
+  "away": "North Dakota State",
+  "home": "Air Force",
+  "away_pts": 38,
+  "home_pts": 32,
+  "close_spread": 1.75,
+  "close_total": 48.5
+ },
+ "401856670": {
+  "away": "Arkansas",
+  "home": "Utah",
+  "away_pts": 10,
+  "home_pts": 43,
+  "close_spread": -13.0,
+  "close_total": 55.5
+ },
+ "401864500": {
+  "away": "Montana State",
+  "home": "Nevada",
+  "away_pts": 20,
+  "home_pts": 7,
+  "close_spread": 5.0,
+  "close_total": 51.5
+ },
+ "401860883": {
+  "away": "Sacramento State",
+  "home": "Fresno State",
+  "away_pts": 3,
+  "home_pts": 49,
+  "close_spread": -18.0,
+  "close_total": 43.5
+ },
+ "401858445": {
+  "away": "Louisiana",
+  "home": "USC",
+  "away_pts": 30,
+  "home_pts": 49,
+  "close_spread": -30.75,
+  "close_total": 58.5
+ },
+ "401864578": {
+  "away": "New Mexico State",
+  "home": "Hawai'i",
+  "away_pts": 19,
+  "home_pts": 29,
+  "close_spread": -7.5,
+  "close_total": 50.25
+ },
+ "401858225": {
+  "away": "Syracuse",
+  "home": "Pittsburgh",
+  "away_pts": 13,
+  "home_pts": 27,
+  "close_spread": -10.75,
+  "close_total": 51.5
+ },
+ "401858226": {
+  "away": "Miami",
+  "home": "Wake Forest",
+  "away_pts": 33,
+  "home_pts": 20,
+  "close_spread": 20.25,
+  "close_total": 55.75
+ },
+ "401856811": {
+  "away": "Houston",
+  "home": "Texas Tech",
+  "away_pts": 26,
+  "home_pts": 28,
+  "close_spread": -8.0,
+  "close_total": 52.5
+ },
+ "401858455": {
+  "away": "Portland State",
+  "home": "Oregon",
+  "away_pts": 0,
+  "home_pts": 84,
+  "close_spread": -58.5,
+  "close_total": 71.5
+ },
+ "401869940": {
+  "away": "Coastal Carolina",
+  "home": "Delaware",
+  "away_pts": 14,
+  "home_pts": 22,
+  "close_spread": -5.0,
+  "close_total": 56.5
+ },
+ "401867834": {
+  "away": "Dartmouth",
+  "home": "Lehigh",
+  "away_pts": 20,
+  "home_pts": 24,
+  "close_spread": -17.5,
+  "close_total": 50.5
+ },
+ "401867908": {
+  "away": "Villanova",
+  "home": "Long Island University",
+  "away_pts": 20,
+  "home_pts": 16,
+  "close_spread": 18.5,
+  "close_total": 50.5
+ },
+ "401867817": {
+  "away": "Lafayette",
+  "home": "Columbia",
+  "away_pts": 34,
+  "home_pts": 40,
+  "close_spread": -3.0,
+  "close_total": 47.5
+ },
+ "401858451": {
+  "away": "Akron",
+  "home": "Minnesota",
+  "away_pts": 7,
+  "home_pts": 41,
+  "close_spread": -22.5,
+  "close_total": 48.5
+ },
+ "401858229": {
+  "away": "North Carolina",
+  "home": "Clemson",
+  "away_pts": 20,
+  "home_pts": 28,
+  "close_spread": -3.0,
+  "close_total": 44.5
+ },
+ "401858228": {
+  "away": "Mercer",
+  "home": "Georgia Tech",
+  "away_pts": 11,
+  "home_pts": 44,
+  "close_spread": -38.5,
+  "close_total": 58.0
+ },
+ "401856798": {
+  "away": "Bowling Green",
+  "home": "Iowa State",
+  "away_pts": 7,
+  "home_pts": 55,
+  "close_spread": -22.75,
+  "close_total": 43.5
+ },
+ "401867805": {
+  "away": "Brown",
+  "home": "New Haven",
+  "away_pts": 17,
+  "home_pts": 10,
+  "close_spread": 10.0,
+  "close_total": 50.5
+ },
+ "401868242": {
+  "away": "West Georgia",
+  "home": "East Tennessee State",
+  "away_pts": 27,
+  "home_pts": 35,
+  "close_spread": -16.5,
+  "close_total": 53.5
+ },
+ "401856792": {
+  "away": "Tulane",
+  "home": "Kansas State",
+  "away_pts": 20,
+  "home_pts": 31,
+  "close_spread": -20.5,
+  "close_total": 49.5
+ },
+ "401856812": {
+  "away": "Arizona State",
+  "home": "Kansas",
+  "away_pts": 24,
+  "home_pts": 17,
+  "close_spread": 5.25,
+  "close_total": 50.75
+ },
+ "401860889": {
+  "away": "North Texas",
+  "home": "Texas State",
+  "away_pts": 35,
+  "home_pts": 49,
+  "close_spread": -3.0,
+  "close_total": 62.5
+ },
+ "401858454": {
+  "away": "Kent State",
+  "home": "Ohio State",
+  "away_pts": 3,
+  "home_pts": 59,
+  "close_spread": -52.25,
+  "close_total": 58.75
+ },
+ "401858456": {
+  "away": "Buffalo",
+  "home": "Penn State",
+  "away_pts": 13,
+  "home_pts": 55,
+  "close_spread": -39.75,
+  "close_total": 48.25
+ },
+ "401856686": {
+  "away": "Georgia",
+  "home": "Arkansas",
+  "away_pts": 45,
+  "home_pts": 17,
+  "close_spread": 24.5,
+  "close_total": 54.75
+ },
+ "401858460": {
+  "away": "Eastern Michigan",
+  "home": "Wisconsin",
+  "away_pts": 10,
+  "home_pts": 54,
+  "close_spread": -23.5,
+  "close_total": 43.75
+ },
+ "401856695": {
+  "away": "NC State",
+  "home": "Vanderbilt",
+  "away_pts": 31,
+  "home_pts": 35,
+  "close_spread": -3.0,
+  "close_total": 50.5
+ },
+ "401864508": {
+  "away": "Wyoming",
+  "home": "Central Michigan",
+  "away_pts": 10,
+  "home_pts": 24,
+  "close_spread": 1.75,
+  "close_total": 39.75
+ },
+ "401866638": {
+  "away": "Princeton",
+  "home": "Bryant",
+  "away_pts": 14,
+  "home_pts": 21,
+  "close_spread": 2.5,
+  "close_total": 44.5
+ },
+ "401868397": {
+  "away": "VMI",
+  "home": "Davidson",
+  "away_pts": 24,
+  "home_pts": 27,
+  "close_spread": 4.0,
+  "close_total": 42.5
+ },
+ "401867826": {
+  "away": "Cornell",
+  "home": "Colgate",
+  "away_pts": 7,
+  "home_pts": 20,
+  "close_spread": -12.5,
+  "close_total": 50.5
+ },
+ "401867686": {
+  "away": "Chicago State",
+  "home": "Butler",
+  "away_pts": 20,
+  "home_pts": 47,
+  "close_spread": -20.5,
+  "close_total": 54.5
+ },
+ "401866639": {
+  "away": "Harvard",
+  "home": "New Hampshire",
+  "away_pts": 31,
+  "home_pts": 7,
+  "close_spread": 14.5,
+  "close_total": 51.5
+ },
+ "401867857": {
+  "away": "Valparaiso",
+  "home": "Indiana State",
+  "away_pts": 16,
+  "home_pts": 39,
+  "close_spread": -22.5,
+  "close_total": 53.5
+ },
+ "401868023": {
+  "away": "Yale",
+  "home": "Holy Cross",
+  "away_pts": 38,
+  "home_pts": 28,
+  "close_spread": 21.0,
+  "close_total": 50.5
+ },
+ "401868159": {
+  "away": "Southern Utah",
+  "home": "St. Thomas (MN)",
+  "away_pts": 26,
+  "home_pts": 28,
+  "close_spread": 12.5,
+  "close_total": 62.5
+ },
+ "401858448": {
+  "away": "Southern Illinois",
+  "home": "Illinois",
+  "away_pts": 10,
+  "home_pts": 48,
+  "close_spread": -34.75,
+  "close_total": 55.5
+ },
+ "401858227": {
+  "away": "Maine",
+  "home": "Boston College",
+  "away_pts": 16,
+  "home_pts": 22,
+  "close_spread": -37.5,
+  "close_total": 54.5
+ },
+ "401868275": {
+  "away": "Presbyterian",
+  "home": "Western Carolina",
+  "away_pts": 14,
+  "home_pts": 58,
+  "close_spread": -33.5,
+  "close_total": 66.5
+ },
+ "401866634": {
+  "away": "Rhode Island",
+  "home": "Stony Brook",
+  "away_pts": 24,
+  "home_pts": 56,
+  "close_spread": 9.5,
+  "close_total": 51.5
+ },
+ "401867846": {
+  "away": "Eastern Illinois",
+  "home": "Illinois State",
+  "away_pts": 13,
+  "home_pts": 49,
+  "close_spread": -29.5,
+  "close_total": 53.5
+ },
+ "401867898": {
+  "away": "Central Connecticut",
+  "home": "Montana State",
+  "away_pts": 30,
+  "home_pts": 35,
+  "close_spread": -40.25,
+  "close_total": 59.75
+ },
+ "401867991": {
+  "away": "Pennsylvania",
+  "home": "Bucknell",
+  "away_pts": 20,
+  "home_pts": 7,
+  "close_spread": 3.5,
+  "close_total": 46.5
+ },
+ "401862774": {
+  "away": "Temple",
+  "home": "Toledo",
+  "away_pts": 48,
+  "home_pts": 49,
+  "close_spread": -4.75,
+  "close_total": 48.5
+ },
+ "401868018": {
+  "away": "Georgetown",
+  "home": "Richmond",
+  "away_pts": 21,
+  "home_pts": 24,
+  "close_spread": -15.5,
+  "close_total": 45.5
+ },
+ "401866424": {
+  "away": "Stonehill",
+  "home": "Massachusetts",
+  "away_pts": 14,
+  "home_pts": 36,
+  "close_spread": -30.75,
+  "close_total": 50.75
+ },
+ "401866635": {
+  "away": "Monmouth",
+  "home": "UAlbany",
+  "away_pts": 28,
+  "home_pts": 20,
+  "close_spread": 2.5,
+  "close_total": 50.5
+ },
+ "401856801": {
+  "away": "Utah State",
+  "home": "Utah",
+  "away_pts": 0,
+  "home_pts": 33,
+  "close_spread": -26.25,
+  "close_total": 55.75
+ },
+ "401858230": {
+  "away": "SMU",
+  "home": "Louisville",
+  "away_pts": 31,
+  "home_pts": 41,
+  "close_spread": -3.0,
+  "close_total": 57.5
+ },
+ "401856797": {
+  "away": "Miami (OH)",
+  "home": "Cincinnati",
+  "away_pts": 31,
+  "home_pts": 35,
+  "close_spread": -14.5,
+  "close_total": 50.25
+ },
+ "401858450": {
+  "away": "UTEP",
+  "home": "Michigan",
+  "away_pts": 17,
+  "home_pts": 52,
+  "close_spread": -34.5,
+  "close_total": 48.5
+ },
+ "401860890": {
+  "away": "Duquesne",
+  "home": "Washington State",
+  "away_pts": 7,
+  "home_pts": 48,
+  "close_spread": -38.5,
+  "close_total": 52.0
+ },
+ "401856685": {
+  "away": "Florida State",
+  "home": "Alabama",
+  "away_pts": 36,
+  "home_pts": 50,
+  "close_spread": -18.5,
+  "close_total": 50.25
+ },
+ "401858233": {
+  "away": "Wagner",
+  "home": "California",
+  "away_pts": 7,
+  "home_pts": 49,
+  "close_spread": -58.0,
+  "close_total": 65.25
+ },
+ "401856694": {
+  "away": "Kentucky",
+  "home": "Texas A&M",
+  "away_pts": 31,
+  "home_pts": 21,
+  "close_spread": -16.5,
+  "close_total": 48.5
+ },
+ "401858457": {
+  "away": "USC",
+  "home": "Rutgers",
+  "away_pts": 42,
+  "home_pts": 35,
+  "close_spread": 21.0,
+  "close_total": 59.0
+ },
+ "401858231": {
+  "away": "Stanford",
+  "home": "Duke",
+  "away_pts": 7,
+  "home_pts": 35,
+  "close_spread": -9.75,
+  "close_total": 51.5
+ },
+ "401858471": {
+  "away": "Northern Iowa",
+  "home": "Iowa",
+  "away_pts": 0,
+  "home_pts": 55,
+  "close_spread": -37.5,
+  "close_total": 48.75
+ },
+ "401866422": {
+  "away": "Ball State",
+  "home": "Liberty",
+  "away_pts": 15,
+  "home_pts": 51,
+  "close_spread": -14.5,
+  "close_total": 49.25
+ },
+ "401867804": {
+  "away": "Louisiana Tech",
+  "home": "Baylor",
+  "away_pts": 19,
+  "home_pts": 36,
+  "close_spread": -20.25,
+  "close_total": 50.25
+ },
+ "401866641": {
+  "away": "Hampton",
+  "home": "Norfolk State",
+  "away_pts": 21,
+  "home_pts": 42,
+  "close_spread": -5.5,
+  "close_total": 49.5
+ },
+ "401868051": {
+  "away": "Abilene Christian",
+  "home": "Idaho",
+  "away_pts": 41,
+  "home_pts": 39,
+  "close_spread": 1.5,
+  "close_total": 55.5
+ },
+ "401858449": {
+  "away": "Western Kentucky",
+  "home": "Indiana",
+  "away_pts": 0,
+  "home_pts": 38,
+  "close_spread": -44.75,
+  "close_total": 59.25
+ },
+ "401856691": {
+  "away": "Mississippi State",
+  "home": "South Carolina",
+  "away_pts": 41,
+  "home_pts": 34,
+  "close_spread": -3.0,
+  "close_total": 59.25
+ },
+ "401868317": {
+  "away": "SE Louisiana",
+  "home": "UL Monroe",
+  "away_pts": 38,
+  "home_pts": 35,
+  "close_spread": -9.75,
+  "close_total": 48.25
+ },
+ "401867979": {
+  "away": "North Carolina Central",
+  "home": "Gardner-Webb",
+  "away_pts": 20,
+  "home_pts": 44,
+  "close_spread": -7.0,
+  "close_total": 53.5
+ },
+ "401862771": {
+  "away": "Florida International",
+  "home": "Florida Atlantic",
+  "away_pts": 10,
+  "home_pts": 16,
+  "close_spread": -5.25,
+  "close_total": 62.25
+ },
+ "401864574": {
+  "away": "Charlotte",
+  "home": "App State",
+  "away_pts": 21,
+  "home_pts": 26,
+  "close_spread": -16.25,
+  "close_total": 52.5
+ },
+ "401866640": {
+  "away": "Morgan State",
+  "home": "Towson",
+  "away_pts": 41,
+  "home_pts": 26,
+  "close_spread": -8.5,
+  "close_total": 44.5
+ },
+ "401868142": {
+  "away": "Dayton",
+  "home": "Eastern Kentucky",
+  "away_pts": 17,
+  "home_pts": 14,
+  "close_spread": -11.5,
+  "close_total": 46.5
+ },
+ "401862710": {
+  "away": "East Carolina",
+  "home": "Old Dominion",
+  "away_pts": 20,
+  "home_pts": 17,
+  "close_spread": -2.5,
+  "close_total": 48.75
+ },
+ "401868009": {
+  "away": "Fordham",
+  "home": "William & Mary",
+  "away_pts": 52,
+  "home_pts": 27,
+  "close_spread": -15.5,
+  "close_total": 51.5
+ },
+ "401866636": {
+  "away": "North Carolina A&T",
+  "home": "Campbell",
+  "away_pts": 14,
+  "home_pts": 42,
+  "close_spread": -20.5,
+  "close_total": 56.5
+ },
+ "401868337": {
+  "away": "Wofford",
+  "home": "Chattanooga",
+  "away_pts": 7,
+  "home_pts": 41,
+  "close_spread": -1.5,
+  "close_total": 43.5
+ },
+ "401866637": {
+  "away": "Sacred Heart",
+  "home": "Elon",
+  "away_pts": 21,
+  "home_pts": 24,
+  "close_spread": -11.5,
+  "close_total": 46.5
+ },
+ "401871047": {
+  "away": "Marshall",
+  "home": "Missouri State",
+  "away_pts": 30,
+  "home_pts": 24,
+  "close_spread": 4.0,
+  "close_total": 52.5
+ },
+ "401862777": {
+  "away": "Delaware State",
+  "home": "South Florida",
+  "away_pts": 17,
+  "home_pts": 59,
+  "close_spread": -37.5,
+  "close_total": 60.0
+ },
+ "401856689": {
+  "away": "Troy",
+  "home": "Missouri",
+  "away_pts": 17,
+  "home_pts": 27,
+  "close_spread": -26.75,
+  "close_total": 49.75
+ },
+ "401870764": {
+  "away": "Nicholls",
+  "home": "Sam Houston",
+  "away_pts": 0,
+  "home_pts": 59,
+  "close_spread": -21.0,
+  "close_total": 51.0
+ },
+ "401868237": {
+  "away": "Merrimack",
+  "home": "Tarleton State",
+  "away_pts": 20,
+  "home_pts": 45,
+  "close_spread": -32.5,
+  "close_total": 54.5
+ },
+ "401868062": {
+  "away": "Austin Peay",
+  "home": "West Florida",
+  "away_pts": 38,
+  "home_pts": 16,
+  "close_spread": 11.0,
+  "close_total": 55.25
+ },
+ "401866423": {
+  "away": "Ohio",
+  "home": "South Alabama",
+  "away_pts": 36,
+  "home_pts": 41,
+  "close_spread": -7.0,
+  "close_total": 49.75
+ },
+ "401869948": {
+  "away": "Georgia Southern",
+  "home": "Jacksonville State",
+  "away_pts": 27,
+  "home_pts": 31,
+  "close_spread": -3.5,
+  "close_total": 51.25
+ },
+ "401868196": {
+  "away": "Tennessee State",
+  "home": "Florida A&M",
+  "away_pts": 29,
+  "home_pts": 26,
+  "close_spread": -3.0,
+  "close_total": 47.5
+ },
+ "401868133": {
+  "away": "Central Arkansas",
+  "home": "Southeast Missouri State",
+  "away_pts": 9,
+  "home_pts": 27,
+  "close_spread": -4.0,
+  "close_total": 54.5
+ },
+ "401862773": {
+  "away": "Western Michigan",
+  "home": "Rice",
+  "away_pts": 28,
+  "home_pts": 21,
+  "close_spread": 8.5,
+  "close_total": 43.5
+ },
+ "401856803": {
+  "away": "Murray State",
+  "home": "Oklahoma State",
+  "away_pts": 0,
+  "home_pts": 59,
+  "close_spread": -56.0,
+  "close_total": 70.25
+ },
+ "401856800": {
+  "away": "Georgia State",
+  "home": "UCF",
+  "away_pts": 30,
+  "home_pts": 44,
+  "close_spread": -17.5,
+  "close_total": 50.25
+ },
+ "401867896": {
+  "away": "Youngstown State",
+  "home": "South Dakota State",
+  "away_pts": 20,
+  "home_pts": 27,
+  "close_spread": -9.5,
+  "close_total": 59.5
+ },
+ "401869147": {
+  "away": "Houston Christian",
+  "home": "Incarnate Word",
+  "away_pts": 23,
+  "home_pts": 30,
+  "close_spread": -14.0,
+  "close_total": 50.5
+ },
+ "401861963": {
+  "away": "UConn",
+  "home": "Southern Miss",
+  "away_pts": 48,
+  "home_pts": 20,
+  "close_spread": 3.5,
+  "close_total": 54.5
+ },
+ "401856687": {
+  "away": "Florida",
+  "home": "Auburn",
+  "away_pts": 44,
+  "home_pts": 39,
+  "close_spread": 2.5,
+  "close_total": 53.25
+ },
+ "401868205": {
+  "away": "Morehead State",
+  "home": "Western Illinois",
+  "away_pts": 2,
+  "home_pts": 59,
+  "close_spread": -20.5,
+  "close_total": 61.5
+ },
+ "401868151": {
+  "away": "Alcorn State",
+  "home": "North Alabama",
+  "away_pts": 20,
+  "home_pts": 38,
+  "close_spread": -13.5,
+  "close_total": 52.5
+ },
+ "401867984": {
+  "away": "South Carolina State",
+  "home": "Furman",
+  "away_pts": 20,
+  "home_pts": 17,
+  "close_spread": 4.5,
+  "close_total": 46.5
+ },
+ "401862772": {
+  "away": "UT Martin",
+  "home": "Memphis",
+  "away_pts": 21,
+  "home_pts": 45,
+  "close_spread": -33.5,
+  "close_total": 58.75
+ },
+ "401864443": {
+  "away": "Nevada",
+  "home": "Middle Tennessee",
+  "away_pts": 20,
+  "home_pts": 27,
+  "close_spread": 3.75,
+  "close_total": 50.5
+ },
+ "401858452": {
+  "away": "North Dakota",
+  "home": "Nebraska",
+  "away_pts": 7,
+  "home_pts": 34,
+  "close_spread": -27.25,
+  "close_total": 56.5
+ },
+ "401858459": {
+  "away": "Eastern Washington",
+  "home": "Washington",
+  "away_pts": 16,
+  "home_pts": 48,
+  "close_spread": -43.0,
+  "close_total": 58.75
+ },
+ "401856688": {
+  "away": "LSU",
+  "home": "Ole Miss",
+  "away_pts": 24,
+  "home_pts": 32,
+  "close_spread": 2.75,
+  "close_total": 58.75
+ },
+ "401858453": {
+  "away": "Michigan State",
+  "home": "Notre Dame",
+  "away_pts": 10,
+  "home_pts": 27,
+  "close_spread": -28.75,
+  "close_total": 51.5
+ },
+ "401856690": {
+  "away": "New Mexico",
+  "home": "Oklahoma",
+  "away_pts": 6,
+  "home_pts": 14,
+  "close_spread": -21.25,
+  "close_total": 45.5
+ },
+ "401856795": {
+  "away": "BYU",
+  "home": "Colorado State",
+  "away_pts": 41,
+  "home_pts": 23,
+  "close_spread": 17.5,
+  "close_total": 54.25
+ },
+ "401856796": {
+  "away": "Colorado",
+  "home": "Northwestern",
+  "away_pts": 7,
+  "home_pts": 41,
+  "close_spread": -3.5,
+  "close_total": 47.75
+ },
+ "401858232": {
+  "away": "Virginia Tech",
+  "home": "Maryland",
+  "away_pts": 35,
+  "home_pts": 26,
+  "close_spread": 2.5,
+  "close_total": 53.25
+ },
+ "401856802": {
+  "away": "West Virginia",
+  "home": "Virginia",
+  "away_pts": 38,
+  "home_pts": 27,
+  "close_spread": -10.75,
+  "close_total": 51.5
+ },
+ "401856692": {
+  "away": "Kennesaw State",
+  "home": "Tennessee",
+  "away_pts": 9,
+  "home_pts": 42,
+  "close_spread": -35.5,
+  "close_total": 60.75
+ },
+ "401862775": {
+  "away": "East Texas A&M",
+  "home": "Tulsa",
+  "away_pts": 0,
+  "home_pts": 42,
+  "close_spread": -41.25,
+  "close_total": 55.75
+ },
+ "401868075": {
+  "away": "San Diego",
+  "home": "Cal Poly",
+  "away_pts": 38,
+  "home_pts": 35,
+  "close_spread": -17.5,
+  "close_total": 57.5
+ },
+ "401868247": {
+  "away": "McNeese",
+  "home": "UT Rio Grande Valley",
+  "away_pts": 10,
+  "home_pts": 27,
+  "close_spread": -5.5,
+  "close_total": 52.5
+ },
+ "401868168": {
+  "away": "Northwestern State",
+  "home": "Weber State",
+  "away_pts": 20,
+  "home_pts": 49,
+  "close_spread": -35.5,
+  "close_total": 56.5
+ },
+ "401856693": {
+  "away": "UTSA",
+  "home": "Texas",
+  "away_pts": 6,
+  "home_pts": 30,
+  "close_spread": -29.75,
+  "close_total": 58.25
+ },
+ "401868124": {
+  "away": "Northern Arizona",
+  "home": "Utah Tech",
+  "away_pts": 35,
+  "home_pts": 23,
+  "close_spread": 16.5,
+  "close_total": 51.5
+ },
+ "401862776": {
+  "away": "UAB",
+  "home": "Louisiana",
+  "away_pts": 14,
+  "home_pts": 21,
+  "close_spread": -7.0,
+  "close_total": 55.5
+ },
+ "401868307": {
+  "away": "Stephen F. Austin",
+  "home": "Prairie View A&M",
+  "away_pts": 31,
+  "home_pts": 10,
+  "close_spread": 16.5,
+  "close_total": 52.5
+ },
+ "401856799": {
+  "away": "Arkansas State",
+  "home": "TCU",
+  "away_pts": 7,
+  "home_pts": 31,
+  "close_spread": -19.0,
+  "close_total": 56.25
+ },
+ "401868164": {
+  "away": "Stetson",
+  "home": "UC Davis",
+  "away_pts": 7,
+  "home_pts": 45,
+  "close_spread": -47.5,
+  "close_total": 65.0
+ },
+ "401860885": {
+  "away": "South Dakota",
+  "home": "Boise State",
+  "away_pts": 24,
+  "home_pts": 38,
+  "close_spread": -28.25,
+  "close_total": 61.0
+ },
+ "401860887": {
+  "away": "James Madison",
+  "home": "San Diego State",
+  "away_pts": 26,
+  "home_pts": 13,
+  "close_spread": -3.0,
+  "close_total": 46.5
+ },
+ "401856793": {
+  "away": "Northern Illinois",
+  "home": "Arizona",
+  "away_pts": 17,
+  "home_pts": 42,
+  "close_spread": -34.5,
+  "close_total": 50.25
+ },
+ "401864507": {
+  "away": "North Dakota State",
+  "home": "Sacramento State",
+  "away_pts": 31,
+  "home_pts": 10,
+  "close_spread": 25.5,
+  "close_total": 50.5
+ },
+ "401860886": {
+  "away": "Montana",
+  "home": "Oregon State",
+  "away_pts": 17,
+  "home_pts": 52,
+  "close_spread": -17.5,
+  "close_total": 55.75
+ },
+ "401860888": {
+  "away": "Fresno State",
+  "home": "San Jos\u00e9 State",
+  "away_pts": 26,
+  "home_pts": 10,
+  "close_spread": 4.0,
+  "close_total": 47.5
+ },
+ "401858458": {
+  "away": "Purdue",
+  "home": "UCLA",
+  "away_pts": 38,
+  "home_pts": 52,
+  "close_spread": -13.5,
+  "close_total": 53.0
+ },
+ "401869941": {
+  "away": "Liberty",
+  "home": "Coastal Carolina",
+  "away_pts": 34,
+  "home_pts": 17,
+  "close_spread": 2.5,
+  "close_total": 50.5
+ },
+ "401862779": {
+  "away": "Army",
+  "home": "Temple",
+  "away_pts": 21,
+  "home_pts": 17,
+  "close_spread": 4.0,
+  "close_total": 48.5
+ },
+ "401858468": {
+  "away": "Howard",
+  "home": "Rutgers",
+  "away_pts": 7,
+  "home_pts": 58,
+  "close_spread": -42.25,
+  "close_total": 57.5
+ },
+ "401862778": {
+  "away": "Navy",
+  "home": "UAB",
+  "away_pts": 20,
+  "home_pts": 24,
+  "close_spread": 6.5,
+  "close_total": 50.25
+ },
+ "401867806": {
+  "away": "Harvard",
+  "home": "Brown",
+  "away_pts": 14,
+  "home_pts": 10,
+  "close_spread": 13.5,
+  "close_total": 42.5
+ },
+ "401858461": {
+  "away": "Northwestern",
+  "home": "Indiana",
+  "away_pts": 23,
+  "home_pts": 29,
+  "close_spread": -20.25,
+  "close_total": 49.75
+ },
+ "401858234": {
+  "away": "Clemson",
+  "home": "California",
+  "away_pts": 24,
+  "home_pts": 10,
+  "close_spread": 2.5,
+  "close_total": 52.25
+ },
+ "401860896": {
+  "away": "Colorado State",
+  "home": "UTSA",
+  "away_pts": 45,
+  "home_pts": 59,
+  "close_spread": -14.25,
+  "close_total": 56.5
+ },
+ "401856805": {
+  "away": "Sam Houston",
+  "home": "Texas Tech",
+  "away_pts": 14,
+  "home_pts": 49,
+  "close_spread": -34.5,
+  "close_total": 55.75
+ },
+ "401856813": {
+  "away": "Colorado",
+  "home": "Baylor",
+  "away_pts": 13,
+  "home_pts": 23,
+  "close_spread": -8.5,
+  "close_total": 54.25
+ },
+ "401858242": {
+  "away": "Virginia Tech",
+  "home": "Boston College",
+  "away_pts": 21,
+  "home_pts": 14,
+  "close_spread": 14.5,
+  "close_total": 45.5
+ },
+ "401864512": {
+  "away": "UNLV",
+  "home": "Akron",
+  "away_pts": 38,
+  "home_pts": 10,
+  "close_spread": 13.5,
+  "close_total": 52.75
+ },
+ "401868263": {
+  "away": "Presbyterian",
+  "home": "Marist",
+  "away_pts": 7,
+  "home_pts": 42,
+  "close_spread": -8.5,
+  "close_total": 44.5
+ },
+ "401858465": {
+  "away": "Illinois",
+  "home": "Ohio State",
+  "away_pts": 19,
+  "home_pts": 42,
+  "close_spread": -25.5,
+  "close_total": 53.5
+ },
+ "401858236": {
+  "away": "Bucknell",
+  "home": "Pittsburgh",
+  "away_pts": 0,
+  "home_pts": 59,
+  "close_spread": -54.5,
+  "close_total": 63.75
+ },
+ "401858243": {
+  "away": "Wake Forest",
+  "home": "Louisville",
+  "away_pts": 30,
+  "home_pts": 27,
+  "close_spread": -11.25,
+  "close_total": 57.5
+ },
+ "401860893": {
+  "away": "San Diego State",
+  "home": "Toledo",
+  "away_pts": 16,
+  "home_pts": 41,
+  "close_spread": -2.75,
+  "close_total": 50.5
+ },
+ "401866642": {
+  "away": "New Hampshire",
+  "home": "Sacred Heart",
+  "away_pts": 13,
+  "home_pts": 20,
+  "close_spread": -2.5,
+  "close_total": 41.5
+ },
+ "401866425": {
+  "away": "Ball State",
+  "home": "Kent State",
+  "away_pts": 13,
+  "home_pts": 26,
+  "close_spread": -2.5,
+  "close_total": 51.5
+ },
+ "401856704": {
+  "away": "Texas",
+  "home": "Tennessee",
+  "away_pts": 20,
+  "home_pts": 17,
+  "close_spread": 5.5,
+  "close_total": 54.5
+ },
+ "401868024": {
+  "away": "Holy Cross",
+  "home": "Lafayette",
+  "away_pts": 38,
+  "home_pts": 30,
+  "close_spread": -4.0,
+  "close_total": 46.5
+ },
+ "401867818": {
+  "away": "Columbia",
+  "home": "Georgetown",
+  "away_pts": 20,
+  "home_pts": 17,
+  "close_spread": 7.0,
+  "close_total": 46.5
+ },
+ "401864576": {
+  "away": "South Alabama",
+  "home": "Kentucky",
+  "away_pts": 21,
+  "home_pts": 45,
+  "close_spread": -20.5,
+  "close_total": 54.25
+ },
+ "401868034": {
+  "away": "Lehigh",
+  "home": "Pennsylvania",
+  "away_pts": 20,
+  "home_pts": 7,
+  "close_spread": 12.5,
+  "close_total": 45.5
+ },
+ "401866648": {
+  "away": "Stony Brook",
+  "home": "Fordham",
+  "away_pts": 31,
+  "home_pts": 16,
+  "close_spread": 9.5,
+  "close_total": 50.5
+ },
+ "401866647": {
+  "away": "Monmouth",
+  "home": "Dartmouth",
+  "away_pts": 31,
+  "home_pts": 28,
+  "close_spread": -3.0,
+  "close_total": 51.5
+ },
+ "401867827": {
+  "away": "Yale",
+  "home": "Cornell",
+  "away_pts": 25,
+  "home_pts": 38,
+  "close_spread": 14.0,
+  "close_total": 48.5
+ },
+ "401872618": {
+  "away": "New Haven",
+  "home": "Merrimack",
+  "away_pts": 10,
+  "home_pts": 17,
+  "close_spread": -10.0,
+  "close_total": 42.5
+ },
+ "401866427": {
+  "away": "Lindenwood",
+  "home": "Eastern Michigan",
+  "away_pts": 3,
+  "home_pts": 29,
+  "close_spread": -24.25,
+  "close_total": 53.75
+ },
+ "401867858": {
+  "away": "North Dakota",
+  "home": "Indiana State",
+  "away_pts": 42,
+  "home_pts": 35,
+  "close_spread": 17.5,
+  "close_total": 54.5
+ },
+ "401868219": {
+  "away": "Drake",
+  "home": "Davidson",
+  "away_pts": 51,
+  "home_pts": 32,
+  "close_spread": 11.5,
+  "close_total": 58.5
+ },
+ "401868390": {
+  "away": "Tennessee Tech",
+  "home": "Wofford",
+  "away_pts": 42,
+  "home_pts": 38,
+  "close_spread": 14.5,
+  "close_total": 47.5
+ },
+ "401858462": {
+  "away": "UCLA",
+  "home": "Maryland",
+  "away_pts": 54,
+  "home_pts": 3,
+  "close_spread": 2.5,
+  "close_total": 55.75
+ },
+ "401864511": {
+  "away": "Northern Illinois",
+  "home": "Georgia State",
+  "away_pts": 14,
+  "home_pts": 35,
+  "close_spread": -8.75,
+  "close_total": 56.5
+ },
+ "401866643": {
+  "away": "Maine",
+  "home": "Elon",
+  "away_pts": 17,
+  "home_pts": 43,
+  "close_spread": -5.5,
+  "close_total": 44.5
+ },
+ "401868281": {
+  "away": "San Diego",
+  "home": "St. Thomas (MN)",
+  "away_pts": 17,
+  "home_pts": 50,
+  "close_spread": -5.5,
+  "close_total": 57.5
+ },
+ "401867885": {
+  "away": "South Dakota",
+  "home": "Youngstown State",
+  "away_pts": 28,
+  "home_pts": 47,
+  "close_spread": -1.5,
+  "close_total": 65.5
+ },
+ "401868037": {
+  "away": "Furman",
+  "home": "Richmond",
+  "away_pts": 9,
+  "home_pts": 13,
+  "close_spread": -3.5,
+  "close_total": 43.5
+ },
+ "401868063": {
+  "away": "UT Martin",
+  "home": "Austin Peay",
+  "away_pts": 12,
+  "home_pts": 35,
+  "close_spread": -15.5,
+  "close_total": 53.5
+ },
+ "401858467": {
+  "away": "Notre Dame",
+  "home": "Purdue",
+  "away_pts": 49,
+  "home_pts": 10,
+  "close_spread": 27.5,
+  "close_total": 57.25
+ },
+ "401868211": {
+  "away": "Butler",
+  "home": "Valparaiso",
+  "away_pts": 33,
+  "home_pts": 28,
+  "close_spread": 6.5,
+  "close_total": 52.5
+ },
+ "401868338": {
+  "away": "Chattanooga",
+  "home": "The Citadel",
+  "away_pts": 27,
+  "home_pts": 8,
+  "close_spread": 10.5,
+  "close_total": 46.5
+ },
+ "401868001": {
+  "away": "Colgate",
+  "home": "Villanova",
+  "away_pts": 28,
+  "home_pts": 21,
+  "close_spread": -3.0,
+  "close_total": 44.5
+ },
+ "401858237": {
+  "away": "Central Arkansas",
+  "home": "Florida State",
+  "away_pts": 7,
+  "home_pts": 34,
+  "close_spread": -46.0,
+  "close_total": 62.5
+ },
+ "401866646": {
+  "away": "UAlbany",
+  "home": "Princeton",
+  "away_pts": 0,
+  "home_pts": 22,
+  "close_spread": 1.5,
+  "close_total": 43.5
+ },
+ "401864510": {
+  "away": "Hawai'i",
+  "home": "Wyoming",
+  "away_pts": 10,
+  "home_pts": 27,
+  "close_spread": 2.25,
+  "close_total": 44.5
+ },
+ "401866428": {
+  "away": "Stonehill",
+  "home": "Ohio",
+  "away_pts": 7,
+  "home_pts": 35,
+  "close_spread": -32.5,
+  "close_total": 53.5
+ },
+ "401868387": {
+  "away": "VMI",
+  "home": "Samford",
+  "away_pts": 7,
+  "home_pts": 45,
+  "close_spread": -15.5,
+  "close_total": 46.5
+ },
+ "401858244": {
+  "away": "William & Mary",
+  "home": "Duke",
+  "away_pts": 7,
+  "home_pts": 62,
+  "close_spread": -43.0,
+  "close_total": 61.5
+ },
+ "401868346": {
+  "away": "Western Carolina",
+  "home": "East Tennessee State",
+  "away_pts": 31,
+  "home_pts": 58,
+  "close_spread": -1.5,
+  "close_total": 63.5
+ },
+ "401868188": {
+  "away": "Gardner-Webb",
+  "home": "Marshall",
+  "away_pts": 35,
+  "home_pts": 36,
+  "close_spread": -25.0,
+  "close_total": 56.25
+ },
+ "401858463": {
+  "away": "Iowa",
+  "home": "Michigan",
+  "away_pts": 20,
+  "home_pts": 19,
+  "close_spread": -4.75,
+  "close_total": 39.75
+ },
+ "401856815": {
+  "away": "TCU",
+  "home": "UCF",
+  "away_pts": 13,
+  "home_pts": 21,
+  "close_spread": 3.5,
+  "close_total": 48.25
+ },
+ "401861970": {
+  "away": "UConn",
+  "home": "Miami (OH)",
+  "away_pts": 21,
+  "home_pts": 24,
+  "close_spread": -2.5,
+  "close_total": 52.25
+ },
+ "401864579": {
+  "away": "New Mexico",
+  "home": "New Mexico State",
+  "away_pts": 42,
+  "home_pts": 18,
+  "close_spread": 11.5,
+  "close_total": 47.5
+ },
+ "401860897": {
+  "away": "Boise State",
+  "home": "Western Michigan",
+  "away_pts": 32,
+  "home_pts": 7,
+  "close_spread": 8.5,
+  "close_total": 50.5
+ },
+ "401856700": {
+  "away": "Oklahoma",
+  "home": "Georgia",
+  "away_pts": 13,
+  "home_pts": 41,
+  "close_spread": -11.25,
+  "close_total": 43.75
+ },
+ "401856699": {
+  "away": "Ole Miss",
+  "home": "Florida",
+  "away_pts": 28,
+  "home_pts": 52,
+  "close_spread": -4.0,
+  "close_total": 58.5
+ },
+ "401856816": {
+  "away": "Utah",
+  "home": "Iowa State",
+  "away_pts": 31,
+  "home_pts": 17,
+  "close_spread": 7.5,
+  "close_total": 46.75
+ },
+ "401866426": {
+  "away": "Robert Morris",
+  "home": "Buffalo",
+  "away_pts": 28,
+  "home_pts": 31,
+  "close_spread": -27.75,
+  "close_total": 46.25
+ },
+ "401862781": {
+  "away": "North Carolina Central",
+  "home": "East Carolina",
+  "away_pts": 9,
+  "home_pts": 42,
+  "close_spread": -37.5,
+  "close_total": 58.5
+ },
+ "401868358": {
+  "away": "Texas Southern",
+  "home": "Alcorn State",
+  "away_pts": 40,
+  "home_pts": 43,
+  "close_spread": -3.5,
+  "close_total": 55.5
+ },
+ "401866644": {
+  "away": "Rhode Island",
+  "home": "North Carolina A&T",
+  "away_pts": 18,
+  "home_pts": 22,
+  "close_spread": 24.5,
+  "close_total": 52.5
+ },
+ "401869143": {
+  "away": "Lamar",
+  "home": "Nicholls",
+  "away_pts": 49,
+  "home_pts": 18,
+  "close_spread": 8.5,
+  "close_total": 45.5
+ },
+ "401856806": {
+  "away": "Houston",
+  "home": "Georgia Southern",
+  "away_pts": 42,
+  "home_pts": 28,
+  "close_spread": 17.25,
+  "close_total": 56.5
+ },
+ "401868206": {
+  "away": "Western Illinois",
+  "home": "North Alabama",
+  "away_pts": 20,
+  "home_pts": 23,
+  "close_spread": -7.0,
+  "close_total": 53.5
+ },
+ "401856698": {
+  "away": "Vanderbilt",
+  "home": "Auburn",
+  "away_pts": 15,
+  "home_pts": 21,
+  "close_spread": -10.0,
+  "close_total": 54.5
+ },
+ "401867847": {
+  "away": "Illinois State",
+  "home": "Northern Iowa",
+  "away_pts": 21,
+  "home_pts": 28,
+  "close_spread": 19.5,
+  "close_total": 58.5
+ },
+ "401862785": {
+  "away": "South Florida",
+  "home": "Bowling Green",
+  "away_pts": 14,
+  "home_pts": 6,
+  "close_spread": 17.75,
+  "close_total": 48.75
+ },
+ "401858466": {
+  "away": "Wisconsin",
+  "home": "Penn State",
+  "away_pts": 24,
+  "home_pts": 20,
+  "close_spread": -9.75,
+  "close_total": 43.75
+ },
+ "401858464": {
+  "away": "Nebraska",
+  "home": "Michigan State",
+  "away_pts": 31,
+  "home_pts": 13,
+  "close_spread": 6.0,
+  "close_total": 48.5
+ },
+ "401860892": {
+  "away": "Incarnate Word",
+  "home": "Texas State",
+  "away_pts": 10,
+  "home_pts": 63,
+  "close_spread": -30.5,
+  "close_total": 66.5
+ },
+ "401867909": {
+  "away": "Long Island University",
+  "home": "Florida International",
+  "away_pts": 3,
+  "home_pts": 20,
+  "close_spread": -37.5,
+  "close_total": 54.25
+ },
+ "401869961": {
+  "away": "James Madison",
+  "home": "Old Dominion",
+  "away_pts": 46,
+  "home_pts": 20,
+  "close_spread": 7.0,
+  "close_total": 44.25
+ },
+ "401858239": {
+  "away": "Delaware",
+  "home": "Virginia",
+  "away_pts": 3,
+  "home_pts": 42,
+  "close_spread": -19.75,
+  "close_total": 52.5
+ },
+ "401866645": {
+  "away": "Campbell",
+  "home": "Hampton",
+  "away_pts": 44,
+  "home_pts": 20,
+  "close_spread": 20.5,
+  "close_total": 54.5
+ },
+ "401868327": {
+  "away": "Mississippi Valley State",
+  "home": "Alabama State",
+  "away_pts": 15,
+  "home_pts": 41,
+  "close_spread": -34.5,
+  "close_total": 54.5
+ },
+ "401866649": {
+  "away": "Towson",
+  "home": "Delaware State",
+  "away_pts": 28,
+  "home_pts": 33,
+  "close_spread": -3.0,
+  "close_total": 48.5
+ },
+ "401858238": {
+  "away": "Central Michigan",
+  "home": "Miami",
+  "away_pts": 3,
+  "home_pts": 52,
+  "close_spread": -41.25,
+  "close_total": 52.25
+ },
+ "401862780": {
+  "away": "Louisiana",
+  "home": "Charlotte",
+  "away_pts": 34,
+  "home_pts": 7,
+  "close_spread": 9.25,
+  "close_total": 49.5
+ },
+ "401867985": {
+  "away": "South Carolina State",
+  "home": "Bethune-Cookman",
+  "away_pts": 31,
+  "home_pts": 21,
+  "close_spread": 17.5,
+  "close_total": 58.5
+ },
+ "401868954": {
+  "away": "Prairie View A&M",
+  "home": "Grambling",
+  "away_pts": 21,
+  "home_pts": 14,
+  "close_spread": 11.5,
+  "close_total": 55.5
+ },
+ "401868960": {
+  "away": "Southern",
+  "home": "Jackson State",
+  "away_pts": 17,
+  "home_pts": 35,
+  "close_spread": -20.5,
+  "close_total": 57.5
+ },
+ "401869137": {
+  "away": "East Texas A&M",
+  "home": "McNeese",
+  "away_pts": 24,
+  "home_pts": 27,
+  "close_spread": -6.5,
+  "close_total": 51.5
+ },
+ "401867868": {
+  "away": "Southern Illinois",
+  "home": "Murray State",
+  "away_pts": 46,
+  "home_pts": 6,
+  "close_spread": 17.5,
+  "close_total": 53.5
+ },
+ "401868318": {
+  "away": "SE Louisiana",
+  "home": "Northwestern State",
+  "away_pts": 52,
+  "home_pts": 21,
+  "close_spread": 37.5,
+  "close_total": 60.5
+ },
+ "401868076": {
+  "away": "Cal Poly",
+  "home": "Eastern Washington",
+  "away_pts": 31,
+  "home_pts": 27,
+  "close_spread": -3.5,
+  "close_total": 58.5
+ },
+ "401871048": {
+  "away": "Middle Tennessee",
+  "home": "Jacksonville State",
+  "away_pts": 13,
+  "home_pts": 23,
+  "close_spread": -7.0,
+  "close_total": 51.0
+ },
+ "401871472": {
+  "away": "West Florida",
+  "home": "Southeast Missouri State",
+  "away_pts": 20,
+  "home_pts": 17,
+  "close_spread": -6.0,
+  "close_total": 52.5
+ },
+ "401867687": {
+  "away": "Norfolk State",
+  "home": "Chicago State",
+  "away_pts": 43,
+  "home_pts": 20,
+  "close_spread": 17.5,
+  "close_total": 55.5
+ },
+ "401856881": {
+  "away": "Oklahoma State",
+  "home": "West Virginia",
+  "away_pts": 41,
+  "home_pts": 24,
+  "close_spread": -1.5,
+  "close_total": 60.5
+ },
+ "401870745": {
+  "away": "Mercyhurst",
+  "home": "Western Kentucky",
+  "away_pts": 7,
+  "home_pts": 52,
+  "close_spread": -40.0,
+  "close_total": 58.75
+ },
+ "401856696": {
+  "away": "South Carolina",
+  "home": "Alabama",
+  "away_pts": 18,
+  "home_pts": 49,
+  "close_spread": -12.5,
+  "close_total": 53.5
+ },
+ "401869931": {
+  "away": "Kennesaw State",
+  "home": "Arkansas State",
+  "away_pts": 14,
+  "home_pts": 17,
+  "close_spread": -6.5,
+  "close_total": 53.25
+ },
+ "401868299": {
+  "away": "Alabama A&M",
+  "home": "Florida A&M",
+  "away_pts": 40,
+  "home_pts": 21,
+  "close_spread": 3.0,
+  "close_total": 51.5
+ },
+ "401862784": {
+  "away": "Southern Miss",
+  "home": "Tulane",
+  "away_pts": 21,
+  "home_pts": 24,
+  "close_spread": -17.75,
+  "close_total": 52.5
+ },
+ "401868179": {
+  "away": "Eastern Illinois",
+  "home": "South Dakota State",
+  "away_pts": 7,
+  "home_pts": 42,
+  "close_spread": -34.5,
+  "close_total": 53.5
+ },
+ "401856814": {
+  "away": "Kansas State",
+  "home": "Cincinnati",
+  "away_pts": 26,
+  "home_pts": 31,
+  "close_spread": 6.0,
+  "close_total": 55.25
+ },
+ "401856804": {
+  "away": "Arizona",
+  "home": "Washington State",
+  "away_pts": 34,
+  "home_pts": 24,
+  "close_spread": 11.75,
+  "close_total": 47.5
+ },
+ "401858469": {
+  "away": "Oregon",
+  "home": "USC",
+  "away_pts": 41,
+  "home_pts": 27,
+  "close_spread": 3.5,
+  "close_total": 60.5
+ },
+ "401864572": {
+  "away": "App State",
+  "home": "NC State",
+  "away_pts": 31,
+  "home_pts": 41,
+  "close_spread": -12.75,
+  "close_total": 56.5
+ },
+ "401856702": {
+  "away": "Texas A&M",
+  "home": "LSU",
+  "away_pts": 6,
+  "home_pts": 35,
+  "close_spread": -8.5,
+  "close_total": 52.25
+ },
+ "401860894": {
+  "away": "Troy",
+  "home": "Utah State",
+  "away_pts": 10,
+  "home_pts": 21,
+  "close_spread": -3.0,
+  "close_total": 47.5
+ },
+ "401862783": {
+  "away": "Houston Christian",
+  "home": "North Texas",
+  "away_pts": 14,
+  "home_pts": 63,
+  "close_spread": -38.25,
+  "close_total": 60.5
+ },
+ "401856703": {
+  "away": "Missouri",
+  "home": "Mississippi State",
+  "away_pts": 24,
+  "home_pts": 31,
+  "close_spread": -3.5,
+  "close_total": 58.5
+ },
+ "401868052": {
+  "away": "Mercer",
+  "home": "Abilene Christian",
+  "away_pts": 34,
+  "home_pts": 17,
+  "close_spread": -3.5,
+  "close_total": 48.5
+ },
+ "401868155": {
+  "away": "Portland State",
+  "home": "Weber State",
+  "away_pts": 44,
+  "home_pts": 41,
+  "close_spread": -7.0,
+  "close_total": 64.5
+ },
+ "401868103": {
+  "away": "Idaho State",
+  "home": "Southern Utah",
+  "away_pts": 28,
+  "home_pts": 24,
+  "close_spread": 9.5,
+  "close_total": 61.5
+ },
+ "401862782": {
+  "away": "Florida Atlantic",
+  "home": "UL Monroe",
+  "away_pts": 45,
+  "home_pts": 17,
+  "close_spread": 11.5,
+  "close_total": 58.25
+ },
+ "401856697": {
+  "away": "Tulsa",
+  "home": "Arkansas",
+  "away_pts": 6,
+  "home_pts": 34,
+  "close_spread": -7.0,
+  "close_total": 51.5
+ },
+ "401868131": {
+  "away": "Utah Tech",
+  "home": "Northern Colorado",
+  "away_pts": 13,
+  "home_pts": 37,
+  "close_spread": -7.5,
+  "close_total": 49.5
+ },
+ "401858241": {
+  "away": "Missouri State",
+  "home": "SMU",
+  "away_pts": 24,
+  "home_pts": 34,
+  "close_spread": -30.5,
+  "close_total": 60.5
+ },
+ "401860895": {
+  "away": "Oregon State",
+  "home": "UTEP",
+  "away_pts": 33,
+  "home_pts": 7,
+  "close_spread": 11.5,
+  "close_total": 56.5
+ },
+ "401866429": {
+  "away": "Massachusetts",
+  "home": "Sacramento State",
+  "away_pts": 35,
+  "home_pts": 6,
+  "close_spread": 6.0,
+  "close_total": 49.5
+ },
+ "401860891": {
+  "away": "Rice",
+  "home": "Fresno State",
+  "away_pts": 24,
+  "home_pts": 38,
+  "close_spread": -12.25,
+  "close_total": 43.5
+ },
+ "401868113": {
+  "away": "Montana",
+  "home": "UC Davis",
+  "away_pts": 62,
+  "home_pts": 22,
+  "close_spread": -3.0,
+  "close_total": 61.5
+ },
+ "401864509": {
+  "away": "Air Force",
+  "home": "Nevada",
+  "away_pts": 36,
+  "home_pts": 33,
+  "close_spread": 5.25,
+  "close_total": 50.5
+ },
+ "401868120": {
+  "away": "Northern Arizona",
+  "home": "Montana State",
+  "away_pts": 14,
+  "home_pts": 28,
+  "close_spread": -20.5,
+  "close_total": 57.5
+ },
+ "401858240": {
+  "away": "Georgia Tech",
+  "home": "Stanford",
+  "away_pts": 27,
+  "home_pts": 34,
+  "close_spread": 3.0,
+  "close_total": 48.75
+ },
+ "401858470": {
+  "away": "Minnesota",
+  "home": "Washington",
+  "away_pts": 27,
+  "home_pts": 24,
+  "close_spread": -12.25,
+  "close_total": 44.75
+ },
+ "401871049": {
+  "away": "Western Kentucky",
+  "home": "New Mexico State",
+  "away_pts": 13,
+  "home_pts": 34,
+  "close_spread": -1.5,
+  "close_total": 55.75
+ },
+ "401862786": {
+  "away": "North Texas",
+  "home": "Tulsa",
+  "away_pts": 45,
+  "home_pts": 44,
+  "close_spread": 2.0,
+  "close_total": 56.75
+ },
+ "401871050": {
+  "away": "Liberty",
+  "home": "Delaware",
+  "away_pts": 30,
+  "home_pts": 14,
+  "close_spread": 6.5,
+  "close_total": 50.5
+ },
+ "401858245": {
+  "away": "Pittsburgh",
+  "home": "Virginia Tech",
+  "away_pts": 35,
+  "home_pts": 33,
+  "close_spread": -2.5,
+  "close_total": 54.5
+ },
+ "401858476": {
+  "away": "Penn State",
+  "home": "Northwestern",
+  "away_pts": 13,
+  "home_pts": 34,
+  "close_spread": 2.5,
+  "close_total": 45.5
+ },
+ "401868094": {
+  "away": "Montana State",
+  "home": "Idaho",
+  "away_pts": 34,
+  "home_pts": 35,
+  "close_spread": 14.5,
+  "close_total": 58.5
+ },
+ "401862787": {
+  "away": "Memphis",
+  "home": "Charlotte",
+  "away_pts": 59,
+  "home_pts": 8,
+  "close_spread": 20.5,
+  "close_total": 52.5
+ },
+ "401868010": {
+  "away": "Fordham",
+  "home": "Lehigh",
+  "away_pts": 0,
+  "home_pts": 34,
+  "close_spread": -21.5,
+  "close_total": 44.5
+ },
+ "401858474": {
+  "away": "Michigan",
+  "home": "Minnesota",
+  "away_pts": 14,
+  "home_pts": 20,
+  "close_spread": 5.5,
+  "close_total": 43.5
+ },
+ "401862791": {
+  "away": "Navy",
+  "home": "Air Force",
+  "away_pts": 9,
+  "home_pts": 14,
+  "close_spread": -3.5,
+  "close_total": 45.5
+ },
+ "401856819": {
+  "away": "UCF",
+  "home": "Houston",
+  "away_pts": 17,
+  "home_pts": 27,
+  "close_spread": -11.5,
+  "close_total": 51.5
+ },
+ "401867899": {
+  "away": "Wagner",
+  "home": "Central Connecticut",
+  "away_pts": 14,
+  "home_pts": 45,
+  "close_spread": -14.5,
+  "close_total": 45.5
+ },
+ "401866654": {
+  "away": "Brown",
+  "home": "Rhode Island",
+  "away_pts": 10,
+  "home_pts": 13,
+  "close_spread": -3.5,
+  "close_total": 42.5
+ },
+ "401856822": {
+  "away": "West Virginia",
+  "home": "Iowa State",
+  "away_pts": 42,
+  "home_pts": 45,
+  "close_spread": -3.0,
+  "close_total": 53.5
+ },
+ "401870840": {
+  "away": "Merrimack",
+  "home": "Yale",
+  "away_pts": 24,
+  "home_pts": 41,
+  "close_spread": -12.5,
+  "close_total": 51.5
+ },
+ "401858246": {
+  "away": "Boston College",
+  "home": "SMU",
+  "away_pts": 16,
+  "home_pts": 25,
+  "close_spread": -21.5,
+  "close_total": 55.5
+ },
+ "401858250": {
+  "away": "Notre Dame",
+  "home": "North Carolina",
+  "away_pts": 37,
+  "home_pts": 26,
+  "close_spread": 21.5,
+  "close_total": 46.5
+ },
+ "401858252": {
+  "away": "Syracuse",
+  "home": "UConn",
+  "away_pts": 42,
+  "home_pts": 41,
+  "close_spread": 7.0,
+  "close_total": 50.5
+ },
+ "401858251": {
+  "away": "Stanford",
+  "home": "Wake Forest",
+  "away_pts": 3,
+  "home_pts": 57,
+  "close_spread": -14.0,
+  "close_total": 53.5
+ },
+ "401868276": {
+  "away": "St. Thomas (MN)",
+  "home": "Presbyterian",
+  "away_pts": 21,
+  "home_pts": 55,
+  "close_spread": 24.5,
+  "close_total": 54.5
+ },
+ "401856807": {
+  "away": "Middle Tennessee",
+  "home": "Kansas",
+  "away_pts": 0,
+  "home_pts": 55,
+  "close_spread": -19.5,
+  "close_total": 50.5
+ },
+ "401856707": {
+  "away": "Alabama",
+  "home": "Mississippi State",
+  "away_pts": 56,
+  "home_pts": 23,
+  "close_spread": 5.5,
+  "close_total": 62.5
+ },
+ "401867819": {
+  "away": "Princeton",
+  "home": "Columbia",
+  "away_pts": 35,
+  "home_pts": 7,
+  "close_spread": 1.5,
+  "close_total": 42.5
+ },
+ "401867910": {
+  "away": "Mercyhurst",
+  "home": "Long Island University",
+  "away_pts": 24,
+  "home_pts": 27,
+  "close_spread": -8.5,
+  "close_total": 47.5
+ },
+ "401868029": {
+  "away": "Richmond",
+  "home": "Lafayette",
+  "away_pts": 40,
+  "home_pts": 31,
+  "close_spread": 6.5,
+  "close_total": 42.5
+ },
+ "401867828": {
+  "away": "Cornell",
+  "home": "Georgetown",
+  "away_pts": 35,
+  "home_pts": 14,
+  "close_spread": 7.5,
+  "close_total": 45.5
+ },
+ "401858479": {
+  "away": "Michigan State",
+  "home": "Wisconsin",
+  "away_pts": 3,
+  "home_pts": 31,
+  "close_spread": -9.5,
+  "close_total": 43.5
+ },
+ "401856705": {
+  "away": "Vanderbilt",
+  "home": "Georgia",
+  "away_pts": 14,
+  "home_pts": 38,
+  "close_spread": -25.0,
+  "close_total": 50.5
+ },
+ "401868270": {
+  "away": "Valparaiso",
+  "home": "Morehead State",
+  "away_pts": 37,
+  "home_pts": 3,
+  "close_spread": 2.5,
+  "close_total": 51.5
+ },
+ "401866651": {
+  "away": "Towson",
+  "home": "Monmouth",
+  "away_pts": 40,
+  "home_pts": 41,
+  "close_spread": -10.5,
+  "close_total": 56.5
+ },
+ "401868264": {
+  "away": "Marist",
+  "home": "Stetson",
+  "away_pts": 28,
+  "home_pts": 14,
+  "close_spread": 15.5,
+  "close_total": 49.5
+ },
+ "401866432": {
+  "away": "Western Michigan",
+  "home": "Buffalo",
+  "away_pts": 20,
+  "home_pts": 17,
+  "close_spread": 14.0,
+  "close_total": 46.5
+ },
+ "401866650": {
+  "away": "Elon",
+  "home": "New Hampshire",
+  "away_pts": 23,
+  "home_pts": 30,
+  "close_spread": 10.5,
+  "close_total": 44.5
+ },
+ "401867967": {
+  "away": "Morgan State",
+  "home": "Villanova",
+  "away_pts": 38,
+  "home_pts": 35,
+  "close_spread": -10.5,
+  "close_total": 45.5
+ },
+ "401868228": {
+  "away": "Dayton",
+  "home": "Drake",
+  "away_pts": 22,
+  "home_pts": 30,
+  "close_spread": 5.5,
+  "close_total": 53.5
+ },
+ "401867835": {
+  "away": "Pennsylvania",
+  "home": "Dartmouth",
+  "away_pts": 10,
+  "home_pts": 14,
+  "close_spread": -8.5,
+  "close_total": 45.5
+ },
+ "401868381": {
+  "away": "Mercer",
+  "home": "VMI",
+  "away_pts": 54,
+  "home_pts": 3,
+  "close_spread": 35.5,
+  "close_total": 50.5
+ },
+ "401867986": {
+  "away": "The Citadel",
+  "home": "South Carolina State",
+  "away_pts": 34,
+  "home_pts": 31,
+  "close_spread": -20.5,
+  "close_total": 47.5
+ },
+ "401868375": {
+  "away": "Wofford",
+  "home": "Furman",
+  "away_pts": 32,
+  "home_pts": 25,
+  "close_spread": -4.5,
+  "close_total": 44.5
+ },
+ "401867918": {
+  "away": "Norfolk State",
+  "home": "Robert Morris",
+  "away_pts": 31,
+  "home_pts": 33,
+  "close_spread": -3.5,
+  "close_total": 43.5
+ },
+ "401867869": {
+  "away": "Murray State",
+  "home": "North Dakota",
+  "away_pts": 28,
+  "home_pts": 55,
+  "close_spread": -36.5,
+  "close_total": 59.5
+ },
+ "401866431": {
+  "away": "Toledo",
+  "home": "Ball State",
+  "away_pts": 39,
+  "home_pts": 24,
+  "close_spread": 20.5,
+  "close_total": 52.5
+ },
+ "401868965": {
+  "away": "Prairie View A&M",
+  "home": "Mississippi Valley State",
+  "away_pts": 27,
+  "home_pts": 28,
+  "close_spread": 26.5,
+  "close_total": 59.5
+ },
+ "401867859": {
+  "away": "Indiana State",
+  "home": "South Dakota",
+  "away_pts": 14,
+  "home_pts": 44,
+  "close_spread": -18.5,
+  "close_total": 60.5
+ },
+ "401866656": {
+  "away": "Howard",
+  "home": "Hampton",
+  "away_pts": 27,
+  "home_pts": 13,
+  "close_spread": 9.5,
+  "close_total": 50.5
+ },
+ "401868359": {
+  "away": "Alcorn State",
+  "home": "Grambling",
+  "away_pts": 59,
+  "home_pts": 63,
+  "close_spread": -7.5,
+  "close_total": 57.5
+ },
+ "401868025": {
+  "away": "Holy Cross",
+  "home": "William & Mary",
+  "away_pts": 41,
+  "home_pts": 14,
+  "close_spread": -6.5,
+  "close_total": 49.5
+ },
+ "401866430": {
+  "away": "Akron",
+  "home": "Central Michigan",
+  "away_pts": 17,
+  "home_pts": 41,
+  "close_spread": -6.5,
+  "close_total": 47.5
+ },
+ "401866434": {
+  "away": "Ohio",
+  "home": "Kent State",
+  "away_pts": 13,
+  "home_pts": 10,
+  "close_spread": 3.5,
+  "close_total": 50.5
+ },
+ "401866433": {
+  "away": "Eastern Michigan",
+  "home": "Massachusetts",
+  "away_pts": 38,
+  "home_pts": 14,
+  "close_spread": -5.75,
+  "close_total": 49.25
+ },
+ "401856710": {
+  "away": "Auburn",
+  "home": "Tennessee",
+  "away_pts": 14,
+  "home_pts": 24,
+  "close_spread": -7.0,
+  "close_total": 54.5
+ },
+ "401864515": {
+  "away": "Wyoming",
+  "home": "North Dakota State",
+  "away_pts": 0,
+  "home_pts": 28,
+  "close_spread": -17.5,
+  "close_total": 44.5
+ },
+ "401866655": {
+  "away": "Delaware State",
+  "home": "UAlbany",
+  "away_pts": 3,
+  "home_pts": 28,
+  "close_spread": -1.5,
+  "close_total": 45.5
+ },
+ "401858247": {
+  "away": "California",
+  "home": "UNLV",
+  "away_pts": 31,
+  "home_pts": 39,
+  "close_spread": -2.5,
+  "close_total": 53.5
+ },
+ "401868339": {
+  "away": "Chattanooga",
+  "home": "East Tennessee State",
+  "away_pts": 3,
+  "home_pts": 14,
+  "close_spread": -3.5,
+  "close_total": 53.5
+ },
+ "401866477": {
+  "away": "Bowling Green",
+  "home": "Miami (OH)",
+  "away_pts": 24,
+  "home_pts": 20,
+  "close_spread": -13.5,
+  "close_total": 42.5
+ },
+ "401858253": {
+  "away": "Virginia",
+  "home": "Florida State",
+  "away_pts": 7,
+  "home_pts": 38,
+  "close_spread": 2.5,
+  "close_total": 51.5
+ },
+ "401862793": {
+  "away": "Samford",
+  "home": "UAB",
+  "away_pts": 14,
+  "home_pts": 33,
+  "close_spread": -30.5,
+  "close_total": 52.5
+ },
+ "401858473": {
+  "away": "Ohio State",
+  "home": "Iowa",
+  "away_pts": 31,
+  "home_pts": 14,
+  "close_spread": 14.0,
+  "close_total": 45.5
+ },
+ "401866652": {
+  "away": "Sacred Heart",
+  "home": "Maine",
+  "away_pts": 24,
+  "home_pts": 16,
+  "close_spread": -2.5,
+  "close_total": 43.5
+ },
+ "401856708": {
+  "away": "Florida",
+  "home": "Missouri",
+  "away_pts": 17,
+  "home_pts": 45,
+  "close_spread": 5.5,
+  "close_total": 57.5
+ },
+ "401869956": {
+  "away": "Old Dominion",
+  "home": "Georgia State",
+  "away_pts": 10,
+  "home_pts": 42,
+  "close_spread": -2.5,
+  "close_total": 51.5
+ },
+ "401858248": {
+  "away": "Louisville",
+  "home": "NC State",
+  "away_pts": 28,
+  "home_pts": 31,
+  "close_spread": 4.25,
+  "close_total": 57.0
+ },
+ "401869962": {
+  "away": "Marshall",
+  "home": "James Madison",
+  "away_pts": 17,
+  "home_pts": 45,
+  "close_spread": -18.5,
+  "close_total": 56.5
+ },
+ "401868328": {
+  "away": "Alabama State",
+  "home": "Bethune-Cookman",
+  "away_pts": 10,
+  "home_pts": 16,
+  "close_spread": 7.5,
+  "close_total": 54.5
+ },
+ "401868197": {
+  "away": "Tennessee State",
+  "home": "Western Illinois",
+  "away_pts": 21,
+  "home_pts": 28,
+  "close_spread": -12.5,
+  "close_total": 51.5
+ },
+ "401868220": {
+  "away": "Davidson",
+  "home": "San Diego",
+  "away_pts": 14,
+  "home_pts": 63,
+  "close_spread": -13.5,
+  "close_total": 62.5
+ },
+ "401868114": {
+  "away": "Northern Colorado",
+  "home": "Montana",
+  "away_pts": 14,
+  "home_pts": 36,
+  "close_spread": -21.5,
+  "close_total": 58.5
+ },
+ "401864514": {
+  "away": "UTEP",
+  "home": "New Mexico",
+  "away_pts": 7,
+  "home_pts": 61,
+  "close_spread": -22.5,
+  "close_total": 47.5
+ },
+ "401858475": {
+  "away": "Maryland",
+  "home": "Nebraska",
+  "away_pts": 23,
+  "home_pts": 48,
+  "close_spread": -14.5,
+  "close_total": 52.5
+ },
+ "401856709": {
+  "away": "Kentucky",
+  "home": "South Carolina",
+  "away_pts": 35,
+  "home_pts": 34,
+  "close_spread": -3.0,
+  "close_total": 54.5
+ },
+ "401858472": {
+  "away": "Purdue",
+  "home": "Illinois",
+  "away_pts": 24,
+  "home_pts": 17,
+  "close_spread": -10.0,
+  "close_total": 62.5
+ },
+ "401868064": {
+  "away": "New Haven",
+  "home": "Austin Peay",
+  "away_pts": 17,
+  "home_pts": 42,
+  "close_spread": -35.5,
+  "close_total": 50.5
+ },
+ "401867891": {
+  "away": "Youngstown State",
+  "home": "Southern Illinois",
+  "away_pts": 28,
+  "home_pts": 16,
+  "close_spread": 3.5,
+  "close_total": 62.5
+ },
+ "401868295": {
+  "away": "Alabama A&M",
+  "home": "Jackson State",
+  "away_pts": 28,
+  "home_pts": 31,
+  "close_spread": -9.5,
+  "close_total": 49.5
+ },
+ "401862790": {
+  "away": "Texas Southern",
+  "home": "Florida Atlantic",
+  "away_pts": 10,
+  "home_pts": 66,
+  "close_spread": -44.5,
+  "close_total": 61.5
+ },
+ "401868173": {
+  "away": "Gardner-Webb",
+  "home": "Charleston Southern",
+  "away_pts": 12,
+  "home_pts": 10,
+  "close_spread": 7.5,
+  "close_total": 44.5
+ },
+ "401860899": {
+  "away": "Oregon State",
+  "home": "Colorado State",
+  "away_pts": 56,
+  "home_pts": 26,
+  "close_spread": 7.0,
+  "close_total": 61.5
+ },
+ "401866657": {
+  "away": "Campbell",
+  "home": "North Carolina Central",
+  "away_pts": 38,
+  "home_pts": 31,
+  "close_spread": 8.5,
+  "close_total": 60.5
+ },
+ "401868309": {
+  "away": "Incarnate Word",
+  "home": "Stephen F. Austin",
+  "away_pts": 26,
+  "home_pts": 28,
+  "close_spread": -18.5,
+  "close_total": 56.5
+ },
+ "401866653": {
+  "away": "North Carolina A&T",
+  "home": "Bryant",
+  "away_pts": 30,
+  "home_pts": 31,
+  "close_spread": -15.5,
+  "close_total": 45.5
+ },
+ "401868391": {
+  "away": "Tennessee Tech",
+  "home": "Western Carolina",
+  "away_pts": 20,
+  "home_pts": 44,
+  "close_spread": 9.5,
+  "close_total": 63.5
+ },
+ "401868143": {
+  "away": "North Alabama",
+  "home": "Eastern Kentucky",
+  "away_pts": 20,
+  "home_pts": 16,
+  "close_spread": -1.5,
+  "close_total": 49.5
+ },
+ "401868248": {
+  "away": "UT Rio Grande Valley",
+  "home": "East Texas A&M",
+  "away_pts": 17,
+  "home_pts": 20,
+  "close_spread": 10.5,
+  "close_total": 51.5
+ },
+ "401856818": {
+  "away": "BYU",
+  "home": "TCU",
+  "away_pts": 17,
+  "home_pts": 10,
+  "close_spread": 6.5,
+  "close_total": 47.5
+ },
+ "401867688": {
+  "away": "Chicago State",
+  "home": "Tarleton State",
+  "away_pts": 21,
+  "home_pts": 56,
+  "close_spread": -50.5,
+  "close_total": 59.5
+ },
+ "401869942": {
+  "away": "Georgia Southern",
+  "home": "Coastal Carolina",
+  "away_pts": 31,
+  "home_pts": 24,
+  "close_spread": 2.0,
+  "close_total": 53.5
+ },
+ "401867848": {
+  "away": "South Dakota State",
+  "home": "Illinois State",
+  "away_pts": 31,
+  "home_pts": 14,
+  "close_spread": 1.5,
+  "close_total": 51.5
+ },
+ "401868936": {
+  "away": "Arkansas-Pine Bluff",
+  "home": "Southern",
+  "away_pts": 41,
+  "home_pts": 10,
+  "close_spread": -3.0,
+  "close_total": 56.5
+ },
+ "401856711": {
+  "away": "Arkansas",
+  "home": "Texas A&M",
+  "away_pts": 7,
+  "home_pts": 34,
+  "close_spread": -13.5,
+  "close_total": 50.5
+ },
+ "401869131": {
+  "away": "Northwestern State",
+  "home": "Lamar",
+  "away_pts": 14,
+  "home_pts": 42,
+  "close_spread": -40.5,
+  "close_total": 55.5
+ },
+ "401869151": {
+  "away": "Nicholls",
+  "home": "Houston Christian",
+  "away_pts": 2,
+  "home_pts": 16,
+  "close_spread": -1.5,
+  "close_total": 53.5
+ },
+ "401867840": {
+  "away": "Colgate",
+  "home": "Harvard",
+  "away_pts": 17,
+  "home_pts": 20,
+  "close_spread": -4.5,
+  "close_total": 40.5
+ },
+ "401871089": {
+  "away": "UL Monroe",
+  "home": "South Alabama",
+  "away_pts": 35,
+  "home_pts": 52,
+  "close_spread": -13.25,
+  "close_total": 57.0
+ },
+ "401862788": {
+  "away": "UTSA",
+  "home": "Rice",
+  "away_pts": 16,
+  "home_pts": 14,
+  "close_spread": 12.0,
+  "close_total": 55.5
+ },
+ "401869842": {
+  "away": "Army",
+  "home": "Louisiana Tech",
+  "away_pts": 29,
+  "home_pts": 31,
+  "close_spread": -1.5,
+  "close_total": 45.5
+ },
+ "401856821": {
+  "away": "Texas Tech",
+  "home": "Colorado",
+  "away_pts": 29,
+  "home_pts": 7,
+  "close_spread": 13.5,
+  "close_total": 50.5
+ },
+ "401858478": {
+  "away": "Washington",
+  "home": "USC",
+  "away_pts": 21,
+  "home_pts": 25,
+  "close_spread": -7.5,
+  "close_total": 58.5
+ },
+ "401858249": {
+  "away": "Miami",
+  "home": "Clemson",
+  "away_pts": 41,
+  "home_pts": 13,
+  "close_spread": 14.0,
+  "close_total": 48.5
+ },
+ "401860898": {
+  "away": "Utah State",
+  "home": "Boise State",
+  "away_pts": 18,
+  "home_pts": 37,
+  "close_spread": -19.5,
+  "close_total": 51.5
+ },
+ "401862792": {
+  "away": "Temple",
+  "home": "South Florida",
+  "away_pts": 17,
+  "home_pts": 13,
+  "close_spread": -5.5,
+  "close_total": 50.5
+ },
+ "401856706": {
+  "away": "McNeese",
+  "home": "LSU",
+  "away_pts": 14,
+  "home_pts": 63,
+  "close_spread": -53.5,
+  "close_total": 62.5
+ },
+ "401868053": {
+  "away": "West Florida",
+  "home": "Abilene Christian",
+  "away_pts": 7,
+  "home_pts": 35,
+  "close_spread": -6.5,
+  "close_total": 48.5
+ },
+ "401868160": {
+  "away": "Southern Utah",
+  "home": "Utah Tech",
+  "away_pts": 46,
+  "home_pts": 33,
+  "close_spread": 11.5,
+  "close_total": 56.5
+ },
+ "401868104": {
+  "away": "Northern Arizona",
+  "home": "Idaho State",
+  "away_pts": 38,
+  "home_pts": 31,
+  "close_spread": -7.5,
+  "close_total": 55.5
+ },
+ "401869932": {
+  "away": "Arkansas State",
+  "home": "Louisiana",
+  "away_pts": 20,
+  "home_pts": 23,
+  "close_spread": -5.0,
+  "close_total": 49.5
+ },
+ "401858477": {
+  "away": "Indiana",
+  "home": "Rutgers",
+  "away_pts": 47,
+  "home_pts": 15,
+  "close_spread": 24.5,
+  "close_total": 56.5
+ },
+ "401868077": {
+  "away": "Weber State",
+  "home": "Cal Poly",
+  "away_pts": 42,
+  "home_pts": 34,
+  "close_spread": -6.0,
+  "close_total": 68.5
+ },
+ "401860921": {
+  "away": "Fresno State",
+  "home": "Washington State",
+  "away_pts": 26,
+  "home_pts": 6,
+  "close_spread": -2.5,
+  "close_total": 44.5
+ },
+ "401868086": {
+  "away": "Eastern Washington",
+  "home": "UC Davis",
+  "away_pts": 38,
+  "home_pts": 49,
+  "close_spread": -8.5,
+  "close_total": 61.5
+ },
+ "401860900": {
+  "away": "Texas State",
+  "home": "San Diego State",
+  "away_pts": 29,
+  "home_pts": 31,
+  "close_spread": 10.0,
+  "close_total": 57.5
+ },
+ "401856817": {
+  "away": "Baylor",
+  "home": "Arizona State",
+  "away_pts": 55,
+  "home_pts": 19,
+  "close_spread": -3.5,
+  "close_total": 49.5
+ },
+ "401856820": {
+  "away": "Cincinnati",
+  "home": "Arizona",
+  "away_pts": 7,
+  "home_pts": 34,
+  "close_spread": -7.0,
+  "close_total": 55.5
+ },
+ "401864513": {
+  "away": "San Jos\u00e9 State",
+  "home": "Hawai'i",
+  "away_pts": 20,
+  "home_pts": 16,
+  "close_spread": -2.75,
+  "close_total": 51.25
+ },
+ "401871090": {
+  "away": "Southern Miss",
+  "home": "Troy",
+  "away_pts": 34,
+  "home_pts": 55,
+  "close_spread": -10.0,
+  "close_total": 51.5
+ },
+ "401871051": {
+  "away": "Jacksonville State",
+  "home": "Kennesaw State",
+  "away_pts": 27,
+  "home_pts": 26,
+  "close_spread": 3.0,
+  "close_total": 48.5
+ },
+ "401871066": {
+  "away": "New Mexico State",
+  "home": "Florida International",
+  "away_pts": 3,
+  "home_pts": 22,
+  "close_spread": -6.5,
+  "close_total": 46.5
+ },
+ "401870766": {
+  "away": "Sam Houston",
+  "home": "Liberty",
+  "away_pts": 3,
+  "home_pts": 35,
+  "close_spread": -13.5,
+  "close_total": 53.5
+ },
+ "401871052": {
+  "away": "Missouri State",
+  "home": "Western Kentucky",
+  "away_pts": 13,
+  "home_pts": 34,
+  "close_spread": 1.5,
+  "close_total": 55.5
+ },
+ "401869933": {
+  "away": "South Alabama",
+  "home": "Arkansas State",
+  "away_pts": 56,
+  "home_pts": 49,
+  "close_spread": -3.0,
+  "close_total": 59.5
+ },
+ "401862794": {
+  "away": "South Florida",
+  "home": "UTSA",
+  "away_pts": 24,
+  "home_pts": 31,
+  "close_spread": -6.5,
+  "close_total": 49.5
+ },
+ "401868329": {
+  "away": "Florida A&M",
+  "home": "Alabama State",
+  "away_pts": 28,
+  "home_pts": 27,
+  "close_spread": -14.5,
+  "close_total": 47.5
+ },
+ "401858254": {
+  "away": "Florida State",
+  "home": "Louisville",
+  "away_pts": 20,
+  "home_pts": 44,
+  "close_spread": -4.0,
+  "close_total": 60.5
+ },
+ "401868265": {
+  "away": "Columbia",
+  "home": "Marist",
+  "away_pts": 41,
+  "home_pts": 28,
+  "close_spread": 3.5,
+  "close_total": 43.5
+ },
+ "401858487": {
+  "away": "Iowa",
+  "home": "Washington",
+  "away_pts": 41,
+  "home_pts": 24,
+  "close_spread": -2.5,
+  "close_total": 40.5
+ },
+ "401860922": {
+  "away": "Washington State",
+  "home": "Utah State",
+  "away_pts": 16,
+  "home_pts": 17,
+  "close_spread": -4.0,
+  "close_total": 43.5
+ },
+ "401864519": {
+  "away": "Wyoming",
+  "home": "San Jos\u00e9 State",
+  "away_pts": 16,
+  "home_pts": 13,
+  "close_spread": -4.25,
+  "close_total": 42.75
+ },
+ "401856826": {
+  "away": "Iowa State",
+  "home": "BYU",
+  "away_pts": 10,
+  "home_pts": 24,
+  "close_spread": -10.5,
+  "close_total": 46.5
+ },
+ "401867930": {
+  "away": "Princeton",
+  "home": "Wagner",
+  "away_pts": 28,
+  "home_pts": 13,
+  "close_spread": 24.5,
+  "close_total": 43.0
+ },
+ "401868347": {
+  "away": "East Tennessee State",
+  "home": "The Citadel",
+  "away_pts": 34,
+  "home_pts": 16,
+  "close_spread": 10.5,
+  "close_total": 50.5
+ },
+ "401868229": {
+  "away": "Morehead State",
+  "home": "Dayton",
+  "away_pts": 28,
+  "home_pts": 56,
+  "close_spread": -20.5,
+  "close_total": 54.5
+ },
+ "401866660": {
+  "away": "Stonehill",
+  "home": "Sacred Heart",
+  "away_pts": 28,
+  "home_pts": 7,
+  "close_spread": -7.5,
+  "close_total": 43.5
+ },
+ "401856823": {
+  "away": "Arizona",
+  "home": "West Virginia",
+  "away_pts": 52,
+  "home_pts": 31,
+  "close_spread": 3.5,
+  "close_total": 60.5
+ },
+ "401866436": {
+  "away": "Sacramento State",
+  "home": "Bowling Green",
+  "away_pts": 10,
+  "home_pts": 38,
+  "close_spread": -8.5,
+  "close_total": 43.5
+ },
+ "401856824": {
+  "away": "UCF",
+  "home": "Oklahoma State",
+  "away_pts": 28,
+  "home_pts": 42,
+  "close_spread": -10.5,
+  "close_total": 53.5
+ },
+ "401858260": {
+  "away": "Wake Forest",
+  "home": "NC State",
+  "away_pts": 38,
+  "home_pts": 14,
+  "close_spread": 3.75,
+  "close_total": 56.5
+ },
+ "401866658": {
+  "away": "New Hampshire",
+  "home": "North Carolina A&T",
+  "away_pts": 27,
+  "home_pts": 30,
+  "close_spread": 5.5,
+  "close_total": 47.5
+ },
+ "401858481": {
+  "away": "Indiana",
+  "home": "Nebraska",
+  "away_pts": 20,
+  "home_pts": 17,
+  "close_spread": 7.5,
+  "close_total": 47.5
+ },
+ "401862795": {
+  "away": "Tulane",
+  "home": "Army",
+  "away_pts": 17,
+  "home_pts": 20,
+  "close_spread": -3.5,
+  "close_total": 48.5
+ },
+ "401856716": {
+  "away": "Texas A&M",
+  "home": "Missouri",
+  "away_pts": 6,
+  "home_pts": 27,
+  "close_spread": -3.5,
+  "close_total": 49.5
+ },
+ "401867987": {
+  "away": "South Carolina State",
+  "home": "Charleston Southern",
+  "away_pts": 39,
+  "home_pts": 49,
+  "close_spread": 6.5,
+  "close_total": 38.5
+ },
+ "401858256": {
+  "away": "North Carolina",
+  "home": "Pittsburgh",
+  "away_pts": 21,
+  "home_pts": 17,
+  "close_spread": -3.5,
+  "close_total": 46.5
+ },
+ "401866662": {
+  "away": "Bryant",
+  "home": "Brown",
+  "away_pts": 13,
+  "home_pts": 28,
+  "close_spread": -4.5,
+  "close_total": 42.5
+ },
+ "401867919": {
+  "away": "Robert Morris",
+  "home": "Morgan State",
+  "away_pts": 27,
+  "home_pts": 28,
+  "close_spread": -10.5,
+  "close_total": 53.5
+ },
+ "401867836": {
+  "away": "Dartmouth",
+  "home": "Yale",
+  "away_pts": 7,
+  "home_pts": 28,
+  "close_spread": -6.5,
+  "close_total": 53.5
+ },
+ "401868221": {
+  "away": "Davidson",
+  "home": "Presbyterian",
+  "away_pts": 21,
+  "home_pts": 38,
+  "close_spread": -15.5,
+  "close_total": 56.5
+ },
+ "401858482": {
+  "away": "Ball State",
+  "home": "Northwestern",
+  "away_pts": 14,
+  "home_pts": 45,
+  "close_spread": -35.5,
+  "close_total": 52.5
+ },
+ "401867992": {
+  "away": "Bucknell",
+  "home": "Georgetown",
+  "away_pts": 14,
+  "home_pts": 21,
+  "close_spread": -1.5,
+  "close_total": 47.5
+ },
+ "401856714": {
+  "away": "South Carolina",
+  "home": "Florida",
+  "away_pts": 38,
+  "home_pts": 19,
+  "close_spread": -11.5,
+  "close_total": 58.5
+ },
+ "401867960": {
+  "away": "Howard",
+  "home": "Pennsylvania",
+  "away_pts": 20,
+  "home_pts": 24,
+  "close_spread": -11.5,
+  "close_total": 42.5
+ },
+ "401868340": {
+  "away": "Samford",
+  "home": "Chattanooga",
+  "away_pts": 3,
+  "home_pts": 19,
+  "close_spread": -11.0,
+  "close_total": 41.5
+ },
+ "401867860": {
+  "away": "Youngstown State",
+  "home": "Indiana State",
+  "away_pts": 57,
+  "home_pts": 24,
+  "close_spread": 19.5,
+  "close_total": 64.5
+ },
+ "401867980": {
+  "away": "William & Mary",
+  "home": "North Carolina Central",
+  "away_pts": 17,
+  "home_pts": 14,
+  "close_spread": -3.5,
+  "close_total": 57.5
+ },
+ "401867911": {
+  "away": "Long Island University",
+  "home": "Duquesne",
+  "away_pts": 17,
+  "home_pts": 14,
+  "close_spread": -3.5,
+  "close_total": 45.5
+ },
+ "401868212": {
+  "away": "San Diego",
+  "home": "Butler",
+  "away_pts": 10,
+  "home_pts": 41,
+  "close_spread": 2.5,
+  "close_total": 57.5
+ },
+ "401862797": {
+  "away": "Rice",
+  "home": "East Carolina",
+  "away_pts": 12,
+  "home_pts": 28,
+  "close_spread": -10.0,
+  "close_total": 46.5
+ },
+ "401869843": {
+  "away": "Old Dominion",
+  "home": "App State",
+  "away_pts": 10,
+  "home_pts": 3,
+  "close_spread": -9.0,
+  "close_total": 45.5
+ },
+ "401868300": {
+  "away": "Bethune-Cookman",
+  "home": "Alabama A&M",
+  "away_pts": 17,
+  "home_pts": 55,
+  "close_spread": -2.5,
+  "close_total": 48.5
+ },
+ "401867829": {
+  "away": "Harvard",
+  "home": "Cornell",
+  "away_pts": 41,
+  "home_pts": 29,
+  "close_spread": 7.0,
+  "close_total": 41.5
+ },
+ "401866661": {
+  "away": "Wofford",
+  "home": "Elon",
+  "away_pts": 16,
+  "home_pts": 0,
+  "close_spread": -3.5,
+  "close_total": 46.5
+ },
+ "401867886": {
+  "away": "Southern Illinois",
+  "home": "South Dakota",
+  "away_pts": 10,
+  "home_pts": 31,
+  "close_spread": -10.5,
+  "close_total": 57.5
+ },
+ "401868256": {
+  "away": "Drake",
+  "home": "Valparaiso",
+  "away_pts": 13,
+  "home_pts": 21,
+  "close_spread": 9.5,
+  "close_total": 54.5
+ },
+ "401868282": {
+  "away": "Stetson",
+  "home": "St. Thomas (MN)",
+  "away_pts": 21,
+  "home_pts": 64,
+  "close_spread": -22.5,
+  "close_total": 49.5
+ },
+ "401866440": {
+  "away": "Miami (OH)",
+  "home": "Massachusetts",
+  "away_pts": 20,
+  "home_pts": 19,
+  "close_spread": 6.0,
+  "close_total": 44.5
+ },
+ "401871473": {
+  "away": "Southeast Missouri State",
+  "home": "Lindenwood",
+  "away_pts": 38,
+  "home_pts": 27,
+  "close_spread": 2.5,
+  "close_total": 45.5
+ },
+ "401868966": {
+  "away": "Mississippi Valley State",
+  "home": "Texas Southern",
+  "away_pts": 38,
+  "home_pts": 34,
+  "close_spread": -13.5,
+  "close_total": 56.5
+ },
+ "401868095": {
+  "away": "Idaho",
+  "home": "Weber State",
+  "away_pts": 27,
+  "home_pts": 38,
+  "close_spread": 1.5,
+  "close_total": 70.5
+ },
+ "401868382": {
+  "away": "Western Carolina",
+  "home": "Mercer",
+  "away_pts": 14,
+  "home_pts": 17,
+  "close_spread": -6.0,
+  "close_total": 57.5
+ },
+ "401868198": {
+  "away": "UT Martin",
+  "home": "Tennessee State",
+  "away_pts": 42,
+  "home_pts": 28,
+  "close_spread": 8.5,
+  "close_total": 46.5
+ },
+ "401856825": {
+  "away": "Houston",
+  "home": "Kansas State",
+  "away_pts": 35,
+  "home_pts": 16,
+  "close_spread": -2.5,
+  "close_total": 55.5
+ },
+ "401856717": {
+  "away": "Texas",
+  "home": "Oklahoma",
+  "away_pts": 24,
+  "home_pts": 27,
+  "close_spread": 7.5,
+  "close_total": 40.5
+ },
+ "401862799": {
+  "away": "Tulsa",
+  "home": "Navy",
+  "away_pts": 26,
+  "home_pts": 34,
+  "close_spread": -3.0,
+  "close_total": 47.5
+ },
+ "401866439": {
+  "away": "Kent State",
+  "home": "Western Michigan",
+  "away_pts": 7,
+  "home_pts": 38,
+  "close_spread": -13.5,
+  "close_total": 43.5
+ },
+ "401858257": {
+  "away": "Stanford",
+  "home": "Notre Dame",
+  "away_pts": 7,
+  "home_pts": 58,
+  "close_spread": -40.5,
+  "close_total": 55.5
+ },
+ "401856718": {
+  "away": "Ole Miss",
+  "home": "Vanderbilt",
+  "away_pts": 52,
+  "home_pts": 17,
+  "close_spread": 9.5,
+  "close_total": 54.5
+ },
+ "401866435": {
+  "away": "Eastern Michigan",
+  "home": "Akron",
+  "away_pts": 25,
+  "home_pts": 23,
+  "close_spread": 5.5,
+  "close_total": 51.5
+ },
+ "401868180": {
+  "away": "Eastern Illinois",
+  "home": "Gardner-Webb",
+  "away_pts": 21,
+  "home_pts": 7,
+  "close_spread": -13.5,
+  "close_total": 50.5
+ },
+ "401858484": {
+  "away": "UCLA",
+  "home": "Oregon",
+  "away_pts": 17,
+  "home_pts": 15,
+  "close_spread": -10.0,
+  "close_total": 57.5
+ },
+ "401868376": {
+  "away": "Furman",
+  "home": "Tennessee Tech",
+  "away_pts": 15,
+  "home_pts": 20,
+  "close_spread": -13.5,
+  "close_total": 44.5
+ },
+ "401868011": {
+  "away": "Richmond",
+  "home": "Fordham",
+  "away_pts": 14,
+  "home_pts": 20,
+  "close_spread": 8.5,
+  "close_total": 45.5
+ },
+ "401862796": {
+  "away": "Charlotte",
+  "home": "North Texas",
+  "away_pts": 10,
+  "home_pts": 50,
+  "close_spread": -27.5,
+  "close_total": 58.5
+ },
+ "401858255": {
+  "away": "Duke",
+  "home": "Georgia Tech",
+  "away_pts": 25,
+  "home_pts": 28,
+  "close_spread": 4.5,
+  "close_total": 45.5
+ },
+ "401858259": {
+  "away": "Virginia Tech",
+  "home": "California",
+  "away_pts": 20,
+  "home_pts": 25,
+  "close_spread": 10.0,
+  "close_total": 52.5
+ },
+ "401866437": {
+  "away": "Buffalo",
+  "home": "Toledo",
+  "away_pts": 23,
+  "home_pts": 8,
+  "close_spread": -18.5,
+  "close_total": 54.5
+ },
+ "401866438": {
+  "away": "Central Michigan",
+  "home": "Ohio",
+  "away_pts": 14,
+  "home_pts": 31,
+  "close_spread": -2.5,
+  "close_total": 45.5
+ },
+ "401858480": {
+  "away": "Illinois",
+  "home": "Michigan State",
+  "away_pts": 38,
+  "home_pts": 37,
+  "close_spread": 2.5,
+  "close_total": 48.5
+ },
+ "401861964": {
+  "away": "UConn",
+  "home": "Temple",
+  "away_pts": 34,
+  "home_pts": 20,
+  "close_spread": -3.5,
+  "close_total": 55.5
+ },
+ "401868968": {
+  "away": "Southern",
+  "home": "Prairie View A&M",
+  "away_pts": 28,
+  "home_pts": 14,
+  "close_spread": -15.5,
+  "close_total": 52.5
+ },
+ "401869144": {
+  "away": "Incarnate Word",
+  "home": "Lamar",
+  "away_pts": 35,
+  "home_pts": 38,
+  "close_spread": -7.5,
+  "close_total": 50.5
+ },
+ "401868156": {
+  "away": "Utah Tech",
+  "home": "Portland State",
+  "away_pts": 14,
+  "home_pts": 30,
+  "close_spread": -3.0,
+  "close_total": 60.5
+ },
+ "401866659": {
+  "away": "Stony Brook",
+  "home": "Towson",
+  "away_pts": 31,
+  "home_pts": 24,
+  "close_spread": 3.5,
+  "close_total": 58.5
+ },
+ "401858483": {
+  "away": "Maryland",
+  "home": "Ohio State",
+  "away_pts": 16,
+  "home_pts": 45,
+  "close_spread": -31.5,
+  "close_total": 56.5
+ },
+ "401856713": {
+  "away": "Tennessee",
+  "home": "Arkansas",
+  "away_pts": 24,
+  "home_pts": 17,
+  "close_spread": 13.5,
+  "close_total": 51.5
+ },
+ "401868955": {
+  "away": "Jackson State",
+  "home": "Grambling",
+  "away_pts": 38,
+  "home_pts": 45,
+  "close_spread": 8.5,
+  "close_total": 56.5
+ },
+ "401867877": {
+  "away": "North Dakota",
+  "home": "Northern Iowa",
+  "away_pts": 17,
+  "home_pts": 24,
+  "close_spread": 14.0,
+  "close_total": 58.5
+ },
+ "401868115": {
+  "away": "Montana",
+  "home": "Northern Arizona",
+  "away_pts": 44,
+  "home_pts": 49,
+  "close_spread": 9.5,
+  "close_total": 64.5
+ },
+ "401860902": {
+  "away": "San Diego State",
+  "home": "Oregon State",
+  "away_pts": 14,
+  "home_pts": 66,
+  "close_spread": -16.5,
+  "close_total": 53.5
+ },
+ "401868144": {
+  "away": "West Georgia",
+  "home": "Eastern Kentucky",
+  "away_pts": 20,
+  "home_pts": 30,
+  "close_spread": -6.5,
+  "close_total": 43.5
+ },
+ "401868078": {
+  "away": "Cal Poly",
+  "home": "Idaho State",
+  "away_pts": 25,
+  "home_pts": 24,
+  "close_spread": -14.0,
+  "close_total": 62.5
+ },
+ "401864518": {
+  "away": "North Dakota State",
+  "home": "UNLV",
+  "away_pts": 7,
+  "home_pts": 13,
+  "close_spread": 2.5,
+  "close_total": 47.5
+ },
+ "401868087": {
+  "away": "Northern Colorado",
+  "home": "Eastern Washington",
+  "away_pts": 22,
+  "home_pts": 31,
+  "close_spread": -6.5,
+  "close_total": 58.5
+ },
+ "401864517": {
+  "away": "Nevada",
+  "home": "UTEP",
+  "away_pts": 30,
+  "home_pts": 13,
+  "close_spread": 10.0,
+  "close_total": 47.5
+ },
+ "401869943": {
+  "away": "Coastal Carolina",
+  "home": "Marshall",
+  "away_pts": 27,
+  "home_pts": 21,
+  "close_spread": -4.5,
+  "close_total": 58.5
+ },
+ "401862798": {
+  "away": "UAB",
+  "home": "Memphis",
+  "away_pts": 13,
+  "home_pts": 38,
+  "close_spread": -15.5,
+  "close_total": 54.5
+ },
+ "401868065": {
+  "away": "Tarleton State",
+  "home": "Austin Peay",
+  "away_pts": 40,
+  "home_pts": 32,
+  "close_spread": -2.5,
+  "close_total": 60.5
+ },
+ "401856715": {
+  "away": "LSU",
+  "home": "Kentucky",
+  "away_pts": 34,
+  "home_pts": 35,
+  "close_spread": 9.5,
+  "close_total": 50.5
+ },
+ "401858485": {
+  "away": "USC",
+  "home": "Penn State",
+  "away_pts": 31,
+  "home_pts": 23,
+  "close_spread": 1.5,
+  "close_total": 54.5
+ },
+ "401856712": {
+  "away": "Georgia",
+  "home": "Alabama",
+  "away_pts": 20,
+  "home_pts": 17,
+  "close_spread": -2.5,
+  "close_total": 51.5
+ },
+ "401864516": {
+  "away": "Air Force",
+  "home": "Northern Illinois",
+  "away_pts": 28,
+  "home_pts": 7,
+  "close_spread": 7.5,
+  "close_total": 48.5
+ },
+ "401858258": {
+  "away": "Syracuse",
+  "home": "Virginia",
+  "away_pts": 25,
+  "home_pts": 28,
+  "close_spread": -13.5,
+  "close_total": 49.5
+ },
+ "401869965": {
+  "away": "Louisiana",
+  "home": "Louisiana Tech",
+  "away_pts": 31,
+  "home_pts": 32,
+  "close_spread": -3.0,
+  "close_total": 48.5
+ },
+ "401869949": {
+  "away": "James Madison",
+  "home": "Georgia Southern",
+  "away_pts": 27,
+  "home_pts": 24,
+  "close_spread": 7.5,
+  "close_total": 51.5
+ },
+ "401868054": {
+  "away": "Central Arkansas",
+  "home": "Abilene Christian",
+  "away_pts": 14,
+  "home_pts": 20,
+  "close_spread": -9.5,
+  "close_total": 51.5
+ },
+ "401856827": {
+  "away": "Kansas",
+  "home": "Utah",
+  "away_pts": 24,
+  "home_pts": 41,
+  "close_spread": -15.5,
+  "close_total": 49.5
+ },
+ "401868249": {
+  "away": "SE Louisiana",
+  "home": "UT Rio Grande Valley",
+  "away_pts": 3,
+  "home_pts": 13,
+  "close_spread": 3.0,
+  "close_total": 54.5
+ },
+ "401858486": {
+  "away": "Minnesota",
+  "home": "Purdue",
+  "away_pts": 13,
+  "home_pts": 41,
+  "close_spread": 2.5,
+  "close_total": 49.5
+ },
+ "401860901": {
+  "away": "Boise State",
+  "home": "Fresno State",
+  "away_pts": 38,
+  "home_pts": 31,
+  "close_spread": 8.5,
+  "close_total": 48.5
+ },
+ "401856808": {
+  "away": "Hawai'i",
+  "home": "Arizona State",
+  "away_pts": 12,
+  "home_pts": 30,
+  "close_spread": -21.0,
+  "close_total": 50.5
+ },
+ "401871067": {
+  "away": "Delaware",
+  "home": "Middle Tennessee",
+  "away_pts": 30,
+  "home_pts": 33,
+  "close_spread": 1.5,
+  "close_total": 48.5
+ },
+ "401871053": {
+  "away": "Florida International",
+  "home": "Jacksonville State",
+  "away_pts": 24,
+  "home_pts": 27,
+  "close_spread": -3.0,
+  "close_total": 44.5
+ },
+ "401871054": {
+  "away": "Kennesaw State",
+  "home": "Missouri State",
+  "away_pts": 21,
+  "home_pts": 24,
+  "close_spread": 2.5,
+  "close_total": 52.5
+ },
+ "401871068": {
+  "away": "Western Kentucky",
+  "home": "Sam Houston",
+  "away_pts": 16,
+  "home_pts": 3,
+  "close_spread": 1.5,
+  "close_total": 53.5
+ },
+ "401869950": {
+  "away": "Georgia Southern",
+  "home": "Old Dominion",
+  "away_pts": 23,
+  "home_pts": 15,
+  "close_spread": 3.0,
+  "close_total": 44.5
+ },
+ "401862800": {
+  "away": "East Carolina",
+  "home": "UAB",
+  "away_pts": 17,
+  "home_pts": 30,
+  "close_spread": 5.0,
+  "close_total": 49.5
+ },
+ "401860923": {
+  "away": "Colorado State",
+  "home": "Texas State",
+  "away_pts": 27,
+  "home_pts": 66,
+  "close_spread": -14.5,
+  "close_total": 69.5
+ },
+ "401867821": {
+  "away": "Columbia",
+  "home": "Pennsylvania",
+  "away_pts": 28,
+  "home_pts": 27,
+  "close_spread": -6.5,
+  "close_total": 46.5
+ },
+ "401862801": {
+  "away": "Memphis",
+  "home": "Tulane",
+  "away_pts": 17,
+  "home_pts": 31,
+  "close_spread": 6.5,
+  "close_total": 55.5
+ },
+ "401858493": {
+  "away": "Washington",
+  "home": "Purdue",
+  "away_pts": 38,
+  "home_pts": 26,
+  "close_spread": -3.5,
+  "close_total": 50.5
+ },
+ "401869844": {
+  "away": "App State",
+  "home": "Coastal Carolina",
+  "away_pts": 35,
+  "home_pts": 32,
+  "close_spread": 1.25,
+  "close_total": 48.75
+ },
+ "401858261": {
+  "away": "Charleston Southern",
+  "home": "Clemson",
+  "away_pts": 0,
+  "home_pts": 37,
+  "close_spread": -42.5,
+  "close_total": 54.5
+ },
+ "401866669": {
+  "away": "Rhode Island",
+  "home": "Yale",
+  "away_pts": 41,
+  "home_pts": 23,
+  "close_spread": -11.5,
+  "close_total": 48.5
+ },
+ "401869957": {
+  "away": "Georgia State",
+  "home": "James Madison",
+  "away_pts": 22,
+  "home_pts": 49,
+  "close_spread": -8.5,
+  "close_total": 57.5
+ },
+ "401858268": {
+  "away": "Virginia",
+  "home": "SMU",
+  "away_pts": 13,
+  "home_pts": 23,
+  "close_spread": -9.5,
+  "close_total": 51.5
+ },
+ "401856724": {
+  "away": "Florida",
+  "home": "Texas",
+  "away_pts": 27,
+  "home_pts": 24,
+  "close_spread": -12.5,
+  "close_total": 50.5
+ },
+ "401858488": {
+  "away": "Ohio State",
+  "home": "Indiana",
+  "away_pts": 19,
+  "home_pts": 15,
+  "close_spread": 2.5,
+  "close_total": 49.5
+ },
+ "401867901": {
+  "away": "Central Connecticut",
+  "home": "Mercyhurst",
+  "away_pts": 43,
+  "home_pts": 40,
+  "close_spread": 7.5,
+  "close_total": 53.5
+ },
+ "401867920": {
+  "away": "New Haven",
+  "home": "Robert Morris",
+  "away_pts": 26,
+  "home_pts": 15,
+  "close_spread": -9.5,
+  "close_total": 45.5
+ },
+ "401867925": {
+  "away": "Duquesne",
+  "home": "Stonehill",
+  "away_pts": 14,
+  "home_pts": 7,
+  "close_spread": -4.5,
+  "close_total": 43.5
+ },
+ "401866668": {
+  "away": "Chicago State",
+  "home": "North Carolina A&T",
+  "away_pts": 12,
+  "home_pts": 27,
+  "close_spread": -18.5,
+  "close_total": 54.5
+ },
+ "401866441": {
+  "away": "Ball State",
+  "home": "Bowling Green",
+  "away_pts": 32,
+  "home_pts": 31,
+  "close_spread": -6.5,
+  "close_total": 46.5
+ },
+ "401866663": {
+  "away": "Hampton",
+  "home": "Sacred Heart",
+  "away_pts": 21,
+  "home_pts": 35,
+  "close_spread": -15.0,
+  "close_total": 43.5
+ },
+ "401867807": {
+  "away": "Brown",
+  "home": "Princeton",
+  "away_pts": 10,
+  "home_pts": 16,
+  "close_spread": -3.5,
+  "close_total": 39.0
+ },
+ "401858267": {
+  "away": "Pittsburgh",
+  "home": "Boston College",
+  "away_pts": 21,
+  "home_pts": 27,
+  "close_spread": 6.0,
+  "close_total": 42.5
+ },
+ "401858491": {
+  "away": "Northwestern",
+  "home": "Michigan State",
+  "away_pts": 24,
+  "home_pts": 21,
+  "close_spread": 7.5,
+  "close_total": 49.5
+ },
+ "401862802": {
+  "away": "Florida Atlantic",
+  "home": "Army",
+  "away_pts": 24,
+  "home_pts": 56,
+  "close_spread": -2.5,
+  "close_total": 56.5
+ },
+ "401856829": {
+  "away": "Cincinnati",
+  "home": "West Virginia",
+  "away_pts": 42,
+  "home_pts": 45,
+  "close_spread": -1.5,
+  "close_total": 63.5
+ },
+ "401856720": {
+  "away": "Mississippi State",
+  "home": "LSU",
+  "away_pts": 0,
+  "home_pts": 31,
+  "close_spread": -17.5,
+  "close_total": 55.5
+ },
+ "401856830": {
+  "away": "Kansas",
+  "home": "Kansas State",
+  "away_pts": 24,
+  "home_pts": 35,
+  "close_spread": -3.0,
+  "close_total": 55.5
+ },
+ "401858489": {
+  "away": "Rutgers",
+  "home": "Maryland",
+  "away_pts": 37,
+  "home_pts": 30,
+  "close_spread": -5.5,
+  "close_total": 55.5
+ },
+ "401867837": {
+  "away": "Merrimack",
+  "home": "Dartmouth",
+  "away_pts": 21,
+  "home_pts": 27,
+  "close_spread": -10.5,
+  "close_total": 44.5
+ },
+ "401869132": {
+  "away": "McNeese",
+  "home": "Northwestern State",
+  "away_pts": 24,
+  "home_pts": 21,
+  "close_spread": 21.0,
+  "close_total": 60.5
+ },
+ "401866664": {
+  "away": "Bryant",
+  "home": "Maine",
+  "away_pts": 17,
+  "home_pts": 14,
+  "close_spread": -2.5,
+  "close_total": 46.5
+ },
+ "401856725": {
+  "away": "The Citadel",
+  "home": "Texas A&M",
+  "away_pts": 0,
+  "home_pts": 41,
+  "close_spread": -46.0,
+  "close_total": 56.5
+ },
+ "401866665": {
+  "away": "Monmouth",
+  "home": "New Hampshire",
+  "away_pts": 42,
+  "home_pts": 21,
+  "close_spread": 7.0,
+  "close_total": 55.5
+ },
+ "401862803": {
+  "away": "Charlotte",
+  "home": "Temple",
+  "away_pts": 38,
+  "home_pts": 31,
+  "close_spread": -18.0,
+  "close_total": 47.5
+ },
+ "401866442": {
+  "away": "Massachusetts",
+  "home": "Buffalo",
+  "away_pts": 18,
+  "home_pts": 25,
+  "close_spread": -6.75,
+  "close_total": 43.0
+ },
+ "401868002": {
+  "away": "Georgetown",
+  "home": "Colgate",
+  "away_pts": 27,
+  "home_pts": 17,
+  "close_spread": -21.0,
+  "close_total": 44.5
+ },
+ "401868222": {
+  "away": "Morehead State",
+  "home": "Davidson",
+  "away_pts": 31,
+  "home_pts": 34,
+  "close_spread": 1.5,
+  "close_total": 58.5
+ },
+ "401867841": {
+  "away": "Holy Cross",
+  "home": "Harvard",
+  "away_pts": 7,
+  "home_pts": 30,
+  "close_spread": -16.0,
+  "close_total": 45.5
+ },
+ "401868213": {
+  "away": "Dayton",
+  "home": "Butler",
+  "away_pts": 19,
+  "home_pts": 9,
+  "close_spread": -5.5,
+  "close_total": 51.5
+ },
+ "401868257": {
+  "away": "Marist",
+  "home": "Drake",
+  "away_pts": 27,
+  "home_pts": 22,
+  "close_spread": -4.5,
+  "close_total": 52.5
+ },
+ "401866443": {
+  "away": "Western Michigan",
+  "home": "Central Michigan",
+  "away_pts": 21,
+  "home_pts": 14,
+  "close_spread": 7.5,
+  "close_total": 43.5
+ },
+ "401868398": {
+  "away": "VMI",
+  "home": "Wofford",
+  "away_pts": 14,
+  "home_pts": 41,
+  "close_spread": -29.5,
+  "close_total": 46.5
+ },
+ "401868066": {
+  "away": "Austin Peay",
+  "home": "West Georgia",
+  "away_pts": 24,
+  "home_pts": 10,
+  "close_spread": 18.0,
+  "close_total": 53.5
+ },
+ "401868277": {
+  "away": "Presbyterian",
+  "home": "Stetson",
+  "away_pts": 47,
+  "home_pts": 43,
+  "close_spread": 7.5,
+  "close_total": 62.5
+ },
+ "401867830": {
+  "away": "Lehigh",
+  "home": "Cornell",
+  "away_pts": 38,
+  "home_pts": 48,
+  "close_spread": 10.5,
+  "close_total": 46.5
+ },
+ "401867878": {
+  "away": "South Dakota State",
+  "home": "North Dakota",
+  "away_pts": 10,
+  "home_pts": 21,
+  "close_spread": 14.0,
+  "close_total": 56.5
+ },
+ "401868145": {
+  "away": "Eastern Kentucky",
+  "home": "Tennessee Tech",
+  "away_pts": 20,
+  "home_pts": 49,
+  "close_spread": -14.5,
+  "close_total": 51.5
+ },
+ "401866666": {
+  "away": "UAlbany",
+  "home": "Stony Brook",
+  "away_pts": 48,
+  "home_pts": 31,
+  "close_spread": -6.0,
+  "close_total": 46.5
+ },
+ "401868181": {
+  "away": "Lindenwood",
+  "home": "Eastern Illinois",
+  "away_pts": 20,
+  "home_pts": 13,
+  "close_spread": -1.5,
+  "close_total": 50.5
+ },
+ "401868096": {
+  "away": "Idaho",
+  "home": "Montana",
+  "away_pts": 42,
+  "home_pts": 35,
+  "close_spread": -16.0,
+  "close_total": 64.5
+ },
+ "401868330": {
+  "away": "Alabama State",
+  "home": "Arkansas-Pine Bluff",
+  "away_pts": 21,
+  "home_pts": 15,
+  "close_spread": 3.0,
+  "close_total": 54.5
+ },
+ "401868105": {
+  "away": "Idaho State",
+  "home": "Weber State",
+  "away_pts": 20,
+  "home_pts": 27,
+  "close_spread": 5.0,
+  "close_total": 63.5
+ },
+ "401868943": {
+  "away": "Bethune-Cookman",
+  "home": "Mississippi Valley State",
+  "away_pts": 34,
+  "home_pts": 14,
+  "close_spread": 6.5,
+  "close_total": 50.5
+ },
+ "401867993": {
+  "away": "Lafayette",
+  "home": "Bucknell",
+  "away_pts": 20,
+  "home_pts": 7,
+  "close_spread": 3.5,
+  "close_total": 52.5
+ },
+ "401868301": {
+  "away": "Grambling",
+  "home": "Alabama A&M",
+  "away_pts": 31,
+  "home_pts": 61,
+  "close_spread": -7.0,
+  "close_total": 59.5
+ },
+ "401868207": {
+  "away": "Western Illinois",
+  "home": "Southeast Missouri State",
+  "away_pts": 30,
+  "home_pts": 40,
+  "close_spread": -6.0,
+  "close_total": 51.5
+ },
+ "401868949": {
+  "away": "Florida A&M",
+  "home": "Jackson State",
+  "away_pts": 17,
+  "home_pts": 27,
+  "close_spread": -14.5,
+  "close_total": 54.5
+ },
+ "401868189": {
+  "away": "Gardner-Webb",
+  "home": "UT Martin",
+  "away_pts": 6,
+  "home_pts": 17,
+  "close_spread": 1.5,
+  "close_total": 51.5
+ },
+ "401868361": {
+  "away": "Alcorn State",
+  "home": "Prairie View A&M",
+  "away_pts": 38,
+  "home_pts": 41,
+  "close_spread": -8.0,
+  "close_total": 56.5
+ },
+ "401858266": {
+  "away": "North Carolina",
+  "home": "Duke",
+  "away_pts": 24,
+  "home_pts": 20,
+  "close_spread": -3.0,
+  "close_total": 46.5
+ },
+ "401856828": {
+  "away": "Arizona State",
+  "home": "Texas Tech",
+  "away_pts": 25,
+  "home_pts": 53,
+  "close_spread": -16.5,
+  "close_total": 49.5
+ },
+ "401866667": {
+  "away": "Towson",
+  "home": "Campbell",
+  "away_pts": 20,
+  "home_pts": 24,
+  "close_spread": -11.5,
+  "close_total": 57.5
+ },
+ "401864522": {
+  "away": "Northern Illinois",
+  "home": "Wyoming",
+  "away_pts": 23,
+  "home_pts": 41,
+  "close_spread": -7.5,
+  "close_total": 41.5
+ },
+ "401868012": {
+  "away": "Villanova",
+  "home": "Fordham",
+  "away_pts": 38,
+  "home_pts": 17,
+  "close_spread": 7.5,
+  "close_total": 45.5
+ },
+ "401856719": {
+  "away": "Auburn",
+  "home": "Georgia",
+  "away_pts": 27,
+  "home_pts": 24,
+  "close_spread": -19.5,
+  "close_total": 49.5
+ },
+ "401866444": {
+  "away": "Toledo",
+  "home": "Eastern Michigan",
+  "away_pts": 34,
+  "home_pts": 14,
+  "close_spread": 7.5,
+  "close_total": 52.5
+ },
+ "401858264": {
+  "away": "Georgia Tech",
+  "home": "Virginia Tech",
+  "away_pts": 24,
+  "home_pts": 34,
+  "close_spread": -8.5,
+  "close_total": 55.5
+ },
+ "401858490": {
+  "away": "Penn State",
+  "home": "Michigan",
+  "away_pts": 18,
+  "home_pts": 21,
+  "close_spread": -6.0,
+  "close_total": 43.5
+ },
+ "401864524": {
+  "away": "UNLV",
+  "home": "Air Force",
+  "away_pts": 31,
+  "home_pts": 41,
+  "close_spread": 1.5,
+  "close_total": 48.5
+ },
+ "401866478": {
+  "away": "Akron",
+  "home": "Miami (OH)",
+  "away_pts": 14,
+  "home_pts": 34,
+  "close_spread": -9.5,
+  "close_total": 47.5
+ },
+ "401856721": {
+  "away": "Missouri",
+  "home": "Ole Miss",
+  "away_pts": 3,
+  "home_pts": 31,
+  "close_spread": -4.0,
+  "close_total": 57.5
+ },
+ "401856723": {
+  "away": "Alabama",
+  "home": "Tennessee",
+  "away_pts": 10,
+  "home_pts": 26,
+  "close_spread": 7.5,
+  "close_total": 50.5
+ },
+ "401867849": {
+  "away": "Illinois State",
+  "home": "Southern Illinois",
+  "away_pts": 35,
+  "home_pts": 14,
+  "close_spread": 6.5,
+  "close_total": 53.5
+ },
+ "401868310": {
+  "away": "Stephen F. Austin",
+  "home": "Nicholls",
+  "away_pts": 56,
+  "home_pts": 0,
+  "close_spread": 23.0,
+  "close_total": 49.5
+ },
+ "401868289": {
+  "away": "Valparaiso",
+  "home": "San Diego",
+  "away_pts": 13,
+  "home_pts": 38,
+  "close_spread": -7.0,
+  "close_total": 52.5
+ },
+ "401862805": {
+  "away": "Tulsa",
+  "home": "Rice",
+  "away_pts": 38,
+  "home_pts": 17,
+  "close_spread": 4.0,
+  "close_total": 46.5
+ },
+ "401867912": {
+  "away": "Long Island University",
+  "home": "Wagner",
+  "away_pts": 14,
+  "home_pts": 9,
+  "close_spread": 6.5,
+  "close_total": 39.5
+ },
+ "401867870": {
+  "away": "South Dakota",
+  "home": "Murray State",
+  "away_pts": 48,
+  "home_pts": 20,
+  "close_spread": 28.5,
+  "close_total": 59.5
+ },
+ "401868319": {
+  "away": "Lamar",
+  "home": "SE Louisiana",
+  "away_pts": 31,
+  "home_pts": 34,
+  "close_spread": 5.5,
+  "close_total": 50.5
+ },
+ "401869966": {
+  "away": "Troy",
+  "home": "Louisiana",
+  "away_pts": 6,
+  "home_pts": 33,
+  "close_spread": -3.0,
+  "close_total": 49.5
+ },
+ "401867897": {
+  "away": "Northern Iowa",
+  "home": "Youngstown State",
+  "away_pts": 22,
+  "home_pts": 35,
+  "close_spread": -20.5,
+  "close_total": 61.5
+ },
+ "401860903": {
+  "away": "Washington State",
+  "home": "Oregon State",
+  "away_pts": 30,
+  "home_pts": 48,
+  "close_spread": -19.0,
+  "close_total": 52.5
+ },
+ "401867968": {
+  "away": "Morgan State",
+  "home": "Tennessee State",
+  "away_pts": 16,
+  "home_pts": 25,
+  "close_spread": 5.5,
+  "close_total": 50.5
+ },
+ "401869152": {
+  "away": "East Texas A&M",
+  "home": "Houston Christian",
+  "away_pts": 24,
+  "home_pts": 43,
+  "close_spread": -3.0,
+  "close_total": 47.5
+ },
+ "401868250": {
+  "away": "UT Rio Grande Valley",
+  "home": "Incarnate Word",
+  "away_pts": 16,
+  "home_pts": 41,
+  "close_spread": -3.5,
+  "close_total": 53.5
+ },
+ "401869934": {
+  "away": "Arkansas State",
+  "home": "Southern Miss",
+  "away_pts": 23,
+  "home_pts": 13,
+  "close_spread": 5.5,
+  "close_total": 61.5
+ },
+ "401862806": {
+  "away": "Kent State",
+  "home": "South Florida",
+  "away_pts": 2,
+  "home_pts": 29,
+  "close_spread": -20.5,
+  "close_total": 46.5
+ },
+ "401864520": {
+  "away": "Nevada",
+  "home": "North Dakota State",
+  "away_pts": 17,
+  "home_pts": 31,
+  "close_spread": -14.5,
+  "close_total": 42.5
+ },
+ "401868088": {
+  "away": "Montana State",
+  "home": "Eastern Washington",
+  "away_pts": 56,
+  "home_pts": 20,
+  "close_spread": 20.5,
+  "close_total": 63.5
+ },
+ "401856726": {
+  "away": "Arkansas",
+  "home": "Vanderbilt",
+  "away_pts": 31,
+  "home_pts": 21,
+  "close_spread": -5.5,
+  "close_total": 48.5
+ },
+ "401868134": {
+  "away": "Central Arkansas",
+  "home": "Tarleton State",
+  "away_pts": 35,
+  "home_pts": 49,
+  "close_spread": -19.0,
+  "close_total": 60.5
+ },
+ "401856832": {
+  "away": "TCU",
+  "home": "Baylor",
+  "away_pts": 17,
+  "home_pts": 6,
+  "close_spread": -4.5,
+  "close_total": 50.5
+ },
+ "401858263": {
+  "away": "Florida State",
+  "home": "Miami",
+  "away_pts": 35,
+  "home_pts": 43,
+  "close_spread": -20.0,
+  "close_total": 56.5
+ },
+ "401868383": {
+  "away": "Mercer",
+  "home": "Samford",
+  "away_pts": 31,
+  "home_pts": 21,
+  "close_spread": 14.5,
+  "close_total": 48.5
+ },
+ "401868055": {
+  "away": "Abilene Christian",
+  "home": "North Alabama",
+  "away_pts": 31,
+  "home_pts": 28,
+  "close_spread": 3.0,
+  "close_total": 49.5
+ },
+ "401868125": {
+  "away": "Portland State",
+  "home": "Northern Arizona",
+  "away_pts": 25,
+  "home_pts": 38,
+  "close_spread": -17.5,
+  "close_total": 63.5
+ },
+ "401856831": {
+  "away": "Oklahoma State",
+  "home": "Houston",
+  "away_pts": 32,
+  "home_pts": 35,
+  "close_spread": -3.5,
+  "close_total": 62.5
+ },
+ "401858262": {
+  "away": "Elon",
+  "home": "Stanford",
+  "away_pts": 7,
+  "home_pts": 34,
+  "close_spread": -34.5,
+  "close_total": 55.5
+ },
+ "401856809": {
+  "away": "Notre Dame",
+  "home": "BYU",
+  "away_pts": 24,
+  "home_pts": 28,
+  "close_spread": 10.5,
+  "close_total": 47.5
+ },
+ "401858265": {
+  "away": "Louisville",
+  "home": "Syracuse",
+  "away_pts": 34,
+  "home_pts": 26,
+  "close_spread": 14.5,
+  "close_total": 56.5
+ },
+ "401858494": {
+  "away": "Wisconsin",
+  "home": "UCLA",
+  "away_pts": 7,
+  "home_pts": 17,
+  "close_spread": -1.5,
+  "close_total": 42.5
+ },
+ "401856722": {
+  "away": "Kentucky",
+  "home": "Oklahoma",
+  "away_pts": 21,
+  "home_pts": 13,
+  "close_spread": -6.5,
+  "close_total": 43.5
+ },
+ "401862804": {
+  "away": "Navy",
+  "home": "UTSA",
+  "away_pts": 34,
+  "home_pts": 38,
+  "close_spread": -5.5,
+  "close_total": 54.5
+ },
+ "401868079": {
+  "away": "Cal Poly",
+  "home": "Northern Colorado",
+  "away_pts": 18,
+  "home_pts": 28,
+  "close_spread": 3.5,
+  "close_total": 53.5
+ },
+ "401871091": {
+  "away": "Louisiana Tech",
+  "home": "UL Monroe",
+  "away_pts": 24,
+  "home_pts": 0,
+  "close_spread": 14.5,
+  "close_total": 55.75
+ },
+ "401868161": {
+  "away": "UC Davis",
+  "home": "Southern Utah",
+  "away_pts": 17,
+  "home_pts": 38,
+  "close_spread": 4.5,
+  "close_total": 64.5
+ },
+ "401864523": {
+  "away": "San Jos\u00e9 State",
+  "home": "UTEP",
+  "away_pts": 24,
+  "home_pts": 11,
+  "close_spread": 6.75,
+  "close_total": 46.0
+ },
+ "401866445": {
+  "away": "Ohio",
+  "home": "Sacramento State",
+  "away_pts": 48,
+  "home_pts": 7,
+  "close_spread": 17.0,
+  "close_total": 46.5
+ },
+ "401856833": {
+  "away": "Utah",
+  "home": "Colorado",
+  "away_pts": 27,
+  "home_pts": 24,
+  "close_spread": 15.5,
+  "close_total": 49.5
+ },
+ "401860904": {
+  "away": "Fresno State",
+  "home": "San Diego State",
+  "away_pts": 23,
+  "home_pts": 26,
+  "close_spread": 6.5,
+  "close_total": 46.5
+ },
+ "401864521": {
+  "away": "New Mexico",
+  "home": "Hawai'i",
+  "away_pts": 21,
+  "home_pts": 10,
+  "close_spread": 14.5,
+  "close_total": 46.5
+ },
+ "401858269": {
+  "away": "Wake Forest",
+  "home": "California",
+  "away_pts": 41,
+  "home_pts": 7,
+  "close_spread": 10.5,
+  "close_total": 54.5
+ },
+ "401858492": {
+  "away": "Nebraska",
+  "home": "Oregon",
+  "away_pts": 14,
+  "home_pts": 17,
+  "close_spread": -6.5,
+  "close_total": 51.5
+ },
+ "401871069": {
+  "away": "Missouri State",
+  "home": "Delaware",
+  "away_pts": 38,
+  "home_pts": 61,
+  "close_spread": -3.5,
+  "close_total": 53.5
+ },
+ "401871055": {
+  "away": "Middle Tennessee",
+  "home": "Florida International",
+  "away_pts": 26,
+  "home_pts": 23,
+  "close_spread": -10.5,
+  "close_total": 46.5
+ },
+ "401871092": {
+  "away": "South Alabama",
+  "home": "Marshall",
+  "away_pts": 13,
+  "home_pts": 20,
+  "close_spread": 2.0,
+  "close_total": 66.5
+ },
+ "401871070": {
+  "away": "New Mexico State",
+  "home": "Sam Houston",
+  "away_pts": 30,
+  "home_pts": 24,
+  "close_spread": 3.5,
+  "close_total": 46.5
+ },
+ "401869845": {
+  "away": "James Madison",
+  "home": "App State",
+  "away_pts": 31,
+  "home_pts": 34,
+  "close_spread": 12.75,
+  "close_total": 56.5
+ },
+ "401871056": {
+  "away": "Liberty",
+  "home": "Kennesaw State",
+  "away_pts": 34,
+  "home_pts": 6,
+  "close_spread": 8.5,
+  "close_total": 50.5
+ },
+ "401862807": {
+  "away": "East Carolina",
+  "home": "Memphis",
+  "away_pts": 34,
+  "home_pts": 41,
+  "close_spread": -10.5,
+  "close_total": 55.5
+ },
+ "401867955": {
+  "away": "North Carolina Central",
+  "home": "Delaware State",
+  "away_pts": 31,
+  "home_pts": 12,
+  "close_spread": -5.5,
+  "close_total": 52.5
+ },
+ "401870841": {
+  "away": "Yale",
+  "home": "Pennsylvania",
+  "away_pts": 21,
+  "home_pts": 24,
+  "close_spread": 6.5,
+  "close_total": 49.5
+ },
+ "401858271": {
+  "away": "Duke",
+  "home": "Virginia",
+  "away_pts": 19,
+  "home_pts": 16,
+  "close_spread": -2.5,
+  "close_total": 47.5
+ },
+ "401861965": {
+  "away": "Massachusetts",
+  "home": "UConn",
+  "away_pts": 16,
+  "home_pts": 35,
+  "close_spread": -12.75,
+  "close_total": 53.75
+ },
+ "401862808": {
+  "away": "Army",
+  "home": "Tulsa",
+  "away_pts": 38,
+  "home_pts": 35,
+  "close_spread": 1.0,
+  "close_total": 53.5
+ },
+ "401864525": {
+  "away": "Air Force",
+  "home": "Wyoming",
+  "away_pts": 14,
+  "home_pts": 28,
+  "close_spread": 6.5,
+  "close_total": 46.5
+ },
+ "401858272": {
+  "away": "NC State",
+  "home": "Stanford",
+  "away_pts": 28,
+  "home_pts": 31,
+  "close_spread": 7.5,
+  "close_total": 54.5
+ },
+ "401856841": {
+  "away": "West Virginia",
+  "home": "TCU",
+  "away_pts": 24,
+  "home_pts": 20,
+  "close_spread": -10.5,
+  "close_total": 58.5
+ },
+ "401862809": {
+  "away": "Rice",
+  "home": "Florida Atlantic",
+  "away_pts": 49,
+  "home_pts": 51,
+  "close_spread": -9.5,
+  "close_total": 54.5
+ },
+ "401856840": {
+  "away": "Texas Tech",
+  "home": "Cincinnati",
+  "away_pts": 24,
+  "home_pts": 37,
+  "close_spread": 10.5,
+  "close_total": 57.5
+ },
+ "401858274": {
+  "away": "Pittsburgh",
+  "home": "Miami",
+  "away_pts": 23,
+  "home_pts": 52,
+  "close_spread": -20.5,
+  "close_total": 50.5
+ },
+ "401866674": {
+  "away": "New Hampshire",
+  "home": "Merrimack",
+  "away_pts": 17,
+  "home_pts": 24,
+  "close_spread": -2.0,
+  "close_total": 46.5
+ },
+ "401866450": {
+  "away": "Western Michigan",
+  "home": "Toledo",
+  "away_pts": 38,
+  "home_pts": 45,
+  "close_spread": -2.5,
+  "close_total": 47.5
+ },
+ "401858270": {
+  "away": "California",
+  "home": "SMU",
+  "away_pts": 20,
+  "home_pts": 59,
+  "close_spread": -18.5,
+  "close_total": 55.5
+ },
+ "401858496": {
+  "away": "Indiana",
+  "home": "Michigan",
+  "away_pts": 13,
+  "home_pts": 6,
+  "close_spread": 7.5,
+  "close_total": 43.5
+ },
+ "401858498": {
+  "away": "Rutgers",
+  "home": "Northwestern",
+  "away_pts": 14,
+  "home_pts": 42,
+  "close_spread": -15.0,
+  "close_total": 59.5
+ },
+ "401867931": {
+  "away": "Wagner",
+  "home": "Duquesne",
+  "away_pts": 21,
+  "home_pts": 52,
+  "close_spread": -13.5,
+  "close_total": 44.5
+ },
+ "401868266": {
+  "away": "St. Thomas (MN)",
+  "home": "Marist",
+  "away_pts": 35,
+  "home_pts": 13,
+  "close_spread": 3.5,
+  "close_total": 51.5
+ },
+ "401856728": {
+  "away": "LSU",
+  "home": "Auburn",
+  "away_pts": 38,
+  "home_pts": 17,
+  "close_spread": 7.0,
+  "close_total": 52.5
+ },
+ "401866670": {
+  "away": "UAlbany",
+  "home": "Rhode Island",
+  "away_pts": 38,
+  "home_pts": 21,
+  "close_spread": -6.5,
+  "close_total": 45.5
+ },
+ "401868230": {
+  "away": "San Diego",
+  "home": "Dayton",
+  "away_pts": 32,
+  "home_pts": 37,
+  "close_spread": -5.5,
+  "close_total": 54.5
+ },
+ "401867902": {
+  "away": "New Haven",
+  "home": "Central Connecticut",
+  "away_pts": 20,
+  "home_pts": 42,
+  "close_spread": -14.0,
+  "close_total": 54.5
+ },
+ "401867808": {
+  "away": "Cornell",
+  "home": "Brown",
+  "away_pts": 31,
+  "home_pts": 38,
+  "close_spread": 2.5,
+  "close_total": 49.5
+ },
+ "401867913": {
+  "away": "Stonehill",
+  "home": "Long Island University",
+  "away_pts": 18,
+  "home_pts": 14,
+  "close_spread": -3.0,
+  "close_total": 38.5
+ },
+ "401856834": {
+  "away": "Baylor",
+  "home": "Kansas",
+  "away_pts": 24,
+  "home_pts": 25,
+  "close_spread": -1.5,
+  "close_total": 54.5
+ },
+ "401866671": {
+  "away": "Campbell",
+  "home": "Maine",
+  "away_pts": 35,
+  "home_pts": 6,
+  "close_spread": 10.5,
+  "close_total": 52.5
+ },
+ "401868013": {
+  "away": "Lafayette",
+  "home": "Fordham",
+  "away_pts": 31,
+  "home_pts": 17,
+  "close_spread": 1.0,
+  "close_total": 50.5
+ },
+ "401867994": {
+  "away": "Bucknell",
+  "home": "Holy Cross",
+  "away_pts": 3,
+  "home_pts": 34,
+  "close_spread": -10.5,
+  "close_total": 46.5
+ },
+ "401868944": {
+  "away": "Jackson State",
+  "home": "Bethune-Cookman",
+  "away_pts": 21,
+  "home_pts": 24,
+  "close_spread": 8.0,
+  "close_total": 53.5
+ },
+ "401868214": {
+  "away": "Butler",
+  "home": "Drake",
+  "away_pts": 33,
+  "home_pts": 21,
+  "close_spread": 2.5,
+  "close_total": 56.5
+ },
+ "401868278": {
+  "away": "Presbyterian",
+  "home": "Valparaiso",
+  "away_pts": 7,
+  "home_pts": 24,
+  "close_spread": -3.0,
+  "close_total": 55.5
+ },
+ "401866476": {
+  "away": "Miami (OH)",
+  "home": "Central Michigan",
+  "away_pts": 28,
+  "home_pts": 27,
+  "close_spread": 4.0,
+  "close_total": 40.5
+ },
+ "401866446": {
+  "away": "Akron",
+  "home": "Kent State",
+  "away_pts": 20,
+  "home_pts": 35,
+  "close_spread": -3.0,
+  "close_total": 47.5
+ },
+ "401867975": {
+  "away": "Norfolk State",
+  "home": "South Carolina State",
+  "away_pts": 7,
+  "home_pts": 22,
+  "close_spread": -14.5,
+  "close_total": 54.5
+ },
+ "401867822": {
+  "away": "Dartmouth",
+  "home": "Columbia",
+  "away_pts": 38,
+  "home_pts": 18,
+  "close_spread": 3.0,
+  "close_total": 47.5
+ },
+ "401868348": {
+  "away": "East Tennessee State",
+  "home": "VMI",
+  "away_pts": 38,
+  "home_pts": 0,
+  "close_spread": 36.0,
+  "close_total": 54.5
+ },
+ "401868392": {
+  "away": "Tennessee Tech",
+  "home": "The Citadel",
+  "away_pts": 28,
+  "home_pts": 13,
+  "close_spread": 17.5,
+  "close_total": 51.5
+ },
+ "401867921": {
+  "away": "Mercyhurst",
+  "home": "Robert Morris",
+  "away_pts": 14,
+  "home_pts": 28,
+  "close_spread": -4.5,
+  "close_total": 49.5
+ },
+ "401866672": {
+  "away": "Stony Brook",
+  "home": "Bryant",
+  "away_pts": 27,
+  "home_pts": 17,
+  "close_spread": 3.5,
+  "close_total": 54.5
+ },
+ "401868003": {
+  "away": "Colgate",
+  "home": "Richmond",
+  "away_pts": 6,
+  "home_pts": 13,
+  "close_spread": -1.5,
+  "close_total": 41.5
+ },
+ "401868238": {
+  "away": "Tarleton State",
+  "home": "West Georgia",
+  "away_pts": 49,
+  "home_pts": 6,
+  "close_spread": 20.5,
+  "close_total": 61.5
+ },
+ "401868271": {
+  "away": "Stetson",
+  "home": "Morehead State",
+  "away_pts": 31,
+  "home_pts": 38,
+  "close_spread": -1.5,
+  "close_total": 60.5
+ },
+ "401868377": {
+  "away": "Samford",
+  "home": "Furman",
+  "away_pts": 13,
+  "home_pts": 6,
+  "close_spread": -9.0,
+  "close_total": 43.5
+ },
+ "401867879": {
+  "away": "North Dakota",
+  "home": "South Dakota",
+  "away_pts": 23,
+  "home_pts": 26,
+  "close_spread": -3.0,
+  "close_total": 58.5
+ },
+ "401867892": {
+  "away": "Northern Iowa",
+  "home": "Southern Illinois",
+  "away_pts": 17,
+  "home_pts": 20,
+  "close_spread": -2.5,
+  "close_total": 50.5
+ },
+ "401866673": {
+  "away": "Monmouth",
+  "home": "Hampton",
+  "away_pts": 49,
+  "home_pts": 13,
+  "close_spread": 22.5,
+  "close_total": 57.5
+ },
+ "401868341": {
+  "away": "Chattanooga",
+  "home": "Western Carolina",
+  "away_pts": 41,
+  "home_pts": 18,
+  "close_spread": -2.5,
+  "close_total": 49.5
+ },
+ "401868146": {
+  "away": "West Florida",
+  "home": "Eastern Kentucky",
+  "away_pts": 13,
+  "home_pts": 16,
+  "close_spread": 1.5,
+  "close_total": 47.5
+ },
+ "401867962": {
+  "away": "Howard",
+  "home": "Morgan State",
+  "away_pts": 26,
+  "home_pts": 20,
+  "close_spread": -7.0,
+  "close_total": 48.5
+ },
+ "401868121": {
+  "away": "Weber State",
+  "home": "Montana State",
+  "away_pts": 33,
+  "home_pts": 38,
+  "close_spread": -25.0,
+  "close_total": 64.5
+ },
+ "401867850": {
+  "away": "Indiana State",
+  "home": "Illinois State",
+  "away_pts": 10,
+  "home_pts": 17,
+  "close_spread": -20.5,
+  "close_total": 57.5
+ },
+ "401867842": {
+  "away": "Princeton",
+  "home": "Harvard",
+  "away_pts": 7,
+  "home_pts": 35,
+  "close_spread": -10.5,
+  "close_total": 40.5
+ },
+ "401868182": {
+  "away": "Southeast Missouri State",
+  "home": "Eastern Illinois",
+  "away_pts": 20,
+  "home_pts": 10,
+  "close_spread": 7.0,
+  "close_total": 49.5
+ },
+ "401858495": {
+  "away": "Oregon",
+  "home": "Illinois",
+  "away_pts": 10,
+  "home_pts": 21,
+  "close_spread": 10.0,
+  "close_total": 48.5
+ },
+ "401868937": {
+  "away": "Arkansas-Pine Bluff",
+  "home": "Florida A&M",
+  "away_pts": 31,
+  "home_pts": 28,
+  "close_spread": -2.5,
+  "close_total": 55.5
+ },
+ "401869133": {
+  "away": "Nicholls",
+  "home": "Northwestern State",
+  "away_pts": 31,
+  "home_pts": 27,
+  "close_spread": 12.5,
+  "close_total": 54.5
+ },
+ "401867871": {
+  "away": "Murray State",
+  "home": "South Dakota State",
+  "away_pts": 9,
+  "home_pts": 42,
+  "close_spread": -42.0,
+  "close_total": 55.5
+ },
+ "401868972": {
+  "away": "Southern",
+  "home": "Texas Southern",
+  "away_pts": 21,
+  "home_pts": 24,
+  "close_spread": -1.5,
+  "close_total": 55.5
+ },
+ "401867689": {
+  "away": "Chicago State",
+  "home": "Lindenwood",
+  "away_pts": 9,
+  "home_pts": 44,
+  "close_spread": -24.5,
+  "close_total": 52.5
+ },
+ "401862810": {
+  "away": "North Texas",
+  "home": "Navy",
+  "away_pts": 49,
+  "home_pts": 39,
+  "close_spread": 3.0,
+  "close_total": 60.5
+ },
+ "401856835": {
+  "away": "BYU",
+  "home": "UCF",
+  "away_pts": 31,
+  "home_pts": 39,
+  "close_spread": 7.5,
+  "close_total": 43.5
+ },
+ "401856731": {
+  "away": "Tennessee",
+  "home": "South Carolina",
+  "away_pts": 24,
+  "home_pts": 27,
+  "close_spread": -2.5,
+  "close_total": 50.5
+ },
+ "401864526": {
+  "away": "Hawai'i",
+  "home": "Northern Illinois",
+  "away_pts": 56,
+  "home_pts": 21,
+  "close_spread": 3.0,
+  "close_total": 49.5
+ },
+ "401868174": {
+  "away": "Charleston Southern",
+  "home": "Tennessee State",
+  "away_pts": 20,
+  "home_pts": 7,
+  "close_spread": 3.0,
+  "close_total": 38.5
+ },
+ "401868035": {
+  "away": "Lehigh",
+  "home": "Villanova",
+  "away_pts": 18,
+  "home_pts": 24,
+  "close_spread": 6.5,
+  "close_total": 50.5
+ },
+ "401856727": {
+  "away": "Texas A&M",
+  "home": "Alabama",
+  "away_pts": 20,
+  "home_pts": 31,
+  "close_spread": -13.5,
+  "close_total": 49.5
+ },
+ "401866448": {
+  "away": "Bowling Green",
+  "home": "Buffalo",
+  "away_pts": 24,
+  "home_pts": 31,
+  "close_spread": -3.0,
+  "close_total": 44.5
+ },
+ "401858499": {
+  "away": "Michigan State",
+  "home": "UCLA",
+  "away_pts": 10,
+  "home_pts": 28,
+  "close_spread": -16.5,
+  "close_total": 43.5
+ },
+ "401858273": {
+  "away": "Boston College",
+  "home": "Georgia Tech",
+  "away_pts": 49,
+  "home_pts": 27,
+  "close_spread": -6.5,
+  "close_total": 50.5
+ },
+ "401868019": {
+  "away": "Georgetown",
+  "home": "William & Mary",
+  "away_pts": 28,
+  "home_pts": 27,
+  "close_spread": -5.5,
+  "close_total": 49.5
+ },
+ "401856730": {
+  "away": "Oklahoma",
+  "home": "Mississippi State",
+  "away_pts": 23,
+  "home_pts": 15,
+  "close_spread": 1.5,
+  "close_total": 49.5
+ },
+ "401858497": {
+  "away": "Iowa",
+  "home": "Minnesota",
+  "away_pts": 10,
+  "home_pts": 13,
+  "close_spread": 7.5,
+  "close_total": 40.5
+ },
+ "401866447": {
+  "away": "Sacramento State",
+  "home": "Ball State",
+  "away_pts": 17,
+  "home_pts": 34,
+  "close_spread": -14.5,
+  "close_total": 51.5
+ },
+ "401856839": {
+  "away": "Kansas State",
+  "home": "Arizona State",
+  "away_pts": 17,
+  "home_pts": 28,
+  "close_spread": 1.5,
+  "close_total": 51.5
+ },
+ "401871094": {
+  "away": "UL Monroe",
+  "home": "Troy",
+  "away_pts": 21,
+  "home_pts": 14,
+  "close_spread": -13.5,
+  "close_total": 50.5
+ },
+ "401866449": {
+  "away": "Eastern Michigan",
+  "home": "Ohio",
+  "away_pts": 20,
+  "home_pts": 24,
+  "close_spread": -11.5,
+  "close_total": 48.5
+ },
+ "401868201": {
+  "away": "UT Martin",
+  "home": "Western Illinois",
+  "away_pts": 24,
+  "home_pts": 55,
+  "close_spread": -1.5,
+  "close_total": 51.5
+ },
+ "401869145": {
+  "away": "Houston Christian",
+  "home": "Lamar",
+  "away_pts": 10,
+  "home_pts": 35,
+  "close_spread": -14.0,
+  "close_total": 46.5
+ },
+ "401869967": {
+  "away": "Louisiana",
+  "home": "Southern Miss",
+  "away_pts": 31,
+  "home_pts": 35,
+  "close_spread": 10.0,
+  "close_total": 52.5
+ },
+ "401864528": {
+  "away": "San Jos\u00e9 State",
+  "home": "Nevada",
+  "away_pts": 13,
+  "home_pts": 28,
+  "close_spread": -5.75,
+  "close_total": 46.25
+ },
+ "401871093": {
+  "away": "Old Dominion",
+  "home": "Louisiana Tech",
+  "away_pts": 0,
+  "home_pts": 26,
+  "close_spread": -13.5,
+  "close_total": 44.5
+ },
+ "401868080": {
+  "away": "Utah Tech",
+  "home": "Cal Poly",
+  "away_pts": 43,
+  "home_pts": 26,
+  "close_spread": -14.5,
+  "close_total": 54.5
+ },
+ "401868097": {
+  "away": "Southern Utah",
+  "home": "Idaho",
+  "away_pts": 28,
+  "home_pts": 31,
+  "close_spread": -3.0,
+  "close_total": 66.5
+ },
+ "401869138": {
+  "away": "McNeese",
+  "home": "Incarnate Word",
+  "away_pts": 6,
+  "home_pts": 38,
+  "close_spread": -13.0,
+  "close_total": 56.5
+ },
+ "401868135": {
+  "away": "UT Rio Grande Valley",
+  "home": "Central Arkansas",
+  "away_pts": 30,
+  "home_pts": 27,
+  "close_spread": -2.5,
+  "close_total": 49.5
+ },
+ "401860907": {
+  "away": "Boise State",
+  "home": "Washington State",
+  "away_pts": 31,
+  "home_pts": 10,
+  "close_spread": 14.5,
+  "close_total": 52.5
+ },
+ "401868106": {
+  "away": "Portland State",
+  "home": "Idaho State",
+  "away_pts": 8,
+  "home_pts": 38,
+  "close_spread": -14.5,
+  "close_total": 62.5
+ },
+ "401868311": {
+  "away": "SE Louisiana",
+  "home": "Stephen F. Austin",
+  "away_pts": 24,
+  "home_pts": 45,
+  "close_spread": -17.5,
+  "close_total": 53.5
+ },
+ "401860905": {
+  "away": "San Diego State",
+  "home": "Colorado State",
+  "away_pts": 49,
+  "home_pts": 56,
+  "close_spread": -1.0,
+  "close_total": 57.5
+ },
+ "401868969": {
+  "away": "Prairie View A&M",
+  "home": "East Texas A&M",
+  "away_pts": 30,
+  "home_pts": 19,
+  "close_spread": -3.0,
+  "close_total": 49.5
+ },
+ "401856836": {
+  "away": "Colorado",
+  "home": "Oklahoma State",
+  "away_pts": 24,
+  "home_pts": 57,
+  "close_spread": -13.5,
+  "close_total": 55.5
+ },
+ "401868132": {
+  "away": "Northern Colorado",
+  "home": "UC Davis",
+  "away_pts": 6,
+  "home_pts": 33,
+  "close_spread": -10.0,
+  "close_total": 57.5
+ },
+ "401868067": {
+  "away": "Austin Peay",
+  "home": "North Alabama",
+  "away_pts": 27,
+  "home_pts": 21,
+  "close_spread": 9.5,
+  "close_total": 48.5
+ },
+ "401858276": {
+  "away": "Virginia Tech",
+  "home": "Clemson",
+  "away_pts": 20,
+  "home_pts": 16,
+  "close_spread": -3.0,
+  "close_total": 50.5
+ },
+ "401869935": {
+  "away": "Georgia State",
+  "home": "Arkansas State",
+  "away_pts": 32,
+  "home_pts": 38,
+  "close_spread": 2.5,
+  "close_total": 58.5
+ },
+ "401858500": {
+  "away": "USC",
+  "home": "Wisconsin",
+  "away_pts": 7,
+  "home_pts": 24,
+  "close_spread": 2.5,
+  "close_total": 50.5
+ },
+ "401860906": {
+  "away": "Utah State",
+  "home": "Texas State",
+  "away_pts": 17,
+  "home_pts": 20,
+  "close_spread": -14.5,
+  "close_total": 59.5
+ },
+ "401856729": {
+  "away": "Vanderbilt",
+  "home": "Kentucky",
+  "away_pts": 17,
+  "home_pts": 34,
+  "close_spread": -10.0,
+  "close_total": 51.5
+ },
+ "401858275": {
+  "away": "Syracuse",
+  "home": "North Carolina",
+  "away_pts": 31,
+  "home_pts": 30,
+  "close_spread": -9.0,
+  "close_total": 49.5
+ },
+ "401856838": {
+  "away": "Iowa State",
+  "home": "Arizona",
+  "away_pts": 3,
+  "home_pts": 39,
+  "close_spread": -11.5,
+  "close_total": 51.5
+ },
+ "401856732": {
+  "away": "Ole Miss",
+  "home": "Texas",
+  "away_pts": 27,
+  "home_pts": 34,
+  "close_spread": -3.0,
+  "close_total": 54.5
+ },
+ "401862811": {
+  "away": "UTSA",
+  "home": "Tulane",
+  "away_pts": 42,
+  "home_pts": 19,
+  "close_spread": 3.0,
+  "close_total": 52.5
+ },
+ "401864527": {
+  "away": "North Dakota State",
+  "home": "New Mexico",
+  "away_pts": 16,
+  "home_pts": 21,
+  "close_spread": -4.5,
+  "close_total": 39.5
+ },
+ "401856837": {
+  "away": "Houston",
+  "home": "Utah",
+  "away_pts": 13,
+  "home_pts": 21,
+  "close_spread": -6.5,
+  "close_total": 57.5
+ },
+ "401871071": {
+  "away": "Delaware",
+  "home": "Western Kentucky",
+  "away_pts": 35,
+  "home_pts": 21,
+  "close_spread": -2.5,
+  "close_total": 55.5
+ },
+ "401871072": {
+  "away": "Sam Houston",
+  "home": "Missouri State",
+  "away_pts": 3,
+  "home_pts": 24,
+  "close_spread": -5.5,
+  "close_total": 51.5
+ },
+ "401871058": {
+  "away": "Kennesaw State",
+  "home": "Middle Tennessee",
+  "away_pts": 44,
+  "home_pts": 28,
+  "close_spread": 1.5,
+  "close_total": 49.5
+ },
+ "401871057": {
+  "away": "Jacksonville State",
+  "home": "New Mexico State",
+  "away_pts": 24,
+  "home_pts": 0,
+  "close_spread": 3.0,
+  "close_total": 50.5
+ },
+ "401867969": {
+  "away": "South Carolina State",
+  "home": "Morgan State",
+  "away_pts": 51,
+  "home_pts": 10,
+  "close_spread": 7.5,
+  "close_total": 52.5
+ },
+ "401869963": {
+  "away": "Troy",
+  "home": "James Madison",
+  "away_pts": 24,
+  "home_pts": 21,
+  "close_spread": -17.5,
+  "close_total": 52.5
+ },
+ "401862812": {
+  "away": "Florida Atlantic",
+  "home": "North Texas",
+  "away_pts": 41,
+  "home_pts": 48,
+  "close_spread": -15.0,
+  "close_total": 78.5
+ },
+ "401867838": {
+  "away": "Harvard",
+  "home": "Dartmouth",
+  "away_pts": 14,
+  "home_pts": 24,
+  "close_spread": 9.5,
+  "close_total": 44.5
+ },
+ "401862813": {
+  "away": "Tulane",
+  "home": "Charlotte",
+  "away_pts": 38,
+  "home_pts": 31,
+  "close_spread": 8.0,
+  "close_total": 46.5
+ },
+ "401856844": {
+  "away": "Baylor",
+  "home": "UCF",
+  "away_pts": 41,
+  "home_pts": 9,
+  "close_spread": 2.5,
+  "close_total": 49.5
+ },
+ "401866451": {
+  "away": "Kent State",
+  "home": "Sacramento State",
+  "away_pts": 10,
+  "home_pts": 31,
+  "close_spread": 7.5,
+  "close_total": 47.5
+ }
+}

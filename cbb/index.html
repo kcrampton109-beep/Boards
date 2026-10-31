@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CBB Paper Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+/* Same look as the CFB Play Card: a card of today's plays up top, then detailed play cards, then tabs. Paper only. */
+:root {
+  --paper: #f2f4f7; --card: #ffffff; --ink: #15213a; --muted: #5a6478; --rule: #d8dde6; --soft: #e9edf3;
+  --gold: #9a6d0c; --gold-soft: #f6ecd4; --tot: #2c63a8; --tot-soft: #e2ebf7; --nov: #6b5a8a; --nov-soft: #ece7f4;
+  --win: #1d7a4c; --win-soft: #def1e6; --loss: #ad3437; --loss-soft: #f7e1e1; --lean: #6b7286;
+  --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #0d1420; --card: #151e2e; --ink: #e5e9f1; --muted: #98a2b6; --rule: #273349; --soft: #1b2638;
+  --gold: #e1b24c; --gold-soft: #2c2512; --tot: #73a7ec; --tot-soft: #17263c; --nov: #b3a2d6; --nov-soft: #241d33;
+  --win: #4fc58b; --win-soft: #12291f; --loss: #f07477; --loss-soft: #2f1719; --lean: #a2a9ba; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #0d1420; --card: #151e2e; --ink: #e5e9f1; --muted: #98a2b6; --rule: #273349; --soft: #1b2638;
+  --gold: #e1b24c; --gold-soft: #2c2512; --tot: #73a7ec; --tot-soft: #17263c; --nov: #b3a2d6; --nov-soft: #241d33;
+  --win: #4fc58b; --win-soft: #12291f; --loss: #f07477; --loss-soft: #2f1719; --lean: #a2a9ba; color-scheme: dark }
+* { box-sizing: border-box }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 14px/1.5 var(--body); }
+.wrap { max-width: 1100px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 48px; display: grid; gap: 20px }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; letter-spacing: .01em; margin: 0; text-wrap: balance }
+h1 { font-size: 34px; line-height: 1 } h2 { font-size: 22px } h3 { font-size: 18px }
+.num, td, .mono { font-variant-numeric: tabular-nums }
+.mono { font-family: var(--mono); font-size: 12.5px }
+.muted { color: var(--muted) }
+header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 12px 24px }
+header .meta { display: grid; gap: 2px; text-align: right; font-size: 13px }
+.eyebrow { font: 600 12px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--gold) }
+.banner { border: 1px solid var(--rule); background: var(--card); border-radius: 6px; padding: 10px 14px; font-size: 13px }
+.banner.warn { border-color: var(--loss); background: var(--loss-soft) }
+.records { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px }
+.rec { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; display: grid; gap: 4px; min-width: 0 }
+.rec .lab { font: 600 11px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
+.rec .wl { font: 700 28px/1 var(--display) }
+.rec .sub { font-size: 12.5px; color: var(--muted) }
+.band { background: var(--card); border: 2px solid var(--ink); border-radius: 8px; overflow: hidden }
+.band-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 8px 12px; background: var(--ink); color: var(--paper) }
+.band-head h2 { font-size: 18px; color: var(--paper) }
+.band-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) }
+.cell { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; padding: 8px 12px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); text-decoration: none; color: inherit; min-width: 0 }
+.cell:hover, .cell:focus-visible { background: var(--soft); outline: none }
+.code { grid-row: span 2; font: 700 22px/1 var(--display); align-self: center; min-width: 30px }
+.code.SPREAD { color: var(--gold) } .code.TOTAL { color: var(--tot) } .code.NOV { color: var(--nov) } .code.SPREAD_LEAN, .code.TOTAL_LEAN { color: var(--lean) }
+.cell .pk { font-weight: 600; overflow-wrap: anywhere } .cell .px { font-size: 12px; color: var(--muted) }
+.empty { padding: 16px; color: var(--muted) }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; border-bottom: 1px solid var(--rule); padding-bottom: 8px }
+.tab { font: 600 13px/1 var(--body); padding: 8px 12px; border-radius: 5px; border: 1px solid transparent; background: none; color: var(--muted); cursor: pointer }
+.tab[aria-selected="true"] { background: var(--card); border-color: var(--rule); color: var(--ink) }
+.tab:focus-visible, .chip:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px }
+section.panel { display: grid; gap: 16px }
+[hidden] { display: none !important }   /* a panel's own display rule would otherwise beat the hidden attribute */
+.group { display: grid; gap: 10px }
+.group-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px }
+.group-head p { margin: 0; font-size: 13px; color: var(--muted); max-width: 70ch }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px }
+.card { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; display: grid; gap: 8px; min-width: 0; scroll-margin-top: 16px }
+.card:target { border-color: var(--gold); box-shadow: 0 0 0 2px var(--gold-soft) }
+.card .top { display: flex; justify-content: space-between; gap: 8px; align-items: start }
+.card .match { font-size: 13px; color: var(--muted) }
+.card .pick { font: 700 26px/1.05 var(--display) }
+.card .price { font-size: 13px }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 4px 12px; font-size: 12.5px }
+.kv div { display: grid } .kv span:first-child { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .06em }
+.pill { display: inline-block; font: 600 11px/1 var(--body); letter-spacing: .06em; text-transform: uppercase; padding: 4px 7px; border-radius: 3px; white-space: nowrap }
+.pill.SPREAD { background: var(--gold-soft); color: var(--gold) } .pill.TOTAL { background: var(--tot-soft); color: var(--tot) }
+.pill.NOV { background: var(--nov-soft); color: var(--nov) } .pill.SPREAD_LEAN, .pill.TOTAL_LEAN { background: var(--soft); color: var(--lean) }
+.pill.W { background: var(--win-soft); color: var(--win) } .pill.L { background: var(--loss-soft); color: var(--loss) } .pill.P, .pill.open, .pill.void { background: var(--soft); color: var(--muted) }
+.pill.void { text-decoration: line-through }
+.logline { font-size: 12px; color: var(--muted); border-top: 1px dashed var(--rule); padding-top: 6px }
+.tbl { overflow-x: auto; background: var(--card); border: 1px solid var(--rule); border-radius: 6px }
+table { border-collapse: collapse; width: 100%; font-size: 12.5px }
+th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--rule); white-space: nowrap; vertical-align: top }
+th { font: 600 11px/1.2 var(--body); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--soft); position: sticky; top: 0 }
+td.r, th.r { text-align: right }
+tr.flag td:first-child { box-shadow: inset 3px 0 0 var(--gold) }
+.chips { display: flex; flex-wrap: wrap; gap: 6px }
+.chip { font: 500 12px/1 var(--body); padding: 6px 10px; border-radius: 999px; border: 1px solid var(--rule); background: var(--card); color: var(--ink); cursor: pointer }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink) }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px }
+.prose { max-width: 72ch; display: grid; gap: 10px } .prose p { margin: 0 } .prose ul { margin: 0; padding-left: 20px; display: grid; gap: 4px }
+.pos { color: var(--win) } .neg { color: var(--loss) }
+@media (max-width: 520px) { h1 { font-size: 28px } header .meta { text-align: left } .card .pick { font-size: 23px } }
+@media (prefers-reduced-motion: no-preference) { .cell, .chip, .tab { transition: background-color .15s } }
+</style>
+<link rel="stylesheet" href="../bets.css?v=20261031161208">
+<link rel="stylesheet" href="../track.css?v=20261031161208">
+<script src="../track.js?v=20261031161208"></script>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">College basketball · D1 · paper tracking only</div>
+      <h1>CBB Paper Board</h1>
+    </div>
+    <div class="meta">
+      <span id="slate" class="num"></span>
+      <span class="muted">Prices checked <span id="gen"></span></span>
+    </div>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+  <div class="records" id="records"></div>
+
+  <div class="band" id="band">
+    <div class="band-head"><h2>Open plays</h2><span class="mono" id="bandcount"></span></div>
+    <div class="band-grid" id="bandgrid"></div>
+  </div>
+
+  <nav class="tabs" role="tablist" aria-label="Board sections">
+    <button class="tab" role="tab" id="t-plays" aria-selected="true" data-tab="plays">Plays</button>
+    <button class="tab" role="tab" id="t-today" aria-selected="false" data-tab="today">Today</button>
+    <button class="tab" role="tab" id="t-results" aria-selected="false" data-tab="results">Results</button>
+    <button class="tab" role="tab" id="t-games" aria-selected="false" data-tab="games">All games</button>
+    <button class="tab" role="tab" id="t-records" aria-selected="false" data-tab="records">Records</button>
+    <button class="tab" role="tab" id="t-openers" aria-selected="false" data-tab="openers">Openers</button>
+    <button class="tab" role="tab" id="t-ratings" aria-selected="false" data-tab="ratings">Ratings</button>
+    <button class="tab" role="tab" id="t-how" aria-selected="false" data-tab="how">How it works</button>
+  </nav>
+
+  <section class="panel" id="p-plays" role="tabpanel" aria-labelledby="t-plays"></section>
+  <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today" hidden></section>
+  <section class="panel" id="p-results" role="tabpanel" aria-labelledby="t-results" hidden></section>
+  <section class="panel" id="p-games" role="tabpanel" aria-labelledby="t-games" hidden></section>
+  <section class="panel" id="p-records" role="tabpanel" aria-labelledby="t-records" hidden></section>
+  <section class="panel" id="p-openers" role="tabpanel" aria-labelledby="t-openers" hidden></section>
+  <section class="panel" id="p-ratings" role="tabpanel" aria-labelledby="t-ratings" hidden></section>
+  <section class="panel" id="p-how" role="tabpanel" aria-labelledby="t-how" hidden></section>
+</div>
+
+<script>
+const BOOKN = { DK: "DraftKings", FD: "FanDuel", MGM: "BetMGM" };
+const TIER = {
+  SPREAD: { name: "Spreads 4+", code: "S", note: "December on: the blend model differs from the best DK / FD / BetMGM spread by 4+ points. Backtest against the opener, Dec-Mar 2023-26: CLV +1.87 pts, beat the close 74%, 59.8% ATS (251 plays)." },
+  TOTAL: { name: "Totals 6+", code: "T", note: "December on: the blend total differs from the best book total by 6+ points. Backtest: CLV +2.90 pts, beat the close 82%, 59.1% (465 plays)." },
+  SPREAD_LEAN: { name: "Spreads 3-4", code: "s", note: "Gap of 3 to 4 points. Backtest (all gaps 3+): CLV +1.32, beat the close 68%, 55.7% (922 plays)." },
+  TOTAL_LEAN: { name: "Totals 5-6", code: "t", note: "Gap of 5 to 6 points. Backtest (all gaps 5+): CLV +2.29, beat the close 77%, 56.2% (1,041 plays)." },
+  NOV: { name: "November", code: "N", note: "November games at the same gaps (spreads 3+, totals 5+). Weak in the backtest for every model (CLV about +0.5): ratings still lean on last season. Kept apart so it doesn't cloud the verdict." },
+};
+const ORDER = ["SPREAD", "TOTAL", "SPREAD_LEAN", "TOTAL_LEAN", "NOV"];
+const MAIN = ["SPREAD", "TOTAL"];   // the Today tab's default view
+const UNIT = 10;   // $ per unit, for the paper dollars on Today / Results
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const sgn = (v, d = 1) => v == null || isNaN(v) ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d).replace(/\.0$/, "");
+const odds = v => v == null ? "" : (v > 0 ? "+" : "−") + Math.abs(Math.round(v));
+const line = v => v == null ? "–" : (v === 0 ? "PK" : sgn(v));
+const pct = v => v == null ? "–" : (v * 100).toFixed(1) + "%";
+const etTxt = s => { try { return new Date(s).toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " ET"; } catch (e) { return s || ""; } };
+const etDate = s => { try { return new Date(s).toLocaleDateString("en-CA", { timeZone: "America/New_York" }); } catch (e) { return ""; } };
+
+function favText(g, l) { // home-spread convention -> "Team −x"
+  if (l == null || isNaN(l)) return "–";
+  if (Math.abs(l) < 0.25) return "Pick'em";
+  return l < 0 ? `${g.home} ${sgn(l)}` : `${g.away} ${sgn(-l)}`;
+}
+
+async function load() {
+  let S = {}, bad = "";
+  try { const r = await fetch("state.json", { cache: "no-store" }); if (r.ok) S = await r.json(); else bad = `HTTP ${r.status}`; }
+  catch (e) { bad = e.message || "unreadable data"; }
+  if (bad) {
+    const b = document.getElementById("banner");
+    b.hidden = false; b.className = "banner warn";
+    b.textContent = `The board's data couldn't be read (${bad}). Refresh in a few minutes; if it stays blank, the engine needs a fix.`;
+  }
+  try { const r = await fetch("ledger.json", { cache: "no-store" }); if (r.ok) S.fullLedger = await r.json(); } catch (e) {}
+  return S;
+}
+
+function render(S) {
+  const games = Object.fromEntries((S.games || []).map(g => [g.game_id, g]));
+  const ledger = Object.fromEntries((S.fullLedger || S.ledger || []).map(e => [e.id, e]));
+  const plays = (S.plays || []).filter(p => games[p.game_id])
+    .sort((a, b) => ORDER.indexOf(a.tier) - ORDER.indexOf(b.tier) || String(games[a.game_id].kickoff_iso).localeCompare(games[b.game_id].kickoff_iso));
+  document.getElementById("gen").textContent = S.generated || "–";
+  const ks = (S.games || []).map(g => g.kickoff_iso).sort();
+  document.getElementById("slate").textContent = ks.length ? `${S.season_label || ""} · games ${etTxt(ks[0]).split(",").slice(0, 2).join(",")} – ${etTxt(ks[ks.length - 1]).split(",").slice(0, 2).join(",")}`
+    : `${S.season_label || ""} · no games with lines yet`;
+  const b = document.getElementById("banner");
+  const ageH = S.generated_iso ? (Date.now() - new Date(S.generated_iso).getTime()) / 36e5 : null;
+  if (S.live_ok === false) { b.hidden = false; b.className = "banner warn"; b.textContent = "Some scoreboards could not be loaded on the last check; prices may be from an earlier check."; }
+  else if (ageH != null && ageH > 2) { b.hidden = false; b.className = "banner warn"; b.innerHTML = `<b>Prices are ${Math.round(ageH)} hours old</b> (last checked ${esc(S.generated)}). The board's last checks didn't run, so lines may have moved.`; }
+  else if (!(S.games || []).length) { b.hidden = false; b.className = "banner"; b.textContent = "No D1 games with lines in the next few days yet. The season tips off Monday, November 2; lines usually post the night before."; }
+
+  // records strip
+  const sm = S.summary || {};
+  document.getElementById("records").innerHTML = ORDER.map(k => {
+    const r = sm[k] || {}, u = r.units ?? 0;
+    return `<div class="rec"><span class="lab">${TIER[k].name}</span><span class="wl num">${r.w || 0}-${r.l || 0}${r.p ? "-" + r.p : ""}</span>
+      <span class="sub num"><span class="${u > 0 ? "pos" : u < 0 ? "neg" : ""}">${sgn(u, 2)}u</span> · ROI ${r.roi == null ? "–" : sgn(r.roi * 100, 1) + "%"} · ${r.open || 0} pending</span>
+      <span class="sub num">CLV ${r.clv_avg == null ? "–" : sgn(r.clv_avg, 2) + " pts"} · beat close ${pct(r.beat_close)}</span></div>`;
+  }).join("");
+
+  // card of open plays
+  const counters = {};
+  plays.forEach(p => { counters[p.tier] = (counters[p.tier] || 0) + 1; p.code = TIER[p.tier].code + counters[p.tier]; });
+  document.getElementById("bandcount").textContent = `${plays.length} play${plays.length === 1 ? "" : "s"}`;
+  document.getElementById("bandgrid").innerHTML = plays.length ? plays.map(p => { const g = games[p.game_id];
+    return `<a class="cell" href="#${esc(p.code)}"><span class="code ${p.tier}">${p.code}</span><span class="pk">${esc(p.pick)}${p.market === "total" ? ` <span class="muted">${esc(g.away)}/${esc(g.home)}</span>` : ""}</span>
+      <span class="px num">${odds(p.odds)} ${BOOKN[p.book] || p.book} · ${esc(etTxt(g.kickoff_iso))}</span></a>`; }).join("")
+    : `<div class="empty">No plays at current prices. Lines for the next day's games usually post between 11 PM and midnight ET; the board checks every 30 minutes.</div>`;
+
+  // plays panel
+  const le = p => ledger[p.ledger_id || p.id];
+  const card = p => {
+    const g = games[p.game_id], e = le(p);
+    const mk = p.market === "spread"
+      ? `<div><span>Model</span><span class="num">${esc(favText(g, g.model_line))}</span></div>
+         <div><span>Gap</span><span class="num">${p.edge} pts</span></div>
+         <div><span>Playable to</span><span class="num">${esc(p.team)} ${line(p.limit)}</span></div>
+         <div><span>Opener</span><span class="num">${esc(favText(g, g.open_line))}</span></div>
+         <div><span>Results model</span><span class="num">${esc(favText(g, g.model_pts))}</span></div>
+         <div><span>Market model</span><span class="num">${esc(favText(g, g.model_mkt))}</span></div>`
+      : `<div><span>Model total</span><span class="num">${g.model_total ?? "–"}</span></div>
+         <div><span>Gap</span><span class="num">${p.edge} pts</span></div>
+         <div><span>Playable to</span><span class="num">${p.side === "over" ? "Over " + p.limit : "Under " + p.limit}</span></div>
+         <div><span>Opener</span><span class="num">${g.open_total ?? "–"}</span></div>
+         <div><span>Results model</span><span class="num">${g.total_pts ?? "–"}</span></div>
+         <div><span>Market model</span><span class="num">${g.total_mkt ?? "–"}</span></div>`;
+    const log = e ? (e.status === "open" ? `Logged ${esc(etTxt(e.flagged))} at ${esc(e.pick)} ${odds(e.odds)} (${esc(e.book)})`
+      : e.status === "void" ? `<span class="pill void">Void</span> ${esc(e.note || "")}`
+      : `<span class="pill ${e.status}">${e.status}</span> ${sgn(e.units, 2)}u · ${esc(e.final || "")}${e.clv != null ? " · CLV " + sgn(e.clv) : ""}`)
+      : "Not logged yet (logs on the next check)";
+    return `<article class="card" id="${esc(p.code || p.id)}">
+      <div class="top"><span class="match">${esc(g.away)} ${g.neutral ? "vs" : "@"} ${esc(g.home)} · ${esc(g.grp)}<br>${esc(etTxt(g.kickoff_iso))}${g.notes ? " · " + esc(g.notes) : ""}</span>
+        <span class="pill ${p.tier}">${p.code}</span></div>
+      <div><div class="pick">${esc(p.pick)}</div><div class="price num">${odds(p.odds)} at ${BOOKN[p.book] || esc(p.book)}</div></div>
+      <div class="kv">${mk}</div>
+      <div class="logline">${log}</div></article>`;
+  };
+  document.getElementById("p-plays").innerHTML = ORDER.map(t => {
+    const ps = plays.filter(p => p.tier === t);
+    return `<div class="group"><div class="group-head"><h2>${TIER[t].name}</h2><span class="muted num">${ps.length}</span><p>${TIER[t].note}</p></div>
+      ${ps.length ? `<div class="cards">${ps.map(card).join("")}</div>` : `<div class="muted">None at current prices.</div>`}</div>`;
+  }).join("");
+
+  // Today + Results (shared ../track.js): every logged play on its game's Eastern date
+  const anyPlay = {};
+  plays.forEach(p => { anyPlay[p.ledger_id || p.id] = p; });
+  const playTo = (e, p) => {
+    const lim = p && p.tier === e.tier && p.limit != null ? p.limit : e.limit;
+    if (e.market === "total") return `${e.side === "over" ? "Over" : "Under"} ${lim ?? e.line}`;
+    return `${String(e.pick).replace(/\s(PK|[-+][\d.]+)$/, "")} ${line(lim ?? e.line)}`;
+  };
+  const nowOf = (g, p) => !g ? { kind: "live", text: "Tipped off, result pending" }
+    : !p ? { kind: "gone", text: "No longer a play at current prices" }
+    : { kind: "ok", text: `Still a play: ${p.pick} ${odds(p.odds)} at ${BOOKN[p.book] || p.book}` };
+  const trackRows = (S.fullLedger || S.ledger || []).filter(e => e.status !== "void").map(e => {
+    const p = anyPlay[e.id] && anyPlay[e.id].tier === e.tier ? anyPlay[e.id] : null;
+    return { id: e.id, date: etDate(e.kickoff), kickoff: etTxt(e.kickoff), sortKey: String(e.kickoff), week: e.week, tier: e.tier,
+             label: TIER[e.tier] ? TIER[e.tier].name : e.tier, money: MAIN.includes(e.tier), status: e.status, units: e.units, stake: e.stake,
+             clv: e.clv, pick: e.pick, matchup: e.matchup, odds: odds(e.odds), app: BOOKN[e.book] || e.book, final: e.final, logged: etTxt(e.flagged),
+             playTo: playTo(e, p), now: e.status === "open" ? nowOf(games[e.game_id], p) : null };
+  });
+  const todayET = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+  Track.renderToday(document.getElementById("p-today"), { rows: trackRows, unit: UNIT, today: todayET, mainLabel: "Main plays" });
+  Track.renderResults(document.getElementById("p-results"), { rows: trackRows, unit: UNIT, today: todayET, week: S.week || 1,
+    tiers: [["money", "Main (spreads 4+, totals 6+)"], ...ORDER.map(t => [t, TIER[t].name]), ["all", "All plays"]] });
+
+  // all games
+  const flagged = new Set(plays.map(p => p.game_id));
+  const bk = (g, k) => { const v = g.books?.[k]; return v && v.sp_home != null ? `${line(v.sp_home)} <span class="muted">${odds(v.sp_home_odds)}</span>` : "–"; };
+  const bt = (g, k) => { const v = g.books?.[k]; return v && v.tot != null ? v.tot : "–"; };
+  document.getElementById("p-games").innerHTML = `<p class="muted" style="margin:0">Spreads are for the home team (negative = home favored). Model = the blend (average of the results model and the market-ratings model). Highlighted rows have a play.</p>
+    <div class="tbl"><table><thead><tr><th>Matchup</th><th>Tip</th><th class="r">Model</th><th class="r">Opener</th><th class="r">DK</th><th class="r">FD</th><th class="r">MGM</th><th class="r">Model total</th><th class="r">Opener</th><th class="r">DK</th><th class="r">FD</th><th class="r">MGM</th></tr></thead><tbody>
+    ${(S.games || []).map(g => `<tr class="${flagged.has(g.game_id) ? "flag" : ""}"><td>${esc(g.away)} ${g.neutral ? "vs" : "@"} <b>${esc(g.home)}</b> <span class="muted">${esc(g.grp)}</span>${g.suspect ? ` <span class="muted" title="Gap too big to log: usually news the model can't see">⚠ ${esc(g.suspect.join(", "))}</span>` : ""}</td>
+      <td class="muted">${esc(etTxt(g.kickoff_iso))}</td><td class="r">${line(g.model_line)}</td><td class="r">${line(g.open_line)}</td>
+      <td class="r">${bk(g, "DK")}</td><td class="r">${bk(g, "FD")}</td><td class="r">${bk(g, "MGM")}</td>
+      <td class="r">${g.model_total ?? "–"}</td><td class="r">${g.open_total ?? "–"}</td><td class="r">${bt(g, "DK")}</td><td class="r">${bt(g, "FD")}</td><td class="r">${bt(g, "MGM")}</td></tr>`).join("")}
+    </tbody></table></div>`;
+
+  // records
+  const led = (S.fullLedger || S.ledger || []).slice().reverse();
+  let cur = "ALL";
+  const drawRec = () => {
+    const rows = led.filter(e => cur === "ALL" || e.tier === cur);
+    document.getElementById("rec-body").innerHTML = rows.length ? rows.map(e => `<tr><td><span class="pill ${e.status}" title="${esc(e.note || "")}">${e.status === "open" ? "Pending" : e.status === "void" ? "Void" : e.status}</span></td>
+      <td>${esc(etTxt(e.flagged))}</td><td><span class="pill ${e.tier}">${esc(TIER[e.tier] ? TIER[e.tier].name : e.tier)}</span></td><td>${esc(e.matchup)}</td>
+      <td><b>${esc(e.pick)}</b></td><td class="r">${odds(e.odds)} ${esc(e.book || "")}</td><td class="r">${sgn(e.edge)}</td>
+      <td class="r">${e.opener == null ? "–" : (e.market === "total" ? e.opener : line(e.opener))}</td>
+      <td class="r">${e.close == null ? "–" : (e.market === "total" ? e.close : line(e.close))}</td><td class="r ${e.clv > 0 ? "pos" : e.clv < 0 ? "neg" : ""}">${e.clv == null ? "–" : sgn(e.clv)}</td>
+      <td class="r ${e.units > 0 ? "pos" : e.units < 0 ? "neg" : ""}">${e.units == null ? "–" : sgn(e.units, 2)}</td><td class="muted">${esc(e.final || "")}</td></tr>`).join("")
+      : `<tr><td colspan="12" class="muted">No paper plays yet. Every play is logged once, at the best DraftKings / FanDuel / BetMGM price when it first appears, then graded with the final score and the closing line.</td></tr>`;
+  };
+  document.getElementById("p-records").innerHTML = `<div class="prose"><p>Every play is logged once per tier at the best of DraftKings, FanDuel and BetMGM when it first appears (1 unit, paper). <b>CLV</b> is how far the median DK / FD / BetMGM closing number moved past ours: the first thing to watch. Wins and losses take months to mean much.</p></div>
+    <div class="chips" role="group" aria-label="Filter by tier">${["ALL", ...ORDER].map(t => `<button class="chip" aria-pressed="${t === "ALL"}" data-t="${t}">${t === "ALL" ? "All" : TIER[t].name}</button>`).join("")}</div>
+    <div class="tbl"><table><thead><tr><th>Result</th><th>Logged</th><th>Tier</th><th>Game</th><th>Pick</th><th class="r">Price</th><th class="r">Gap</th><th class="r">Opener</th><th class="r">Close</th><th class="r">CLV</th><th class="r">Units</th><th>Final</th></tr></thead><tbody id="rec-body"></tbody></table></div>`;
+  document.querySelectorAll("#p-records .chip").forEach(c => c.addEventListener("click", () => {
+    cur = c.dataset.t; document.querySelectorAll("#p-records .chip").forEach(x => x.setAttribute("aria-pressed", x === c)); drawRec();
+  }));
+  drawRec();
+
+  // openers: is Action's opener (what the backtest used) a number DK / FD / BetMGM actually post?
+  const sn = S.seen || {}, sb = sn.books || {};
+  const srow = (bkey, mk) => { const x = (sb[bkey] || {})[mk]; return x ? `<tr><td>${BOOKN[bkey]}</td><td>${mk === "sp" ? "Spread" : "Total"}</td><td class="r">${x.n}</td>
+      <td class="r">${pct(x.same_as_opener)}</td><td class="r">${x.avg_diff}</td><td class="r">${x.moved}</td><td class="r">${x.avg_move ?? "–"}</td><td class="r">${x.move_left ?? "–"}</td></tr>` : ""; };
+  const srows = ["DK", "FD", "MGM"].flatMap(k => [srow(k, "sp"), srow(k, "tot")]).join("");
+  document.getElementById("p-openers").innerHTML = `<div class="prose"><p>The backtest measured CLV from Action Network's opener. This tab checks whether our books post that number: for every finished game where the board saw a book post its first line, how often it matched the opener, and how much of the opener-to-close move was still left at that first line (games that moved 1+ points). If "move left" is close to the average move, the backtest's edge is there to take; if it is near zero, the books open where the market closes.</p>
+    <p class="muted">${sn.games || 0} finished games tracked so far.</p></div>
+    ${srows ? `<div class="tbl"><table><thead><tr><th>Book</th><th>Market</th><th class="r">Games</th><th class="r">First = opener</th><th class="r">Avg gap to opener</th><th class="r">Moved 1+</th><th class="r">Avg move</th><th class="r">Move left at first line</th></tr></thead><tbody>${srows}</tbody></table></div>`
+      : `<div class="muted">Nothing yet: fills in as games finish.</div>`}`;
+
+  // ratings
+  document.getElementById("p-ratings").innerHTML = `<p class="muted" style="margin:0">Points better than an average D1 team on a neutral floor. Blend = average of the results model (points scored) and the market model (what earlier games' closing lines implied), each refit from this season's games and pulled toward last season. ${S.model ? `${S.model.games_used} games played so far; home court worth ${S.model.home_court} pts.` : ""}</p>
+    <div class="tbl"><table><thead><tr><th class="r">#</th><th>Team</th><th>Conf</th><th class="r">Blend</th><th class="r">Results</th><th class="r">Market</th><th class="r">Games</th></tr></thead><tbody>
+    ${(S.ratings || []).map(r => `<tr><td class="r">${r.rank}</td><td>${esc(r.team)}</td><td class="muted">${esc(r.conf)}</td><td class="r"><b>${sgn(r.net)}</b></td><td class="r">${sgn(r.pts)}</td><td class="r">${sgn(r.mkt)}</td><td class="r">${r.gp}</td></tr>`).join("")}</tbody></table></div>`;
+
+  // how it works
+  const B = S.backtest || {}, R = S.rules || {};
+  document.getElementById("p-how").innerHTML = `<div class="prose">
+    <h2>Paper only</h2>
+    <p>Nothing here is a bet yet. Every play is tracked at 1 unit so the model can earn a live record; which plays (if any) become money tiers is the owner's call once the live CLV is in.</p>
+    <h2>What the model does</h2>
+    <p>Two ratings for every D1 team, refit each run from this season's finished games (older games count less) and pulled toward last season's final ratings and the team's conference. The <b>results model</b> rates teams on points scored and allowed. The <b>market model</b> rates them on the points earlier games' closing lines expected them to score. The board uses the average of the two (the blend), compared with the current DraftKings, FanDuel and BetMGM prices; the best of the three is logged.</p>
+    <h2>Rules</h2>
+    <ul><li>Spreads: gap ${R.spread_lean}+ points logged (${R.spread}+ is the main tier); gaps of ${R.max_spread}+ are not logged (usually news the model can't see).</li>
+      <li>Totals: gap ${R.total_lean}+ (${R.total}+ main); ${R.max_total}+ not logged.</li>
+      <li>November games are their own tier. No prices worse than ${R.worst_odds}. A book ${R.stale_spread}+ points off the market (spread) or ${R.stale_total}+ (total) is ignored as stale.</li>
+      <li>A play logged in a lower tier that later clears a higher one is logged again at the new price.</li></ul>
+    <h2>What the backtest found (2023-24 to 2025-26)</h2>
+    <ul><li>${esc(B.spread)}</li><li>${esc(B.total)}</li><li>${esc(B.nov)}</li></ul>
+    <p>${esc(B.caveat)}</p>
+    <p>Live CLV here is measured from the best of three books, so it also includes the value of shopping for the best number; the backtest's CLV was from the single opener. Compare the Openers tab before reading too much into either.</p>
+  </div>`;
+}
+
+document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
+  document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
+  document.querySelectorAll("section.panel").forEach(p => { p.hidden = p.id !== "p-" + t.dataset.tab; });
+}));
+load().then(render);
+</script>

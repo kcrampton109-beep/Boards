@@ -1,0 +1,49 @@
+/* Shared Bets tab (site/bets.js): the same look on every board. Uses the page's --card / --ink / --muted / --rule /
+   --soft / --win / --loss colours (every board defines them, light and dark) and nothing board-specific. */
+.bets { display: grid; gap: 18px; font-family: "Public Sans", "Segoe UI", system-ui, sans-serif; color: var(--ink) }
+.bets h2 { text-transform: none; font: 700 19px/1.2 "Public Sans", "Segoe UI", system-ui, sans-serif; margin: 6px 0 0; letter-spacing: 0 }
+.bets h2 .n { color: var(--muted); font-weight: 500; margin-left: 6px }
+.bets p { margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted); max-width: 72ch }
+.bets .num { font-variant-numeric: tabular-nums }
+.bets-sum { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 10px }
+.bets-sum div { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; display: grid; gap: 2px }
+.bets-sum .b-lab { font-size: 11px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--muted) }
+.bets-sum .b-rec { font-size: 24px; font-weight: 700; line-height: 1.1 }
+.bets-sum .b-u { font-size: 13px }
+.bets-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 10px }
+.bet { background: var(--card); border: 1px solid var(--rule); border-left: 4px solid var(--ink); border-radius: 8px;
+       padding: 12px 14px; display: grid; gap: 6px; min-width: 0 }
+.bet.gone { border-left-color: var(--loss); opacity: .78 }
+.bet.live { border-left-color: var(--muted) }
+.bet .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 12px; color: var(--muted) }
+.bet .tag { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 3px 7px; border-radius: 4px;
+            background: var(--ink); color: var(--card) }
+.bet .pick { font-size: 22px; font-weight: 700; line-height: 1.15; overflow-wrap: anywhere }
+.bet .legs { display: grid; gap: 2px; font-size: 18px; font-weight: 700; line-height: 1.25 }
+.bet .price { font-size: 14px }
+.bet .price b { font-size: 15px }
+.bet .facts { display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; font-size: 13px }
+.bet .facts span:nth-child(odd) { color: var(--muted) }
+.bet .play-to { font-weight: 700 }
+.bet .now { font-size: 13px; padding-top: 6px; border-top: 1px dashed var(--rule) }
+.bet .now.ok::before, .bet .now.gone::before, .bet .now.live::before { content: "\25CF  "; }
+.bet .now.ok { color: var(--win) } .bet .now.gone { color: var(--loss) } .bet .now.live { color: var(--muted) }
+.bets-empty { padding: 14px; background: var(--card); border: 1px dashed var(--rule); border-radius: 8px; color: var(--muted); font-size: 14px }
+.bets-tbl { overflow-x: auto; background: var(--card); border: 1px solid var(--rule); border-radius: 8px }
+.bets-tbl table { border-collapse: collapse; width: 100%; font-size: 13px }
+.bets-tbl th, .bets-tbl td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; white-space: nowrap }
+.bets-tbl th { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--soft) }
+.bets-tbl td.r, .bets-tbl th.r { text-align: right }
+.bets-tbl td.g { white-space: normal; min-width: 180px }
+.bets-tbl .sub { display: block; color: var(--muted); font-size: 12px }
+.bets .res { display: inline-block; min-width: 22px; text-align: center; font-weight: 700; font-size: 12px; padding: 2px 6px; border-radius: 4px; background: var(--soft) }
+.bets .res.W { background: var(--win); color: var(--card) } .bets .res.L { background: var(--loss); color: var(--card) }
+.bets .pos { color: var(--win) } .bets .neg { color: var(--loss) }
+/* My Bets hooks on every card (site/mybets.js) */
+.b-take { justify-self: start; display: inline-block; font: 600 13px/1 "Public Sans", system-ui, sans-serif; padding: 9px 12px; border-radius: 8px;
+          border: 1px solid var(--ink); color: var(--ink); background: var(--card); text-decoration: none }
+.b-take:hover, .b-take:focus-visible { background: var(--ink); color: var(--card); outline: none }
+.b-mine { font-size: 13px; font-weight: 600; color: var(--win) }
+.bets p a { color: var(--ink) }
+.b-link { font: inherit; color: var(--ink); background: none; border: 0; padding: 0; text-decoration: underline; cursor: pointer }
+button.b-take { cursor: pointer }
