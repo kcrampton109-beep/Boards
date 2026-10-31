@@ -12444,7 +12444,11 @@
   "model": 48.5,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": 44.5,
+  "units": -0.5,
+  "final": "Harvard 14 - Dartmouth 24"
  },
  {
   "id": "401858507|total|over|m",
@@ -12835,7 +12839,11 @@
   "model": -13.9,
   "grp": "FBS",
   "limit": -8.5,
-  "status": "open"
+  "status": "L",
+  "clv": -0.5,
+  "close": -8.0,
+  "units": -0.5,
+  "final": "Tulane 38 - Charlotte 31"
  },
  {
   "id": "401868107|spread|home|m",
