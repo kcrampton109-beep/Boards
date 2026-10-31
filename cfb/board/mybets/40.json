@@ -1,0 +1,23 @@
+{
+ "id": 40,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/40",
+ "board": "CFB",
+ "pick": "East Tennessee State +2.5",
+ "odds": -110,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Tennessee Tech @ East Tennessee State",
+ "kickoff": "2026-10-31 15:30:00-04:00",
+ "play": "401868349|spread|home|m",
+ "logged": "2026-10-31T12:06:10Z",
+ "updated": "2026-10-31T12:06:18+00:00",
+ "tier": "FCS",
+ "game_id": 401868349,
+ "board_line": 3.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 2.5
+}
