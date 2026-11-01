@@ -1,0 +1,23 @@
+{
+ "id": 54,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/54",
+ "board": "CFB",
+ "pick": "Kansas State +6.5",
+ "odds": -110,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Oklahoma State @ Kansas State",
+ "kickoff": "2026-11-07 13:00:00-05:00",
+ "play": "401856854|spread|home|m",
+ "logged": "2026-11-01T16:15:57Z",
+ "updated": "2026-11-01T16:16:05+00:00",
+ "tier": "STRONG",
+ "game_id": 401856854,
+ "board_line": 5.5,
+ "board_odds": -104.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 6.5
+}
