@@ -7910,5 +7910,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_09_JAX_BAL:LEAN:spread:away",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "team": "JAX",
+  "pid": null,
+  "game_id": "2026_09_JAX_BAL",
+  "week": 9,
+  "matchup": "JAX @ BAL",
+  "kickoff": "Thu Nov 5, 8:15 PM ET",
+  "pick": "JAX +3",
+  "line": 3,
+  "odds": -115,
+  "book": "DK",
+  "stake": 0.5,
+  "edge": 8.4,
+  "note": "BAL QB Tyler Huntley questionable; demoted: QB status uncertain",
+  "limit": -3.5,
+  "model_line": 5.4,
+  "flagged": "2026-11-01T17:16:32.332164-05:00",
+  "kickoff_iso": "2026-11-05T20:15:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
