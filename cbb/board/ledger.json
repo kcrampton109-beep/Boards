@@ -1366,5 +1366,29 @@
   "grp": "mid-major",
   "limit": 0.5,
   "status": "open"
+ },
+ {
+  "id": "401925947|total|under",
+  "base": "401925947|total|under",
+  "flagged": "2026-11-01T11:42-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401925947,
+  "matchup": "Weber State @ Oregon State",
+  "kickoff": "2026-11-02T21:30:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 156.5",
+  "book": "MGM",
+  "line": 156.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.6,
+  "model": 150.9,
+  "opener": 154.5,
+  "grp": "mid-major",
+  "limit": 156.0,
+  "status": "open"
  }
 ]
