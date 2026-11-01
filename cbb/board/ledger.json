@@ -1078,5 +1078,29 @@
   "grp": "mid-major",
   "limit": 146.5,
   "status": "open"
+ },
+ {
+  "id": "401925733|spread|home",
+  "base": "401925733|spread|home",
+  "flagged": "2026-11-01T05:44-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401925733,
+  "matchup": "Oakland @ Michigan",
+  "kickoff": "2026-11-02T18:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "pick": "Michigan -26.5",
+  "book": "FD",
+  "line": -26.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 3.3,
+  "model": 29.8,
+  "opener": -28.5,
+  "grp": "power 6",
+  "limit": -26.5,
+  "status": "open"
  }
 ]
