@@ -13165,7 +13165,11 @@
   "model": 0.5,
   "grp": "FCS-FCS",
   "limit": 5.5,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 5.5,
+  "units": 0.885,
+  "final": "Wofford 9 - Samford 10"
  },
  {
   "id": "401868388|moneyline|home|m",
@@ -13188,7 +13192,9 @@
   "model": 48.8,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.43,
+  "final": "Wofford 9 - Samford 10"
  },
  {
   "id": "401868950|total|under|m",
