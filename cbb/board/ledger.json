@@ -2018,5 +2018,29 @@
   "grp": "power 6",
   "limit": -20.0,
   "status": "open"
+ },
+ {
+  "id": "401912207|total|under",
+  "base": "401912207|total|under",
+  "flagged": "2026-11-01T16:40-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401912207,
+  "matchup": "American University @ Cincinnati",
+  "kickoff": "2026-11-02T19:00:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 149.5",
+  "book": "FD",
+  "line": 149.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 6.4,
+  "model": 143.1,
+  "opener": 147.5,
+  "grp": "power 6",
+  "limit": 148.5,
+  "status": "open"
  }
 ]
