@@ -14295,5 +14295,28 @@
   "grp": "FBS",
   "limit": -14.5,
   "status": "open"
+ },
+ {
+  "id": "401864533|moneyline|home|m",
+  "base": "401864533|moneyline|home|m",
+  "flagged": "2026-11-01T10:09-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401864533,
+  "matchup": "New Mexico @ Nevada",
+  "kickoff": "2026-11-06 21:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "moneyline",
+  "side": "home",
+  "pick": "Nevada ML +385 (alt to spread)",
+  "book": "FD",
+  "line": null,
+  "odds": 385.0,
+  "stake": 0.25,
+  "edge": 64.1,
+  "model": 33.8,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
