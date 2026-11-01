@@ -14272,5 +14272,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401856856|spread|home|m",
+  "base": "401856856|spread|home|m",
+  "flagged": "2026-11-01T05:50-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401856856,
+  "matchup": "West Virginia @ Texas Tech",
+  "kickoff": "2026-11-07 21:30:00-05:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "home",
+  "pick": "Texas Tech -14.5",
+  "book": "FD",
+  "line": -14.5,
+  "odds": -114.0,
+  "stake": 1.0,
+  "edge": 5.2,
+  "model": -19.7,
+  "grp": "FBS",
+  "limit": -14.5,
+  "status": "open"
  }
 ]
