@@ -1,0 +1,23 @@
+{
+ "id": 46,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/46",
+ "board": "CFB",
+ "pick": "Sacramento State +27.5",
+ "odds": -102,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Toledo @ Sacramento State",
+ "kickoff": "2026-11-04 19:00:00-05:00",
+ "play": "401866457|spread|home|m",
+ "logged": "2026-11-01T12:07:42Z",
+ "updated": "2026-11-01T12:07:50+00:00",
+ "tier": "STRONG",
+ "game_id": 401866457,
+ "board_line": 27.5,
+ "board_odds": -102.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 27.5
+}
