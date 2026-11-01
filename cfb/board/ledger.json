@@ -13954,5 +13954,28 @@
   "grp": "FBS",
   "limit": 13.5,
   "status": "open"
+ },
+ {
+  "id": "401866457|spread|home|m",
+  "base": "401866457|spread|home|m",
+  "flagged": "2026-11-01T00:46-04:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401866457,
+  "matchup": "Toledo @ Sacramento State",
+  "kickoff": "2026-11-04 19:00:00-05:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "home",
+  "pick": "Sacramento State +27.5",
+  "book": "FD",
+  "line": 27.5,
+  "odds": -102.0,
+  "stake": 1.0,
+  "edge": 5.7,
+  "model": 21.8,
+  "grp": "FBS",
+  "limit": 27.0,
+  "status": "open"
  }
 ]
