@@ -11937,7 +11937,11 @@
   "model": -24.6,
   "grp": "FBS",
   "limit": -19.5,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": -22.5,
+  "units": 0.455,
+  "final": "Stanford 24 - Louisville 52"
  },
  {
   "id": "401858503|spread|away|m",
@@ -12085,7 +12089,11 @@
   "model": -9.3,
   "grp": "FBS",
   "limit": -4.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.5,
+  "close": -4.0,
+  "units": 0.455,
+  "final": "Temple 9 - East Carolina 17"
  },
  {
   "id": "401866452|spread|home|m",
@@ -12382,7 +12390,11 @@
   "model": -6.3,
   "grp": "FBS",
   "limit": -1.0,
-  "status": "open"
+  "status": "L",
+  "clv": -4.0,
+  "close": 3.0,
+  "units": -1.0,
+  "final": "Kansas State 24 - Colorado 27"
  },
  {
   "id": "401856846|moneyline|away|m",
@@ -12405,7 +12417,9 @@
   "model": 65.7,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Kansas State 24 - Colorado 27"
  },
  {
   "id": "401867903|spread|home|m",
@@ -12856,7 +12870,11 @@
   "model": 53.2,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": 51.5,
+  "units": 0.442,
+  "final": "Delaware State 36 - Norfolk State 33"
  },
  {
   "id": "401868175|total|over|m",
@@ -12879,7 +12897,11 @@
   "model": 52.8,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 47.5,
+  "units": 0.442,
+  "final": "Western Illinois 42 - Charleston Southern 35"
  },
  {
   "id": "401868223|spread|home|m",
@@ -12902,7 +12924,11 @@
   "model": -33.3,
   "grp": "FCS-FCS",
   "limit": -28.0,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": -30.5,
+  "units": 0.885,
+  "final": "Davidson 7 - St. Thomas (MN) 35"
  },
  {
   "id": "401862813|spread|away|m",
@@ -12952,7 +12978,11 @@
   "model": 11.5,
   "grp": "FCS-FCS",
   "limit": 17.0,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": 16.5,
+  "units": 0.885,
+  "final": "Idaho State 34 - Utah Tech 27"
  },
  {
   "id": "401868107|total|under|m",
@@ -12975,7 +13005,11 @@
   "model": 51.2,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": 54.5,
+  "units": -1.0,
+  "final": "Idaho State 34 - Utah Tech 27"
  },
  {
   "id": "401868136|spread|home|m",
@@ -12998,7 +13032,11 @@
   "model": -2.0,
   "grp": "FCS-FCS",
   "limit": 1.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 1.5,
+  "units": -0.5,
+  "final": "North Alabama 14 - Central Arkansas 9"
  },
  {
   "id": "401868312|total|under|m",
@@ -13021,7 +13059,11 @@
   "model": 49.3,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 54.5,
+  "units": 0.885,
+  "final": "Houston Christian 6 - Stephen F. Austin 37"
  },
  {
   "id": "401868349|spread|home|m",
@@ -13044,7 +13086,11 @@
   "model": -3.3,
   "grp": "FCS-FCS",
   "limit": 2.0,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 2.5,
+  "units": -1.0,
+  "final": "Tennessee Tech 24 - East Tennessee State 17"
  },
  {
   "id": "401868349|moneyline|home|m",
@@ -13067,7 +13113,9 @@
   "model": 58.4,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Tennessee Tech 24 - East Tennessee State 17"
  },
  {
   "id": "401868362|total|over|m",
@@ -13090,7 +13138,11 @@
   "model": 66.1,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 60.5,
+  "units": 0.442,
+  "final": "Alcorn State 52 - Mississippi Valley State 17"
  },
  {
   "id": "401868388|spread|home|m",
@@ -13159,7 +13211,11 @@
   "model": 51.1,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 5.0,
+  "close": 51.5,
+  "units": 0.885,
+  "final": "Southern 42 - Florida A&M 14"
  },
  {
   "id": "401868956|spread|home|m",
@@ -13205,7 +13261,11 @@
   "model": -13.3,
   "grp": "FCS-FCS",
   "limit": -8.0,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": -8.5,
+  "units": 0.885,
+  "final": "Nicholls 3 - McNeese 16"
  },
  {
   "id": "401868056|spread|home|m",
@@ -13228,7 +13288,11 @@
   "model": -19.3,
   "grp": "FCS-FCS",
   "limit": -16.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": -15.5,
+  "units": 0.442,
+  "final": "West Georgia 0 - Abilene Christian 59"
  },
  {
   "id": "401868081|total|under|m",
@@ -13251,7 +13315,11 @@
   "model": 59.9,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": 62.5,
+  "units": -1.0,
+  "final": "Cal Poly 7 - Montana State 61"
  },
  {
   "id": "401868342|spread|home|m",
@@ -13382,7 +13450,11 @@
   "model": -4.8,
   "grp": "FCS-FCS",
   "limit": -1.5,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": -1.5,
+  "units": 0.442,
+  "final": "Bethune-Cookman 21 - Arkansas-Pine Bluff 63"
  },
  {
   "id": "401858502|spread|home|m",
@@ -13432,7 +13504,11 @@
   "model": -10.4,
   "grp": "FBS",
   "limit": -5.0,
-  "status": "open"
+  "status": "L",
+  "clv": -1.5,
+  "close": -3.5,
+  "units": -0.5,
+  "final": "Coastal Carolina 31 - Georgia State 20"
  },
  {
   "id": "401866676|spread|home|m",
@@ -13588,7 +13664,11 @@
   "model": -1.6,
   "grp": "FCS-FCS",
   "limit": 1.5,
-  "status": "open"
+  "status": "L",
+  "clv": -1.0,
+  "close": 2.5,
+  "units": -0.5,
+  "final": "Delaware State 36 - Norfolk State 33"
  },
  {
   "id": "401866676|spread|home|m|FCS",
@@ -13717,7 +13797,11 @@
   "model": -19.1,
   "grp": "FCS-FCS",
   "limit": -16.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": -16.0,
+  "units": -0.5,
+  "final": "The Citadel 19 - Mercer 28"
  },
  {
   "id": "401868165|spread|home|m",
@@ -13740,7 +13824,11 @@
   "model": -3.4,
   "grp": "FCS-FCS",
   "limit": 0.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 1.5,
+  "units": 0.847,
+  "final": "UC Davis 14 - Weber State 38"
  },
  {
   "id": "401868296|spread|away|m",
@@ -13763,7 +13851,11 @@
   "model": 3.5,
   "grp": "FCS-FCS",
   "limit": 7.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.5,
+  "close": 6.5,
+  "units": 0.455,
+  "final": "Alabama State 28 - Alabama A&M 31"
  },
  {
   "id": "401858280|spread|home|m",
