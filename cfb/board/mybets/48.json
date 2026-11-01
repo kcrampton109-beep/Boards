@@ -1,0 +1,23 @@
+{
+ "id": 48,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/48",
+ "board": "CFB",
+ "pick": "Utah -4.5",
+ "odds": -108,
+ "book": "BetMGM",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "BYU @ Utah",
+ "kickoff": "2026-11-07 12:00:00-05:00",
+ "play": "401856849|spread|home|m",
+ "logged": "2026-11-01T12:10:10Z",
+ "updated": "2026-11-01T12:10:19+00:00",
+ "tier": "STRONG",
+ "game_id": 401856849,
+ "board_line": -2.5,
+ "board_odds": -122.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": -4.5
+}
