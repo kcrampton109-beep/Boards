@@ -1,0 +1,23 @@
+{
+ "id": 45,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/45",
+ "board": "CFB",
+ "pick": "Southern Miss +15.5",
+ "odds": -110,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "James Madison @ Southern Miss",
+ "kickoff": "2026-11-05 20:00:00-05:00",
+ "play": "401869964|spread|home|m",
+ "logged": "2026-11-01T03:46:20Z",
+ "updated": "2026-11-01T03:46:27+00:00",
+ "tier": "STRONG",
+ "game_id": 401869964,
+ "board_line": 15.5,
+ "board_odds": -110.0,
+ "board_book": "DK",
+ "market": "spread",
+ "side": "home",
+ "line": 15.5
+}
