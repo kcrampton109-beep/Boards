@@ -1,0 +1,23 @@
+{
+ "id": 49,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/49",
+ "board": "CFB",
+ "pick": "Washington +1.5",
+ "odds": -115,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Penn State @ Washington",
+ "kickoff": "2026-11-07 15:30:00-05:00",
+ "play": "401858516|spread|home|m",
+ "logged": "2026-11-01T12:13:15Z",
+ "updated": "2026-11-01T12:13:23+00:00",
+ "tier": "STRONG",
+ "game_id": 401858516,
+ "board_line": 1.5,
+ "board_odds": -115.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 1.5
+}
