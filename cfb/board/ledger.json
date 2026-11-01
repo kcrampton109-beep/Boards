@@ -11845,7 +11845,11 @@
   "model": 6.3,
   "grp": "FBS",
   "limit": 11.5,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 10.5,
+  "units": -0.5,
+  "final": "Missouri 34 - Arkansas 10"
  },
  {
   "id": "401858509|spread|away|m",
@@ -11868,7 +11872,11 @@
   "model": -12.9,
   "grp": "FBS",
   "limit": -7.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -6.5,
+  "units": -0.5,
+  "final": "Ohio State 18 - USC 30"
  },
  {
   "id": "401856847|spread|home|m",
@@ -11891,7 +11899,11 @@
   "model": 3.0,
   "grp": "FBS",
   "limit": 8.0,
-  "status": "open"
+  "status": "W",
+  "clv": -0.5,
+  "close": 10.0,
+  "units": 0.455,
+  "final": "Oklahoma State 49 - Iowa State 51"
  },
  {
   "id": "401858281|spread|home|m",
@@ -11914,7 +11926,11 @@
   "model": -12.8,
   "grp": "FBS",
   "limit": -7.5,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": -9.5,
+  "units": 0.455,
+  "final": "Georgia Tech 11 - Pittsburgh 34"
  },
  {
   "id": "401858283|spread|home|m",
@@ -12016,7 +12032,11 @@
   "model": 3.0,
   "grp": "FBS",
   "limit": 10.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.5,
+  "close": 10.0,
+  "units": 0.943,
+  "final": "Oklahoma State 49 - Iowa State 51"
  },
  {
   "id": "401856847|moneyline|home|m",
@@ -12039,7 +12059,9 @@
   "model": 42.4,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.825,
+  "final": "Oklahoma State 49 - Iowa State 51"
  },
  {
   "id": "401862816|spread|home|m",
@@ -12167,7 +12189,11 @@
   "model": -12.8,
   "grp": "FBS",
   "limit": -7.5,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": -9.5,
+  "units": 0.926,
+  "final": "Georgia Tech 11 - Pittsburgh 34"
  },
  {
   "id": "401858281|moneyline|home|m",
@@ -12190,7 +12216,9 @@
   "model": 79.6,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.083,
+  "final": "Georgia Tech 11 - Pittsburgh 34"
  },
  {
   "id": "401858509|spread|away|m|STRONG",
@@ -12213,7 +12241,11 @@
   "model": -12.9,
   "grp": "FBS",
   "limit": -7.5,
-  "status": "open"
+  "status": "L",
+  "clv": -0.5,
+  "close": -6.5,
+  "units": -1.0,
+  "final": "Ohio State 18 - USC 30"
  },
  {
   "id": "401858509|moneyline|away|m",
@@ -12236,7 +12268,9 @@
   "model": 79.7,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Ohio State 18 - USC 30"
  },
  {
   "id": "401862816|spread|home|m|STRONG",
@@ -13244,7 +13278,11 @@
   "model": 4.1,
   "grp": "FCS-FCS",
   "limit": 7.5,
-  "status": "open"
+  "status": "W",
+  "clv": 4.5,
+  "close": 4.0,
+  "units": 0.885,
+  "final": "Grambling 20 - Texas Southern 23"
  },
  {
   "id": "401869139|spread|home|m",
@@ -13884,7 +13922,11 @@
   "model": -10.0,
   "grp": "FBS",
   "limit": -4.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": -5.0,
+  "units": -0.5,
+  "final": "Clemson 36 - Florida State 24"
  },
  {
   "id": "401856849|spread|home|m",
