@@ -7378,5 +7378,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_08_MIN_DET:RLM:total:under",
+  "tier": "RLM",
+  "market": "total",
+  "side": "under",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_08_MIN_DET",
+  "week": 8,
+  "matchup": "MIN @ DET",
+  "kickoff": "Sun Nov 1, 1:00 PM ET",
+  "pick": "Under 46.5",
+  "line": 46.5,
+  "odds": -120,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": null,
+  "note": "57% of bets on the over, total moved 46.5 \u2192 45.5",
+  "limit": null,
+  "model_line": -0.8,
+  "flagged": "2026-11-01T01:52:43.907523-04:00",
+  "kickoff_iso": "2026-11-01T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
