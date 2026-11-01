@@ -1,0 +1,23 @@
+{
+ "id": 53,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/53",
+ "board": "CFB",
+ "pick": "Western Kentucky +1.5",
+ "odds": -110,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Western Kentucky @ Middle Tennessee",
+ "kickoff": "2026-11-07 15:30:00-05:00",
+ "play": "401871076|spread|away|m",
+ "logged": "2026-11-01T16:15:18Z",
+ "updated": "2026-11-01T16:15:27+00:00",
+ "tier": "STRONG",
+ "game_id": 401871076,
+ "board_line": 1.5,
+ "board_odds": -110.0,
+ "board_book": "DK",
+ "market": "spread",
+ "side": "away",
+ "line": 1.5
+}
