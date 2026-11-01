@@ -14019,5 +14019,28 @@
   "grp": "FBS",
   "limit": 27.0,
   "status": "open"
+ },
+ {
+  "id": "401864533|spread|home|m",
+  "base": "401864533|spread|home|m",
+  "flagged": "2026-11-01T02:37-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401864533,
+  "matchup": "New Mexico @ Nevada",
+  "kickoff": "2026-11-06 21:00:00-05:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "home",
+  "pick": "Nevada +12.5",
+  "book": "DK",
+  "line": 12.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 6.2,
+  "model": 6.3,
+  "grp": "FBS",
+  "limit": 11.5,
+  "status": "open"
  }
 ]
