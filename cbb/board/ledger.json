@@ -1054,5 +1054,29 @@
   "grp": "power 6",
   "limit": 24.5,
   "status": "open"
+ },
+ {
+  "id": "401917507|total|under",
+  "base": "401917507|total|under",
+  "flagged": "2026-11-01T00:28-04:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401917507,
+  "matchup": "Illinois State @ Saint Mary's",
+  "kickoff": "2026-11-02T22:00:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 146.5",
+  "book": "DK",
+  "line": 146.5,
+  "odds": -112.0,
+  "stake": 1.0,
+  "edge": 5.0,
+  "model": 141.5,
+  "opener": 146.5,
+  "grp": "mid-major",
+  "limit": 146.5,
+  "status": "open"
  }
 ]
