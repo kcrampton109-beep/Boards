@@ -14410,5 +14410,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401870795|spread|away|m",
+  "base": "401870795|spread|away|m",
+  "flagged": "2026-11-01T11:33-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401870795,
+  "matchup": "Liberty @ New Mexico State",
+  "kickoff": "2026-11-07 20:00:00-05:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "pick": "Liberty -12.5",
+  "book": "DK",
+  "line": -12.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 6.3,
+  "model": -18.8,
+  "grp": "FBS",
+  "limit": -13.5,
+  "status": "open"
  }
 ]
