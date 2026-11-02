@@ -253,7 +253,11 @@
   "opener": 1.5,
   "grp": "low-major",
   "limit": -1.0,
-  "status": "open"
+  "status": "L",
+  "close": 3.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Winthrop 98 - Queens University 103"
  },
  {
   "id": "401919014|spread|away",
@@ -2353,7 +2357,11 @@
   "opener": 165.5,
   "grp": "low-major",
   "limit": 165.0,
-  "status": "open"
+  "status": "L",
+  "close": 168.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Winthrop 98 - Queens University 103"
  },
  {
   "id": "401911469|total|under",
@@ -4057,6 +4065,30 @@
   "opener": 17.5,
   "grp": "power 6",
   "limit": 19.5,
+  "status": "open"
+ },
+ {
+  "id": "401920071|spread|away",
+  "base": "401920071|spread|away",
+  "flagged": "2026-11-02T11:38-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401920071,
+  "matchup": "UMBC @ George Mason",
+  "kickoff": "2026-11-02T16:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "pick": "UMBC +20.5",
+  "book": "MGM",
+  "line": 20.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 3.3,
+  "model": -17.2,
+  "opener": 16.5,
+  "grp": "mid-major",
+  "limit": 20.5,
   "status": "open"
  }
 ]
