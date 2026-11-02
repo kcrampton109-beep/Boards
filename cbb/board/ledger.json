@@ -197,7 +197,11 @@
   "opener": 5.5,
   "grp": "low-major",
   "limit": 5.0,
-  "status": "open"
+  "status": "W",
+  "close": -8.5,
+  "clv": 14.0,
+  "units": 0.909,
+  "final": "Northern Illinois 87 - Grambling 89"
  },
  {
   "id": "401921422|spread|away",
@@ -1493,7 +1497,11 @@
   "opener": 5.5,
   "grp": "low-major",
   "limit": 5.0,
-  "status": "open"
+  "status": "W",
+  "close": 8.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Northern Illinois 87 - Grambling 89"
  },
  {
   "id": "401911374|spread|away",
@@ -2165,7 +2173,11 @@
   "opener": 147.5,
   "grp": "low-major",
   "limit": 139.5,
-  "status": "open"
+  "status": "W",
+  "close": 138.5,
+  "clv": -1.0,
+  "units": 0.952,
+  "final": "Northern Illinois 87 - Grambling 89"
  },
  {
   "id": "401920701|spread|home",
