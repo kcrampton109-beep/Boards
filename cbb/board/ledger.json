@@ -1441,7 +1441,11 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 145.5,
-  "status": "open"
+  "status": "W",
+  "close": 147.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "UMBC 54 - George Mason 82"
  },
  {
   "id": "401909562|spread|away",
@@ -4101,7 +4105,11 @@
   "opener": 16.5,
   "grp": "mid-major",
   "limit": 20.5,
-  "status": "open"
+  "status": "L",
+  "close": 19.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "UMBC 54 - George Mason 82"
  },
  {
   "id": "401918955|spread|away",
