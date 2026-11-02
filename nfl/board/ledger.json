@@ -6561,11 +6561,11 @@
   "model_line": -2.1,
   "flagged": "2026-10-25T16:38:23.765859-04:00",
   "kickoff_iso": "2026-11-01T20:20:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 40.5,
+  "clv": 1.0,
+  "final": "PHI 10 - WAS 27"
  },
  {
   "id": "2026_08_PHI_WAS:TREND:spread:home",
@@ -6589,11 +6589,11 @@
   "model_line": -2.1,
   "flagged": "2026-10-25T16:38:23.765859-04:00",
   "kickoff_iso": "2026-11-01T20:20:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": -5.5,
+  "clv": 2.0,
+  "final": "PHI 10 - WAS 27"
  },
  {
   "id": "2026_08_CHI_SEA:RLM:total:under",
@@ -7289,11 +7289,11 @@
   "model_line": -2.1,
   "flagged": "2026-10-26T23:51:00.570405-04:00",
   "kickoff_iso": "2026-11-01T20:20:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": 5.5,
+  "clv": -1.0,
+  "final": "PHI 10 - WAS 27"
  },
  {
   "id": "2026_08_CLE_PIT:STRONG:spread:home",
@@ -7373,11 +7373,11 @@
   "model_line": -2.9,
   "flagged": "2026-10-28T16:52:42.303925-04:00",
   "kickoff_iso": "2026-11-01T20:20:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 5.5,
+  "clv": 0.5,
+  "final": "PHI 10 - WAS 27"
  },
  {
   "id": "2026_08_MIN_DET:RLM:total:under",
