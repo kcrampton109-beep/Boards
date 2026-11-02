@@ -14502,5 +14502,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401866454|total|under|wx",
+  "base": "401866454|total|under|wx",
+  "flagged": "2026-11-02T00:39-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401866454,
+  "matchup": "Buffalo @ Miami (OH)",
+  "kickoff": "2026-11-03 20:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 44.5 (wind 16 mph)",
+  "book": "DK",
+  "line": 44.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 16.0,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
