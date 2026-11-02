@@ -225,7 +225,11 @@
   "opener": 3.5,
   "grp": "mid-major",
   "limit": 1.0,
-  "status": "open"
+  "status": "L",
+  "close": -3.5,
+  "clv": 7.0,
+  "units": -1.0,
+  "final": "Merrimack 49 - App State 63"
  },
  {
   "id": "401921423|spread|away",
@@ -1185,7 +1189,11 @@
   "opener": 3.5,
   "grp": "mid-major",
   "limit": 1.0,
-  "status": "open"
+  "status": "W",
+  "close": 3.5,
+  "clv": 0.0,
+  "units": 0.943,
+  "final": "Merrimack 49 - App State 63"
  },
  {
   "id": "401911707|total|under",
@@ -3521,6 +3529,54 @@
   "opener": 146.5,
   "grp": "power 6",
   "limit": 144.5,
+  "status": "open"
+ },
+ {
+  "id": "401911532|total|under",
+  "base": "401911532|total|under",
+  "flagged": "2026-11-02T08:09-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401911532,
+  "matchup": "UTEP vs Northern Kentucky",
+  "kickoff": "2026-11-02T14:00:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 149.5",
+  "book": "MGM",
+  "line": 149.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.7,
+  "model": 143.8,
+  "opener": 148.5,
+  "grp": "mid-major",
+  "limit": 149.0,
+  "status": "open"
+ },
+ {
+  "id": "401919001|spread|home",
+  "base": "401919001|spread|home",
+  "flagged": "2026-11-02T08:09-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401919001,
+  "matchup": "UT Martin @ Tulane",
+  "kickoff": "2026-11-02T20:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "pick": "Tulane -6.5",
+  "book": "DK",
+  "line": -6.5,
+  "odds": -112.0,
+  "stake": 1.0,
+  "edge": 3.1,
+  "model": 9.6,
+  "opener": -9.5,
+  "grp": "mid-major",
+  "limit": -6.5,
   "status": "open"
  }
 ]
