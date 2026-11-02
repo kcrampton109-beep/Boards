@@ -6421,11 +6421,11 @@
   "model_line": -5.4,
   "flagged": "2026-10-25T16:38:23.765859-04:00",
   "kickoff_iso": "2026-11-01T16:05:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 6.5,
+  "clv": 0.5,
+  "final": "LAC 9 - LA 24"
  },
  {
   "id": "2026_08_LAC_LA:TREND:total:under",
@@ -6449,11 +6449,11 @@
   "model_line": -5.4,
   "flagged": "2026-10-25T16:38:23.765859-04:00",
   "kickoff_iso": "2026-11-01T16:05:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 46.5,
+  "clv": -1.0,
+  "final": "LAC 9 - LA 24"
  },
  {
   "id": "2026_08_NE_MIA:RLM:total:under",
@@ -6785,11 +6785,11 @@
   "model_line": -5.4,
   "flagged": "2026-10-25T18:04:36.022312-04:00",
   "kickoff_iso": "2026-11-01T16:05:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": 6.5,
+  "clv": 1.0,
+  "final": "LAC 9 - LA 24"
  },
  {
   "id": "2026_08_ARI_DAL:RLM:total:over",
@@ -7177,11 +7177,11 @@
   "model_line": -5.5,
   "flagged": "2026-10-26T12:11:20.407182-04:00",
   "kickoff_iso": "2026-11-01T16:05:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 6.5,
+  "clv": 0.5,
+  "final": "LAC 9 - LA 24"
  },
  {
   "id": "2026_08_KC_DEN:RLM:total:under",
@@ -7261,11 +7261,11 @@
   "model_line": -5.5,
   "flagged": "2026-10-26T18:49:45.538147-04:00",
   "kickoff_iso": "2026-11-01T16:05:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.89,
+  "close": 46.5,
+  "clv": -2.0,
+  "final": "LAC 9 - LA 24"
  },
  {
   "id": "2026_08_PHI_WAS:LEAN:spread:away",
