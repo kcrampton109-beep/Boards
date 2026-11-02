@@ -3565,7 +3565,11 @@
   "opener": 148.5,
   "grp": "mid-major",
   "limit": 149.0,
-  "status": "open"
+  "status": "L",
+  "close": 150.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "UTEP 76 - Northern Kentucky 84"
  },
  {
   "id": "401919001|spread|home",
@@ -4189,7 +4193,11 @@
   "opener": 2.5,
   "grp": "mid-major",
   "limit": 4.0,
-  "status": "open"
+  "status": "W",
+  "close": 4.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "UTEP 76 - Northern Kentucky 84"
  },
  {
   "id": "401921264|spread|away",
@@ -4285,6 +4293,30 @@
   "opener": 31.5,
   "grp": "power 6",
   "limit": 33.0,
+  "status": "open"
+ },
+ {
+  "id": "401906848|total|under",
+  "base": "401906848|total|under",
+  "flagged": "2026-11-02T16:44-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401906848,
+  "matchup": "Wofford @ Tennessee",
+  "kickoff": "2026-11-03T18:00:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 152.5",
+  "book": "DK",
+  "line": 152.5,
+  "odds": -108.0,
+  "stake": 1.0,
+  "edge": 5.8,
+  "model": 146.7,
+  "opener": 152.5,
+  "grp": "power 6",
+  "limit": 152.0,
   "status": "open"
  }
 ]
