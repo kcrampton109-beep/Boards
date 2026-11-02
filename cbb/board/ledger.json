@@ -3498,5 +3498,29 @@
   "grp": "mid-major",
   "limit": 143.5,
   "status": "open"
+ },
+ {
+  "id": "401909784|total|under",
+  "base": "401909784|total|under",
+  "flagged": "2026-11-02T06:28-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401909784,
+  "matchup": "Fordham @ Kansas",
+  "kickoff": "2026-11-02T20:00:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 144.5",
+  "book": "DK",
+  "line": 144.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.5,
+  "model": 139.0,
+  "opener": 146.5,
+  "grp": "power 6",
+  "limit": 144.5,
+  "status": "open"
  }
 ]
