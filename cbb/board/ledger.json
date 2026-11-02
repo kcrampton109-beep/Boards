@@ -2114,5 +2114,29 @@
   "grp": "power 6",
   "limit": -26.0,
   "status": "open"
+ },
+ {
+  "id": "401909500|spread|away",
+  "base": "401909500|spread|away",
+  "flagged": "2026-11-01T21:08-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401909500,
+  "matchup": "West Georgia @ DePaul",
+  "kickoff": "2026-11-02T20:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "pick": "West Georgia +24.5",
+  "book": "MGM",
+  "line": 24.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 3.2,
+  "model": -21.3,
+  "opener": 23.5,
+  "grp": "power 6",
+  "limit": 24.5,
+  "status": "open"
  }
 ]
