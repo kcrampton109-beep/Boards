@@ -1141,7 +1141,11 @@
   "opener": 17.5,
   "grp": "mid-major",
   "limit": 12.5,
-  "status": "open"
+  "status": "L",
+  "close": 18.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Weber State 61 - Oregon State 102"
  },
  {
   "id": "401922020|spread|away",
@@ -1165,7 +1169,11 @@
   "opener": 27.5,
   "grp": "mid-major",
   "limit": 22.0,
-  "status": "open"
+  "status": "L",
+  "close": 26.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Idaho State 58 - Utah State 94"
  },
  {
   "id": "401920716|spread|home",
@@ -1593,7 +1601,11 @@
   "opener": 154.5,
   "grp": "mid-major",
   "limit": 156.0,
-  "status": "open"
+  "status": "L",
+  "close": 161.5,
+  "clv": -5.0,
+  "units": -1.0,
+  "final": "Weber State 61 - Oregon State 102"
  },
  {
   "id": "401920071|total|under",
@@ -2037,7 +2049,11 @@
   "opener": 27.5,
   "grp": "mid-major",
   "limit": 25.0,
-  "status": "open"
+  "status": "W",
+  "close": 28.5,
+  "clv": -1.0,
+  "units": 0.926,
+  "final": "Texas Southern 79 - Grand Canyon 103"
  },
  {
   "id": "401906863|spread|away",
@@ -2089,7 +2105,11 @@
   "opener": 30.5,
   "grp": "power 6",
   "limit": 28.5,
-  "status": "open"
+  "status": "W",
+  "close": 32.5,
+  "clv": -2.0,
+  "units": 0.909,
+  "final": "Northwestern State 65 - Baylor 87"
  },
  {
   "id": "401902275|spread|home",
@@ -3757,7 +3777,11 @@
   "opener": 160.5,
   "grp": "power 6",
   "limit": 160.5,
-  "status": "open"
+  "status": "L",
+  "close": 160.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Ohio State 83 - BYU 94"
  },
  {
   "id": "401918947|total|under",
@@ -3837,7 +3861,11 @@
   "opener": 148.5,
   "grp": "power 6",
   "limit": 149.5,
-  "status": "open"
+  "status": "L",
+  "close": 152.5,
+  "clv": -3.0,
+  "units": -1.0,
+  "final": "Northwestern State 65 - Baylor 87"
  },
  {
   "id": "401911517|total|under",
@@ -4425,7 +4453,11 @@
   "opener": 145.5,
   "grp": "mid-major",
   "limit": 150.5,
-  "status": "open"
+  "status": "L",
+  "close": 149.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Idaho State 58 - Utah State 94"
  },
  {
   "id": "401911517|spread|home",
@@ -5461,6 +5493,30 @@
   "opener": -9.5,
   "grp": "mid-major",
   "limit": -13.0,
+  "status": "open"
+ },
+ {
+  "id": "401929372|spread|away",
+  "base": "401929372|spread|away",
+  "flagged": "2026-11-02T23:57-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401929372,
+  "matchup": "Arkansas-Pine Bluff @ Arkansas",
+  "kickoff": "2026-11-03T20:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "pick": "Arkansas-Pine Bluff +39.5",
+  "book": "MGM",
+  "line": 39.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 4.3,
+  "model": -35.2,
+  "opener": 40.5,
+  "grp": "power 6",
+  "limit": 38.5,
   "status": "open"
  }
 ]
