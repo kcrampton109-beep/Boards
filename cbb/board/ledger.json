@@ -5650,5 +5650,29 @@
   "grp": "power 6",
   "limit": 146.5,
   "status": "open"
+ },
+ {
+  "id": "401920155|spread|home",
+  "base": "401920155|spread|home",
+  "flagged": "2026-11-03T12:54-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401920155,
+  "matchup": "Cal State Fullerton @ San Diego State",
+  "kickoff": "2026-11-03T22:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "pick": "San Diego State -14.5",
+  "book": "FD",
+  "line": -14.5,
+  "odds": -120.0,
+  "stake": 1.0,
+  "edge": 3.5,
+  "model": 18.0,
+  "opener": -15.5,
+  "grp": "mid-major",
+  "limit": -14.5,
+  "status": "open"
  }
 ]
