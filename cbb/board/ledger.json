@@ -5602,5 +5602,29 @@
   "grp": "power 6",
   "limit": 149.5,
   "status": "open"
+ },
+ {
+  "id": "401921808|spread|away",
+  "base": "401921808|spread|away",
+  "flagged": "2026-11-03T10:55-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401921808,
+  "matchup": "LSU New Orleans @ LSU",
+  "kickoff": "2026-11-03T20:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "pick": "LSU New Orleans +27.5",
+  "book": "MGM",
+  "line": 27.5,
+  "odds": -105.0,
+  "stake": 1.0,
+  "edge": 4.2,
+  "model": -23.3,
+  "opener": 20.5,
+  "grp": "power 6",
+  "limit": 26.5,
+  "status": "open"
  }
 ]
