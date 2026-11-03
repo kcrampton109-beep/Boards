@@ -913,7 +913,11 @@
   "opener": -5.5,
   "grp": "mid-major",
   "limit": -6.5,
-  "status": "open"
+  "status": "W",
+  "close": -4.5,
+  "clv": -1.0,
+  "units": 0.893,
+  "final": "Akron 75 - Louisiana 61"
  },
  {
   "id": "401911228|spread|away",
@@ -937,7 +941,11 @@
   "opener": 16.5,
   "grp": "mid-major",
   "limit": 16.5,
-  "status": "open"
+  "status": "L",
+  "close": 14.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "The Citadel 52 - Loyola Chicago 77"
  },
  {
   "id": "401909784|spread|away",
@@ -961,7 +969,11 @@
   "opener": 22.5,
   "grp": "power 6",
   "limit": 22.0,
-  "status": "open"
+  "status": "L",
+  "close": 21.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Fordham 65 - Kansas 95"
  },
  {
   "id": "401917913|spread|away",
@@ -1413,7 +1425,11 @@
   "opener": 153.5,
   "grp": "power 6",
   "limit": 154.5,
-  "status": "open"
+  "status": "L",
+  "close": 155.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Lindenwood 59 - TCU 98"
  },
  {
   "id": "401918947|spread|away",
@@ -1677,7 +1693,11 @@
   "opener": 19.5,
   "grp": "mid-major",
   "limit": 19.5,
-  "status": "open"
+  "status": "L",
+  "close": 21.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Charleston Southern 71 - South Florida 98"
  },
  {
   "id": "401911261|total|under",
@@ -2157,7 +2177,11 @@
   "opener": 2.5,
   "grp": "low-major",
   "limit": -2.0,
-  "status": "open"
+  "status": "L",
+  "close": -4.5,
+  "clv": 6.0,
+  "units": -1.0,
+  "final": "Siena 75 - Bryant 80"
  },
  {
   "id": "401923269|total|under",
@@ -2181,7 +2205,11 @@
   "opener": 143.5,
   "grp": "low-major",
   "limit": 141.0,
-  "status": "open"
+  "status": "L",
+  "close": 157.5,
+  "clv": -9.0,
+  "units": -1.0,
+  "final": "Siena 75 - Bryant 80"
  },
  {
   "id": "401920732|spread|home",
@@ -2205,7 +2233,11 @@
   "opener": -23.5,
   "grp": "power 6",
   "limit": -28.0,
-  "status": "open"
+  "status": "W",
+  "close": -18.5,
+  "clv": -5.0,
+  "units": 0.893,
+  "final": "Binghamton 60 - Northwestern 86"
  },
  {
   "id": "401920769|spread|home",
@@ -2365,7 +2397,11 @@
   "opener": 23.5,
   "grp": "power 6",
   "limit": 24.5,
-  "status": "open"
+  "status": "W",
+  "close": 25.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "West Georgia 58 - DePaul 75"
  },
  {
   "id": "401920912|total|over",
@@ -3273,7 +3309,11 @@
   "opener": 153.5,
   "grp": "power 6",
   "limit": 152.5,
-  "status": "open"
+  "status": "W",
+  "close": 155.5,
+  "clv": -1.0,
+  "units": 0.952,
+  "final": "Kansas City 61 - Creighton 76"
  },
  {
   "id": "401909725|total|under",
@@ -3297,7 +3337,11 @@
   "opener": 141.5,
   "grp": "power 6",
   "limit": 144.0,
-  "status": "open"
+  "status": "L",
+  "close": 145.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Maryland Eastern Shore 62 - Wake Forest 83"
  },
  {
   "id": "401910993|total|under",
@@ -3321,7 +3365,11 @@
   "opener": 148.5,
   "grp": "mid-major",
   "limit": 149.5,
-  "status": "open"
+  "status": "W",
+  "close": 147.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Akron 75 - Louisiana 61"
  },
  {
   "id": "401910999|total|under",
@@ -3345,7 +3393,11 @@
   "opener": 160.5,
   "grp": "mid-major",
   "limit": 161.0,
-  "status": "open"
+  "status": "W",
+  "close": 165.5,
+  "clv": -3.0,
+  "units": 0.952,
+  "final": "Toledo 70 - Arkansas State 71"
  },
  {
   "id": "401911003|total|under",
@@ -3369,7 +3421,11 @@
   "opener": 152.5,
   "grp": "mid-major",
   "limit": 151.0,
-  "status": "open"
+  "status": "L",
+  "close": 153.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Ohio 86 - South Alabama 77"
  },
  {
   "id": "401911248|total|under",
@@ -3393,7 +3449,11 @@
   "opener": 153.5,
   "grp": "mid-major",
   "limit": 152.5,
-  "status": "open"
+  "status": "L",
+  "close": 159.5,
+  "clv": -6.0,
+  "units": -1.0,
+  "final": "Lehigh 67 - Saint Louis 92"
  },
  {
   "id": "401920732|total|under",
@@ -3417,7 +3477,11 @@
   "opener": 145.5,
   "grp": "power 6",
   "limit": 144.0,
-  "status": "open"
+  "status": "W",
+  "close": 146.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Binghamton 60 - Northwestern 86"
  },
  {
   "id": "401925096|total|under",
@@ -3441,7 +3505,11 @@
   "opener": 143.5,
   "grp": "mid-major",
   "limit": 140.5,
-  "status": "open"
+  "status": "W",
+  "close": 142.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Texas A&M-Corpus Christi 55 - Texas State 67"
  },
  {
   "id": "401928995|total|under",
@@ -3465,7 +3533,11 @@
   "opener": 142.5,
   "grp": "mid-major",
   "limit": 142.5,
-  "status": "open"
+  "status": "W",
+  "close": 139.5,
+  "clv": 3.0,
+  "units": 0.952,
+  "final": "Western Illinois 58 - Valparaiso 80"
  },
  {
   "id": "401919001|total|under",
@@ -3849,7 +3921,11 @@
   "opener": 146.5,
   "grp": "power 6",
   "limit": 144.5,
-  "status": "open"
+  "status": "L",
+  "close": 146.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Fordham 65 - Kansas 95"
  },
  {
   "id": "401911532|total|under",
@@ -4149,7 +4225,11 @@
   "opener": 155.5,
   "grp": "power 6",
   "limit": 158.0,
-  "status": "open"
+  "status": "W",
+  "close": 159.5,
+  "clv": 0.0,
+  "units": 0.893,
+  "final": "Southern 72 - SMU 85"
  },
  {
   "id": "401919047|spread|away",
@@ -4173,7 +4253,11 @@
   "opener": 28.5,
   "grp": "power 6",
   "limit": 29.0,
-  "status": "open"
+  "status": "L",
+  "close": 29.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Lindenwood 59 - TCU 98"
  },
  {
   "id": "401921424|total|under",
@@ -4197,7 +4281,11 @@
   "opener": 150.5,
   "grp": "low-major",
   "limit": 149.5,
-  "status": "open"
+  "status": "W",
+  "close": 153.5,
+  "clv": -2.0,
+  "units": 0.909,
+  "final": "Furman 79 - Bethune-Cookman 70"
  },
  {
   "id": "401925096|spread|away",
@@ -4221,7 +4309,11 @@
   "opener": 9.5,
   "grp": "mid-major",
   "limit": 9.5,
-  "status": "open"
+  "status": "L",
+  "close": 10.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Texas A&M-Corpus Christi 55 - Texas State 67"
  },
  {
   "id": "401922020|total|under",
@@ -4673,7 +4765,11 @@
   "opener": 31.5,
   "grp": "power 6",
   "limit": 33.0,
-  "status": "open"
+  "status": "W",
+  "close": 33.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Maryland Eastern Shore 62 - Wake Forest 83"
  },
  {
   "id": "401906848|total|under",
