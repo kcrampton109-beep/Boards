@@ -8386,5 +8386,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_09_GB_NE:RLM:total:under",
+  "tier": "RLM",
+  "market": "total",
+  "side": "under",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_09_GB_NE",
+  "week": 9,
+  "matchup": "GB @ NE",
+  "kickoff": "Sun Nov 8, 4:25 PM ET",
+  "pick": "Under 47",
+  "line": 47,
+  "odds": -112,
+  "book": "MGM",
+  "stake": 1.0,
+  "edge": null,
+  "note": "57% of bets on the over, total moved 47.5 \u2192 46.5",
+  "limit": null,
+  "model_line": -2.0,
+  "flagged": "2026-11-03T13:26:49.011549-05:00",
+  "kickoff_iso": "2026-11-08T16:25:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
