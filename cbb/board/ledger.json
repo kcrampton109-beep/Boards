@@ -4053,7 +4053,11 @@
   "opener": 146.5,
   "grp": "mid-major",
   "limit": 143.5,
-  "status": "open"
+  "status": "L",
+  "close": 140.5,
+  "clv": 4.0,
+  "units": -1.0,
+  "final": "Seattle U 73 - Hawai'i 74"
  },
  {
   "id": "401909784|total|under",
