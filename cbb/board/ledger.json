@@ -1197,7 +1197,11 @@
   "opener": -14.5,
   "grp": "power 6",
   "limit": -14.5,
-  "status": "open"
+  "status": "L",
+  "close": -13.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Eastern Washington 65 - Stanford 74"
  },
  {
   "id": "401926771|spread|away",
@@ -1221,7 +1225,11 @@
   "opener": 25.5,
   "grp": "power 6",
   "limit": 24.5,
-  "status": "open"
+  "status": "L",
+  "close": 26.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Milwaukee 63 - USC 95"
  },
  {
   "id": "401917507|total|under",
@@ -1521,7 +1529,11 @@
   "opener": 13.5,
   "grp": "mid-major",
   "limit": 15.5,
-  "status": "open"
+  "status": "L",
+  "close": 13.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Towson 70 - Santa Clara 89"
  },
  {
   "id": "401911002|spread|away",
@@ -2329,7 +2341,11 @@
   "opener": -14.5,
   "grp": "power 6",
   "limit": -20.0,
-  "status": "open"
+  "status": "L",
+  "close": -14.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Colgate 76 - Washington 90"
  },
  {
   "id": "401912207|total|under",
@@ -2661,7 +2677,11 @@
   "opener": 153.5,
   "grp": "power 6",
   "limit": 153.5,
-  "status": "open"
+  "status": "L",
+  "close": 151.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Montana 69 - Oregon 87"
  },
  {
   "id": "401921423|total|under",
@@ -3889,7 +3909,11 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 147.0,
-  "status": "open"
+  "status": "L",
+  "close": 150.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "North Alabama 79 - UC Davis 75"
  },
  {
   "id": "401917509|total|under",
@@ -3913,7 +3937,11 @@
   "opener": 148.5,
   "grp": "mid-major",
   "limit": 146.5,
-  "status": "open"
+  "status": "L",
+  "close": 146.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Towson 70 - Santa Clara 89"
  },
  {
   "id": "401925878|total|under",
@@ -3937,7 +3965,11 @@
   "opener": 145.5,
   "grp": "mid-major",
   "limit": 146.5,
-  "status": "open"
+  "status": "L",
+  "close": 147.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Montana State 74 - Colorado State 84"
  },
  {
   "id": "401920769|total|under",
@@ -3961,7 +3993,11 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 151.0,
-  "status": "open"
+  "status": "L",
+  "close": 154.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Colgate 76 - Washington 90"
  },
  {
   "id": "401926771|total|under",
@@ -3985,7 +4021,11 @@
   "opener": 156.5,
   "grp": "power 6",
   "limit": 157.5,
-  "status": "open"
+  "status": "L",
+  "close": 160.5,
+  "clv": -3.0,
+  "units": -1.0,
+  "final": "Milwaukee 63 - USC 95"
  },
  {
   "id": "401917506|total|under",
@@ -4481,7 +4521,11 @@
   "opener": -9.5,
   "grp": "mid-major",
   "limit": -9.0,
-  "status": "open"
+  "status": "L",
+  "close": -9.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "North Alabama 79 - UC Davis 75"
  },
  {
   "id": "401906779|spread|away",
@@ -4645,7 +4689,11 @@
   "opener": 17.5,
   "grp": "power 6",
   "limit": 19.5,
-  "status": "open"
+  "status": "W",
+  "close": 19.5,
+  "clv": 0.0,
+  "units": 0.893,
+  "final": "East Tennessee State 65 - Arizona State 75"
  },
  {
   "id": "401920071|spread|away",
@@ -4865,7 +4913,11 @@
   "opener": 9.5,
   "grp": "mid-major",
   "limit": 15.0,
-  "status": "open"
+  "status": "W",
+  "close": 13.5,
+  "clv": 2.0,
+  "units": 0.926,
+  "final": "Radford 62 - San Francisco 76"
  },
  {
   "id": "401909725|spread|away",
