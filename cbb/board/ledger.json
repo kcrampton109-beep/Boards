@@ -149,7 +149,11 @@
   "opener": -6.5,
   "grp": "power 6",
   "limit": -4.5,
-  "status": "open"
+  "status": "W",
+  "close": -6.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Miami 67 - Florida 77"
  },
  {
   "id": "401911390|spread|away",
@@ -309,7 +313,11 @@
   "opener": 156.5,
   "grp": "power 6",
   "limit": 156.5,
-  "status": "open"
+  "status": "L",
+  "close": 158.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Oakland 68 - Michigan 84"
  },
  {
   "id": "401924717|spread|home",
@@ -333,7 +341,11 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": -1.0,
-  "status": "open"
+  "status": "W",
+  "close": 2.5,
+  "clv": -1.0,
+  "units": 0.926,
+  "final": "Pepperdine 85 - Cornell 86"
  },
  {
   "id": "401910994|spread|away",
@@ -357,7 +369,11 @@
   "opener": 3.5,
   "grp": "mid-major",
   "limit": -1.5,
-  "status": "open"
+  "status": "W",
+  "close": 4.5,
+  "clv": -1.0,
+  "units": 0.952,
+  "final": "Bowling Green 76 - Georgia State 73"
  },
  {
   "id": "401910994|total|under",
@@ -381,7 +397,11 @@
   "opener": 156.5,
   "grp": "mid-major",
   "limit": 152.0,
-  "status": "open"
+  "status": "W",
+  "close": 161.5,
+  "clv": -5.0,
+  "units": 0.952,
+  "final": "Bowling Green 76 - Georgia State 73"
  },
  {
   "id": "401920679|spread|away",
@@ -405,7 +425,11 @@
   "opener": 27.5,
   "grp": "power 6",
   "limit": 26.5,
-  "status": "open"
+  "status": "W",
+  "close": 27.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Monmouth 63 - St. John's 78"
  },
  {
   "id": "401911333|total|under",
@@ -573,7 +597,11 @@
   "opener": 3.5,
   "grp": "mid-major",
   "limit": 2.0,
-  "status": "open"
+  "status": "L",
+  "close": 5.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Charlotte 78 - Indiana State 70"
  },
  {
   "id": "401916286|spread|away",
@@ -597,7 +625,11 @@
   "opener": 34.5,
   "grp": "power 6",
   "limit": 34.0,
-  "status": "open"
+  "status": "W",
+  "close": 34.5,
+  "clv": 0.0,
+  "units": 0.926,
+  "final": "Eastern Illinois 57 - Indiana 91"
  },
  {
   "id": "401921766|total|under",
@@ -621,7 +653,11 @@
   "opener": 139.5,
   "grp": "power 6",
   "limit": 138.5,
-  "status": "open"
+  "status": "W",
+  "close": 141.5,
+  "clv": -2.0,
+  "units": 0.87,
+  "final": "Niagara 46 - West Virginia 91"
  },
  {
   "id": "401920201|total|under",
@@ -1125,7 +1161,11 @@
   "opener": -28.5,
   "grp": "power 6",
   "limit": -26.5,
-  "status": "open"
+  "status": "L",
+  "close": -27.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Oakland 68 - Michigan 84"
  },
  {
   "id": "401921697|total|over",
@@ -1253,7 +1293,11 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 153.5,
-  "status": "open"
+  "status": "W",
+  "close": 154.5,
+  "clv": -1.0,
+  "units": 0.87,
+  "final": "Monmouth 63 - St. John's 78"
  },
  {
   "id": "401920758|total|under",
@@ -1397,7 +1441,11 @@
   "opener": -1.5,
   "grp": "mid-major",
   "limit": 0.5,
-  "status": "open"
+  "status": "W",
+  "close": 1.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Western Michigan 49 - Old Dominion 61"
  },
  {
   "id": "401925947|total|under",
@@ -1473,7 +1521,11 @@
   "opener": 42.5,
   "grp": "power 6",
   "limit": 40.0,
-  "status": "open"
+  "status": "W",
+  "close": 44.5,
+  "clv": -2.0,
+  "units": 0.909,
+  "final": "Army 50 - Duke 84"
  },
  {
   "id": "401916296|spread|away",
@@ -1573,7 +1625,11 @@
   "opener": 151.5,
   "grp": "mid-major",
   "limit": 154.5,
-  "status": "open"
+  "status": "W",
+  "close": 153.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Youngstown State 79 - St. Bonaventure 71"
  },
  {
   "id": "401911333|spread|away",
@@ -1885,7 +1941,11 @@
   "opener": -21.5,
   "grp": "power 6",
   "limit": -20.5,
-  "status": "open"
+  "status": "W",
+  "close": -19.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Lafayette 60 - Butler 96"
  },
  {
   "id": "401924743|spread|home",
@@ -1933,7 +1993,11 @@
   "opener": 12.5,
   "grp": "mid-major",
   "limit": 11.0,
-  "status": "open"
+  "status": "L",
+  "close": 15.5,
+  "clv": -3.0,
+  "units": -1.0,
+  "final": "South Carolina Upstate 70 - East Carolina 83"
  },
  {
   "id": "401906801|spread|away",
@@ -2125,7 +2189,11 @@
   "opener": 150.5,
   "grp": "power 6",
   "limit": 152.5,
-  "status": "open"
+  "status": "W",
+  "close": 157.5,
+  "clv": -5.0,
+  "units": 0.909,
+  "final": "Army 50 - Duke 84"
  },
  {
   "id": "401918073|spread|home",
@@ -2149,7 +2217,11 @@
   "opener": -26.5,
   "grp": "power 6",
   "limit": -26.0,
-  "status": "open"
+  "status": "L",
+  "close": -22.5,
+  "clv": -3.0,
+  "units": -1.0,
+  "final": "Stetson 72 - Clemson 85"
  },
  {
   "id": "401909500|spread|away",
@@ -2273,7 +2345,11 @@
   "opener": 149.5,
   "grp": "power 6",
   "limit": 150.5,
-  "status": "open"
+  "status": "L",
+  "close": 153.5,
+  "clv": -3.0,
+  "units": -1.0,
+  "final": "Quinnipiac 59 - Michigan State 96"
  },
  {
   "id": "401917913|total|under",
@@ -2453,7 +2529,11 @@
   "opener": 163.5,
   "grp": "mid-major",
   "limit": 162.5,
-  "status": "open"
+  "status": "L",
+  "close": 165.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Pepperdine 85 - Cornell 86"
  },
  {
   "id": "401906769|total|under",
@@ -2477,7 +2557,11 @@
   "opener": 160.5,
   "grp": "power 6",
   "limit": 159.5,
-  "status": "open"
+  "status": "W",
+  "close": 158.5,
+  "clv": 3.0,
+  "units": 0.833,
+  "final": "Miami 67 - Florida 77"
  },
  {
   "id": "401925857|total|under",
@@ -2501,7 +2585,11 @@
   "opener": 143.5,
   "grp": "mid-major",
   "limit": 143.0,
-  "status": "open"
+  "status": "W",
+  "close": 144.5,
+  "clv": -1.0,
+  "units": 0.952,
+  "final": "Central Connecticut 56 - Temple 68"
  },
  {
   "id": "401921264|total|under",
@@ -2525,7 +2613,11 @@
   "opener": 150.5,
   "grp": "power 6",
   "limit": 150.5,
-  "status": "open"
+  "status": "W",
+  "close": 153.5,
+  "clv": -2.0,
+  "units": 0.952,
+  "final": "Loyola Maryland 58 - Georgetown 80"
  },
  {
   "id": "401911304|total|under",
@@ -2645,7 +2737,11 @@
   "opener": 153.5,
   "grp": "mid-major",
   "limit": 154.5,
-  "status": "open"
+  "status": "W",
+  "close": 154.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Massachusetts 71 - Troy 60"
  },
  {
   "id": "401913099|total|under",
@@ -2693,7 +2789,11 @@
   "opener": 157.5,
   "grp": "mid-major",
   "limit": 154.5,
-  "status": "open"
+  "status": "W",
+  "close": 154.5,
+  "clv": 3.0,
+  "units": 0.909,
+  "final": "Western Michigan 49 - Old Dominion 61"
  },
  {
   "id": "401916296|total|under",
@@ -2765,7 +2865,11 @@
   "opener": 152.5,
   "grp": "mid-major",
   "limit": 149.5,
-  "status": "open"
+  "status": "W",
+  "close": 152.5,
+  "clv": 0.0,
+  "units": 0.943,
+  "final": "Charlotte 78 - Indiana State 70"
  },
  {
   "id": "401920746|total|under",
@@ -2813,7 +2917,11 @@
   "opener": 146.5,
   "grp": "low-major",
   "limit": 144.0,
-  "status": "open"
+  "status": "W",
+  "close": 145.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Vermont 55 - Iona 56"
  },
  {
   "id": "401918976|total|under",
@@ -2837,7 +2945,11 @@
   "opener": 149.5,
   "grp": "mid-major",
   "limit": 150.0,
-  "status": "open"
+  "status": "L",
+  "close": 152.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "South Carolina Upstate 70 - East Carolina 83"
  },
  {
   "id": "401906779|total|under",
@@ -3633,7 +3745,11 @@
   "opener": 12.5,
   "grp": "mid-major",
   "limit": 13.5,
-  "status": "open"
+  "status": "L",
+  "close": 15.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "UNC Asheville 77 - Richmond 100"
  },
  {
   "id": "401909531|spread|away",
@@ -3729,7 +3845,11 @@
   "opener": 27.5,
   "grp": "power 6",
   "limit": 29.5,
-  "status": "open"
+  "status": "W",
+  "close": 26.5,
+  "clv": 3.0,
+  "units": 0.909,
+  "final": "New Haven 58 - Syracuse 74"
  },
  {
   "id": "401921104|spread|away",
@@ -3753,7 +3873,11 @@
   "opener": 33.5,
   "grp": "power 6",
   "limit": 35.0,
-  "status": "open"
+  "status": "L",
+  "close": 36.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Bellarmine 47 - Vanderbilt 93"
  },
  {
   "id": "401921139|total|under",
@@ -4041,7 +4165,11 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 149.0,
-  "status": "open"
+  "status": "L",
+  "close": 152.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "UNC Asheville 77 - Richmond 100"
  },
  {
   "id": "401919780|spread|away",
@@ -4165,7 +4293,11 @@
   "opener": -1.5,
   "grp": "low-major",
   "limit": 0.0,
-  "status": "open"
+  "status": "W",
+  "close": -1.5,
+  "clv": 3.0,
+  "units": 0.833,
+  "final": "Vermont 55 - Iona 56"
  },
  {
   "id": "401920893|spread|away",
@@ -4241,7 +4373,11 @@
   "opener": 24.5,
   "grp": "power 6",
   "limit": 27.0,
-  "status": "open"
+  "status": "W",
+  "close": 27.5,
+  "clv": 0.0,
+  "units": 0.893,
+  "final": "Loyola Maryland 58 - Georgetown 80"
  },
  {
   "id": "401916286|total|under",
@@ -4265,7 +4401,11 @@
   "opener": 143.5,
   "grp": "power 6",
   "limit": 145.0,
-  "status": "open"
+  "status": "L",
+  "close": 144.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Eastern Illinois 57 - Indiana 91"
  },
  {
   "id": "401921060|spread|away",
