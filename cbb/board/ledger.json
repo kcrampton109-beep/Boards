@@ -77,7 +77,11 @@
   "opener": -13.5,
   "grp": "power 6",
   "limit": -14.5,
-  "status": "open"
+  "status": "L",
+  "close": -15.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Memphis 80 - Iowa State 76"
  },
  {
   "id": "401909771|total|under",
@@ -101,7 +105,11 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 156.0,
-  "status": "open"
+  "status": "W",
+  "close": 157.5,
+  "clv": -1.0,
+  "units": 0.87,
+  "final": "Memphis 80 - Iowa State 76"
  },
  {
   "id": "401921704|spread|home",
@@ -125,7 +133,11 @@
   "opener": 4.5,
   "grp": "power 6",
   "limit": -1.5,
-  "status": "open"
+  "status": "W",
+  "close": -5.5,
+  "clv": 10.0,
+  "units": 0.909,
+  "final": "Purdue 72 - Gonzaga 78"
  },
  {
   "id": "401906769|spread|home",
@@ -453,7 +465,11 @@
   "opener": 156.5,
   "grp": "mid-major",
   "limit": 150.5,
-  "status": "open"
+  "status": "L",
+  "close": 162.5,
+  "clv": -6.0,
+  "units": -1.0,
+  "final": "Air Force 71 - Wright State 102"
  },
  {
   "id": "401911004|spread|home",
@@ -477,7 +493,11 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": 0.0,
-  "status": "open"
+  "status": "W",
+  "close": 1.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Ball State 55 - Georgia Southern 67"
  },
  {
   "id": "401911004|total|under",
@@ -501,7 +521,11 @@
   "opener": 156.5,
   "grp": "mid-major",
   "limit": 155.5,
-  "status": "open"
+  "status": "W",
+  "close": 162.5,
+  "clv": -6.0,
+  "units": 0.952,
+  "final": "Ball State 55 - Georgia Southern 67"
  },
  {
   "id": "401909541|spread|away",
@@ -525,7 +549,11 @@
   "opener": 26.5,
   "grp": "power 6",
   "limit": 24.0,
-  "status": "open"
+  "status": "L",
+  "close": 26.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Mount St. Mary's 52 - Xavier 97"
  },
  {
   "id": "401909541|total|under",
@@ -549,7 +577,11 @@
   "opener": 155.5,
   "grp": "power 6",
   "limit": 155.0,
-  "status": "open"
+  "status": "W",
+  "close": 158.5,
+  "clv": -3.0,
+  "units": 0.926,
+  "final": "Mount St. Mary's 52 - Xavier 97"
  },
  {
   "id": "401920231|spread|away",
@@ -573,7 +605,11 @@
   "opener": 6.5,
   "grp": "mid-major",
   "limit": 6.5,
-  "status": "open"
+  "status": "W",
+  "close": 7.5,
+  "clv": -1.0,
+  "units": 0.926,
+  "final": "Dartmouth 69 - Marist 62"
  },
  {
   "id": "401925818|spread|home",
@@ -681,7 +717,11 @@
   "opener": 153.5,
   "grp": "mid-major",
   "limit": 152.5,
-  "status": "open"
+  "status": "L",
+  "close": 155.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Little Rock 72 - VCU 82"
  },
  {
   "id": "401911000|spread|home",
@@ -705,7 +745,11 @@
   "opener": 5.5,
   "grp": "mid-major",
   "limit": 4.0,
-  "status": "open"
+  "status": "W",
+  "close": 5.5,
+  "clv": 0.0,
+  "units": 0.926,
+  "final": "Kent State 75 - Louisiana Tech 85"
  },
  {
   "id": "401906791|spread|home",
@@ -729,7 +773,11 @@
   "opener": -18.5,
   "grp": "power 6",
   "limit": -21.5,
-  "status": "open"
+  "status": "L",
+  "close": -18.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Tennessee Tech 88 - Mississippi State 106"
  },
  {
   "id": "401920758|spread|home",
@@ -753,7 +801,11 @@
   "opener": -15.5,
   "grp": "mid-major",
   "limit": -16.5,
-  "status": "open"
+  "status": "W",
+  "close": -17.5,
+  "clv": 2.0,
+  "units": 0.87,
+  "final": "Southern Indiana 54 - Belmont 72"
  },
  {
   "id": "401917173|total|under",
@@ -777,7 +829,11 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 149.0,
-  "status": "open"
+  "status": "L",
+  "close": 154.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Canisius 57 - Penn State 96"
  },
  {
   "id": "401920959|spread|away",
@@ -801,7 +857,11 @@
   "opener": 16.5,
   "grp": "mid-major",
   "limit": 16.0,
-  "status": "open"
+  "status": "L",
+  "close": 17.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Morehead State 58 - Western Kentucky 83"
  },
  {
   "id": "401920959|total|under",
@@ -825,7 +885,11 @@
   "opener": 153.5,
   "grp": "mid-major",
   "limit": 153.5,
-  "status": "open"
+  "status": "W",
+  "close": 153.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Morehead State 58 - Western Kentucky 83"
  },
  {
   "id": "401910993|spread|away",
@@ -1321,7 +1385,11 @@
   "opener": 152.5,
   "grp": "mid-major",
   "limit": 154.0,
-  "status": "open"
+  "status": "W",
+  "close": 155.5,
+  "clv": -1.0,
+  "units": 0.87,
+  "final": "Southern Indiana 54 - Belmont 72"
  },
  {
   "id": "401919047|total|under",
@@ -1417,7 +1485,11 @@
   "opener": -1.5,
   "grp": "mid-major",
   "limit": 0.0,
-  "status": "open"
+  "status": "W",
+  "close": 1.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Miami (OH) 86 - James Madison 77"
  },
  {
   "id": "401910997|spread|home",
@@ -1549,7 +1621,11 @@
   "opener": 31.5,
   "grp": "power 6",
   "limit": 26.0,
-  "status": "open"
+  "status": "W",
+  "close": 31.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Bucknell 67 - Maryland 96"
  },
  {
   "id": "401920912|spread|home",
@@ -1653,7 +1729,11 @@
   "opener": 9.5,
   "grp": "mid-major",
   "limit": 10.5,
-  "status": "open"
+  "status": "L",
+  "close": 12.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Air Force 71 - Wright State 102"
  },
  {
   "id": "401921753|total|over",
@@ -1677,7 +1757,11 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 152.5,
-  "status": "open"
+  "status": "W",
+  "close": 153.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Florida Gulf Coast 95 - UCF 96"
  },
  {
   "id": "401919803|total|under",
@@ -1701,7 +1785,11 @@
   "opener": 153.5,
   "grp": "mid-major",
   "limit": 153.5,
-  "status": "open"
+  "status": "W",
+  "close": 154.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Long Island University 60 - Florida Atlantic 74"
  },
  {
   "id": "401909522|spread|away",
@@ -1725,7 +1813,11 @@
   "opener": 30.5,
   "grp": "power 6",
   "limit": 27.5,
-  "status": "open"
+  "status": "L",
+  "close": 31.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Mercyhurst 43 - Marquette 78"
  },
  {
   "id": "401909522|total|under",
@@ -1749,7 +1841,11 @@
   "opener": 148.5,
   "grp": "power 6",
   "limit": 148.0,
-  "status": "open"
+  "status": "W",
+  "close": 146.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Mercyhurst 43 - Marquette 78"
  },
  {
   "id": "401919780|total|under",
@@ -1773,7 +1869,11 @@
   "opener": 153.5,
   "grp": "power 6",
   "limit": 151.0,
-  "status": "open"
+  "status": "L",
+  "close": 151.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Le Moyne 64 - Nebraska 106"
  },
  {
   "id": "401919039|spread|away",
@@ -1821,7 +1921,11 @@
   "opener": 39.5,
   "grp": "power 6",
   "limit": 39.5,
-  "status": "open"
+  "status": "L",
+  "close": 40.0,
+  "clv": -0.5,
+  "units": -1.0,
+  "final": "Fairleigh Dickinson 45 - Illinois 120"
  },
  {
   "id": "401913525|total|under",
@@ -1845,7 +1949,11 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 150.5,
-  "status": "open"
+  "status": "L",
+  "close": 157.0,
+  "clv": -4.5,
+  "units": -1.0,
+  "final": "Fairleigh Dickinson 45 - Illinois 120"
  },
  {
   "id": "401911389|spread|away",
@@ -1969,7 +2077,11 @@
   "opener": -5.5,
   "grp": "mid-major",
   "limit": -12.0,
-  "status": "open"
+  "status": "W",
+  "close": -7.5,
+  "clv": 1.0,
+  "units": 0.926,
+  "final": "Howard 62 - Yale 72"
  },
  {
   "id": "401918976|spread|away",
@@ -2141,7 +2253,11 @@
   "opener": 147.5,
   "grp": "power 6",
   "limit": 148.5,
-  "status": "open"
+  "status": "W",
+  "close": 153.5,
+  "clv": -4.0,
+  "units": 0.909,
+  "final": "American University 53 - Cincinnati 79"
  },
  {
   "id": "401924743|total|under",
@@ -2165,7 +2281,11 @@
   "opener": 151.5,
   "grp": "mid-major",
   "limit": 152.0,
-  "status": "open"
+  "status": "W",
+  "close": 152.5,
+  "clv": 0.0,
+  "units": 0.926,
+  "final": "Howard 62 - Yale 72"
  },
  {
   "id": "401909562|total|under",
@@ -2297,7 +2417,11 @@
   "opener": 1.5,
   "grp": "low-major",
   "limit": 2.5,
-  "status": "open"
+  "status": "W",
+  "close": 1.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Lipscomb 79 - Southeast Missouri State 86"
  },
  {
   "id": "401911185|total|under",
@@ -2321,7 +2445,11 @@
   "opener": 145.5,
   "grp": "mid-major",
   "limit": 145.5,
-  "status": "open"
+  "status": "L",
+  "close": 144.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "NJIT 58 - Dayton 89"
  },
  {
   "id": "401924856|total|under",
@@ -2641,7 +2769,11 @@
   "opener": 142.5,
   "grp": "mid-major",
   "limit": 141.5,
-  "status": "open"
+  "status": "W",
+  "close": 145.5,
+  "clv": -2.0,
+  "units": 0.909,
+  "final": "New Hampshire 59 - Brown 55"
  },
  {
   "id": "401911002|total|under",
@@ -2665,7 +2797,11 @@
   "opener": 155.5,
   "grp": "mid-major",
   "limit": 155.5,
-  "status": "open"
+  "status": "L",
+  "close": 158.5,
+  "clv": -3.0,
+  "units": -1.0,
+  "final": "Miami (OH) 86 - James Madison 77"
  },
  {
   "id": "401910995|total|under",
@@ -2689,7 +2825,11 @@
   "opener": 156.5,
   "grp": "mid-major",
   "limit": 157.0,
-  "status": "open"
+  "status": "W",
+  "close": 155.5,
+  "clv": 2.0,
+  "units": 0.87,
+  "final": "Buffalo 65 - Marshall 92"
  },
  {
   "id": "401909705|total|under",
@@ -2713,7 +2853,11 @@
   "opener": 142.5,
   "grp": "power 6",
   "limit": 141.5,
-  "status": "open"
+  "status": "L",
+  "close": 140.0,
+  "clv": 2.5,
+  "units": -1.0,
+  "final": "Rider 57 - Pittsburgh 95"
  },
  {
   "id": "401911001|total|under",
@@ -2765,7 +2909,11 @@
   "opener": 154.5,
   "grp": "power 6",
   "limit": 155.5,
-  "status": "open"
+  "status": "W",
+  "close": 158.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Western Carolina 72 - North Carolina 80"
  },
  {
   "id": "401910997|total|under",
@@ -2817,7 +2965,11 @@
   "opener": 147.5,
   "grp": "power 6",
   "limit": 146.0,
-  "status": "open"
+  "status": "L",
+  "close": 148.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Bucknell 67 - Maryland 96"
  },
  {
   "id": "401921036|total|under",
@@ -2841,7 +2993,11 @@
   "opener": 154.5,
   "grp": "power 6",
   "limit": 154.0,
-  "status": "open"
+  "status": "W",
+  "close": 158.5,
+  "clv": -3.0,
+  "units": 0.87,
+  "final": "Jackson State 42 - Texas Tech 76"
  },
  {
   "id": "401925818|total|under",
@@ -2893,7 +3049,11 @@
   "opener": 149.5,
   "grp": "low-major",
   "limit": 149.5,
-  "status": "open"
+  "status": "L",
+  "close": 148.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Northeastern 85 - Boston University 93"
  },
  {
   "id": "401920690|total|under",
@@ -2973,7 +3133,11 @@
   "opener": 157.5,
   "grp": "power 6",
   "limit": 159.0,
-  "status": "open"
+  "status": "W",
+  "close": 163.5,
+  "clv": -3.0,
+  "units": 0.909,
+  "final": "North Carolina Central 62 - Georgia 78"
  },
  {
   "id": "401906791|total|under",
@@ -2997,7 +3161,11 @@
   "opener": 157.5,
   "grp": "power 6",
   "limit": 156.0,
-  "status": "open"
+  "status": "L",
+  "close": 158.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Tennessee Tech 88 - Mississippi State 106"
  },
  {
   "id": "401918955|total|under",
@@ -3021,7 +3189,11 @@
   "opener": 158.5,
   "grp": "power 6",
   "limit": 158.0,
-  "status": "open"
+  "status": "W",
+  "close": 158.5,
+  "clv": 1.0,
+  "units": 0.926,
+  "final": "Campbell 64 - NC State 83"
  },
  {
   "id": "401920701|total|under",
@@ -3045,7 +3217,11 @@
   "opener": 152.5,
   "grp": "low-major",
   "limit": 151.5,
-  "status": "open"
+  "status": "L",
+  "close": 156.5,
+  "clv": -4.0,
+  "units": -1.0,
+  "final": "Lipscomb 79 - Southeast Missouri State 86"
  },
  {
   "id": "401921704|total|under",
@@ -3069,7 +3245,11 @@
   "opener": 155.5,
   "grp": "power 6",
   "limit": 152.0,
-  "status": "open"
+  "status": "W",
+  "close": 153.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Purdue 72 - Gonzaga 78"
  },
  {
   "id": "401909490|total|under",
@@ -3773,7 +3953,11 @@
   "opener": 28.5,
   "grp": "power 6",
   "limit": 29.5,
-  "status": "open"
+  "status": "W",
+  "close": 32.5,
+  "clv": -1.0,
+  "units": 0.926,
+  "final": "Maine 56 - Providence 83"
  },
  {
   "id": "401909531|total|under",
@@ -3797,7 +3981,11 @@
   "opener": 146.5,
   "grp": "power 6",
   "limit": 149.0,
-  "status": "open"
+  "status": "W",
+  "close": 151.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Maine 56 - Providence 83"
  },
  {
   "id": "401911208|total|under",
@@ -3821,7 +4009,11 @@
   "opener": 148.5,
   "grp": "mid-major",
   "limit": 149.5,
-  "status": "open"
+  "status": "W",
+  "close": 149.5,
+  "clv": 0.0,
+  "units": 0.893,
+  "final": "Navy 39 - George Washington 91"
  },
  {
   "id": "401909716|spread|away",
@@ -3901,7 +4093,11 @@
   "opener": 151.5,
   "grp": "mid-major",
   "limit": 153.5,
-  "status": "open"
+  "status": "L",
+  "close": 153.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Elon 84 - Columbia 71"
  },
  {
   "id": "401911208|spread|away",
@@ -3925,7 +4121,11 @@
   "opener": 15.5,
   "grp": "mid-major",
   "limit": 17.0,
-  "status": "open"
+  "status": "L",
+  "close": 19.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Navy 39 - George Washington 91"
  },
  {
   "id": "401918967|total|under",
@@ -4093,7 +4293,11 @@
   "opener": 35.5,
   "grp": "power 6",
   "limit": 39.0,
-  "status": "open"
+  "status": "W",
+  "close": 40.5,
+  "clv": -1.0,
+  "units": 0.952,
+  "final": "North Carolina Central 62 - Georgia 78"
  },
  {
   "id": "401920893|total|under",
@@ -4117,7 +4321,11 @@
   "opener": 159.5,
   "grp": "power 6",
   "limit": 161.0,
-  "status": "open"
+  "status": "W",
+  "close": 161.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Denver 68 - Wisconsin 75"
  },
  {
   "id": "401909694|spread|away",
@@ -4193,7 +4401,11 @@
   "opener": 34.5,
   "grp": "power 6",
   "limit": 35.0,
-  "status": "open"
+  "status": "L",
+  "close": 34.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Le Moyne 64 - Nebraska 106"
  },
  {
   "id": "401921731|spread|away",
@@ -4269,7 +4481,11 @@
   "opener": 23.5,
   "grp": "power 6",
   "limit": 24.5,
-  "status": "open"
+  "status": "W",
+  "close": 23.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Campbell 64 - NC State 83"
  },
  {
   "id": "401920690|spread|home",
@@ -4321,7 +4537,11 @@
   "opener": 22.5,
   "grp": "power 6",
   "limit": 25.5,
-  "status": "open"
+  "status": "W",
+  "close": 25.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Denver 68 - Wisconsin 75"
  },
  {
   "id": "401911532|spread|home",
