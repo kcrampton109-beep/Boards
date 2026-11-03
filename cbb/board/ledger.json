@@ -997,7 +997,11 @@
   "opener": 8.5,
   "grp": "mid-major",
   "limit": 8.5,
-  "status": "open"
+  "status": "L",
+  "close": 8.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Oral Roberts 55 - Central Arkansas 85"
  },
  {
   "id": "401909759|spread|home",
@@ -1069,7 +1073,11 @@
   "opener": 26.5,
   "grp": "power 6",
   "limit": 26.0,
-  "status": "open"
+  "status": "L",
+  "close": 26.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "North Dakota 50 - Minnesota 85"
  },
  {
   "id": "401921697|spread|away",
@@ -2153,7 +2161,11 @@
   "opener": 30.5,
   "grp": "power 6",
   "limit": 29.0,
-  "status": "open"
+  "status": "W",
+  "close": 29.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "East Texas A&M 68 - Oklahoma 64"
  },
  {
   "id": "401923269|spread|away",
@@ -2537,7 +2549,11 @@
   "opener": 154.5,
   "grp": "mid-major",
   "limit": 154.5,
-  "status": "open"
+  "status": "W",
+  "close": 155.5,
+  "clv": -1.0,
+  "units": 0.952,
+  "final": "Oral Roberts 55 - Central Arkansas 85"
  },
  {
   "id": "401924894|total|under",
@@ -3633,7 +3649,11 @@
   "opener": 146.5,
   "grp": "power 6",
   "limit": 147.0,
-  "status": "open"
+  "status": "W",
+  "close": 148.5,
+  "clv": -1.0,
+  "units": 0.87,
+  "final": "North Dakota 50 - Minnesota 85"
  },
  {
   "id": "401909759|total|under",
