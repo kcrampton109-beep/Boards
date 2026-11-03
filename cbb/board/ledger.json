@@ -1253,7 +1253,11 @@
   "opener": 146.5,
   "grp": "mid-major",
   "limit": 146.5,
-  "status": "open"
+  "status": "L",
+  "close": 148.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Illinois State 85 - Saint Mary's 90"
  },
  {
   "id": "401925733|spread|home",
@@ -5569,6 +5573,30 @@
   "opener": 40.5,
   "grp": "power 6",
   "limit": 38.5,
+  "status": "open"
+ },
+ {
+  "id": "401921819|total|over",
+  "base": "401921819|total|over",
+  "flagged": "2026-11-03T00:57-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401921819,
+  "matchup": "Stetson @ South Carolina",
+  "kickoff": "2026-11-03T19:00:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "over",
+  "pick": "Over 149.5",
+  "book": "DK",
+  "line": 149.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.1,
+  "model": 154.6,
+  "opener": 150.5,
+  "grp": "power 6",
+  "limit": 149.5,
   "status": "open"
  }
 ]
