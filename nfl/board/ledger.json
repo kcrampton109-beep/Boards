@@ -6617,11 +6617,11 @@
   "model_line": -3.9,
   "flagged": "2026-10-25T16:38:23.765859-04:00",
   "kickoff_iso": "2026-11-02T20:15:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 46.5,
+  "clv": 0.0,
+  "final": "CHI 34 - SEA 17"
  },
  {
   "id": "2026_08_ATL_TB:RLM:total:under",
