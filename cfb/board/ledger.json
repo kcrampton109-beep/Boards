@@ -14893,5 +14893,28 @@
   "grp": "FCS-FCS",
   "limit": 15.0,
   "status": "open"
+ },
+ {
+  "id": "401867872|spread|home|m|FCS",
+  "base": "401867872|spread|home|m",
+  "flagged": "2026-11-03T20:41-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401867872,
+  "matchup": "Youngstown State @ Murray State",
+  "kickoff": "2026-11-07 14:00:00-05:00",
+  "tier": "FCS",
+  "market": "spread",
+  "side": "home",
+  "pick": "Murray State +33.5",
+  "book": "FD",
+  "line": 33.5,
+  "odds": -113.0,
+  "stake": 1.0,
+  "edge": 6.4,
+  "model": 27.1,
+  "grp": "FCS-FCS",
+  "limit": 32.5,
+  "status": "open"
  }
 ]
