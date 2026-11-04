@@ -5061,7 +5061,11 @@
   "opener": null,
   "grp": "power 6",
   "limit": 26.5,
-  "status": "open"
+  "status": "L",
+  "close": 31.5,
+  "clv": -5.0,
+  "units": -1.0,
+  "final": "Drexel 60 - Virginia 89"
  },
  {
   "id": "401906757|spread|away",
