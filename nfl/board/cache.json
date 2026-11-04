@@ -1269,7 +1269,7 @@
    }
   },
   "290962": {
-   "ts": "2026-11-04T12:02:33.725141-05:00",
+   "ts": "2026-11-04T15:04:37.621759-05:00",
    "odds": {
     "quinshon judkins": {
      "name": "Quinshon Judkins",
@@ -1277,11 +1277,11 @@
     },
     "kendre miller": {
      "name": "Kendre Miller",
-     "FD": 160
+     "FD": 155
     },
     "chris olave": {
      "name": "Chris Olave",
-     "FD": 165
+     "FD": 155
     },
     "denzel boston": {
      "name": "Denzel Boston",
@@ -1309,39 +1309,39 @@
     },
     "alvin kamara": {
      "name": "Alvin Kamara",
-     "FD": 320
+     "FD": 300
     },
     "tyler shough": {
      "name": "Tyler Shough",
-     "FD": 330
+     "FD": 320
+    },
+    "dylan sampson": {
+     "name": "Dylan Sampson",
+     "FD": 490
     },
     "bryce lance": {
      "name": "Bryce Lance",
      "FD": 500
     },
-    "dylan sampson": {
-     "name": "Dylan Sampson",
-     "FD": 500
+    "noah fant": {
+     "name": "Noah Fant",
+     "FD": 550
     },
     "jerry jeudy": {
      "name": "Jerry Jeudy",
-     "FD": 550
-    },
-    "noah fant": {
-     "name": "Noah Fant",
      "FD": 600
     },
-    "cleveland defense": {
-     "name": "Cleveland Defense",
-     "FD": 650
+    "new orleans defense": {
+     "name": "New Orleans Defense",
+     "FD": 600
     },
     "cj donaldson": {
      "name": "CJ Donaldson",
      "FD": 650
     },
-    "new orleans defense": {
-     "name": "New Orleans Defense",
-     "FD": 650
+    "cleveland defense": {
+     "name": "Cleveland Defense",
+     "FD": 700
     },
     "oscar delp": {
      "name": "Oscar Delp",
@@ -1377,7 +1377,7 @@
     },
     "michael burton": {
      "name": "Michael Burton",
-     "FD": 3500
+     "FD": 4000
     },
     "carsen ryan": {
      "name": "Carsen Ryan",
