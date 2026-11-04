@@ -5005,7 +5005,11 @@
   "opener": null,
   "grp": "power 6",
   "limit": 156.5,
-  "status": "open"
+  "status": "W",
+  "close": 158.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Manhattan 57 - Kentucky 85"
  },
  {
   "id": "401920304|total|under",
@@ -5297,7 +5301,11 @@
   "opener": 149.5,
   "grp": "mid-major",
   "limit": 142.5,
-  "status": "open"
+  "status": "L",
+  "close": 147.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Holy Cross 59 - Rhode Island 103"
  },
  {
   "id": "401920376|spread|home",
@@ -5417,7 +5425,11 @@
   "opener": -15.5,
   "grp": "power 6",
   "limit": -22.5,
-  "status": "open"
+  "status": "W",
+  "close": -18.5,
+  "clv": 3.0,
+  "units": 0.833,
+  "final": "Stetson 55 - South Carolina 81"
  },
  {
   "id": "401921808|total|under",
@@ -5609,7 +5621,11 @@
   "opener": 150.5,
   "grp": "power 6",
   "limit": 149.5,
-  "status": "open"
+  "status": "L",
+  "close": 148.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Stetson 55 - South Carolina 81"
  },
  {
   "id": "401921808|spread|away",
