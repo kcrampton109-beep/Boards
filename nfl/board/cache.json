@@ -1296,7 +1296,7 @@
    }
   },
   "290962": {
-   "ts": "2026-11-04T15:04:37.621759-05:00",
+   "ts": "2026-11-04T18:50:29.554396-05:00",
    "odds": {
     "quinshon judkins": {
      "name": "Quinshon Judkins",
@@ -1340,11 +1340,7 @@
     },
     "tyler shough": {
      "name": "Tyler Shough",
-     "FD": 320
-    },
-    "dylan sampson": {
-     "name": "Dylan Sampson",
-     "FD": 490
+     "FD": 330
     },
     "bryce lance": {
      "name": "Bryce Lance",
@@ -1352,6 +1348,10 @@
     },
     "noah fant": {
      "name": "Noah Fant",
+     "FD": 550
+    },
+    "dylan sampson": {
+     "name": "Dylan Sampson",
      "FD": 550
     },
     "jerry jeudy": {
@@ -1388,7 +1388,7 @@
     },
     "isaiah bond": {
      "name": "Isaiah Bond",
-     "FD": 1700
+     "FD": 1800
     },
     "jaleel mclaughlin": {
      "name": "Jaleel McLaughlin",
