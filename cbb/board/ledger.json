@@ -5033,7 +5033,11 @@
   "opener": null,
   "grp": "power 6",
   "limit": 148.0,
-  "status": "open"
+  "status": "W",
+  "close": 148.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Hampton 55 - Georgia Tech 75"
  },
  {
   "id": "401920422|spread|away",
@@ -5081,7 +5085,11 @@
   "opener": null,
   "grp": "power 6",
   "limit": 25.0,
-  "status": "open"
+  "status": "W",
+  "close": 27.5,
+  "clv": -2.0,
+  "units": 0.909,
+  "final": "Sam Houston 74 - Alabama 96"
  },
  {
   "id": "401909796|spread|home",
@@ -5229,7 +5237,11 @@
   "opener": -10.5,
   "grp": "mid-major",
   "limit": -8.5,
-  "status": "open"
+  "status": "L",
+  "close": -9.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Purdue Fort Wayne 71 - Duquesne 78"
  },
  {
   "id": "401906757|total|under",
@@ -5253,7 +5265,11 @@
   "opener": 168.5,
   "grp": "power 6",
   "limit": 170.5,
-  "status": "open"
+  "status": "W",
+  "close": 171.5,
+  "clv": -1.0,
+  "units": 0.952,
+  "final": "Sam Houston 74 - Alabama 96"
  },
  {
   "id": "401909796|total|under",
@@ -5329,7 +5345,11 @@
   "opener": -29.5,
   "grp": "power 6",
   "limit": -31.0,
-  "status": "open"
+  "status": "W",
+  "close": -30.5,
+  "clv": 1.0,
+  "units": 0.847,
+  "final": "Coppin State 54 - Virginia Tech 88"
  },
  {
   "id": "401920376|total|under",
@@ -5353,7 +5373,11 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 149.0,
-  "status": "open"
+  "status": "W",
+  "close": 150.5,
+  "clv": 1.0,
+  "units": 0.926,
+  "final": "Coppin State 54 - Virginia Tech 88"
  },
  {
   "id": "401909551|spread|home",
@@ -5377,7 +5401,11 @@
   "opener": -16.5,
   "grp": "power 6",
   "limit": -18.0,
-  "status": "open"
+  "status": "W",
+  "close": -20.5,
+  "clv": 4.0,
+  "units": 0.909,
+  "final": "Wagner 50 - Boston College 76"
  },
  {
   "id": "401909551|total|under",
@@ -5401,7 +5429,11 @@
   "opener": 147.5,
   "grp": "power 6",
   "limit": 140.5,
-  "status": "open"
+  "status": "W",
+  "close": 143.5,
+  "clv": 4.0,
+  "units": 0.909,
+  "final": "Wagner 50 - Boston College 76"
  },
  {
   "id": "401921819|spread|home",
