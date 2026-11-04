@@ -25,7 +25,8 @@
   "close": 7.5,
   "clv": 0.0,
   "units": 0.909,
-  "final": "Notre Dame 74 - Villanova 70"
+  "final": "Notre Dame 74 - Villanova 72",
+  "team_eid": 87
  },
  {
   "id": "401920409|spread|away",
@@ -53,7 +54,8 @@
   "close": 9.5,
   "clv": -1.0,
   "units": -1.0,
-  "final": "Liberty 57 - High Point 72"
+  "final": "Liberty 57 - High Point 72",
+  "team_eid": 2335
  },
  {
   "id": "401909771|spread|home",
@@ -81,7 +83,8 @@
   "close": -15.5,
   "clv": 2.0,
   "units": -1.0,
-  "final": "Memphis 80 - Iowa State 76"
+  "final": "Memphis 80 - Iowa State 76",
+  "team_eid": 66
  },
  {
   "id": "401909771|total|under",
@@ -133,11 +136,12 @@
   "opener": 4.5,
   "grp": "power 6",
   "limit": -1.5,
-  "status": "W",
-  "close": -5.5,
-  "clv": 10.0,
-  "units": 0.909,
-  "final": "Purdue 72 - Gonzaga 78"
+  "status": "L",
+  "close": 5.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Purdue 72 - Gonzaga 78",
+  "team_eid": 2509
  },
  {
   "id": "401906769|spread|home",
@@ -165,7 +169,8 @@
   "close": -6.5,
   "clv": 2.0,
   "units": 0.909,
-  "final": "Miami 67 - Florida 77"
+  "final": "Miami 67 - Florida 77",
+  "team_eid": 57
  },
  {
   "id": "401911390|spread|away",
@@ -193,7 +198,8 @@
   "close": 41.5,
   "clv": -3.0,
   "units": -1.0,
-  "final": "Gardner-Webb 46 - UConn 86"
+  "final": "Gardner-Webb 46 - UConn 86",
+  "team_eid": 2241
  },
  {
   "id": "401920912|spread|away",
@@ -218,10 +224,11 @@
   "grp": "low-major",
   "limit": 5.0,
   "status": "W",
-  "close": -8.5,
-  "clv": 14.0,
+  "close": 8.5,
+  "clv": -3.0,
   "units": 0.909,
-  "final": "Northern Illinois 87 - Grambling 89"
+  "final": "Northern Illinois 87 - Grambling 89",
+  "team_eid": 2755
  },
  {
   "id": "401921422|spread|away",
@@ -245,11 +252,12 @@
   "opener": 3.5,
   "grp": "mid-major",
   "limit": 1.0,
-  "status": "L",
-  "close": -3.5,
-  "clv": 7.0,
-  "units": -1.0,
-  "final": "Merrimack 49 - App State 63"
+  "status": "W",
+  "close": 3.5,
+  "clv": 0.0,
+  "units": 0.926,
+  "final": "Merrimack 49 - App State 63",
+  "team_eid": 2026
  },
  {
   "id": "401921423|spread|away",
@@ -277,7 +285,8 @@
   "close": 3.5,
   "clv": -2.0,
   "units": -1.0,
-  "final": "Winthrop 98 - Queens University 103"
+  "final": "Winthrop 98 - Queens University 103",
+  "team_eid": 2737
  },
  {
   "id": "401919014|spread|away",
@@ -305,7 +314,8 @@
   "close": 3.5,
   "clv": 0.0,
   "units": -1.0,
-  "final": "UAB 78 - McNeese 99"
+  "final": "UAB 78 - McNeese 99",
+  "team_eid": 5
  },
  {
   "id": "401925733|total|over",
@@ -330,8 +340,8 @@
   "grp": "power 6",
   "limit": 156.5,
   "status": "L",
-  "close": 158.5,
-  "clv": 2.0,
+  "close": 157.5,
+  "clv": 1.0,
   "units": -1.0,
   "final": "Oakland 68 - Michigan 84"
  },
@@ -361,7 +371,8 @@
   "close": 2.5,
   "clv": -1.0,
   "units": 0.926,
-  "final": "Pepperdine 85 - Cornell 86"
+  "final": "Pepperdine 85 - Cornell 86",
+  "team_eid": 172
  },
  {
   "id": "401910994|spread|away",
@@ -386,10 +397,11 @@
   "grp": "mid-major",
   "limit": -1.5,
   "status": "W",
-  "close": 4.5,
-  "clv": -1.0,
+  "close": 3.5,
+  "clv": 0.0,
   "units": 0.952,
-  "final": "Bowling Green 76 - Georgia State 73"
+  "final": "Bowling Green 76 - Georgia State 73",
+  "team_eid": 189
  },
  {
   "id": "401910994|total|under",
@@ -445,7 +457,8 @@
   "close": 27.5,
   "clv": 0.0,
   "units": 0.87,
-  "final": "Monmouth 63 - St. John's 78"
+  "final": "Monmouth 63 - St. John's 78",
+  "team_eid": 2405
  },
  {
   "id": "401911333|total|under",
@@ -501,7 +514,8 @@
   "close": 1.5,
   "clv": 0.0,
   "units": 0.952,
-  "final": "Ball State 55 - Georgia Southern 67"
+  "final": "Ball State 55 - Georgia Southern 67",
+  "team_eid": 290
  },
  {
   "id": "401911004|total|under",
@@ -557,7 +571,8 @@
   "close": 26.5,
   "clv": 0.0,
   "units": -1.0,
-  "final": "Mount St. Mary's 52 - Xavier 97"
+  "final": "Mount St. Mary's 52 - Xavier 97",
+  "team_eid": 116
  },
  {
   "id": "401909541|total|under",
@@ -613,7 +628,8 @@
   "close": 7.5,
   "clv": -1.0,
   "units": 0.926,
-  "final": "Dartmouth 69 - Marist 62"
+  "final": "Dartmouth 69 - Marist 62",
+  "team_eid": 159
  },
  {
   "id": "401925818|spread|home",
@@ -641,7 +657,8 @@
   "close": 5.5,
   "clv": -2.0,
   "units": -1.0,
-  "final": "Charlotte 78 - Indiana State 70"
+  "final": "Charlotte 78 - Indiana State 70",
+  "team_eid": 282
  },
  {
   "id": "401916286|spread|away",
@@ -669,7 +686,8 @@
   "close": 34.5,
   "clv": 0.0,
   "units": 0.926,
-  "final": "Eastern Illinois 57 - Indiana 91"
+  "final": "Eastern Illinois 57 - Indiana 91",
+  "team_eid": 2197
  },
  {
   "id": "401921766|total|under",
@@ -753,7 +771,8 @@
   "close": 5.5,
   "clv": 0.0,
   "units": 0.926,
-  "final": "Kent State 75 - Louisiana Tech 85"
+  "final": "Kent State 75 - Louisiana Tech 85",
+  "team_eid": 2348
  },
  {
   "id": "401906791|spread|home",
@@ -781,7 +800,8 @@
   "close": -18.5,
   "clv": 0.0,
   "units": -1.0,
-  "final": "Tennessee Tech 88 - Mississippi State 106"
+  "final": "Tennessee Tech 88 - Mississippi State 106",
+  "team_eid": 344
  },
  {
   "id": "401920758|spread|home",
@@ -809,7 +829,8 @@
   "close": -17.5,
   "clv": 2.0,
   "units": 0.87,
-  "final": "Southern Indiana 54 - Belmont 72"
+  "final": "Southern Indiana 54 - Belmont 72",
+  "team_eid": 2057
  },
  {
   "id": "401917173|total|under",
@@ -837,7 +858,7 @@
   "close": 154.5,
   "clv": -2.0,
   "units": -1.0,
-  "final": "Canisius 57 - Penn State 96"
+  "final": "Canisius 57 - Penn State 97"
  },
  {
   "id": "401920959|spread|away",
@@ -865,7 +886,8 @@
   "close": 17.5,
   "clv": -1.0,
   "units": -1.0,
-  "final": "Morehead State 58 - Western Kentucky 83"
+  "final": "Morehead State 58 - Western Kentucky 83",
+  "team_eid": 2413
  },
  {
   "id": "401920959|total|under",
@@ -921,7 +943,8 @@
   "close": -4.5,
   "clv": -1.0,
   "units": 0.893,
-  "final": "Akron 75 - Louisiana 61"
+  "final": "Akron 75 - Louisiana 61",
+  "team_eid": 2006
  },
  {
   "id": "401911228|spread|away",
@@ -949,7 +972,8 @@
   "close": 14.5,
   "clv": 2.0,
   "units": -1.0,
-  "final": "The Citadel 52 - Loyola Chicago 77"
+  "final": "The Citadel 52 - Loyola Chicago 77",
+  "team_eid": 2643
  },
  {
   "id": "401909784|spread|away",
@@ -977,7 +1001,8 @@
   "close": 21.5,
   "clv": 1.0,
   "units": -1.0,
-  "final": "Fordham 65 - Kansas 95"
+  "final": "Fordham 65 - Kansas 95",
+  "team_eid": 2230
  },
  {
   "id": "401917913|spread|away",
@@ -1005,7 +1030,8 @@
   "close": 8.5,
   "clv": 0.0,
   "units": -1.0,
-  "final": "Oral Roberts 55 - Central Arkansas 85"
+  "final": "Oral Roberts 55 - Central Arkansas 85",
+  "team_eid": 198
  },
  {
   "id": "401909759|spread|home",
@@ -1033,7 +1059,8 @@
   "close": -18.5,
   "clv": 1.0,
   "units": 0.87,
-  "final": "Abilene Christian 59 - Colorado 94"
+  "final": "Abilene Christian 59 - Colorado 94",
+  "team_eid": 38
  },
  {
   "id": "401924894|spread|away",
@@ -1061,7 +1088,8 @@
   "close": 23.5,
   "clv": -3.0,
   "units": -1.0,
-  "final": "Utah Tech 60 - New Mexico 100"
+  "final": "Utah Tech 60 - New Mexico 100",
+  "team_eid": 3101
  },
  {
   "id": "401916303|spread|away",
@@ -1089,7 +1117,8 @@
   "close": 26.5,
   "clv": 0.0,
   "units": -1.0,
-  "final": "North Dakota 50 - Minnesota 85"
+  "final": "North Dakota 50 - Minnesota 85",
+  "team_eid": 155
  },
  {
   "id": "401921697|spread|away",
@@ -1117,7 +1146,8 @@
   "close": 19.5,
   "clv": 1.0,
   "units": 0.87,
-  "final": "Long Beach State 63 - Utah 66"
+  "final": "Long Beach State 63 - Utah 66",
+  "team_eid": 299
  },
  {
   "id": "401925947|spread|away",
@@ -1145,7 +1175,8 @@
   "close": 18.5,
   "clv": -1.0,
   "units": -1.0,
-  "final": "Weber State 61 - Oregon State 102"
+  "final": "Weber State 61 - Oregon State 102",
+  "team_eid": 2692
  },
  {
   "id": "401922020|spread|away",
@@ -1173,7 +1204,8 @@
   "close": 26.5,
   "clv": 1.0,
   "units": -1.0,
-  "final": "Idaho State 58 - Utah State 94"
+  "final": "Idaho State 58 - Utah State 94",
+  "team_eid": 304
  },
  {
   "id": "401920716|spread|home",
@@ -1201,7 +1233,8 @@
   "close": -13.5,
   "clv": -1.0,
   "units": -1.0,
-  "final": "Eastern Washington 65 - Stanford 74"
+  "final": "Eastern Washington 65 - Stanford 74",
+  "team_eid": 24
  },
  {
   "id": "401926771|spread|away",
@@ -1229,7 +1262,8 @@
   "close": 26.5,
   "clv": -1.0,
   "units": -1.0,
-  "final": "Milwaukee 63 - USC 95"
+  "final": "Milwaukee 63 - USC 95",
+  "team_eid": 270
  },
  {
   "id": "401917507|total|under",
@@ -1285,7 +1319,8 @@
   "close": -27.5,
   "clv": 1.0,
   "units": -1.0,
-  "final": "Oakland 68 - Michigan 84"
+  "final": "Oakland 68 - Michigan 84",
+  "team_eid": 130
  },
  {
   "id": "401921697|total|over",
@@ -1341,7 +1376,8 @@
   "close": 29.5,
   "clv": 0.0,
   "units": -1.0,
-  "final": "La Salle 55 - Houston 94"
+  "final": "La Salle 55 - Houston 94",
+  "team_eid": 2325
  },
  {
   "id": "401921422|spread|home",
@@ -1369,7 +1405,8 @@
   "close": 3.5,
   "clv": 0.0,
   "units": 0.943,
-  "final": "Merrimack 49 - App State 63"
+  "final": "Merrimack 49 - App State 63",
+  "team_eid": 2026
  },
  {
   "id": "401911707|total|under",
@@ -1509,7 +1546,8 @@
   "close": 30.5,
   "clv": 1.0,
   "units": 0.926,
-  "final": "Chattanooga 70 - Louisville 84"
+  "final": "Chattanooga 70 - Louisville 84",
+  "team_eid": 236
  },
  {
   "id": "401917509|spread|away",
@@ -1537,7 +1575,8 @@
   "close": 13.5,
   "clv": 2.0,
   "units": -1.0,
-  "final": "Towson 70 - Santa Clara 89"
+  "final": "Towson 70 - Santa Clara 89",
+  "team_eid": 119
  },
  {
   "id": "401911002|spread|away",
@@ -1565,7 +1604,8 @@
   "close": 1.5,
   "clv": 0.0,
   "units": 0.87,
-  "final": "Miami (OH) 86 - James Madison 77"
+  "final": "Miami (OH) 86 - James Madison 77",
+  "team_eid": 193
  },
  {
   "id": "401910997|spread|home",
@@ -1593,7 +1633,8 @@
   "close": 1.5,
   "clv": 0.0,
   "units": 0.87,
-  "final": "Western Michigan 49 - Old Dominion 61"
+  "final": "Western Michigan 49 - Old Dominion 61",
+  "team_eid": 295
  },
  {
   "id": "401925947|total|under",
@@ -1677,7 +1718,8 @@
   "close": 44.5,
   "clv": -2.0,
   "units": 0.909,
-  "final": "Army 50 - Duke 84"
+  "final": "Army 50 - Duke 84",
+  "team_eid": 349
  },
  {
   "id": "401916296|spread|away",
@@ -1705,7 +1747,8 @@
   "close": 31.5,
   "clv": 0.0,
   "units": 0.909,
-  "final": "Bucknell 67 - Maryland 96"
+  "final": "Bucknell 67 - Maryland 96",
+  "team_eid": 2083
  },
  {
   "id": "401920912|spread|home",
@@ -1733,7 +1776,8 @@
   "close": 8.5,
   "clv": -1.0,
   "units": 0.909,
-  "final": "Northern Illinois 87 - Grambling 89"
+  "final": "Northern Illinois 87 - Grambling 89",
+  "team_eid": 2755
  },
  {
   "id": "401911374|spread|away",
@@ -1761,7 +1805,8 @@
   "close": 21.5,
   "clv": -2.0,
   "units": -1.0,
-  "final": "Charleston Southern 71 - South Florida 98"
+  "final": "Charleston Southern 71 - South Florida 98",
+  "team_eid": 2127
  },
  {
   "id": "401911261|total|under",
@@ -1817,7 +1862,8 @@
   "close": 12.5,
   "clv": -2.0,
   "units": -1.0,
-  "final": "Air Force 71 - Wright State 102"
+  "final": "Air Force 71 - Wright State 102",
+  "team_eid": 2005
  },
  {
   "id": "401921753|total|over",
@@ -1901,7 +1947,8 @@
   "close": 31.5,
   "clv": -1.0,
   "units": -1.0,
-  "final": "Mercyhurst 43 - Marquette 78"
+  "final": "Mercyhurst 43 - Marquette 78",
+  "team_eid": 2385
  },
  {
   "id": "401909522|total|under",
@@ -1985,7 +2032,8 @@
   "close": 27.5,
   "clv": 1.0,
   "units": -1.0,
-  "final": "Incarnate Word 60 - Oklahoma State 91"
+  "final": "Incarnate Word 60 - Oklahoma State 91",
+  "team_eid": 2916
  },
  {
   "id": "401913525|spread|away",
@@ -2013,7 +2061,8 @@
   "close": 40.0,
   "clv": -0.5,
   "units": -1.0,
-  "final": "Fairleigh Dickinson 45 - Illinois 120"
+  "final": "Fairleigh Dickinson 45 - Illinois 120",
+  "team_eid": 161
  },
  {
   "id": "401913525|total|under",
@@ -2069,7 +2118,8 @@
   "close": 28.5,
   "clv": -1.0,
   "units": 0.926,
-  "final": "Texas Southern 79 - Grand Canyon 103"
+  "final": "Texas Southern 79 - Grand Canyon 103",
+  "team_eid": 2640
  },
  {
   "id": "401906863|spread|away",
@@ -2097,7 +2147,8 @@
   "close": 40.5,
   "clv": 0.0,
   "units": -1.0,
-  "final": "Chicago State 59 - Texas 109"
+  "final": "Chicago State 59 - Texas 109",
+  "team_eid": 2130
  },
  {
   "id": "401909750|spread|away",
@@ -2125,7 +2176,8 @@
   "close": 32.5,
   "clv": -2.0,
   "units": 0.909,
-  "final": "Northwestern State 65 - Baylor 87"
+  "final": "Northwestern State 65 - Baylor 87",
+  "team_eid": 2466
  },
  {
   "id": "401902275|spread|home",
@@ -2153,7 +2205,8 @@
   "close": -19.5,
   "clv": -1.0,
   "units": 0.909,
-  "final": "Lafayette 60 - Butler 96"
+  "final": "Lafayette 60 - Butler 96",
+  "team_eid": 2086
  },
  {
   "id": "401924743|spread|home",
@@ -2181,7 +2234,8 @@
   "close": -7.5,
   "clv": 1.0,
   "units": 0.926,
-  "final": "Howard 62 - Yale 72"
+  "final": "Howard 62 - Yale 72",
+  "team_eid": 43
  },
  {
   "id": "401918976|spread|away",
@@ -2209,7 +2263,8 @@
   "close": 15.5,
   "clv": -3.0,
   "units": -1.0,
-  "final": "South Carolina Upstate 70 - East Carolina 83"
+  "final": "South Carolina Upstate 70 - East Carolina 83",
+  "team_eid": 2908
  },
  {
   "id": "401906801|spread|away",
@@ -2237,7 +2292,8 @@
   "close": 29.5,
   "clv": 1.0,
   "units": 0.87,
-  "final": "East Texas A&M 68 - Oklahoma 64"
+  "final": "East Texas A&M 68 - Oklahoma 64",
+  "team_eid": 2837
  },
  {
   "id": "401923269|spread|away",
@@ -2265,7 +2321,8 @@
   "close": -4.5,
   "clv": 6.0,
   "units": -1.0,
-  "final": "Siena 75 - Bryant 80"
+  "final": "Siena 75 - Bryant 80",
+  "team_eid": 2561
  },
  {
   "id": "401923269|total|under",
@@ -2321,7 +2378,8 @@
   "close": -18.5,
   "clv": -5.0,
   "units": 0.893,
-  "final": "Binghamton 60 - Northwestern 86"
+  "final": "Binghamton 60 - Northwestern 86",
+  "team_eid": 77
  },
  {
   "id": "401920769|spread|home",
@@ -2349,7 +2407,8 @@
   "close": -14.5,
   "clv": 0.0,
   "units": -1.0,
-  "final": "Colgate 76 - Washington 90"
+  "final": "Colgate 76 - Washington 90",
+  "team_eid": 264
  },
  {
   "id": "401912207|total|under",
@@ -2461,7 +2520,8 @@
   "close": -22.5,
   "clv": -3.0,
   "units": -1.0,
-  "final": "Stetson 72 - Clemson 85"
+  "final": "Stetson 72 - Clemson 85",
+  "team_eid": 228
  },
  {
   "id": "401909500|spread|away",
@@ -2489,7 +2549,8 @@
   "close": 25.5,
   "clv": -1.0,
   "units": 0.909,
-  "final": "West Georgia 58 - DePaul 75"
+  "final": "West Georgia 58 - DePaul 75",
+  "team_eid": 2698
  },
  {
   "id": "401920912|total|over",
@@ -2545,7 +2606,8 @@
   "close": 1.5,
   "clv": 1.0,
   "units": 0.909,
-  "final": "Lipscomb 79 - Southeast Missouri State 86"
+  "final": "Lipscomb 79 - Southeast Missouri State 86",
+  "team_eid": 2546
  },
  {
   "id": "401911185|total|under",
@@ -2598,8 +2660,8 @@
   "grp": "power 6",
   "limit": 150.5,
   "status": "L",
-  "close": 153.5,
-  "clv": -3.0,
+  "close": 152.5,
+  "clv": -2.0,
   "units": -1.0,
   "final": "Quinnipiac 59 - Michigan State 96"
  },
@@ -4141,7 +4203,8 @@
   "close": -6.5,
   "clv": 0.0,
   "units": -1.0,
-  "final": "UT Martin 98 - Tulane 100"
+  "final": "UT Martin 98 - Tulane 100",
+  "team_eid": 2655
  },
  {
   "id": "401911237|spread|away",
@@ -4169,7 +4232,8 @@
   "close": 15.5,
   "clv": -1.0,
   "units": -1.0,
-  "final": "UNC Asheville 77 - Richmond 100"
+  "final": "UNC Asheville 77 - Richmond 100",
+  "team_eid": 2427
  },
  {
   "id": "401909531|spread|away",
@@ -4197,7 +4261,8 @@
   "close": 32.5,
   "clv": -1.0,
   "units": 0.926,
-  "final": "Maine 56 - Providence 83"
+  "final": "Maine 56 - Providence 83",
+  "team_eid": 311
  },
  {
   "id": "401909531|total|under",
@@ -4281,7 +4346,8 @@
   "close": 26.5,
   "clv": 3.0,
   "units": 0.909,
-  "final": "New Haven 58 - Syracuse 74"
+  "final": "New Haven 58 - Syracuse 74",
+  "team_eid": 2441
  },
  {
   "id": "401921104|spread|away",
@@ -4309,7 +4375,8 @@
   "close": 36.5,
   "clv": -1.0,
   "units": -1.0,
-  "final": "Bellarmine 47 - Vanderbilt 93"
+  "final": "Bellarmine 47 - Vanderbilt 93",
+  "team_eid": 91
  },
  {
   "id": "401921139|total|under",
@@ -4365,7 +4432,8 @@
   "close": 19.5,
   "clv": -2.0,
   "units": -1.0,
-  "final": "Navy 39 - George Washington 91"
+  "final": "Navy 39 - George Washington 91",
+  "team_eid": 2426
  },
  {
   "id": "401918967|total|under",
@@ -4421,7 +4489,8 @@
   "close": 29.5,
   "clv": 0.0,
   "units": -1.0,
-  "final": "Lindenwood 59 - TCU 98"
+  "final": "Lindenwood 59 - TCU 98",
+  "team_eid": 2815
  },
  {
   "id": "401921424|total|under",
@@ -4477,7 +4546,8 @@
   "close": 10.5,
   "clv": 0.0,
   "units": -1.0,
-  "final": "Texas A&M-Corpus Christi 55 - Texas State 67"
+  "final": "Texas A&M-Corpus Christi 55 - Texas State 67",
+  "team_eid": 357
  },
  {
   "id": "401922020|total|under",
@@ -4533,7 +4603,8 @@
   "close": -9.5,
   "clv": 1.0,
   "units": -1.0,
-  "final": "North Alabama 79 - UC Davis 75"
+  "final": "North Alabama 79 - UC Davis 75",
+  "team_eid": 302
  },
  {
   "id": "401906779|spread|away",
@@ -4561,7 +4632,8 @@
   "close": 40.5,
   "clv": -1.0,
   "units": 0.952,
-  "final": "North Carolina Central 62 - Georgia 78"
+  "final": "North Carolina Central 62 - Georgia 78",
+  "team_eid": 2428
  },
  {
   "id": "401920893|total|under",
@@ -4613,11 +4685,12 @@
   "opener": 24.5,
   "grp": "power 6",
   "limit": 27.5,
-  "status": "W",
-  "close": -28.5,
-  "clv": 56.0,
-  "units": 0.87,
-  "final": "Florida State 112 - Florida A&M 69"
+  "status": "L",
+  "close": 28.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Florida State 112 - Florida A&M 69",
+  "team_eid": 50
  },
  {
   "id": "401911237|total|under",
@@ -4673,7 +4746,8 @@
   "close": 34.5,
   "clv": 1.0,
   "units": -1.0,
-  "final": "Le Moyne 64 - Nebraska 106"
+  "final": "Le Moyne 64 - Nebraska 106",
+  "team_eid": 2330
  },
  {
   "id": "401921731|spread|away",
@@ -4701,7 +4775,8 @@
   "close": 19.5,
   "clv": 0.0,
   "units": 0.893,
-  "final": "East Tennessee State 65 - Arizona State 75"
+  "final": "East Tennessee State 65 - Arizona State 75",
+  "team_eid": 2193
  },
  {
   "id": "401920071|spread|away",
@@ -4729,7 +4804,8 @@
   "close": 19.5,
   "clv": 1.0,
   "units": -1.0,
-  "final": "UMBC 54 - George Mason 82"
+  "final": "UMBC 54 - George Mason 82",
+  "team_eid": 2378
  },
  {
   "id": "401918955|spread|away",
@@ -4757,7 +4833,8 @@
   "close": 23.5,
   "clv": 1.0,
   "units": 0.87,
-  "final": "Campbell 64 - NC State 83"
+  "final": "Campbell 64 - NC State 83",
+  "team_eid": 2097
  },
  {
   "id": "401920690|spread|home",
@@ -4785,7 +4862,8 @@
   "close": -1.5,
   "clv": 3.0,
   "units": 0.833,
-  "final": "Vermont 55 - Iona 56"
+  "final": "Vermont 55 - Iona 56",
+  "team_eid": 314
  },
  {
   "id": "401920893|spread|away",
@@ -4813,7 +4891,8 @@
   "close": 25.5,
   "clv": 0.0,
   "units": 0.87,
-  "final": "Denver 68 - Wisconsin 75"
+  "final": "Denver 68 - Wisconsin 75",
+  "team_eid": 2172
  },
  {
   "id": "401911532|spread|home",
@@ -4841,7 +4920,8 @@
   "close": 4.5,
   "clv": 0.0,
   "units": 0.87,
-  "final": "UTEP 76 - Northern Kentucky 84"
+  "final": "UTEP 76 - Northern Kentucky 84",
+  "team_eid": 94
  },
  {
   "id": "401921264|spread|away",
@@ -4869,7 +4949,8 @@
   "close": 27.5,
   "clv": 0.0,
   "units": 0.893,
-  "final": "Loyola Maryland 58 - Georgetown 80"
+  "final": "Loyola Maryland 58 - Georgetown 80",
+  "team_eid": 2352
  },
  {
   "id": "401916286|total|under",
@@ -4925,7 +5006,8 @@
   "close": 13.5,
   "clv": 2.0,
   "units": 0.926,
-  "final": "Radford 62 - San Francisco 76"
+  "final": "Radford 62 - San Francisco 76",
+  "team_eid": 2515
  },
  {
   "id": "401909725|spread|away",
@@ -4953,7 +5035,8 @@
   "close": 33.5,
   "clv": 0.0,
   "units": 0.909,
-  "final": "Maryland Eastern Shore 62 - Wake Forest 83"
+  "final": "Maryland Eastern Shore 62 - Wake Forest 83",
+  "team_eid": 2379
  },
  {
   "id": "401906848|total|under",
@@ -5065,7 +5148,8 @@
   "close": 31.5,
   "clv": -5.0,
   "units": -1.0,
-  "final": "Drexel 60 - Virginia 89"
+  "final": "Drexel 60 - Virginia 89",
+  "team_eid": 2182
  },
  {
   "id": "401906757|spread|away",
@@ -5093,7 +5177,8 @@
   "close": 27.5,
   "clv": -2.0,
   "units": 0.909,
-  "final": "Sam Houston 74 - Alabama 96"
+  "final": "Sam Houston 74 - Alabama 96",
+  "team_eid": 2534
  },
  {
   "id": "401909796|spread|home",
@@ -5121,7 +5206,8 @@
   "close": -11.5,
   "clv": 0.0,
   "units": -1.0,
-  "final": "South Dakota State 68 - Kansas State 66"
+  "final": "South Dakota State 68 - Kansas State 66",
+  "team_eid": 2306
  },
  {
   "id": "401921165|spread|home",
@@ -5149,7 +5235,8 @@
   "close": -26.5,
   "clv": 3.0,
   "units": 0.909,
-  "final": "Cleveland State 50 - Missouri 111"
+  "final": "Cleveland State 50 - Missouri 111",
+  "team_eid": 142
  },
  {
   "id": "401924911|spread|away",
@@ -5177,7 +5264,8 @@
   "close": 20.5,
   "clv": 0.0,
   "units": 0.87,
-  "final": "Northern Arizona 77 - UNLV 89"
+  "final": "Northern Arizona 77 - UNLV 89",
+  "team_eid": 2464
  },
  {
   "id": "401920155|total|under",
@@ -5233,7 +5321,8 @@
   "close": -25.5,
   "clv": 1.0,
   "units": 0.833,
-  "final": "Wofford 59 - Tennessee 90"
+  "final": "Wofford 59 - Tennessee 90",
+  "team_eid": 2633
  },
  {
   "id": "401925779|spread|home",
@@ -5261,7 +5350,8 @@
   "close": -9.5,
   "clv": 1.0,
   "units": -1.0,
-  "final": "Purdue Fort Wayne 71 - Duquesne 78"
+  "final": "Purdue Fort Wayne 71 - Duquesne 78",
+  "team_eid": 2184
  },
  {
   "id": "401906757|total|under",
@@ -5373,7 +5463,8 @@
   "close": -30.5,
   "clv": 1.0,
   "units": 0.847,
-  "final": "Coppin State 54 - Virginia Tech 88"
+  "final": "Coppin State 54 - Virginia Tech 88",
+  "team_eid": 259
  },
  {
   "id": "401920376|total|under",
@@ -5429,7 +5520,8 @@
   "close": -20.5,
   "clv": 4.0,
   "units": 0.909,
-  "final": "Wagner 50 - Boston College 76"
+  "final": "Wagner 50 - Boston College 76",
+  "team_eid": 103
  },
  {
   "id": "401909551|total|under",
@@ -5485,7 +5577,8 @@
   "close": -18.5,
   "clv": 3.0,
   "units": 0.833,
-  "final": "Stetson 55 - South Carolina 81"
+  "final": "Stetson 55 - South Carolina 81",
+  "team_eid": 2579
  },
  {
   "id": "401921808|total|under",
@@ -5541,7 +5634,8 @@
   "close": -32.5,
   "clv": 5.0,
   "units": 0.952,
-  "final": "Alabama State 66 - Texas A&M 97"
+  "final": "Alabama State 66 - Texas A&M 97",
+  "team_eid": 245
  },
  {
   "id": "401920806|total|under",
@@ -5597,7 +5691,8 @@
   "close": -24.5,
   "clv": 5.0,
   "units": 0.909,
-  "final": "Lipscomb 54 - Iowa 76"
+  "final": "Lipscomb 54 - Iowa 76",
+  "team_eid": 2294
  },
  {
   "id": "401920702|total|under",
@@ -5653,7 +5748,8 @@
   "close": -10.5,
   "clv": 1.0,
   "units": -1.0,
-  "final": "North Florida 71 - California Baptist 63"
+  "final": "North Florida 71 - California Baptist 63",
+  "team_eid": 2856
  },
  {
   "id": "401929372|spread|away",
@@ -5681,7 +5777,8 @@
   "close": 42.0,
   "clv": -2.5,
   "units": -1.0,
-  "final": "Arkansas-Pine Bluff 61 - Arkansas 106"
+  "final": "Arkansas-Pine Bluff 61 - Arkansas 106",
+  "team_eid": 2029
  },
  {
   "id": "401921819|total|over",
@@ -5737,7 +5834,8 @@
   "close": 27.5,
   "clv": 0.0,
   "units": -1.0,
-  "final": "LSU New Orleans 57 - LSU 100"
+  "final": "LSU New Orleans 57 - LSU 100",
+  "team_eid": 2443
  },
  {
   "id": "401920702|total|over",
@@ -5793,7 +5891,8 @@
   "close": -13.5,
   "clv": -1.0,
   "units": 0.833,
-  "final": "Cal State Fullerton 78 - San Diego State 102"
+  "final": "Cal State Fullerton 78 - San Diego State 102",
+  "team_eid": 21
  },
  {
   "id": "401920685|spread|home",
@@ -5817,7 +5916,8 @@
   "opener": 5.5,
   "grp": "power 6",
   "limit": 1.5,
-  "status": "open"
+  "status": "open",
+  "team_eid": 130
  },
  {
   "id": "401919028|spread|away",
@@ -5841,7 +5941,8 @@
   "opener": 14.5,
   "grp": "mid-major",
   "limit": 14.5,
-  "status": "open"
+  "status": "open",
+  "team_eid": 2463
  },
  {
   "id": "401928811|total|over",
@@ -5889,7 +5990,8 @@
   "opener": -16.5,
   "grp": "mid-major",
   "limit": -16.5,
-  "status": "open"
+  "status": "open",
+  "team_eid": 2541
  },
  {
   "id": "401902276|spread|home",
@@ -5913,7 +6015,8 @@
   "opener": -20.5,
   "grp": "power 6",
   "limit": -27.5,
-  "status": "open"
+  "status": "open",
+  "team_eid": 2086
  },
  {
   "id": "401920191|spread|home",
@@ -5937,7 +6040,8 @@
   "opener": -8.5,
   "grp": "mid-major",
   "limit": -9.5,
-  "status": "open"
+  "status": "open",
+  "team_eid": 2603
  },
  {
   "id": "401920410|spread|away",
@@ -5961,7 +6065,8 @@
   "opener": 28.5,
   "grp": "low-major",
   "limit": 27.5,
-  "status": "open"
+  "status": "open",
+  "team_eid": 2379
  },
  {
   "id": "401920410|total|under",
@@ -6009,7 +6114,8 @@
   "opener": -14.5,
   "grp": "power 6",
   "limit": -16.5,
-  "status": "open"
+  "status": "open",
+  "team_eid": 25
  },
  {
   "id": "401917514|spread|home",
@@ -6033,7 +6139,8 @@
   "opener": -5.5,
   "grp": "mid-major",
   "limit": -5.5,
-  "status": "open"
+  "status": "open",
+  "team_eid": 2351
  },
  {
   "id": "401902276|total|under",
