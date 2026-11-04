@@ -5173,7 +5173,11 @@
   "opener": null,
   "grp": "mid-major",
   "limit": 16.0,
-  "status": "open"
+  "status": "W",
+  "close": 20.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Northern Arizona 77 - UNLV 89"
  },
  {
   "id": "401920155|total|under",
@@ -5197,7 +5201,11 @@
   "opener": null,
   "grp": "mid-major",
   "limit": 155.5,
-  "status": "open"
+  "status": "L",
+  "close": 155.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Cal State Fullerton 78 - San Diego State 102"
  },
  {
   "id": "401906848|spread|home",
@@ -5641,7 +5649,11 @@
   "opener": -9.5,
   "grp": "mid-major",
   "limit": -13.0,
-  "status": "open"
+  "status": "L",
+  "close": -10.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "North Florida 71 - California Baptist 63"
  },
  {
   "id": "401929372|spread|away",
@@ -5777,7 +5789,11 @@
   "opener": -15.5,
   "grp": "mid-major",
   "limit": -14.5,
-  "status": "open"
+  "status": "W",
+  "close": -13.5,
+  "clv": -1.0,
+  "units": 0.833,
+  "final": "Cal State Fullerton 78 - San Diego State 102"
  },
  {
   "id": "401920685|spread|home",
