@@ -94,8 +94,12 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   Season rollover (July): the hist cache key is per season, so the first run re-runs `cbb/bootstrap.py` (adds last season).
   ESPN can swap home/away after a game is listed (neutral sites): spreads are graded by the backed team (`team_eid`, inferred
   from the pick for entries before Nov 4) and every settled play is re-graded each run; first-seen spreads are reoriented.
-  Past days are re-fetched until `day_final` (`data/season/final_days.json`). In November every play is tier NOV (shown as
-  November spreads / totals); the page opens Today/Results on all plays (`track.js` options `scope` / `tier`).
+  Past days are re-fetched until `day_final` (`data/season/final_days.json`). `track.js` takes optional `scope` / `tier`.
+- **CBB rules since Nov 4 2026** (owner's call, `cbb/research/EDGE.md`): blend margins x `margin_scale` (1.063, ridge
+  shrinkage; `bootstrap.py` refits it into hist.json) and totals minus the model's average gap to opening totals over 7 days
+  (`total_level`). November main tiers: NOV_FAV (favourite, spread gap 4+) and NOV_OVER (over, total gap 5+); everything
+  else in November is NOV research (also holds the Nov 1-4 plays from the old model). Dec on: SPREAD 4+ / SPREAD_LEAN 3-4,
+  TOTAL 6+ / TOTAL_LEAN 5-6. Owner won't bet CBB until the main plays show positive ROI.
 
 ## Data (public repo: no third-party data committed)
 - Committed: code, `*/board/` ledgers + state the engine needs between runs, `cfb/data/calls.log`.

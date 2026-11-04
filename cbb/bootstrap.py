@@ -5,7 +5,8 @@ cache drops it). Kept in the Actions cache (cbb/data/), never in the public repo
      ~35 min from scratch, files already saved are skipped)
   2. games + teams tables and the Action -> ESPN team map (research/build.py)
   3. both rating models over those seasons (research/model.py): end-of-season ratings = this season's preseason prior
-  4. hist.json: each model's scoring level / home court at the end of each season, and the mid-major conference list
+  4. hist.json: each model's scoring level / home court at the end of each season, the mid-major conference list and
+     the margin scale (actual margin / blend margin, research/EDGE.md)
 """
 import datetime as dt, json, pathlib, subprocess, sys
 import numpy as np
@@ -25,8 +26,9 @@ def main():
     subprocess.run([sys.executable, str(ROOT / "research" / "fetch.py"), f"2021,{last}"], check=True)
     build.main()
     hist = {"seasons": [2021, last], "mu_h": {}}
+    preds = {}
     for target, (lam, hl) in MODELS.items():
-        _, finals, log = model.run(lam, hl, target=target, seasons=list(range(2021, last + 1)))
+        preds[target], finals, log = model.run(lam, hl, target=target, seasons=list(range(2021, last + 1)))
         pd.concat([f.assign(season=s) for s, f in finals.items()]).to_parquet(DATA / f"finals_{target}.parquet")
         hist["mu_h"][target] = {str(s): v for s, v in log["mu_h"].items()}
         print(target, "finals", sorted(finals), flush=True)
@@ -35,7 +37,13 @@ def main():
     f = f.assign(conf=f["conf_eid"].astype(str).map(CONF_NAME), net=f["O"] + f["D"])
     rank = f[f["conf"].notna() & ~f["conf_eid"].astype(str).isin(P6 | {"21"})].groupby("conf")["net"].mean()
     hist["mid"] = list(rank.sort_values(ascending=False).index[:10])
+    # margin scale (research/EDGE.md): the ridge margins are shrunk; k = actual margin / blend margin, all seasons so far
+    g, _ = model.load()
+    b = preds["pts"][["espn_id", "margin_hat"]].merge(preds["market"][["espn_id", "margin_hat"]], on="espn_id")
+    b = g[["espn_id", "home_pts", "away_pts"]].merge(b.assign(m=(b.margin_hat_x + b.margin_hat_y) / 2), on="espn_id")
+    hist["margin_scale"] = float(((b.home_pts - b.away_pts) * b.m).sum() / (b.m ** 2).sum())
     (DATA / "hist.json").write_text(json.dumps(hist, indent=1))
+    print("margin scale", round(hist["margin_scale"], 3))
     print("mid-majors:", ", ".join(hist["mid"]))
 
 

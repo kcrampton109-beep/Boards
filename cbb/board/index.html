@@ -49,7 +49,7 @@ header .meta { display: grid; gap: 2px; text-align: right; font-size: 13px }
 .cell { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; padding: 8px 12px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); text-decoration: none; color: inherit; min-width: 0 }
 .cell:hover, .cell:focus-visible { background: var(--soft); outline: none }
 .code { grid-row: span 2; font: 700 22px/1 var(--display); align-self: center; min-width: 30px }
-.code.SPREAD { color: var(--gold) } .code.TOTAL { color: var(--tot) } .code.NOV { color: var(--nov) } .code.SPREAD_LEAN, .code.TOTAL_LEAN { color: var(--lean) }
+.code.SPREAD, .code.NOV_FAV { color: var(--gold) } .code.TOTAL, .code.NOV_OVER { color: var(--tot) } .code.NOV { color: var(--nov) } .code.SPREAD_LEAN, .code.TOTAL_LEAN { color: var(--lean) }
 .cell .pk { font-weight: 600; overflow-wrap: anywhere } .cell .px { font-size: 12px; color: var(--muted) }
 .empty { padding: 16px; color: var(--muted) }
 .tabs { display: flex; flex-wrap: wrap; gap: 6px; border-bottom: 1px solid var(--rule); padding-bottom: 8px }
@@ -72,6 +72,7 @@ section.panel { display: grid; gap: 16px }
 .kv div { display: grid } .kv span:first-child { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .06em }
 .pill { display: inline-block; font: 600 11px/1 var(--body); letter-spacing: .06em; text-transform: uppercase; padding: 4px 7px; border-radius: 3px; white-space: nowrap }
 .pill.SPREAD { background: var(--gold-soft); color: var(--gold) } .pill.TOTAL { background: var(--tot-soft); color: var(--tot) }
+.pill.NOV_FAV { background: var(--gold-soft); color: var(--gold) } .pill.NOV_OVER { background: var(--tot-soft); color: var(--tot) }
 .pill.NOV { background: var(--nov-soft); color: var(--nov) } .pill.SPREAD_LEAN, .pill.TOTAL_LEAN { background: var(--soft); color: var(--lean) }
 .pill.W { background: var(--win-soft); color: var(--win) } .pill.L { background: var(--loss-soft); color: var(--loss) } .pill.P, .pill.open, .pill.void { background: var(--soft); color: var(--muted) }
 .pill.void { text-decoration: line-through }
@@ -138,20 +139,21 @@ tr.flag td:first-child { box-shadow: inset 3px 0 0 var(--gold) }
 
 <script>
 const BOOKN = { DK: "DraftKings", FD: "FanDuel", MGM: "BetMGM" };
+// rules from research/EDGE.md (owner's call, Nov 4 2026); backtest = corrected blend vs the opener at -110, 2023-26
 const TIER = {
-  SPREAD: { name: "Spreads 4+", code: "S", note: "December on: the blend model differs from the best DK / FD / BetMGM spread by 4+ points. Backtest against the opener, Dec-Mar 2023-26: CLV +1.87 pts, beat the close 74%, 59.8% ATS (251 plays)." },
-  TOTAL: { name: "Totals 6+", code: "T", note: "December on: the blend total differs from the best book total by 6+ points. Backtest: CLV +2.90 pts, beat the close 82%, 59.1% (465 plays)." },
-  SPREAD_LEAN: { name: "Spreads 3-4", code: "s", note: "Gap of 3 to 4 points. Backtest (all gaps 3+): CLV +1.32, beat the close 68%, 55.7% (922 plays)." },
-  TOTAL_LEAN: { name: "Totals 5-6", code: "t", note: "Gap of 5 to 6 points. Backtest (all gaps 5+): CLV +2.29, beat the close 77%, 56.2% (1,041 plays)." },
-  NOV: { name: "November", code: "N", note: "November games at the same gaps (spreads 3+, totals 5+). Weak in the backtest for every model (CLV about +0.5): ratings still lean on last season. Kept apart so it doesn't cloud the verdict." },
+  NOV_FAV: { name: "Nov favourites 4+", code: "F", note: "November: the corrected model backs the FAVOURITE by 4+ points more than the best DK / FD / BetMGM spread. Backtest: CLV +1.32, beat the close 67%, 56.4% ATS, +7.7% ROI, positive all three seasons (+7.3 / +4.9 / +10.0). Nov 1-3 2026 (not used to pick the rule): 15-8, CLV +1.35." },
+  NOV_OVER: { name: "Nov overs 5+", code: "O", note: "November: the corrected total is 5+ points OVER the best book total. Backtest: CLV +1.82, beat the close 67%, 56.7%, +8.2% ROI (+20.6 / +2.3 / +4.6). Nov 1-3 2026: CLV +1.38, 62.5% beat the close." },
+  SPREAD: { name: "Spreads 4+", code: "S", note: "December on: the corrected model differs from the best DK / FD / BetMGM spread by 4+ points, either side. Backtest Dec-Mar: CLV +2.03, beat the close 82%, 62.5% ATS, +19.3% ROI (+22.9 / +11.1 / +22.1)." },
+  TOTAL: { name: "Totals 6+", code: "T", note: "December on: the corrected total differs from the best book total by 6+ points. Backtest: CLV +2.86, beat the close 79%, 57.6%, +9.9% ROI." },
+  SPREAD_LEAN: { name: "Spreads 3-4", code: "s", note: "December on, a gap of 3 to 4 points. Backtest (all gaps 3+): CLV +1.40, beat the close 71%, 57.6%, +9.8% ROI (+11.6 / +7.2 / +10.4)." },
+  TOTAL_LEAN: { name: "Totals 5-6", code: "t", note: "December on, a gap of 5 to 6 points. Backtest (all gaps 5+): CLV +2.42, beat the close 76%, 56.3%, +7.5% ROI (+3.6 / +7.1 / +11.2)." },
+  NOV: { name: "November research", code: "R", note: "Every other November gap (underdogs, unders, spreads of 3-4): logged to learn from, not to bet. In the backtest November underdogs beat the close only 45% of the time and unders lost every season. Plays logged Nov 1-4 under the old model are here too." },
 };
-const ORDER = ["SPREAD", "TOTAL", "SPREAD_LEAN", "TOTAL_LEAN", "NOV"];
-const MAIN = ["SPREAD", "TOTAL"];   // the "Main plays" view (from December 1)
-// display groups: November plays are split by market so each half can be judged on its own (ledger tier stays NOV)
-const DT = e => e.tier === "NOV" ? (e.market === "spread" ? "NOV_S" : "NOV_T") : e.tier;
-const DTN = { NOV_S: "November spreads", NOV_T: "November totals" };
-const dtName = k => DTN[k] || (TIER[k] ? TIER[k].name : k);
-const SHOW = ["NOV_S", "NOV_T", "SPREAD", "TOTAL", "SPREAD_LEAN", "TOTAL_LEAN"];
+const ORDER = ["NOV_FAV", "NOV_OVER", "SPREAD", "TOTAL", "SPREAD_LEAN", "TOTAL_LEAN", "NOV"];
+const MAIN = ["NOV_FAV", "NOV_OVER", "SPREAD", "TOTAL"];   // "Main plays": the rules that showed positive ROI
+const DT = e => e.tier;
+const dtName = k => TIER[k] ? TIER[k].name : k;
+const SHOW = ["NOV_FAV", "NOV_OVER", "SPREAD", "TOTAL", "SPREAD_LEAN", "TOTAL_LEAN", "NOV"];
 const UNIT = 10;   // $ per unit, for the paper dollars on Today / Results
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const sgn = (v, d = 1) => v == null || isNaN(v) ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d).replace(/\.0$/, "");
@@ -196,7 +198,7 @@ function render(S) {
   else if (!(S.games || []).length) { b.hidden = false; b.className = "banner"; b.textContent = "No D1 games with lines in the next few days yet. The season tips off Monday, November 2; lines usually post the night before."; }
   const inNov = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" }).slice(5, 7) === "11";
   if (b.hidden && inNov) { b.hidden = false; b.className = "banner";
-    b.innerHTML = "<b>November:</b> every play goes in the November tier (spreads and totals shown separately), because the backtest's November was weak for every model. The main tiers (spreads 4+, totals 6+) start <b>December 1</b>. Today and Results show all plays."; }
+    b.innerHTML = "<b>November rules (since Nov 4):</b> the main plays are <b>favourites</b> with a spread gap of 4+ and <b>overs</b> with a total gap of 5+, from the corrected model; everything else in November is research. The December tiers start <b>December 1</b>. Plays logged Nov 1-4 used the old model and sit in November research."; }
 
   // records strip: everything first, then each group that has plays, then the empty ones
   const full = (S.fullLedger || S.ledger || []).filter(e => e.status !== "void");
@@ -209,8 +211,9 @@ function render(S) {
       <span class="sub num"><span class="${r.u > 0 ? "pos" : r.u < 0 ? "neg" : ""}">${sgn(r.u, 2)}u</span> · ROI ${r.roi == null ? "–" : sgn(r.roi * 100, 1) + "%"} · ${r.open} pending</span>
       <span class="sub num">${note || `CLV ${r.clv == null ? "–" : sgn(r.clv, 2) + " pts"} · beat close ${pct(r.beat)}`}</span></div>`;
   const groups = SHOW.map(k => [k, full.filter(e => DT(e) === k)]).sort((a, b) => (b[1].length > 0) - (a[1].length > 0));
-  document.getElementById("records").innerHTML = box("All plays", rec(full)) + groups.map(([k, rows]) =>
-    box(dtName(k), rec(rows), !rows.length && MAIN.concat(["SPREAD_LEAN", "TOTAL_LEAN"]).includes(k) && inNov ? "Starts December 1" : null)).join("");
+  document.getElementById("records").innerHTML = box("Main plays", rec(full.filter(e => MAIN.includes(e.tier)))) + box("All plays", rec(full)) + groups.map(([k, rows]) =>
+    box(dtName(k), rec(rows), !rows.length && ["SPREAD", "TOTAL", "SPREAD_LEAN", "TOTAL_LEAN"].includes(k) && inNov ? "Starts December 1"
+      : !rows.length && ["NOV_FAV", "NOV_OVER"].includes(k) ? "New rule since Nov 4" : null)).join("");
 
   // card of open plays
   const counters = {};
@@ -275,9 +278,9 @@ function render(S) {
   });
   const todayET = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
   // paper board: open on every play (the main tiers only start in December)
-  Track.renderToday(document.getElementById("p-today"), { rows: trackRows, unit: UNIT, today: todayET, mainLabel: "Main plays", scope: "all" });
-  Track.renderResults(document.getElementById("p-results"), { rows: trackRows, unit: UNIT, today: todayET, week: S.week || 1, tier: "all",
-    tiers: [["all", "All plays"], ...SHOW.map(k => [k, dtName(k)]), ["money", "Main (spreads 4+, totals 6+)"]] });
+  Track.renderToday(document.getElementById("p-today"), { rows: trackRows, unit: UNIT, today: todayET, mainLabel: "Main plays" });
+  Track.renderResults(document.getElementById("p-results"), { rows: trackRows, unit: UNIT, today: todayET, week: S.week || 1,
+    tiers: [["money", "Main plays"], ...SHOW.map(k => [k, dtName(k)]), ["all", "All plays"]] });
 
   // all games
   const flagged = new Set(plays.map(p => p.game_id));
@@ -334,12 +337,13 @@ function render(S) {
     <p>Nothing here is a bet yet. Every play is tracked at 1 unit so the model can earn a live record; which plays (if any) become money tiers is the owner's call once the live CLV is in.</p>
     <h2>What the model does</h2>
     <p>Two ratings for every D1 team, refit each run from this season's finished games (older games count less) and pulled toward last season's final ratings and the team's conference. The <b>results model</b> rates teams on points scored and allowed. The <b>market model</b> rates them on the points earlier games' closing lines expected them to score. The board uses the average of the two (the blend), compared with the current DraftKings, FanDuel and BetMGM prices; the best of the three is logged.</p>
+    <p><b>Two corrections since Nov 4.</b> The ratings are pulled toward their priors, so raw margins run about 7% too narrow and the model kept backing big underdogs: margins are multiplied by ${S.model ? S.model.margin_scale.toFixed(3) : "about 1.06"} (fitted on past seasons). The model's scoring level can also drift from the market's (this season it opened about 5 points under the books, so it backed nearly every under): totals are measured against the market, minus the model's average gap to the opening totals over the last ${R.level_days} days${S.model && S.model.total_level != null ? ` (now ${sgn(S.model.total_level)} pts)` : ""}.</p>
     <h2>Rules</h2>
-    <ul><li>Spreads: gap ${R.spread_lean}+ points logged (${R.spread}+ is the main tier); gaps of ${R.max_spread}+ are not logged (usually news the model can't see).</li>
-      <li>Totals: gap ${R.total_lean}+ (${R.total}+ main); ${R.max_total}+ not logged.</li>
-      <li>November games are their own tier. No prices worse than ${R.worst_odds}. A book ${R.stale_spread}+ points off the market (spread) or ${R.stale_total}+ (total) is ignored as stale.</li>
+    <ul><li>November: main plays are favourites with a spread gap of ${R.spread}+ and overs with a total gap of ${R.total_lean}+; other gaps of ${R.spread_lean}+ / ${R.total_lean}+ are logged as research.</li>
+      <li>December on: spreads ${R.spread_lean}-${R.spread} and ${R.spread}+, totals ${R.total_lean}-${R.total} and ${R.total}+, either side.</li>
+      <li>Spread gaps of ${R.max_spread}+ and total gaps of ${R.max_total}+ are not logged (usually news the model can't see). No prices worse than ${R.worst_odds}. A book ${R.stale_spread}+ points off the market (spread) or ${R.stale_total}+ (total) is ignored as stale.</li>
       <li>A play logged in a lower tier that later clears a higher one is logged again at the new price.</li></ul>
-    <h2>What the backtest found (2023-24 to 2025-26)</h2>
+    <h2>What the backtest found (corrected model, 2023-24 to 2025-26, research/EDGE.md)</h2>
     <ul><li>${esc(B.spread)}</li><li>${esc(B.total)}</li><li>${esc(B.nov)}</li></ul>
     <p>${esc(B.caveat)}</p>
     <p>Live CLV here is measured from the best of three books, so it also includes the value of shopping for the best number; the backtest's CLV was from the single opener. Compare the Openers tab before reading too much into either.</p>

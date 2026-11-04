@@ -35,20 +35,24 @@ BOOKS = {"dk": "DK", "fd": "FD", "mgm": "MGM"}
 MODELS = {"pts": (4.0, 60.0), "market": (1.0, 30.0)}   # prior weight, half-life in days (research/tune.py)
 RULES = dict(spread_lean=3.0, spread=4.0, total_lean=5.0, total=6.0,
              max_spread=12.0, max_total=20.0,   # bigger gaps are usually news the model can't see (injury, suspension)
-             worst_odds=-125, stale_spread=3.0, stale_total=5.0, main_from="12-01", ahead_days=3, stake=1.0)
+             worst_odds=-125, stale_spread=3.0, stale_total=5.0, main_from="12-01", ahead_days=3, stake=1.0,
+             # Nov 4 2026 (owner's call, research/EDGE.md): the ratings are shrunk, so margins are scaled up by k (actual
+             # margin / model margin over earlier seasons; hist.json margin_scale, this value if missing), and totals are
+             # measured against the market's level: minus the average (model - opening total) over the last 7 days + today
+             margin_scale=1.063, level_days=7)
 TIERS = {
     "SPREAD": "Spread 4+", "SPREAD_LEAN": "Spread 3-4", "TOTAL": "Total 6+", "TOTAL_LEAN": "Total 5-6",
-    "NOV": "November",
+    "NOV_FAV": "Nov favourites 4+", "NOV_OVER": "Nov overs 5+", "NOV": "November research",
 }
-TIER_RANK = {"NOV": 1, "SPREAD_LEAN": 1, "TOTAL_LEAN": 1, "SPREAD": 2, "TOTAL": 2}
+TIER_RANK = {"NOV": 1, "SPREAD_LEAN": 1, "TOTAL_LEAN": 1, "SPREAD": 2, "TOTAL": 2, "NOV_FAV": 2, "NOV_OVER": 2}
 P6 = {"2", "4", "7", "8", "23"}   # ESPN conference ids: ACC, Big East, Big Ten, Big 12, SEC (the Pac-12 left in 2024)
 D1_CONF = {str(k) for k in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27,
                             29, 30, 44, 45, 46, 49, 62)}
-BACKTEST = {
-    "spread": "Spreads, blend gap 3+ vs the opener, December-March 2023-26: CLV +1.32 pts, beat the close 68%, 55.7% ATS (922 plays, about 2 a day); gap 4+: +1.87, 74%, 59.8% (251 plays)",
-    "total": "Totals, blend gap 5+: CLV +2.29 pts, beat the close 77%, 56.2% ATS (1,041 plays, about 3 a day); gap 6+: +2.90, 82%, 59.1% (465 plays)",
-    "nov": "November: CLV about +0.5 and only half the plays beat the close, for every model (last season's ratings are a poor guide to new rosters)",
-    "caveat": "The backtest measured CLV from Action Network's opener. In the CFB snapshots DK/FD/MGM's first spread matched that opener 20-30% of the time and already held about half the opener-to-close move, so live CLV may be smaller. The Openers tab tracks this for CBB.",
+BACKTEST = {   # corrected blend, against the opener at -110, 2023-24 / 2024-25 / 2025-26 (research/EDGE.md)
+    "spread": "Spreads, December-March: gap 3+ CLV +1.40, beat the close 71%, 57.6% ATS, +9.8% ROI (+11.6 / +7.2 / +10.4 by season, about 3 a day); gap 4+ CLV +2.03, 82%, 62.5%, +19.3% ROI (+22.9 / +11.1 / +22.1, about 1 a day)",
+    "total": "Totals, December-March: gap 5+ CLV +2.42, beat the close 76%, 56.3% ATS, +7.5% ROI (+3.6 / +7.1 / +11.2, about 2 a day); gap 6+ +9.9% ROI",
+    "nov": "November: only favourites at a spread gap of 4+ (CLV +1.32, 67% beat close, +7.7% ROI: +7.3 / +4.9 / +10.0) and overs at a total gap of 5+ (+8.2% ROI) worked; underdogs never beat the close (45%) and unders lost every season. Nov 1-3 2026, out of sample: favourites 15-8, CLV +1.35; overs CLV +1.38",
+    "caveat": "ROI assumes -110 at the opener. DraftKings' first number equals Action's opener 89% of the time (Openers tab); FanDuel and BetMGM 40-48%, so bet the DK number when you can.",
 }
 LEDGER, STATE = BOARD / "ledger.json", BOARD / "state.json"
 SEEN_OPEN, SEEN_DONE = BOARD / "seen_pending.json", BOARD / "first_seen.jsonl"
@@ -341,38 +345,76 @@ def best(books, side):
     return (-line if side == "over" else line), odds, k
 
 
-def tier_for(market, gap, day):
+def tier_for(market, side, gap, day, line):
+    """(tier, gap the tier needs) or None. December on: spreads 3-4 / 4+, totals 5-6 / 6+. November (research/EDGE.md):
+    favourites at a spread gap of 4+ and overs at a total gap of 5+; every other gap of 3+ / 5+ is logged as research."""
     lean, main = (RULES["spread_lean"], RULES["spread"]) if market == "spread" else (RULES["total_lean"], RULES["total"])
     if gap < lean:
         return None
     if day.strftime("%m-%d") < RULES["main_from"] and day.month >= 7:   # November (and anything before December)
-        return "NOV"
+        if market == "spread" and line < 0 and gap >= RULES["spread"]:
+            return "NOV_FAV", RULES["spread"]
+        if market == "total" and side == "over":
+            return "NOV_OVER", RULES["total_lean"]
+        return "NOV", lean
     if market == "spread":
-        return "SPREAD" if gap >= main else "SPREAD_LEAN"
-    return "TOTAL" if gap >= main else "TOTAL_LEAN"
+        return ("SPREAD", main) if gap >= main else ("SPREAD_LEAN", lean)
+    return ("TOTAL", main) if gap >= main else ("TOTAL_LEAN", lean)
+
+
+def total_level(raw, now):
+    """Sum and count of (model total - opening total) over the games listed now and those that tipped in the last
+    RULES['level_days'] days (first-seen records keep the model's total at first sight): the model's scoring level
+    relative to the market's, removed from every total before it is compared with a book."""
+    d = [x["total_raw"] - x["open_total"] for x in raw if x["open_total"] is not None]
+    cut = pd.Timestamp(now) - pd.Timedelta(days=RULES["level_days"])
+    recs = []
+    if SEEN_DONE.exists():
+        for ln in SEEN_DONE.read_text().splitlines()[-3000:]:
+            try:
+                recs.append(json.loads(ln))
+            except Exception:
+                pass
+    recs += [r for r in load_json(SEEN_OPEN, {}).values() if pd.Timestamp(r["tip"]) <= pd.Timestamp(now)]
+    for r in recs:
+        m, o = r.get("model_tot_raw", r.get("model_tot")), r.get("open_tot")
+        if m is not None and o is not None and pd.Timestamp(r["tip"]) >= cut:
+            d.append(m - o)
+    return float(np.sum(d)), len(d)
 
 
 def price(g, rts, now):
     """Every upcoming D1 game with at least one book line: blend numbers, prices, gaps and the plays they make."""
     up = g[g["d1"] & (g["state"] == "pre") & (g["start"] > pd.Timestamp(now))]
     up = up[up["start"] < pd.Timestamp(now) + pd.Timedelta(days=RULES["ahead_days"] + 1)]
-    games, plays = [], []
+    k = load_json(DATA / "hist.json", {}).get("margin_scale", RULES["margin_scale"])
+    raw = []
     for r in up.sort_values("start").itertuples():
         site = 0.0 if r.neutral else 1.0
         preds = {t: predict(rt, r.home_eid, r.away_eid, site) for t, rt in rts.items()}
         if any(v is None for v in preds.values()):
             continue
-        margin = float(np.mean([v[0] for v in preds.values()]))
-        total = float(np.mean([v[1] for v in preds.values()]))
+        raw.append(dict(r=r, preds=preds, total_raw=float(np.mean([v[1] for v in preds.values()])),
+                        open_total=num(getattr(r, "open_total", None))))
+    lv_sum, lv_n = total_level(raw, now)
+    games, plays = [], []
+    for x in raw:
+        r, preds = x["r"], x["preds"]
+        own = x["total_raw"] - x["open_total"] if x["open_total"] is not None else 0.0
+        n_other = lv_n - (x["open_total"] is not None)
+        level = (lv_sum - own) / n_other if n_other > 0 else 0.0   # leave the game itself out
+        margin = k * float(np.mean([v[0] for v in preds.values()]))
+        total = x["total_raw"] - level
         books, stale = book_lines(r)
         kick = r.start.tz_convert(ET)
         grp = group_of(r.home_conf_eid, r.away_conf_eid)
         gm = dict(game_id=int(r.espn_id), an_id=None if pd.isna(getattr(r, "an_id", np.nan)) else int(r.an_id),
                   kickoff_iso=kick.isoformat(), kickoff=kick.strftime("%a %b %d %I:%M %p ET"), home=r.home_loc or r.home_name, away=r.away_loc or r.away_name,
                   home_eid=int(r.home_eid), away_eid=int(r.away_eid), neutral=bool(r.neutral), grp=grp, notes=r.notes or None,
-                  model_line=round(-margin, 1), model_total=round(total, 1),
-                  model_pts=round(-preds["pts"][0], 1), model_mkt=round(-preds["market"][0], 1),
-                  total_pts=round(preds["pts"][1], 1), total_mkt=round(preds["market"][1], 1),
+                  model_line=round(-margin, 1), model_total=round(total, 1), total_raw=round(x["total_raw"], 1),
+                  total_level=round(level, 1),
+                  model_pts=round(-k * preds["pts"][0], 1), model_mkt=round(-k * preds["market"][0], 1),
+                  total_pts=round(preds["pts"][1] - level, 1), total_mkt=round(preds["market"][1] - level, 1),
                   open_line=num(getattr(r, "open_spread", None)), open_total=num(getattr(r, "open_total", None)),
                   cons_line=num(getattr(r, "cons_spread", None)), cons_total=num(getattr(r, "cons_total", None)),
                   books=books, stale_books=stale or None)
@@ -388,18 +430,19 @@ def price(g, rts, now):
             gap = (margin + line if side == "home" else -margin + line) if market == "spread" else \
                   (total - line if side == "over" else line - total)
             cap = RULES["max_spread"] if market == "spread" else RULES["max_total"]
-            tier = tier_for(market, gap, day)
-            if tier is None:
+            tt = tier_for(market, side, gap, day, line)
+            if tt is None:
                 continue
+            tier, thr = tt
             if gap >= cap:
                 gm.setdefault("suspect", []).append(f"{book} {side} {line:+g}" if market == "spread" else f"{book} {side} {line:g}")
                 continue
-            thr = (RULES["spread"] if tier == "SPREAD" else RULES["spread_lean"]) if market == "spread" else \
-                  (RULES["total"] if tier == "TOTAL" else RULES["total_lean"])
             if market == "spread":
                 team = gm["home"] if side == "home" else gm["away"]
                 need = thr - margin if side == "home" else thr + margin   # worst line that still clears the tier
                 limit = math.ceil(need * 2) / 2
+                if tier == "NOV_FAV":
+                    limit = min(limit, -0.5)   # a November main play must stay a favourite
                 pick = f"{team} {'PK' if line == 0 else f'{line:+g}'}"
                 model_side = round(margin if side == "home" else -margin, 1)
                 opener = gm["open_line"] if side == "home" else (None if gm["open_line"] is None else -gm["open_line"])
@@ -448,7 +491,7 @@ def track_seen(games, g, now):
             if v["tot"] is not None and f"{b}_tot" not in rec:
                 rec[f"{b}_tot"], rec[f"{b}_tot_t"] = v["tot"], ts
         if "model_sp" not in rec:
-            rec["model_sp"], rec["model_tot"] = gm["model_line"], gm["model_total"]
+            rec["model_sp"], rec["model_tot"], rec["model_tot_raw"] = gm["model_line"], gm["model_total"], gm["total_raw"]
     done = g[g["completed"].fillna(False).astype(bool)].set_index("espn_id")
     out = []
     for k in list(pend):
@@ -655,7 +698,9 @@ def write_state(games, plays, led, rts, tm, season, live_ok, now):
               season=season, season_label=f"{season}-{str(season + 1)[2:]}", week=week_of(today, season), live_ok=live_ok,
               rules=RULES, tiers=TIERS, backtest=BACKTEST, plays=plays, games=games, ledger=led[-400:],
               summary=summary(led), ratings=ratings, seen=seen_stats(),
-              model=dict(games_used=rts["pts"]["n_done"], home_court=round(2 * rts["pts"]["h"], 1)))
+              model=dict(games_used=rts["pts"]["n_done"], home_court=round(2 * rts["pts"]["h"], 1),
+                         margin_scale=load_json(DATA / "hist.json", {}).get("margin_scale", RULES["margin_scale"]),
+                         total_level=round(float(np.mean([x["total_level"] for x in games])), 1) if games else None))
     save_json(STATE, st)
     return st
 
