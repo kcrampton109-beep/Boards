@@ -14,7 +14,11 @@ BOARDS = {
     "cfb": dict(name="CFB Play Card", workbook="CFB_Model_2026.xlsx",
                 tiers=[("STRONG", "Strong"), ("FCS", "FCS"), ("WEATHER", "Wind unders"), ("LEAN", "Leans"),
                        ("RESEARCH", "Research")],
-                scorecard=("STRONG", "FCS"), target=dict(n=60, clv=0.5, beat=0.55, review="2026-11-01")),
+                # FCS graduated Nov 4 (owner's call: 66 plays, CLV +1.5, beat close 70%); FBS strong stays on trial until
+                # 20 plays under the Oct 26 rule (gap 5-7 from week 7) are graded
+                graduated={"FCS": "2026-11-04"},
+                scorecard=("STRONG",), scorecard_new_rule=True,
+                target=dict(n=20, clv=0.5, beat=0.55, review="when 20 new-rule strong plays are graded")),
     "nfl": dict(name="NFL Game Day Board", workbook="NFL_weekly.xlsx",
                 tiers=[("STRONG", "Strong"), ("LEAN", "Lean"), ("WEATHER", "Wind unders"), ("TEASER", "Teaser legs"),
                        ("RLM", "Reverse line move (tracked)"), ("TREND", "Trend (tracked)"), ("TD", "Anytime TD (research)")],
@@ -69,13 +73,16 @@ def board(key, cfg):
         out["last_week"][t] = tier_stats([e for e in es if e.get("week") == last_wk]) if last_wk is not None else None
         out["doc_rows"].append(dict(tier=label, graded=s["graded"], units=f"{s['units']:+.2f}" if s["n"] else "0",
                                     avg_clv="none yet" if s["clv"] is None else f"{s['clv']:+.1f} pts", open_now=s["open"]))
+    new_rule = [e for e in led if e["tier"] == "STRONG" and e.get("flagged", "") >= "2026-10-26" and (e.get("edge") or 0) < 7]
     if key == "cfb":  # strong plays added by the Oct 26 rule (FBS gap 5-7 from week 7), tracked on their own
-        out["new_strong_rule"] = tier_stats([e for e in led if e["tier"] == "STRONG" and e.get("flagged", "") >= "2026-10-26"
-                                             and (e.get("edge") or 0) < 7])
-    sc = [e for e in led if e["tier"] in cfg["scorecard"]]
+        out["new_strong_rule"] = tier_stats(new_rule)
+    if cfg.get("graduated"):
+        out["graduated"] = cfg["graduated"]
+    sc = new_rule if cfg.get("scorecard_new_rule") else [e for e in led if e["tier"] in cfg["scorecard"]]
     s = tier_stats(sc)
     tg = cfg["target"]
-    out["scorecard"] = dict(tiers="+".join(cfg["scorecard"]), plays=s["n"], avg_clv=s["clv"], beat_close=s["beat"],
+    out["scorecard"] = dict(tiers="+".join(cfg["scorecard"]) + (" (new 5-point rule)" if cfg.get("scorecard_new_rule") else ""),
+                            plays=s["n"], avg_clv=s["clv"], beat_close=s["beat"],
                             target=tg, met=bool(s["n"] >= tg["n"] and (s["clv"] or 0) >= tg["clv"] and (s["beat"] or 0) >= tg["beat"]))
     try:
         _, h = get(f"{SITE}/{key}/{cfg['workbook']}")
