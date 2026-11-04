@@ -14524,7 +14524,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": -1.0,
+  "close": 45.5,
+  "units": -0.5,
+  "final": "Buffalo 34 - Miami (OH) 31"
  },
  {
   "id": "401862819|spread|home|m",
