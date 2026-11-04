@@ -5117,7 +5117,11 @@
   "opener": null,
   "grp": "power 6",
   "limit": -14.0,
-  "status": "open"
+  "status": "L",
+  "close": -11.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "South Dakota State 68 - Kansas State 66"
  },
  {
   "id": "401921165|spread|home",
@@ -5141,7 +5145,11 @@
   "opener": null,
   "grp": "power 6",
   "limit": -24.0,
-  "status": "open"
+  "status": "W",
+  "close": -26.5,
+  "clv": 3.0,
+  "units": 0.909,
+  "final": "Cleveland State 50 - Missouri 111"
  },
  {
   "id": "401924911|spread|away",
@@ -5297,7 +5305,11 @@
   "opener": 158.5,
   "grp": "power 6",
   "limit": 159.5,
-  "status": "open"
+  "status": "W",
+  "close": 159.5,
+  "clv": 0.0,
+  "units": 0.926,
+  "final": "South Dakota State 68 - Kansas State 66"
  },
  {
   "id": "401920061|total|under",
@@ -5489,7 +5501,11 @@
   "opener": 159.5,
   "grp": "power 6",
   "limit": 158.0,
-  "status": "open"
+  "status": "W",
+  "close": 160.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "LSU New Orleans 57 - LSU 100"
  },
  {
   "id": "401920806|spread|home",
@@ -5513,7 +5529,11 @@
   "opener": -27.5,
   "grp": "power 6",
   "limit": -27.5,
-  "status": "open"
+  "status": "W",
+  "close": -32.5,
+  "clv": 5.0,
+  "units": 0.952,
+  "final": "Alabama State 66 - Texas A&M 97"
  },
  {
   "id": "401920806|total|under",
@@ -5537,7 +5557,11 @@
   "opener": 163.5,
   "grp": "power 6",
   "limit": 161.0,
-  "status": "open"
+  "status": "W",
+  "close": 163.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Alabama State 66 - Texas A&M 97"
  },
  {
   "id": "401920702|spread|home",
@@ -5561,7 +5585,11 @@
   "opener": -18.5,
   "grp": "power 6",
   "limit": -22.0,
-  "status": "open"
+  "status": "W",
+  "close": -24.5,
+  "clv": 5.0,
+  "units": 0.909,
+  "final": "Lipscomb 54 - Iowa 76"
  },
  {
   "id": "401920702|total|under",
@@ -5585,7 +5613,11 @@
   "opener": 149.5,
   "grp": "power 6",
   "limit": 149.5,
-  "status": "open"
+  "status": "W",
+  "close": 149.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Lipscomb 54 - Iowa 76"
  },
  {
   "id": "401920343|spread|home",
@@ -5633,7 +5665,11 @@
   "opener": 40.5,
   "grp": "power 6",
   "limit": 38.5,
-  "status": "open"
+  "status": "L",
+  "close": 42.0,
+  "clv": -2.5,
+  "units": -1.0,
+  "final": "Arkansas-Pine Bluff 61 - Arkansas 106"
  },
  {
   "id": "401921819|total|over",
@@ -5685,7 +5721,11 @@
   "opener": 20.5,
   "grp": "power 6",
   "limit": 26.5,
-  "status": "open"
+  "status": "L",
+  "close": 27.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "LSU New Orleans 57 - LSU 100"
  },
  {
   "id": "401920702|total|over",
@@ -5709,7 +5749,11 @@
   "opener": 149.5,
   "grp": "power 6",
   "limit": 146.5,
-  "status": "open"
+  "status": "L",
+  "close": 149.5,
+  "clv": 4.0,
+  "units": -1.0,
+  "final": "Lipscomb 54 - Iowa 76"
  },
  {
   "id": "401920155|spread|home",
