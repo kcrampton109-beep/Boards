@@ -4977,7 +4977,11 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 152.0,
-  "status": "open"
+  "status": "W",
+  "close": 155.5,
+  "clv": -3.0,
+  "units": 0.926,
+  "final": "Wofford 59 - Tennessee 90"
  },
  {
   "id": "401921801|total|under",
@@ -5193,7 +5197,11 @@
   "opener": -27.5,
   "grp": "power 6",
   "limit": -25.5,
-  "status": "open"
+  "status": "W",
+  "close": -25.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "Wofford 59 - Tennessee 90"
  },
  {
   "id": "401925779|spread|home",
