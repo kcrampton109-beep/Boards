@@ -14,6 +14,8 @@ Rules come from the backtest (research/r1-r8):
                  (57.5% / 61.5% / ~70%; leans ~54%).
   WEATHER under  forecast wind 18+ mph within 24 h of kickoff at an open-air stadium (since 2026-10-19; was 15+ up to 4
                  days out, and forecasts that far out run windy): unders 56-60% vs the CLOSING total in every era
+  EARLY (Nov 4)  strong only at early-week prices (Mon/Tue or 3.5+ days out), else lean; next week's strong plays log
+                 once 2+ of the user's books agree (no Sunday-evening wait)
   TEASER legs    6-pt teaser underdogs +1.5..+2.5 with a total of 49.5 or less: legs won 75-78% (73.9% needed at -120)
   RLM (tracked)  the user's rule: 57%+ of bets on one side and the CBS line moved 1+ pt from its open the other way.
                  Backtest 2018-25 at the closing line: 49% - shown and tracked, not a play.
@@ -38,7 +40,7 @@ SEEN = BOARD / "lines_seen.json"
 CACHE = BOARD / "cache.json"
 BOOKN = {"DK": "DraftKings", "FD": "FanDuel", "MGM": "BetMGM"}
 RULES = dict(strong=3.0, lean=2.0, wind_under=18.0, wind_hours=24.0, teaser_lo=1.5, teaser_hi=2.5, teaser_total_max=49.5, rlm_tix=57.0,
-             rlm_move=1.0, td_value=0.05, td_min_prob=0.15, resid_sd=13.3)
+             rlm_move=1.0, early_days=3.5, td_value=0.05, td_min_prob=0.15, resid_sd=13.3)
 FEATS = ["mkt_margin", "pts_margin", "epa_margin", "qb_exp", "rest_diff"]
 TFEATS = ["mkt_total", "pts_total", "epa_off_sum"]
 BACKTEST = {
@@ -264,6 +266,12 @@ def resize(ledger):
         e["stake"] = st
         if e["status"] in ("W", "L", "P"):
             e["units"] = round(st * payout(e["odds"]), 2) if e["status"] == "W" else (-st if e["status"] == "L" else 0.0)
+
+
+def is_early(now, kickoff):
+    """Early-week price: Monday/Tuesday (ET), or 3.5+ days before kickoff. The backtest edge is against openers;
+    the same picks were 52-53% against the closing line, so a gap that first shows up later is only a lean."""
+    return now.weekday() in (0, 1) or (kickoff - now) >= pd.Timedelta(days=RULES["early_days"])
 
 
 def team_name(t):
@@ -575,6 +583,7 @@ def main(args=()):
         tflags = {}
         log.append(f"trends failed: {e!r}")
 
+    strong_logged = {(e["game_id"], e.get("side")) for e in ledger if e["tier"] == "STRONG" and e.get("status") != "void"}
     games, plays, rlm_list = [], [], []
     wk0 = sched[sched["week"] == int(open_weeks[0])]
     cur_started = float((wk0["start"] <= now).mean()) if len(wk0) else 1.0   # share of this week's games already started
@@ -607,7 +616,7 @@ def main(args=()):
                   books={BOOKN_K: books.get(k, {}) for k, BOOKN_K in (("68", "DK"), ("69", "FD"), ("75", "MGM"))},
                   best=bp, tix_home=x.get("tix_home"), money_home=x.get("money_home"), tix_over=x.get("tix_over"),
                   money_over=x.get("money_over"), cbs=cb, qb={s: qbs.get(getattr(r, s)) for s in ("home", "away")},
-                  rest=dict(home=r.home_rest, away=r.away_rest), lookahead=bool(lookahead))
+                  rest=dict(home=r.home_rest, away=r.away_rest), lookahead=bool(lookahead), books_agree=len(agree))
         # remember the last pre-kickoff numbers (closing line for CLV)
         if not started and cons.get("sp_home") is not None:
             seen[r.game_id] = dict(ts=now.isoformat(), close_spread=cons.get("sp_home"), close_total=cons.get("total"),
@@ -661,6 +670,11 @@ def main(args=()):
             continue
         # ---- plays
         sp = spread_play(gm, bp, qbs)
+        if sp and sp["tier"] == "STRONG" and not is_early(now, r.start) and (r.game_id, sp["side"]) not in strong_logged:
+            ml = gm["model_line"]
+            lim = (ml + RULES["lean"]) if sp["side"] == "home" else (-ml + RULES["lean"])
+            sp.update(tier="LEAN", limit=round(lim * 2) / 2,
+                      note="; ".join(x for x in (sp.get("note"), "late gap: strong plays log only at early-week prices") if x))
         if sp:
             plays.append(dict(sp, game_id=r.game_id))
         if (wx and wx.get("wind") is not None and wx["wind"] >= RULES["wind_under"] and bp.get("under")
@@ -716,9 +730,13 @@ def main(args=()):
     # log new plays (once, at the price available now); look-ahead games are not bettable yet
     by_game = {gm["game_id"]: gm for gm in games}
     for p in plays:
-        p["lookahead"] = bool(by_game.get(p["game_id"], {}).get("lookahead"))
+        g0 = by_game.get(p["game_id"], {})
+        # Nov 4 (owner): strong spreads on next week's games log and alert as soon as 2+ of DK/FD/MGM agree within
+        # 1.5 pts (Tuesday afternoon), not Sunday evening. Live wk 6 plays logged that early beat the close by 3.5 pts;
+        # a week-stale model kept its opener edge in the backtest (AN 2020-25, 3+ gap: 65.5% vs 64.7%).
+        p["lookahead"] = bool(g0.get("lookahead")) and not (p["tier"] == "STRONG" and g0.get("books_agree", 0) >= 2)
     for e in ledger:   # entries logged at a look-ahead line before this rule (Oct 13): void, they log again at the openers
-        if e.get("status") == "open" and by_game.get(e["game_id"], {}).get("lookahead"):
+        if e.get("status") == "open" and e["tier"] != "STRONG" and by_game.get(e["game_id"], {}).get("lookahead"):
             e["status"] = "void"
             e["note"] = ("Voided: logged at a look-ahead line (next week's line, posted before this week was played, "
                          "or books that disagreed); it logs again once the line is real")

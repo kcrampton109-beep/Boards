@@ -57,6 +57,15 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   afternoon); they move a lot and often aren't on the owner's apps. A next-week game counts only once 3/4 of this week's
   games have started (Sunday evening) AND 2+ of DK/FD/MGM agree within 1.5 pts. Before that its plays show labelled
   "Look-ahead" but are never logged, alerted or put on the Bets tab (open entries on such games are voided).
+- **NFL strong spreads: early prices only** (owner's call, Nov 4; the owner bets only Strong): a next-week strong play logs
+  and alerts as soon as 2+ of DK/FD/MGM agree within 1.5 pts (no wait for Sunday evening; open strong entries are
+  never voided by the look-ahead rule), and a gap counts as strong only at an early-week price (`is_early`: Mon/Tue ET
+  or 3.5+ days before kickoff, `RULES["early_days"]`); a gap first seen later logs as a lean, unless that side already
+  has a strong entry. Why: live wk 6 plays logged on Tuesday look-ahead lines beat the close by 3.5 pts (all 10), CLV
+  fell to +0.4-1.4 once logging waited for Sunday; a week-stale model kept its opener edge (AN 2020-25 3+: 65.5% vs
+  64.7%); against the close the same picks were 52-53%.
+- **NFL TD props**: Action Network's props endpoint has returned empty `player_props` since ~Oct 8 2026, so the TD sheet
+  has model chances but no book prices and logs no TD plays. ESPN's propBets list the DraftKings markets without odds.
 - **Logging bets on look-ahead plays** (Oct 28, owner's request): look-ahead cards stay display-only (never logged or
   alerted), but each spread/total look-ahead card on the NFL Plays tab has a "Log bet" button. The bet is saved with
   play `look:<play id>` (`tools/log_bet.py` → tier LOOKAHEAD, "Look-ahead" on My Bets), tied to the game and graded
