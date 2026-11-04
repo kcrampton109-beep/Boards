@@ -1,0 +1,23 @@
+{
+ "id": 58,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/58",
+ "board": "NFL",
+ "pick": "PHI +3.5",
+ "odds": -115,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "NYG @ PHI",
+ "kickoff": "2026-11-08T13:00:00-05:00",
+ "play": "2026_09_NYG_PHI:STRONG:spread:home",
+ "logged": "2026-11-04T15:09:15Z",
+ "updated": "2026-11-04T15:09:25+00:00",
+ "tier": "STRONG",
+ "game_id": "2026_09_NYG_PHI",
+ "board_line": 2.5,
+ "board_odds": -110,
+ "board_book": "DK",
+ "market": "spread",
+ "side": "home",
+ "line": 3.5
+}
