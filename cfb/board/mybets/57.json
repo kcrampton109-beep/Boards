@@ -1,0 +1,23 @@
+{
+ "id": 57,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/57",
+ "board": "CFB",
+ "pick": "Abilene Christian +10.5",
+ "odds": -104,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Abilene Christian @ Tarleton State",
+ "kickoff": "2026-11-07 19:00:00-05:00",
+ "play": "401868057|spread|away|m",
+ "logged": "2026-11-04T02:56:09Z",
+ "updated": "2026-11-04T02:56:16+00:00",
+ "tier": "FCS",
+ "game_id": 401868057,
+ "board_line": 12.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "away",
+ "line": 10.5
+}
