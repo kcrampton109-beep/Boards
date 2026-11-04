@@ -544,6 +544,16 @@ def update_ledger(plays, games, g, season, now):
     for e in led:   # entries logged before Nov 4 2026 don't name the team: find it once, by name
         if e["market"] == "spread" and e.get("team_eid") is None:
             e["team_eid"] = team_of(e, gidx)
+    first = {}   # one entry per team (or over/under) per tier: before Nov 4 a home/away swap could log a play twice
+    for e in led:
+        if e["status"] == "void":
+            continue
+        k = (play_id(e, gidx), e["tier"])
+        if k in first:
+            e.update(status="void", note=f"duplicate of {first[k]} (logged again after ESPN swapped home/away)")
+            e.pop("auto_void", None)
+        else:
+            first[k] = e["id"]
     have = {}
     for e in led:
         if e["status"] != "void":
