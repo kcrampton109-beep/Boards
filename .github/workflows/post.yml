@@ -72,6 +72,9 @@ jobs:
         name: Render the post
         env:
           POST_DATE: ${{ inputs.date }}
+          POST_BRAND: ${{ vars.POST_BRAND }}     # Actions variables, not code: this repo is public
+          POST_HANDLE: ${{ vars.POST_HANDLE }}
+          POST_LINK: ${{ vars.POST_LINK }}
         run: |
           python social/daily_post.py --out _social ${POST_DATE:+--date "$POST_DATE"} \
             --cfb-ledger "$RUNNER_TEMP/cfb_ledger.json" --nfl-ledger "$RUNNER_TEMP/nfl_ledger.json" \

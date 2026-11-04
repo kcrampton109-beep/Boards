@@ -20,9 +20,11 @@ from zoneinfo import ZoneInfo
 from PIL import Image, ImageDraw, ImageFont
 
 ET = ZoneInfo("America/New_York")
-BRAND = "Opener Lab"   # placeholder account name: change once the owner picks one
-HANDLE = ""            # e.g. "@openerlab": shown next to the brand when set
-LINK = ""              # public record link for the caption (blank: "link in bio")
+# The account name, handle and link come from Actions variables, never from this file: the repo is public and must not
+# tie the account to its GitHub username. Blank = left off the image (link: "link in bio" in the caption).
+BRAND = os.environ.get("POST_BRAND", "").strip()
+HANDLE = os.environ.get("POST_HANDLE", "").strip()
+LINK = os.environ.get("POST_LINK", "").strip()
 TIERS = {"cfb": {"STRONG": "CFB", "FCS": "FCS", "WEATHER": "WIND"},
          "nfl": {"STRONG": "NFL", "WEATHER": "WIND"}}
 ROWS_PER_IMAGE = 10

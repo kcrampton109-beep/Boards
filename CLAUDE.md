@@ -108,8 +108,11 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   WEATHER, NFL STRONG/WEATHER; no teasers) it shows each play's logged line vs the current consensus line, so the free
   post shows edge already captured and never an early number; otherwise the previous day's results. 1080-wide PNGs
   (up to 4, balanced), caption under 280 chars, phone page `/social/index.html` (long-press save, copy caption).
-- `BRAND` ("Opener Lab"), `HANDLE`, `LINK` at the top of the script are placeholders until the owner names the account.
-  Posting to X is manual (owner). Push runs publish but never send the phone alert.
+- The account name, handle and link come from Actions variables `POST_BRAND`, `POST_HANDLE`, `POST_LINK` (blank = left
+  off). Never commit them: this repo is public and its GitHub username is close to the owner's real name.
+- Boards stay separate from the account (owner, Nov 4): no links either way, nothing account-related on the board pages.
+  `/social/` only reads the boards and is for the owner's own use. Before launch, the public log needs its own site under
+  a separate account. Posting to X is manual (owner). Push runs publish but never send the phone alert.
 
 ## Data (public repo: no third-party data committed)
 - Committed: code, `*/board/` ledgers + state the engine needs between runs, `cfb/data/calls.log`.
