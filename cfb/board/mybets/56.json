@@ -1,0 +1,23 @@
+{
+ "id": 56,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/56",
+ "board": "CFB",
+ "pick": "UAB -8.5",
+ "odds": -110,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Charlotte @ UAB",
+ "kickoff": "2026-11-07 15:30:00-05:00",
+ "play": "401862819|spread|home|m",
+ "logged": "2026-11-04T02:54:36Z",
+ "updated": "2026-11-04T02:54:47+00:00",
+ "tier": "STRONG",
+ "game_id": 401862819,
+ "board_line": -9.5,
+ "board_odds": -112.0,
+ "board_book": "MGM",
+ "market": "spread",
+ "side": "home",
+ "line": -8.5
+}
