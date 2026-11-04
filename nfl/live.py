@@ -1,6 +1,8 @@
 """Live data sources for the NFL engine (no sportsbook sites are opened; all public feeds):
   Action Network  lines for DraftKings (68), FanDuel (69), BetMGM (75), consensus (15) and its opener (30), bet % and
-                  money %, game status and scores; anytime-TD prices (DK / FD / MGM when listed)
+                  money %, game status and scores; anytime-TD prices (DK / FD / MGM when listed; empty since ~Oct 8 2026)
+  FanDuel         public sportsbook API (read-only odds JSON its site loads; no login): anytime-TD prices
+                  (DraftKings' feed answers automated requests with Access Denied, so it is not used)
   CBS Sports      open and current line per game (the user's RLM source)
   ESPN            injury report
   Open-Meteo      hourly wind / temperature forecast at the stadium"""
@@ -118,6 +120,62 @@ def an_anytime_td(an_id):
                 d = out.setdefault(norm_name(name), dict(name=name, info=p.get("display_text", "")))
                 d[BOOKS[book]] = l["odds"]
     return out
+
+
+# ---------------------------------------------------------------- FanDuel anytime TD
+FD_API = "https://sbapi.nj.sportsbook.fanduel.com/api"
+FD_KEY = "FhMFpcPWXMeyZxOx"   # FanDuel's public web app key (same for every visitor)
+NICK = {"Cardinals": "ARI", "Falcons": "ATL", "Ravens": "BAL", "Bills": "BUF", "Panthers": "CAR", "Bears": "CHI",
+        "Bengals": "CIN", "Browns": "CLE", "Cowboys": "DAL", "Broncos": "DEN", "Lions": "DET", "Packers": "GB",
+        "Texans": "HOU", "Colts": "IND", "Jaguars": "JAX", "Chiefs": "KC", "Chargers": "LAC", "Rams": "LA",
+        "Raiders": "LV", "Dolphins": "MIA", "Vikings": "MIN", "Patriots": "NE", "Saints": "NO", "Giants": "NYG",
+        "Jets": "NYJ", "Eagles": "PHI", "Steelers": "PIT", "Seahawks": "SEA", "49ers": "SF", "Buccaneers": "TB",
+        "Titans": "TEN", "Commanders": "WAS"}
+FD_H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
+        "Accept": "application/json"}
+
+
+def fd_events():
+    """{(away, home): FanDuel eventId} for NFL games on FanDuel's NFL page ("Away Team @ Home Team")."""
+    js = requests.get(f"{FD_API}/content-managed-page", headers=FD_H, timeout=60,
+                      params={"page": "CUSTOM", "customPageId": "nfl", "_ak": FD_KEY, "timezone": "America/New_York"}).json()
+    out = {}
+    for e in ((js.get("attachments") or {}).get("events") or {}).values():
+        parts = str(e.get("name", "")).split(" @ ")
+        if len(parts) != 2:
+            continue
+        a, h = (NICK.get(x.strip().split(" ")[-1]) for x in parts)
+        if a and h:
+            out[(a, h)] = e["eventId"]
+    return out
+
+
+def fd_anytime_td(event_id):
+    """{normalized player name: {'name', 'FD': american odds}} from FanDuel's "Any Time Touchdown Scorer" market."""
+    js = requests.get(f"{FD_API}/event-page", headers=FD_H, timeout=60,
+                      params={"_ak": FD_KEY, "eventId": event_id, "tab": "td-scorer-props"}).json()
+    out = {}
+    for m in ((js.get("attachments") or {}).get("markets") or {}).values():
+        if m.get("marketType") != "ANY_TIME_TOUCHDOWN_SCORER" or m.get("marketStatus") != "OPEN":
+            continue
+        for r in m.get("runners") or []:
+            o = ((r.get("winRunnerOdds") or {}).get("americanDisplayOdds") or {}).get("americanOddsInt")
+            if r.get("runnerStatus") == "ACTIVE" and o is not None and r.get("runnerName"):
+                out[norm_name(r["runnerName"])] = dict(name=r["runnerName"], FD=int(o))
+    return out
+
+
+def find_player(name, odds):
+    """Odds entry for a roster name: exact normalized name, else a unique same-last-name, same-first-initial entry
+    (Chig / Chigoziem Okonkwo)."""
+    k = norm_name(name)
+    if k in odds:
+        return odds[k]
+    parts = k.split()
+    if len(parts) < 2:
+        return {}
+    c = [v for kk, v in odds.items() if kk.split()[-1] == parts[-1] and kk[:1] == k[:1]]
+    return c[0] if len(c) == 1 else {}
 
 
 # ---------------------------------------------------------------- CBS

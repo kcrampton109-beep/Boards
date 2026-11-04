@@ -20,7 +20,8 @@ Rules come from the backtest (research/r1-r8):
   RLM (tracked)  the user's rule: 57%+ of bets on one side and the CBS line moved 1+ pt from its open the other way.
                  Backtest 2018-25 at the closing line: 49% - shown and tracked, not a play.
   TREND (tracked) this-season situations at 80%+ over 6+ games (old board rule; 48.5% since 2019) - tracked
-  TD value       anytime TD where the model's chance beats the best DK/FD price by 5+ points - research, 1 unit
+  TD value       anytime TD where the model's chance beats the best DK/FD price by 5+ points (and is at most 1.75x the
+                 book's) - research, 1 unit. Prices from FanDuel's public API since Nov 4 (Action Network props went empty)
 """
 import datetime as dt, json, math, pathlib, sys, time, traceback
 from zoneinfo import ZoneInfo
@@ -40,7 +41,7 @@ SEEN = BOARD / "lines_seen.json"
 CACHE = BOARD / "cache.json"
 BOOKN = {"DK": "DraftKings", "FD": "FanDuel", "MGM": "BetMGM"}
 RULES = dict(strong=3.0, lean=2.0, wind_under=18.0, wind_hours=24.0, teaser_lo=1.5, teaser_hi=2.5, teaser_total_max=49.5, rlm_tix=57.0,
-             rlm_move=1.0, early_days=3.5, td_value=0.05, td_min_prob=0.15, resid_sd=13.3)
+             rlm_move=1.0, early_days=3.5, td_value=0.05, td_min_prob=0.15, td_max_ratio=1.75, resid_sd=13.3)
 FEATS = ["mkt_margin", "pts_margin", "epa_margin", "qb_exp", "rest_diff"]
 TFEATS = ["mkt_total", "pts_total", "epa_off_sum"]
 BACKTEST = {
@@ -391,17 +392,33 @@ def td_sheet(games, roster, inj, cache, now):
     q_ids = set(inj.loc[inj["status"] == "Questionable", "gsis_id"].dropna()) if len(inj) else set()
     sheet, values = [], []
     props_cache = cache.setdefault("props", {})
+    fd_idx = None
     for gm in games:
-        if gm["started"] or not gm.get("an_id") or gm["kickoff_ts"] > now + pd.Timedelta(days=7):
+        if gm["started"] or gm["kickoff_ts"] > now + pd.Timedelta(days=7):
             continue
-        key = str(gm["an_id"])
+        key = str(gm.get("an_id") or gm["game_id"])
         pc = props_cache.get(key)
-        if not pc or (now - pd.Timestamp(pc["ts"])).total_seconds() > 3 * 3600:
+        if not pc or not pc.get("odds") or (now - pd.Timestamp(pc["ts"])).total_seconds() > 3 * 3600:
+            # Action Network's props (empty since ~Oct 8) + FanDuel's anytime-TD market (Nov 4); retried every run
+            # until a price shows up, then every 3 hours
+            o = {}
             try:
-                pc = dict(ts=now.isoformat(), odds=live.an_anytime_td(gm["an_id"]))
-                props_cache[key] = pc
+                if gm.get("an_id"):
+                    o = live.an_anytime_td(gm["an_id"])
             except Exception:
-                pc = pc or dict(ts=now.isoformat(), odds={})
+                pass
+            try:
+                if fd_idx is None:
+                    fd_idx = live.fd_events()
+                eid = fd_idx.get((gm["away"], gm["home"]))
+                if eid:
+                    for k, v in live.fd_anytime_td(eid).items():
+                        o.setdefault(k, dict(name=v["name"]))["FD"] = v["FD"]
+            except Exception:
+                fd_idx = fd_idx or {}
+            if o or not pc:
+                pc = dict(ts=now.isoformat(), odds=o)
+                props_cache[key] = pc
         odds = pc["odds"]
         teams = []
         for side in ("away", "home"):
@@ -423,10 +440,13 @@ def td_sheet(games, roster, inj, cache, now):
             tp = tp[~tp["player_id"].isin(out_ids)].sort_values("prob", ascending=False)
             players = []
             for r in tp.head(6).itertuples():
-                o = odds.get(__import__("live").norm_name(r.full), {})
+                o = live.find_player(r.full, odds)
                 bo = max(((o[b], b) for b in ("DK", "FD", "MGM") if o.get(b) is not None), default=(None, None))
                 imp_p = (100 / (bo[0] + 100) if bo[0] > 0 else -bo[0] / (-bo[0] + 100)) if bo[0] is not None else None
-                val = imp_p is not None and r.prob >= RULES["td_min_prob"] and r.prob - imp_p >= RULES["td_value"]
+                # value: model beats the book by 5+ pts, but not by more than 1.75x (a bigger gap means the book knows
+                # about a role change the usage shares haven't caught up with; Nov 4: 39% model vs +900)
+                val = (imp_p is not None and r.prob >= RULES["td_min_prob"] and r.prob - imp_p >= RULES["td_value"]
+                       and r.prob <= RULES["td_max_ratio"] * imp_p)
                 d = dict(player=r.full, pid=r.player_id, pos=r.pos, prob=round(float(r.prob), 3), odds=bo[0], book=bo[1],
                          book_prob=round(imp_p, 3) if imp_p else None, value=bool(val), q=r.player_id in q_ids,
                          dk=o.get("DK"), fd=o.get("FD"))

@@ -64,8 +64,11 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   has a strong entry. Why: live wk 6 plays logged on Tuesday look-ahead lines beat the close by 3.5 pts (all 10), CLV
   fell to +0.4-1.4 once logging waited for Sunday; a week-stale model kept its opener edge (AN 2020-25 3+: 65.5% vs
   64.7%); against the close the same picks were 52-53%.
-- **NFL TD props**: Action Network's props endpoint has returned empty `player_props` since ~Oct 8 2026, so the TD sheet
-  has model chances but no book prices and logs no TD plays. ESPN's propBets list the DraftKings markets without odds.
+- **NFL TD props** (Nov 4, owner chose the sportsbook feeds): Action Network's props endpoint has returned empty
+  `player_props` since ~Oct 8 2026 and ESPN's propBets carry no odds, so anytime-TD prices come from FanDuel's public
+  API (`live.fd_events` + `live.fd_anytime_td`, the read-only JSON its site loads, no login). DraftKings' feed answers
+  automated requests with Access Denied (bot protection): don't try to get around it. A TD value play also needs the
+  model's chance <= 1.75x the book's (`td_max_ratio`): bigger gaps were role changes the usage shares missed.
 - **Logging bets on look-ahead plays** (Oct 28, owner's request): look-ahead cards stay display-only (never logged or
   alerted), but each spread/total look-ahead card on the NFL Plays tab has a "Log bet" button. The bet is saved with
   play `look:<play id>` (`tools/log_bet.py` → tier LOOKAHEAD, "Look-ahead" on My Bets), tied to the game and graded
