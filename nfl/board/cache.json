@@ -1842,8 +1842,133 @@
    }
   },
   "290961": {
-   "ts": "2026-11-04T07:28:46.073696-05:00",
-   "odds": {}
+   "ts": "2026-11-04T15:59:32.310558-05:00",
+   "odds": {
+    "kenneth walker": {
+     "name": "Kenneth Walker III",
+     "FD": -220
+    },
+    "rashee rice": {
+     "name": "Rashee Rice",
+     "FD": 125
+    },
+    "braelon allen": {
+     "name": "Braelon Allen",
+     "FD": 130
+    },
+    "breece hall": {
+     "name": "Breece Hall",
+     "FD": 130
+    },
+    "travis kelce": {
+     "name": "Travis Kelce",
+     "FD": 145
+    },
+    "xavier worthy": {
+     "name": "Xavier Worthy",
+     "FD": 180
+    },
+    "adonai mitchell": {
+     "name": "Adonai Mitchell",
+     "FD": 220
+    },
+    "garrett wilson": {
+     "name": "Garrett Wilson",
+     "FD": 220
+    },
+    "omar cooper": {
+     "name": "Omar Cooper Jr.",
+     "FD": 260
+    },
+    "emmett johnson": {
+     "name": "Emmett Johnson",
+     "FD": 370
+    },
+    "kenyon sadiq": {
+     "name": "Kenyon Sadiq",
+     "FD": 370
+    },
+    "mason taylor": {
+     "name": "Mason Taylor",
+     "FD": 370
+    },
+    "patrick mahomes": {
+     "name": "Patrick Mahomes",
+     "FD": 420
+    },
+    "cyrus allen": {
+     "name": "Cyrus Allen",
+     "FD": 430
+    },
+    "noah gray": {
+     "name": "Noah Gray",
+     "FD": 500
+    },
+    "isaiah davis": {
+     "name": "Isaiah Davis",
+     "FD": 500
+    },
+    "tim patrick": {
+     "name": "Tim Patrick",
+     "FD": 650
+    },
+    "new york jets defense": {
+     "name": "New York Jets Defense",
+     "FD": 700
+    },
+    "kansas city defense": {
+     "name": "Kansas City Defense",
+     "FD": 750
+    },
+    "jalen royals": {
+     "name": "Jalen Royals",
+     "FD": 800
+    },
+    "andrew armstrong": {
+     "name": "Andrew Armstrong",
+     "FD": 1000
+    },
+    "isaiah williams": {
+     "name": "Isaiah Williams",
+     "FD": 1200
+    },
+    "jeremy ruckert": {
+     "name": "Jeremy Ruckert",
+     "FD": 1300
+    },
+    "geno smith": {
+     "name": "Geno Smith",
+     "FD": 1300
+    },
+    "jake briningstool": {
+     "name": "Jake Briningstool",
+     "FD": 1600
+    },
+    "jared wiley": {
+     "name": "Jared Wiley",
+     "FD": 1600
+    },
+    "jelani woods": {
+     "name": "Jelani Woods",
+     "FD": 1800
+    },
+    "nikko remigio": {
+     "name": "Nikko Remigio",
+     "FD": 2000
+    },
+    "malik mcclain": {
+     "name": "Malik McClain",
+     "FD": 2200
+    },
+    "jaydn ott": {
+     "name": "Jaydn Ott",
+     "FD": 2700
+    },
+    "kene nwangwu": {
+     "name": "Kene Nwangwu",
+     "FD": 3000
+    }
+   }
   },
   "290965": {
    "ts": "2026-11-04T14:05:31.833209-05:00",
