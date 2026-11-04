@@ -1,0 +1,92 @@
+# Daily social post for the faceless picks account (social/daily_post.py): at 9 AM Eastern, today's money-tier plays
+# from both boards (logged line vs current line), or the previous day's results on a day without plays, as images +
+# caption. Published to the site at /social/ (save the images, copy the caption) and the first image goes to the phone.
+# Posting to X stays manual. 9 AM Eastern all season: 13:00 UTC on daylight time, 14:00 UTC on standard time (gate job).
+name: Daily post
+on:
+  schedule:
+    - cron: "0 13 * * *"
+    - cron: "0 14 * * *"
+  push:   # changes to the post code run straight away
+    branches: [main]
+    paths: [".github/workflows/post.yml", "social/**"]
+  workflow_dispatch:
+    inputs:
+      date:
+        description: Post date YYYY-MM-DD (Eastern); blank = today
+        type: string
+        default: ""
+      notify:
+        description: Send the phone alert
+        type: boolean
+        default: true
+concurrency:
+  group: social   # its own group: never share one with a board (a pending run would be cancelled)
+  cancel-in-progress: false
+permissions:
+  contents: write   # publish_site.sh pushes the site branch
+env:
+  TZ: America/New_York
+  NTFY_TOPIC: boards-pk9lpcuxti4v
+  POST_URL: https://kcrampton109-beep.github.io/Boards/social/
+jobs:
+  gate:   # the cron that matches today's Eastern offset runs; the other exits (manual and push runs always go)
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.g.outputs.go }}
+    steps:
+      - id: g
+        run: |
+          off=$(TZ=America/New_York date +%z)
+          sched="${{ github.event.schedule }}"
+          go=false
+          if [ "${{ github.event_name }}" != "schedule" ]; then go=true
+          elif [ "$sched" = "0 13 * * *" ] && [ "$off" = "-0400" ]; then go=true
+          elif [ "$sched" = "0 14 * * *" ] && [ "$off" = "-0500" ]; then go=true
+          fi
+          echo "go=$go" >> "$GITHUB_OUTPUT"; echo "schedule '$sched', Eastern offset $off -> go=$go"
+  post:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pillow==11.3.0
+      - name: Font (Inter; DejaVu if the package is unavailable)
+        run: |
+          (sudo apt-get update -qq && sudo apt-get install -y -qq fonts-inter) > /dev/null 2>&1 \
+            || echo "::warning title=Daily post::fonts-inter not installed, using DejaVu"
+          find /usr/share/fonts -iname 'Inter-*' | head -n 5
+      - name: Boards as published
+        run: |
+          git fetch -q --depth=1 origin site
+          for b in cfb nfl; do
+            git show FETCH_HEAD:$b/state.json > "$RUNNER_TEMP/${b}_state.json"
+            git show FETCH_HEAD:$b/ledger.json > "$RUNNER_TEMP/${b}_ledger.json"
+          done
+      - id: make
+        name: Render the post
+        env:
+          POST_DATE: ${{ inputs.date }}
+        run: |
+          python social/daily_post.py --out _social ${POST_DATE:+--date "$POST_DATE"} \
+            --cfb-ledger "$RUNNER_TEMP/cfb_ledger.json" --nfl-ledger "$RUNNER_TEMP/nfl_ledger.json" \
+            --cfb-state "$RUNNER_TEMP/cfb_state.json" --nfl-state "$RUNNER_TEMP/nfl_state.json" | tail -n 1 > post.json
+          cat post.json
+          echo "post=$(python -c "import json; print(str(json.load(open('post.json'))['post']).lower())")" >> "$GITHUB_OUTPUT"
+      - name: Publish to the site
+        if: steps.make.outputs.post == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash tools/publish_site.sh social _social
+      - name: Phone alert
+        if: steps.make.outputs.post == 'true' && (github.event_name == 'schedule' || inputs.notify)
+        run: |
+          msg=$(python -c "import json; print(json.load(open('post.json'))['notify'])")
+          curl -fsS -T _social/post_1.png -H "Filename: post_1.png" -H "Title: Today's post" -H "Tags: camera" \
+            -H "Click: $POST_URL" -H "Message: $msg" "https://ntfy.sh/$NTFY_TOPIC" > /dev/null
+          echo "sent: $msg"

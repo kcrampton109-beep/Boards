@@ -20,6 +20,7 @@ matter more than win-loss; judge changes by CLV first. Ask the owner before chan
 | `nfl-weekly.yml` | Tue 9:30 AM ET (13:30 / 14:30 UTC, gate) | recap + workbook, ntfy |
 | `workbooks.yml` | Mon 9 AM ET (13:00 / 14:00 UTC, gate) | both workbooks rebuilt from the published boards |
 | `cbb.yml` | :12 and :42, but :42 skipped 1-9 PM ET; Oct 25 - Apr 12 only | CBB paper board: fetch, refit, ledger commit, publish (no ntfy) |
+| `post.yml` | 9 AM ET daily (13:00 / 14:00 UTC, gate) | social post images + caption → site `/social/`, first image to ntfy |
 | `net-check.yml` | manual | can GitHub reach every data source? |
 
 GitHub skips some scheduled runs under load (~1 in 8 in week 1), so gaps of ~1 h happen. Keep Pages publishes under
@@ -100,6 +101,15 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   (`total_level`). November main tiers: NOV_FAV (favourite, spread gap 4+) and NOV_OVER (over, total gap 5+); everything
   else in November is NOV research (also holds the Nov 1-4 plays from the old model). Dec on: SPREAD 4+ / SPREAD_LEAN 3-4,
   TOTAL 6+ / TOTAL_LEAN 5-6. Owner won't bet CBB until the main plays show positive ROI.
+
+## Social post (faceless picks account, started Nov 4 2026)
+- Owner is building an audience for a possible paid early-alert tier next season: free game-day posts now, no selling yet.
+- `social/daily_post.py` (run by `post.yml` from the boards as published): on a day with money-tier plays (CFB STRONG/FCS/
+  WEATHER, NFL STRONG/WEATHER; no teasers) it shows each play's logged line vs the current consensus line, so the free
+  post shows edge already captured and never an early number; otherwise the previous day's results. 1080-wide PNGs
+  (up to 4, balanced), caption under 280 chars, phone page `/social/index.html` (long-press save, copy caption).
+- `BRAND` ("Opener Lab"), `HANDLE`, `LINK` at the top of the script are placeholders until the owner names the account.
+  Posting to X is manual (owner). Push runs publish but never send the phone alert.
 
 ## Data (public repo: no third-party data committed)
 - Committed: code, `*/board/` ledgers + state the engine needs between runs, `cfb/data/calls.log`.
