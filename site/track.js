@@ -4,9 +4,9 @@
             inAll (false = left out of "All plays", e.g. teaser legs that are counted as 2-team teasers),
             status: "W" | "L" | "P" | "open", units, stake, clv, pick, matchup, odds, app, final, logged,
             playTo, now: {kind: ok | gone | live, text}}
-   Today:   {rows, unit, today, mainLabel?}   mainLabel names the default view of r.money rows (default "Money plays";
-            a paper-only board passes e.g. "Main plays")
-   Results: {rows, unit, today, week (the board's current football week), tiers: [[key, label], ...]}
+   Today:   {rows, unit, today, mainLabel?, scope?}   mainLabel names the view of r.money rows (default "Money plays";
+            a paper-only board passes e.g. "Main plays"); scope "all" opens on every play instead (default "money")
+   Results: {rows, unit, today, week (the board's current football week), tiers: [[key, label], ...], tier? (chip to open on, default "money")}
             tier key "money" = the Bets-tab plays, "all" = everything, else a row.tier value. */
 (function () {
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -36,7 +36,7 @@
   // ---------------------------------------------------------------- Today: every play on the day's games
   function renderToday(el, d) {
     const usd = money(d.unit || 10);
-    let day = d.today, scope = "money";
+    let day = d.today, scope = d.scope || "money";
     const card = r => {
       const graded = GRADED.has(r.status);
       const result = r.status === "W" ? { kind: "ok", text: `Won ${usd(r.units)} (${sgn(r.units, 2)}u)` }
@@ -82,7 +82,7 @@
   // ---------------------------------------------------------------- Results: today / week / month / season, calendar, weeks
   function renderResults(el, d) {
     const usd = money(d.unit || 10);
-    let tier = "money", month = d.today.slice(0, 7), pick = null;   // pick = {kind: "day" | "week", key}
+    let tier = d.tier || "money", month = d.today.slice(0, 7), pick = null;   // pick = {kind: "day" | "week", key}
     const pool = () => d.rows.filter(r => GRADED.has(r.status) &&
       (tier === "money" ? r.money : tier === "all" ? r.inAll !== false : r.tier === tier));
     const tile = (label, rows, sub) => { const s = stats(rows); return `<div class="trk-tile"><span class="t-lab">${label}</span>

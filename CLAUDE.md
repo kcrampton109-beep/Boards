@@ -92,6 +92,10 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   `board/seen_pending.json` + `first_seen.jsonl` record each book's first number vs Action's opener (Openers tab): the
   backtest's CLV was from that opener, so this decides whether the edge is bettable. Money tiers are the owner's call.
   Season rollover (July): the hist cache key is per season, so the first run re-runs `cbb/bootstrap.py` (adds last season).
+  ESPN can swap home/away after a game is listed (neutral sites): spreads are graded by the backed team (`team_eid`, inferred
+  from the pick for entries before Nov 4) and every settled play is re-graded each run; first-seen spreads are reoriented.
+  Past days are re-fetched until `day_final` (`data/season/final_days.json`). In November every play is tier NOV (shown as
+  November spreads / totals); the page opens Today/Results on all plays (`track.js` options `scope` / `tier`).
 
 ## Data (public repo: no third-party data committed)
 - Committed: code, `*/board/` ledgers + state the engine needs between runs, `cfb/data/calls.log`.

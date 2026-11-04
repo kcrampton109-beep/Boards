@@ -16,7 +16,7 @@ Paper only: no money tiers, no phone alerts, flat 1u stakes. Money tiers are the
 Usage: python engine.py [--asof "YYYY-MM-DD HH:MM"]   --asof replays a past date from the saved history (no fetching;
 the "live" prices are then closing lines, so it only tests the plumbing). Set CBB_BOARD to write somewhere else.
 """
-import datetime as dt, json, math, os, pathlib, sys, time, traceback
+import datetime as dt, json, math, os, pathlib, re, sys, time, traceback
 from zoneinfo import ZoneInfo
 import difflib
 import numpy as np
@@ -120,19 +120,39 @@ def get(src, d):
     raise err
 
 
+def day_final(src, d):
+    """True once every game in a saved day file is over (or postponed / cancelled): the file then holds final scores
+    and closing lines and is never fetched again."""
+    import gzip
+    f = SEASON_DIR / src / f"{d:%Y%m%d}.json.gz"
+    try:
+        x = json.loads(gzip.decompress(f.read_bytes()))
+    except Exception:
+        return False
+    if src == "espn":
+        st = [ev["competitions"][0]["status"]["type"] for ev in x.get("events", [])]
+        return all(t.get("completed") or t.get("state") == "post" or t.get("name") in ("STATUS_POSTPONED", "STATUS_CANCELED")
+                   for t in st)
+    return all(g.get("status") in ("complete", "closed", "cancelled", "postponed") for g in x.get("games", []))
+
+
 def refresh_files(season, today):
-    """Yesterday .. today+ahead are re-fetched every run (lines move, games finish); older days of this season once."""
+    """Yesterday .. today+ahead are re-fetched every run (lines move, games finish). Older days of this season are
+    fetched until their file shows every game final (a day saved before its games were played would otherwise keep
+    pre-game data forever, e.g. after a day with no runs)."""
     import gzip
     window = [today + dt.timedelta(days=k) for k in range(-1, RULES["ahead_days"] + 1)]
     first = dt.date(season, 11, 1)
     catch_up = [first + dt.timedelta(days=k) for k in range((today - first).days - 1)] if today > first else []
+    final_p = SEASON_DIR / "final_days.json"
+    final = set(load_json(final_p, []))
     ok, n, complete = True, 0, True
     for src in ("an", "espn"):
         out = SEASON_DIR / src
         out.mkdir(parents=True, exist_ok=True)
-        missing = [d for d in catch_up if not (out / f"{d:%Y%m%d}.json.gz").exists()]
-        complete &= len(missing) <= 60
-        todo = missing[:60] + window
+        stale = [d for d in catch_up if f"{src}:{d:%Y%m%d}" not in final]
+        complete &= len(stale) <= 60
+        todo = stale[:60] + window
         for d in todo:
             if season_of(d) != season:
                 continue
@@ -143,6 +163,10 @@ def refresh_files(season, today):
                 ok = False
                 log(f"fetch {src} {d} failed: {str(e)[:120]}")
             time.sleep(0.4)
+        for d in stale[:60]:
+            if day_final(src, d):
+                final.add(f"{src}:{d:%Y%m%d}")
+    final_p.write_text(json.dumps(sorted(final)))
     return ok, n, complete
 
 
@@ -385,7 +409,9 @@ def price(g, rts, now):
                 pick = f"{side.title()} {line:g}"
                 model_side = round(total, 1)
                 opener = gm["open_total"]
-            cand.append(dict(game_id=gm["game_id"], market=market, side=side, pick=pick, team=team, line=line, odds=odds,
+            team_eid = (gm["home_eid"] if side == "home" else gm["away_eid"]) if market == "spread" else None
+            cand.append(dict(game_id=gm["game_id"], market=market, side=side, pick=pick, team=team, team_eid=team_eid,
+                             line=line, odds=odds,
                              book=book, edge=round(gap, 1), tier=tier, grp=grp, model=model_side, limit=limit, opener=opener))
         plays += cand
     return games, plays
@@ -410,7 +436,8 @@ def track_seen(games, g, now):
     for gm in games:
         k = str(gm["game_id"])
         rec = pend.setdefault(k, dict(matchup=f"{gm['away']} {'vs' if gm['neutral'] else '@'} {gm['home']}",
-                                      tip=gm["kickoff_iso"], grp=gm["grp"], first_seen=ts))
+                                      tip=gm["kickoff_iso"], grp=gm["grp"], first_seen=ts, home_eid=gm["home_eid"]))
+        reorient(rec, gm["home_eid"])
         if gm["open_line"] is not None and "open_sp" not in rec:
             rec["open_sp"] = gm["open_line"]
         if gm["open_total"] is not None and "open_tot" not in rec:
@@ -429,6 +456,7 @@ def track_seen(games, g, now):
         gid = int(k)
         if gid in done.index:
             r = done.loc[gid]
+            reorient(rec, int(r["home_eid"]))
             rec.update(close_sp=num(r.get("close")), close_tot=num(r.get("tclose")),
                        final=f"{int(r['away_pts'])}-{int(r['home_pts'])}" if pd.notna(r["home_pts"]) else None)
             out.append(dict(game_id=gid, **rec))
@@ -440,6 +468,18 @@ def track_seen(games, g, now):
             for x in out:
                 fh.write(json.dumps(_clean(x)) + "\n")
     save_json(SEEN_OPEN, pend, indent=None)
+
+
+def reorient(rec, home_eid):
+    """ESPN sometimes swaps which team is home after a game is listed (neutral sites): stored spreads are home-team
+    numbers, so flip them to stay with the same team."""
+    if rec.get("home_eid") is None:
+        rec["home_eid"] = home_eid
+    elif rec["home_eid"] != home_eid:
+        for k in [k for k in rec if k.endswith("_sp") and isinstance(rec[k], (int, float))]:
+            rec[k] = -rec[k]
+        rec["home_eid"] = home_eid
+        rec["swapped"] = True
 
 
 def seen_stats():
@@ -474,16 +514,40 @@ def seen_stats():
 
 
 # ---------------------------------------------------------------- 5. ledger
-def play_id(f):
+def play_id(f, gidx=None):
+    """Spreads are keyed by the team backed (ESPN can swap home / away after a play is logged), totals by over/under."""
+    if f["market"] == "spread":
+        t = team_of(f, gidx)
+        if t is not None:
+            return f"{f['game_id']}|spread|{t}"
     return f"{f['game_id']}|{f['market']}|{f['side']}"
+
+
+def team_of(e, gidx=None):
+    """ESPN id of the team a spread play backs: stored since Nov 4 2026; older entries are matched by the team name
+    in the pick against the game's names."""
+    if e.get("team_eid") is not None:
+        return int(e["team_eid"])
+    if gidx is None or e["game_id"] not in gidx.index:
+        return None
+    r = gidx.loc[e["game_id"]]
+    name = re.sub(r"\s(PK|[-+][\d.]+)$", "", e["pick"])
+    for nc, ic in (("home_loc", "home_eid"), ("away_loc", "away_eid"), ("home_name", "home_eid"), ("away_name", "away_eid")):
+        if r[nc] == name:
+            return int(r[ic])
+    return None
 
 
 def update_ledger(plays, games, g, season, now):
     led = load_json(LEDGER, [])
+    gidx = g.drop_duplicates("espn_id").set_index("espn_id")
+    for e in led:   # entries logged before Nov 4 2026 don't name the team: find it once, by name
+        if e["market"] == "spread" and e.get("team_eid") is None:
+            e["team_eid"] = team_of(e, gidx)
     have = {}
     for e in led:
         if e["status"] != "void":
-            b = e.get("base", e["id"])
+            b = play_id(e, gidx)
             have[b] = max(have.get(b, -1), TIER_RANK.get(e["tier"], 0))
     gmap = {x["game_id"]: x for x in games}
     ts = now.isoformat(timespec="minutes")
@@ -497,26 +561,35 @@ def update_ledger(plays, games, g, season, now):
         led.append(dict(id=base if base not in have else f"{base}|{f['tier']}", base=base, flagged=ts, season=season,
                         week=week_of(kick.date(), season), game_id=f["game_id"],
                         matchup=f"{gm['away']} {'vs' if gm['neutral'] else '@'} {gm['home']}", kickoff=gm["kickoff_iso"],
-                        tier=f["tier"], market=f["market"], side=f["side"], pick=f["pick"], book=f["book"], line=f["line"],
+                        tier=f["tier"], market=f["market"], side=f["side"], team_eid=f.get("team_eid"), pick=f["pick"],
+                        book=f["book"], line=f["line"],
                         odds=f["odds"], stake=RULES["stake"], edge=f["edge"], model=f["model"], opener=f["opener"],
                         grp=f["grp"], limit=f["limit"], status="open"))
         have[base] = rank
-    # grade: final score, and the DK/FD/MGM median closing number (Action consensus if none) for CLV
-    res = g[g["completed"].fillna(False).astype(bool)].set_index("espn_id")
+    # grade: final score, and the DK/FD/MGM median closing number (Action consensus if none) for CLV. Every settled
+    # play is re-graded each run (cheap), so a fix to grading or a late score correction reaches the whole record.
+    res = g[g["completed"].fillna(False).astype(bool)].drop_duplicates("espn_id").set_index("espn_id")
     for e in led:
-        if e["status"] != "open":
-            continue
+        if e["status"] == "void" and not e.get("auto_void"):
+            continue   # voided by hand: leave it
         if e["game_id"] not in res.index:
-            if pd.Timestamp(e["kickoff"]) < pd.Timestamp(now) - pd.Timedelta(days=3):
-                e["status"], e["note"] = "void", "no result (postponed or cancelled)"
+            if e["status"] == "open" and pd.Timestamp(e["kickoff"]) < pd.Timestamp(now) - pd.Timedelta(days=3):
+                e["status"], e["note"], e["auto_void"] = "void", "no result (postponed or cancelled)", True
             continue
+        e.pop("auto_void", None)
+        e.pop("note", None)
         r = res.loc[e["game_id"]]
         if pd.isna(r["home_pts"]):
             continue
         margin, pts = r["home_pts"] - r["away_pts"], r["home_pts"] + r["away_pts"]
         cs, ct = num(r.get("close")), num(r.get("tclose"))
         if e["market"] == "spread":
-            s = 1 if e["side"] == "home" else -1
+            t = team_of(e, gidx)
+            if t is not None:
+                e["team_eid"] = t
+                s = 1 if t == int(r["home_eid"]) else -1
+            else:
+                s = 1 if e["side"] == "home" else -1
             v = s * margin + e["line"]
             e["close"] = None if cs is None else s * cs
             e["clv"] = None if cs is None else round(e["line"] - s * cs, 1)
@@ -551,8 +624,8 @@ def write_state(games, plays, led, rts, tm, season, live_ok, now):
     lid = {}
     for e in led:
         if e["status"] != "void":
-            lid.setdefault((e.get("base", e["id"]), e["tier"]), e["id"])
-            lid.setdefault((e.get("base", e["id"]), None), e["id"])
+            lid.setdefault((play_id(e), e["tier"]), e["id"])
+            lid.setdefault((play_id(e), None), e["id"])
     for f in plays:
         f["id"] = play_id(f)
         f["ledger_id"] = lid.get((f["id"], f["tier"])) or lid.get((f["id"], None))

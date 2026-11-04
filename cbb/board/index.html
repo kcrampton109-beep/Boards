@@ -146,7 +146,12 @@ const TIER = {
   NOV: { name: "November", code: "N", note: "November games at the same gaps (spreads 3+, totals 5+). Weak in the backtest for every model (CLV about +0.5): ratings still lean on last season. Kept apart so it doesn't cloud the verdict." },
 };
 const ORDER = ["SPREAD", "TOTAL", "SPREAD_LEAN", "TOTAL_LEAN", "NOV"];
-const MAIN = ["SPREAD", "TOTAL"];   // the Today tab's default view
+const MAIN = ["SPREAD", "TOTAL"];   // the "Main plays" view (from December 1)
+// display groups: November plays are split by market so each half can be judged on its own (ledger tier stays NOV)
+const DT = e => e.tier === "NOV" ? (e.market === "spread" ? "NOV_S" : "NOV_T") : e.tier;
+const DTN = { NOV_S: "November spreads", NOV_T: "November totals" };
+const dtName = k => DTN[k] || (TIER[k] ? TIER[k].name : k);
+const SHOW = ["NOV_S", "NOV_T", "SPREAD", "TOTAL", "SPREAD_LEAN", "TOTAL_LEAN"];
 const UNIT = 10;   // $ per unit, for the paper dollars on Today / Results
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const sgn = (v, d = 1) => v == null || isNaN(v) ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d).replace(/\.0$/, "");
@@ -189,15 +194,23 @@ function render(S) {
   if (S.live_ok === false) { b.hidden = false; b.className = "banner warn"; b.textContent = "Some scoreboards could not be loaded on the last check; prices may be from an earlier check."; }
   else if (ageH != null && ageH > 2) { b.hidden = false; b.className = "banner warn"; b.innerHTML = `<b>Prices are ${Math.round(ageH)} hours old</b> (last checked ${esc(S.generated)}). The board's last checks didn't run, so lines may have moved.`; }
   else if (!(S.games || []).length) { b.hidden = false; b.className = "banner"; b.textContent = "No D1 games with lines in the next few days yet. The season tips off Monday, November 2; lines usually post the night before."; }
+  const inNov = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" }).slice(5, 7) === "11";
+  if (b.hidden && inNov) { b.hidden = false; b.className = "banner";
+    b.innerHTML = "<b>November:</b> every play goes in the November tier (spreads and totals shown separately), because the backtest's November was weak for every model. The main tiers (spreads 4+, totals 6+) start <b>December 1</b>. Today and Results show all plays."; }
 
-  // records strip
-  const sm = S.summary || {};
-  document.getElementById("records").innerHTML = ORDER.map(k => {
-    const r = sm[k] || {}, u = r.units ?? 0;
-    return `<div class="rec"><span class="lab">${TIER[k].name}</span><span class="wl num">${r.w || 0}-${r.l || 0}${r.p ? "-" + r.p : ""}</span>
-      <span class="sub num"><span class="${u > 0 ? "pos" : u < 0 ? "neg" : ""}">${sgn(u, 2)}u</span> · ROI ${r.roi == null ? "–" : sgn(r.roi * 100, 1) + "%"} · ${r.open || 0} pending</span>
-      <span class="sub num">CLV ${r.clv_avg == null ? "–" : sgn(r.clv_avg, 2) + " pts"} · beat close ${pct(r.beat_close)}</span></div>`;
-  }).join("");
+  // records strip: everything first, then each group that has plays, then the empty ones
+  const full = (S.fullLedger || S.ledger || []).filter(e => e.status !== "void");
+  const rec = rows => { const g = rows.filter(e => ["W", "L", "P"].includes(e.status)), c = g.map(e => e.clv).filter(v => v != null);
+    const w = g.filter(e => e.status === "W").length, l = g.filter(e => e.status === "L").length, u = g.reduce((a, e) => a + (e.units || 0), 0);
+    const risk = g.filter(e => e.status !== "P").reduce((a, e) => a + (e.stake || 0), 0);
+    return { w, l, p: g.length - w - l, u, roi: risk ? u / risk : null, open: rows.filter(e => e.status === "open").length,
+             clv: c.length ? c.reduce((a, v) => a + v, 0) / c.length : null, beat: c.length ? c.filter(v => v > 0).length / c.length : null }; };
+  const box = (lab, r, note) => `<div class="rec"><span class="lab">${lab}</span><span class="wl num">${r.w}-${r.l}${r.p ? "-" + r.p : ""}</span>
+      <span class="sub num"><span class="${r.u > 0 ? "pos" : r.u < 0 ? "neg" : ""}">${sgn(r.u, 2)}u</span> · ROI ${r.roi == null ? "–" : sgn(r.roi * 100, 1) + "%"} · ${r.open} pending</span>
+      <span class="sub num">${note || `CLV ${r.clv == null ? "–" : sgn(r.clv, 2) + " pts"} · beat close ${pct(r.beat)}`}</span></div>`;
+  const groups = SHOW.map(k => [k, full.filter(e => DT(e) === k)]).sort((a, b) => (b[1].length > 0) - (a[1].length > 0));
+  document.getElementById("records").innerHTML = box("All plays", rec(full)) + groups.map(([k, rows]) =>
+    box(dtName(k), rec(rows), !rows.length && MAIN.concat(["SPREAD_LEAN", "TOTAL_LEAN"]).includes(k) && inNov ? "Starts December 1" : null)).join("");
 
   // card of open plays
   const counters = {};
@@ -236,7 +249,7 @@ function render(S) {
       <div class="kv">${mk}</div>
       <div class="logline">${log}</div></article>`;
   };
-  document.getElementById("p-plays").innerHTML = ORDER.map(t => {
+  document.getElementById("p-plays").innerHTML = ORDER.slice().sort((a, b) => plays.some(p => p.tier === b) - plays.some(p => p.tier === a)).map(t => {
     const ps = plays.filter(p => p.tier === t);
     return `<div class="group"><div class="group-head"><h2>${TIER[t].name}</h2><span class="muted num">${ps.length}</span><p>${TIER[t].note}</p></div>
       ${ps.length ? `<div class="cards">${ps.map(card).join("")}</div>` : `<div class="muted">None at current prices.</div>`}</div>`;
@@ -255,15 +268,16 @@ function render(S) {
     : { kind: "ok", text: `Still a play: ${p.pick} ${odds(p.odds)} at ${BOOKN[p.book] || p.book}` };
   const trackRows = (S.fullLedger || S.ledger || []).filter(e => e.status !== "void").map(e => {
     const p = anyPlay[e.id] && anyPlay[e.id].tier === e.tier ? anyPlay[e.id] : null;
-    return { id: e.id, date: etDate(e.kickoff), kickoff: etTxt(e.kickoff), sortKey: String(e.kickoff), week: e.week, tier: e.tier,
-             label: TIER[e.tier] ? TIER[e.tier].name : e.tier, money: MAIN.includes(e.tier), status: e.status, units: e.units, stake: e.stake,
+    return { id: e.id, date: etDate(e.kickoff), kickoff: etTxt(e.kickoff), sortKey: String(e.kickoff), week: e.week, tier: DT(e),
+             label: dtName(DT(e)), money: MAIN.includes(e.tier), status: e.status, units: e.units, stake: e.stake,
              clv: e.clv, pick: e.pick, matchup: e.matchup, odds: odds(e.odds), app: BOOKN[e.book] || e.book, final: e.final, logged: etTxt(e.flagged),
              playTo: playTo(e, p), now: e.status === "open" ? nowOf(games[e.game_id], p) : null };
   });
   const todayET = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
-  Track.renderToday(document.getElementById("p-today"), { rows: trackRows, unit: UNIT, today: todayET, mainLabel: "Main plays" });
-  Track.renderResults(document.getElementById("p-results"), { rows: trackRows, unit: UNIT, today: todayET, week: S.week || 1,
-    tiers: [["money", "Main (spreads 4+, totals 6+)"], ...ORDER.map(t => [t, TIER[t].name]), ["all", "All plays"]] });
+  // paper board: open on every play (the main tiers only start in December)
+  Track.renderToday(document.getElementById("p-today"), { rows: trackRows, unit: UNIT, today: todayET, mainLabel: "Main plays", scope: "all" });
+  Track.renderResults(document.getElementById("p-results"), { rows: trackRows, unit: UNIT, today: todayET, week: S.week || 1, tier: "all",
+    tiers: [["all", "All plays"], ...SHOW.map(k => [k, dtName(k)]), ["money", "Main (spreads 4+, totals 6+)"]] });
 
   // all games
   const flagged = new Set(plays.map(p => p.game_id));
