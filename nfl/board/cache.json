@@ -1224,8 +1224,121 @@
    }
   },
   "290962": {
-   "ts": "2026-11-04T07:28:46.073696-05:00",
-   "odds": {}
+   "ts": "2026-11-04T12:02:33.725141-05:00",
+   "odds": {
+    "quinshon judkins": {
+     "name": "Quinshon Judkins",
+     "FD": 105
+    },
+    "kendre miller": {
+     "name": "Kendre Miller",
+     "FD": 160
+    },
+    "chris olave": {
+     "name": "Chris Olave",
+     "FD": 165
+    },
+    "denzel boston": {
+     "name": "Denzel Boston",
+     "FD": 210
+    },
+    "devaughn vele": {
+     "name": "Devaughn Vele",
+     "FD": 210
+    },
+    "jordyn tyson": {
+     "name": "Jordyn Tyson",
+     "FD": 210
+    },
+    "harold fannin": {
+     "name": "Harold Fannin Jr.",
+     "FD": 230
+    },
+    "kc concepcion": {
+     "name": "KC Concepcion",
+     "FD": 250
+    },
+    "juwan johnson": {
+     "name": "Juwan Johnson",
+     "FD": 280
+    },
+    "alvin kamara": {
+     "name": "Alvin Kamara",
+     "FD": 320
+    },
+    "tyler shough": {
+     "name": "Tyler Shough",
+     "FD": 330
+    },
+    "bryce lance": {
+     "name": "Bryce Lance",
+     "FD": 500
+    },
+    "dylan sampson": {
+     "name": "Dylan Sampson",
+     "FD": 500
+    },
+    "jerry jeudy": {
+     "name": "Jerry Jeudy",
+     "FD": 550
+    },
+    "noah fant": {
+     "name": "Noah Fant",
+     "FD": 600
+    },
+    "cleveland defense": {
+     "name": "Cleveland Defense",
+     "FD": 650
+    },
+    "cj donaldson": {
+     "name": "CJ Donaldson",
+     "FD": 650
+    },
+    "new orleans defense": {
+     "name": "New Orleans Defense",
+     "FD": 650
+    },
+    "oscar delp": {
+     "name": "Oscar Delp",
+     "FD": 1100
+    },
+    "treyton welch": {
+     "name": "Treyton Welch",
+     "FD": 1100
+    },
+    "blake whiteheart": {
+     "name": "Blake Whiteheart",
+     "FD": 1400
+    },
+    "barion brown": {
+     "name": "Barion Brown",
+     "FD": 1500
+    },
+    "isaiah bond": {
+     "name": "Isaiah Bond",
+     "FD": 1700
+    },
+    "jaleel mclaughlin": {
+     "name": "Jaleel McLaughlin",
+     "FD": 2000
+    },
+    "tylan wallace": {
+     "name": "Tylan Wallace",
+     "FD": 2200
+    },
+    "malachi corley": {
+     "name": "Malachi Corley",
+     "FD": 2200
+    },
+    "michael burton": {
+     "name": "Michael Burton",
+     "FD": 3500
+    },
+    "carsen ryan": {
+     "name": "Carsen Ryan",
+     "FD": 4500
+    }
+   }
   },
   "290964": {
    "ts": "2026-11-04T10:29:19.438290-05:00",

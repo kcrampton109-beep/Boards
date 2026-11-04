@@ -8666,5 +8666,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_09_CLE_NO:TD:td:00-0033906",
+  "tier": "TD",
+  "market": "td",
+  "side": null,
+  "team": "NO",
+  "pid": "00-0033906",
+  "game_id": "2026_09_CLE_NO",
+  "week": 9,
+  "matchup": "CLE @ NO",
+  "kickoff": "Sun Nov 8, 1:00 PM ET",
+  "pick": "Alvin Kamara anytime TD",
+  "line": null,
+  "odds": 320,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": 0.071,
+  "note": "model 31% vs FD 24%",
+  "limit": null,
+  "model_line": -3.9,
+  "flagged": "2026-11-04T12:02:33.725141-05:00",
+  "kickoff_iso": "2026-11-08T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
