@@ -6140,8 +6140,12 @@
   "opener": -14.5,
   "grp": "power 6",
   "limit": -16.5,
-  "status": "open",
-  "team_eid": 25
+  "status": "L",
+  "team_eid": 25,
+  "close": -16.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Radford 70 - California 84"
  },
  {
   "id": "401917514|spread|home",
@@ -6248,7 +6252,11 @@
   "opener": -14.5,
   "grp": "power 6",
   "limit": -17.0,
-  "status": "open"
+  "status": "L",
+  "close": -16.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Radford 70 - California 84"
  },
  {
   "id": "401917513|spread|2541|NOV_FAV",
