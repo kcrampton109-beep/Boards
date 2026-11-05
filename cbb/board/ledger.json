@@ -6000,8 +6000,12 @@
   "opener": -16.5,
   "grp": "mid-major",
   "limit": -16.5,
-  "status": "open",
-  "team_eid": 2541
+  "status": "W",
+  "team_eid": 2541,
+  "close": -16.5,
+  "clv": 0.0,
+  "units": 0.833,
+  "final": "Milwaukee 72 - Santa Clara 95"
  },
  {
   "id": "401902276|spread|home",
@@ -6169,8 +6173,12 @@
   "opener": -5.5,
   "grp": "mid-major",
   "limit": -5.5,
-  "status": "open",
-  "team_eid": 2351
+  "status": "L",
+  "team_eid": 2351,
+  "close": -5.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Queens University 96 - Loyola Marymount 95"
  },
  {
   "id": "401902276|total|under",
@@ -6281,7 +6289,11 @@
   "opener": -16.5,
   "grp": "mid-major",
   "limit": -17.0,
-  "status": "open"
+  "status": "W",
+  "close": -16.5,
+  "clv": 0.0,
+  "units": 0.847,
+  "final": "Milwaukee 72 - Santa Clara 95"
  },
  {
   "id": "401909726|total|over",
@@ -7106,7 +7118,11 @@
   "opener": -5.5,
   "grp": "mid-major",
   "limit": -5.5,
-  "status": "open"
+  "status": "L",
+  "close": -5.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Queens University 96 - Loyola Marymount 95"
  },
  {
   "id": "401921219|spread|2426",
@@ -7306,6 +7322,31 @@
   "opener": 15.5,
   "grp": "mid-major",
   "limit": 17.5,
+  "status": "open"
+ },
+ {
+  "id": "401909717|spread|183|NOV_FAV",
+  "base": "401909717|spread|183",
+  "flagged": "2026-11-05T00:37-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401909717,
+  "matchup": "Central Connecticut @ Syracuse",
+  "kickoff": "2026-11-05T19:00:00-05:00",
+  "tier": "NOV_FAV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 183,
+  "pick": "Syracuse -20.5",
+  "book": "FD",
+  "line": -20.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 4.5,
+  "model": 25.0,
+  "opener": -21.5,
+  "grp": "power 6",
+  "limit": -21.0,
   "status": "open"
  }
 ]
