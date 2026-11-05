@@ -379,29 +379,29 @@
    }
   },
   "2026_09_LV_SF": {
-   "ts": "2026-11-04T16:55:42.164580-05:00",
+   "ts": "2026-11-04T20:15:36.399696-05:00",
    "wx": {
-    "wind": 6.1,
-    "gust": 6.7,
-    "temp": 73.0,
+    "wind": 6.9,
+    "gust": 7.8,
+    "temp": 72.0,
     "precip": 0
    }
   },
   "2026_09_GB_NE": {
-   "ts": "2026-11-04T16:55:42.164580-05:00",
+   "ts": "2026-11-04T20:15:36.399696-05:00",
    "wx": {
-    "wind": 11.6,
+    "wind": 5.2,
     "gust": 26.6,
-    "temp": 48.0,
+    "temp": 45.0,
     "precip": 5
    }
   },
   "2026_09_ARI_SEA": {
-   "ts": "2026-11-04T16:55:42.164580-05:00",
+   "ts": "2026-11-04T20:15:36.399696-05:00",
    "wx": {
-    "wind": 7.3,
-    "gust": 13.2,
-    "temp": 50.0,
+    "wind": 5.9,
+    "gust": 11.6,
+    "temp": 56.0,
     "precip": 18
    }
   }
@@ -1869,7 +1869,7 @@
    }
   },
   "290961": {
-   "ts": "2026-11-04T15:59:32.310558-05:00",
+   "ts": "2026-11-04T20:15:36.399696-05:00",
    "odds": {
     "kenneth walker": {
      "name": "Kenneth Walker III",
@@ -1909,7 +1909,7 @@
     },
     "emmett johnson": {
      "name": "Emmett Johnson",
-     "FD": 370
+     "FD": 360
     },
     "kenyon sadiq": {
      "name": "Kenyon Sadiq",
@@ -1921,18 +1921,18 @@
     },
     "patrick mahomes": {
      "name": "Patrick Mahomes",
-     "FD": 420
+     "FD": 410
     },
     "cyrus allen": {
      "name": "Cyrus Allen",
-     "FD": 430
-    },
-    "noah gray": {
-     "name": "Noah Gray",
-     "FD": 500
+     "FD": 440
     },
     "isaiah davis": {
      "name": "Isaiah Davis",
+     "FD": 490
+    },
+    "noah gray": {
+     "name": "Noah Gray",
      "FD": 500
     },
     "tim patrick": {
@@ -1953,18 +1953,18 @@
     },
     "andrew armstrong": {
      "name": "Andrew Armstrong",
-     "FD": 1000
+     "FD": 950
     },
     "isaiah williams": {
      "name": "Isaiah Williams",
      "FD": 1200
     },
-    "jeremy ruckert": {
-     "name": "Jeremy Ruckert",
-     "FD": 1300
-    },
     "geno smith": {
      "name": "Geno Smith",
+     "FD": 1200
+    },
+    "jeremy ruckert": {
+     "name": "Jeremy Ruckert",
      "FD": 1300
     },
     "jake briningstool": {
@@ -1985,7 +1985,7 @@
     },
     "malik mcclain": {
      "name": "Malik McClain",
-     "FD": 2200
+     "FD": 2500
     },
     "jaydn ott": {
      "name": "Jaydn Ott",
@@ -1993,7 +1993,7 @@
     },
     "kene nwangwu": {
      "name": "Kene Nwangwu",
-     "FD": 3000
+     "FD": 2700
     }
    }
   },
