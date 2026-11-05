@@ -6017,8 +6017,12 @@
   "opener": -20.5,
   "grp": "power 6",
   "limit": -27.5,
-  "status": "open",
-  "team_eid": 2086
+  "status": "W",
+  "team_eid": 2086,
+  "close": -29.0,
+  "clv": 8.5,
+  "units": 0.847,
+  "final": "Fairleigh Dickinson 65 - Butler 99"
  },
  {
   "id": "401920191|spread|home",
@@ -6067,8 +6071,12 @@
   "opener": 28.5,
   "grp": "low-major",
   "limit": 27.5,
-  "status": "open",
-  "team_eid": 2379
+  "status": "W",
+  "team_eid": 2379,
+  "close": 34.5,
+  "clv": -5.0,
+  "units": 0.893,
+  "final": "Maryland Eastern Shore 49 - High Point 63"
  },
  {
   "id": "401920410|total|under",
@@ -6092,7 +6100,11 @@
   "opener": 151.5,
   "grp": "low-major",
   "limit": 150.0,
-  "status": "open"
+  "status": "W",
+  "close": 146.5,
+  "clv": 5.0,
+  "units": 0.877,
+  "final": "Maryland Eastern Shore 49 - High Point 63"
  },
  {
   "id": "401918052|spread|home",
@@ -6166,7 +6178,11 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 156.5,
-  "status": "open"
+  "status": "L",
+  "close": 154.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Fairleigh Dickinson 65 - Butler 99"
  },
  {
   "id": "401902276|spread|2086|NOV_FAV",
@@ -6191,7 +6207,11 @@
   "opener": -20.5,
   "grp": "power 6",
   "limit": -28.5,
-  "status": "open"
+  "status": "W",
+  "close": -29.0,
+  "clv": 1.5,
+  "units": 0.909,
+  "final": "Fairleigh Dickinson 65 - Butler 99"
  },
  {
   "id": "401918052|spread|25|NOV_FAV",
@@ -7166,6 +7186,31 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 151.5,
+  "status": "open"
+ },
+ {
+  "id": "401924733|spread|2275",
+  "base": "401924733|spread|2275",
+  "flagged": "2026-11-04T21:15-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401924733,
+  "matchup": "Hofstra @ Princeton",
+  "kickoff": "2026-11-05T19:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2275,
+  "pick": "Hofstra +2.5",
+  "book": "DK",
+  "line": 2.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 3.4,
+  "model": 0.9,
+  "opener": 1.5,
+  "grp": "mid-major",
+  "limit": 2.5,
   "status": "open"
  }
 ]
