@@ -7573,5 +7573,30 @@
   "grp": "mid-major",
   "limit": 0.5,
   "status": "open"
+ },
+ {
+  "id": "401921681|spread|2520",
+  "base": "401921681|spread|2520",
+  "flagged": "2026-11-05T11:03-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401921681,
+  "matchup": "New Hampshire @ Rider",
+  "kickoff": "2026-11-05T19:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2520,
+  "pick": "Rider +1.5",
+  "book": "DK",
+  "line": 1.5,
+  "odds": -122.0,
+  "stake": 1.0,
+  "edge": 3.3,
+  "model": 1.8,
+  "opener": -1.5,
+  "grp": "low-major",
+  "limit": 1.5,
+  "status": "open"
  }
 ]
