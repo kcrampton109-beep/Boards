@@ -15315,5 +15315,28 @@
   "grp": "FCS-FCS",
   "limit": 1.0,
   "status": "open"
+ },
+ {
+  "id": "401867964|spread|home|m|FCS",
+  "base": "401867964|spread|home|m",
+  "flagged": "2026-11-05T08:52-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401867964,
+  "matchup": "South Carolina State @ Howard",
+  "kickoff": "2026-11-05 17:00:00-05:00",
+  "tier": "FCS",
+  "market": "spread",
+  "side": "home",
+  "pick": "Howard +17.5",
+  "book": "MGM",
+  "line": 17.5,
+  "odds": -112.0,
+  "stake": 1.0,
+  "edge": 5.5,
+  "model": 12.0,
+  "grp": "FCS-FCS",
+  "limit": 17.5,
+  "status": "open"
  }
 ]
