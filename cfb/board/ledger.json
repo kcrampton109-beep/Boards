@@ -14018,7 +14018,11 @@
   "model": 21.8,
   "grp": "FBS",
   "limit": 27.0,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": 25.5,
+  "units": 0.98,
+  "final": "Toledo 20 - Sacramento State 17"
  },
  {
   "id": "401864533|spread|home|m",
