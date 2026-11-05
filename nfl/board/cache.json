@@ -379,30 +379,30 @@
    }
   },
   "2026_09_LV_SF": {
-   "ts": "2026-11-05T02:57:53.450756-05:00",
+   "ts": "2026-11-05T06:14:48.912763-05:00",
    "wx": {
     "wind": 6.6,
-    "gust": 7.8,
+    "gust": 6.7,
     "temp": 73.0,
     "precip": 0
    }
   },
   "2026_09_GB_NE": {
-   "ts": "2026-11-05T02:57:53.450756-05:00",
+   "ts": "2026-11-05T06:14:48.912763-05:00",
    "wx": {
     "wind": 3.7,
     "gust": 16.1,
     "temp": 45.0,
-    "precip": 2
+    "precip": 4
    }
   },
   "2026_09_ARI_SEA": {
-   "ts": "2026-11-05T02:57:53.450756-05:00",
+   "ts": "2026-11-05T06:14:48.912763-05:00",
    "wx": {
     "wind": 7.3,
     "gust": 9.8,
     "temp": 53.0,
-    "precip": 20
+    "precip": 19
    }
   },
   "2026_09_TB_CHI": {
@@ -1882,7 +1882,7 @@
    }
   },
   "290961": {
-   "ts": "2026-11-05T02:57:53.450756-05:00",
+   "ts": "2026-11-05T06:14:48.912763-05:00",
    "odds": {
     "kenneth walker": {
      "name": "Kenneth Walker III",
@@ -1906,15 +1906,15 @@
     },
     "xavier worthy": {
      "name": "Xavier Worthy",
-     "FD": 175
+     "FD": 180
     },
     "adonai mitchell": {
      "name": "Adonai Mitchell",
-     "FD": 220
+     "FD": 210
     },
     "garrett wilson": {
      "name": "Garrett Wilson",
-     "FD": 220
+     "FD": 210
     },
     "omar cooper": {
      "name": "Omar Cooper Jr.",
@@ -1938,14 +1938,14 @@
     },
     "cyrus allen": {
      "name": "Cyrus Allen",
-     "FD": 440
-    },
-    "noah gray": {
-     "name": "Noah Gray",
-     "FD": 500
+     "FD": 430
     },
     "isaiah davis": {
      "name": "Isaiah Davis",
+     "FD": 480
+    },
+    "noah gray": {
+     "name": "Noah Gray",
      "FD": 500
     },
     "tim patrick": {
@@ -1990,7 +1990,7 @@
     },
     "jelani woods": {
      "name": "Jelani Woods",
-     "FD": 1700
+     "FD": 1800
     },
     "nikko remigio": {
      "name": "Nikko Remigio",
@@ -2000,12 +2000,12 @@
      "name": "Malik McClain",
      "FD": 2500
     },
-    "jaydn ott": {
-     "name": "Jaydn Ott",
-     "FD": 2700
-    },
     "kene nwangwu": {
      "name": "Kene Nwangwu",
+     "FD": 2500
+    },
+    "jaydn ott": {
+     "name": "Jaydn Ott",
      "FD": 2700
     }
    }
