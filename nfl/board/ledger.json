@@ -8694,5 +8694,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_09_LA_WAS:RLM:spread:home",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team": "WAS",
+  "pid": null,
+  "game_id": "2026_09_LA_WAS",
+  "week": 9,
+  "matchup": "LA @ WAS",
+  "kickoff": "Sun Nov 8, 1:00 PM ET",
+  "pick": "WAS +4.5",
+  "line": 4.5,
+  "odds": -110,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": null,
+  "note": "63% of bets on LA, line moved -5.5 \u2192 -4.5 for LA",
+  "limit": null,
+  "model_line": 4.8,
+  "flagged": "2026-11-05T08:21:01.740919-05:00",
+  "kickoff_iso": "2026-11-08T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
