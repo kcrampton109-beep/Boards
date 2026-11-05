@@ -15338,5 +15338,28 @@
   "grp": "FCS-FCS",
   "limit": 17.5,
   "status": "open"
+ },
+ {
+  "id": "401867957|total|under|wx",
+  "base": "401867957|total|under|wx",
+  "flagged": "2026-11-05T13:17-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401867957,
+  "matchup": "Morgan State @ Delaware State",
+  "kickoff": "2026-11-07 13:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 51.5 (wind 17 mph)",
+  "book": "FD",
+  "line": 51.5,
+  "odds": -108.0,
+  "stake": 0.5,
+  "edge": 16.9,
+  "model": null,
+  "grp": "FCS-FCS",
+  "limit": null,
+  "status": "open"
  }
 ]
