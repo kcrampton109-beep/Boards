@@ -15292,5 +15292,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401867996|spread|home|m",
+  "base": "401867996|spread|home|m",
+  "flagged": "2026-11-05T07:59-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401867996,
+  "matchup": "Fordham @ Bucknell",
+  "kickoff": "2026-11-07 13:00:00-05:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Bucknell +2.5",
+  "book": "FD",
+  "line": 2.5,
+  "odds": -106.0,
+  "stake": 1.0,
+  "edge": 4.7,
+  "model": -2.2,
+  "grp": "FCS-FCS",
+  "limit": 1.0,
+  "status": "open"
  }
 ]
