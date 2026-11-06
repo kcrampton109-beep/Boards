@@ -9185,5 +9185,30 @@
   "grp": "mid-major",
   "limit": 144.5,
   "status": "open"
+ },
+ {
+  "id": "401906758|total|under",
+  "base": "401906758|total|under",
+  "flagged": "2026-11-06T13:55-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401906758,
+  "matchup": "Arkansas State @ Alabama",
+  "kickoff": "2026-11-06T19:30:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 177.5",
+  "book": "DK",
+  "line": 177.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.0,
+  "model": 172.5,
+  "opener": 168.5,
+  "grp": "power 6",
+  "limit": 177.5,
+  "status": "open"
  }
 ]
