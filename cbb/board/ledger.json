@@ -9335,5 +9335,30 @@
   "grp": "power 6",
   "limit": -4.0,
   "status": "open"
+ },
+ {
+  "id": "401909532|spread|158|NOV_FAV",
+  "base": "401909532|spread|158",
+  "flagged": "2026-11-06T16:44-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401909532,
+  "matchup": "Providence vs Nebraska",
+  "kickoff": "2026-11-07T19:00:00-05:00",
+  "tier": "NOV_FAV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 158,
+  "pick": "Nebraska -2.5",
+  "book": "FD",
+  "line": -2.5,
+  "odds": -120.0,
+  "stake": 1.0,
+  "edge": 4.5,
+  "model": 7.0,
+  "opener": -4.5,
+  "grp": "power 6",
+  "limit": -3.0,
+  "status": "open"
  }
 ]
