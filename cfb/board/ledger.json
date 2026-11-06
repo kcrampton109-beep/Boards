@@ -15580,5 +15580,28 @@
   "grp": "FCS-FCS",
   "limit": -3.0,
   "status": "open"
+ },
+ {
+  "id": "401867839|spread|home|m",
+  "base": "401867839|spread|home|m",
+  "flagged": "2026-11-06T15:42-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401867839,
+  "matchup": "Dartmouth @ Princeton",
+  "kickoff": "2026-11-07 12:00:00-05:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Princeton +1.5",
+  "book": "DK",
+  "line": 1.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 4.3,
+  "model": -2.8,
+  "grp": "FCS-FCS",
+  "limit": 0.5,
+  "status": "open"
  }
 ]
