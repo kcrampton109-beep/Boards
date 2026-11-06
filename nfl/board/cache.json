@@ -379,29 +379,29 @@
    }
   },
   "2026_09_LV_SF": {
-   "ts": "2026-11-06T10:57:02.093045-05:00",
+   "ts": "2026-11-06T14:00:41.127408-05:00",
    "wx": {
-    "wind": 5.7,
-    "gust": 6.7,
+    "wind": 6.1,
+    "gust": 6.5,
     "temp": 72.0,
     "precip": 0
    }
   },
   "2026_09_GB_NE": {
-   "ts": "2026-11-06T10:57:02.093045-05:00",
+   "ts": "2026-11-06T14:00:41.127408-05:00",
    "wx": {
-    "wind": 8.8,
+    "wind": 10.1,
     "gust": 25.3,
     "temp": 50.0,
     "precip": 0
    }
   },
   "2026_09_ARI_SEA": {
-   "ts": "2026-11-06T10:57:02.093045-05:00",
+   "ts": "2026-11-06T14:00:41.127408-05:00",
    "wx": {
-    "wind": 14.4,
-    "gust": 25.3,
-    "temp": 56.0,
+    "wind": 12.9,
+    "gust": 23.7,
+    "temp": 55.0,
     "precip": 6
    }
   },
@@ -1898,7 +1898,7 @@
    }
   },
   "290961": {
-   "ts": "2026-11-06T10:57:02.093045-05:00",
+   "ts": "2026-11-06T14:00:41.127408-05:00",
    "odds": {
     "kenneth walker": {
      "name": "Kenneth Walker III",
@@ -1938,7 +1938,7 @@
     },
     "mason taylor": {
      "name": "Mason Taylor",
-     "FD": 380
+     "FD": 390
     },
     "patrick mahomes": {
      "name": "Patrick Mahomes",
@@ -1954,7 +1954,7 @@
     },
     "kenyon sadiq": {
      "name": "Kenyon Sadiq",
-     "FD": 550
+     "FD": 500
     },
     "new york jets defense": {
      "name": "New York Jets Defense",
@@ -1974,7 +1974,7 @@
     },
     "andrew armstrong": {
      "name": "Andrew Armstrong",
-     "FD": 950
+     "FD": 1000
     },
     "isaiah williams": {
      "name": "Isaiah Williams",
@@ -1990,11 +1990,11 @@
     },
     "jake briningstool": {
      "name": "Jake Briningstool",
-     "FD": 1600
+     "FD": 1700
     },
     "jared wiley": {
      "name": "Jared Wiley",
-     "FD": 1600
+     "FD": 1700
     },
     "nikko remigio": {
      "name": "Nikko Remigio",
