@@ -10,7 +10,7 @@ lines, so plays are flagged on early-week prices and graded on CLV as well as wi
   STRONG spread  FBS / FBS-vs-FCS: model differs from your best book by >= 7 pts (regular season)
   FCS spread     FCS-vs-FCS: >= 5 pts (DK/FD only; tracked separately, paper-only by your choice)
   RESEARCH       smaller gaps, totals, moneylines, 1H, angles: logged to learn from
-SIZING (since 2026-10-06, see stake_for): strong 9+ 1.5u, strong/FCS/weather 1u, FCS lean 4+ 1u, other leans 0.5u,
+SIZING (since 2026-10-06, see stake_for): strong 9+ 1.5u, FCS 7+ 1.5u (logged from Nov 6), other strong/FCS/weather 1u, FCS lean 4+ 1u, other leans 0.5u,
 research unders 1u, overs/near-wind 0.5u, ML alts 0.25u. Flat ledger backup: board/ledger_backup_flat_2026-10-06.json.
 """
 import datetime as dt, json, math, os, pathlib, sys, threading, time, traceback
@@ -38,7 +38,10 @@ RULES = dict(strong_fbs=7.0, strong_fcs=5.0, lean_fbs=5.0, lean_fcs=3.0, tot_fcs
              # (260 bets; 7+ in weeks 1-6: 55.1%). FBS strong plays count only at early-week prices (the edge is in openers;
              # FBS gaps first reached late in the week went 10-12 live with no CLV). FCS lines post midweek: no timing rule.
              strong_fbs_late=5.0, late_from_week=7, early_days=3.5,
-             max_edge=20.0)  # a 20+ point gap between model and a book is a bad line (e.g. a sign flip), never a play
+             max_edge=20.0,  # a 20+ point gap between model and a book is a bad line (e.g. a sign flip), never a play
+             # Nov 6 (owner's call): FCS gaps of 7+ are 1.5u on plays logged from this time on; earlier entries keep the 1u they were alerted at.
+             # Under these rules 2021-25: 7+ won 61.5% (200 bets), 5-7 won 57.2% (173)
+             fcs_big_gap=7.0, fcs_big_from="2026-11-06T15:50")
 TIER_RANK = {"RESEARCH": 0, "LEAN": 1, "STRONG": 2, "FCS": 2, "WEATHER": 2}
 BACKTEST = {  # median-open results 2021-25 (+2026 YTD), research/opener.py
     "strong_fbs": "FBS & FBS-vs-FCS at early-week prices, gap 7+ in weeks 1-6: 55.1% ATS vs opener in 2021-25 (303 bets); gap 5+ from week 7: 57.7% (260 bets, about 6 a week), line moved our way 1.5 pts on average",
@@ -298,12 +301,16 @@ def payout(o):
 
 def stake_for(f):
     """Units for a play, sized from what is known when it's flagged (2021-25 opener backtest, sizing replay 2026-10-06):
-    strong edge 9+ 1.5u, other strong / FCS / weather 1u; FCS leans 4+ 1u, other leans 0.5u;
+    strong edge 9+ 1.5u, FCS edge 7+ 1.5u (a play with no `flagged` yet is new; older entries stay 1u), other strong / FCS / weather 1u;
+    FCS leans 4+ 1u, other leans 0.5u;
     research: model-total unders 1u, overs and near-miss wind 0.5u, moneyline alts 0.25u."""
     t, m, ed = f["tier"], f["market"], f.get("edge") or 0
     if t == "STRONG":
         return 1.5 if ed >= 9 else 1.0
-    if t in ("FCS", "WEATHER"):
+    if t == "FCS":
+        new = f.get("flagged") is None or f["flagged"] >= RULES["fcs_big_from"]
+        return 1.5 if new and ed >= RULES["fcs_big_gap"] else 1.0
+    if t == "WEATHER":
         return 1.0
     if t == "LEAN":
         return 1.0 if f.get("grp") == "FCS-FCS" and ed >= 4 else 0.5

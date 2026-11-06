@@ -83,7 +83,9 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   and only at early-week prices (`is_early`: Sunday/Monday or 3.5+ days before kickoff); a later gap logs as a lean.
   FCS-vs-FCS (5+) has no timing rule: its lines post midweek.
 - **Graduation** (owner's call, Nov 4): CFB FCS graduated to a proven real-money tier (66 plays, 44-22, CLV +1.5, beat close
-  70%). 1 unit stays $10 and FCS stays 1u on every play (2021-25: FCS gaps 7+ won 58.8%, 5-7 won 57.5%, so no edge sizing).
+  70%). 1 unit stays $10. FCS is 1u, and 1.5u at a 7+ gap on plays logged from Nov 6 (owner's call; `RULES["fcs_big_gap"]`, `fcs_big_from`; earlier
+  entries keep 1u). Under the board's rules 2021-25: 7+ won 61.5% (200 bets), 5-7 won 57.2% (173). The 58.8% vs 57.5% quoted Nov 4 counted 96 bets the board
+  wouldn't log (too few games).
   FBS Strong stays on trial at $10 until 20 plays under the 5-point rule are graded (CLV +0.5, beat close 55%); NFL Strong
   until 40 plays. `tools/checkin.py` scorecards track both; raise graduation as the owner's decision, never change stakes.
 - **CBB paper board** (built Oct 28 2026, `/cbb/`): paper only, flat 1u, no alerts, no Bets/My Bets tab. Model = blend of
