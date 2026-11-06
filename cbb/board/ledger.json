@@ -9010,5 +9010,30 @@
   "grp": "power 6",
   "limit": 144.0,
   "status": "open"
+ },
+ {
+  "id": "401921719|spread|2681",
+  "base": "401921719|spread|2681",
+  "flagged": "2026-11-06T09:20-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401921719,
+  "matchup": "Wagner @ Miami",
+  "kickoff": "2026-11-06T21:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2681,
+  "pick": "Wagner +36.5",
+  "book": "FD",
+  "line": 36.5,
+  "odds": -114.0,
+  "stake": 1.0,
+  "edge": 4.3,
+  "model": -32.2,
+  "opener": 32.5,
+  "grp": "power 6",
+  "limit": 35.5,
+  "status": "open"
  }
 ]
