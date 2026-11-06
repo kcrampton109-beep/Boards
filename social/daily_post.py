@@ -229,7 +229,7 @@ def footer(d, h, season, since, note):
         d.rounded_rectangle((x, y0, x + tw, y0 + 124), radius=16, fill=CARD)
         d.text((x + 22, y0 + 38), lab, font=font(0, 24), fill=MUTED, anchor="ls")
         d.text((x + 22, y0 + 100), val, font=font(2, 46), fill=col, anchor="ls")
-    d.text((X0, y0 + 168), fit(d, f"Live since {since} · 1 unit per play" + (f" · {note}" if note else ""),
+    d.text((X0, y0 + 168), fit(d, f"Live since {since} · 1-2 units per play" + (f" · {note}" if note else ""),
                                 font(0, 24), X1 - X0), font=font(0, 24), fill=MUTED, anchor="ls")
     d.text((X0, h - 34), "21+ · Not betting advice · Gambling problem? Call 1-800-GAMBLER", font=font(0, 21), fill=DIM,
            anchor="ls")
