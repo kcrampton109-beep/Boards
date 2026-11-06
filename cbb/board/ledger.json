@@ -9160,5 +9160,30 @@
   "grp": "power 6",
   "limit": 147.0,
   "status": "open"
+ },
+ {
+  "id": "401920952|total|over",
+  "base": "401920952|total|over",
+  "flagged": "2026-11-06T10:53-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401920952,
+  "matchup": "Southern Illinois @ Kansas City",
+  "kickoff": "2026-11-06T20:30:00-05:00",
+  "tier": "NOV_OVER",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 143.5",
+  "book": "MGM",
+  "line": 143.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 6.4,
+  "model": 149.9,
+  "opener": 145.5,
+  "grp": "mid-major",
+  "limit": 144.5,
+  "status": "open"
  }
 ]
