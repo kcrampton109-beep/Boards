@@ -6060,8 +6060,8 @@
   "limit": -9.5,
   "status": "W",
   "team_eid": 2603,
-  "close": -11.5,
-  "clv": 3.0,
+  "close": -11.0,
+  "clv": 2.5,
   "units": 0.833,
   "final": "Longwood 73 - Saint Joseph's 82"
  },
@@ -6175,8 +6175,8 @@
   "limit": -5.5,
   "status": "L",
   "team_eid": 2351,
-  "close": -5.5,
-  "clv": 0.0,
+  "close": -5.0,
+  "clv": -0.5,
   "units": -1.0,
   "final": "Queens University 96 - Loyola Marymount 95"
  },
@@ -7243,8 +7243,8 @@
   "grp": "mid-major",
   "limit": -5.5,
   "status": "L",
-  "close": -5.5,
-  "clv": 0.0,
+  "close": -5.0,
+  "clv": -0.5,
   "units": -1.0,
   "final": "Queens University 96 - Loyola Marymount 95"
  },
