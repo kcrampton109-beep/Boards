@@ -6521,7 +6521,11 @@
   "opener": -10.5,
   "grp": "power 6",
   "limit": -10.5,
-  "status": "open"
+  "status": "L",
+  "close": -8.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Towson 57 - Utah 67"
  },
  {
   "id": "401918968|spread|2567",
@@ -7184,7 +7188,11 @@
   "opener": -26.5,
   "grp": "power 6",
   "limit": -30.0,
-  "status": "open"
+  "status": "L",
+  "close": -30.5,
+  "clv": 4.0,
+  "units": -1.0,
+  "final": "Bethune-Cookman 58 - Texas Tech 76"
  },
  {
   "id": "401909739|total|under",
@@ -7698,7 +7706,11 @@
   "opener": 140.5,
   "grp": "power 6",
   "limit": 139.5,
-  "status": "open"
+  "status": "L",
+  "close": 137.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Towson 57 - Utah 67"
  },
  {
   "id": "401909726|spread|154",
