@@ -6372,7 +6372,11 @@
   "opener": -15.5,
   "grp": "power 6",
   "limit": -17.0,
-  "status": "open"
+  "status": "L",
+  "close": -12.5,
+  "clv": -3.0,
+  "units": -1.0,
+  "final": "Chattanooga 93 - Penn State 97"
  },
  {
   "id": "401909706|spread|221",
@@ -6422,7 +6426,11 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 152.5,
-  "status": "open"
+  "status": "W",
+  "close": 154.5,
+  "clv": 3.0,
+  "units": 0.87,
+  "final": "Mercer 67 - Virginia Tech 96"
  },
  {
   "id": "401921747|spread|2132",
@@ -6447,7 +6455,11 @@
   "opener": -21.5,
   "grp": "power 6",
   "limit": -22.0,
-  "status": "open"
+  "status": "L",
+  "close": -24.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Green Bay 64 - Cincinnati 81"
  },
  {
   "id": "401913526|spread|356",
@@ -6676,7 +6688,11 @@
   "opener": -17.5,
   "grp": "power 6",
   "limit": -20.5,
-  "status": "open"
+  "status": "L",
+  "close": -17.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Long Island University 60 - Seton Hall 67"
  },
  {
   "id": "401919823|spread|87",
@@ -6701,7 +6717,11 @@
   "opener": -19.5,
   "grp": "power 6",
   "limit": -23.5,
-  "status": "open"
+  "status": "W",
+  "close": -21.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Mercyhurst 56 - Notre Dame 83"
  },
  {
   "id": "401921084|spread|2368",
@@ -6801,7 +6821,11 @@
   "opener": -21.5,
   "grp": "power 6",
   "limit": -22.0,
-  "status": "open"
+  "status": "W",
+  "close": -23.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Central Connecticut 49 - Syracuse 102"
  },
  {
   "id": "401909717|total|over",
@@ -6826,7 +6850,11 @@
   "opener": 138.5,
   "grp": "power 6",
   "limit": 138.5,
-  "status": "open"
+  "status": "W",
+  "close": 134.5,
+  "clv": -4.0,
+  "units": 0.87,
+  "final": "Central Connecticut 49 - Syracuse 102"
  },
  {
   "id": "401921680|spread|2514",
@@ -6851,7 +6879,11 @@
   "opener": -5.5,
   "grp": "low-major",
   "limit": -6.0,
-  "status": "open"
+  "status": "W",
+  "close": -6.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Bryant 56 - Quinnipiac 66"
  },
  {
   "id": "401924718|total|over",
@@ -6876,7 +6908,11 @@
   "opener": 156.5,
   "grp": "mid-major",
   "limit": 158.5,
-  "status": "open"
+  "status": "L",
+  "close": 159.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Cornell 64 - Lehigh 71"
  },
  {
   "id": "401913526|total|under",
@@ -6951,7 +6987,11 @@
   "opener": -5.5,
   "grp": "low-major",
   "limit": -5.5,
-  "status": "open"
+  "status": "L",
+  "close": -5.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Maine 74 - Sacred Heart 72"
  },
  {
   "id": "401919002|spread|2655",
@@ -7155,7 +7195,11 @@
   "opener": -8.5,
   "grp": "low-major",
   "limit": -9.5,
-  "status": "open"
+  "status": "L",
+  "close": -9.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Delaware State 60 - Navy 66"
  },
  {
   "id": "401921679|spread|2771",
@@ -7180,7 +7224,11 @@
   "opener": -6.5,
   "grp": "low-major",
   "limit": -7.0,
-  "status": "open"
+  "status": "L",
+  "close": -9.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "UMass Lowell 71 - Merrimack 61"
  },
  {
   "id": "401906792|spread|344",
@@ -7255,7 +7303,11 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": 2.5,
-  "status": "open"
+  "status": "W",
+  "close": 2.5,
+  "clv": 0.0,
+  "units": 0.847,
+  "final": "Hofstra 58 - Princeton 60"
  },
  {
   "id": "401921747|total|under",
@@ -7280,7 +7332,11 @@
   "opener": 148.5,
   "grp": "power 6",
   "limit": 153.5,
-  "status": "open"
+  "status": "W",
+  "close": 152.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Green Bay 64 - Cincinnati 81"
  },
  {
   "id": "401926780|spread|55",
@@ -7355,7 +7411,11 @@
   "opener": -21.5,
   "grp": "power 6",
   "limit": -21.0,
-  "status": "open"
+  "status": "W",
+  "close": -23.5,
+  "clv": 3.0,
+  "units": 0.847,
+  "final": "Central Connecticut 49 - Syracuse 102"
  },
  {
   "id": "401919732|spread|2916",
@@ -7484,7 +7544,11 @@
   "opener": -1.5,
   "grp": "low-major",
   "limit": 0.0,
-  "status": "open"
+  "status": "L",
+  "close": 1.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Vermont 79 - Fairfield 67"
  },
  {
   "id": "401925819|total|over",
@@ -7509,7 +7573,11 @@
   "opener": 149.5,
   "grp": "mid-major",
   "limit": 145.0,
-  "status": "open"
+  "status": "W",
+  "close": 143.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Georgia State 67 - Charlotte 77"
  },
  {
   "id": "401921698|total|over",
@@ -7588,7 +7656,11 @@
   "opener": -1.5,
   "grp": "mid-major",
   "limit": 0.5,
-  "status": "open"
+  "status": "L",
+  "close": 1.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Cornell 64 - Lehigh 71"
  },
  {
   "id": "401921681|spread|2520",
@@ -7613,7 +7685,11 @@
   "opener": -1.5,
   "grp": "low-major",
   "limit": 1.5,
-  "status": "open"
+  "status": "L",
+  "close": 0.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "New Hampshire 66 - Rider 55"
  },
  {
   "id": "401925031|total|over",
@@ -7942,7 +8018,11 @@
   "opener": 141.5,
   "grp": "mid-major",
   "limit": 138.0,
-  "status": "open"
+  "status": "L",
+  "close": 137.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Hofstra 58 - Princeton 60"
  },
  {
   "id": "401920717|spread|2483",
@@ -8467,6 +8547,31 @@
   "opener": 146.5,
   "grp": "mid-major",
   "limit": 146.5,
+  "status": "open"
+ },
+ {
+  "id": "401920344|spread|2856",
+  "base": "401920344|spread|2856",
+  "flagged": "2026-11-05T21:19-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401920344,
+  "matchup": "California Baptist @ Oregon State",
+  "kickoff": "2026-11-06T21:30:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2856,
+  "pick": "California Baptist +18.5",
+  "book": "MGM",
+  "line": 18.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 4.2,
+  "model": -14.3,
+  "opener": 16.5,
+  "grp": "mid-major",
+  "limit": 17.5,
   "status": "open"
  }
 ]
