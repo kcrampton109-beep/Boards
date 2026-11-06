@@ -15396,5 +15396,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401860912|total|under|wx",
+  "base": "401860912|total|under|wx",
+  "flagged": "2026-11-06T03:33-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401860912,
+  "matchup": "Texas State @ Oregon State",
+  "kickoff": "2026-11-07 22:30:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 71.5 (wind 15 mph)",
+  "book": "DK",
+  "line": 71.5,
+  "odds": -108.0,
+  "stake": 0.5,
+  "edge": 15.4,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
