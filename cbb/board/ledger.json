@@ -6492,7 +6492,11 @@
   "opener": -27.5,
   "grp": "power 6",
   "limit": -28.5,
-  "status": "open"
+  "status": "W",
+  "close": -30.5,
+  "clv": 3.0,
+  "units": 0.87,
+  "final": "Pennsylvania 70 - Illinois 112"
  },
  {
   "id": "401921698|spread|254",
@@ -6600,7 +6604,11 @@
   "opener": 147.5,
   "grp": "power 6",
   "limit": 147.5,
-  "status": "open"
+  "status": "W",
+  "close": 149.5,
+  "clv": 2.0,
+  "units": 0.893,
+  "final": "South Florida 80 - DePaul 82"
  },
  {
   "id": "401920913|spread|202|NOV_FAV",
@@ -6973,7 +6981,11 @@
   "opener": 162.5,
   "grp": "power 6",
   "limit": 165.0,
-  "status": "open"
+  "status": "L",
+  "close": 172.5,
+  "clv": -7.0,
+  "units": -1.0,
+  "final": "Pennsylvania 70 - Illinois 112"
  },
  {
   "id": "401911273|spread|2612",
@@ -8656,6 +8668,56 @@
   "opener": 16.5,
   "grp": "mid-major",
   "limit": 17.5,
+  "status": "open"
+ },
+ {
+  "id": "401906780|spread|61",
+  "base": "401906780|spread|61",
+  "flagged": "2026-11-05T22:56-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401906780,
+  "matchup": "Presbyterian @ Georgia",
+  "kickoff": "2026-11-06T19:00:00-05:00",
+  "tier": "NOV_FAV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 61,
+  "pick": "Georgia -20.5",
+  "book": "FD",
+  "line": -20.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 8.3,
+  "model": 28.8,
+  "opener": -20.5,
+  "grp": "power 6",
+  "limit": -24.5,
+  "status": "open"
+ },
+ {
+  "id": "401921767|spread|277",
+  "base": "401921767|spread|277",
+  "flagged": "2026-11-05T22:56-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401921767,
+  "matchup": "Stetson @ West Virginia",
+  "kickoff": "2026-11-06T19:00:00-05:00",
+  "tier": "NOV_FAV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 277,
+  "pick": "West Virginia -24.5",
+  "book": "FD",
+  "line": -24.5,
+  "odds": -105.0,
+  "stake": 1.0,
+  "edge": 4.4,
+  "model": 28.9,
+  "opener": -24.5,
+  "grp": "power 6",
+  "limit": -24.5,
   "status": "open"
  }
 ]
