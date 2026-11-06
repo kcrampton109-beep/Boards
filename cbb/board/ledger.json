@@ -8960,5 +8960,30 @@
   "grp": "power 6",
   "limit": -32.0,
   "status": "open"
+ },
+ {
+  "id": "401911249|spread|142|NOV_FAV",
+  "base": "401911249|spread|142",
+  "flagged": "2026-11-06T01:38-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401911249,
+  "matchup": "Saint Louis vs Missouri",
+  "kickoff": "2026-11-06T19:00:00-05:00",
+  "tier": "NOV_FAV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 142,
+  "pick": "Missouri -1.5",
+  "book": "MGM",
+  "line": -1.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 4.4,
+  "model": 5.9,
+  "opener": -3.5,
+  "grp": "power 6",
+  "limit": -1.5,
+  "status": "open"
  }
 ]
