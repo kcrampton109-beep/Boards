@@ -7429,11 +7429,11 @@
   "model_line": 3.4,
   "flagged": "2026-11-01T16:44:00.294993-05:00",
   "kickoff_iso": "2026-11-05T20:15:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 1.74,
+  "close": -9.5,
+  "clv": 12.5,
+  "final": "JAX 33 - BAL 10"
  },
  {
   "id": "2026_09_CIN_ATL:STRONG:spread:away",
@@ -7933,11 +7933,11 @@
   "model_line": 5.4,
   "flagged": "2026-11-01T17:16:32.332164-05:00",
   "kickoff_iso": "2026-11-05T20:15:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.43,
+  "close": -9.5,
+  "clv": 12.5,
+  "final": "JAX 33 - BAL 10"
  },
  {
   "id": "2026_09_JAX_BAL:LEAN:spread:home",
@@ -7961,11 +7961,11 @@
   "model_line": 5.4,
   "flagged": "2026-11-01T18:42:14.198028-05:00",
   "kickoff_iso": "2026-11-05T20:15:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": 9.5,
+  "clv": -2.0,
+  "final": "JAX 33 - BAL 10"
  },
  {
   "id": "2026_09_JAX_BAL:RLM:total:under",
@@ -7989,11 +7989,11 @@
   "model_line": 5.4,
   "flagged": "2026-11-01T18:42:14.198028-05:00",
   "kickoff_iso": "2026-11-05T20:15:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 39.5,
+  "clv": 4.0,
+  "final": "JAX 33 - BAL 10"
  },
  {
   "id": "2026_09_CIN_ATL:LEAN:spread:away",
