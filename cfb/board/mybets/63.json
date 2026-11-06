@@ -1,0 +1,23 @@
+{
+ "id": 63,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/63",
+ "board": "CFB",
+ "pick": "Utah Tech +17.5",
+ "odds": -110,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Utah Tech @ UC Davis",
+ "kickoff": "2026-11-07 19:00:00-05:00",
+ "play": "401868166|spread|away|m|FCS",
+ "logged": "2026-11-06T20:36:32Z",
+ "updated": "2026-11-06T20:36:41+00:00",
+ "tier": "FCS",
+ "game_id": 401868166,
+ "board_line": 17.5,
+ "board_odds": -110.0,
+ "board_book": "DK",
+ "market": "spread",
+ "side": "away",
+ "line": 17.5
+}
