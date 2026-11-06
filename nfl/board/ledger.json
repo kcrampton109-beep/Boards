@@ -8722,5 +8722,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_09_DET_MIA:LEAN:spread:away",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "team": "DET",
+  "pid": null,
+  "game_id": "2026_09_DET_MIA",
+  "week": 9,
+  "matchup": "DET @ MIA",
+  "kickoff": "Sun Nov 8, 1:00 PM ET",
+  "pick": "DET -6.5",
+  "line": -6.5,
+  "odds": -115,
+  "book": "DK",
+  "stake": 0.5,
+  "edge": 2.2,
+  "note": null,
+  "limit": -6.5,
+  "model_line": 8.7,
+  "flagged": "2026-11-06T07:35:43.446505-05:00",
+  "kickoff_iso": "2026-11-08T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
