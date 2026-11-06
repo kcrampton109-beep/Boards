@@ -13995,7 +13995,11 @@
   "model": 8.3,
   "grp": "FBS",
   "limit": 13.5,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 13.5,
+  "units": -1.0,
+  "final": "James Madison 54 - Southern Miss 23"
  },
  {
   "id": "401866457|spread|home|m",
@@ -14578,7 +14582,11 @@
   "model": 12.0,
   "grp": "FCS-FCS",
   "limit": 15.5,
-  "status": "open"
+  "status": "W",
+  "clv": -5.0,
+  "close": 21.5,
+  "units": 0.885,
+  "final": "South Carolina State 35 - Howard 28"
  },
  {
   "id": "401868057|spread|away|m",
@@ -15337,7 +15345,11 @@
   "model": 12.0,
   "grp": "FCS-FCS",
   "limit": 17.5,
-  "status": "open"
+  "status": "W",
+  "clv": -4.0,
+  "close": 21.5,
+  "units": 0.893,
+  "final": "South Carolina State 35 - Howard 28"
  },
  {
   "id": "401867957|total|under|wx",
