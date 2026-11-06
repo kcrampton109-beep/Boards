@@ -8985,5 +8985,30 @@
   "grp": "power 6",
   "limit": -1.5,
   "status": "open"
+ },
+ {
+  "id": "401920685|total|over",
+  "base": "401920685|total|over",
+  "flagged": "2026-11-06T08:48-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401920685,
+  "matchup": "UConn vs Michigan",
+  "kickoff": "2026-11-06T20:00:00-05:00",
+  "tier": "NOV_OVER",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 141.5",
+  "book": "MGM",
+  "line": 141.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 7.9,
+  "model": 149.4,
+  "opener": 146.5,
+  "grp": "power 6",
+  "limit": 144.0,
+  "status": "open"
  }
 ]
