@@ -379,7 +379,7 @@
    }
   },
   "2026_09_LV_SF": {
-   "ts": "2026-11-06T14:00:41.127408-05:00",
+   "ts": "2026-11-06T17:50:03.249352-05:00",
    "wx": {
     "wind": 6.1,
     "gust": 6.5,
@@ -388,21 +388,21 @@
    }
   },
   "2026_09_GB_NE": {
-   "ts": "2026-11-06T14:00:41.127408-05:00",
+   "ts": "2026-11-06T17:50:03.249352-05:00",
    "wx": {
     "wind": 10.1,
-    "gust": 25.3,
+    "gust": 25.1,
     "temp": 50.0,
     "precip": 0
    }
   },
   "2026_09_ARI_SEA": {
-   "ts": "2026-11-06T14:00:41.127408-05:00",
+   "ts": "2026-11-06T17:50:03.249352-05:00",
    "wx": {
     "wind": 12.9,
     "gust": 23.7,
     "temp": 55.0,
-    "precip": 6
+    "precip": 28
    }
   },
   "2026_09_TB_CHI": {
@@ -1898,27 +1898,27 @@
    }
   },
   "290961": {
-   "ts": "2026-11-06T14:00:41.127408-05:00",
+   "ts": "2026-11-06T17:50:03.249352-05:00",
    "odds": {
     "kenneth walker": {
      "name": "Kenneth Walker III",
-     "FD": -230
+     "FD": -240
     },
     "rashee rice": {
      "name": "Rashee Rice",
-     "FD": 120
+     "FD": 125
     },
     "travis kelce": {
      "name": "Travis Kelce",
-     "FD": 140
+     "FD": 145
     },
     "xavier worthy": {
      "name": "Xavier Worthy",
-     "FD": 175
+     "FD": 180
     },
     "breece hall": {
      "name": "Breece Hall",
-     "FD": 190
+     "FD": 185
     },
     "braelon allen": {
      "name": "Braelon Allen",
@@ -1936,17 +1936,17 @@
      "name": "Emmett Johnson",
      "FD": 350
     },
+    "patrick mahomes": {
+     "name": "Patrick Mahomes",
+     "FD": 380
+    },
     "mason taylor": {
      "name": "Mason Taylor",
      "FD": 390
     },
-    "patrick mahomes": {
-     "name": "Patrick Mahomes",
-     "FD": 410
-    },
     "cyrus allen": {
      "name": "Cyrus Allen",
-     "FD": 430
+     "FD": 440
     },
     "noah gray": {
      "name": "Noah Gray",
@@ -1970,7 +1970,7 @@
     },
     "jalen royals": {
      "name": "Jalen Royals",
-     "FD": 800
+     "FD": 850
     },
     "andrew armstrong": {
      "name": "Andrew Armstrong",
