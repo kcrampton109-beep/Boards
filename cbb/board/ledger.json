@@ -6347,7 +6347,11 @@
   "opener": 38.5,
   "grp": "power 6",
   "limit": 38.5,
-  "status": "open"
+  "status": "L",
+  "close": 40.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Coastal Carolina 52 - Duke 113"
  },
  {
   "id": "401917177|spread|213",
@@ -6401,7 +6405,11 @@
   "opener": -16.5,
   "grp": "power 6",
   "limit": -16.5,
-  "status": "open"
+  "status": "W",
+  "close": -17.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Buffalo 61 - Pittsburgh 80"
  },
  {
   "id": "401920377|total|over",
@@ -6534,7 +6542,11 @@
   "opener": -23.5,
   "grp": "power 6",
   "limit": -29.0,
-  "status": "open"
+  "status": "W",
+  "close": -24.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "VMI 70 - SMU 95"
  },
  {
   "id": "401920913|spread|202",
@@ -6559,7 +6571,11 @@
   "opener": -15.5,
   "grp": "mid-major",
   "limit": -16.0,
-  "status": "open"
+  "status": "W",
+  "close": -14.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Northern Illinois 75 - Tulsa 94"
  },
  {
   "id": "401909501|total|over",
@@ -6609,7 +6625,11 @@
   "opener": -15.5,
   "grp": "mid-major",
   "limit": -15.0,
-  "status": "open"
+  "status": "W",
+  "close": -14.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Northern Illinois 75 - Tulsa 94"
  },
  {
   "id": "401920913|total|over",
@@ -6634,7 +6654,11 @@
   "opener": 155.5,
   "grp": "mid-major",
   "limit": 152.0,
-  "status": "open"
+  "status": "W",
+  "close": 154.5,
+  "clv": 3.0,
+  "units": 0.909,
+  "final": "Northern Illinois 75 - Tulsa 94"
  },
  {
   "id": "401916287|spread|84",
@@ -6746,7 +6770,11 @@
   "opener": -3.5,
   "grp": "low-major",
   "limit": -4.5,
-  "status": "open"
+  "status": "W",
+  "close": -4.5,
+  "clv": 2.0,
+  "units": 0.833,
+  "final": "UMBC 80 - Marist 88"
  },
  {
   "id": "401921084|total|under",
@@ -6771,7 +6799,11 @@
   "opener": 142.5,
   "grp": "low-major",
   "limit": 142.5,
-  "status": "open"
+  "status": "L",
+  "close": 136.5,
+  "clv": 6.0,
+  "units": -1.0,
+  "final": "UMBC 80 - Marist 88"
  },
  {
   "id": "401921678|spread|2363",
@@ -6796,7 +6828,11 @@
   "opener": -2.5,
   "grp": "low-major",
   "limit": -2.5,
-  "status": "open"
+  "status": "L",
+  "close": -3.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "UAlbany 72 - Manhattan 68"
  },
  {
   "id": "401909717|spread|183",
@@ -6962,7 +6998,11 @@
   "opener": -7.5,
   "grp": "low-major",
   "limit": -7.5,
-  "status": "open"
+  "status": "L",
+  "close": -7.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Binghamton 58 - Saint Peter's 55"
  },
  {
   "id": "401921682|spread|2529",
@@ -7016,7 +7056,11 @@
   "opener": -11.5,
   "grp": "mid-major",
   "limit": -14.5,
-  "status": "open"
+  "status": "L",
+  "close": -12.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Jackson State 87 - Tulane 85"
  },
  {
   "id": "401921094|spread|242",
@@ -7041,7 +7085,11 @@
   "opener": -3.5,
   "grp": "mid-major",
   "limit": -4.5,
-  "status": "open"
+  "status": "L",
+  "close": -3.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "East Texas A&M 72 - Rice 71"
  },
  {
   "id": "401906864|total|over",
@@ -7066,7 +7114,11 @@
   "opener": 153.5,
   "grp": "power 6",
   "limit": 155.0,
-  "status": "open"
+  "status": "L",
+  "close": 154.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Gardner-Webb 50 - Texas 98"
  },
  {
   "id": "401906770|spread|57",
@@ -7091,7 +7143,11 @@
   "opener": -32.5,
   "grp": "power 6",
   "limit": -33.5,
-  "status": "open"
+  "status": "L",
+  "close": -37.5,
+  "clv": 5.0,
+  "units": -1.0,
+  "final": "Jacksonville 57 - Florida 88"
  },
  {
   "id": "401921133|spread|2641",
@@ -7253,7 +7309,11 @@
   "opener": -20.5,
   "grp": "power 6",
   "limit": -20.5,
-  "status": "open"
+  "status": "W",
+  "close": -21.5,
+  "clv": 1.0,
+  "units": 0.847,
+  "final": "Northwestern State 44 - Mississippi State 82"
  },
  {
   "id": "401906792|total|over",
@@ -7278,7 +7338,11 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 151.5,
-  "status": "open"
+  "status": "L",
+  "close": 151.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Northwestern State 44 - Mississippi State 82"
  },
  {
   "id": "401924733|spread|2275",
@@ -7361,7 +7425,11 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": 4.0,
-  "status": "open"
+  "status": "W",
+  "close": 5.5,
+  "clv": -1.0,
+  "units": 0.98,
+  "final": "Jacksonville State 80 - South Alabama 83"
  },
  {
   "id": "401911229|spread|2698",
@@ -7386,7 +7454,11 @@
   "opener": 15.5,
   "grp": "mid-major",
   "limit": 17.5,
-  "status": "open"
+  "status": "L",
+  "close": 17.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "West Georgia 53 - Loyola Chicago 76"
  },
  {
   "id": "401909717|spread|183|NOV_FAV",
@@ -7440,7 +7512,11 @@
   "opener": -7.5,
   "grp": "low-major",
   "limit": -9.5,
-  "status": "open"
+  "status": "L",
+  "close": -8.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Chicago State 66 - Incarnate Word 54"
  },
  {
   "id": "401925684|spread|2016",
@@ -7465,7 +7541,11 @@
   "opener": 6.5,
   "grp": "low-major",
   "limit": 8.5,
-  "status": "open"
+  "status": "L",
+  "close": 9.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Howard 94 - Alcorn State 83"
  },
  {
   "id": "401925031|spread|249",
@@ -7519,7 +7599,11 @@
   "opener": 143.5,
   "grp": "mid-major",
   "limit": 144.0,
-  "status": "open"
+  "status": "L",
+  "close": 141.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Stonehill 63 - Fordham 83"
  },
  {
   "id": "401920691|spread|2217",
