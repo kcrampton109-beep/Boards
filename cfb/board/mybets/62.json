@@ -1,0 +1,23 @@
+{
+ "id": 62,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/62",
+ "board": "CFB",
+ "pick": "Northwestern State +20.5",
+ "odds": -112,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "UT Rio Grande Valley @ Northwestern State",
+ "kickoff": "2026-11-07 14:00:00-05:00",
+ "play": "401868252|spread|home|m",
+ "logged": "2026-11-06T20:35:47Z",
+ "updated": "2026-11-06T20:35:56+00:00",
+ "tier": "FCS",
+ "game_id": 401868252,
+ "board_line": 20.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 20.5
+}
