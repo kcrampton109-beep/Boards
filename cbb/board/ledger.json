@@ -5918,8 +5918,12 @@
   "opener": 5.5,
   "grp": "power 6",
   "limit": 1.5,
-  "status": "open",
-  "team_eid": 130
+  "status": "L",
+  "team_eid": 130,
+  "close": 7.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "UConn 85 - Michigan 77"
  },
  {
   "id": "401919028|spread|away",
@@ -7856,8 +7860,8 @@
   "grp": "power 6",
   "limit": 145.5,
   "status": "L",
-  "close": 143.5,
-  "clv": -2.0,
+  "close": 144.5,
+  "clv": -1.0,
   "units": -1.0,
   "final": "Massachusetts 55 - Boston College 71"
  },
@@ -7884,7 +7888,11 @@
   "opener": -18.5,
   "grp": "power 6",
   "limit": -18.5,
-  "status": "open"
+  "status": "W",
+  "close": -16.5,
+  "clv": -2.0,
+  "units": 0.833,
+  "final": "Central Arkansas 60 - Ole Miss 92"
  },
  {
   "id": "401922021|spread|304",
@@ -7909,7 +7917,11 @@
   "opener": 18.5,
   "grp": "mid-major",
   "limit": 18.0,
-  "status": "open"
+  "status": "L",
+  "close": 18.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Idaho State 62 - Wyoming 93"
  },
  {
   "id": "401909785|spread|2393",
@@ -8894,8 +8906,8 @@
   "grp": "mid-major",
   "limit": 150.5,
   "status": "W",
-  "close": 143.5,
-  "clv": 17.0,
+  "close": 144.5,
+  "clv": 16.0,
   "units": 0.87,
   "final": "Boston University 72 - Brown 67"
  },
@@ -9125,7 +9137,11 @@
   "opener": 146.5,
   "grp": "power 6",
   "limit": 144.0,
-  "status": "open"
+  "status": "W",
+  "close": 142.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "UConn 85 - Michigan 77"
  },
  {
   "id": "401921719|spread|2681",
@@ -9262,7 +9278,11 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": 3.5,
-  "status": "open"
+  "status": "W",
+  "close": 3.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Texas A&M-Corpus Christi 67 - Louisiana 60"
  },
  {
   "id": "401909772|total|over",
@@ -9861,7 +9881,11 @@
   "opener": -18.5,
   "grp": "power 6",
   "limit": -16.5,
-  "status": "open"
+  "status": "W",
+  "close": -16.5,
+  "clv": 0.0,
+  "units": 0.847,
+  "final": "Central Arkansas 60 - Ole Miss 92"
  },
  {
   "id": "401928352|spread|2473",
