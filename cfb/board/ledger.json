@@ -15603,5 +15603,28 @@
   "grp": "FCS-FCS",
   "limit": 0.5,
   "status": "open"
+ },
+ {
+  "id": "401868153|spread|home|m",
+  "base": "401868153|spread|home|m",
+  "flagged": "2026-11-06T22:26-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401868153,
+  "matchup": "Northern Colorado @ Southern Utah",
+  "kickoff": "2026-11-07 15:00:00-05:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Southern Utah -8.5",
+  "book": "FD",
+  "line": -8.5,
+  "odds": -118.0,
+  "stake": 0.5,
+  "edge": 3.5,
+  "model": -12.0,
+  "grp": "FCS-FCS",
+  "limit": -8.5,
+  "status": "open"
  }
 ]
