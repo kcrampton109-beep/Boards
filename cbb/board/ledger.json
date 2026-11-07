@@ -10257,7 +10257,11 @@
   "opener": 35.5,
   "grp": "power 6",
   "limit": 38.5,
-  "status": "open"
+  "status": "L",
+  "close": 37.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Morehead State 57 - Louisville 107"
  },
  {
   "id": "401926201|total|under",
