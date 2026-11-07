@@ -8192,7 +8192,11 @@
   "opener": -17.5,
   "grp": "power 6",
   "limit": -19.5,
-  "status": "open"
+  "status": "L",
+  "close": -19.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Valparaiso 83 - Purdue 80"
  },
  {
   "id": "401911249|spread|142",
@@ -8217,7 +8221,11 @@
   "opener": -3.5,
   "grp": "power 6",
   "limit": -3.0,
-  "status": "open"
+  "status": "L",
+  "close": -2.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Saint Louis 90 - Missouri 84"
  },
  {
   "id": "401909695|spread|52",
@@ -8267,7 +8275,11 @@
   "opener": -9.5,
   "grp": "power 6",
   "limit": -10.5,
-  "status": "open"
+  "status": "W",
+  "close": -9.5,
+  "clv": 0.0,
+  "units": 0.833,
+  "final": "Yale 75 - UCF 87"
  },
  {
   "id": "401921754|total|over",
@@ -8292,7 +8304,11 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 155.0,
-  "status": "open"
+  "status": "W",
+  "close": 152.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Yale 75 - UCF 87"
  },
  {
   "id": "401921802|spread|96",
@@ -8396,7 +8412,11 @@
   "opener": -15.5,
   "grp": "power 6",
   "limit": -18.0,
-  "status": "open"
+  "status": "L",
+  "close": -17.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "East Tennessee State 63 - NC State 77"
  },
  {
   "id": "401920733|spread|77",
@@ -8587,7 +8607,11 @@
   "opener": -17.5,
   "grp": "power 6",
   "limit": -20.5,
-  "status": "open"
+  "status": "L",
+  "close": -15.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "American University 73 - Clemson 82"
  },
  {
   "id": "401916304|spread|135",
@@ -8737,7 +8761,11 @@
   "opener": -20.5,
   "grp": "power 6",
   "limit": -24.5,
-  "status": "open"
+  "status": "L",
+  "close": -24.5,
+  "clv": 4.0,
+  "units": -1.0,
+  "final": "Presbyterian 77 - Georgia 91"
  },
  {
   "id": "401921767|spread|277",
@@ -8762,7 +8790,11 @@
   "opener": -24.5,
   "grp": "power 6",
   "limit": -24.5,
-  "status": "open"
+  "status": "W",
+  "close": -27.5,
+  "clv": 3.0,
+  "units": 0.952,
+  "final": "Stetson 53 - West Virginia 91"
  },
  {
   "id": "401920807|spread|94",
@@ -8841,7 +8873,11 @@
   "opener": 160.5,
   "grp": "mid-major",
   "limit": 150.5,
-  "status": "open"
+  "status": "W",
+  "close": 143.5,
+  "clv": 17.0,
+  "units": 0.87,
+  "final": "Boston University 72 - Brown 67"
  },
  {
   "id": "401920072|spread|2244",
@@ -8866,7 +8902,11 @@
   "opener": -26.5,
   "grp": "mid-major",
   "limit": -26.5,
-  "status": "open"
+  "status": "L",
+  "close": -27.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Coppin State 51 - George Mason 68"
  },
  {
   "id": "401921767|total|over",
@@ -8891,7 +8931,11 @@
   "opener": 143.5,
   "grp": "power 6",
   "limit": 141.5,
-  "status": "open"
+  "status": "W",
+  "close": 139.5,
+  "clv": -2.0,
+  "units": 0.87,
+  "final": "Stetson 53 - West Virginia 91"
  },
  {
   "id": "401919015|spread|2447",
@@ -9016,7 +9060,11 @@
   "opener": -3.5,
   "grp": "power 6",
   "limit": -1.5,
-  "status": "open"
+  "status": "L",
+  "close": -2.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Saint Louis 90 - Missouri 84"
  },
  {
   "id": "401920685|total|over",
@@ -9120,7 +9168,11 @@
   "opener": -22.5,
   "grp": "power 6",
   "limit": -19.5,
-  "status": "open"
+  "status": "W",
+  "close": -20.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "Wofford 70 - North Carolina 109"
  },
  {
   "id": "401920894|total|under",
@@ -9145,7 +9197,11 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 156.5,
-  "status": "open"
+  "status": "W",
+  "close": 155.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Delaware 64 - Wisconsin 73"
  },
  {
   "id": "401925097|spread|357",
@@ -9545,7 +9601,11 @@
   "opener": 154.5,
   "grp": "low-major",
   "limit": 151.5,
-  "status": "open"
+  "status": "L",
+  "close": 150.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "UNC Greensboro 65 - Elon 74"
  },
  {
   "id": "401919040|spread|197",
@@ -10020,6 +10080,81 @@
   "opener": -11.5,
   "grp": "mid-major",
   "limit": -11.0,
+  "status": "open"
+ },
+ {
+  "id": "401918948|spread|2413",
+  "base": "401918948|spread|2413",
+  "flagged": "2026-11-06T21:27-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401918948,
+  "matchup": "Morehead State @ Louisville",
+  "kickoff": "2026-11-07T12:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2413,
+  "pick": "Morehead State +38.5",
+  "book": "MGM",
+  "line": 38.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 3.0,
+  "model": -35.5,
+  "opener": 35.5,
+  "grp": "power 6",
+  "limit": 38.5,
+  "status": "open"
+ },
+ {
+  "id": "401926201|total|under",
+  "base": "401926201|total|under",
+  "flagged": "2026-11-06T21:27-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401926201,
+  "matchup": "VMI @ UTSA",
+  "kickoff": "2026-11-07T17:00:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 164.5",
+  "book": "MGM",
+  "line": 164.5,
+  "odds": -105.0,
+  "stake": 1.0,
+  "edge": 5.4,
+  "model": 159.1,
+  "opener": 161.5,
+  "grp": "mid-major",
+  "limit": 164.5,
+  "status": "open"
+ },
+ {
+  "id": "401928788|spread|166",
+  "base": "401928788|spread|166",
+  "flagged": "2026-11-06T21:27-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401928788,
+  "matchup": "New Mexico State @ Gonzaga",
+  "kickoff": "2026-11-07T17:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 166,
+  "pick": "New Mexico State +28.5",
+  "book": "MGM",
+  "line": 28.5,
+  "odds": -105.0,
+  "stake": 1.0,
+  "edge": 3.9,
+  "model": -24.6,
+  "opener": 27.5,
+  "grp": "mid-major",
+  "limit": 28.0,
   "status": "open"
  }
 ]
