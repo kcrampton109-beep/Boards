@@ -7860,8 +7860,8 @@
   "grp": "power 6",
   "limit": 145.5,
   "status": "L",
-  "close": 144.5,
-  "clv": -1.0,
+  "close": 143.5,
+  "clv": -2.0,
   "units": -1.0,
   "final": "Massachusetts 55 - Boston College 71"
  },
@@ -8962,8 +8962,8 @@
   "grp": "mid-major",
   "limit": 150.5,
   "status": "W",
-  "close": 144.5,
-  "clv": 16.0,
+  "close": 143.5,
+  "clv": 17.0,
   "units": 0.87,
   "final": "Boston University 72 - Brown 67"
  },
