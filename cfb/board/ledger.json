@@ -15636,5 +15636,28 @@
   "grp": "FCS-FCS",
   "limit": -8.5,
   "status": "open"
+ },
+ {
+  "id": "401858515|spread|home|m",
+  "base": "401858515|spread|home|m",
+  "flagged": "2026-11-07T05:21-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401858515,
+  "matchup": "Maryland @ Purdue",
+  "kickoff": "2026-11-07 12:30:00-05:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Purdue -4.5",
+  "book": "DK",
+  "line": -4.5,
+  "odds": -112.0,
+  "stake": 0.5,
+  "edge": 5.4,
+  "model": -9.9,
+  "grp": "FBS",
+  "limit": -4.5,
+  "status": "open"
  }
 ]
