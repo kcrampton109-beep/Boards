@@ -15728,5 +15728,28 @@
   "grp": "FCS-FCS",
   "limit": 15.0,
   "status": "open"
+ },
+ {
+  "id": "401868259|spread|home|m",
+  "base": "401868259|spread|home|m",
+  "flagged": "2026-11-07T11:35-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401868259,
+  "matchup": "San Diego @ Drake",
+  "kickoff": "2026-11-07 13:00:00-05:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Drake +2.5",
+  "book": "FD",
+  "line": 2.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 3.2,
+  "model": -0.7,
+  "grp": "FCS-FCS",
+  "limit": 2.5,
+  "status": "open"
  }
 ]
