@@ -13949,7 +13949,11 @@
   "model": -11.4,
   "grp": "FBS",
   "limit": -6.0,
-  "status": "open"
+  "status": "W",
+  "clv": 1.5,
+  "close": -4.0,
+  "units": 0.82,
+  "final": "BYU 20 - Utah 28"
  },
  {
   "id": "401856849|moneyline|home|m",
@@ -13972,7 +13976,9 @@
   "model": 76.9,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.176,
+  "final": "BYU 20 - Utah 28"
  },
  {
   "id": "401869964|spread|home|m",
@@ -14168,7 +14174,11 @@
   "model": -1.2,
   "grp": "FBS",
   "limit": 4.0,
-  "status": "open"
+  "status": "L",
+  "clv": -1.5,
+  "close": 7.0,
+  "units": -1.0,
+  "final": "Oklahoma State 66 - Kansas State 28"
  },
  {
   "id": "401856854|moneyline|home|m",
@@ -14191,7 +14201,9 @@
   "model": 53.2,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Oklahoma State 66 - Kansas State 28"
  },
  {
   "id": "401858290|spread|home|m",
@@ -14354,7 +14366,11 @@
   "model": -3.3,
   "grp": "FBS",
   "limit": 2.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 3.0,
+  "units": -1.0,
+  "final": "Tulsa 60 - Tulane 10"
  },
  {
   "id": "401862822|moneyline|home|m",
@@ -14377,7 +14393,9 @@
   "model": 58.5,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Tulsa 60 - Tulane 10"
  },
  {
   "id": "401871076|spread|away|m",
@@ -14707,7 +14725,11 @@
   "model": -8.4,
   "grp": "FCS-FCS",
   "limit": -5.0,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": -6.5,
+  "units": 0.943,
+  "final": "Illinois State 21 - North Dakota 49"
  },
  {
   "id": "401867872|spread|home|m",
@@ -14753,7 +14775,11 @@
   "model": -10.7,
   "grp": "FCS-FCS",
   "limit": -7.5,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": -9.5,
+  "units": 0.442,
+  "final": "Richmond 0 - Villanova 30"
  },
  {
   "id": "401868082|spread|home|m",
@@ -14799,7 +14825,11 @@
   "model": 47.1,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 7.0,
+  "close": 47.5,
+  "units": 0.885,
+  "final": "Valparaiso 20 - Dayton 31"
  },
  {
   "id": "401868302|spread|home|m",
@@ -14845,7 +14875,11 @@
   "model": 10.7,
   "grp": "FCS-FCS",
   "limit": 16.0,
-  "status": "open"
+  "status": "L",
+  "clv": 5.0,
+  "close": 14.5,
+  "units": -1.0,
+  "final": "South Dakota State 41 - Northern Iowa 15"
  },
  {
   "id": "401866686|spread|home|m",
@@ -14868,7 +14902,11 @@
   "model": 3.0,
   "grp": "FCS-FCS",
   "limit": 6.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 6.5,
+  "units": 0.442,
+  "final": "Rhode Island 21 - New Hampshire 24"
  },
  {
   "id": "401866686|total|over|m",
@@ -14891,7 +14929,11 @@
   "model": 51.4,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 45.5,
+  "units": 0.442,
+  "final": "Rhode Island 21 - New Hampshire 24"
  },
  {
   "id": "401868166|spread|away|m",
@@ -14960,7 +15002,11 @@
   "model": -14.4,
   "grp": "FCS-FCS",
   "limit": -11.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -9.5,
+  "units": -1.0,
+  "final": "Robert Morris 13 - Duquesne 10"
  },
  {
   "id": "401867933|total|over|m",
@@ -14983,7 +15029,11 @@
   "model": 54.8,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 48.5,
+  "units": 0.442,
+  "final": "Wagner 33 - Mercyhurst 28"
  },
  {
   "id": "401868031|total|over|m",
@@ -15006,7 +15056,11 @@
   "model": 58.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 52.5,
+  "units": -0.5,
+  "final": "Lafayette 19 - William & Mary 14"
  },
  {
   "id": "401868090|spread|home|m",
@@ -15075,7 +15129,11 @@
   "model": -11.0,
   "grp": "FCS-FCS",
   "limit": -8.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -6.5,
+  "units": -1.0,
+  "final": "Lindenwood 34 - Gardner-Webb 21"
  },
  {
   "id": "401868200|total|under|m",
@@ -15121,7 +15179,11 @@
   "model": 52.9,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 5.0,
+  "close": 54.5,
+  "units": 0.885,
+  "final": "St. Thomas (MN) 14 - Butler 41"
  },
  {
   "id": "401868232|spread|home|m",
@@ -15144,7 +15206,11 @@
   "model": -11.9,
   "grp": "FCS-FCS",
   "limit": -8.5,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": -8.5,
+  "units": 0.424,
+  "final": "Valparaiso 20 - Dayton 31"
  },
  {
   "id": "401868252|spread|home|m",
@@ -15167,7 +15233,11 @@
   "model": 12.5,
   "grp": "FCS-FCS",
   "limit": 17.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 20.5,
+  "units": -1.0,
+  "final": "UT Rio Grande Valley 52 - Northwestern State 7"
  },
  {
   "id": "401868268|spread|home|m",
@@ -15190,7 +15260,11 @@
   "model": -18.9,
   "grp": "FCS-FCS",
   "limit": -15.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": -15.0,
+  "units": -1.0,
+  "final": "Morehead State 13 - Marist 14"
  },
  {
   "id": "401868331|total|under|m",
@@ -15305,7 +15379,11 @@
   "model": 56.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 52.5,
+  "units": -0.5,
+  "final": "Morgan State 14 - Delaware State 24"
  },
  {
   "id": "401867996|spread|home|m",
@@ -15328,7 +15406,11 @@
   "model": -2.2,
   "grp": "FCS-FCS",
   "limit": 1.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 2.5,
+  "units": -1.0,
+  "final": "Fordham 38 - Bucknell 13"
  },
  {
   "id": "401867964|spread|home|m|FCS",
@@ -15378,7 +15460,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": -1.0,
+  "close": 52.5,
+  "units": 0.463,
+  "final": "Morgan State 14 - Delaware State 24"
  },
  {
   "id": "401867933|total|under|wx",
@@ -15401,7 +15487,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 48.5,
+  "units": -0.5,
+  "final": "Wagner 33 - Mercyhurst 28"
  },
  {
   "id": "401860912|total|under|wx",
@@ -15543,7 +15633,11 @@
   "model": -11.0,
   "grp": "FCS-FCS",
   "limit": -6.0,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": -6.5,
+  "units": -1.0,
+  "final": "Lindenwood 34 - Gardner-Webb 21"
  },
  {
   "id": "401868191|moneyline|home|m",
@@ -15566,7 +15660,9 @@
   "model": 76.2,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Lindenwood 34 - Gardner-Webb 21"
  },
  {
   "id": "401868945|spread|home|m",
@@ -15612,7 +15708,11 @@
   "model": -2.8,
   "grp": "FCS-FCS",
   "limit": 0.5,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": -1.5,
+  "units": 0.847,
+  "final": "Dartmouth 14 - Princeton 21"
  },
  {
   "id": "401868153|spread|home|m",
@@ -15658,7 +15758,11 @@
   "model": -9.9,
   "grp": "FBS",
   "limit": -4.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": -5.0,
+  "units": -0.5,
+  "final": "Maryland 34 - Purdue 29"
  },
  {
   "id": "401868005|total|under|wx",
@@ -15681,7 +15785,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 43.5,
+  "units": 0.442,
+  "final": "Colgate 7 - Lehigh 33"
  },
  {
   "id": "401868313|total|over|m",
@@ -15750,7 +15858,11 @@
   "model": -0.7,
   "grp": "FCS-FCS",
   "limit": 2.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 2.5,
+  "units": -0.5,
+  "final": "San Diego 40 - Drake 17"
  },
  {
   "id": "401868216|spread|home|m",
@@ -15773,7 +15885,11 @@
   "model": -2.0,
   "grp": "FCS-FCS",
   "limit": 1.5,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 1.5,
+  "units": 0.455,
+  "final": "St. Thomas (MN) 14 - Butler 41"
  },
  {
   "id": "401868331|spread|away|m",
