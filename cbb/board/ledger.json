@@ -10608,5 +10608,30 @@
   "grp": "mid-major",
   "limit": 147.5,
   "status": "open"
+ },
+ {
+  "id": "401924912|spread|2439",
+  "base": "401924912|spread|2439",
+  "flagged": "2026-11-07T00:51-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401924912,
+  "matchup": "Samford @ UNLV",
+  "kickoff": "2026-11-07T16:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2439,
+  "pick": "UNLV -10.5",
+  "book": "DK",
+  "line": -10.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 3.2,
+  "model": 13.7,
+  "opener": -11.5,
+  "grp": "mid-major",
+  "limit": -10.5,
+  "status": "open"
  }
 ]
