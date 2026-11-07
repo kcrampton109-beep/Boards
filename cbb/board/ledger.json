@@ -10661,7 +10661,11 @@
   "opener": 13.5,
   "grp": "low-major",
   "limit": 13.5,
-  "status": "open"
+  "status": "W",
+  "close": 15.5,
+  "clv": -2.0,
+  "units": 0.87,
+  "final": "North Carolina A&T 70 - Ohio 80"
  },
  {
   "id": "401924895|spread|2464",
