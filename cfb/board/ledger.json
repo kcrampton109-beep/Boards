@@ -15705,5 +15705,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401868108|spread|home|m",
+  "base": "401868108|spread|home|m",
+  "flagged": "2026-11-07T10:31-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401868108,
+  "matchup": "Montana State @ Idaho State",
+  "kickoff": "2026-11-07 18:00:00-05:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Idaho State +15.5",
+  "book": "DK",
+  "line": 15.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 3.6,
+  "model": 11.9,
+  "grp": "FCS-FCS",
+  "limit": 15.0,
+  "status": "open"
  }
 ]
