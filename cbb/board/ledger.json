@@ -8250,7 +8250,11 @@
   "opener": -18.5,
   "grp": "power 6",
   "limit": -18.5,
-  "status": "open"
+  "status": "W",
+  "close": -22.5,
+  "clv": 4.0,
+  "units": 0.87,
+  "final": "Troy 68 - Florida State 91"
  },
  {
   "id": "401921754|spread|2116",
@@ -8362,7 +8366,11 @@
   "opener": 30.5,
   "grp": "power 6",
   "limit": 27.5,
-  "status": "open"
+  "status": "L",
+  "close": 32.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Detroit Mercy 32 - Marquette 93"
  },
  {
   "id": "401920952|spread|79",
@@ -8960,7 +8968,11 @@
   "opener": 11.5,
   "grp": "mid-major",
   "limit": 13.5,
-  "status": "open"
+  "status": "W",
+  "close": 15.5,
+  "clv": -2.0,
+  "units": 0.952,
+  "final": "Nicholls 63 - UAB 70"
  },
  {
   "id": "401906802|spread|201",
@@ -8985,7 +8997,11 @@
   "opener": -38.5,
   "grp": "power 6",
   "limit": -38.5,
-  "status": "open"
+  "status": "L",
+  "close": -41.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Mississippi Valley State 57 - Oklahoma 84"
  },
  {
   "id": "401919048|spread|2628",
@@ -9301,7 +9317,11 @@
   "opener": 168.5,
   "grp": "power 6",
   "limit": 177.5,
-  "status": "open"
+  "status": "L",
+  "close": 178.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Arkansas State 86 - Alabama 101"
  },
  {
   "id": "401909760|spread|38",
@@ -9376,7 +9396,11 @@
   "opener": -25.5,
   "grp": "power 6",
   "limit": -24.5,
-  "status": "open"
+  "status": "L",
+  "close": -26.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Arkansas State 86 - Alabama 101"
  },
  {
   "id": "401928823|total|over",
@@ -9476,7 +9500,11 @@
   "opener": 3.5,
   "grp": "mid-major",
   "limit": 4.5,
-  "status": "open"
+  "status": "L",
+  "close": 3.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Florida Atlantic 71 - Wright State 97"
  },
  {
   "id": "401909785|total|under",
@@ -10155,6 +10183,31 @@
   "opener": 27.5,
   "grp": "mid-major",
   "limit": 28.0,
+  "status": "open"
+ },
+ {
+  "id": "401911186|total|over",
+  "base": "401911186|total|over",
+  "flagged": "2026-11-06T21:52-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401911186,
+  "matchup": "Northern Illinois @ Dayton",
+  "kickoff": "2026-11-07T19:00:00-05:00",
+  "tier": "NOV_OVER",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 145.5",
+  "book": "MGM",
+  "line": 145.5,
+  "odds": -105.0,
+  "stake": 1.0,
+  "edge": 5.5,
+  "model": 151.0,
+  "opener": 151.5,
+  "grp": "mid-major",
+  "limit": 146.0,
   "status": "open"
  }
 ]
