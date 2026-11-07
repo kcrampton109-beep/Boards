@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Today's post</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--text:#14171a;--muted:#5b6570;--line:#d9dee3;--accent:#1d6fd6}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--card:#161b22;--text:#f0f6fc;--muted:#9aa4ae;--line:#30363d;--accent:#58a6ff}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:560px;margin:0 auto;padding:16px}
+h1{font-size:20px;margin:4px 0 2px} p{margin:0 0 12px;color:var(--muted);font-size:14px}
+.cap{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin:12px 0}
+textarea{width:100%;box-sizing:border-box;min-height:120px;border:0;background:transparent;color:var(--text);font:inherit;resize:vertical}
+button{font:inherit;padding:10px 16px;border-radius:10px;border:1px solid var(--accent);background:var(--accent);color:#fff}
+img{width:100%;border-radius:12px;margin:0 0 12px;display:block}
+</style></head><body><main>
+<h1>Model plays · Sat Nov 7</h1><p>19 plays, 2 images · made Sat Nov 7, 9:35 AM ET. Long-press each image to save it, then copy the caption.</p>
+<div class="cap"><textarea id="cap" readonly>Model plays for Sat Nov 7: 19 plays, logged at the opening line and graded in public. Live record 102-69, +28.3u, 62% beat the close. Full log: link in bio. 21+ #CFB</textarea>
+<button id="copy" type="button">Copy caption</button> <span id="ok" style="color:var(--muted);font-size:14px"></span></div>
+<img src="post_1.png?v=20261107143507" alt="Post image 1">
+<img src="post_2.png?v=20261107143507" alt="Post image 2">
+</main><script>
+document.getElementById('copy').onclick=async()=>{const t=document.getElementById('cap');
+try{await navigator.clipboard.writeText(t.value)}catch(e){t.select();document.execCommand('copy')}
+document.getElementById('ok').textContent='Copied';};
+</script></body></html>
