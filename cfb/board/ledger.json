@@ -14049,7 +14049,11 @@
   "model": 6.3,
   "grp": "FBS",
   "limit": 11.5,
-  "status": "open"
+  "status": "L",
+  "clv": 2.5,
+  "close": 10.0,
+  "units": -1.0,
+  "final": "New Mexico 31 - Nevada 3"
  },
  {
   "id": "401856742|spread|home|m",
@@ -14325,7 +14329,9 @@
   "model": 33.8,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "New Mexico 31 - Nevada 3"
  },
  {
   "id": "401862822|spread|home|m",
