@@ -8778,5 +8778,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_09_NYJ_KC:RLM:spread:away",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "away",
+  "team": "NYJ",
+  "pid": null,
+  "game_id": "2026_09_NYJ_KC",
+  "week": 9,
+  "matchup": "NYJ @ KC",
+  "kickoff": "Sun Nov 8, 1:00 PM ET",
+  "pick": "NYJ +9.5",
+  "line": 9.5,
+  "odds": -105,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "72% of bets on KC, line moved -9.5 \u2192 -8.5",
+  "limit": null,
+  "model_line": -8.9,
+  "flagged": "2026-11-07T01:28:42.922589-05:00",
+  "kickoff_iso": "2026-11-08T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
