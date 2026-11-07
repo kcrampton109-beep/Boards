@@ -1,0 +1,23 @@
+{
+ "id": 64,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/64",
+ "board": "CFB",
+ "pick": "Gardner-Webb -5.5",
+ "odds": -113,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Lindenwood @ Gardner-Webb",
+ "kickoff": "2026-11-07 13:30:00-05:00",
+ "play": "401868191|spread|home|m|FCS",
+ "logged": "2026-11-07T15:19:04Z",
+ "updated": "2026-11-07T15:19:11+00:00",
+ "tier": "FCS",
+ "game_id": 401868191,
+ "board_line": -5.5,
+ "board_odds": -113.0,
+ "board_book": "DK",
+ "market": "spread",
+ "side": "home",
+ "line": -5.5
+}
