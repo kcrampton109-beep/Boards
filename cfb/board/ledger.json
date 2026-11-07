@@ -15774,5 +15774,28 @@
   "grp": "FCS-FCS",
   "limit": 1.5,
   "status": "open"
+ },
+ {
+  "id": "401868331|spread|away|m",
+  "base": "401868331|spread|away|m",
+  "flagged": "2026-11-07T13:10-05:00",
+  "season": 2026,
+  "week": 10,
+  "game_id": 401868331,
+  "matchup": "Alabama State @ Texas Southern",
+  "kickoff": "2026-11-07 15:00:00-05:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "pick": "Alabama State -6",
+  "book": "MGM",
+  "line": -6.0,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 3.8,
+  "model": -9.8,
+  "grp": "FCS-FCS",
+  "limit": -6.5,
+  "status": "open"
  }
 ]
