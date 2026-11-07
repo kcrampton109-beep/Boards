@@ -8163,7 +8163,11 @@
   "opener": -14.5,
   "grp": "power 6",
   "limit": -15.0,
-  "status": "open"
+  "status": "W",
+  "close": -16.5,
+  "clv": 2.0,
+  "units": 0.833,
+  "final": "Eastern Washington 71 - Oregon 98"
  },
  {
   "id": "401926131|spread|2509",
@@ -8313,7 +8317,11 @@
   "opener": -23.5,
   "grp": "power 6",
   "limit": -23.5,
-  "status": "open"
+  "status": "L",
+  "close": -23.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "James Madison 80 - Kentucky 89"
  },
  {
   "id": "401909523|spread|2174",
@@ -8492,7 +8500,11 @@
   "opener": 24.5,
   "grp": "power 6",
   "limit": 25.5,
-  "status": "open"
+  "status": "W",
+  "close": 25.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Youngstown State 65 - Ohio State 89"
  },
  {
   "id": "401909751|spread|239",
@@ -8800,7 +8812,11 @@
   "opener": -7.5,
   "grp": "low-major",
   "limit": -9.5,
-  "status": "open"
+  "status": "L",
+  "close": -3.5,
+  "clv": -4.0,
+  "units": -1.0,
+  "final": "South Carolina State 78 - South Carolina Upstate 70"
  },
  {
   "id": "401911305|total|under",
@@ -9979,6 +9995,31 @@
   "opener": -16.5,
   "grp": "mid-major",
   "limit": -16.5,
+  "status": "open"
+ },
+ {
+  "id": "401925772|spread|2166|NOV_FAV",
+  "base": "401925772|spread|2166",
+  "flagged": "2026-11-06T20:59-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401925772,
+  "matchup": "Mercer @ Davidson",
+  "kickoff": "2026-11-07T19:00:00-05:00",
+  "tier": "NOV_FAV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2166,
+  "pick": "Davidson -10.5",
+  "book": "DK",
+  "line": -10.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 4.8,
+  "model": 15.3,
+  "opener": -11.5,
+  "grp": "mid-major",
+  "limit": -11.0,
   "status": "open"
  }
 ]
