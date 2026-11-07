@@ -379,7 +379,7 @@
    }
   },
   "2026_09_LV_SF": {
-   "ts": "2026-11-07T11:18:23.713352-05:00",
+   "ts": "2026-11-07T14:49:46.549799-05:00",
    "wx": {
     "wind": 8.1,
     "gust": 12.3,
@@ -388,7 +388,7 @@
    }
   },
   "2026_09_GB_NE": {
-   "ts": "2026-11-07T11:18:23.713352-05:00",
+   "ts": "2026-11-07T14:49:46.549799-05:00",
    "wx": {
     "wind": 7.2,
     "gust": 24.2,
@@ -397,12 +397,12 @@
    }
   },
   "2026_09_ARI_SEA": {
-   "ts": "2026-11-07T11:18:23.713352-05:00",
+   "ts": "2026-11-07T14:49:46.549799-05:00",
    "wx": {
     "wind": 9.5,
     "gust": 19.5,
     "temp": 53.0,
-    "precip": 9
+    "precip": 21
    }
   },
   "2026_09_TB_CHI": {
@@ -1890,7 +1890,7 @@
    }
   },
   "290961": {
-   "ts": "2026-11-07T11:18:23.713352-05:00",
+   "ts": "2026-11-07T14:49:46.549799-05:00",
    "odds": {
     "kenneth walker": {
      "name": "Kenneth Walker III",
@@ -1906,7 +1906,7 @@
     },
     "xavier worthy": {
      "name": "Xavier Worthy",
-     "FD": 185
+     "FD": 180
     },
     "breece hall": {
      "name": "Breece Hall",
@@ -1922,7 +1922,7 @@
     },
     "omar cooper": {
      "name": "Omar Cooper Jr.",
-     "FD": 310
+     "FD": 320
     },
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -1952,17 +1952,17 @@
      "name": "New York Jets Defense",
      "FD": 650
     },
+    "kansas city defense": {
+     "name": "Kansas City Defense",
+     "FD": 750
+    },
     "tim patrick": {
      "name": "Tim Patrick",
      "FD": 750
     },
-    "kansas city defense": {
-     "name": "Kansas City Defense",
-     "FD": 800
-    },
     "jalen royals": {
      "name": "Jalen Royals",
-     "FD": 800
+     "FD": 850
     },
     "andrew armstrong": {
      "name": "Andrew Armstrong",
@@ -1982,11 +1982,11 @@
     },
     "jake briningstool": {
      "name": "Jake Briningstool",
-     "FD": 1700
+     "FD": 1800
     },
     "jared wiley": {
      "name": "Jared Wiley",
-     "FD": 1700
+     "FD": 1800
     },
     "nikko remigio": {
      "name": "Nikko Remigio",
