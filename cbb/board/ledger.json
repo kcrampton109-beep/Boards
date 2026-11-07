@@ -11058,5 +11058,30 @@
   "grp": "power 6",
   "limit": 160.5,
   "status": "open"
+ },
+ {
+  "id": "401920770|spread|2182",
+  "base": "401920770|spread|2182",
+  "flagged": "2026-11-07T12:14-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401920770,
+  "matchup": "Colgate @ Drexel",
+  "kickoff": "2026-11-07T14:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2182,
+  "pick": "Drexel +1.5",
+  "book": "MGM",
+  "line": 1.5,
+  "odds": -125.0,
+  "stake": 1.0,
+  "edge": 4.7,
+  "model": 3.2,
+  "opener": -1.5,
+  "grp": "low-major",
+  "limit": 0.0,
+  "status": "open"
  }
 ]
