@@ -9454,7 +9454,11 @@
   "opener": 2.5,
   "grp": "power 6",
   "limit": 0.5,
-  "status": "open"
+  "status": "L",
+  "close": 3.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "San Diego State 77 - Colorado 66"
  },
  {
   "id": "401909532|total|over",
@@ -9994,7 +9998,11 @@
   "opener": 11.5,
   "grp": "mid-major",
   "limit": 8.5,
-  "status": "open"
+  "status": "L",
+  "close": 13.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Oakland 67 - UC Santa Barbara 90"
  },
  {
   "id": "401928352|total|over",
@@ -10019,7 +10027,11 @@
   "opener": 151.5,
   "grp": "mid-major",
   "limit": 152.5,
-  "status": "open"
+  "status": "W",
+  "close": 148.5,
+  "clv": -3.0,
+  "units": 0.87,
+  "final": "Oakland 67 - UC Santa Barbara 90"
  },
  {
   "id": "401920411|spread|265",
@@ -10656,7 +10668,11 @@
   "opener": -11.5,
   "grp": "mid-major",
   "limit": -10.5,
-  "status": "open"
+  "status": "L",
+  "close": -12.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Samford 79 - UNLV 88"
  },
  {
   "id": "401921154|spread|2448",
@@ -10789,7 +10805,11 @@
   "opener": -5.5,
   "grp": "mid-major",
   "limit": -5.5,
-  "status": "open"
+  "status": "W",
+  "close": -6.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "Monmouth 66 - Rhode Island 84"
  },
  {
   "id": "401920816|spread|2545",
@@ -10914,7 +10934,11 @@
   "opener": 155.5,
   "grp": "power 6",
   "limit": 152.0,
-  "status": "open"
+  "status": "L",
+  "close": 152.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "San Diego State 77 - Colorado 66"
  },
  {
   "id": "401911345|total|under",
