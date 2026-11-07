@@ -379,30 +379,30 @@
    }
   },
   "2026_09_LV_SF": {
-   "ts": "2026-11-07T14:49:46.549799-05:00",
+   "ts": "2026-11-07T17:53:00.689339-05:00",
    "wx": {
-    "wind": 8.1,
-    "gust": 12.3,
+    "wind": 7.6,
+    "gust": 11.6,
     "temp": 67.0,
     "precip": 0
    }
   },
   "2026_09_GB_NE": {
-   "ts": "2026-11-07T14:49:46.549799-05:00",
+   "ts": "2026-11-07T17:53:00.689339-05:00",
    "wx": {
-    "wind": 7.2,
-    "gust": 24.2,
-    "temp": 48.0,
+    "wind": 7.1,
+    "gust": 22.6,
+    "temp": 47.0,
     "precip": 1
    }
   },
   "2026_09_ARI_SEA": {
-   "ts": "2026-11-07T14:49:46.549799-05:00",
+   "ts": "2026-11-07T17:53:00.689339-05:00",
    "wx": {
-    "wind": 9.5,
-    "gust": 19.5,
-    "temp": 53.0,
-    "precip": 21
+    "wind": 10.8,
+    "gust": 20.4,
+    "temp": 52.0,
+    "precip": 19
    }
   },
   "2026_09_TB_CHI": {
@@ -1898,7 +1898,7 @@
    }
   },
   "290961": {
-   "ts": "2026-11-07T14:49:46.549799-05:00",
+   "ts": "2026-11-07T17:53:00.689339-05:00",
    "odds": {
     "kenneth walker": {
      "name": "Kenneth Walker III",
@@ -1914,11 +1914,11 @@
     },
     "xavier worthy": {
      "name": "Xavier Worthy",
-     "FD": 180
+     "FD": 185
     },
     "breece hall": {
      "name": "Breece Hall",
-     "FD": 185
+     "FD": 190
     },
     "braelon allen": {
      "name": "Braelon Allen",
@@ -1966,7 +1966,7 @@
     },
     "tim patrick": {
      "name": "Tim Patrick",
-     "FD": 750
+     "FD": 800
     },
     "jalen royals": {
      "name": "Jalen Royals",
@@ -1986,7 +1986,7 @@
     },
     "jeremy ruckert": {
      "name": "Jeremy Ruckert",
-     "FD": 1600
+     "FD": 1500
     },
     "jake briningstool": {
      "name": "Jake Briningstool",
@@ -2014,14 +2014,14 @@
     },
     "malik mcclain": {
      "name": "Malik McClain",
-     "FD": 3500
-    },
-    "jelani woods": {
-     "name": "Jelani Woods",
-     "FD": 3500
+     "FD": 3300
     },
     "andrew beck": {
      "name": "Andrew Beck",
+     "FD": 3300
+    },
+    "jelani woods": {
+     "name": "Jelani Woods",
      "FD": 3500
     },
     "kene nwangwu": {
