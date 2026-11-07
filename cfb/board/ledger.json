@@ -15447,7 +15447,11 @@
   "model": -11.9,
   "grp": "FBS",
   "limit": -6.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -6.5,
+  "units": -0.5,
+  "final": "TCU 28 - Arizona 29"
  },
  {
   "id": "401858517|spread|away|m",
