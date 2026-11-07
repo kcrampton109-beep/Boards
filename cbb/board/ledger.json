@@ -8449,7 +8449,11 @@
   "opener": -13.5,
   "grp": "power 6",
   "limit": -16.0,
-  "status": "open"
+  "status": "L",
+  "close": -12.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Stony Brook 65 - Northwestern 78"
  },
  {
   "id": "401929356|total|under",
@@ -8644,7 +8648,11 @@
   "opener": -15.5,
   "grp": "power 6",
   "limit": -15.0,
-  "status": "open"
+  "status": "L",
+  "close": -15.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "St. Thomas 62 - Minnesota 76"
  },
  {
   "id": "401920344|total|under",
@@ -8827,7 +8835,11 @@
   "opener": 25.5,
   "grp": "power 6",
   "limit": 26.5,
-  "status": "open"
+  "status": "L",
+  "close": 27.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Northern Kentucky 67 - Texas A&M 104"
  },
  {
   "id": "401922059|spread|2908",
@@ -9026,7 +9038,11 @@
   "opener": -23.5,
   "grp": "power 6",
   "limit": -27.0,
-  "status": "open"
+  "status": "W",
+  "close": -26.5,
+  "clv": 3.0,
+  "units": 0.909,
+  "final": "Southern 54 - TCU 106"
  },
  {
   "id": "401921809|spread|99",
@@ -9051,7 +9067,11 @@
   "opener": -30.5,
   "grp": "power 6",
   "limit": -32.0,
-  "status": "open"
+  "status": "W",
+  "close": -36.5,
+  "clv": 6.0,
+  "units": 0.909,
+  "final": "Texas Southern 51 - LSU 92"
  },
  {
   "id": "401911249|spread|142|NOV_FAV",
@@ -9267,7 +9287,11 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 147.0,
-  "status": "open"
+  "status": "L",
+  "close": 145.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Southern Miss 57 - Iowa State 83"
  },
  {
   "id": "401920952|total|over",
@@ -9425,7 +9449,11 @@
   "opener": 143.5,
   "grp": "mid-major",
   "limit": 143.0,
-  "status": "open"
+  "status": "L",
+  "close": 142.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Robert Morris 56 - UIC 79"
  },
  {
   "id": "401909532|spread|158",
