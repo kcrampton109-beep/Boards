@@ -7485,11 +7485,11 @@
   "model_line": 8.9,
   "flagged": "2026-11-01T16:44:00.294993-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 50.5,
+  "clv": 2.0,
+  "final": "DET 19 - MIA 9"
  },
  {
   "id": "2026_09_CLE_NO:TEASER:teaser:away",
@@ -7597,11 +7597,11 @@
   "model_line": 1.7,
   "flagged": "2026-11-01T16:44:00.294993-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 3,
+  "clv": -0.5,
+  "final": "DEN 26 - CAR 21"
  },
  {
   "id": "2026_09_NYG_PHI:LEAN:spread:home",
@@ -7625,11 +7625,11 @@
   "model_line": -0.5,
   "flagged": "2026-11-01T16:44:00.294993-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": 3,
+  "clv": -1.5,
+  "final": "NYG 19 - PHI 11"
  },
  {
   "id": "2026_09_NYG_PHI:TEASER:teaser:home",
@@ -7653,11 +7653,11 @@
   "model_line": -0.5,
   "flagged": "2026-11-01T16:44:00.294993-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
+  "status": "L",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 3,
+  "clv": -1.5,
+  "final": "NYG 19 - PHI 11"
  },
  {
   "id": "2026_09_NYG_PHI:RLM:total:under",
@@ -7681,11 +7681,11 @@
   "model_line": -0.5,
   "flagged": "2026-11-01T16:44:00.294993-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 37.5,
+  "clv": 3.0,
+  "final": "NYG 19 - PHI 11"
  },
  {
   "id": "2026_09_NYG_PHI:TREND:spread:away",
@@ -7709,11 +7709,11 @@
   "model_line": -0.5,
   "flagged": "2026-11-01T16:44:00.294993-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": -3,
+  "clv": 1.5,
+  "final": "NYG 19 - PHI 11"
  },
  {
   "id": "2026_09_NYJ_KC:RLM:total:under",
@@ -7737,11 +7737,11 @@
   "model_line": -9.4,
   "flagged": "2026-11-01T16:44:00.294993-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 47.5,
+  "clv": -4.0,
+  "final": "NYJ 12 - KC 35"
  },
  {
   "id": "2026_09_NYJ_KC:TREND:spread:home",
@@ -7765,11 +7765,11 @@
   "model_line": -9.4,
   "flagged": "2026-11-01T16:44:00.294993-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.93,
+  "close": -9.5,
+  "clv": 0.0,
+  "final": "NYJ 12 - KC 35"
  },
  {
   "id": "2026_09_HOU_LAC:TREND:spread:home",
@@ -8101,11 +8101,11 @@
   "model_line": -0.5,
   "flagged": "2026-11-01T18:42:14.198028-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 3,
+  "clv": -0.5,
+  "final": "NYG 19 - PHI 11"
  },
  {
   "id": "2026_09_GB_NE:TEASER:teaser:away",
@@ -8213,11 +8213,11 @@
   "model_line": 1.7,
   "flagged": "2026-11-01T22:06:33.819813-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 44.5,
+  "clv": 0.0,
+  "final": "DEN 26 - CAR 21"
  },
  {
   "id": "2026_09_DET_MIA:RLM:total:over",
@@ -8241,11 +8241,11 @@
   "model_line": 8.9,
   "flagged": "2026-11-02T01:11:20.370332-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 50.5,
+  "clv": 1.0,
+  "final": "DET 19 - MIA 9"
  },
  {
   "id": "2026_09_TB_CHI:LEAN:spread:away",
@@ -8717,11 +8717,11 @@
   "model_line": 4.8,
   "flagged": "2026-11-05T08:21:01.740919-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 4.5,
+  "clv": 0.0,
+  "final": "LA 20 - WAS 13"
  },
  {
   "id": "2026_09_DET_MIA:LEAN:spread:away",
@@ -8745,11 +8745,11 @@
   "model_line": 8.7,
   "flagged": "2026-11-06T07:35:43.446505-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.43,
+  "close": -6.5,
+  "clv": 0.0,
+  "final": "DET 19 - MIA 9"
  },
  {
   "id": "2026_09_LA_WAS:RLM:total:under",
@@ -8773,11 +8773,11 @@
   "model_line": 4.8,
   "flagged": "2026-11-06T12:54:52.787634-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 48,
+  "clv": 0,
+  "final": "LA 20 - WAS 13"
  },
  {
   "id": "2026_09_NYJ_KC:RLM:spread:away",
@@ -8801,11 +8801,11 @@
   "model_line": -8.9,
   "flagged": "2026-11-07T01:28:42.922589-05:00",
   "kickoff_iso": "2026-11-08T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 9.5,
+  "clv": 0.0,
+  "final": "NYJ 12 - KC 35"
  },
  {
   "id": "2026_09_ARI_SEA:RLM:spread:away",
