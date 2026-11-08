@@ -11716,7 +11716,11 @@
   "opener": -3.5,
   "grp": "low-major",
   "limit": -3.5,
-  "status": "open"
+  "status": "L",
+  "close": -3.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Western Kentucky 94 - Tennessee Tech 97"
  },
  {
   "id": "401911335|spread|304",
@@ -12239,7 +12243,11 @@
   "opener": 159.5,
   "grp": "mid-major",
   "limit": 163.5,
-  "status": "open"
+  "status": "L",
+  "close": 164.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Western Kentucky 94 - Tennessee Tech 97"
  },
  {
   "id": "401926132|total|over",
@@ -12339,6 +12347,56 @@
   "opener": 147.5,
   "grp": "power 6",
   "limit": 147.5,
+  "status": "open"
+ },
+ {
+  "id": "401909718|total|over",
+  "base": "401909718|total|over",
+  "flagged": "2026-11-08T18:41-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401909718,
+  "matchup": "Syracuse vs Indiana",
+  "kickoff": "2026-11-09T18:30:00-05:00",
+  "tier": "NOV_OVER",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 146.5",
+  "book": "MGM",
+  "line": 146.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.8,
+  "model": 152.3,
+  "opener": 147.5,
+  "grp": "power 6",
+  "limit": 147.0,
+  "status": "open"
+ },
+ {
+  "id": "401920799|spread|2",
+  "base": "401920799|spread|2",
+  "flagged": "2026-11-08T18:41-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401920799,
+  "matchup": "App State @ Auburn",
+  "kickoff": "2026-11-09T21:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2,
+  "pick": "Auburn -23.5",
+  "book": "MGM",
+  "line": -23.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 3.1,
+  "model": 26.6,
+  "opener": -24.5,
+  "grp": "power 6",
+  "limit": -23.5,
   "status": "open"
  }
 ]
