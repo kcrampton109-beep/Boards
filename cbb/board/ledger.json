@@ -9455,8 +9455,8 @@
   "grp": "power 6",
   "limit": 0.5,
   "status": "L",
-  "close": 3.5,
-  "clv": -1.0,
+  "close": 2.5,
+  "clv": 0.0,
   "units": -1.0,
   "final": "San Diego State 77 - Colorado 66"
  },
@@ -9869,7 +9869,11 @@
   "opener": -6.5,
   "grp": "mid-major",
   "limit": -6.0,
-  "status": "open"
+  "status": "L",
+  "close": -5.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "VMI 68 - UTSA 70"
  },
  {
   "id": "401926112|spread|2460",
@@ -9894,7 +9898,11 @@
   "opener": 4.5,
   "grp": "mid-major",
   "limit": -1.0,
-  "status": "open"
+  "status": "L",
+  "close": 4.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Northern Iowa 83 - Furman 98"
  },
  {
   "id": "401926112|total|under",
@@ -9919,7 +9927,11 @@
   "opener": 148.5,
   "grp": "mid-major",
   "limit": 147.5,
-  "status": "open"
+  "status": "L",
+  "close": 149.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Northern Iowa 83 - Furman 98"
  },
  {
   "id": "401917518|total|over",
@@ -10056,7 +10068,11 @@
   "opener": 11.5,
   "grp": "mid-major",
   "limit": 10.5,
-  "status": "open"
+  "status": "L",
+  "close": 13.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Washington State 71 - High Point 83"
  },
  {
   "id": "401925772|spread|2166",
@@ -10310,7 +10326,11 @@
   "opener": 161.5,
   "grp": "mid-major",
   "limit": 164.5,
-  "status": "open"
+  "status": "W",
+  "close": 162.5,
+  "clv": 2.0,
+  "units": 0.952,
+  "final": "VMI 68 - UTSA 70"
  },
  {
   "id": "401928788|spread|166",
@@ -10335,7 +10355,11 @@
   "opener": 27.5,
   "grp": "mid-major",
   "limit": 28.0,
-  "status": "open"
+  "status": "L",
+  "close": 29.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "New Mexico State 68 - Gonzaga 109"
  },
  {
   "id": "401911186|total|over",
@@ -10385,7 +10409,11 @@
   "opener": 1.5,
   "grp": "low-major",
   "limit": 2.0,
-  "status": "open"
+  "status": "W",
+  "close": 1.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "UT Martin 74 - IU Indianapolis 75"
  },
  {
   "id": "401911007|spread|91",
@@ -10410,7 +10438,11 @@
   "opener": 20.5,
   "grp": "low-major",
   "limit": 19.5,
-  "status": "open"
+  "status": "W",
+  "close": 19.5,
+  "clv": 1.0,
+  "units": 0.952,
+  "final": "Bellarmine 73 - Miami (OH) 80"
  },
  {
   "id": "401925106|spread|292",
@@ -10435,7 +10467,11 @@
   "opener": -8.5,
   "grp": "low-major",
   "limit": -11.0,
-  "status": "open"
+  "status": "L",
+  "close": -8.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Prairie View A&M 63 - UT Rio Grande Valley 68"
  },
  {
   "id": "401922291|spread|2427",
@@ -10460,7 +10496,11 @@
   "opener": 2.5,
   "grp": "low-major",
   "limit": 1.5,
-  "status": "open"
+  "status": "L",
+  "close": 4.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Western Carolina 83 - UNC Asheville 75"
  },
  {
   "id": "401922291|total|over",
@@ -10485,7 +10525,11 @@
   "opener": 149.5,
   "grp": "low-major",
   "limit": 150.0,
-  "status": "open"
+  "status": "W",
+  "close": 152.5,
+  "clv": 3.0,
+  "units": 0.909,
+  "final": "Western Carolina 83 - UNC Asheville 75"
  },
  {
   "id": "401924843|spread|315",
@@ -10640,8 +10684,8 @@
   "grp": "mid-major",
   "limit": 147.5,
   "status": "L",
-  "close": 150.5,
-  "clv": -2.0,
+  "close": 149.5,
+  "clv": -1.0,
   "units": -1.0,
   "final": "Long Island University 80 - La Salle 88"
  },
@@ -10698,8 +10742,8 @@
   "grp": "low-major",
   "limit": 13.5,
   "status": "W",
-  "close": 15.5,
-  "clv": -2.0,
+  "close": 14.5,
+  "clv": -1.0,
   "units": 0.87,
   "final": "North Carolina A&T 70 - Ohio 80"
  },
@@ -10726,7 +10770,11 @@
   "opener": 24.5,
   "grp": "mid-major",
   "limit": 27.0,
-  "status": "open"
+  "status": "L",
+  "close": 28.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Northern Arizona 65 - New Mexico 94"
  },
  {
   "id": "401920156|total|under",
@@ -10752,8 +10800,8 @@
   "grp": "mid-major",
   "limit": 176.0,
   "status": "W",
-  "close": 175.5,
-  "clv": 1.0,
+  "close": 176.5,
+  "clv": 0.0,
   "units": 0.909,
   "final": "Cal State Fullerton 87 - South Dakota 85"
  },
@@ -10859,7 +10907,11 @@
   "opener": 144.5,
   "grp": "mid-major",
   "limit": 142.0,
-  "status": "open"
+  "status": "W",
+  "close": 140.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Old Dominion 82 - Bucknell 62"
  },
  {
   "id": "401923392|spread|339",
@@ -11017,7 +11069,11 @@
   "opener": 156.5,
   "grp": "low-major",
   "limit": 166.5,
-  "status": "open"
+  "status": "W",
+  "close": 171.5,
+  "clv": -5.0,
+  "units": 0.909,
+  "final": "UT Martin 74 - IU Indianapolis 75"
  },
  {
   "id": "401924940|spread|2083",
@@ -11042,7 +11098,11 @@
   "opener": 4.5,
   "grp": "mid-major",
   "limit": 5.5,
-  "status": "open"
+  "status": "L",
+  "close": 5.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Old Dominion 82 - Bucknell 62"
  },
  {
   "id": "401923392|spread|339|NOV_FAV",
@@ -11143,8 +11203,8 @@
   "grp": "low-major",
   "limit": 0.0,
   "status": "W",
-  "close": 1.5,
-  "clv": 0.0,
+  "close": -1.5,
+  "clv": 3.0,
   "units": 0.8,
   "final": "Colgate 74 - Drexel 77"
  },
@@ -11171,7 +11231,11 @@
   "opener": 149.5,
   "grp": "low-major",
   "limit": 150.0,
-  "status": "open"
+  "status": "L",
+  "close": 150.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Prairie View A&M 63 - UT Rio Grande Valley 68"
  },
  {
   "id": "401926825|spread|45",
@@ -11621,6 +11685,56 @@
   "opener": 148.5,
   "grp": "low-major",
   "limit": 148.5,
+  "status": "open"
+ },
+ {
+  "id": "401924646|spread|2599|NOV_FAV",
+  "base": "401924646|spread|2599",
+  "flagged": "2026-11-07T20:06-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401924646,
+  "matchup": "Iona @ St. John's",
+  "kickoff": "2026-11-08T12:00:00-05:00",
+  "tier": "NOV_FAV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2599,
+  "pick": "St. John's -26.5",
+  "book": "FD",
+  "line": -26.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 4.8,
+  "model": 31.3,
+  "opener": -25.5,
+  "grp": "low-major",
+  "limit": -27.0,
+  "status": "open"
+ },
+ {
+  "id": "401920843|total|over",
+  "base": "401920843|total|over",
+  "flagged": "2026-11-07T20:06-05:00",
+  "season": 2026,
+  "week": 1,
+  "game_id": 401920843,
+  "matchup": "Green Bay @ St. Thomas",
+  "kickoff": "2026-11-08T14:00:00-05:00",
+  "tier": "NOV_OVER",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 148.5",
+  "book": "MGM",
+  "line": 148.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.8,
+  "model": 154.3,
+  "opener": 151.5,
+  "grp": "low-major",
+  "limit": 149.0,
   "status": "open"
  }
 ]
