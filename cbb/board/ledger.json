@@ -9483,7 +9483,11 @@
   "opener": 155.5,
   "grp": "power 6",
   "limit": 157.0,
-  "status": "open"
+  "status": "L",
+  "close": 158.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Providence 58 - Nebraska 67"
  },
  {
   "id": "401906758|spread|333",
@@ -9566,7 +9570,11 @@
   "opener": -4.5,
   "grp": "power 6",
   "limit": -4.0,
-  "status": "open"
+  "status": "W",
+  "close": -2.5,
+  "clv": -1.0,
+  "units": 0.98,
+  "final": "Providence 58 - Nebraska 67"
  },
  {
   "id": "401909532|spread|158|NOV_FAV",
@@ -9591,7 +9599,11 @@
   "opener": -4.5,
   "grp": "power 6",
   "limit": -3.0,
-  "status": "open"
+  "status": "W",
+  "close": -2.5,
+  "clv": 0.0,
+  "units": 0.833,
+  "final": "Providence 58 - Nebraska 67"
  },
  {
   "id": "401923260|spread|2226",
@@ -9703,7 +9715,11 @@
   "opener": -1.5,
   "grp": "power 6",
   "limit": 0.0,
-  "status": "open"
+  "status": "W",
+  "close": 3.5,
+  "clv": -2.0,
+  "units": 0.893,
+  "final": "Maryland 74 - Georgetown 86"
  },
  {
   "id": "401909513|total|over",
@@ -9728,7 +9744,11 @@
   "opener": 147.5,
   "grp": "power 6",
   "limit": 146.5,
-  "status": "open"
+  "status": "W",
+  "close": 146.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Maryland 74 - Georgetown 86"
  },
  {
   "id": "401921140|total|over",
@@ -10400,7 +10420,11 @@
   "opener": 151.5,
   "grp": "mid-major",
   "limit": 146.0,
-  "status": "open"
+  "status": "W",
+  "close": 147.5,
+  "clv": 2.0,
+  "units": 0.952,
+  "final": "Northern Illinois 81 - Dayton 76"
  },
  {
   "id": "401921174|spread|85",
@@ -11313,7 +11337,11 @@
   "opener": -22.5,
   "grp": "low-major",
   "limit": -20.5,
-  "status": "open"
+  "status": "L",
+  "close": -19.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Northern Illinois 81 - Dayton 76"
  },
  {
   "id": "401917518|spread|71",
