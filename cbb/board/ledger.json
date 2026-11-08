@@ -11534,7 +11534,11 @@
   "opener": -25.5,
   "grp": "low-major",
   "limit": -28.0,
-  "status": "open"
+  "status": "W",
+  "close": -26.5,
+  "clv": -1.0,
+  "units": 0.952,
+  "final": "Iona 65 - St. John's 104"
  },
  {
   "id": "401924734|spread|2561",
@@ -11834,7 +11838,11 @@
   "opener": -25.5,
   "grp": "low-major",
   "limit": -27.0,
-  "status": "open"
+  "status": "W",
+  "close": -26.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Iona 65 - St. John's 104"
  },
  {
   "id": "401920843|total|over",
