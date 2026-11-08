@@ -10262,7 +10262,11 @@
   "opener": 8.5,
   "grp": "mid-major",
   "limit": 4.0,
-  "status": "open"
+  "status": "L",
+  "close": 10.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Fresno State 65 - UC San Diego 81"
  },
  {
   "id": "401917519|spread|2541",
