@@ -8806,5 +8806,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_09_ARI_SEA:RLM:spread:away",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "away",
+  "team": "ARI",
+  "pid": null,
+  "game_id": "2026_09_ARI_SEA",
+  "week": 9,
+  "matchup": "ARI @ SEA",
+  "kickoff": "Sun Nov 8, 4:25 PM ET",
+  "pick": "ARI +8.5",
+  "line": 8.5,
+  "odds": -110,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": null,
+  "note": "57% of bets on SEA, line moved -11.5 \u2192 -8.5",
+  "limit": null,
+  "model_line": -10.4,
+  "flagged": "2026-11-08T05:24:36.199592-05:00",
+  "kickoff_iso": "2026-11-08T16:25:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]

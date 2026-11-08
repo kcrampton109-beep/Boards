@@ -379,30 +379,30 @@
    }
   },
   "2026_09_LV_SF": {
-   "ts": "2026-11-08T01:30:22.975803-05:00",
+   "ts": "2026-11-08T05:24:36.199592-05:00",
    "wx": {
-    "wind": 7.1,
-    "gust": 12.5,
-    "temp": 67.0,
+    "wind": 7.4,
+    "gust": 13.2,
+    "temp": 66.0,
     "precip": 0
    }
   },
   "2026_09_GB_NE": {
-   "ts": "2026-11-08T01:30:22.975803-05:00",
+   "ts": "2026-11-08T05:24:36.199592-05:00",
    "wx": {
-    "wind": 7.6,
-    "gust": 25.5,
+    "wind": 7.0,
+    "gust": 22.8,
     "temp": 48.0,
     "precip": 1
    }
   },
   "2026_09_ARI_SEA": {
-   "ts": "2026-11-08T01:30:22.975803-05:00",
+   "ts": "2026-11-08T05:24:36.199592-05:00",
    "wx": {
-    "wind": 9.2,
-    "gust": 20.6,
+    "wind": 10.4,
+    "gust": 21.5,
     "temp": 53.0,
-    "precip": 6
+    "precip": 3
    }
   },
   "2026_09_TB_CHI": {
@@ -1930,27 +1930,27 @@
    }
   },
   "290961": {
-   "ts": "2026-11-08T01:30:22.975803-05:00",
+   "ts": "2026-11-08T05:24:36.199592-05:00",
    "odds": {
     "kenneth walker": {
      "name": "Kenneth Walker III",
-     "FD": -240
+     "FD": -230
     },
     "rashee rice": {
      "name": "Rashee Rice",
-     "FD": 125
+     "FD": 130
     },
     "travis kelce": {
      "name": "Travis Kelce",
-     "FD": 145
+     "FD": 150
     },
     "xavier worthy": {
      "name": "Xavier Worthy",
-     "FD": 185
+     "FD": 190
     },
     "breece hall": {
      "name": "Breece Hall",
-     "FD": 185
+     "FD": 190
     },
     "braelon allen": {
      "name": "Braelon Allen",
@@ -1968,17 +1968,17 @@
      "name": "Emmett Johnson",
      "FD": 370
     },
-    "patrick mahomes": {
-     "name": "Patrick Mahomes",
-     "FD": 390
-    },
     "mason taylor": {
      "name": "Mason Taylor",
      "FD": 390
     },
+    "patrick mahomes": {
+     "name": "Patrick Mahomes",
+     "FD": 400
+    },
     "cyrus allen": {
      "name": "Cyrus Allen",
-     "FD": 450
+     "FD": 460
     },
     "noah gray": {
      "name": "Noah Gray",
@@ -1992,13 +1992,13 @@
      "name": "New York Jets Defense",
      "FD": 650
     },
-    "kansas city defense": {
-     "name": "Kansas City Defense",
-     "FD": 750
-    },
     "tim patrick": {
      "name": "Tim Patrick",
      "FD": 750
+    },
+    "kansas city defense": {
+     "name": "Kansas City Defense",
+     "FD": 800
     },
     "jalen royals": {
      "name": "Jalen Royals",
@@ -2018,38 +2018,34 @@
     },
     "jeremy ruckert": {
      "name": "Jeremy Ruckert",
-     "FD": 1500
+     "FD": 1600
     },
     "jake briningstool": {
      "name": "Jake Briningstool",
-     "FD": 1700
+     "FD": 1800
     },
     "jared wiley": {
      "name": "Jared Wiley",
-     "FD": 1700
+     "FD": 1800
     },
     "nikko remigio": {
      "name": "Nikko Remigio",
      "FD": 2000
     },
-    "jaydn ott": {
-     "name": "Jaydn Ott",
-     "FD": 2700
-    },
     "isaiah davis": {
      "name": "Isaiah Davis",
      "FD": 2700
     },
+    "jaydn ott": {
+     "name": "Jaydn Ott",
+     "FD": 3000
+    },
     "ben vansumeren": {
      "name": "Ben VanSumeren",
-     "FD": 2700
+     "FD": 3000
     },
     "malik mcclain": {
      "name": "Malik McClain",
-     "FD": 3500
-    },
-    "jelani woods": {
-     "name": "Jelani Woods",
      "FD": 3500
     },
     "kene nwangwu": {
@@ -2059,6 +2055,10 @@
     "andrew beck": {
      "name": "Andrew Beck",
      "FD": 3500
+    },
+    "jelani woods": {
+     "name": "Jelani Woods",
+     "FD": 4000
     }
    }
   },
