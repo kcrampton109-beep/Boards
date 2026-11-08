@@ -16441,5 +16441,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401862825|spread|away|m",
+  "base": "401862825|spread|away|m",
+  "flagged": "2026-11-08T11:13-05:00",
+  "season": 2026,
+  "week": 11,
+  "game_id": 401862825,
+  "matchup": "East Carolina @ Charlotte",
+  "kickoff": "2026-11-14 13:00:00-05:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "pick": "East Carolina -11.5",
+  "book": "DK",
+  "line": -11.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.7,
+  "model": -17.2,
+  "grp": "FBS",
+  "limit": -12.0,
+  "status": "open"
  }
 ]
