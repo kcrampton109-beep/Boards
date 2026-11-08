@@ -11252,7 +11252,11 @@
   "opener": 2.5,
   "grp": "power 6",
   "limit": 2.5,
-  "status": "open"
+  "status": "L",
+  "close": 4.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Arkansas 72 - Virginia 91"
  },
  {
   "id": "401920424|total|over",
@@ -11277,7 +11281,11 @@
   "opener": 158.5,
   "grp": "power 6",
   "limit": 160.5,
-  "status": "open"
+  "status": "W",
+  "close": 162.5,
+  "clv": 4.0,
+  "units": 0.926,
+  "final": "Arkansas 72 - Virginia 91"
  },
  {
   "id": "401920770|spread|2182",
@@ -11563,7 +11571,11 @@
   "opener": 2.5,
   "grp": "low-major",
   "limit": -1.5,
-  "status": "open"
+  "status": "W",
+  "close": 2.0,
+  "clv": -0.5,
+  "units": 0.82,
+  "final": "Princeton 68 - Siena 82"
  },
  {
   "id": "401924734|total|under",
@@ -11588,7 +11600,11 @@
   "opener": 149.5,
   "grp": "low-major",
   "limit": 145.5,
-  "status": "open"
+  "status": "W",
+  "close": 153.5,
+  "clv": -2.0,
+  "units": 0.952,
+  "final": "Princeton 68 - Siena 82"
  },
  {
   "id": "401920843|spread|2900",
@@ -11942,7 +11958,11 @@
   "opener": -16.5,
   "grp": "power 6",
   "limit": -18.5,
-  "status": "open"
+  "status": "L",
+  "close": -17.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Southeast Missouri State 68 - South Carolina 78"
  },
  {
   "id": "401921820|total|over",
@@ -11967,7 +11987,11 @@
   "opener": 144.5,
   "grp": "power 6",
   "limit": 146.0,
-  "status": "open"
+  "status": "W",
+  "close": 144.5,
+  "clv": -1.0,
+  "units": 0.952,
+  "final": "Southeast Missouri State 68 - South Carolina 78"
  },
  {
   "id": "401919029|spread|30",
@@ -12017,7 +12041,11 @@
   "opener": 4.5,
   "grp": "low-major",
   "limit": 2.5,
-  "status": "open"
+  "status": "W",
+  "close": 1.5,
+  "clv": 1.0,
+  "units": 0.952,
+  "final": "Marist 61 - UMass Lowell 63"
  },
  {
   "id": "401921687|total|under",
@@ -12042,7 +12070,11 @@
   "opener": 144.5,
   "grp": "low-major",
   "limit": 146.5,
-  "status": "open"
+  "status": "W",
+  "close": 141.5,
+  "clv": 5.0,
+  "units": 0.909,
+  "final": "Marist 61 - UMass Lowell 63"
  },
  {
   "id": "401921683|spread|2803",
@@ -12067,7 +12099,11 @@
   "opener": 1.5,
   "grp": "low-major",
   "limit": 1.5,
-  "status": "open"
+  "status": "L",
+  "close": 1.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Fairfield 68 - Bryant 59"
  },
  {
   "id": "401920233|spread|159",
