@@ -14082,7 +14082,11 @@
   "model": -9.0,
   "grp": "FBS",
   "limit": -3.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": -3.0,
+  "units": -1.0,
+  "final": "Vanderbilt 25 - Mississippi State 23"
  },
  {
   "id": "401856742|moneyline|home|m",
@@ -14105,7 +14109,9 @@
   "model": 71.9,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Vanderbilt 25 - Mississippi State 23"
  },
  {
   "id": "401856850|spread|home|m",
@@ -14128,7 +14134,11 @@
   "model": -8.1,
   "grp": "FBS",
   "limit": -3.0,
-  "status": "open"
+  "status": "L",
+  "clv": 4.5,
+  "close": -6.0,
+  "units": -1.0,
+  "final": "UCF 33 - Kansas 32"
  },
  {
   "id": "401856850|moneyline|home|m",
@@ -14151,7 +14161,9 @@
   "model": 69.9,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "UCF 33 - Kansas 32"
  },
  {
   "id": "401856854|spread|home|m",
@@ -14226,7 +14238,11 @@
   "model": -56.7,
   "grp": "FBS-FCS",
   "limit": -51.5,
-  "status": "open"
+  "status": "W",
+  "clv": -1.5,
+  "close": -46.0,
+  "units": 1.364,
+  "final": "Merrimack 0 - Wake Forest 77"
  },
  {
   "id": "401858290|total|under|m",
@@ -14249,7 +14265,11 @@
   "model": 48.0,
   "grp": "FBS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 55.5,
+  "units": -1.0,
+  "final": "Merrimack 0 - Wake Forest 77"
  },
  {
   "id": "401858516|spread|home|m",
@@ -14272,7 +14292,11 @@
   "model": -3.5,
   "grp": "FBS",
   "limit": 1.5,
-  "status": "open"
+  "status": "L",
+  "clv": 4.0,
+  "close": -2.5,
+  "units": -1.0,
+  "final": "Penn State 28 - Washington 25"
  },
  {
   "id": "401858516|moneyline|home|m",
@@ -14295,7 +14319,9 @@
   "model": 59.0,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Penn State 28 - Washington 25"
  },
  {
   "id": "401856856|spread|home|m",
@@ -14418,7 +14444,11 @@
   "model": -3.9,
   "grp": "FBS",
   "limit": 1.5,
-  "status": "open"
+  "status": "L",
+  "clv": 4.0,
+  "close": -2.5,
+  "units": -1.0,
+  "final": "Western Kentucky 42 - Middle Tennessee 51"
  },
  {
   "id": "401871076|moneyline|away|m",
@@ -14441,7 +14471,9 @@
   "model": 59.8,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Western Kentucky 42 - Middle Tennessee 51"
  },
  {
   "id": "401870795|spread|away|m",
@@ -14510,7 +14542,11 @@
   "model": -12.1,
   "grp": "FBS",
   "limit": -7.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": -7.5,
+  "units": -1.0,
+  "final": "Oregon 41 - Ohio State 28"
  },
  {
   "id": "401858514|moneyline|home|m",
@@ -14533,7 +14569,9 @@
   "model": 78.3,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Oregon 41 - Ohio State 28"
  },
  {
   "id": "401866454|total|under|wx",
@@ -14583,7 +14621,11 @@
   "model": -14.6,
   "grp": "FBS",
   "limit": -9.5,
-  "status": "open"
+  "status": "W",
+  "clv": -2.0,
+  "close": -7.5,
+  "units": 0.893,
+  "final": "Charlotte 12 - UAB 23"
  },
  {
   "id": "401867964|spread|home|m",
@@ -14752,7 +14794,11 @@
   "model": 27.1,
   "grp": "FCS-FCS",
   "limit": 30.5,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 30.5,
+  "units": 0.885,
+  "final": "Youngstown State 62 - Murray State 35"
  },
  {
   "id": "401868038|spread|home|m",
@@ -14852,7 +14898,11 @@
   "model": -0.3,
   "grp": "FCS-FCS",
   "limit": 3.0,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": 1.5,
+  "units": 0.442,
+  "final": "Alabama A&M 10 - Prairie View A&M 31"
  },
  {
   "id": "401872617|spread|home|m",
@@ -14979,7 +15029,11 @@
   "model": 27.1,
   "grp": "FCS-FCS",
   "limit": 32.5,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": 30.5,
+  "units": 0.885,
+  "final": "Youngstown State 62 - Murray State 35"
  },
  {
   "id": "401867922|spread|home|m",
@@ -15156,7 +15210,11 @@
   "model": 42.6,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 8.0,
+  "close": 43.5,
+  "units": 0.885,
+  "final": "Southeast Missouri State 33 - Tennessee State 14"
  },
  {
   "id": "401868216|total|under|m",
@@ -15287,7 +15345,11 @@
   "model": 51.3,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": 54.5,
+  "units": -1.0,
+  "final": "Alabama State 34 - Texas Southern 31"
  },
  {
   "id": "401868363|total|over|m",
@@ -15310,7 +15372,11 @@
   "model": 65.5,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 61.5,
+  "units": -0.5,
+  "final": "Florida A&M 20 - Alcorn State 38"
  },
  {
   "id": "401868379|spread|home|m",
@@ -15333,7 +15399,11 @@
   "model": -0.6,
   "grp": "FCS-FCS",
   "limit": 2.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": 3.0,
+  "units": -1.0,
+  "final": "Furman 24 - The Citadel 14"
  },
  {
   "id": "401868945|total|under|m",
@@ -15356,7 +15426,11 @@
   "model": 51.8,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 6.0,
+  "close": 51.5,
+  "units": -1.0,
+  "final": "Bethune-Cookman 17 - Southern 45"
  },
  {
   "id": "401867957|total|over|m",
@@ -15564,7 +15638,11 @@
   "model": 13.7,
   "grp": "FBS",
   "limit": 19.0,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 18.5,
+  "units": -0.5,
+  "final": "Rutgers 10 - Wisconsin 31"
  },
  {
   "id": "401868116|spread|away|m",
@@ -15587,7 +15665,11 @@
   "model": 20.6,
   "grp": "FCS-FCS",
   "limit": 24.0,
-  "status": "open"
+  "status": "L",
+  "clv": -0.5,
+  "close": 25.0,
+  "units": -0.5,
+  "final": "Portland State 24 - Montana 57"
  },
  {
   "id": "401868166|spread|away|m|FCS",
@@ -15685,7 +15767,11 @@
   "model": -6.4,
   "grp": "FCS-FCS",
   "limit": -3.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.5,
+  "close": -3.5,
+  "units": 0.424,
+  "final": "Bethune-Cookman 17 - Southern 45"
  },
  {
   "id": "401867839|spread|home|m",
@@ -15735,7 +15821,11 @@
   "model": -12.0,
   "grp": "FCS-FCS",
   "limit": -8.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -8.5,
+  "units": -0.5,
+  "final": "Northern Colorado 24 - Southern Utah 31"
  },
  {
   "id": "401858515|spread|home|m",
@@ -15812,7 +15902,11 @@
   "model": 55.6,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 49.5,
+  "units": 0.455,
+  "final": "Stephen F. Austin 28 - Lamar 45"
  },
  {
   "id": "401868108|spread|home|m",
@@ -15912,7 +16006,11 @@
   "model": -9.8,
   "grp": "FCS-FCS",
   "limit": -6.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": -6.5,
+  "units": -0.5,
+  "final": "Alabama State 34 - Texas Southern 31"
  },
  {
   "id": "401868068|spread|away|m",
@@ -15935,7 +16033,11 @@
   "model": 15.1,
   "grp": "FCS-FCS",
   "limit": 18.5,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 18.5,
+  "units": -1.0,
+  "final": "Eastern Kentucky 31 - Austin Peay 55"
  },
  {
   "id": "401868393|total|over|m",
@@ -15958,6 +16060,10 @@
   "model": 52.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 48.5,
+  "units": 0.442,
+  "final": "VMI 14 - Tennessee Tech 66"
  }
 ]
