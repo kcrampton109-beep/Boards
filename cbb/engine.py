@@ -51,7 +51,7 @@ D1_CONF = {str(k) for k in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 1
 BACKTEST = {   # corrected blend, against the opener at -110, 2023-24 / 2024-25 / 2025-26 (research/EDGE.md)
     "spread": "Spreads, December-March: gap 3+ CLV +1.40, beat the close 71%, 57.6% ATS, +9.8% ROI (+11.6 / +7.2 / +10.4 by season, about 3 a day); gap 4+ CLV +2.03, 82%, 62.5%, +19.3% ROI (+22.9 / +11.1 / +22.1, about 1 a day)",
     "total": "Totals, December-March: gap 5+ CLV +2.42, beat the close 76%, 56.3% ATS, +7.5% ROI (+3.6 / +7.1 / +11.2, about 2 a day); gap 6+ +9.9% ROI",
-    "nov": "November: only favourites at a spread gap of 4+ (CLV +1.32, 67% beat close, +7.7% ROI: +7.3 / +4.9 / +10.0) and overs at a total gap of 5+ (+8.2% ROI) worked; underdogs never beat the close (45%) and unders lost every season. Nov 1-3 2026, out of sample: favourites 15-8, CLV +1.35; overs CLV +1.38",
+    "nov": "November: favourites at a spread gap of 4+ (+7.7% ROI; CLV +1.32, but only +0.68 beyond the normal November drift toward favourites) and overs at a total gap of 5+ (+8.2% ROI, CLV +1.82) were the only cuts that made money, and both were chosen after seeing those same seasons; underdogs beat the close 45% of the time and unders lost every season",
     "caveat": "ROI assumes -110 at the opener. DraftKings' first number equals Action's opener 89% of the time (Openers tab); FanDuel and BetMGM 40-48%, so bet the DK number when you can.",
 }
 LEDGER, STATE = BOARD / "ledger.json", BOARD / "state.json"

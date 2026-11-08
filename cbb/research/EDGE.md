@@ -1,4 +1,18 @@
-# CBB: where the edge is (Nov 4 2026)
+# CBB: where the edge is (Nov 4 2026, corrected Nov 8)
+
+> **Correction, Nov 8 2026.** Three things below were overstated when this was written.
+>
+> 1. **The Nov 1-3 2026 "out of sample" check was not out of sample.** Those live results, split by favourite / underdog
+>    and over / under, were looked at first and are what pointed to the November filters. The first real test is Nov 4 on.
+> 2. **About half the November favourites' CLV is market drift.** Lines move toward favourites in November whatever the
+>    model says. Blind home favourites of 16+ got CLV +1.20 and beat the close 65% in 2023-25. The rule's CLV of +1.32 is
+>    +0.68 beyond drift. The Dec-Mar rules are not affected (spreads 4+ +2.03 / +1.81, totals 5+ +2.42 / +2.43).
+> 3. **"Every rule profitable in every season" is partly circular.** The November filters were picked from about 50
+>    cuts of the same three seasons, partly because they were positive in each.
+>
+> **Nov 4-7 2026, against the opener (the true test):** favourites 4+ the rule picked covered 17-25 (mean -1.02 vs the
+> number), favourites it did not pick covered 65-53 (+2.18), and the picks' CLV beyond size-matched drift was +0.03.
+> Overs 5+ went 27-15, CLV +2.05. Small samples, but the November favourites rule has shown no edge live.
 
 Live November started at 107-98, -1.06u, CLV -0.44, with only 28.5% of plays beating the close. The backtest's
 November was weak but not that weak (CLV about +0.5). Two model biases explain the gap, and fixing them gives a rule
@@ -44,9 +58,9 @@ The scaled margins remove the raw model's one losing season (spreads 3+ in 2024-
 beat the close (45%) and unders lost in all three seasons. Early-season ratings still compress mismatches, and early
 games score more than the model's level.
 
-**Out of sample, Nov 1-3 2026** (corrected model, opener vs DK/FD/MGM close; these games weren't used to pick the
-rules): favourites 4+ went 15-8 (+5.6u), CLV +1.35, 61% beat the close; overs 5+ went 8-8, CLV +1.38, 62.5% beat the
-close. The excluded underdogs (CLV -0.35, 10% beat) and unders (CLV -4.17, 11%) were the losers.
+**Nov 1-3 2026** (corrected model, opener vs DK/FD/MGM close; NOT out of sample, see the correction at the top):
+favourites 4+ went 15-8 (+5.6u), CLV +1.35, 61% beat the close; overs 5+ went 8-8, CLV +1.38, 62.5% beat the close.
+The excluded underdogs (CLV -0.35, 10% beat) and unders (CLV -4.17, 11%) were the losers.
 
 ## Caveats
 
