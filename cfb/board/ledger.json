@@ -16372,5 +16372,28 @@
   "grp": "FBS",
   "limit": -4.5,
   "status": "open"
+ },
+ {
+  "id": "401858519|spread|home|m",
+  "base": "401858519|spread|home|m",
+  "flagged": "2026-11-08T08:30-05:00",
+  "season": 2026,
+  "week": 11,
+  "game_id": 401858519,
+  "matchup": "Purdue @ Iowa",
+  "kickoff": "2026-11-14 19:30:00-05:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "home",
+  "pick": "Iowa -14.5",
+  "book": "FD",
+  "line": -14.5,
+  "odds": -114.0,
+  "stake": 1.0,
+  "edge": 6.3,
+  "model": -20.8,
+  "grp": "FBS",
+  "limit": -15.5,
+  "status": "open"
  }
 ]
