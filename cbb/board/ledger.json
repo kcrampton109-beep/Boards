@@ -11629,7 +11629,11 @@
   "opener": -7.5,
   "grp": "low-major",
   "limit": -8.0,
-  "status": "open"
+  "status": "L",
+  "close": -7.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Green Bay 76 - St. Thomas 67"
  },
  {
   "id": "401920739|spread|2097",
@@ -11654,7 +11658,11 @@
   "opener": 5.5,
   "grp": "low-major",
   "limit": 4.0,
-  "status": "open"
+  "status": "L",
+  "close": 4.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Campbell 71 - Western Michigan 87"
  },
  {
   "id": "401920739|total|over",
@@ -11679,7 +11687,11 @@
   "opener": 148.5,
   "grp": "low-major",
   "limit": 150.5,
-  "status": "open"
+  "status": "W",
+  "close": 151.5,
+  "clv": 5.0,
+  "units": 0.909,
+  "final": "Campbell 71 - Western Michigan 87"
  },
  {
   "id": "401926215|spread|98",
@@ -11883,7 +11895,11 @@
   "opener": 151.5,
   "grp": "low-major",
   "limit": 149.0,
-  "status": "open"
+  "status": "L",
+  "close": 149.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Green Bay 76 - St. Thomas 67"
  },
  {
   "id": "401902277|spread|68",
@@ -11908,7 +11924,11 @@
   "opener": -2.5,
   "grp": "low-major",
   "limit": -1.5,
-  "status": "open"
+  "status": "W",
+  "close": -2.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "Butler 81 - Boise State 100"
  },
  {
   "id": "401918053|spread|25",
@@ -12128,7 +12148,11 @@
   "opener": -6.5,
   "grp": "mid-major",
   "limit": -7.0,
-  "status": "open"
+  "status": "L",
+  "close": -8.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Central Connecticut 78 - Dartmouth 71"
  },
  {
   "id": "401925894|spread|2729",
@@ -12178,7 +12202,11 @@
   "opener": 6.5,
   "grp": "low-major",
   "limit": 9.0,
-  "status": "open"
+  "status": "W",
+  "close": 8.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Quinnipiac 79 - Vermont 76"
  },
  {
   "id": "401926215|total|under",
@@ -12203,6 +12231,56 @@
   "opener": 159.5,
   "grp": "mid-major",
   "limit": 163.5,
+  "status": "open"
+ },
+ {
+  "id": "401926132|total|over",
+  "base": "401926132|total|over",
+  "flagged": "2026-11-08T16:40-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401926132,
+  "matchup": "Illinois State @ Purdue",
+  "kickoff": "2026-11-09T20:30:00-05:00",
+  "tier": "NOV_OVER",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 144.5",
+  "book": "DK",
+  "line": 144.5,
+  "odds": -105.0,
+  "stake": 1.0,
+  "edge": 7.9,
+  "model": 152.4,
+  "opener": 144.5,
+  "grp": "power 6",
+  "limit": 147.0,
+  "status": "open"
+ },
+ {
+  "id": "401920887|spread|2550",
+  "base": "401920887|spread|2550",
+  "flagged": "2026-11-08T16:40-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401920887,
+  "matchup": "Seton Hall vs Charlotte",
+  "kickoff": "2026-11-09T21:30:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2550,
+  "pick": "Seton Hall -4.5",
+  "book": "DK",
+  "line": -4.5,
+  "odds": -112.0,
+  "stake": 1.0,
+  "edge": 3.8,
+  "model": 8.3,
+  "opener": -4.5,
+  "grp": "power 6",
+  "limit": -5.0,
   "status": "open"
  }
 ]
