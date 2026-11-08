@@ -9976,7 +9976,11 @@
   "opener": 142.5,
   "grp": "mid-major",
   "limit": 142.5,
-  "status": "open"
+  "status": "L",
+  "close": 139.5,
+  "clv": -3.0,
+  "units": -1.0,
+  "final": "Pacific 63 - Bradley 52"
  },
  {
   "id": "401917914|spread|145|NOV_FAV",
@@ -10652,7 +10656,11 @@
   "opener": 20.5,
   "grp": "mid-major",
   "limit": 21.0,
-  "status": "open"
+  "status": "L",
+  "close": 23.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Northwestern State 71 - Murray State 93"
  },
  {
   "id": "401920816|total|under",
@@ -10677,7 +10685,11 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 147.5,
-  "status": "open"
+  "status": "L",
+  "close": 144.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "SE Louisiana 83 - Little Rock 79"
  },
  {
   "id": "401919805|spread|2325",
@@ -10930,7 +10942,11 @@
   "opener": 5.5,
   "grp": "mid-major",
   "limit": 7.5,
-  "status": "open"
+  "status": "W",
+  "close": 9.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "SE Louisiana 83 - Little Rock 79"
  },
  {
   "id": "401924940|total|over",
@@ -10984,7 +11000,11 @@
   "opener": -10.5,
   "grp": "mid-major",
   "limit": -9.0,
-  "status": "open"
+  "status": "L",
+  "close": -7.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Southern Indiana 76 - Evansville 78"
  },
  {
   "id": "401917519|total|under",
@@ -11063,7 +11083,11 @@
   "opener": 152.5,
   "grp": "mid-major",
   "limit": 155.0,
-  "status": "open"
+  "status": "L",
+  "close": 155.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Bethune-Cookman 81 - Grand Canyon 99"
  },
  {
   "id": "401917962|spread|2000",
@@ -11175,7 +11199,11 @@
   "opener": -10.5,
   "grp": "mid-major",
   "limit": -8.0,
-  "status": "open"
+  "status": "L",
+  "close": -7.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Southern Indiana 76 - Evansville 78"
  },
  {
   "id": "401920424|spread|8",
@@ -11366,7 +11394,11 @@
   "opener": -2.0,
   "grp": "low-major",
   "limit": -1.5,
-  "status": "open"
+  "status": "L",
+  "close": -1.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Pacific 63 - Bradley 52"
  },
  {
   "id": "401917519|spread|2541|NOV_FAV",
