@@ -7457,11 +7457,11 @@
   "model_line": 6.2,
   "flagged": "2026-11-01T16:44:00.294993-05:00",
   "kickoff_iso": "2026-11-08T09:30:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.87,
+  "close": -3.5,
+  "clv": 0.5,
+  "final": "CIN 34 - ATL 17"
  },
  {
   "id": "2026_09_DET_MIA:TREND:total:over",
@@ -8017,11 +8017,11 @@
   "model_line": 6.2,
   "flagged": "2026-11-01T18:42:14.198028-05:00",
   "kickoff_iso": "2026-11-08T09:30:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.49,
+  "close": -3.5,
+  "clv": 0.0,
+  "final": "CIN 34 - ATL 17"
  },
  {
   "id": "2026_09_DAL_IND:LEAN:spread:home",
@@ -8157,11 +8157,11 @@
   "model_line": 6.2,
   "flagged": "2026-11-01T20:16:41.387816-05:00",
   "kickoff_iso": "2026-11-08T09:30:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 52.5,
+  "clv": 2.0,
+  "final": "CIN 34 - ATL 17"
  },
  {
   "id": "2026_09_HOU_LAC:RLM:total:under",
