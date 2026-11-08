@@ -8862,5 +8862,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_10_HOU_CLE:STRONG:spread:away",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "team": "HOU",
+  "pid": null,
+  "game_id": "2026_10_HOU_CLE",
+  "week": 10,
+  "matchup": "HOU @ CLE",
+  "kickoff": "Sun Nov 15, 1:00 PM ET",
+  "pick": "HOU -3.5",
+  "line": -3.5,
+  "odds": -110,
+  "book": "FD",
+  "stake": 2.0,
+  "edge": 6.2,
+  "note": "CLE QB: Deshaun Watson out, model uses Shedeur Sanders",
+  "limit": -6.5,
+  "model_line": 9.7,
+  "flagged": "2026-11-08T11:47:11.887601-05:00",
+  "kickoff_iso": "2026-11-15T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
