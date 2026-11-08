@@ -14344,7 +14344,11 @@
   "model": -19.7,
   "grp": "FBS",
   "limit": -14.5,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": -16.5,
+  "units": -1.0,
+  "final": "West Virginia 48 - Texas Tech 53"
  },
  {
   "id": "401864533|moneyline|home|m",
@@ -14496,7 +14500,11 @@
   "model": -18.8,
   "grp": "FBS",
   "limit": -13.5,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": -14.5,
+  "units": 0.87,
+  "final": "Liberty 30 - New Mexico State 14"
  },
  {
   "id": "401862823|total|over|m",
@@ -14519,7 +14527,11 @@
   "model": 59.2,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": -6.0,
+  "close": 43.5,
+  "units": -0.5,
+  "final": "Air Force 24 - Army 21"
  },
  {
   "id": "401858514|spread|home|m",
@@ -16263,6 +16275,29 @@
   "model": 58.1,
   "grp": "FBS",
   "limit": null,
+  "status": "open"
+ },
+ {
+  "id": "401858523|spread|home|m",
+  "base": "401858523|spread|home|m",
+  "flagged": "2026-11-08T01:27-05:00",
+  "season": 2026,
+  "week": 11,
+  "game_id": 401858523,
+  "matchup": "Michigan @ Oregon",
+  "kickoff": "2026-11-14 15:30:00-05:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "home",
+  "pick": "Oregon -9.5",
+  "book": "DK",
+  "line": -9.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.3,
+  "model": -14.8,
+  "grp": "FBS",
+  "limit": -9.5,
   "status": "open"
  }
 ]
