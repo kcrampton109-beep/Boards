@@ -16349,5 +16349,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401860917|spread|home|m",
+  "base": "401860917|spread|home|m",
+  "flagged": "2026-11-08T07:41-05:00",
+  "season": 2026,
+  "week": 11,
+  "game_id": 401860917,
+  "matchup": "Colorado State @ Washington State",
+  "kickoff": "2026-11-14 22:30:00-05:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "home",
+  "pick": "Washington State -3.5",
+  "book": "FD",
+  "line": -3.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 6.1,
+  "model": -9.6,
+  "grp": "FBS",
+  "limit": -4.5,
+  "status": "open"
  }
 ]
