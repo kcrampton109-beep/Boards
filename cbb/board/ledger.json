@@ -10237,7 +10237,11 @@
   "opener": 144.5,
   "grp": "mid-major",
   "limit": 145.0,
-  "status": "open"
+  "status": "W",
+  "close": 145.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "San Jos\u00e9 State 79 - UC Irvine 91"
  },
  {
   "id": "401920371|spread|278",
@@ -10291,7 +10295,11 @@
   "opener": -16.5,
   "grp": "mid-major",
   "limit": -16.5,
-  "status": "open"
+  "status": "L",
+  "close": -19.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Sacramento State 77 - Santa Clara 83"
  },
  {
   "id": "401925772|spread|2166|NOV_FAV",
@@ -11041,7 +11049,11 @@
   "opener": 163.5,
   "grp": "mid-major",
   "limit": 170.0,
-  "status": "open"
+  "status": "W",
+  "close": 169.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Sacramento State 77 - Santa Clara 83"
  },
  {
   "id": "401909760|total|over",
@@ -11435,7 +11447,11 @@
   "opener": -16.5,
   "grp": "low-major",
   "limit": -21.0,
-  "status": "open"
+  "status": "L",
+  "close": -19.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Sacramento State 77 - Santa Clara 83"
  },
  {
   "id": "401917517|spread|2502",
@@ -11460,7 +11476,11 @@
   "opener": 10.5,
   "grp": "low-major",
   "limit": 10.0,
-  "status": "open"
+  "status": "L",
+  "close": 10.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Portland State 60 - Seattle U 79"
  },
  {
   "id": "401917517|total|under",
@@ -11485,7 +11505,11 @@
   "opener": 143.5,
   "grp": "low-major",
   "limit": 144.5,
-  "status": "open"
+  "status": "W",
+  "close": 144.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Portland State 60 - Seattle U 79"
  },
  {
   "id": "401924646|spread|2599",
