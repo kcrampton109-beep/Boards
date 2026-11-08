@@ -1,15 +1,8 @@
-CFB weekly refresh, Sun Nov 01 09:19 AM ET
-Last week: Strong 5-5 (-0.9u, CLV +1.1); FCS 18-10 (+6.0u, CLV +1.5); Wind 0-0 (+0.0u)
-Research tiers last week: Leans 26-32-1 (-4.3u, CLV +0.7); Research 34-24 (+6.4u, CLV +2.1)
-Season: Strong 16-12 (+2.7u, CLV +1.0); FCS 44-22 (+17.4u, CLV +1.5); Wind 19-22 (-4.9u, CLV +0.9)
-This week's card so far: 8 plays
-  Strong: Mississippi State -3.5 +114 FD (Vanderbilt @ Mississippi State, playable to -3.5)
-  Strong: Utah -4.5 -108 MGM (BYU @ Utah, playable to -6)
-  Strong: Kansas -2.5 -110 FD (UCF @ Kansas, playable to -3)
-  Strong: Kansas State +5.5 -110 FD (Oklahoma State @ Kansas State, playable to +4)
-  Strong: Wake Forest -47.5 -105 FD (Merrimack @ Wake Forest, playable to -51.5)
-  Strong: Nevada +12.5 -110 DK (New Mexico @ Nevada, playable to +11.5)
-  Strong: Sacramento State +27.5 -102 FD (Toledo @ Sacramento State, playable to +27)
-  Strong: Southern Miss +14 -110 DK (James Madison @ Southern Miss, playable to +13.5)
-Biggest FBS rating moves: Baylor +3.7, Liberty +3.4, Duke +3.4, Boston College -4.3, UCF -4.0, New Mexico State -3.5
-Health: 0 engine errors, longest gap between checks 2.4h, 454 line snapshots this week, 976 data calls left this month
+CFB weekly refresh, Sun Nov 08 09:22 AM ET
+Last week: Strong 9-13 (-4.4u, CLV +0.9); FCS 12-8 (+2.7u, CLV +1.4); Wind 0-0 (+0.0u)
+Research tiers last week: Leans 27-25-1 (-0.9u, CLV +0.3); Research 32-27 (+4.3u, CLV +1.9)
+Season: Strong 21-22 (-2.4u, CLV +1.1); FCS 47-27 (+15.1u, CLV +1.4); Wind 19-22 (-4.9u, CLV +0.9)
+This week's card so far: 1 play
+  Strong: Iowa -14.5 -114 FD (Purdue @ Iowa, playable to -15.5)
+Biggest FBS rating moves: Tulsa +5.8, Georgia +4.0, Florida Atlantic +3.9, Tulane -6.2, UTSA -4.2, Ole Miss -4.1
+Health: 0 engine errors, longest gap between checks 1.4h, 432 line snapshots this week, 904 data calls left this month
