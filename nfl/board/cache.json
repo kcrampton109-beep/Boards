@@ -379,29 +379,29 @@
    }
   },
   "2026_09_LV_SF": {
-   "ts": "2026-11-08T05:24:36.199592-05:00",
+   "ts": "2026-11-08T08:31:42.643820-05:00",
    "wx": {
-    "wind": 7.4,
-    "gust": 13.2,
-    "temp": 66.0,
+    "wind": 6.7,
+    "gust": 9.4,
+    "temp": 67.0,
     "precip": 0
    }
   },
   "2026_09_GB_NE": {
-   "ts": "2026-11-08T05:24:36.199592-05:00",
+   "ts": "2026-11-08T08:31:42.643820-05:00",
    "wx": {
-    "wind": 7.0,
-    "gust": 22.8,
-    "temp": 48.0,
-    "precip": 1
+    "wind": 7.6,
+    "gust": 24.2,
+    "temp": 47.0,
+    "precip": 0
    }
   },
   "2026_09_ARI_SEA": {
-   "ts": "2026-11-08T05:24:36.199592-05:00",
+   "ts": "2026-11-08T08:31:42.643820-05:00",
    "wx": {
-    "wind": 10.4,
-    "gust": 21.5,
-    "temp": 53.0,
+    "wind": 10.1,
+    "gust": 23.5,
+    "temp": 54.0,
     "precip": 3
    }
   },
@@ -1930,7 +1930,7 @@
    }
   },
   "290961": {
-   "ts": "2026-11-08T05:24:36.199592-05:00",
+   "ts": "2026-11-08T08:31:42.643820-05:00",
    "odds": {
     "kenneth walker": {
      "name": "Kenneth Walker III",
@@ -1962,7 +1962,7 @@
     },
     "omar cooper": {
      "name": "Omar Cooper Jr.",
-     "FD": 310
+     "FD": 320
     },
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -2048,16 +2048,16 @@
      "name": "Malik McClain",
      "FD": 3500
     },
-    "kene nwangwu": {
-     "name": "Kene Nwangwu",
-     "FD": 3500
-    },
     "andrew beck": {
      "name": "Andrew Beck",
      "FD": 3500
     },
     "jelani woods": {
      "name": "Jelani Woods",
+     "FD": 4000
+    },
+    "kene nwangwu": {
+     "name": "Kene Nwangwu",
      "FD": 4000
     }
    }
