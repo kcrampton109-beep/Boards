@@ -11741,7 +11741,11 @@
   "opener": 6.5,
   "grp": "low-major",
   "limit": 3.5,
-  "status": "open"
+  "status": "L",
+  "close": 6.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Idaho State 82 - Air Force 89"
  },
  {
   "id": "401911335|total|under",
@@ -11766,7 +11770,11 @@
   "opener": 156.5,
   "grp": "low-major",
   "limit": 153.0,
-  "status": "open"
+  "status": "L",
+  "close": 161.5,
+  "clv": -4.0,
+  "units": -1.0,
+  "final": "Idaho State 82 - Air Force 89"
  },
  {
   "id": "401911453|spread|2608",
@@ -12281,6 +12289,56 @@
   "opener": -4.5,
   "grp": "power 6",
   "limit": -5.0,
+  "status": "open"
+ },
+ {
+  "id": "401926181|spread|2430",
+  "base": "401926181|spread|2430",
+  "flagged": "2026-11-08T17:42-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401926181,
+  "matchup": "UNC Greensboro @ UIC",
+  "kickoff": "2026-11-09T19:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2430,
+  "pick": "UNC Greensboro +18.5",
+  "book": "DK",
+  "line": 18.5,
+  "odds": -112.0,
+  "stake": 1.0,
+  "edge": 3.3,
+  "model": -15.2,
+  "opener": 17.5,
+  "grp": "mid-major",
+  "limit": 18.5,
+  "status": "open"
+ },
+ {
+  "id": "401906803|total|over",
+  "base": "401906803|total|over",
+  "flagged": "2026-11-08T17:42-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401906803,
+  "matchup": "North Alabama @ Oklahoma",
+  "kickoff": "2026-11-09T20:00:00-05:00",
+  "tier": "NOV_OVER",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 147.5",
+  "book": "DK",
+  "line": 147.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.3,
+  "model": 152.8,
+  "opener": 147.5,
+  "grp": "power 6",
+  "limit": 147.5,
   "status": "open"
  }
 ]
