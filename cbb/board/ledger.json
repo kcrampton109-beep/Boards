@@ -9455,8 +9455,8 @@
   "grp": "power 6",
   "limit": 0.5,
   "status": "L",
-  "close": 2.5,
-  "clv": 0.0,
+  "close": 3.5,
+  "clv": -1.0,
   "units": -1.0,
   "final": "San Diego State 77 - Colorado 66"
  },
@@ -9899,8 +9899,8 @@
   "grp": "mid-major",
   "limit": -1.0,
   "status": "L",
-  "close": 4.5,
-  "clv": 0.0,
+  "close": 5.5,
+  "clv": -1.0,
   "units": -1.0,
   "final": "Northern Iowa 83 - Furman 98"
  },
@@ -10097,7 +10097,11 @@
   "opener": -11.5,
   "grp": "mid-major",
   "limit": -12.0,
-  "status": "open"
+  "status": "W",
+  "close": -11.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Mercer 76 - Davidson 88"
  },
  {
   "id": "401924951|spread|2710",
@@ -10122,7 +10126,11 @@
   "opener": 9.5,
   "grp": "low-major",
   "limit": 8.5,
-  "status": "open"
+  "status": "W",
+  "close": 9.5,
+  "clv": 0.0,
+  "units": 0.833,
+  "final": "Houston Christian 74 - Western Illinois 67"
  },
  {
   "id": "401911262|spread|179",
@@ -10147,7 +10155,11 @@
   "opener": -7.5,
   "grp": "mid-major",
   "limit": -9.0,
-  "status": "open"
+  "status": "W",
+  "close": -9.5,
+  "clv": 2.0,
+  "units": 0.98,
+  "final": "St. Bonaventure 88 - Canisius 49"
  },
  {
   "id": "401920435|total|over",
@@ -10272,7 +10284,11 @@
   "opener": -11.5,
   "grp": "mid-major",
   "limit": -11.0,
-  "status": "open"
+  "status": "W",
+  "close": -11.5,
+  "clv": 1.0,
+  "units": 0.847,
+  "final": "Mercer 76 - Davidson 88"
  },
  {
   "id": "401918948|spread|2413",
@@ -10327,8 +10343,8 @@
   "grp": "mid-major",
   "limit": 164.5,
   "status": "W",
-  "close": 162.5,
-  "clv": 2.0,
+  "close": 163.5,
+  "clv": 1.0,
   "units": 0.952,
   "final": "VMI 68 - UTSA 70"
  },
@@ -10497,8 +10513,8 @@
   "grp": "low-major",
   "limit": 1.5,
   "status": "L",
-  "close": 4.5,
-  "clv": -2.0,
+  "close": 3.5,
+  "clv": -1.0,
   "units": -1.0,
   "final": "Western Carolina 83 - UNC Asheville 75"
  },
@@ -10554,7 +10570,11 @@
   "opener": -3.5,
   "grp": "low-major",
   "limit": -5.5,
-  "status": "open"
+  "status": "L",
+  "close": -3.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Morgan State 73 - Niagara 67"
  },
  {
   "id": "401924843|total|under",
@@ -10579,7 +10599,11 @@
   "opener": 150.5,
   "grp": "low-major",
   "limit": 148.0,
-  "status": "open"
+  "status": "W",
+  "close": 148.5,
+  "clv": 2.0,
+  "units": 0.87,
+  "final": "Morgan State 73 - Niagara 67"
  },
  {
   "id": "401925077|spread|2466",
@@ -10684,8 +10708,8 @@
   "grp": "mid-major",
   "limit": 147.5,
   "status": "L",
-  "close": 149.5,
-  "clv": -1.0,
+  "close": 150.5,
+  "clv": -2.0,
   "units": -1.0,
   "final": "Long Island University 80 - La Salle 88"
  },
@@ -10742,8 +10766,8 @@
   "grp": "low-major",
   "limit": 13.5,
   "status": "W",
-  "close": 14.5,
-  "clv": -1.0,
+  "close": 15.5,
+  "clv": -2.0,
   "units": 0.87,
   "final": "North Carolina A&T 70 - Ohio 80"
  },
@@ -10800,8 +10824,8 @@
   "grp": "mid-major",
   "limit": 176.0,
   "status": "W",
-  "close": 176.5,
-  "clv": 0.0,
+  "close": 175.5,
+  "clv": 1.0,
   "units": 0.909,
   "final": "Cal State Fullerton 87 - South Dakota 85"
  },
@@ -11203,8 +11227,8 @@
   "grp": "low-major",
   "limit": 0.0,
   "status": "W",
-  "close": -1.5,
-  "clv": 3.0,
+  "close": 1.5,
+  "clv": 0.0,
   "units": 0.8,
   "final": "Colgate 74 - Drexel 77"
  },
@@ -11260,7 +11284,11 @@
   "opener": -17.5,
   "grp": "low-major",
   "limit": -20.5,
-  "status": "open"
+  "status": "L",
+  "close": -20.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Hampton 61 - George Washington 75"
  },
  {
   "id": "401911186|spread|2168",
