@@ -379,30 +379,30 @@
    }
   },
   "2026_09_LV_SF": {
-   "ts": "2026-11-07T17:53:00.689339-05:00",
+   "ts": "2026-11-07T21:31:18.960011-05:00",
    "wx": {
     "wind": 7.6,
-    "gust": 11.6,
+    "gust": 12.5,
     "temp": 67.0,
     "precip": 0
    }
   },
   "2026_09_GB_NE": {
-   "ts": "2026-11-07T17:53:00.689339-05:00",
+   "ts": "2026-11-07T21:31:18.960011-05:00",
    "wx": {
-    "wind": 7.1,
-    "gust": 22.6,
+    "wind": 7.0,
+    "gust": 23.7,
     "temp": 47.0,
     "precip": 1
    }
   },
   "2026_09_ARI_SEA": {
-   "ts": "2026-11-07T17:53:00.689339-05:00",
+   "ts": "2026-11-07T21:31:18.960011-05:00",
    "wx": {
-    "wind": 10.8,
-    "gust": 20.4,
+    "wind": 9.0,
+    "gust": 17.9,
     "temp": 52.0,
-    "precip": 19
+    "precip": 4
    }
   },
   "2026_09_TB_CHI": {
@@ -1930,7 +1930,7 @@
    }
   },
   "290961": {
-   "ts": "2026-11-07T17:53:00.689339-05:00",
+   "ts": "2026-11-07T21:31:18.960011-05:00",
    "odds": {
     "kenneth walker": {
      "name": "Kenneth Walker III",
@@ -1950,7 +1950,7 @@
     },
     "breece hall": {
      "name": "Breece Hall",
-     "FD": 190
+     "FD": 185
     },
     "braelon allen": {
      "name": "Braelon Allen",
@@ -1962,7 +1962,7 @@
     },
     "omar cooper": {
      "name": "Omar Cooper Jr.",
-     "FD": 320
+     "FD": 310
     },
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -1998,7 +1998,7 @@
     },
     "tim patrick": {
      "name": "Tim Patrick",
-     "FD": 800
+     "FD": 750
     },
     "jalen royals": {
      "name": "Jalen Royals",
@@ -2022,22 +2022,22 @@
     },
     "jake briningstool": {
      "name": "Jake Briningstool",
-     "FD": 1800
+     "FD": 1700
     },
     "jared wiley": {
      "name": "Jared Wiley",
-     "FD": 1800
+     "FD": 1700
     },
     "nikko remigio": {
      "name": "Nikko Remigio",
-     "FD": 1900
-    },
-    "isaiah davis": {
-     "name": "Isaiah Davis",
-     "FD": 2500
+     "FD": 2000
     },
     "jaydn ott": {
      "name": "Jaydn Ott",
+     "FD": 2700
+    },
+    "isaiah davis": {
+     "name": "Isaiah Davis",
      "FD": 2700
     },
     "ben vansumeren": {
@@ -2046,11 +2046,7 @@
     },
     "malik mcclain": {
      "name": "Malik McClain",
-     "FD": 3300
-    },
-    "andrew beck": {
-     "name": "Andrew Beck",
-     "FD": 3300
+     "FD": 3500
     },
     "jelani woods": {
      "name": "Jelani Woods",
@@ -2058,7 +2054,11 @@
     },
     "kene nwangwu": {
      "name": "Kene Nwangwu",
-     "FD": 4000
+     "FD": 3500
+    },
+    "andrew beck": {
+     "name": "Andrew Beck",
+     "FD": 3500
     }
    }
   },
