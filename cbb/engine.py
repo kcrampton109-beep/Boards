@@ -39,12 +39,15 @@ RULES = dict(spread_lean=3.0, spread=4.0, total_lean=5.0, total=6.0,
              # Nov 4 2026 (owner's call, research/EDGE.md): the ratings are shrunk, so margins are scaled up by k (actual
              # margin / model margin over earlier seasons; hist.json margin_scale, this value if missing), and totals are
              # measured against the market's level: minus the average (model - opening total) over the last 7 days + today
-             margin_scale=1.063, level_days=7)
+             margin_scale=1.063, level_days=7,
+             # RLM research (Nov 8 2026, owner's request, research/rlm.py): tickets on one side, line moved the other way
+             rlm_tickets=65, rlm_strict=80, rlm_move=1.0, rlm_min_bets=250)
 TIERS = {
     "SPREAD": "Spread 4+", "SPREAD_LEAN": "Spread 3-4", "TOTAL": "Total 6+", "TOTAL_LEAN": "Total 5-6",
     "NOV_FAV": "Nov favourites 4+", "NOV_OVER": "Nov overs 5+", "NOV": "November research",
+    "RLM": "RLM spreads", "RLM_80": "RLM spreads 80%+", "RLM_T": "RLM totals",
 }
-TIER_RANK = {"NOV": 1, "SPREAD_LEAN": 1, "TOTAL_LEAN": 1, "SPREAD": 2, "TOTAL": 2, "NOV_FAV": 2, "NOV_OVER": 2}
+TIER_RANK = {"NOV": 1, "SPREAD_LEAN": 1, "TOTAL_LEAN": 1, "SPREAD": 2, "TOTAL": 2, "NOV_FAV": 2, "NOV_OVER": 2, "RLM": 1, "RLM_T": 1, "RLM_80": 2}
 P6 = {"2", "4", "7", "8", "23"}   # ESPN conference ids: ACC, Big East, Big Ten, Big 12, SEC (the Pac-12 left in 2024)
 D1_CONF = {str(k) for k in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27,
                             29, 30, 44, 45, 46, 49, 62)}
@@ -52,10 +55,12 @@ BACKTEST = {   # corrected blend, against the opener at -110, 2023-24 / 2024-25 
     "spread": "Spreads, December-March: gap 3+ CLV +1.40, beat the close 71%, 57.6% ATS, +9.8% ROI (+11.6 / +7.2 / +10.4 by season, about 3 a day); gap 4+ CLV +2.03, 82%, 62.5%, +19.3% ROI (+22.9 / +11.1 / +22.1, about 1 a day)",
     "total": "Totals, December-March: gap 5+ CLV +2.42, beat the close 76%, 56.3% ATS, +7.5% ROI (+3.6 / +7.1 / +11.2, about 2 a day); gap 6+ +9.9% ROI",
     "nov": "November: favourites at a spread gap of 4+ (+7.7% ROI; CLV +1.32, but only +0.68 beyond the normal November drift toward favourites) and overs at a total gap of 5+ (+8.2% ROI, CLV +1.82) were the only cuts that made money, and both were chosen after seeing those same seasons; underdogs beat the close 45% of the time and unders lost every season",
+    "rlm": "Reverse line movement (65%+ of tickets on one side, line moved 1+ the other way), graded at the closing number: 2023-25 51.4% and 2025-26 48.8% on spreads (needs 52.4%), totals about 50%. It can only pay at the number when the signal first fires, which history can't show, so the RLM tiers log that number live",
     "caveat": "ROI assumes -110 at the opener. DraftKings' first number equals Action's opener 89% of the time (Openers tab); FanDuel and BetMGM 40-48%, so bet the DK number when you can.",
 }
 LEDGER, STATE = BOARD / "ledger.json", BOARD / "state.json"
 SEEN_OPEN, SEEN_DONE = BOARD / "seen_pending.json", BOARD / "first_seen.jsonl"
+AN2 = "https://api.actionnetwork.com/web/v2/scoreboard/ncaab"   # the v1 feed stopped carrying ticket / money shares in 2026
 
 
 def now_et():
@@ -383,7 +388,71 @@ def total_level(raw, now):
     return float(np.sum(d)), len(d)
 
 
-def price(g, rts, now):
+def fetch_public(days):
+    """Consensus ticket and money shares by Action game id, on Action's home team / the over."""
+    out = {}
+    for d in days:
+        r = requests.get(AN2, params={"bookIds": "15", "periods": "event", "division": "D1", "date": f"{d:%Y%m%d}"},
+                         headers={"User-Agent": "Mozilla/5.0"}, timeout=(10, 20))
+        r.raise_for_status()
+        for g in r.json().get("games", []):
+            ev_ = ((g.get("markets") or {}).get("15") or {}).get("event") or {}
+            rec = dict(bets=g.get("num_bets"))
+            for o in ev_.get("spread") or []:
+                if o.get("side") == "home":
+                    bi = o.get("bet_info") or {}
+                    rec["tix"], rec["mon"] = (bi.get("tickets") or {}).get("percent"), (bi.get("money") or {}).get("percent")
+            for o in ev_.get("total") or []:
+                if o.get("side") == "over":
+                    bi = o.get("bet_info") or {}
+                    rec["tot_tix"], rec["tot_mon"] = (bi.get("tickets") or {}).get("percent"), (bi.get("money") or {}).get("percent")
+            out[g["id"]] = rec
+        time.sleep(0.4)
+    return out
+
+
+def rlm_plays(gm, pub, same, margin, total, now):
+    """Reverse line movement: most tickets on one side while the market (DK/FD/MGM median) has moved 1+ points the other
+    way from Action's opener. Paper research at the best price when the signal first fires, so the number is the one a
+    bettor could really have had. Backtest at the closing number: no edge (research/rlm.py)."""
+    if not pub or same is None or (isinstance(same, float) and math.isnan(same)) or (pub.get("bets") or 0) < RULES["rlm_min_bets"]:
+        return []
+    same = bool(same)
+    T, m = RULES["rlm_tickets"], RULES["rlm_move"]
+    mins = round((pd.Timestamp(gm["kickoff_iso"]) - pd.Timestamp(now)).total_seconds() / 60)
+    out = []
+    def add(market, side, share, money, moved, tier, line, odds, book):
+        team = (gm["home"] if side == "home" else gm["away"]) if market == "spread" else None
+        pick = f"{team} {'PK' if line == 0 else f'{line:+g}'}" if market == "spread" else f"{side.title()} {line:g}"
+        opener = gm["open_total"] if market == "total" else (gm["open_line"] if side == "home" else -gm["open_line"])
+        model_side = round(total, 1) if market == "total" else round(margin if side == "home" else -margin, 1)
+        out.append(dict(game_id=gm["game_id"], signal="rlm", market=market, side=side, pick=pick, team=team,
+                        team_eid=(gm["home_eid"] if side == "home" else gm["away_eid"]) if market == "spread" else None,
+                        line=line, odds=odds, book=book, edge=round(moved, 1), tier=tier, grp=gm["grp"], model=model_side, limit=line,
+                        opener=opener, tix=share, money=money, bets=pub.get("bets"), moved=round(moved, 1), mins=mins))
+    sp = [v["sp_home"] for v in gm["books"].values() if v["sp_home"] is not None]
+    if sp and gm["open_line"] is not None and pub.get("tix") is not None:
+        tix = pub["tix"] if same else 100 - pub["tix"]
+        mon = None if pub.get("mon") is None else (pub["mon"] if same else 100 - pub["mon"])
+        mv = float(np.median(sp)) - gm["open_line"]
+        for side, share, money, moved in (("away", tix, mon, mv), ("home", 100 - tix, None if mon is None else 100 - mon, -mv)):
+            if share >= T and moved >= m:
+                b = best(gm["books"], side)
+                if b:
+                    add("spread", side, share, money, moved, "RLM_80" if share >= RULES["rlm_strict"] else "RLM", *b)
+    tt = [v["tot"] for v in gm["books"].values() if v["tot"] is not None]
+    if tt and gm["open_total"] is not None and pub.get("tot_tix") is not None:
+        mv = float(np.median(tt)) - gm["open_total"]
+        o, om = pub["tot_tix"], pub.get("tot_mon")
+        for side, share, money, moved in (("under", o, om, -mv), ("over", 100 - o, None if om is None else 100 - om, mv)):
+            if share >= T and moved >= m:
+                b = best(gm["books"], side)
+                if b:
+                    add("total", side, share, money, moved, "RLM_T", *b)
+    return out
+
+
+def price(g, rts, now, publics=None):
     """Every upcoming D1 game with at least one book line: blend numbers, prices, gaps and the plays they make."""
     up = g[g["d1"] & (g["state"] == "pre") & (g["start"] > pd.Timestamp(now))]
     up = up[up["start"] < pd.Timestamp(now) + pd.Timedelta(days=RULES["ahead_days"] + 1)]
@@ -419,6 +488,7 @@ def price(g, rts, now):
                   cons_line=num(getattr(r, "cons_spread", None)), cons_total=num(getattr(r, "cons_total", None)),
                   books=books, stale_books=stale or None)
         games.append(gm)
+        plays += rlm_plays(gm, (publics or {}).get(gm["an_id"]), getattr(r, "same_orient", None), margin, total, now)
         day = kick.date()
         cand = []
         for side in ("home", "away", "over", "under"):
@@ -558,12 +628,14 @@ def seen_stats():
 
 # ---------------------------------------------------------------- 5. ledger
 def play_id(f, gidx=None):
-    """Spreads are keyed by the team backed (ESPN can swap home / away after a play is logged), totals by over/under."""
+    """Spreads are keyed by the team backed (ESPN can swap home / away after a play is logged), totals by over/under.
+    Signal plays (RLM) have their own keys, so they are tracked independently of the model's plays on the same game."""
+    pre = f"{f['signal']}|" if f.get("signal") else ""
     if f["market"] == "spread":
         t = team_of(f, gidx)
         if t is not None:
-            return f"{f['game_id']}|spread|{t}"
-    return f"{f['game_id']}|{f['market']}|{f['side']}"
+            return f"{pre}{f['game_id']}|spread|{t}"
+    return f"{pre}{f['game_id']}|{f['market']}|{f['side']}"
 
 
 def team_of(e, gidx=None):
@@ -617,7 +689,8 @@ def update_ledger(plays, games, g, season, now):
                         tier=f["tier"], market=f["market"], side=f["side"], team_eid=f.get("team_eid"), pick=f["pick"],
                         book=f["book"], line=f["line"],
                         odds=f["odds"], stake=RULES["stake"], edge=f["edge"], model=f["model"], opener=f["opener"],
-                        grp=f["grp"], limit=f["limit"], status="open"))
+                        grp=f["grp"], limit=f["limit"], status="open",
+                        **{k: f[k] for k in ("signal", "tix", "money", "bets", "moved", "mins") if f.get(k) is not None}))
         have[base] = rank
     # grade: final score, and the DK/FD/MGM median closing number (Action consensus if none) for CLV. Every settled
     # play is re-graded each run (cheap), so a fix to grading or a late score correction reaches the whole record.
@@ -737,7 +810,13 @@ def main():
             msg = f"ok no games in the feed yet (fetched {fetched})"
         else:
             rts = {t: ratings_now(t, g, tm, season, now.date()) for t in MODELS}
-            games, plays = price(g, rts, now)
+            publics = {}
+            if not ASOF:
+                try:
+                    publics = fetch_public([now.date(), now.date() + dt.timedelta(days=1)])
+                except Exception as e:   # RLM research only: prices and model plays go on without it
+                    log(f"public shares fetch failed: {str(e)[:120]}")
+            games, plays = price(g, rts, now, publics)
             if complete:
                 track_seen(games, g, now)
                 led = update_ledger(plays, games, g, season, now)

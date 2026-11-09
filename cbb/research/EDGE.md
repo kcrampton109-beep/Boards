@@ -19,6 +19,24 @@ November was weak but not that weak (CLV about +0.5). Two model biases explain t
 set that is profitable in every backtest season and in this season's first games. Tables come from `edge.py`. ROI is
 at the opener at -110: DraftKings' first number equals Action's opener 89% of the time (live Openers tab, 133 games).
 
+## Reverse line movement (Nov 8 2026, `rlm.py`)
+
+Graded at the closing number at -110, since the move must happen before the bet exists. Rules were fixed on 2023-25 and
+then run once on 2025-26.
+
+| rule (tickets on one side, line moved the other way) | 2023-25 | 2025-26 holdout |
+|---|---|---|
+| spreads, 65%+, 1+ point | 851-804, 51.4%, -1.8% ROI | 462-484, 48.8%, -6.8% |
+| spreads, 80%+, 1+ point (best of 30 grid cells) | 53.2% (735 plays) | 159-158, 50.2%, -4.2% |
+| totals, 65%+, 1+ point | 1025-1022, 50.1% | 736-690, 51.6%, -1.5% |
+
+Money share above ticket share by 5-40 points: 49.5-52.9%, no edge. RLM plays where the model agreed did no better
+(spreads 50.0%; totals 47.7%). Break-even is 52.4%.
+
+Halfway between open and close the same plays win 53-56%, but that assumes knowing the line would finish moving. The
+history has only open and close, so the number when the signal first fires can't be tested here. The board's RLM tiers
+log exactly that number from Nov 8 (the v1 feed lost ticket shares in 2026; the engine reads them from v2).
+
 ## What went wrong live
 
 | live Nov 1-3 (205 plays) | plays | record | CLV | beat close |

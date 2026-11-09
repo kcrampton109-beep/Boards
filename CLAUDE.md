@@ -103,6 +103,9 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   (`total_level`). November main tiers: NOV_FAV (favourite, spread gap 4+) and NOV_OVER (over, total gap 5+); everything
   else in November is NOV research (also holds the Nov 1-4 plays from the old model). Dec on: SPREAD 4+ / SPREAD_LEAN 3-4,
   TOTAL 6+ / TOTAL_LEAN 5-6. Owner won't bet CBB until the main plays show positive ROI.
+  Nov 8 (owner's OK): NOV_FAV moved out of main plays after 21-32 (its CLV was market drift; judge favourite tiers on CLV beyond
+  drift). RLM research tiers (RLM 65%+, RLM_80, RLM_T; ticket shares from Action v2, `fetch_public`) log the price when the
+  signal first fires, keyed apart from model plays. RLM at the closing number has no edge (`research/rlm.py`).
 
 ## Social post (faceless picks account, started Nov 4 2026)
 - Owner is building an audience for a possible paid early-alert tier next season: free game-day posts now, no selling yet.
