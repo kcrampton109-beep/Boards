@@ -11253,8 +11253,8 @@
   "grp": "power 6",
   "limit": 2.5,
   "status": "L",
-  "close": 3.5,
-  "clv": -1.0,
+  "close": 4.5,
+  "clv": -2.0,
   "units": -1.0,
   "final": "Arkansas 72 - Virginia 91"
  },
@@ -11572,8 +11572,8 @@
   "grp": "low-major",
   "limit": -1.5,
   "status": "W",
-  "close": 1.5,
-  "clv": 0.0,
+  "close": 2.0,
+  "clv": -0.5,
   "units": 0.82,
   "final": "Princeton 68 - Siena 82"
  },
@@ -11775,8 +11775,8 @@
   "grp": "low-major",
   "limit": 153.0,
   "status": "L",
-  "close": 160.5,
-  "clv": -3.0,
+  "close": 161.5,
+  "clv": -4.0,
   "units": -1.0,
   "final": "Idaho State 82 - Air Force 89"
  },
@@ -11973,7 +11973,11 @@
   "opener": 17.5,
   "grp": "power 6",
   "limit": 19.0,
-  "status": "open"
+  "status": "W",
+  "close": 19.5,
+  "clv": 0.0,
+  "units": 0.926,
+  "final": "California 68 - Houston 86"
  },
  {
   "id": "401921820|spread|2579",
