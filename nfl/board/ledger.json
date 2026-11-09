@@ -9786,5 +9786,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_10_MIA_IND:RLM:spread:away",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "away",
+  "team": "MIA",
+  "pid": null,
+  "game_id": "2026_10_MIA_IND",
+  "week": 10,
+  "matchup": "MIA @ IND",
+  "kickoff": "Sun Nov 15, 1:00 PM ET",
+  "pick": "MIA +2.5",
+  "line": 2.5,
+  "odds": -110,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "60% of bets on IND, line moved -2.5 \u2192 -1.5",
+  "limit": null,
+  "model_line": -4.4,
+  "flagged": "2026-11-09T11:11:31.194905-05:00",
+  "kickoff_iso": "2026-11-15T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
