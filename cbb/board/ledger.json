@@ -12922,5 +12922,30 @@
   "grp": "power 6",
   "limit": 144.5,
   "status": "open"
+ },
+ {
+  "id": "401921720|spread|2454",
+  "base": "401921720|spread|2454",
+  "flagged": "2026-11-09T08:52-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401921720,
+  "matchup": "North Florida @ Miami",
+  "kickoff": "2026-11-09T19:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2454,
+  "pick": "North Florida +37.5",
+  "book": "MGM",
+  "line": 37.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 4.2,
+  "model": -33.3,
+  "opener": 30.5,
+  "grp": "power 6",
+  "limit": 36.5,
+  "status": "open"
  }
 ]
