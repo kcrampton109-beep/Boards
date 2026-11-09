@@ -12897,5 +12897,30 @@
   "grp": "low-major",
   "limit": -5.0,
   "status": "open"
+ },
+ {
+  "id": "401920734|total|over",
+  "base": "401920734|total|over",
+  "flagged": "2026-11-09T06:30-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401920734,
+  "matchup": "Boston University @ Northwestern",
+  "kickoff": "2026-11-09T20:00:00-05:00",
+  "tier": "NOV_OVER",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 144.5",
+  "book": "MGM",
+  "line": 144.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.2,
+  "model": 149.7,
+  "opener": 147.5,
+  "grp": "power 6",
+  "limit": 144.5,
+  "status": "open"
  }
 ]
