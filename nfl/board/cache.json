@@ -415,11 +415,11 @@
    }
   },
   "2026_10_WAS_NYG": {
-   "ts": "2026-11-09T00:14:36.468451-05:00",
+   "ts": "2026-11-09T04:21:25.724567-05:00",
    "wx": {
-    "wind": 11.1,
-    "gust": 22.1,
-    "temp": 54.0,
+    "wind": 15.6,
+    "gust": 34.7,
+    "temp": 50.0,
     "precip": 67
    }
   }
@@ -2657,11 +2657,11 @@
    }
   },
   "291123": {
-   "ts": "2026-11-09T00:14:36.468451-05:00",
+   "ts": "2026-11-09T04:21:25.724567-05:00",
    "odds": {
     "josh allen": {
      "name": "Josh Allen",
-     "FD": -115
+     "FD": -120
     },
     "james cook": {
      "name": "James Cook",
@@ -2735,10 +2735,6 @@
      "name": "Skyler Bell",
      "FD": 1000
     },
-    "ray davis": {
-     "name": "Ray Davis",
-     "FD": 1200
-    },
     "jackson hawes": {
      "name": "Jackson Hawes",
      "FD": 1200
@@ -2746,6 +2742,10 @@
     "odell beckham": {
      "name": "Odell Beckham Jr",
      "FD": 1200
+    },
+    "ray davis": {
+     "name": "Ray Davis",
+     "FD": 1300
     },
     "carson wentz": {
      "name": "Carson Wentz",
@@ -2774,7 +2774,7 @@
    }
   },
   "290970": {
-   "ts": "2026-11-09T01:20:08.260891-05:00",
+   "ts": "2026-11-09T04:21:25.724567-05:00",
    "odds": {
     "cam skattebo": {
      "name": "Cam Skattebo",
@@ -2790,19 +2790,19 @@
     },
     "isaiah likely": {
      "name": "Isaiah Likely",
+     "FD": 180
+    },
+    "devin singletary": {
+     "name": "Devin Singletary",
      "FD": 185
     },
     "stefon diggs": {
      "name": "Stefon Diggs",
-     "FD": 195
-    },
-    "devin singletary": {
-     "name": "Devin Singletary",
-     "FD": 190
+     "FD": 200
     },
     "antonio williams": {
      "name": "Antonio Williams",
-     "FD": 250
+     "FD": 240
     },
     "jayden daniels": {
      "name": "Jayden Daniels",
@@ -2810,19 +2810,23 @@
     },
     "chigoziem okonkwo": {
      "name": "Chigoziem Okonkwo",
-     "FD": 270
+     "FD": 260
     },
     "austin ekeler": {
      "name": "Austin Ekeler",
-     "FD": 310
+     "FD": 320
+    },
+    "malachi fields": {
+     "name": "Malachi Fields",
+     "FD": 410
     },
     "jj mccarthy": {
      "name": "J.J McCarthy",
      "FD": 420
     },
-    "malachi fields": {
-     "name": "Malachi Fields",
-     "FD": 420
+    "van jefferson": {
+     "name": "Van Jefferson",
+     "FD": 650
     },
     "darnell mooney": {
      "name": "Darnell Mooney",
@@ -2832,21 +2836,17 @@
      "name": "NY Giants Defense",
      "FD": 700
     },
-    "van jefferson": {
-     "name": "Van Jefferson",
-     "FD": 700
-    },
-    "theo johnson": {
-     "name": "Theo Johnson",
-     "FD": 700
-    },
     "washington defense": {
      "name": "Washington Defense",
      "FD": 700
     },
+    "theo johnson": {
+     "name": "Theo Johnson",
+     "FD": 750
+    },
     "luke mccaffrey": {
      "name": "Luke McCaffrey",
-     "FD": 950
+     "FD": 800
     },
     "john bates": {
      "name": "John Bates",
@@ -2854,23 +2854,23 @@
     },
     "charlie jones": {
      "name": "Charlie Jones",
-     "FD": 1700
-    },
-    "robert henry": {
-     "name": "Robert Henry",
-     "FD": 1900
+     "FD": 1800
     },
     "jalin hyatt": {
      "name": "Jalin Hyatt",
+     "FD": 1900
+    },
+    "robert henry": {
+     "name": "Robert Henry",
      "FD": 2000
     },
     "ben sinnott": {
      "name": "Ben Sinnott",
-     "FD": 2200
+     "FD": 2000
     },
     "colson yankoff": {
      "name": "Colson Yankoff",
-     "FD": 2500
+     "FD": 2700
     },
     "thomas fidone": {
      "name": "Thomas Fidone II",
