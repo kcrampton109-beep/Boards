@@ -16464,5 +16464,28 @@
   "grp": "FBS",
   "limit": -12.0,
   "status": "open"
+ },
+ {
+  "id": "401856889|spread|away|m",
+  "base": "401856889|spread|away|m",
+  "flagged": "2026-11-09T12:53-05:00",
+  "season": 2026,
+  "week": 11,
+  "game_id": 401856889,
+  "matchup": "Alabama @ Vanderbilt",
+  "kickoff": "2026-11-14 12:45:00-05:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "pick": "Alabama -15.5",
+  "book": "FD",
+  "line": -15.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 6.0,
+  "model": -21.5,
+  "grp": "FBS",
+  "limit": -16.0,
+  "status": "open"
  }
 ]
