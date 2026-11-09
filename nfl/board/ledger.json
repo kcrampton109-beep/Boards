@@ -9590,5 +9590,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_10_KC_ATL:RLM:total:under",
+  "tier": "RLM",
+  "market": "total",
+  "side": "under",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_10_KC_ATL",
+  "week": 10,
+  "matchup": "KC @ ATL",
+  "kickoff": "Sun Nov 15, 1:00 PM ET",
+  "pick": "Under 45.5",
+  "line": 45.5,
+  "odds": -110,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "74% of bets on the over, total moved 46.5 \u2192 45",
+  "limit": null,
+  "model_line": 4.1,
+  "flagged": "2026-11-09T01:20:08.260891-05:00",
+  "kickoff_iso": "2026-11-15T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]

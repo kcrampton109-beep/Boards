@@ -2774,8 +2774,113 @@
    }
   },
   "290970": {
-   "ts": "2026-11-05T20:51:40.781778-05:00",
-   "odds": {}
+   "ts": "2026-11-09T01:20:08.260891-05:00",
+   "odds": {
+    "cam skattebo": {
+     "name": "Cam Skattebo",
+     "FD": 110
+    },
+    "malik nabers": {
+     "name": "Malik Nabers",
+     "FD": 145
+    },
+    "rachaad white": {
+     "name": "Rachaad White",
+     "FD": 160
+    },
+    "isaiah likely": {
+     "name": "Isaiah Likely",
+     "FD": 185
+    },
+    "stefon diggs": {
+     "name": "Stefon Diggs",
+     "FD": 195
+    },
+    "devin singletary": {
+     "name": "Devin Singletary",
+     "FD": 190
+    },
+    "antonio williams": {
+     "name": "Antonio Williams",
+     "FD": 250
+    },
+    "jayden daniels": {
+     "name": "Jayden Daniels",
+     "FD": 250
+    },
+    "chigoziem okonkwo": {
+     "name": "Chigoziem Okonkwo",
+     "FD": 270
+    },
+    "austin ekeler": {
+     "name": "Austin Ekeler",
+     "FD": 310
+    },
+    "jj mccarthy": {
+     "name": "J.J McCarthy",
+     "FD": 420
+    },
+    "malachi fields": {
+     "name": "Malachi Fields",
+     "FD": 420
+    },
+    "darnell mooney": {
+     "name": "Darnell Mooney",
+     "FD": 700
+    },
+    "ny giants defense": {
+     "name": "NY Giants Defense",
+     "FD": 700
+    },
+    "van jefferson": {
+     "name": "Van Jefferson",
+     "FD": 700
+    },
+    "theo johnson": {
+     "name": "Theo Johnson",
+     "FD": 700
+    },
+    "washington defense": {
+     "name": "Washington Defense",
+     "FD": 700
+    },
+    "luke mccaffrey": {
+     "name": "Luke McCaffrey",
+     "FD": 950
+    },
+    "john bates": {
+     "name": "John Bates",
+     "FD": 1200
+    },
+    "charlie jones": {
+     "name": "Charlie Jones",
+     "FD": 1700
+    },
+    "robert henry": {
+     "name": "Robert Henry",
+     "FD": 1900
+    },
+    "jalin hyatt": {
+     "name": "Jalin Hyatt",
+     "FD": 2000
+    },
+    "ben sinnott": {
+     "name": "Ben Sinnott",
+     "FD": 2200
+    },
+    "colson yankoff": {
+     "name": "Colson Yankoff",
+     "FD": 2500
+    },
+    "thomas fidone": {
+     "name": "Thomas Fidone II",
+     "FD": 3000
+    },
+    "chris manhertz": {
+     "name": "Chris Manhertz",
+     "FD": 3000
+    }
+   }
   },
   "290823": {
    "ts": "2026-11-08T10:17:00.827866-05:00",
