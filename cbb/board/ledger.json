@@ -12972,5 +12972,30 @@
   "grp": "low-major",
   "limit": -1.5,
   "status": "open"
+ },
+ {
+  "id": "401925737|total|under",
+  "base": "401925737|total|under",
+  "flagged": "2026-11-09T10:33-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401925737,
+  "matchup": "Mississippi Valley State @ Washington",
+  "kickoff": "2026-11-09T22:00:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 156.5",
+  "book": "FD",
+  "line": 156.5,
+  "odds": -105.0,
+  "stake": 1.0,
+  "edge": 5.8,
+  "model": 150.7,
+  "opener": 151.5,
+  "grp": "power 6",
+  "limit": 156.0,
+  "status": "open"
  }
 ]
