@@ -9842,5 +9842,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_10_BUF_NYJ:LEAN:spread:away",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "team": "BUF",
+  "pid": null,
+  "game_id": "2026_10_BUF_NYJ",
+  "week": 10,
+  "matchup": "BUF @ NYJ",
+  "kickoff": "Sun Nov 15, 1:00 PM ET",
+  "pick": "BUF -7",
+  "line": -7,
+  "odds": -112,
+  "book": "DK",
+  "stake": 0.5,
+  "edge": 2.4,
+  "note": null,
+  "limit": -7.5,
+  "model_line": 9.4,
+  "flagged": "2026-11-09T16:32:26.074808-05:00",
+  "kickoff_iso": "2026-11-15T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
