@@ -12064,7 +12064,11 @@
   "opener": -5.5,
   "grp": "power 6",
   "limit": -5.5,
-  "status": "open"
+  "status": "W",
+  "close": -6.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "Wichita State 86 - USC 93"
  },
  {
   "id": "401921687|spread|2368",
