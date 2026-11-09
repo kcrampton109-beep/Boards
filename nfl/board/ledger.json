@@ -9562,5 +9562,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_10_JAX_TEN:RLM:spread:home",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team": "TEN",
+  "pid": null,
+  "game_id": "2026_10_JAX_TEN",
+  "week": 10,
+  "matchup": "JAX @ TEN",
+  "kickoff": "Sun Nov 15, 1:00 PM ET",
+  "pick": "TEN +9.5",
+  "line": 9.5,
+  "odds": -100,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "87% of bets on JAX, line moved -10.5 \u2192 -9.5 for JAX",
+  "limit": null,
+  "model_line": 13.6,
+  "flagged": "2026-11-08T23:04:18.513374-05:00",
+  "kickoff_iso": "2026-11-15T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
