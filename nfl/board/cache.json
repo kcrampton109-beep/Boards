@@ -415,12 +415,12 @@
    }
   },
   "2026_10_WAS_NYG": {
-   "ts": "2026-11-08T20:52:23.083492-05:00",
+   "ts": "2026-11-09T00:14:36.468451-05:00",
    "wx": {
     "wind": 11.1,
     "gust": 22.1,
     "temp": 54.0,
-    "precip": 69
+    "precip": 67
    }
   }
  },
@@ -2657,19 +2657,19 @@
    }
   },
   "291123": {
-   "ts": "2026-11-08T20:52:23.083492-05:00",
+   "ts": "2026-11-09T00:14:36.468451-05:00",
    "odds": {
     "josh allen": {
      "name": "Josh Allen",
-     "FD": -120
+     "FD": -115
     },
     "james cook": {
      "name": "James Cook",
-     "FD": -110
+     "FD": -105
     },
     "justin jefferson": {
      "name": "Justin Jefferson",
-     "FD": 160
+     "FD": 165
     },
     "jordan mason": {
      "name": "Jordan Mason",
@@ -2677,23 +2677,23 @@
     },
     "tj hockenson": {
      "name": "T.J. Hockenson",
-     "FD": 210
+     "FD": 220
     },
     "jordan addison": {
      "name": "Jordan Addison",
-     "FD": 260
+     "FD": 270
     },
     "dj moore": {
      "name": "D.J. Moore",
-     "FD": 270
+     "FD": 280
     },
     "aaron jones": {
      "name": "Aaron Jones",
-     "FD": 280
+     "FD": 290
     },
     "dalton kincaid": {
      "name": "Dalton Kincaid",
-     "FD": 300
+     "FD": 310
     },
     "khalil shakir": {
      "name": "Khalil Shakir",
@@ -2701,7 +2701,7 @@
     },
     "keon coleman": {
      "name": "Keon Coleman",
-     "FD": 420
+     "FD": 430
     },
     "tai felton": {
      "name": "Tai Felton",
@@ -2715,13 +2715,13 @@
      "name": "Minnesota Defense",
      "FD": 800
     },
-    "ben yurosek": {
-     "name": "Ben Yurosek",
-     "FD": 850
-    },
     "ty johnson": {
      "name": "Ty Johnson",
      "FD": 850
+    },
+    "ben yurosek": {
+     "name": "Ben Yurosek",
+     "FD": 900
     },
     "myles price": {
      "name": "Myles Price",
@@ -2733,7 +2733,7 @@
     },
     "skyler bell": {
      "name": "Skyler Bell",
-     "FD": 1100
+     "FD": 1000
     },
     "ray davis": {
      "name": "Ray Davis",
@@ -2743,21 +2743,21 @@
      "name": "Jackson Hawes",
      "FD": 1200
     },
-    "carson wentz": {
-     "name": "Carson Wentz",
-     "FD": 1200
-    },
     "odell beckham": {
      "name": "Odell Beckham Jr",
      "FD": 1200
     },
+    "carson wentz": {
+     "name": "Carson Wentz",
+     "FD": 1300
+    },
     "gavin bartholomew": {
      "name": "Gavin Bartholomew",
-     "FD": 1600
+     "FD": 1700
     },
     "deejay dallas": {
      "name": "DeeJay Dallas",
-     "FD": 2000
+     "FD": 2200
     },
     "keleki latu": {
      "name": "Keleki Latu",
@@ -2769,7 +2769,7 @@
     },
     "greg dortch": {
      "name": "Greg Dortch",
-     "FD": 3000
+     "FD": 3500
     }
    }
   },

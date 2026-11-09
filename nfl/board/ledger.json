@@ -7849,11 +7849,11 @@
   "model_line": -2.7,
   "flagged": "2026-11-01T16:44:00.294993-05:00",
   "kickoff_iso": "2026-11-08T20:20:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 6,
+  "clv": 0.5,
+  "final": "TB 24 - CHI 27"
  },
  {
   "id": "2026_09_BUF_MIN:LEAN:spread:home",
@@ -8269,11 +8269,11 @@
   "model_line": -2.7,
   "flagged": "2026-11-02T01:11:20.370332-05:00",
   "kickoff_iso": "2026-11-08T20:20:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.47,
+  "close": 6,
+  "clv": -0.5,
+  "final": "TB 24 - CHI 27"
  },
  {
   "id": "2026_09_LV_SF:RLM:spread:home",
