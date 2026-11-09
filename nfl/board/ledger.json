@@ -9870,5 +9870,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_10_LAC_BAL:RLM:spread:home",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team": "BAL",
+  "pid": null,
+  "game_id": "2026_10_LAC_BAL",
+  "week": 10,
+  "matchup": "LAC @ BAL",
+  "kickoff": "Mon Nov 16, 8:15 PM ET",
+  "pick": "BAL -5",
+  "line": -5,
+  "odds": -110,
+  "book": "MGM",
+  "stake": 1.0,
+  "edge": null,
+  "note": "57% of bets on LAC, line moved +3.5 \u2192 +5 for LAC",
+  "limit": null,
+  "model_line": -1.3,
+  "flagged": "2026-11-09T17:27:15.306801-05:00",
+  "kickoff_iso": "2026-11-16T20:15:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
