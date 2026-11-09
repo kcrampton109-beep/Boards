@@ -11861,7 +11861,11 @@
   "opener": 148.5,
   "grp": "low-major",
   "limit": 148.5,
-  "status": "open"
+  "status": "W",
+  "close": 145.5,
+  "clv": 5.0,
+  "units": 0.893,
+  "final": "UT Arlington 62 - Hawai'i 71"
  },
  {
   "id": "401924646|spread|2599|NOV_FAV",
