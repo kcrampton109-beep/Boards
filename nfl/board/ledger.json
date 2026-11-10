@@ -7877,11 +7877,11 @@
   "model_line": -0.1,
   "flagged": "2026-11-01T16:44:00.294993-05:00",
   "kickoff_iso": "2026-11-09T20:15:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": 3.5,
+  "clv": -1.0,
+  "final": "BUF 23 - MIN 6"
  },
  {
   "id": "2026_09_BUF_MIN:TEASER:teaser:home",
@@ -7905,11 +7905,11 @@
   "model_line": -0.1,
   "flagged": "2026-11-01T16:44:00.294993-05:00",
   "kickoff_iso": "2026-11-09T20:15:00-05:00",
-  "status": "open",
+  "status": "L",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 3.5,
+  "clv": -1.0,
+  "final": "BUF 23 - MIN 6"
  },
  {
   "id": "2026_09_JAX_BAL:LEAN:spread:away",
@@ -8353,11 +8353,11 @@
   "model_line": 1.3,
   "flagged": "2026-11-02T08:51:14.303022-05:00",
   "kickoff_iso": "2026-11-09T20:15:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 45.5,
+  "clv": 1.0,
+  "final": "BUF 23 - MIN 6"
  },
  {
   "id": "2026_09_ARI_SEA:RLM:total:under",
@@ -8465,11 +8465,11 @@
   "model_line": 1.3,
   "flagged": "2026-11-03T20:44:07.494214-05:00",
   "kickoff_iso": "2026-11-09T20:15:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.85,
+  "close": 45.5,
+  "clv": 1.0,
+  "final": "BUF 23 - MIN 6"
  },
  {
   "id": "2026_10_JAX_TEN:STRONG:spread:away",
