@@ -1,0 +1,23 @@
+{
+ "id": 68,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/68",
+ "board": "CFB",
+ "pick": "Wake Forest +1.5",
+ "odds": -120,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Wake Forest @ SMU",
+ "kickoff": "2026-11-14 12:00:00-05:00",
+ "play": "401858301|spread|away|m",
+ "logged": "2026-11-10T18:02:36Z",
+ "updated": "2026-11-10T18:02:46+00:00",
+ "tier": "STRONG",
+ "game_id": 401858301,
+ "board_line": 1.5,
+ "board_odds": -120.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "away",
+ "line": 1.5
+}
