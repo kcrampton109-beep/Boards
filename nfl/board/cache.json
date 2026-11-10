@@ -415,12 +415,12 @@
    }
   },
   "2026_10_WAS_NYG": {
-   "ts": "2026-11-10T14:34:36.436434-05:00",
+   "ts": "2026-11-10T18:16:43.503187-05:00",
    "wx": {
     "wind": 7.8,
     "gust": 12.1,
     "temp": 52.0,
-    "precip": 55
+    "precip": 63
    }
   }
  },
@@ -2778,7 +2778,7 @@
    }
   },
   "290970": {
-   "ts": "2026-11-10T14:34:36.436434-05:00",
+   "ts": "2026-11-10T18:16:43.503187-05:00",
    "odds": {
     "cam skattebo": {
      "name": "Cam Skattebo",
@@ -2850,7 +2850,7 @@
     },
     "theo johnson": {
      "name": "Theo Johnson",
-     "FD": 850
+     "FD": 800
     },
     "luke mccaffrey": {
      "name": "Luke McCaffrey",
@@ -2903,11 +2903,11 @@
    }
   },
   "290823": {
-   "ts": "2026-11-10T14:34:36.436434-05:00",
+   "ts": "2026-11-10T18:16:43.503187-05:00",
    "odds": {
     "jahmyr gibbs": {
      "name": "Jahmyr Gibbs",
-     "FD": -270
+     "FD": -280
     },
     "amon-ra st brown": {
      "name": "Amon-Ra St. Brown",
@@ -2927,7 +2927,7 @@
     },
     "hunter henry": {
      "name": "Hunter Henry",
-     "FD": 220
+     "FD": 230
     },
     "demario douglas": {
      "name": "Demario Douglas",
@@ -2939,11 +2939,11 @@
     },
     "drake maye": {
      "name": "Drake Maye",
-     "FD": 260
+     "FD": 270
     },
     "eli raridon": {
      "name": "Eli Raridon",
-     "FD": 280
+     "FD": 270
     },
     "lan larison": {
      "name": "Lan Larison",
@@ -2951,11 +2951,11 @@
     },
     "efton chism": {
      "name": "Efton Chism III",
-     "FD": 370
+     "FD": 350
     },
     "isaac teslaa": {
      "name": "Isaac TeSlaa",
-     "FD": 380
+     "FD": 370
     },
     "kyle williams": {
      "name": "Kyle Williams",
@@ -2963,7 +2963,7 @@
     },
     "sione vaki": {
      "name": "Sione Vaki",
-     "FD": 500
+     "FD": 550
     },
     "new england defense": {
      "name": "New England Defense",
@@ -2983,15 +2983,15 @@
     },
     "jared goff": {
      "name": "Jared Goff",
-     "FD": 1400
+     "FD": 1300
     },
     "tyler conklin": {
      "name": "Tyler Conklin",
-     "FD": 1800
+     "FD": 1700
     },
     "jackson meeks": {
      "name": "Jackson Meeks",
-     "FD": 1800
+     "FD": 1700
     },
     "cameron latu": {
      "name": "Cameron Latu",
@@ -3036,11 +3036,119 @@
    "odds": {}
   },
   "290979": {
-   "ts": "2026-11-10T14:51:58.522959-05:00",
+   "ts": "2026-11-10T18:16:43.503187-05:00",
    "odds": {
+    "jaxon smith-njigba": {
+     "name": "Jaxon Smith-Njigba",
+     "FD": -110
+    },
+    "zach charbonnet": {
+     "name": "Zach Charbonnet",
+     "FD": 115
+    },
+    "ashton jeanty": {
+     "name": "Ashton Jeanty",
+     "FD": 170
+    },
+    "jadarian price": {
+     "name": "Jadarian Price",
+     "FD": 180
+    },
+    "brock bowers": {
+     "name": "Brock Bowers",
+     "FD": 210
+    },
+    "aj barner": {
+     "name": "AJ Barner",
+     "FD": 250
+    },
+    "mike washington": {
+     "name": "Mike Washington Jr.",
+     "FD": 400
+    },
+    "rashid shaheed": {
+     "name": "Rashid Shaheed",
+     "FD": 390
+    },
+    "tory horton": {
+     "name": "Tory Horton",
+     "FD": 390
+    },
+    "cooper kupp": {
+     "name": "Cooper Kupp",
+     "FD": 400
+    },
+    "tre tucker": {
+     "name": "Tre Tucker",
+     "FD": 460
+    },
     "fernando mendoza": {
      "name": "Fernando Mendoza",
      "FD": 600
+    },
+    "michael mayer": {
+     "name": "Michael Mayer",
+     "FD": 600
+    },
+    "jalen nailor": {
+     "name": "Jalen Nailor",
+     "FD": 700
+    },
+    "george holani": {
+     "name": "George Holani",
+     "FD": 1100
+    },
+    "emanuel wilson": {
+     "name": "Emanuel Wilson",
+     "FD": 1100
+    },
+    "donte thornton": {
+     "name": "Dont'e Thornton Jr.",
+     "FD": 1200
+    },
+    "jack bech": {
+     "name": "Jack Bech",
+     "FD": 1200
+    },
+    "connor heyward": {
+     "name": "Connor Heyward",
+     "FD": 1400
+    },
+    "eric saubert": {
+     "name": "Eric Saubert",
+     "FD": 1400
+    },
+    "ian thomas": {
+     "name": "Ian Thomas",
+     "FD": 2000
+    },
+    "dylan laube": {
+     "name": "Dylan Laube",
+     "FD": 2200
+    },
+    "nick kallerup": {
+     "name": "Nick Kallerup",
+     "FD": 2200
+    },
+    "brady russell": {
+     "name": "Brady Russell",
+     "FD": 2700
+    },
+    "cody white": {
+     "name": "Cody White",
+     "FD": 3000
+    },
+    "dareke young": {
+     "name": "Dareke Young",
+     "FD": 3000
+    },
+    "malik benson": {
+     "name": "Malik Benson",
+     "FD": 3000
+    },
+    "irv charles": {
+     "name": "Irv Charles",
+     "FD": 3000
     }
    }
   },
