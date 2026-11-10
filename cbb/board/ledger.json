@@ -12351,8 +12351,8 @@
   "grp": "mid-major",
   "limit": 18.5,
   "status": "W",
-  "close": 20.5,
-  "clv": -2.0,
+  "close": 19.5,
+  "clv": -1.0,
   "units": 0.893,
   "final": "UNC Greensboro 72 - UIC 82"
  },
@@ -12437,7 +12437,11 @@
   "opener": -24.5,
   "grp": "power 6",
   "limit": -23.5,
-  "status": "open"
+  "status": "L",
+  "close": -23.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "App State 53 - Auburn 75"
  },
  {
   "id": "401906759|spread|2473",
@@ -12578,7 +12582,11 @@
   "opener": -24.5,
   "grp": "power 6",
   "limit": -22.5,
-  "status": "open"
+  "status": "L",
+  "close": -23.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "App State 53 - Auburn 75"
  },
  {
   "id": "401906781|spread|61",
@@ -12918,7 +12926,11 @@
   "opener": -21.5,
   "grp": "power 6",
   "limit": -23.0,
-  "status": "open"
+  "status": "W",
+  "close": -24.5,
+  "clv": 2.0,
+  "units": 0.847,
+  "final": "Alabama A&M 47 - DePaul 84"
  },
  {
   "id": "401920887|total|over",
@@ -13056,8 +13068,8 @@
   "grp": "low-major",
   "limit": -1.5,
   "status": "L",
-  "close": -2.5,
-  "clv": 1.0,
+  "close": -1.5,
+  "clv": 0.0,
   "units": -1.0,
   "final": "South Carolina State 82 - Chicago State 67"
  },
@@ -13870,8 +13882,8 @@
   "bets": 918,
   "moved": 2.0,
   "mins": 362,
-  "close": -28.5,
-  "clv": 1.0,
+  "close": -27.5,
+  "clv": 0.0,
   "units": -1.0,
   "final": "North Alabama 72 - Oklahoma 81"
  },
@@ -14003,13 +14015,17 @@
   "opener": 146.5,
   "grp": "power 6",
   "limit": 145.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 66,
   "money": 57,
   "bets": 1014,
   "moved": 1.0,
-  "mins": 422
+  "mins": 422,
+  "close": 143.5,
+  "clv": 2.0,
+  "units": 0.926,
+  "final": "App State 53 - Auburn 75"
  },
  {
   "id": "rlm|401909502|spread|305",
@@ -14034,13 +14050,17 @@
   "opener": -21.5,
   "grp": "power 6",
   "limit": -24.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 91,
   "money": 89,
   "bets": 514,
   "moved": 3.0,
-  "mins": 422
+  "mins": 422,
+  "close": -24.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Alabama A&M 47 - DePaul 84"
  },
  {
   "id": "rlm|401909502|total|under",
@@ -14065,13 +14085,17 @@
   "opener": 142.5,
   "grp": "power 6",
   "limit": 140.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 67,
   "money": 22,
   "bets": 514,
   "moved": 3.0,
-  "mins": 422
+  "mins": 422,
+  "close": 139.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Alabama A&M 47 - DePaul 84"
  },
  {
   "id": "rlm|401909718|total|under",
@@ -14271,7 +14295,11 @@
   "opener": 146.5,
   "grp": "power 6",
   "limit": 144.0,
-  "status": "open"
+  "status": "L",
+  "close": 143.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "App State 53 - Auburn 75"
  },
  {
   "id": "rlm|401911010|spread|189",
@@ -15803,5 +15831,55 @@
   "bets": 383,
   "moved": 1.0,
   "mins": 1325
+ },
+ {
+  "id": "401912228|spread|2441",
+  "base": "401912228|spread|2441",
+  "flagged": "2026-11-09T23:29-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401912228,
+  "matchup": "Army @ New Haven",
+  "kickoff": "2026-11-10T19:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2441,
+  "pick": "New Haven -0.5",
+  "book": "FD",
+  "line": -0.5,
+  "odds": -112.0,
+  "stake": 1.0,
+  "edge": 3.6,
+  "model": 4.1,
+  "opener": -1.5,
+  "grp": "low-major",
+  "limit": -1.0,
+  "status": "open"
+ },
+ {
+  "id": "401921755|spread|2116|NOV_FAV",
+  "base": "401921755|spread|2116",
+  "flagged": "2026-11-09T23:29-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401921755,
+  "matchup": "South Alabama @ UCF",
+  "kickoff": "2026-11-10T19:00:00-05:00",
+  "tier": "NOV_FAV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2116,
+  "pick": "UCF -14.5",
+  "book": "DK",
+  "line": -14.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 4.6,
+  "model": 19.1,
+  "opener": -17.5,
+  "grp": "power 6",
+  "limit": -15.0,
+  "status": "open"
  }
 ]
