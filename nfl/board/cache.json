@@ -415,12 +415,12 @@
    }
   },
   "2026_10_WAS_NYG": {
-   "ts": "2026-11-09T21:31:31.327729-05:00",
+   "ts": "2026-11-10T00:35:10.439257-05:00",
    "wx": {
-    "wind": 5.6,
+    "wind": 7.8,
     "gust": 14.5,
-    "temp": 54.0,
-    "precip": 69
+    "temp": 55.0,
+    "precip": 73
    }
   }
  },
@@ -2778,18 +2778,18 @@
    }
   },
   "290970": {
-   "ts": "2026-11-09T21:31:31.327729-05:00",
+   "ts": "2026-11-10T00:35:10.439257-05:00",
    "odds": {
     "cam skattebo": {
      "name": "Cam Skattebo",
      "FD": 125
     },
-    "rachaad white": {
-     "name": "Rachaad White",
-     "FD": 160
-    },
     "malik nabers": {
      "name": "Malik Nabers",
+     "FD": 155
+    },
+    "rachaad white": {
+     "name": "Rachaad White",
      "FD": 160
     },
     "isaiah likely": {
@@ -2854,19 +2854,15 @@
     },
     "luke mccaffrey": {
      "name": "Luke McCaffrey",
-     "FD": 850
+     "FD": 900
     },
     "jaden bradley": {
      "name": "Jaden Bradley",
-     "FD": 850
+     "FD": 900
     },
     "john bates": {
      "name": "John Bates",
-     "FD": 1300
-    },
-    "charlie jones": {
-     "name": "Charlie Jones",
-     "FD": 1800
+     "FD": 1400
     },
     "jalin hyatt": {
      "name": "Jalin Hyatt",
@@ -2874,19 +2870,23 @@
     },
     "gregory desrosiers": {
      "name": "Gregory Desrosiers",
-     "FD": 1900
+     "FD": 1800
     },
     "robert henry": {
      "name": "Robert Henry",
-     "FD": 2000
+     "FD": 1900
+    },
+    "charlie jones": {
+     "name": "Charlie Jones",
+     "FD": 1900
     },
     "colson yankoff": {
      "name": "Colson Yankoff",
-     "FD": 2200
+     "FD": 2000
     },
     "ben sinnott": {
      "name": "Ben Sinnott",
-     "FD": 2200
+     "FD": 2000
     },
     "patrick ricard": {
      "name": "Patrick Ricard",
@@ -2903,7 +2903,7 @@
    }
   },
   "290823": {
-   "ts": "2026-11-09T21:31:31.327729-05:00",
+   "ts": "2026-11-10T00:35:10.439257-05:00",
    "odds": {
     "jahmyr gibbs": {
      "name": "Jahmyr Gibbs",

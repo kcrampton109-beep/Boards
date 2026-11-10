@@ -9898,5 +9898,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_10_MIN_GB:STRONG:spread:away",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "team": "MIN",
+  "pid": null,
+  "game_id": "2026_10_MIN_GB",
+  "week": 10,
+  "matchup": "MIN @ GB",
+  "kickoff": "Sun Nov 15, 1:00 PM ET",
+  "pick": "MIN +4.5",
+  "line": 4.5,
+  "odds": -110,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": 3.6,
+  "note": "MIN QB: Kyler Murray out, model uses Carson Wentz",
+  "limit": 4.0,
+  "model_line": -0.9,
+  "flagged": "2026-11-10T00:35:10.439257-05:00",
+  "kickoff_iso": "2026-11-15T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
