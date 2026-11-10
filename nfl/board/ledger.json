@@ -10066,5 +10066,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_10_MIN_GB:TD:td:00-0033293",
+  "tier": "TD",
+  "market": "td",
+  "side": null,
+  "team": "MIN",
+  "pid": "00-0033293",
+  "game_id": "2026_10_MIN_GB",
+  "week": 10,
+  "matchup": "MIN @ GB",
+  "kickoff": "Sun Nov 15, 1:00 PM ET",
+  "pick": "Aaron Jones anytime TD",
+  "line": null,
+  "odds": 280,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": 0.073,
+  "note": "model 34% vs FD 26%",
+  "limit": null,
+  "model_line": -1.7,
+  "flagged": "2026-11-10T18:50:19.133868-05:00",
+  "kickoff_iso": "2026-11-15T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]

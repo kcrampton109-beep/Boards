@@ -3016,8 +3016,121 @@
    "odds": {}
   },
   "290973": {
-   "ts": "2026-11-08T13:14:38.122446-05:00",
-   "odds": {}
+   "ts": "2026-11-10T18:50:19.133868-05:00",
+   "odds": {
+    "christian watson": {
+     "name": "Christian Watson",
+     "FD": 140
+    },
+    "justin jefferson": {
+     "name": "Justin Jefferson",
+     "FD": 165
+    },
+    "matthew golden": {
+     "name": "Matthew Golden",
+     "FD": 160
+    },
+    "kaleb johnson": {
+     "name": "Kaleb Johnson",
+     "FD": 165
+    },
+    "tucker kraft": {
+     "name": "Tucker Kraft",
+     "FD": 210
+    },
+    "jordan mason": {
+     "name": "Jordan Mason",
+     "FD": 220
+    },
+    "tj hockenson": {
+     "name": "T.J. Hockenson",
+     "FD": 250
+    },
+    "aaron jones": {
+     "name": "Aaron Jones",
+     "FD": 280
+    },
+    "jordan addison": {
+     "name": "Jordan Addison",
+     "FD": 300
+    },
+    "pierre strong": {
+     "name": "Pierre Strong",
+     "FD": 370
+    },
+    "savion williams": {
+     "name": "Savion Williams",
+     "FD": 480
+    },
+    "marshawn lloyd": {
+     "name": "MarShawn Lloyd",
+     "FD": 500
+    },
+    "minnesota defense": {
+     "name": "Minnesota Defense",
+     "FD": 800
+    },
+    "green bay defense": {
+     "name": "Green Bay Defense",
+     "FD": 800
+    },
+    "jordan love": {
+     "name": "Jordan Love",
+     "FD": 850
+    },
+    "ben yurosek": {
+     "name": "Ben Yurosek",
+     "FD": 850
+    },
+    "jauan jennings": {
+     "name": "Jauan Jennings",
+     "FD": 850
+    },
+    "myles price": {
+     "name": "Myles Price",
+     "FD": 1100
+    },
+    "jonnu smith": {
+     "name": "Jonnu Smith",
+     "FD": 1200
+    },
+    "bo melton": {
+     "name": "Bo Melton",
+     "FD": 1200
+    },
+    "tai felton": {
+     "name": "Tai Felton",
+     "FD": 1400
+    },
+    "deejay dallas": {
+     "name": "DeeJay Dallas",
+     "FD": 1700
+    },
+    "mark redman": {
+     "name": "Mark Redman",
+     "FD": 1700
+    },
+    "kirk cousins": {
+     "name": "Kirk Cousins",
+     "FD": 1800
+    },
+    "gavin bartholomew": {
+     "name": "Gavin Bartholomew",
+     "FD": 2200
+    },
+    "max bredeson": {
+     "name": "Max Bredeson",
+     "FD": 2700
+    },
+    "josh whyle": {
+     "name": "Josh Whyle",
+     "FD": 3000
+    },
+    "j michael sturdivant": {
+     "name": "J. Michael Sturdivant",
+     "FD": 3000
+    }
+   }
   },
   "290976": {
    "ts": "2026-11-08T13:14:38.122446-05:00",
