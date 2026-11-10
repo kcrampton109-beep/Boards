@@ -1,0 +1,23 @@
+{
+ "id": 69,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/69",
+ "board": "CFB",
+ "pick": "East Carolina -11.5",
+ "odds": -108,
+ "book": "BetMGM",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "East Carolina @ Charlotte",
+ "kickoff": "2026-11-14 13:00:00-05:00",
+ "play": "401862825|spread|away|m",
+ "logged": "2026-11-10T18:03:04Z",
+ "updated": "2026-11-10T18:03:15+00:00",
+ "tier": "STRONG",
+ "game_id": 401862825,
+ "board_line": -11.5,
+ "board_odds": -110.0,
+ "board_book": "DK",
+ "market": "spread",
+ "side": "away",
+ "line": -11.5
+}
