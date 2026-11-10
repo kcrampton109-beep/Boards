@@ -10038,5 +10038,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_10_CAR_NO:STRONG:spread:away",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "team": "CAR",
+  "pid": null,
+  "game_id": "2026_10_CAR_NO",
+  "week": 10,
+  "matchup": "CAR @ NO",
+  "kickoff": "Sun Nov 15, 1:00 PM ET",
+  "pick": "CAR +2.5",
+  "line": 2.5,
+  "odds": -108,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": 3.2,
+  "note": null,
+  "limit": 2.5,
+  "model_line": 0.7,
+  "flagged": "2026-11-10T17:22:24.768228-05:00",
+  "kickoff_iso": "2026-11-15T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
