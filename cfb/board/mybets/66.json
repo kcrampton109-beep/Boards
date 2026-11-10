@@ -1,0 +1,23 @@
+{
+ "id": 66,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/66",
+ "board": "CFB",
+ "pick": "James Madison -2.5",
+ "odds": -122,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "James Madison @ UConn",
+ "kickoff": "2026-11-14 12:00:00-05:00",
+ "play": "401861967|spread|away|m",
+ "logged": "2026-11-10T18:01:40Z",
+ "updated": "2026-11-10T18:01:50+00:00",
+ "tier": "STRONG",
+ "game_id": 401861967,
+ "board_line": -1.5,
+ "board_odds": -110.0,
+ "board_book": "DK",
+ "market": "spread",
+ "side": "away",
+ "line": -2.5
+}
