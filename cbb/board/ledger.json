@@ -11543,8 +11543,8 @@
   "grp": "low-major",
   "limit": -28.0,
   "status": "W",
-  "close": -26.5,
-  "clv": -1.0,
+  "close": -27.0,
+  "clv": -0.5,
   "units": 0.952,
   "final": "Iona 65 - St. John's 104"
  },
@@ -11572,8 +11572,8 @@
   "grp": "low-major",
   "limit": -1.5,
   "status": "W",
-  "close": 2.0,
-  "clv": -0.5,
+  "close": 1.5,
+  "clv": 0.0,
   "units": 0.82,
   "final": "Princeton 68 - Siena 82"
  },
@@ -11659,8 +11659,8 @@
   "grp": "low-major",
   "limit": 4.0,
   "status": "L",
-  "close": 4.5,
-  "clv": 0.0,
+  "close": 4.0,
+  "clv": 0.5,
   "units": -1.0,
   "final": "Campbell 71 - Western Michigan 87"
  },
@@ -11891,8 +11891,8 @@
   "grp": "low-major",
   "limit": -27.0,
   "status": "W",
-  "close": -26.5,
-  "clv": 0.0,
+  "close": -27.0,
+  "clv": 0.5,
   "units": 0.909,
   "final": "Iona 65 - St. John's 104"
  },
