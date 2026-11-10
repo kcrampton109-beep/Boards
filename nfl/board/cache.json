@@ -415,11 +415,11 @@
    }
   },
   "2026_10_WAS_NYG": {
-   "ts": "2026-11-10T11:30:09.273421-05:00",
+   "ts": "2026-11-10T14:34:36.436434-05:00",
    "wx": {
-    "wind": 10.4,
-    "gust": 19.9,
-    "temp": 51.0,
+    "wind": 7.8,
+    "gust": 12.1,
+    "temp": 52.0,
     "precip": 55
    }
   }
@@ -2778,7 +2778,7 @@
    }
   },
   "290970": {
-   "ts": "2026-11-10T11:30:09.273421-05:00",
+   "ts": "2026-11-10T14:34:36.436434-05:00",
    "odds": {
     "cam skattebo": {
      "name": "Cam Skattebo",
@@ -2903,11 +2903,11 @@
    }
   },
   "290823": {
-   "ts": "2026-11-10T11:30:09.273421-05:00",
+   "ts": "2026-11-10T14:34:36.436434-05:00",
    "odds": {
     "jahmyr gibbs": {
      "name": "Jahmyr Gibbs",
-     "FD": -280
+     "FD": -270
     },
     "amon-ra st brown": {
      "name": "Amon-Ra St. Brown",
@@ -2927,7 +2927,7 @@
     },
     "hunter henry": {
      "name": "Hunter Henry",
-     "FD": 230
+     "FD": 220
     },
     "demario douglas": {
      "name": "Demario Douglas",
@@ -2939,7 +2939,7 @@
     },
     "drake maye": {
      "name": "Drake Maye",
-     "FD": 270
+     "FD": 260
     },
     "eli raridon": {
      "name": "Eli Raridon",
@@ -2951,11 +2951,11 @@
     },
     "efton chism": {
      "name": "Efton Chism III",
-     "FD": 350
+     "FD": 370
     },
     "isaac teslaa": {
      "name": "Isaac TeSlaa",
-     "FD": 370
+     "FD": 380
     },
     "kyle williams": {
      "name": "Kyle Williams",
@@ -2963,7 +2963,7 @@
     },
     "sione vaki": {
      "name": "Sione Vaki",
-     "FD": 550
+     "FD": 500
     },
     "new england defense": {
      "name": "New England Defense",
@@ -2983,7 +2983,7 @@
     },
     "jared goff": {
      "name": "Jared Goff",
-     "FD": 1300
+     "FD": 1400
     },
     "tyler conklin": {
      "name": "Tyler Conklin",
