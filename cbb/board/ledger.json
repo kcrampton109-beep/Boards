@@ -12346,7 +12346,11 @@
   "opener": 17.5,
   "grp": "mid-major",
   "limit": 18.5,
-  "status": "open"
+  "status": "W",
+  "close": 19.5,
+  "clv": -1.0,
+  "units": 0.893,
+  "final": "UNC Greensboro 72 - UIC 82"
  },
  {
   "id": "401906803|total|over",
@@ -12396,7 +12400,11 @@
   "opener": 147.5,
   "grp": "power 6",
   "limit": 147.0,
-  "status": "open"
+  "status": "W",
+  "close": 146.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Syracuse 80 - Indiana 83"
  },
  {
   "id": "401920799|spread|2",
@@ -12571,7 +12579,11 @@
   "opener": -21.5,
   "grp": "power 6",
   "limit": -21.5,
-  "status": "open"
+  "status": "L",
+  "close": -22.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Florida Gulf Coast 72 - Georgia 80"
  },
  {
   "id": "401906781|total|over",
@@ -12596,7 +12608,11 @@
   "opener": 157.5,
   "grp": "power 6",
   "limit": 162.5,
-  "status": "open"
+  "status": "L",
+  "close": 163.5,
+  "clv": 4.0,
+  "units": -1.0,
+  "final": "Florida Gulf Coast 72 - Georgia 80"
  },
  {
   "id": "401911010|total|over",
@@ -12621,7 +12637,11 @@
   "opener": 157.5,
   "grp": "low-major",
   "limit": 156.5,
-  "status": "open"
+  "status": "W",
+  "close": 153.5,
+  "clv": -3.0,
+  "units": 0.87,
+  "final": "Cleveland State 79 - Bowling Green 95"
  },
  {
   "id": "401919733|total|under",
@@ -12671,7 +12691,11 @@
   "opener": -5.5,
   "grp": "low-major",
   "limit": -6.0,
-  "status": "open"
+  "status": "W",
+  "close": -7.5,
+  "clv": 2.0,
+  "units": 0.877,
+  "final": "Long Island University 46 - Towson 66"
  },
  {
   "id": "401919846|spread|171",
@@ -12696,7 +12720,11 @@
   "opener": -10.5,
   "grp": "mid-major",
   "limit": -10.5,
-  "status": "open"
+  "status": "W",
+  "close": -13.5,
+  "clv": 3.0,
+  "units": 0.909,
+  "final": "Stonehill 55 - Columbia 75"
  },
  {
   "id": "401906865|spread|251",
@@ -12746,7 +12774,11 @@
   "opener": 9.5,
   "grp": "mid-major",
   "limit": 9.5,
-  "status": "open"
+  "status": "W",
+  "close": 10.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "South Carolina Upstate 56 - Coastal Carolina 65"
  },
  {
   "id": "401906793|spread|344",
@@ -12896,7 +12928,11 @@
   "opener": -5.5,
   "grp": "low-major",
   "limit": -5.0,
-  "status": "open"
+  "status": "W",
+  "close": -7.5,
+  "clv": 3.0,
+  "units": 0.893,
+  "final": "Long Island University 46 - Towson 66"
  },
  {
   "id": "401920734|total|over",
@@ -12946,7 +12982,11 @@
   "opener": 30.5,
   "grp": "power 6",
   "limit": 36.5,
-  "status": "open"
+  "status": "L",
+  "close": 35.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "North Florida 51 - Miami 89"
  },
  {
   "id": "401919733|spread|2130",
@@ -13021,13 +13061,17 @@
   "opener": 157.5,
   "grp": "low-major",
   "limit": 155.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 79,
   "money": 77,
   "bets": 590,
   "moved": 2.0,
-  "mins": 453
+  "mins": 453,
+  "close": 153.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Cleveland State 79 - Bowling Green 95"
  },
  {
   "id": "rlm|401920877|spread|140",
@@ -13052,13 +13096,17 @@
   "opener": 5.5,
   "grp": "low-major",
   "limit": 4.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 80,
   "money": 82,
   "bets": 737,
   "moved": 1.0,
-  "mins": 453
+  "mins": 453,
+  "close": 3.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Kansas City 61 - Jacksonville 79"
  },
  {
   "id": "rlm|401920877|total|over",
@@ -13083,13 +13131,17 @@
   "opener": 146.5,
   "grp": "low-major",
   "limit": 146.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 73,
   "money": 68,
   "bets": 737,
   "moved": 1.0,
-  "mins": 453
+  "mins": 453,
+  "close": 146.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Kansas City 61 - Jacksonville 79"
  },
  {
   "id": "rlm|401919846|total|under",
@@ -13114,13 +13166,17 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 145.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 81,
   "money": 67,
   "bets": 484,
   "moved": 2.0,
-  "mins": 453
+  "mins": 453,
+  "close": 143.5,
+  "clv": 2.0,
+  "units": 0.893,
+  "final": "Stonehill 55 - Columbia 75"
  },
  {
   "id": "rlm|401920686|total|under",
@@ -13176,13 +13232,17 @@
   "opener": 150.5,
   "grp": "mid-major",
   "limit": 149.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 91,
   "money": 88,
   "bets": 378,
   "moved": 1.0,
-  "mins": 453
+  "mins": 453,
+  "close": 149.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "South Carolina Upstate 56 - Coastal Carolina 65"
  },
  {
   "id": "rlm|401920734|total|under",
@@ -13393,13 +13453,17 @@
   "opener": -21.5,
   "grp": "power 6",
   "limit": -22.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 88,
   "money": 57,
   "bets": 762,
   "moved": 1.0,
-  "mins": 302
+  "mins": 302,
+  "close": -22.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Florida Gulf Coast 72 - Georgia 80"
  },
  {
   "id": "rlm|401918074|spread|228",
@@ -13424,13 +13488,17 @@
   "opener": -21.5,
   "grp": "power 6",
   "limit": -21.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 89,
   "money": 15,
   "bets": 1115,
   "moved": 1.0,
-  "mins": 302
+  "mins": 302,
+  "close": -23.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "North Dakota 77 - Clemson 92"
  },
  {
   "id": "rlm|401921720|spread|2390",
@@ -13455,13 +13523,17 @@
   "opener": -30.5,
   "grp": "power 6",
   "limit": -36.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 87,
   "money": 20,
   "bets": 1060,
   "moved": 6.0,
-  "mins": 302
+  "mins": 302,
+  "close": -35.5,
+  "clv": -1.0,
+  "units": 0.87,
+  "final": "North Florida 51 - Miami 89"
  },
  {
   "id": "rlm|401906849|spread|2633",
@@ -13486,13 +13558,17 @@
   "opener": -28.5,
   "grp": "power 6",
   "limit": -30.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 81,
   "money": 23,
   "bets": 913,
   "moved": 2.0,
-  "mins": 302
+  "mins": 302,
+  "close": -29.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Radford 47 - Tennessee 70"
  },
  {
   "id": "rlm|401906865|spread|251",
@@ -13920,13 +13996,17 @@
   "opener": 147.5,
   "grp": "power 6",
   "limit": 146.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 78,
   "money": 75,
   "bets": 4998,
   "moved": 1.0,
-  "mins": 211
+  "mins": 211,
+  "close": 146.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Syracuse 80 - Indiana 83"
  },
  {
   "id": "rlm|401919733|total|under",
@@ -13982,13 +14062,17 @@
   "opener": 149.5,
   "grp": "mid-major",
   "limit": 148.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 89,
   "money": 84,
   "bets": 954,
   "moved": 1.0,
-  "mins": 241
+  "mins": 241,
+  "close": 148.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "UNC Greensboro 72 - UIC 82"
  },
  {
   "id": "rlm|401917978|total|over",
@@ -14100,13 +14184,17 @@
   "opener": -12.5,
   "grp": "low-major",
   "limit": -13.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 96,
   "money": 11,
   "bets": 1186,
   "moved": 1.0,
-  "mins": 184
+  "mins": 184,
+  "close": -12.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Cleveland State 79 - Bowling Green 95"
  },
  {
   "id": "401906771|spread|52",
@@ -14449,13 +14537,17 @@
   "opener": 156.5,
   "grp": "mid-major",
   "limit": 156.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 76,
   "money": 48,
   "bets": 2039,
   "moved": 1.0,
-  "mins": 40
+  "mins": 40,
+  "close": 155.5,
+  "clv": 1.0,
+  "units": 0.893,
+  "final": "Howard 65 - Pennsylvania 78"
  },
  {
   "id": "rlm|401919806|total|under",
@@ -14480,13 +14572,17 @@
   "opener": 141.5,
   "grp": "low-major",
   "limit": 140.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 66,
   "money": 50,
   "bets": 1671,
   "moved": 1.0,
-  "mins": 70
+  "mins": 70,
+  "close": 140.5,
+  "clv": 0.0,
+  "units": 0.926,
+  "final": "Long Island University 46 - Towson 66"
  },
  {
   "id": "401921720|total|under",
@@ -14511,7 +14607,11 @@
   "opener": 159.5,
   "grp": "power 6",
   "limit": 165.5,
-  "status": "open"
+  "status": "W",
+  "close": 165.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "North Florida 51 - Miami 89"
  },
  {
   "id": "rlm|401906803|total|under",
@@ -15173,6 +15273,137 @@
   "opener": -36.5,
   "grp": "power 6",
   "limit": -37.0,
+  "status": "open"
+ },
+ {
+  "id": "rlm|401920378|spread|2294",
+  "base": "rlm|401920378|spread|2294",
+  "flagged": "2026-11-09T21:07-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401920378,
+  "matchup": "Virginia Tech vs Iowa",
+  "kickoff": "2026-11-10T19:00:00-05:00",
+  "tier": "RLM_80",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2294,
+  "pick": "Iowa -4.5",
+  "book": "DK",
+  "line": -4.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 1.0,
+  "model": 5.6,
+  "opener": -3.5,
+  "grp": "power 6",
+  "limit": -4.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 100,
+  "money": 100,
+  "bets": 257,
+  "moved": 1.0,
+  "mins": 1312
+ },
+ {
+  "id": "401920356|spread|111",
+  "base": "401920356|spread|111",
+  "flagged": "2026-11-09T21:07-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401920356,
+  "matchup": "Harvard @ Northeastern",
+  "kickoff": "2026-11-10T19:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 111,
+  "pick": "Northeastern +3.5",
+  "book": "FD",
+  "line": 3.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 3.2,
+  "model": -0.3,
+  "opener": 3.5,
+  "grp": "mid-major",
+  "limit": 3.5,
+  "status": "open"
+ },
+ {
+  "id": "401925107|spread|292",
+  "base": "401925107|spread|292",
+  "flagged": "2026-11-09T21:07-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401925107,
+  "matchup": "Texas State @ UT Rio Grande Valley",
+  "kickoff": "2026-11-10T19:30:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 292,
+  "pick": "UT Rio Grande Valley +7.5",
+  "book": "FD",
+  "line": 7.5,
+  "odds": -114.0,
+  "stake": 1.0,
+  "edge": 6.3,
+  "model": -1.2,
+  "opener": 7.5,
+  "grp": "mid-major",
+  "limit": 4.5,
+  "status": "open"
+ },
+ {
+  "id": "401909773|total|over",
+  "base": "401909773|total|over",
+  "flagged": "2026-11-09T21:07-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401909773,
+  "matchup": "Southern @ Iowa State",
+  "kickoff": "2026-11-10T20:00:00-05:00",
+  "tier": "NOV_OVER",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 147.5",
+  "book": "FD",
+  "line": 147.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.0,
+  "model": 152.5,
+  "opener": 147.5,
+  "grp": "power 6",
+  "limit": 147.5,
+  "status": "open"
+ },
+ {
+  "id": "401918969|spread|2567",
+  "base": "401918969|spread|2567",
+  "flagged": "2026-11-09T21:07-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401918969,
+  "matchup": "Prairie View A&M @ SMU",
+  "kickoff": "2026-11-10T20:00:00-05:00",
+  "tier": "NOV_FAV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2567,
+  "pick": "SMU -23.5",
+  "book": "FD",
+  "line": -23.5,
+  "odds": -114.0,
+  "stake": 1.0,
+  "edge": 5.2,
+  "model": 28.7,
+  "opener": -23.5,
+  "grp": "power 6",
+  "limit": -24.5,
   "status": "open"
  }
 ]
