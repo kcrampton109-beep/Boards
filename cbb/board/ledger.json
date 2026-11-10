@@ -12454,7 +12454,11 @@
   "opener": 31.5,
   "grp": "power 6",
   "limit": 32.0,
-  "status": "open"
+  "status": "L",
+  "close": 32.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Oakland 68 - Alabama 109"
  },
  {
   "id": "401919016|spread|5",
@@ -12479,7 +12483,11 @@
   "opener": -16.5,
   "grp": "mid-major",
   "limit": -17.0,
-  "status": "open"
+  "status": "W",
+  "close": -18.5,
+  "clv": 3.0,
+  "units": 0.833,
+  "final": "Florida A&M 64 - UAB 92"
  },
  {
   "id": "401921810|spread|2348",
@@ -12666,7 +12674,11 @@
   "opener": 150.5,
   "grp": "low-major",
   "limit": 149.0,
-  "status": "open"
+  "status": "W",
+  "close": 144.5,
+  "clv": 6.0,
+  "units": 0.909,
+  "final": "South Carolina State 82 - Chicago State 67"
  },
  {
   "id": "401919806|spread|119",
@@ -12749,7 +12761,11 @@
   "opener": -34.5,
   "grp": "power 6",
   "limit": -34.5,
-  "status": "open"
+  "status": "L",
+  "close": -37.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Grambling 62 - Texas 93"
  },
  {
   "id": "401922060|spread|2908",
@@ -12803,7 +12819,11 @@
   "opener": -21.5,
   "grp": "power 6",
   "limit": -26.0,
-  "status": "open"
+  "status": "W",
+  "close": -24.5,
+  "clv": 3.0,
+  "units": 0.833,
+  "final": "Jackson State 57 - Mississippi State 98"
  },
  {
   "id": "401925737|spread|264",
@@ -13011,7 +13031,11 @@
   "opener": -5.5,
   "grp": "low-major",
   "limit": -1.5,
-  "status": "open"
+  "status": "L",
+  "close": -1.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "South Carolina State 82 - Chicago State 67"
  },
  {
   "id": "401925737|total|under",
@@ -13201,13 +13225,17 @@
   "opener": 142.5,
   "grp": "power 6",
   "limit": 140.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 90,
   "money": 88,
   "bets": 817,
   "moved": 2.0,
-  "mins": 453
+  "mins": 453,
+  "close": 139.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Wagner 41 - UConn 83"
  },
  {
   "id": "rlm|401922060|total|under",
@@ -13593,13 +13621,17 @@
   "opener": -34.5,
   "grp": "power 6",
   "limit": -37.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 85,
   "money": 37,
   "bets": 873,
   "moved": 3.0,
-  "mins": 302
+  "mins": 302,
+  "close": -37.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Grambling 62 - Texas 93"
  },
  {
   "id": "rlm|401920686|spread|41",
@@ -13624,13 +13656,17 @@
   "opener": -35.5,
   "grp": "power 6",
   "limit": -39.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 88,
   "money": 85,
   "bets": 1267,
   "moved": 4.0,
-  "mins": 302
+  "mins": 302,
+  "close": -39.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Wagner 41 - UConn 83"
  },
  {
   "id": "rlm|401906759|spread|333",
@@ -13655,13 +13691,17 @@
   "opener": -31.5,
   "grp": "power 6",
   "limit": -31.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 84,
   "money": 82,
   "bets": 1802,
   "moved": 1.0,
-  "mins": 332
+  "mins": 332,
+  "close": -32.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Oakland 68 - Alabama 109"
  },
  {
   "id": "rlm|401919016|spread|5",
@@ -13686,13 +13726,17 @@
   "opener": -16.5,
   "grp": "mid-major",
   "limit": -18.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 95,
   "money": 77,
   "bets": 464,
   "moved": 2.0,
-  "mins": 332
+  "mins": 332,
+  "close": -18.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Florida A&M 64 - UAB 92"
  },
  {
   "id": "rlm|401906793|spread|344",
@@ -13717,13 +13761,17 @@
   "opener": -21.5,
   "grp": "power 6",
   "limit": -23.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 91,
   "money": 13,
   "bets": 817,
   "moved": 2.0,
-  "mins": 332
+  "mins": 332,
+  "close": -24.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Jackson State 57 - Mississippi State 98"
  },
  {
   "id": "rlm|401906793|total|under",
@@ -13748,13 +13796,17 @@
   "opener": 156.5,
   "grp": "power 6",
   "limit": 155.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 86,
   "money": 15,
   "bets": 817,
   "moved": 1.0,
-  "mins": 332
+  "mins": 332,
+  "close": 154.5,
+  "clv": 1.0,
+  "units": 0.926,
+  "final": "Jackson State 57 - Mississippi State 98"
  },
  {
   "id": "rlm|401906803|spread|201",
@@ -14031,13 +14083,17 @@
   "opener": 150.5,
   "grp": "low-major",
   "limit": 145.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 66,
   "money": 71,
   "bets": 1560,
   "moved": 6.0,
-  "mins": 241
+  "mins": 241,
+  "close": 144.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "South Carolina State 82 - Chicago State 67"
  },
  {
   "id": "rlm|401926181|total|under",
@@ -14942,13 +14998,17 @@
   "opener": 140.5,
   "grp": "power 6",
   "limit": 139.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 89,
   "money": 76,
   "bets": 1580,
   "moved": 1.0,
-  "mins": 15
+  "mins": 15,
+  "close": 139.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Eastern Illinois 70 - Notre Dame 94"
  },
  {
   "id": "401909514|spread|46",
