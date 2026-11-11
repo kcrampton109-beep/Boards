@@ -1,0 +1,23 @@
+{
+ "id": 72,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/72",
+ "board": "CFB",
+ "pick": "Fordham +1.5",
+ "odds": -120,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Georgetown @ Fordham",
+ "kickoff": "2026-11-14 12:00:00-05:00",
+ "play": "401868014|spread|home|m",
+ "logged": "2026-11-11T16:34:54Z",
+ "updated": "2026-11-11T16:35:03+00:00",
+ "tier": "FCS",
+ "game_id": 401868014,
+ "board_line": 1.5,
+ "board_odds": -111.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 1.5
+}
