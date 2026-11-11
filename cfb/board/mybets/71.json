@@ -1,0 +1,23 @@
+{
+ "id": 71,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/71",
+ "board": "CFB",
+ "pick": "Abilene Christian +7.5",
+ "odds": -111,
+ "book": "FanDuel",
+ "amount": 15.0,
+ "notes": "",
+ "matchup": "Abilene Christian @ Austin Peay",
+ "kickoff": "2026-11-14 14:00:00-05:00",
+ "play": "401868058|spread|away|m",
+ "logged": "2026-11-11T03:13:47Z",
+ "updated": "2026-11-11T03:13:56+00:00",
+ "tier": "FCS",
+ "game_id": 401868058,
+ "board_line": 7.5,
+ "board_odds": -111.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "away",
+ "line": 7.5
+}
