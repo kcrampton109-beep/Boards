@@ -17417,5 +17417,28 @@
   "grp": "FCS-FCS",
   "limit": 16.5,
   "status": "open"
+ },
+ {
+  "id": "401858518|spread|away|m",
+  "base": "401858518|spread|away|m",
+  "flagged": "2026-11-11T16:29-05:00",
+  "season": 2026,
+  "week": 11,
+  "game_id": 401858518,
+  "matchup": "USC @ Indiana",
+  "kickoff": "2026-11-14 15:30:00-05:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "pick": "USC +10",
+  "book": "DK",
+  "line": 10.0,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 5.1,
+  "model": 4.9,
+  "grp": "FBS",
+  "limit": 10.0,
+  "status": "open"
  }
 ]
