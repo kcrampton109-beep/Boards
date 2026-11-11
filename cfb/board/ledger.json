@@ -17348,5 +17348,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401868027|spread|home|m",
+  "base": "401868027|spread|home|m",
+  "flagged": "2026-11-11T07:33-05:00",
+  "season": 2026,
+  "week": 11,
+  "game_id": 401868027,
+  "matchup": "Villanova @ Holy Cross",
+  "kickoff": "2026-11-14 12:00:00-05:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Holy Cross +7.5",
+  "book": "FD",
+  "line": 7.5,
+  "odds": -113.0,
+  "stake": 0.5,
+  "edge": 3.1,
+  "model": 4.4,
+  "grp": "FCS-FCS",
+  "limit": 7.5,
+  "status": "open"
  }
 ]
