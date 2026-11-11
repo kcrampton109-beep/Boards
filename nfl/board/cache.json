@@ -3008,7 +3008,7 @@
    "odds": {}
   },
   "290977": {
-   "ts": "2026-11-11T05:41:03.937382-05:00",
+   "ts": "2026-11-11T08:55:12.412158-05:00",
    "odds": {
     "kenneth walker": {
      "name": "Kenneth Walker III",
@@ -3072,18 +3072,18 @@
     },
     "jalen royals": {
      "name": "Jalen Royals",
-     "FD": 850
+     "FD": 900
     },
     "kansas city defense": {
      "name": "Kansas City Defense",
      "FD": 950
     },
-    "charlie woerner": {
-     "name": "Charlie Woerner",
-     "FD": 1100
-    },
     "michael penix": {
      "name": "Michael Penix Jr.",
+     "FD": 1200
+    },
+    "charlie woerner": {
+     "name": "Charlie Woerner",
      "FD": 1200
     },
     "austin hooper": {
