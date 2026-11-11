@@ -14420,7 +14420,11 @@
   "opener": 3.5,
   "grp": "power 6",
   "limit": 3.0,
-  "status": "open"
+  "status": "W",
+  "close": 3.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Creighton 82 - Kansas State 89"
  },
  {
   "id": "rlm|401909786|spread|96",
@@ -15057,7 +15061,11 @@
   "opener": -12.5,
   "grp": "power 6",
   "limit": -13.0,
-  "status": "open"
+  "status": "L",
+  "close": -12.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "San Diego 75 - Colorado 83"
  },
  {
   "id": "401909761|total|over",
@@ -15082,7 +15090,11 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 154.5,
-  "status": "open"
+  "status": "W",
+  "close": 152.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "San Diego 75 - Colorado 83"
  },
  {
   "id": "401921733|total|over",
@@ -15136,7 +15148,11 @@
   "opener": -20.5,
   "grp": "mid-major",
   "limit": -21.0,
-  "status": "open"
+  "status": "W",
+  "close": -22.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Little Rock 69 - New Mexico 94"
  },
  {
   "id": "401929180|spread|278",
@@ -15161,7 +15177,11 @@
   "opener": -5.5,
   "grp": "mid-major",
   "limit": -7.0,
-  "status": "open"
+  "status": "L",
+  "close": -6.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Georgia State 92 - Fresno State 95"
  },
  {
   "id": "rlm|401925681|total|under",
@@ -15569,7 +15589,11 @@
   "opener": -36.5,
   "grp": "power 6",
   "limit": -37.0,
-  "status": "open"
+  "status": "L",
+  "close": -37.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Bucknell 61 - Virginia 95"
  },
  {
   "id": "rlm|401920378|spread|2294",
@@ -16024,13 +16048,17 @@
   "opener": 156.5,
   "grp": "power 6",
   "limit": 156.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 383,
   "moved": 1.0,
-  "mins": 1325
+  "mins": 1325,
+  "close": 158.5,
+  "clv": 2.0,
+  "units": 0.943,
+  "final": "Creighton 82 - Kansas State 89"
  },
  {
   "id": "401912228|spread|2441",
@@ -17817,13 +17845,17 @@
   "opener": 3.5,
   "grp": "power 6",
   "limit": 3.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 903,
   "moved": 1.0,
-  "mins": 734
+  "mins": 734,
+  "close": 3.5,
+  "clv": 0.0,
+  "units": 0.833,
+  "final": "Creighton 82 - Kansas State 89"
  },
  {
   "id": "rlm|401920425|total|over",
@@ -17848,13 +17880,17 @@
   "opener": 148.5,
   "grp": "power 6",
   "limit": 148.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 2.0,
-  "mins": 734
+  "mins": 734,
+  "close": 148.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Bucknell 61 - Virginia 95"
  },
  {
   "id": "rlm|401929180|total|under",
@@ -17879,13 +17915,17 @@
   "opener": 149.5,
   "grp": "mid-major",
   "limit": 146.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 99,
   "money": 98,
   "bets": 252,
   "moved": 3.0,
-  "mins": 734
+  "mins": 734,
+  "close": 149.5,
+  "clv": -3.0,
+  "units": -1.0,
+  "final": "Georgia State 92 - Fresno State 95"
  },
  {
   "id": "rlm|401925773|spread|71",
@@ -18213,13 +18253,17 @@
   "opener": 156.5,
   "grp": "mid-major",
   "limit": 158.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 2.0,
-  "mins": 703
+  "mins": 703,
+  "close": 157.5,
+  "clv": -1.0,
+  "units": 0.926,
+  "final": "Little Rock 69 - New Mexico 94"
  },
  {
   "id": "rlm|401909553|total|under",
@@ -18413,7 +18457,11 @@
   "opener": 156.5,
   "grp": "mid-major",
   "limit": 159.5,
-  "status": "open"
+  "status": "L",
+  "close": 157.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Little Rock 69 - New Mexico 94"
  },
  {
   "id": "rlm|401920306|spread|2198",
@@ -18572,13 +18620,17 @@
   "opener": -5.5,
   "grp": "mid-major",
   "limit": -6.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 696,
   "moved": 1.0,
-  "mins": 571
+  "mins": 571,
+  "close": -6.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Georgia State 92 - Fresno State 95"
  },
  {
   "id": "rlm|401921774|total|over",
@@ -18743,13 +18795,17 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 151.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 69,
   "money": 73,
   "bets": 868,
   "moved": 1.0,
-  "mins": 309
+  "mins": 309,
+  "close": 152.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "San Diego 75 - Colorado 83"
  },
  {
   "id": "rlm|401926731|spread|2630",
