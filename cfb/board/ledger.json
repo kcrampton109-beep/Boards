@@ -17394,5 +17394,28 @@
   "grp": "FCS-FCS",
   "limit": -3.0,
   "status": "open"
+ },
+ {
+  "id": "401867893|spread|home|m|FCS",
+  "base": "401867893|spread|home|m",
+  "flagged": "2026-11-11T11:32-05:00",
+  "season": 2026,
+  "week": 11,
+  "game_id": 401867893,
+  "matchup": "South Dakota State @ Southern Illinois",
+  "kickoff": "2026-11-14 14:00:00-05:00",
+  "tier": "FCS",
+  "market": "spread",
+  "side": "home",
+  "pick": "Southern Illinois +16.5",
+  "book": "FD",
+  "line": 16.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.3,
+  "model": 11.2,
+  "grp": "FCS-FCS",
+  "limit": 16.5,
+  "status": "open"
  }
 ]
