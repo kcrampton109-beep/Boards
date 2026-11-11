@@ -424,39 +424,39 @@
    }
   },
   "2026_10_JAX_TEN": {
-   "ts": "2026-11-11T13:00:39.648238-05:00",
+   "ts": "2026-11-11T16:43:33.620100-05:00",
    "wx": {
-    "wind": 5.8,
-    "gust": 8.5,
-    "temp": 52.0,
+    "wind": 4.5,
+    "gust": 6.9,
+    "temp": 53.0,
     "precip": 1
    }
   },
   "2026_10_MIN_GB": {
-   "ts": "2026-11-11T13:00:39.648238-05:00",
+   "ts": "2026-11-11T16:43:33.620100-05:00",
    "wx": {
-    "wind": 5.7,
-    "gust": 7.6,
-    "temp": 44.0,
+    "wind": 6.4,
+    "gust": 6.9,
+    "temp": 42.0,
     "precip": 0
    }
   },
   "2026_10_BUF_NYJ": {
-   "ts": "2026-11-11T13:00:39.648238-05:00",
+   "ts": "2026-11-11T16:43:33.620100-05:00",
    "wx": {
-    "wind": 13.1,
-    "gust": 17.4,
-    "temp": 48.0,
+    "wind": 12.8,
+    "gust": 15.9,
+    "temp": 49.0,
     "precip": 0
    }
   },
   "2026_10_HOU_CLE": {
-   "ts": "2026-11-11T13:00:39.648238-05:00",
+   "ts": "2026-11-11T16:43:33.620100-05:00",
    "wx": {
-    "wind": 10.9,
-    "gust": 11.6,
+    "wind": 10.3,
+    "gust": 11.2,
     "temp": 45.0,
-    "precip": 21
+    "precip": 20
    }
   }
  },
@@ -3992,11 +3992,11 @@
    }
   },
   "290982": {
-   "ts": "2026-11-11T13:00:39.648238-05:00",
+   "ts": "2026-11-11T16:43:33.620100-05:00",
    "odds": {
     "derrick henry": {
      "name": "Derrick Henry",
-     "FD": -140
+     "FD": -135
     },
     "zay flowers": {
      "name": "Zay Flowers",
@@ -4004,7 +4004,7 @@
     },
     "omarion hampton": {
      "name": "Omarion Hampton",
-     "FD": 310
+     "FD": 300
     },
     "tre harris": {
      "name": "Tre Harris",
@@ -4016,11 +4016,11 @@
     },
     "jakobi lane": {
      "name": "Ja'Kobi Lane",
-     "FD": 380
+     "FD": 390
     },
     "justice hill": {
      "name": "Justice Hill",
-     "FD": 380
+     "FD": 390
     },
     "oronde gadsden": {
      "name": "Oronde Gadsden",
@@ -4084,15 +4084,15 @@
     },
     "derius davis": {
      "name": "Derius Davis",
-     "FD": 1300
-    },
-    "devontez walker": {
-     "name": "Devontez Walker",
-     "FD": 1600
+     "FD": 1400
     },
     "matthew hibner": {
      "name": "Matthew Hibner",
      "FD": 1600
+    },
+    "devontez walker": {
+     "name": "Devontez Walker",
+     "FD": 1700
     },
     "lajohntay wester": {
      "name": "LaJohntay Wester",
@@ -4110,13 +4110,13 @@
      "name": "Hayden Rucci",
      "FD": 1900
     },
-    "scott matlock": {
-     "name": "Scott Matlock",
-     "FD": 2700
-    },
     "rasheen ali": {
      "name": "Rasheen Ali",
      "FD": 2700
+    },
+    "scott matlock": {
+     "name": "Scott Matlock",
+     "FD": 3000
     }
    }
   }
