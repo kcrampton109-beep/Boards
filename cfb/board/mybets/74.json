@@ -1,0 +1,23 @@
+{
+ "id": 74,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/74",
+ "board": "CFB",
+ "pick": "Incarnate Word -24.5",
+ "odds": -113,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Nicholls @ Incarnate Word",
+ "kickoff": "2026-11-14 15:00:00-05:00",
+ "play": "401869148|spread|home|m",
+ "logged": "2026-11-11T16:35:02Z",
+ "updated": "2026-11-11T16:35:13+00:00",
+ "tier": "FCS",
+ "game_id": 401869148,
+ "board_line": -24.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": -24.5
+}
