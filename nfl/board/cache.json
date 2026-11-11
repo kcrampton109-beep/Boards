@@ -3008,7 +3008,7 @@
    "odds": {}
   },
   "290977": {
-   "ts": "2026-11-11T08:55:12.412158-05:00",
+   "ts": "2026-11-11T12:04:20.496766-05:00",
    "odds": {
     "kenneth walker": {
      "name": "Kenneth Walker III",
@@ -3028,7 +3028,7 @@
     },
     "travis kelce": {
      "name": "Travis Kelce",
-     "FD": 210
+     "FD": 200
     },
     "kyle pitts": {
      "name": "Kyle Pitts",
@@ -3036,7 +3036,7 @@
     },
     "josh downs": {
      "name": "Josh Downs",
-     "FD": 320
+     "FD": 300
     },
     "jahan dotson": {
      "name": "Jahan Dotson",
@@ -3048,7 +3048,7 @@
     },
     "cyrus allen": {
      "name": "Cyrus Allen",
-     "FD": 600
+     "FD": 550
     },
     "patrick mahomes": {
      "name": "Patrick Mahomes",
@@ -3062,6 +3062,10 @@
      "name": "Khalil Herbert",
      "FD": 800
     },
+    "jalen royals": {
+     "name": "Jalen Royals",
+     "FD": 800
+    },
     "olamide zaccheaus": {
      "name": "Olamide Zaccheaus",
      "FD": 800
@@ -3070,40 +3074,32 @@
      "name": "Atlanta Defense",
      "FD": 850
     },
-    "jalen royals": {
-     "name": "Jalen Royals",
-     "FD": 900
-    },
     "kansas city defense": {
      "name": "Kansas City Defense",
      "FD": 950
     },
-    "michael penix": {
-     "name": "Michael Penix Jr.",
-     "FD": 1200
-    },
     "charlie woerner": {
      "name": "Charlie Woerner",
+     "FD": 1100
+    },
+    "michael penix": {
+     "name": "Michael Penix Jr.",
      "FD": 1200
     },
     "austin hooper": {
      "name": "Austin Hooper",
      "FD": 1300
     },
+    "andrew armstrong": {
+     "name": "Andrew Armstrong",
+     "FD": 1500
+    },
     "chris blair": {
      "name": "Chris Blair",
      "FD": 1600
     },
-    "andrew armstrong": {
-     "name": "Andrew Armstrong",
-     "FD": 1600
-    },
     "jake briningstool": {
      "name": "Jake Briningstool",
-     "FD": 2200
-    },
-    "nikko remigio": {
-     "name": "Nikko Remigio",
      "FD": 2200
     },
     "beaux collins": {
@@ -3246,8 +3242,113 @@
    }
   },
   "290976": {
-   "ts": "2026-11-08T13:14:38.122446-05:00",
-   "odds": {}
+   "ts": "2026-11-11T12:04:20.496766-05:00",
+   "odds": {
+    "chuba hubbard": {
+     "name": "Chuba Hubbard",
+     "FD": -160
+    },
+    "audric estime": {
+     "name": "Audric Estime",
+     "FD": 115
+    },
+    "tetairoa mcmillan": {
+     "name": "Tetairoa McMillan",
+     "FD": 135
+    },
+    "chris olave": {
+     "name": "Chris Olave",
+     "FD": 145
+    },
+    "alvin kamara": {
+     "name": "Alvin Kamara",
+     "FD": 185
+    },
+    "jalen coker": {
+     "name": "Jalen Coker",
+     "FD": 195
+    },
+    "devaughn vele": {
+     "name": "Devaughn Vele",
+     "FD": 230
+    },
+    "jordyn tyson": {
+     "name": "Jordyn Tyson",
+     "FD": 240
+    },
+    "juwan johnson": {
+     "name": "Juwan Johnson",
+     "FD": 260
+    },
+    "tyler shough": {
+     "name": "Tyler Shough",
+     "FD": 290
+    },
+    "darren waller": {
+     "name": "Darren Waller",
+     "FD": 370
+    },
+    "tommy tremble": {
+     "name": "Tommy Tremble",
+     "FD": 450
+    },
+    "bryce young": {
+     "name": "Bryce Young",
+     "FD": 500
+    },
+    "john metchie": {
+     "name": "John Metchie III",
+     "FD": 550
+    },
+    "noah fant": {
+     "name": "Noah Fant",
+     "FD": 600
+    },
+    "bryce lance": {
+     "name": "Bryce Lance",
+     "FD": 650
+    },
+    "carolina defense": {
+     "name": "Carolina Defense",
+     "FD": 750
+    },
+    "mitchell evans": {
+     "name": "Mitchell Evans",
+     "FD": 750
+    },
+    "new orleans defense": {
+     "name": "New Orleans Defense",
+     "FD": 900
+    },
+    "trevor etienne": {
+     "name": "Trevor Etienne",
+     "FD": 1000
+    },
+    "brycen tremayne": {
+     "name": "Brycen Tremayne",
+     "FD": 1300
+    },
+    "oscar delp": {
+     "name": "Oscar Delp",
+     "FD": 1400
+    },
+    "barion brown": {
+     "name": "Barion Brown",
+     "FD": 1500
+    },
+    "anthony tyus": {
+     "name": "Anthony Tyus III",
+     "FD": 2500
+    },
+    "feleipe franks": {
+     "name": "Feleipe Franks",
+     "FD": 2700
+    },
+    "jatavion sanders": {
+     "name": "Ja'Tavion Sanders",
+     "FD": 2700
+    }
+   }
   },
   "290975": {
    "ts": "2026-11-11T10:59:06.456523-05:00",
