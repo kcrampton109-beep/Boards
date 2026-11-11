@@ -15028,7 +15028,11 @@
   "opener": -23.5,
   "grp": "power 6",
   "limit": -24.0,
-  "status": "open"
+  "status": "W",
+  "close": -23.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Fairfield 42 - Wisconsin 89"
  },
  {
   "id": "401909761|spread|38",
@@ -15103,7 +15107,11 @@
   "opener": 134.5,
   "grp": "power 6",
   "limit": 138.5,
-  "status": "open"
+  "status": "W",
+  "close": 133.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Hofstra 63 - Arizona State 85"
  },
  {
   "id": "401924896|spread|167",
@@ -15532,7 +15540,11 @@
   "opener": -25.5,
   "grp": "power 6",
   "limit": -26.0,
-  "status": "open"
+  "status": "L",
+  "close": -28.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Queens University 82 - BYU 98"
  },
  {
   "id": "401920425|spread|258",
@@ -16305,7 +16317,11 @@
   "opener": 178.5,
   "grp": "power 6",
   "limit": 181.5,
-  "status": "open"
+  "status": "W",
+  "close": 180.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Queens University 82 - BYU 98"
  },
  {
   "id": "rlm|401909752|spread|239",
@@ -16400,13 +16416,17 @@
   "opener": -25.5,
   "grp": "power 6",
   "limit": -26.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 3.0,
-  "mins": 1202
+  "mins": 1202,
+  "close": -28.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Queens University 82 - BYU 98"
  },
  {
   "id": "rlm|401921740|total|over",
@@ -16431,13 +16451,17 @@
   "opener": 178.5,
   "grp": "power 6",
   "limit": 180.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 2.0,
-  "mins": 1202
+  "mins": 1202,
+  "close": 180.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Queens University 82 - BYU 98"
  },
  {
   "id": "rlm|401921062|spread|2539",
@@ -16633,13 +16657,17 @@
   "opener": -15.5,
   "grp": "power 6",
   "limit": -16.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 1.0,
-  "mins": 1167
+  "mins": 1167,
+  "close": -16.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Hofstra 63 - Arizona State 85"
  },
  {
   "id": "rlm|401909543|spread|2752",
@@ -16769,13 +16797,17 @@
   "opener": 155.5,
   "grp": "power 6",
   "limit": 156.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 252,
   "moved": 1.0,
-  "mins": 1090
+  "mins": 1090,
+  "close": 156.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Northern Arizona 59 - Arizona 90"
  },
  {
   "id": "rlm|401909553|spread|103",
@@ -18146,13 +18178,17 @@
   "opener": 152.5,
   "grp": "mid-major",
   "limit": 154.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 2.0,
-  "mins": 703
+  "mins": 703,
+  "close": 154.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Utah Tech 86 - Utah State 118"
  },
  {
   "id": "rlm|401924896|total|over",
@@ -18342,13 +18378,17 @@
   "opener": 134.5,
   "grp": "power 6",
   "limit": 133.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 96,
   "money": 93,
   "bets": 636,
   "moved": 1.0,
-  "mins": 636
+  "mins": 636,
+  "close": 133.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Hofstra 63 - Arizona State 85"
  },
  {
   "id": "401924896|total|under",
