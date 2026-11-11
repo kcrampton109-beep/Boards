@@ -10094,5 +10094,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_10_CAR_NO:RLM:total:over",
+  "tier": "RLM",
+  "market": "total",
+  "side": "over",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_10_CAR_NO",
+  "week": 10,
+  "matchup": "CAR @ NO",
+  "kickoff": "Sun Nov 15, 1:00 PM ET",
+  "pick": "Over 48.5",
+  "line": 48.5,
+  "odds": -110,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "57% of bets on the under, total moved 47.5 \u2192 48.5",
+  "limit": null,
+  "model_line": 0.7,
+  "flagged": "2026-11-11T10:00:01.138161-05:00",
+  "kickoff_iso": "2026-11-15T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
