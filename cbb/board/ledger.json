@@ -16518,13 +16518,17 @@
   "opener": -10.5,
   "grp": "mid-major",
   "limit": -11.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 252,
   "moved": 1.0,
-  "mins": 1262
+  "mins": 1262,
+  "close": -11.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Montana 58 - San Francisco 63"
  },
  {
   "id": "rlm|401920866|spread|164",
