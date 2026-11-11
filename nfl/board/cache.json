@@ -415,11 +415,11 @@
    }
   },
   "2026_10_WAS_NYG": {
-   "ts": "2026-11-10T21:58:40.134973-05:00",
+   "ts": "2026-11-11T01:08:23.371859-05:00",
    "wx": {
-    "wind": 9.2,
-    "gust": 17.0,
-    "temp": 51.0,
+    "wind": 7.4,
+    "gust": 12.3,
+    "temp": 52.0,
     "precip": 67
    }
   }
@@ -2778,7 +2778,7 @@
    }
   },
   "290970": {
-   "ts": "2026-11-10T21:58:40.134973-05:00",
+   "ts": "2026-11-11T01:08:23.371859-05:00",
    "odds": {
     "cam skattebo": {
      "name": "Cam Skattebo",
@@ -2903,7 +2903,7 @@
    }
   },
   "290823": {
-   "ts": "2026-11-10T21:58:40.134973-05:00",
+   "ts": "2026-11-11T01:08:23.371859-05:00",
    "odds": {
     "jahmyr gibbs": {
      "name": "Jahmyr Gibbs",
@@ -3129,7 +3129,7 @@
    "odds": {}
   },
   "290973": {
-   "ts": "2026-11-10T21:58:40.134973-05:00",
+   "ts": "2026-11-11T01:08:23.371859-05:00",
    "odds": {
     "christian watson": {
      "name": "Christian Watson",
@@ -3262,7 +3262,7 @@
    "odds": {}
   },
   "290979": {
-   "ts": "2026-11-10T21:58:40.134973-05:00",
+   "ts": "2026-11-11T01:08:23.371859-05:00",
    "odds": {
     "jaxon smith-njigba": {
      "name": "Jaxon Smith-Njigba",
@@ -3270,7 +3270,7 @@
     },
     "zach charbonnet": {
      "name": "Zach Charbonnet",
-     "FD": 115
+     "FD": 120
     },
     "ashton jeanty": {
      "name": "Ashton Jeanty",
@@ -3282,7 +3282,7 @@
     },
     "brock bowers": {
      "name": "Brock Bowers",
-     "FD": 220
+     "FD": 210
     },
     "aj barner": {
      "name": "AJ Barner",
@@ -3330,7 +3330,7 @@
     },
     "jalen nailor": {
      "name": "Jalen Nailor",
-     "FD": 750
+     "FD": 700
     },
     "george holani": {
      "name": "George Holani",
@@ -3358,7 +3358,7 @@
     },
     "ian thomas": {
      "name": "Ian Thomas",
-     "FD": 2000
+     "FD": 1900
     },
     "dylan laube": {
      "name": "Dylan Laube",
@@ -3376,12 +3376,12 @@
      "name": "Malik Benson",
      "FD": 2700
     },
-    "brady russell": {
-     "name": "Brady Russell",
-     "FD": 2700
-    },
     "irv charles": {
      "name": "Irv Charles",
+     "FD": 3000
+    },
+    "brady russell": {
+     "name": "Brady Russell",
      "FD": 3000
     },
     "cody white": {
