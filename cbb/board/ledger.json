@@ -14970,7 +14970,11 @@
   "opener": -3.5,
   "grp": "mid-major",
   "limit": -4.0,
-  "status": "open"
+  "status": "W",
+  "close": -3.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Green Bay 76 - Northern Iowa 89"
  },
  {
   "id": "401927386|total|under",
@@ -14995,7 +14999,11 @@
   "opener": 150.5,
   "grp": "mid-major",
   "limit": 150.5,
-  "status": "open"
+  "status": "L",
+  "close": 151.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Green Bay 76 - Northern Iowa 89"
  },
  {
   "id": "401920895|spread|275",
@@ -15495,7 +15503,11 @@
   "opener": -25.5,
   "grp": "mid-major",
   "limit": -24.5,
-  "status": "open"
+  "status": "W",
+  "close": -26.5,
+  "clv": 2.0,
+  "units": 0.877,
+  "final": "Alcorn State 57 - Murray State 94"
  },
  {
   "id": "401921740|spread|252",
@@ -15692,7 +15704,11 @@
   "opener": -23.5,
   "grp": "power 6",
   "limit": -24.5,
-  "status": "open"
+  "status": "W",
+  "close": -24.5,
+  "clv": 1.0,
+  "units": 0.877,
+  "final": "Prairie View A&M 63 - SMU 98"
  },
  {
   "id": "401911011|spread|2754",
@@ -15897,13 +15913,17 @@
   "opener": 161.5,
   "grp": "power 6",
   "limit": 161.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 1236,
   "moved": 3.0,
-  "mins": 1294
+  "mins": 1294,
+  "close": 167.5,
+  "clv": 6.0,
+  "units": 0.909,
+  "final": "Illinois 78 - Texas Tech 84"
  },
  {
   "id": "401913527|total|under",
@@ -15928,7 +15948,11 @@
   "opener": 161.5,
   "grp": "power 6",
   "limit": 163.0,
-  "status": "open"
+  "status": "W",
+  "close": 167.5,
+  "clv": -3.0,
+  "units": 0.909,
+  "final": "Illinois 78 - Texas Tech 84"
  },
  {
   "id": "rlm|401906771|total|over",
@@ -16077,13 +16101,17 @@
   "opener": 4.5,
   "grp": "mid-major",
   "limit": 4.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 262,
   "moved": 1.0,
-  "mins": 1203
+  "mins": 1203,
+  "close": 3.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "Belmont 75 - Lipscomb 88"
  },
  {
   "id": "rlm|401911011|spread|2117",
@@ -16242,13 +16270,17 @@
   "opener": 162.5,
   "grp": "mid-major",
   "limit": 162.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 343,
   "moved": 2.0,
-  "mins": 1169
+  "mins": 1169,
+  "close": 164.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Alcorn State 57 - Murray State 94"
  },
  {
   "id": "401921740|total|under",
@@ -16298,13 +16330,17 @@
   "opener": -20.5,
   "grp": "power 6",
   "limit": -21.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 277,
   "moved": 1.0,
-  "mins": 1142
+  "mins": 1142,
+  "close": -21.5,
+  "clv": 0.0,
+  "units": 0.926,
+  "final": "Yale 61 - Baylor 90"
  },
  {
   "id": "rlm|401909752|total|over",
@@ -16329,13 +16365,17 @@
   "opener": 156.5,
   "grp": "power 6",
   "limit": 156.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 277,
   "moved": 1.0,
-  "mins": 1142
+  "mins": 1142,
+  "close": 157.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Yale 61 - Baylor 90"
  },
  {
   "id": "rlm|401921740|spread|252",
@@ -16558,13 +16598,17 @@
   "opener": 150.5,
   "grp": "mid-major",
   "limit": 151.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 252,
   "moved": 1.0,
-  "mins": 1107
+  "mins": 1107,
+  "close": 151.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Green Bay 76 - Northern Iowa 89"
  },
  {
   "id": "rlm|401921733|spread|9",
@@ -16655,13 +16699,17 @@
   "opener": -25.5,
   "grp": "mid-major",
   "limit": -25.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 408,
   "moved": 1.0,
-  "mins": 1068
+  "mins": 1068,
+  "close": -26.5,
+  "clv": 1.0,
+  "units": 0.877,
+  "final": "Alcorn State 57 - Murray State 94"
  },
  {
   "id": "rlm|401911209|total|under",
@@ -16857,13 +16905,17 @@
   "opener": 151.5,
   "grp": "mid-major",
   "limit": 153.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 252,
   "moved": 2.0,
-  "mins": 996
+  "mins": 996,
+  "close": 153.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "UT Martin 82 - Arkansas State 65"
  },
  {
   "id": "rlm|401920866|total|under",
@@ -17133,13 +17185,17 @@
   "opener": 159.5,
   "grp": "mid-major",
   "limit": 157.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 97,
   "money": 73,
   "bets": 444,
   "moved": 4.0,
-  "mins": 902
+  "mins": 902,
+  "close": 155.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Belmont 75 - Lipscomb 88"
  },
  {
   "id": "rlm|401920306|total|over",
@@ -17636,13 +17692,17 @@
   "opener": 159.5,
   "grp": "power 6",
   "limit": 159.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 277,
   "moved": 2.0,
-  "mins": 674
+  "mins": 674,
+  "close": 160.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Prairie View A&M 63 - SMU 98"
  },
  {
   "id": "401925685|total|under",
@@ -17667,7 +17727,11 @@
   "opener": 162.5,
   "grp": "mid-major",
   "limit": 166.5,
-  "status": "open"
+  "status": "W",
+  "close": 164.5,
+  "clv": 2.0,
+  "units": 0.87,
+  "final": "Alcorn State 57 - Murray State 94"
  },
  {
   "id": "401926731|spread|2032",
@@ -17692,7 +17756,11 @@
   "opener": -7.5,
   "grp": "mid-major",
   "limit": -6.0,
-  "status": "open"
+  "status": "L",
+  "close": -6.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "UT Martin 82 - Arkansas State 65"
  },
  {
   "id": "rlm|401909492|spread|2306",
@@ -18049,7 +18117,11 @@
   "opener": -7.5,
   "grp": "mid-major",
   "limit": -5.0,
-  "status": "open"
+  "status": "L",
+  "close": -6.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "UT Martin 82 - Arkansas State 65"
  },
  {
   "id": "rlm|401925940|total|over",
@@ -18390,13 +18462,17 @@
   "opener": -2.5,
   "grp": "low-major",
   "limit": -2.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 252,
   "moved": 1.0,
-  "mins": 547
+  "mins": 547,
+  "close": -2.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Houston Christian 87 - South Dakota 76"
  },
  {
   "id": "rlm|401911187|spread|2561",
@@ -18658,12 +18734,16 @@
   "opener": 7.5,
   "grp": "mid-major",
   "limit": 6.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 69,
   "money": 55,
   "bets": 2029,
   "moved": 1.0,
-  "mins": 195
+  "mins": 195,
+  "close": 6.5,
+  "clv": 0.0,
+  "units": 0.98,
+  "final": "UT Martin 82 - Arkansas State 65"
  }
 ]
