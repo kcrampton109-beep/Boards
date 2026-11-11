@@ -3391,7 +3391,7 @@
    }
   },
   "290980": {
-   "ts": "2026-11-11T00:08:57.591750-05:00",
+   "ts": "2026-11-11T03:38:12.836920-05:00",
    "odds": {
     "christian mccaffrey": {
      "name": "Christian McCaffrey",
@@ -3464,11 +3464,11 @@
    }
   },
   "290981": {
-   "ts": "2026-11-11T00:08:57.591750-05:00",
+   "ts": "2026-11-11T03:38:12.836920-05:00",
    "odds": {
     "jamarr chase": {
      "name": "Ja'Marr Chase",
-     "FD": -130
+     "FD": -125
     },
     "chase brown": {
      "name": "Chase Brown",
@@ -3488,11 +3488,11 @@
     },
     "dk metcalf": {
      "name": "DK Metcalf",
-     "FD": 175
+     "FD": 170
     },
     "darnell washington": {
      "name": "Darnell Washington",
-     "FD": 220
+     "FD": 210
     },
     "mike gesicki": {
      "name": "Mike Gesicki",
@@ -3524,7 +3524,7 @@
     },
     "joe burrow": {
      "name": "Joe Burrow",
-     "FD": 700
+     "FD": 750
     },
     "drew sample": {
      "name": "Drew Sample",
@@ -3568,19 +3568,19 @@
     },
     "lew nichols": {
      "name": "Lew Nichols III",
-     "FD": 3000
+     "FD": 3300
     },
     "travis homer": {
      "name": "Travis Homer",
-     "FD": 3000
+     "FD": 3300
     },
     "riley nowakowski": {
      "name": "Riley Nowakowski",
-     "FD": 3500
+     "FD": 4000
     },
     "eli heidenreich": {
      "name": "Eli Heidenreich",
-     "FD": 3500
+     "FD": 4000
     },
     "tahj brooks": {
      "name": "Tahj Brooks",
