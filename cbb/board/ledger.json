@@ -14391,7 +14391,11 @@
   "opener": 9.5,
   "grp": "power 6",
   "limit": 9.0,
-  "status": "open"
+  "status": "W",
+  "close": 9.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Florida 81 - Florida State 72"
  },
  {
   "id": "401909492|spread|2306",
@@ -14542,7 +14546,11 @@
   "opener": -13.5,
   "grp": "mid-major",
   "limit": -13.5,
-  "status": "open"
+  "status": "W",
+  "close": -14.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Elon 50 - George Washington 69"
  },
  {
   "id": "401925773|spread|71",
@@ -14567,7 +14575,11 @@
   "opener": 11.5,
   "grp": "mid-major",
   "limit": 11.5,
-  "status": "open"
+  "status": "L",
+  "close": 11.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Bradley 45 - Davidson 62"
  },
  {
   "id": "401925781|total|over",
@@ -14617,7 +14629,11 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 152.0,
-  "status": "open"
+  "status": "L",
+  "close": 151.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "South Alabama 69 - UCF 76"
  },
  {
   "id": "401920356|total|over",
@@ -14667,7 +14683,11 @@
   "opener": 156.5,
   "grp": "power 6",
   "limit": 156.0,
-  "status": "open"
+  "status": "W",
+  "close": 159.5,
+  "clv": -3.0,
+  "units": 0.952,
+  "final": "La Salle 59 - Villanova 80"
  },
  {
   "id": "401918987|spread|238",
@@ -14880,7 +14900,11 @@
   "opener": 149.5,
   "grp": "mid-major",
   "limit": 149.0,
-  "status": "open"
+  "status": "L",
+  "close": 148.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Elon 50 - George Washington 69"
  },
  {
   "id": "401911187|spread|2168",
@@ -15165,7 +15189,11 @@
   "opener": -27.5,
   "grp": "power 6",
   "limit": -27.5,
-  "status": "open"
+  "status": "L",
+  "close": -27.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Delaware State 78 - Georgetown 83"
  },
  {
   "id": "401909543|spread|2174",
@@ -15190,7 +15218,11 @@
   "opener": 31.5,
   "grp": "power 6",
   "limit": 32.5,
-  "status": "open"
+  "status": "L",
+  "close": 32.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Detroit Mercy 55 - Xavier 100"
  },
  {
   "id": "401920866|spread|164",
@@ -15215,7 +15247,11 @@
   "opener": -23.5,
   "grp": "power 6",
   "limit": -24.5,
-  "status": "open"
+  "status": "W",
+  "close": -24.0,
+  "clv": 0.5,
+  "units": 0.833,
+  "final": "NJIT 64 - Rutgers 101"
  },
  {
   "id": "401911196|total|over",
@@ -15265,7 +15301,11 @@
   "opener": -16.5,
   "grp": "power 6",
   "limit": -18.0,
-  "status": "open"
+  "status": "W",
+  "close": -18.5,
+  "clv": 2.0,
+  "units": 0.893,
+  "final": "Charleston Southern 64 - Wake Forest 82"
  },
  {
   "id": "401909553|spread|103",
@@ -15290,7 +15330,11 @@
   "opener": -24.5,
   "grp": "power 6",
   "limit": -25.0,
-  "status": "open"
+  "status": "W",
+  "close": -25.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "Maryland Eastern Shore 54 - Boston College 82"
  },
  {
   "id": "401918957|spread|152",
@@ -15315,7 +15359,11 @@
   "opener": -18.5,
   "grp": "power 6",
   "limit": -20.5,
-  "status": "open"
+  "status": "W",
+  "close": -19.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Presbyterian 60 - NC State 94"
  },
  {
   "id": "401918957|total|over",
@@ -15340,7 +15388,11 @@
   "opener": 145.5,
   "grp": "power 6",
   "limit": 147.0,
-  "status": "open"
+  "status": "W",
+  "close": 147.5,
+  "clv": 2.0,
+  "units": 0.926,
+  "final": "Presbyterian 60 - NC State 94"
  },
  {
   "id": "401920063|spread|227",
@@ -15365,7 +15417,11 @@
   "opener": -18.5,
   "grp": "mid-major",
   "limit": -20.0,
-  "status": "open"
+  "status": "L",
+  "close": -20.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Maine 65 - Rhode Island 71"
  },
  {
   "id": "401920063|total|under",
@@ -15390,7 +15446,11 @@
   "opener": 142.5,
   "grp": "mid-major",
   "limit": 142.5,
-  "status": "open"
+  "status": "W",
+  "close": 140.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Maine 65 - Rhode Island 71"
  },
  {
   "id": "401925685|spread|93",
@@ -15721,7 +15781,11 @@
   "opener": -17.5,
   "grp": "power 6",
   "limit": -16.0,
-  "status": "open"
+  "status": "L",
+  "close": -14.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "South Alabama 69 - UCF 76"
  },
  {
   "id": "rlm|401918987|total|over",
@@ -15833,13 +15897,17 @@
   "opener": 164.5,
   "grp": "power 6",
   "limit": 164.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 590,
   "moved": 1.0,
-  "mins": 1145
+  "mins": 1145,
+  "close": 166.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Florida 81 - Florida State 72"
  },
  {
   "id": "rlm|401909492|total|over",
@@ -15895,7 +15963,11 @@
   "opener": -1.5,
   "grp": "low-major",
   "limit": -1.0,
-  "status": "open"
+  "status": "W",
+  "close": 1.5,
+  "clv": -2.0,
+  "units": 0.893,
+  "final": "Army 55 - New Haven 63"
  },
  {
   "id": "401921755|spread|2116|NOV_FAV",
@@ -15920,7 +15992,11 @@
   "opener": -17.5,
   "grp": "power 6",
   "limit": -15.0,
-  "status": "open"
+  "status": "L",
+  "close": -14.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "South Alabama 69 - UCF 76"
  },
  {
   "id": "rlm|401920704|spread|288",
@@ -16038,13 +16114,17 @@
   "opener": -13.5,
   "grp": "mid-major",
   "limit": -13.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 287,
   "moved": 1.0,
-  "mins": 1109
+  "mins": 1109,
+  "close": -14.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "Elon 50 - George Washington 69"
  },
  {
   "id": "401912228|total|over",
@@ -16069,7 +16149,11 @@
   "opener": 137.5,
   "grp": "low-major",
   "limit": 132.0,
-  "status": "open"
+  "status": "L",
+  "close": 131.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Army 55 - New Haven 63"
  },
  {
   "id": "rlm|401925685|total|over",
@@ -16305,13 +16389,17 @@
   "opener": -23.5,
   "grp": "power 6",
   "limit": -23.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 343,
   "moved": 1.0,
-  "mins": 1017
+  "mins": 1017,
+  "close": -24.0,
+  "clv": 0.5,
+  "units": 0.833,
+  "final": "NJIT 64 - Rutgers 101"
  },
  {
   "id": "rlm|401913101|total|over",
@@ -16336,13 +16424,17 @@
   "opener": 153.5,
   "grp": "power 6",
   "limit": 154.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 252,
   "moved": 2.0,
-  "mins": 1047
+  "mins": 1047,
+  "close": 155.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Wyoming 63 - North Carolina 76"
  },
  {
   "id": "rlm|401911250|total|over",
@@ -16460,13 +16552,17 @@
   "opener": -31.5,
   "grp": "power 6",
   "limit": -31.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 1.0,
-  "mins": 1008
+  "mins": 1008,
+  "close": -32.5,
+  "clv": 1.0,
+  "units": 0.847,
+  "final": "Detroit Mercy 55 - Xavier 100"
  },
  {
   "id": "rlm|401925685|spread|93",
@@ -16522,13 +16618,17 @@
   "opener": 149.5,
   "grp": "mid-major",
   "limit": 148.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 96,
   "money": 96,
   "bets": 358,
   "moved": 1.0,
-  "mins": 970
+  "mins": 970,
+  "close": 148.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Elon 50 - George Washington 69"
  },
  {
   "id": "rlm|401909740|total|over",
@@ -16584,13 +16684,17 @@
   "opener": -24.5,
   "grp": "power 6",
   "limit": -24.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 252,
   "moved": 1.0,
-  "mins": 936
+  "mins": 936,
+  "close": -25.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "Maryland Eastern Shore 54 - Boston College 82"
  },
  {
   "id": "rlm|401909564|total|under",
@@ -16646,13 +16750,17 @@
   "opener": 141.5,
   "grp": "mid-major",
   "limit": 139.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 89,
   "money": 23,
   "bets": 262,
   "moved": 2.0,
-  "mins": 936
+  "mins": 936,
+  "close": 138.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Bradley 45 - Davidson 62"
  },
  {
   "id": "rlm|401926731|total|over",
@@ -16708,13 +16816,17 @@
   "opener": 145.5,
   "grp": "power 6",
   "limit": 144.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 92,
   "money": 58,
   "bets": 439,
   "moved": 1.0,
-  "mins": 840
+  "mins": 840,
+  "close": 144.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "NJIT 64 - Rutgers 101"
  },
  {
   "id": "rlm|401911011|total|under",
@@ -16770,13 +16882,17 @@
   "opener": -16.5,
   "grp": "power 6",
   "limit": -18.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 2.0,
-  "mins": 870
+  "mins": 870,
+  "close": -18.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Charleston Southern 64 - Wake Forest 82"
  },
  {
   "id": "rlm|401921025|total|over",
@@ -16863,13 +16979,17 @@
   "opener": 145.5,
   "grp": "power 6",
   "limit": 146.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 3.0,
-  "mins": 842
+  "mins": 842,
+  "close": 147.5,
+  "clv": 1.0,
+  "units": 0.926,
+  "final": "Presbyterian 60 - NC State 94"
  },
  {
   "id": "rlm|401920356|total|under",
@@ -17018,13 +17138,17 @@
   "opener": -18.5,
   "grp": "mid-major",
   "limit": -19.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 252,
   "moved": 2.0,
-  "mins": 752
+  "mins": 752,
+  "close": -20.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Maine 65 - Rhode Island 71"
  },
  {
   "id": "rlm|401920063|total|under",
@@ -17049,13 +17173,17 @@
   "opener": 142.5,
   "grp": "mid-major",
   "limit": 142.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 98,
   "money": 97,
   "bets": 252,
   "moved": 2.0,
-  "mins": 752
+  "mins": 752,
+  "close": 140.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Maine 65 - Rhode Island 71"
  },
  {
   "id": "rlm|401917520|total|under",
@@ -17173,13 +17301,17 @@
   "opener": 145.5,
   "grp": "power 6",
   "limit": 143.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 88,
   "money": 36,
   "bets": 257,
   "moved": 3.0,
-  "mins": 626
+  "mins": 626,
+  "close": 142.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Delaware State 78 - Georgetown 83"
  },
  {
   "id": "rlm|401925781|total|under",
@@ -17235,13 +17367,17 @@
   "opener": -29.5,
   "grp": "power 6",
   "limit": -31.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 70,
   "money": 31,
   "bets": 252,
   "moved": 2.0,
-  "mins": 614
+  "mins": 614,
+  "close": -28.5,
+  "clv": -3.0,
+  "units": -1.0,
+  "final": "Bryant 55 - Providence 78"
  },
  {
   "id": "rlm|401913101|spread|2751",
@@ -17266,13 +17402,17 @@
   "opener": 14.5,
   "grp": "power 6",
   "limit": 13.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 82,
   "money": 33,
   "bets": 585,
   "moved": 1.0,
-  "mins": 614
+  "mins": 614,
+  "close": 14.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Wyoming 63 - North Carolina 76"
  },
  {
   "id": "401917520|total|over",
@@ -17347,7 +17487,11 @@
   "opener": 141.5,
   "grp": "mid-major",
   "limit": 137.5,
-  "status": "open"
+  "status": "L",
+  "close": 138.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Bradley 45 - Davidson 62"
  },
  {
   "id": "rlm|401918969|total|over",
@@ -17546,13 +17690,17 @@
   "opener": 11.5,
   "grp": "mid-major",
   "limit": 11.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 65,
   "money": 85,
   "bets": 434,
   "moved": 1.0,
-  "mins": 583
+  "mins": 583,
+  "close": 11.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Bradley 45 - Davidson 62"
  },
  {
   "id": "rlm|401921755|total|under",
@@ -17577,13 +17725,17 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 151.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 92,
   "money": 94,
   "bets": 484,
   "moved": 1.0,
-  "mins": 583
+  "mins": 583,
+  "close": 151.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "South Alabama 69 - UCF 76"
  },
  {
   "id": "rlm|401925708|spread|338",
@@ -17844,13 +17996,17 @@
   "opener": 134.5,
   "grp": "power 6",
   "limit": 129.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 68,
   "money": 3,
   "bets": 802,
   "moved": 5.0,
-  "mins": 516
+  "mins": 516,
+  "close": 131.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Maryland Eastern Shore 54 - Boston College 82"
  },
  {
   "id": "rlm|401912228|total|under",
@@ -17875,13 +18031,17 @@
   "opener": 137.5,
   "grp": "low-major",
   "limit": 132.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 87,
   "money": 36,
   "bets": 575,
   "moved": 5.0,
-  "mins": 516
+  "mins": 516,
+  "close": 131.5,
+  "clv": 1.0,
+  "units": 0.926,
+  "final": "Army 55 - New Haven 63"
  },
  {
   "id": "401920378|total|over",
@@ -18167,13 +18327,17 @@
   "opener": 156.5,
   "grp": "power 6",
   "limit": 159.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 74,
   "money": 71,
   "bets": 1186,
   "moved": 3.0,
-  "mins": 368
+  "mins": 368,
+  "close": 159.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "La Salle 59 - Villanova 80"
  },
  {
   "id": "rlm|401925708|total|under",
