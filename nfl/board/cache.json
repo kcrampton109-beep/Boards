@@ -422,6 +422,42 @@
     "temp": 48.0,
     "precip": 68
    }
+  },
+  "2026_10_JAX_TEN": {
+   "ts": "2026-11-11T13:00:39.648238-05:00",
+   "wx": {
+    "wind": 5.8,
+    "gust": 8.5,
+    "temp": 52.0,
+    "precip": 1
+   }
+  },
+  "2026_10_MIN_GB": {
+   "ts": "2026-11-11T13:00:39.648238-05:00",
+   "wx": {
+    "wind": 5.7,
+    "gust": 7.6,
+    "temp": 44.0,
+    "precip": 0
+   }
+  },
+  "2026_10_BUF_NYJ": {
+   "ts": "2026-11-11T13:00:39.648238-05:00",
+   "wx": {
+    "wind": 13.1,
+    "gust": 17.4,
+    "temp": 48.0,
+    "precip": 0
+   }
+  },
+  "2026_10_HOU_CLE": {
+   "ts": "2026-11-11T13:00:39.648238-05:00",
+   "wx": {
+    "wind": 10.9,
+    "gust": 11.6,
+    "temp": 45.0,
+    "precip": 21
+   }
   }
  },
  "props": {
@@ -3811,8 +3847,133 @@
    }
   },
   "290982": {
-   "ts": "2026-11-09T20:21:11.120217-05:00",
-   "odds": {}
+   "ts": "2026-11-11T13:00:39.648238-05:00",
+   "odds": {
+    "derrick henry": {
+     "name": "Derrick Henry",
+     "FD": -140
+    },
+    "zay flowers": {
+     "name": "Zay Flowers",
+     "FD": 165
+    },
+    "omarion hampton": {
+     "name": "Omarion Hampton",
+     "FD": 310
+    },
+    "tre harris": {
+     "name": "Tre Harris",
+     "FD": 320
+    },
+    "mark andrews": {
+     "name": "Mark Andrews",
+     "FD": 350
+    },
+    "jakobi lane": {
+     "name": "Ja'Kobi Lane",
+     "FD": 380
+    },
+    "justice hill": {
+     "name": "Justice Hill",
+     "FD": 380
+    },
+    "oronde gadsden": {
+     "name": "Oronde Gadsden",
+     "FD": 440
+    },
+    "ladd mcconkey": {
+     "name": "Ladd McConkey",
+     "FD": 440
+    },
+    "quentin johnston": {
+     "name": "Quentin Johnston",
+     "FD": 480
+    },
+    "kimani vidal": {
+     "name": "Kimani Vidal",
+     "FD": 480
+    },
+    "david njoku": {
+     "name": "David Njoku",
+     "FD": 500
+    },
+    "charlie kolar": {
+     "name": "Charlie Kolar",
+     "FD": 500
+    },
+    "rashod bateman": {
+     "name": "Rashod Bateman",
+     "FD": 500
+    },
+    "keaton mitchell": {
+     "name": "Keaton Mitchell",
+     "FD": 550
+    },
+    "justin herbert": {
+     "name": "Justin Herbert",
+     "FD": 550
+    },
+    "jacoby brissett": {
+     "name": "Jacoby Brissett",
+     "FD": 600
+    },
+    "keandre lambert-smith": {
+     "name": "KeAndre Lambert-Smith",
+     "FD": 650
+    },
+    "la chargers defense": {
+     "name": "LA Chargers Defense",
+     "FD": 650
+    },
+    "brenen thompson": {
+     "name": "Brenen Thompson",
+     "FD": 650
+    },
+    "baltimore defense": {
+     "name": "Baltimore Defense",
+     "FD": 750
+    },
+    "josh cuevas": {
+     "name": "Josh Cuevas",
+     "FD": 1000
+    },
+    "derius davis": {
+     "name": "Derius Davis",
+     "FD": 1300
+    },
+    "devontez walker": {
+     "name": "Devontez Walker",
+     "FD": 1600
+    },
+    "matthew hibner": {
+     "name": "Matthew Hibner",
+     "FD": 1600
+    },
+    "lajohntay wester": {
+     "name": "LaJohntay Wester",
+     "FD": 1800
+    },
+    "elijah sarratt": {
+     "name": "Elijah Sarratt",
+     "FD": 1800
+    },
+    "theo wease": {
+     "name": "Theo Wease Jr.",
+     "FD": 1900
+    },
+    "hayden rucci": {
+     "name": "Hayden Rucci",
+     "FD": 1900
+    },
+    "scott matlock": {
+     "name": "Scott Matlock",
+     "FD": 2700
+    },
+    "rasheen ali": {
+     "name": "Rasheen Ali",
+     "FD": 2700
+    }
+   }
   }
  }
 }
