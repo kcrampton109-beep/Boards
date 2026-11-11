@@ -17371,5 +17371,28 @@
   "grp": "FCS-FCS",
   "limit": 7.5,
   "status": "open"
+ },
+ {
+  "id": "401870842|spread|home|m",
+  "base": "401870842|spread|home|m",
+  "flagged": "2026-11-11T07:58-05:00",
+  "season": 2026,
+  "week": 11,
+  "game_id": 401870842,
+  "matchup": "Princeton @ Yale",
+  "kickoff": "2026-11-14 12:00:00-05:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Yale -2.5",
+  "book": "FD",
+  "line": -2.5,
+  "odds": -115.0,
+  "stake": 0.5,
+  "edge": 3.8,
+  "model": -6.3,
+  "grp": "FCS-FCS",
+  "limit": -3.0,
+  "status": "open"
  }
 ]
