@@ -1,0 +1,23 @@
+{
+ "id": 75,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/75",
+ "board": "CFB",
+ "pick": "Alabama State +2.5",
+ "odds": -113,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Jackson State @ Alabama State",
+ "kickoff": "2026-11-14 15:00:00-05:00",
+ "play": "401868332|spread|home|m",
+ "logged": "2026-11-11T16:35:07Z",
+ "updated": "2026-11-11T16:35:15+00:00",
+ "tier": "FCS",
+ "game_id": 401868332,
+ "board_line": 2.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 2.5
+}
