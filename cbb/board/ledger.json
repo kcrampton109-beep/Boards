@@ -14604,7 +14604,11 @@
   "opener": 148.5,
   "grp": "mid-major",
   "limit": 149.0,
-  "status": "open"
+  "status": "L",
+  "close": 148.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Washington State 71 - Duquesne 72"
  },
  {
   "id": "401921755|total|over",
@@ -14658,7 +14662,11 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 147.0,
-  "status": "open"
+  "status": "L",
+  "close": 146.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Harvard 70 - Northeastern 74"
  },
  {
   "id": "401921774|total|under",
@@ -14712,7 +14720,11 @@
   "opener": -16.5,
   "grp": "power 6",
   "limit": -18.5,
-  "status": "open"
+  "status": "W",
+  "close": -16.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Memphis 81 - Vanderbilt 105"
  },
  {
   "id": "rlm|401921180|total|under",
@@ -14929,7 +14941,11 @@
   "opener": -13.5,
   "grp": "mid-major",
   "limit": -12.5,
-  "status": "open"
+  "status": "L",
+  "close": -12.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Siena 99 - Dayton 89"
  },
  {
   "id": "401927386|spread|2460",
@@ -15276,7 +15292,11 @@
   "opener": 143.5,
   "grp": "mid-major",
   "limit": 139.5,
-  "status": "open"
+  "status": "W",
+  "close": 139.5,
+  "clv": 0.0,
+  "units": 0.926,
+  "final": "Iona 72 - Fordham 78"
  },
  {
   "id": "401909727|spread|154",
@@ -15550,13 +15570,17 @@
   "opener": -3.5,
   "grp": "power 6",
   "limit": -4.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 1.0,
-  "mins": 1312
+  "mins": 1312,
+  "close": -5.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Virginia Tech 93 - Iowa 88"
  },
  {
   "id": "401920356|spread|111",
@@ -15581,7 +15605,11 @@
   "opener": 3.5,
   "grp": "mid-major",
   "limit": 3.5,
-  "status": "open"
+  "status": "W",
+  "close": 3.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Harvard 70 - Northeastern 74"
  },
  {
   "id": "401925107|spread|292",
@@ -15606,7 +15634,11 @@
   "opener": 7.5,
   "grp": "mid-major",
   "limit": 4.5,
-  "status": "open"
+  "status": "W",
+  "close": 6.5,
+  "clv": 1.0,
+  "units": 0.877,
+  "final": "Texas State 72 - UT Rio Grande Valley 65"
  },
  {
   "id": "401909773|total|over",
@@ -15631,7 +15663,11 @@
   "opener": 147.5,
   "grp": "power 6",
   "limit": 147.5,
-  "status": "open"
+  "status": "L",
+  "close": 147.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Southern 47 - Iowa State 84"
  },
  {
   "id": "401918969|spread|2567",
@@ -15681,7 +15717,11 @@
   "opener": 2.5,
   "grp": "low-major",
   "limit": 4.5,
-  "status": "open"
+  "status": "L",
+  "close": 3.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Youngstown State 78 - Central Michigan 91"
  },
  {
   "id": "401911187|spread|2168|NOV_FAV",
@@ -15706,7 +15746,11 @@
   "opener": -13.5,
   "grp": "mid-major",
   "limit": -11.5,
-  "status": "open"
+  "status": "L",
+  "close": -12.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Siena 99 - Dayton 89"
  },
  {
   "id": "401911187|total|under",
@@ -15731,7 +15775,11 @@
   "opener": 151.5,
   "grp": "mid-major",
   "limit": 155.5,
-  "status": "open"
+  "status": "L",
+  "close": 158.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Siena 99 - Dayton 89"
  },
  {
   "id": "401920306|total|under",
@@ -15756,7 +15804,11 @@
   "opener": 159.5,
   "grp": "power 6",
   "limit": 162.5,
-  "status": "open"
+  "status": "W",
+  "close": 163.5,
+  "clv": 0.0,
+  "units": 0.893,
+  "final": "Eastern Kentucky 71 - Georgia Tech 85"
  },
  {
   "id": "401921755|spread|2116",
@@ -15810,13 +15862,17 @@
   "opener": 158.5,
   "grp": "power 6",
   "limit": 159.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 328,
   "moved": 2.0,
-  "mins": 1249
+  "mins": 1249,
+  "close": 160.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Memphis 81 - Vanderbilt 105"
  },
  {
   "id": "rlm|401913527|total|over",
@@ -16052,13 +16108,17 @@
   "opener": -2.5,
   "grp": "low-major",
   "limit": -3.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 262,
   "moved": 1.0,
-  "mins": 1109
+  "mins": 1109,
+  "close": -3.5,
+  "clv": 0.0,
+  "units": 0.926,
+  "final": "Youngstown State 78 - Central Michigan 91"
  },
  {
   "id": "rlm|401911187|total|over",
@@ -16083,13 +16143,17 @@
   "opener": 151.5,
   "grp": "mid-major",
   "limit": 158.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 272,
   "moved": 7.0,
-  "mins": 1109
+  "mins": 1109,
+  "close": 158.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Siena 99 - Dayton 89"
  },
  {
   "id": "rlm|401911209|spread|45",
@@ -16459,13 +16523,17 @@
   "opener": 166.5,
   "grp": "mid-major",
   "limit": 167.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 3.0,
-  "mins": 1107
+  "mins": 1107,
+  "close": 169.5,
+  "clv": 2.0,
+  "units": 0.87,
+  "final": "Northern Kentucky 63 - Saint Louis 125"
  },
  {
   "id": "rlm|401927386|total|over",
@@ -16719,13 +16787,17 @@
   "opener": 148.5,
   "grp": "power 6",
   "limit": 148.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 79,
   "money": 87,
   "bets": 2246,
   "moved": 1.0,
-  "mins": 936
+  "mins": 936,
+  "close": 147.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Michigan State 79 - Duke 73"
  },
  {
   "id": "rlm|401925773|total|under",
@@ -16851,13 +16923,17 @@
   "opener": 153.5,
   "grp": "low-major",
   "limit": 152.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 92,
   "money": 93,
   "bets": 378,
   "moved": 1.0,
-  "mins": 870
+  "mins": 870,
+  "close": 152.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Youngstown State 78 - Central Michigan 91"
  },
  {
   "id": "rlm|401909727|spread|154",
@@ -16917,13 +16993,17 @@
   "opener": 160.5,
   "grp": "mid-major",
   "limit": 163.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 267,
   "moved": 4.0,
-  "mins": 870
+  "mins": 870,
+  "close": 164.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Mercer 97 - Georgia Southern 91"
  },
  {
   "id": "rlm|401911196|total|under",
@@ -16948,13 +17028,17 @@
   "opener": 143.5,
   "grp": "mid-major",
   "limit": 139.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 95,
   "money": 94,
   "bets": 333,
   "moved": 4.0,
-  "mins": 842
+  "mins": 842,
+  "close": 139.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Iona 72 - Fordham 78"
  },
  {
   "id": "rlm|401918957|total|over",
@@ -17014,13 +17098,17 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 146.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 96,
   "money": 96,
   "bets": 464,
   "moved": 1.0,
-  "mins": 842
+  "mins": 842,
+  "close": 146.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Harvard 70 - Northeastern 74"
  },
  {
   "id": "rlm|401920704|total|under",
@@ -17076,13 +17164,17 @@
   "opener": 159.5,
   "grp": "power 6",
   "limit": 163.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 4.0,
-  "mins": 784
+  "mins": 784,
+  "close": 163.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Eastern Kentucky 71 - Georgia Tech 85"
  },
  {
   "id": "rlm|401920378|total|under",
@@ -17107,13 +17199,17 @@
   "opener": 143.5,
   "grp": "power 6",
   "limit": 142.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 75,
   "money": 72,
   "bets": 908,
   "moved": 1.0,
-  "mins": 784
+  "mins": 784,
+  "close": 142.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Virginia Tech 93 - Iowa 88"
  },
  {
   "id": "rlm|401920063|spread|227",
@@ -17208,13 +17304,17 @@
   "opener": 148.5,
   "grp": "mid-major",
   "limit": 146.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 97,
   "money": 48,
   "bets": 262,
   "moved": 2.0,
-  "mins": 726
+  "mins": 726,
+  "close": 146.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Loyola Marymount 69 - Troy 74"
  },
  {
   "id": "rlm|401925107|spread|292",
@@ -17239,13 +17339,17 @@
   "opener": 7.5,
   "grp": "mid-major",
   "limit": 6.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 272,
   "moved": 1.0,
-  "mins": 720
+  "mins": 720,
+  "close": 6.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Texas State 72 - UT Rio Grande Valley 65"
  },
  {
   "id": "rlm|401925107|total|under",
@@ -17270,13 +17374,17 @@
   "opener": 149.5,
   "grp": "mid-major",
   "limit": 144.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 98,
   "money": 24,
   "bets": 272,
   "moved": 6.0,
-  "mins": 720
+  "mins": 720,
+  "close": 143.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Texas State 72 - UT Rio Grande Valley 65"
  },
  {
   "id": "rlm|401909514|total|under",
@@ -17336,13 +17444,17 @@
   "opener": 148.5,
   "grp": "mid-major",
   "limit": 147.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 92,
   "money": 93,
   "bets": 413,
   "moved": 1.0,
-  "mins": 656
+  "mins": 656,
+  "close": 148.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Washington State 71 - Duquesne 72"
  },
  {
   "id": "rlm|401909533|spread|2507",
@@ -17437,7 +17549,11 @@
   "opener": 148.5,
   "grp": "mid-major",
   "limit": 144.5,
-  "status": "open"
+  "status": "L",
+  "close": 146.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Loyola Marymount 69 - Troy 74"
  },
  {
   "id": "401909564|total|over",
@@ -17462,7 +17578,11 @@
   "opener": 148.5,
   "grp": "power 6",
   "limit": 146.0,
-  "status": "open"
+  "status": "W",
+  "close": 147.5,
+  "clv": 2.0,
+  "units": 0.952,
+  "final": "Michigan State 79 - Duke 73"
  },
  {
   "id": "401925773|total|over",
@@ -17760,13 +17880,17 @@
   "opener": -9.5,
   "grp": "mid-major",
   "limit": -9.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 302,
   "moved": 1.0,
-  "mins": 583
+  "mins": 583,
+  "close": -9.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Winthrop 79 - Kennesaw State 88"
  },
  {
   "id": "401925708|spread|2737",
@@ -17791,7 +17915,11 @@
   "opener": 9.5,
   "grp": "mid-major",
   "limit": 10.5,
-  "status": "open"
+  "status": "W",
+  "close": 9.5,
+  "clv": 1.0,
+  "units": 0.893,
+  "final": "Winthrop 79 - Kennesaw State 88"
  },
  {
   "id": "rlm|401927369|spread|2393",
@@ -17816,13 +17944,17 @@
   "opener": -7.5,
   "grp": "mid-major",
   "limit": -9.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 252,
   "moved": 2.0,
-  "mins": 613
+  "mins": 613,
+  "close": -7.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Evansville 68 - Middle Tennessee 73"
  },
  {
   "id": "rlm|401919003|spread|2655",
@@ -17847,13 +17979,17 @@
   "opener": -8.5,
   "grp": "mid-major",
   "limit": -9.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 1.0,
-  "mins": 613
+  "mins": 613,
+  "close": -7.5,
+  "clv": -2.0,
+  "units": 0.909,
+  "final": "Nicholls 63 - Tulane 77"
  },
  {
   "id": "rlm|401919003|total|over",
@@ -17878,13 +18014,17 @@
   "opener": 151.5,
   "grp": "mid-major",
   "limit": 151.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 257,
   "moved": 1.0,
-  "mins": 613
+  "mins": 613,
+  "close": 151.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Nicholls 63 - Tulane 77"
  },
  {
   "id": "401926731|spread|2032|NOV_FAV",
@@ -18066,7 +18206,11 @@
   "opener": 143.5,
   "grp": "power 6",
   "limit": 141.0,
-  "status": "open"
+  "status": "W",
+  "close": 142.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Virginia Tech 93 - Iowa 88"
  },
  {
   "id": "rlm|401909773|total|under",
@@ -18091,13 +18235,17 @@
   "opener": 147.5,
   "grp": "power 6",
   "limit": 146.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 91,
   "money": 89,
   "bets": 282,
   "moved": 1.0,
-  "mins": 576
+  "mins": 576,
+  "close": 147.5,
+  "clv": -1.0,
+  "units": 0.926,
+  "final": "Southern 47 - Iowa State 84"
  },
  {
   "id": "rlm|401921733|total|under",
@@ -18178,13 +18326,17 @@
   "opener": 16.5,
   "grp": "power 6",
   "limit": 16.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 69,
   "money": 78,
   "bets": 570,
   "moved": 1.0,
-  "mins": 487
+  "mins": 487,
+  "close": 16.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Eastern Kentucky 71 - Georgia Tech 85"
  },
  {
   "id": "401920306|spread|59",
@@ -18209,7 +18361,11 @@
   "opener": -16.5,
   "grp": "power 6",
   "limit": -15.5,
-  "status": "open"
+  "status": "L",
+  "close": -16.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Eastern Kentucky 71 - Georgia Tech 85"
  },
  {
   "id": "rlm|401924952|spread|233",
@@ -18265,13 +18421,17 @@
   "opener": 13.5,
   "grp": "mid-major",
   "limit": 12.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 70,
   "money": 76,
   "bets": 1322,
   "moved": 1.0,
-  "mins": 451
+  "mins": 451,
+  "close": 12.5,
+  "clv": 0.0,
+  "units": 0.98,
+  "final": "Siena 99 - Dayton 89"
  },
  {
   "id": "rlm|401929180|spread|278",
@@ -18362,13 +18522,17 @@
   "opener": 167.5,
   "grp": "mid-major",
   "limit": 167.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 67,
   "money": 79,
   "bets": 716,
   "moved": 1.0,
-  "mins": 368
+  "mins": 368,
+  "close": 166.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Winthrop 79 - Kennesaw State 88"
  },
  {
   "id": "rlm|401919003|spread|2447",
@@ -18393,13 +18557,17 @@
   "opener": 8.5,
   "grp": "mid-major",
   "limit": 7.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 81,
   "money": 86,
   "bets": 595,
   "moved": 1.0,
-  "mins": 398
+  "mins": 398,
+  "close": 7.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Nicholls 63 - Tulane 77"
  },
  {
   "id": "rlm|401925781|spread|265",
@@ -18424,13 +18592,17 @@
   "opener": 5.5,
   "grp": "mid-major",
   "limit": 4.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 69,
   "money": 37,
   "bets": 2670,
   "moved": 1.0,
-  "mins": 189
+  "mins": 189,
+  "close": 4.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Washington State 71 - Duquesne 72"
  },
  {
   "id": "rlm|401909761|total|over",
