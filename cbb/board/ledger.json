@@ -14449,13 +14449,17 @@
   "opener": 5.5,
   "grp": "power 6",
   "limit": 4.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 100,
   "money": 100,
   "bets": 363,
   "moved": 1.0,
-  "mins": 1774
+  "mins": 1774,
+  "close": 4.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Kansas 89 - Kentucky 69"
  },
  {
   "id": "rlm|401921815|total|under",
