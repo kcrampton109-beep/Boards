@@ -3162,7 +3162,7 @@
    }
   },
   "290977": {
-   "ts": "2026-11-11T21:58:54.576732-05:00",
+   "ts": "2026-11-12T01:12:46.907545-05:00",
    "odds": {
     "kenneth walker": {
      "name": "Kenneth Walker III",
@@ -3170,11 +3170,11 @@
     },
     "bijan robinson": {
      "name": "Bijan Robinson",
-     "FD": -210
+     "FD": -220
     },
     "drake london": {
      "name": "Drake London",
-     "FD": 155
+     "FD": 150
     },
     "rashee rice": {
      "name": "Rashee Rice",
@@ -3182,11 +3182,11 @@
     },
     "travis kelce": {
      "name": "Travis Kelce",
-     "FD": 220
+     "FD": 210
     },
     "kyle pitts": {
      "name": "Kyle Pitts",
-     "FD": 250
+     "FD": 240
     },
     "xavier worthy": {
      "name": "Xavier Worthy",
@@ -3198,7 +3198,7 @@
     },
     "jahan dotson": {
      "name": "Jahan Dotson",
-     "FD": 460
+     "FD": 440
     },
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -3212,25 +3212,25 @@
      "name": "Noah Gray",
      "FD": 700
     },
-    "cyrus allen": {
-     "name": "Cyrus Allen",
-     "FD": 750
-    },
     "khalil herbert": {
      "name": "Khalil Herbert",
+     "FD": 750
+    },
+    "olamide zaccheaus": {
+     "name": "Olamide Zaccheaus",
      "FD": 750
     },
     "atlanta defense": {
      "name": "Atlanta Defense",
      "FD": 800
     },
-    "olamide zaccheaus": {
-     "name": "Olamide Zaccheaus",
+    "cyrus allen": {
+     "name": "Cyrus Allen",
      "FD": 800
     },
     "kansas city defense": {
      "name": "Kansas City Defense",
-     "FD": 950
+     "FD": 900
     },
     "michael penix": {
      "name": "Michael Penix Jr.",
@@ -3517,7 +3517,7 @@
    }
   },
   "290976": {
-   "ts": "2026-11-11T21:58:54.576732-05:00",
+   "ts": "2026-11-12T01:12:46.907545-05:00",
    "odds": {
     "chuba hubbard": {
      "name": "Chuba Hubbard",
