@@ -769,3 +769,9 @@
 2026-11-11 21:57 fetch an 2026-11-13 failed: 404 Client Error: Not Found for url: https://api.actionnetwork.com/web/v1/scoreboard/ncaab?bookIds=15%2C30%2C68%2C69%2C7
 2026-11-11 21:58 fetch an 2026-11-14 failed: 404 Client Error: Not Found for url: https://api.actionnetwork.com/web/v1/scoreboard/ncaab?bookIds=15%2C30%2C68%2C69%2C7
 2026-11-11 21:58 ok games=146 plays=0 finished=423 fetched=5 live_ok=False (160s)
+2026-11-11 22:29 fetch an 2026-11-10 failed: 404 Client Error: Not Found for url: https://api.actionnetwork.com/web/v1/scoreboard/ncaab?bookIds=15%2C30%2C68%2C69%2C7
+2026-11-11 22:29 fetch an 2026-11-11 failed: 404 Client Error: Not Found for url: https://api.actionnetwork.com/web/v1/scoreboard/ncaab?bookIds=15%2C30%2C68%2C69%2C7
+2026-11-11 22:30 fetch an 2026-11-12 failed: 404 Client Error: Not Found for url: https://api.actionnetwork.com/web/v1/scoreboard/ncaab?bookIds=15%2C30%2C68%2C69%2C7
+2026-11-11 22:30 fetch an 2026-11-13 failed: 404 Client Error: Not Found for url: https://api.actionnetwork.com/web/v1/scoreboard/ncaab?bookIds=15%2C30%2C68%2C69%2C7
+2026-11-11 22:31 fetch an 2026-11-14 failed: 404 Client Error: Not Found for url: https://api.actionnetwork.com/web/v1/scoreboard/ncaab?bookIds=15%2C30%2C68%2C69%2C7
+2026-11-11 22:31 ok games=142 plays=0 finished=423 fetched=5 live_ok=False (159s)
