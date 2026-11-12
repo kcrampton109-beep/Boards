@@ -17486,5 +17486,28 @@
   "grp": "FCS-FCS",
   "limit": 11.5,
   "status": "open"
+ },
+ {
+  "id": "401868395|total|under|wx",
+  "base": "401868395|total|under|wx",
+  "flagged": "2026-11-12T12:49-05:00",
+  "season": 2026,
+  "week": 11,
+  "game_id": 401868395,
+  "matchup": "The Citadel @ VMI",
+  "kickoff": "2026-11-14 12:30:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 49.5 (wind 15 mph)",
+  "book": "FD",
+  "line": 49.5,
+  "odds": -113.0,
+  "stake": 0.5,
+  "edge": 15.0,
+  "model": null,
+  "grp": "FCS-FCS",
+  "limit": null,
+  "status": "open"
  }
 ]
