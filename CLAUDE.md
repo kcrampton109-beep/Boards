@@ -106,6 +106,11 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   Nov 8 (owner's OK): NOV_FAV moved out of main plays after 21-32 (its CLV was market drift; judge favourite tiers on CLV beyond
   drift). RLM research tiers (RLM 65%+, RLM_80, RLM_T; ticket shares from Action v2, `fetch_public`) log the price when the
   signal first fires, keyed apart from model plays. RLM at the closing number has no edge (`research/rlm.py`).
+  Nov 12: Action's v1 scoreboard has been 404 for every sport since Nov 10 ~11:30 AM ET (CBB logged nothing until this fix).
+  CBB reads v2 and converts it to the v1 layout (`research/fetch.py` `an_v2_as_v1`); v2 drops BetMGM once a game is final,
+  so later closes are the DK/FD median. Ticket / money shares of 0 or 100 are Action's "no bets counted yet" placeholder:
+  treated as missing; 45 RLM plays logged on them (Nov 9-10) are voided. CFB `an_history.py` and NFL `pull_data.an` (history
+  bootstraps, only on a cache miss) still call v1.
 
 ## Social post (faceless picks account, started Nov 4 2026)
 - Owner is building an audience for a possible paid early-alert tier next season: free game-day posts now, no selling yet.

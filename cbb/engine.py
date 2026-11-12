@@ -116,13 +116,11 @@ def payout(odds):
 
 # ---------------------------------------------------------------- 1. data
 def get(src, d):
-    url, params = fetchmod.SRC[src]
+    """One day's scoreboard (Action: v2 converted to the v1 layout, research/fetch.py; v1 has been 404 since Nov 10)."""
     err = None
     for attempt in range(3):
         try:
-            r = requests.get(url, params=params(d), headers={"User-Agent": "Mozilla/5.0"}, timeout=45)
-            r.raise_for_status()
-            return r.content
+            return fetchmod.get(src, d, timeout=(10, 30))
         except Exception as e:
             err = e
             time.sleep(5 * (attempt + 1))
@@ -401,11 +399,11 @@ def fetch_public(days):
             for o in ev_.get("spread") or []:
                 if o.get("side") == "home":
                     bi = o.get("bet_info") or {}
-                    rec["tix"], rec["mon"] = (bi.get("tickets") or {}).get("percent"), (bi.get("money") or {}).get("percent")
+                    rec["tix"], rec["mon"] = fetchmod._pct(o, "tickets"), fetchmod._pct(o, "money")   # 0 / 100 = none counted yet
             for o in ev_.get("total") or []:
                 if o.get("side") == "over":
                     bi = o.get("bet_info") or {}
-                    rec["tot_tix"], rec["tot_mon"] = (bi.get("tickets") or {}).get("percent"), (bi.get("money") or {}).get("percent")
+                    rec["tot_tix"], rec["tot_mon"] = fetchmod._pct(o, "tickets"), fetchmod._pct(o, "money")
             out[g["id"]] = rec
         time.sleep(0.4)
     return out
@@ -659,6 +657,10 @@ def update_ledger(plays, games, g, season, now):
     for e in led:   # entries logged before Nov 4 2026 don't name the team: find it once, by name
         if e["market"] == "spread" and e.get("team_eid") is None:
             e["team_eid"] = team_of(e, gidx)
+    for e in led:   # Nov 9-10: RLM read Action's 0% / 100% placeholder (no bets counted yet on that market) as real tickets
+        if e.get("signal") == "rlm" and e["status"] != "void" and e.get("tix") in (0, 100):
+            e.update(status="void", note="placeholder ticket data (0% / 100%): no bets counted on that market yet, not a real RLM signal")
+            e.pop("auto_void", None)
     first = {}   # one entry per team (or over/under) per tier: before Nov 4 a home/away swap could log a play twice
     for e in led:
         if e["status"] == "void":
