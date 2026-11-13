@@ -18918,13 +18918,17 @@
   "opener": 135.5,
   "grp": "mid-major",
   "limit": 133.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 91,
   "money": 69,
   "bets": 1968,
   "moved": 3.0,
-  "mins": 348
+  "mins": 348,
+  "close": 131.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Bradley 56 - Coppin State 54"
  },
  {
   "id": "401925631|spread|71",
@@ -18949,7 +18953,11 @@
   "opener": -7.5,
   "grp": "mid-major",
   "limit": -13.5,
-  "status": "open"
+  "status": "L",
+  "close": -13.0,
+  "clv": 1.5,
+  "units": -1.0,
+  "final": "Bradley 56 - Coppin State 54"
  },
  {
   "id": "401925631|total|over",
@@ -18974,7 +18982,11 @@
   "opener": 135.5,
   "grp": "mid-major",
   "limit": 134.0,
-  "status": "open"
+  "status": "L",
+  "close": 131.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Bradley 56 - Coppin State 54"
  },
  {
   "id": "401921086|spread|2378",
@@ -18999,7 +19011,11 @@
   "opener": -6.5,
   "grp": "low-major",
   "limit": -7.0,
-  "status": "open"
+  "status": "W",
+  "close": -7.5,
+  "clv": 1.0,
+  "units": 0.952,
+  "final": "Morgan State 70 - UMBC 85"
  },
  {
   "id": "401921086|total|under",
@@ -19024,7 +19040,11 @@
   "opener": 161.5,
   "grp": "low-major",
   "limit": 155.0,
-  "status": "open"
+  "status": "W",
+  "close": 159.5,
+  "clv": 5.0,
+  "units": 0.87,
+  "final": "Morgan State 70 - UMBC 85"
  },
  {
   "id": "401917176|spread|213",
@@ -19049,7 +19069,11 @@
   "opener": -20.5,
   "grp": "power 6",
   "limit": -20.5,
-  "status": "open"
+  "status": "L",
+  "close": -20.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Mercyhurst 57 - Penn State 72"
  },
  {
   "id": "401916288|spread|84",
@@ -19074,7 +19098,11 @@
   "opener": -24.5,
   "grp": "power 6",
   "limit": -24.5,
-  "status": "open"
+  "status": "L",
+  "close": -24.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Tennessee Tech 66 - Indiana 90"
  },
  {
   "id": "401916288|total|under",
@@ -19099,7 +19127,11 @@
   "opener": 162.5,
   "grp": "power 6",
   "limit": 165.5,
-  "status": "open"
+  "status": "W",
+  "close": 168.0,
+  "clv": 1.5,
+  "units": 0.926,
+  "final": "Tennessee Tech 66 - Indiana 90"
  },
  {
   "id": "rlm|401911013|total|under",
@@ -19124,13 +19156,17 @@
   "opener": 148.5,
   "grp": "low-major",
   "limit": 145.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 77,
   "money": 64,
   "bets": 641,
   "moved": 3.0,
-  "mins": 408
+  "mins": 408,
+  "close": 145.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Niagara 76 - Bowling Green 88"
  },
  {
   "id": "401911013|spread|189",
@@ -19155,7 +19191,11 @@
   "opener": -14.5,
   "grp": "low-major",
   "limit": -14.5,
-  "status": "open"
+  "status": "L",
+  "close": -14.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Niagara 76 - Bowling Green 88"
  },
  {
   "id": "rlm|401911307|total|under",
@@ -19180,13 +19220,17 @@
   "opener": 142.5,
   "grp": "mid-major",
   "limit": 137.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 71,
   "money": 70,
   "bets": 585,
   "moved": 5.0,
-  "mins": 408
+  "mins": 408,
+  "close": 137.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Canisius 86 - Brown 81"
  },
  {
   "id": "rlm|401920064|total|under",
@@ -19211,13 +19255,17 @@
   "opener": 146.5,
   "grp": "mid-major",
   "limit": 137.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 86,
   "money": 67,
   "bets": 908,
   "moved": 9.0,
-  "mins": 408
+  "mins": 408,
+  "close": 136.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Maryland Eastern Shore 47 - Rhode Island 67"
  },
  {
   "id": "rlm|401920135|total|under",
@@ -19242,13 +19290,17 @@
   "opener": 148.5,
   "grp": "mid-major",
   "limit": 147.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 68,
   "money": 11,
   "bets": 752,
   "moved": 1.0,
-  "mins": 408
+  "mins": 408,
+  "close": 147.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Cal State Bakersfield 91 - Western Illinois 83"
  },
  {
   "id": "401920135|spread|2710",
@@ -19273,7 +19325,11 @@
   "opener": 6.5,
   "grp": "mid-major",
   "limit": 8.5,
-  "status": "open"
+  "status": "W",
+  "close": 9.0,
+  "clv": 0.5,
+  "units": 0.893,
+  "final": "Cal State Bakersfield 91 - Western Illinois 83"
  },
  {
   "id": "401920412|spread|253",
@@ -19298,7 +19354,11 @@
   "opener": 20.5,
   "grp": "low-major",
   "limit": 21.0,
-  "status": "open"
+  "status": "L",
+  "close": 22.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Southern Utah 59 - High Point 88"
  },
  {
   "id": "rlm|401920566|total|under",
@@ -19323,13 +19383,17 @@
   "opener": 138.5,
   "grp": "low-major",
   "limit": 133.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 88,
   "money": 71,
   "bets": 782,
   "moved": 5.0,
-  "mins": 408
+  "mins": 408,
+  "close": 133.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Loyola Maryland 60 - Towson 90"
  },
  {
   "id": "401920566|total|over",
@@ -19354,7 +19418,11 @@
   "opener": 138.5,
   "grp": "low-major",
   "limit": 133.5,
-  "status": "open"
+  "status": "W",
+  "close": 133.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Loyola Maryland 60 - Towson 90"
  },
  {
   "id": "rlm|401922239|total|under",
@@ -19379,13 +19447,17 @@
   "opener": 152.5,
   "grp": "low-major",
   "limit": 149.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 66,
   "money": 57,
   "bets": 318,
   "moved": 3.0,
-  "mins": 408
+  "mins": 408,
+  "close": 148.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Stetson 62 - Howard 75"
  },
  {
   "id": "rlm|401924857|total|under",
@@ -19410,13 +19482,17 @@
   "opener": 147.5,
   "grp": "low-major",
   "limit": 144.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 82,
   "money": 63,
   "bets": 893,
   "moved": 3.0,
-  "mins": 408
+  "mins": 408,
+  "close": 143.0,
+  "clv": 1.5,
+  "units": 0.909,
+  "final": "Monmouth 74 - Quinnipiac 70"
  },
  {
   "id": "401928818|spread|2870",
@@ -19441,7 +19517,11 @@
   "opener": 2.5,
   "grp": "low-major",
   "limit": 0.0,
-  "status": "open"
+  "status": "L",
+  "close": 2.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Western Michigan 81 - Purdue Fort Wayne 59"
  },
  {
   "id": "401916306|spread|135",
@@ -19466,7 +19546,11 @@
   "opener": -23.5,
   "grp": "power 6",
   "limit": -26.0,
-  "status": "open"
+  "status": "W",
+  "close": -26.0,
+  "clv": 0.5,
+  "units": 0.926,
+  "final": "Southern 61 - Minnesota 91"
  },
  {
   "id": "rlm|401917524|total|under",
@@ -19491,13 +19575,17 @@
   "opener": 142.5,
   "grp": "mid-major",
   "limit": 142.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 84,
   "money": 90,
   "bets": 1640,
   "moved": 1.0,
-  "mins": 468
+  "mins": 468,
+  "close": 141.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Loyola Marymount 72 - South Alabama 79"
  },
  {
   "id": "401917524|spread|2351",
@@ -19522,7 +19610,11 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": 0.5,
-  "status": "open"
+  "status": "L",
+  "close": -0.0,
+  "clv": 1.5,
+  "units": -1.0,
+  "final": "Loyola Marymount 72 - South Alabama 79"
  },
  {
   "id": "401917524|total|over",
@@ -19547,7 +19639,11 @@
   "opener": 142.5,
   "grp": "mid-major",
   "limit": 141.5,
-  "status": "open"
+  "status": "W",
+  "close": 141.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Loyola Marymount 72 - South Alabama 79"
  },
  {
   "id": "rlm|401921086|total|under",
@@ -19572,13 +19668,17 @@
   "opener": 161.5,
   "grp": "low-major",
   "limit": 159.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 68,
   "money": 31,
   "bets": 3221,
   "moved": 2.0,
-  "mins": 18
+  "mins": 18,
+  "close": 159.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Morgan State 70 - UMBC 85"
  },
  {
   "id": "rlm|401917176|total|under",
@@ -19603,13 +19703,17 @@
   "opener": 147.5,
   "grp": "power 6",
   "limit": 145.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 78,
   "money": 65,
   "bets": 1913,
   "moved": 2.0,
-  "mins": 48
+  "mins": 48,
+  "close": 145.0,
+  "clv": 0.5,
+  "units": 0.909,
+  "final": "Mercyhurst 57 - Penn State 72"
  },
  {
   "id": "401920064|spread|227",
@@ -19634,7 +19738,11 @@
   "opener": -24.5,
   "grp": "mid-major",
   "limit": -23.0,
-  "status": "open"
+  "status": "L",
+  "close": -23.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Maryland Eastern Shore 47 - Rhode Island 67"
  },
  {
   "id": "rlm|401924876|total|under",
@@ -19659,13 +19767,17 @@
   "opener": 147.5,
   "grp": "low-major",
   "limit": 145.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 68,
   "money": 67,
   "bets": 1509,
   "moved": 3.0,
-  "mins": 78
+  "mins": 78,
+  "close": 144.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Central Connecticut 79 - Sacred Heart 75"
  },
  {
   "id": "rlm|401911239|spread|79",
@@ -19690,13 +19802,17 @@
   "opener": 4.5,
   "grp": "mid-major",
   "limit": 2.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 66,
   "money": 65,
   "bets": 3483,
   "moved": 2.0,
-  "mins": 138
+  "mins": 138,
+  "close": 2.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Richmond 70 - Southern Illinois 80"
  },
  {
   "id": "rlm|401922250|total|under",
@@ -20214,6 +20330,131 @@
   "opener": -5.5,
   "grp": "mid-major",
   "limit": -6.5,
+  "status": "open"
+ },
+ {
+  "id": "401913528|total|under",
+  "base": "401913528|total|under",
+  "flagged": "2026-11-12T22:23-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401913528,
+  "matchup": "Sam Houston @ Illinois",
+  "kickoff": "2026-11-13T19:00:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 172.5",
+  "book": "DK",
+  "line": 172.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 7.4,
+  "model": 165.1,
+  "opener": 169.5,
+  "grp": "power 6",
+  "limit": 170.5,
+  "status": "open"
+ },
+ {
+  "id": "401921026|spread|290",
+  "base": "401921026|spread|290",
+  "flagged": "2026-11-12T22:23-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401921026,
+  "matchup": "Georgia Southern @ UCF",
+  "kickoff": "2026-11-13T20:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 290,
+  "pick": "Georgia Southern +23.5",
+  "book": "DK",
+  "line": 23.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 3.1,
+  "model": -20.4,
+  "opener": 21.5,
+  "grp": "power 6",
+  "limit": 23.5,
+  "status": "open"
+ },
+ {
+  "id": "401926117|spread|2750",
+  "base": "401926117|spread|2750",
+  "flagged": "2026-11-12T22:23-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401926117,
+  "matchup": "Wright State @ Samford",
+  "kickoff": "2026-11-13T20:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2750,
+  "pick": "Wright State -1.5",
+  "book": "DK",
+  "line": -1.5,
+  "odds": -108.0,
+  "stake": 1.0,
+  "edge": 3.1,
+  "model": 4.6,
+  "opener": -2.5,
+  "grp": "low-major",
+  "limit": -1.5,
+  "status": "open"
+ },
+ {
+  "id": "401909565|total|under",
+  "base": "401909565|total|under",
+  "flagged": "2026-11-12T22:23-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401909565,
+  "matchup": "SIU Edwardsville @ Duke",
+  "kickoff": "2026-11-13T20:00:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 149.5",
+  "book": "DK",
+  "line": 149.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 6.0,
+  "model": 143.5,
+  "opener": 147.5,
+  "grp": "power 6",
+  "limit": 148.5,
+  "status": "open"
+ },
+ {
+  "id": "401906794|total|under",
+  "base": "401906794|total|under",
+  "flagged": "2026-11-12T22:23-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401906794,
+  "matchup": "Xavier vs Mississippi State",
+  "kickoff": "2026-11-13T21:00:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 165.5",
+  "book": "MGM",
+  "line": 165.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.5,
+  "model": 160.0,
+  "opener": 164.5,
+  "grp": "power 6",
+  "limit": 165.0,
   "status": "open"
  }
 ]
