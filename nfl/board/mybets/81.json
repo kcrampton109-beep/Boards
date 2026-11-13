@@ -1,0 +1,23 @@
+{
+ "id": 81,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/81",
+ "board": "NFL",
+ "pick": "ARI +14",
+ "odds": -115,
+ "book": "DraftKings",
+ "amount": 15.0,
+ "notes": "",
+ "matchup": "ARI @ KC",
+ "kickoff": "2026-11-22T13:00:00-05:00",
+ "play": "2026_11_ARI_KC:STRONG:spread:away",
+ "logged": "2026-11-13T20:40:54Z",
+ "updated": "2026-11-13T20:41:05+00:00",
+ "tier": "STRONG",
+ "game_id": "2026_11_ARI_KC",
+ "board_line": 14.5,
+ "board_odds": -115,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "away",
+ "line": 14.0
+}
