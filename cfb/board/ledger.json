@@ -17555,5 +17555,28 @@
   "grp": "FCS-FCS",
   "limit": 11.5,
   "status": "open"
+ },
+ {
+  "id": "401869146|total|over|m",
+  "base": "401869146|total|over|m",
+  "flagged": "2026-11-12T22:35-05:00",
+  "season": 2026,
+  "week": 11,
+  "game_id": 401869146,
+  "matchup": "East Texas A&M @ Lamar",
+  "kickoff": "2026-11-14 16:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "over",
+  "pick": "Over 50.5",
+  "book": "FD",
+  "line": 50.5,
+  "odds": -113.0,
+  "stake": 0.5,
+  "edge": 5.1,
+  "model": 55.6,
+  "grp": "FCS-FCS",
+  "limit": null,
+  "status": "open"
  }
 ]
