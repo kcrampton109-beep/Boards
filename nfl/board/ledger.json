@@ -8941,11 +8941,11 @@
   "model_line": 1.1,
   "flagged": "2026-11-08T17:16:47.474938-05:00",
   "kickoff_iso": "2026-11-12T20:15:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.45,
+  "close": 1.5,
+  "clv": 0.0,
+  "final": "WAS 24 - NYG 21"
  },
  {
   "id": "2026_10_WAS_NYG:TEASER:teaser:away",
@@ -8969,11 +8969,11 @@
   "model_line": 1.1,
   "flagged": "2026-11-08T17:16:47.474938-05:00",
   "kickoff_iso": "2026-11-12T20:15:00-05:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 1.5,
+  "clv": 0.0,
+  "final": "WAS 24 - NYG 21"
  },
  {
   "id": "2026_10_NE_DET:TEASER:teaser:home",
@@ -9361,11 +9361,11 @@
   "model_line": 1.1,
   "flagged": "2026-11-08T17:52:29.491864-05:00",
   "kickoff_iso": "2026-11-12T20:15:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.87,
+  "close": 40.5,
+  "clv": 5.0,
+  "final": "WAS 24 - NYG 21"
  },
  {
   "id": "2026_10_HOU_CLE:RLM:total:under",
@@ -9445,11 +9445,11 @@
   "model_line": 1.1,
   "flagged": "2026-11-08T19:18:11.111828-05:00",
   "kickoff_iso": "2026-11-12T20:15:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 1.5,
+  "clv": 0.5,
+  "final": "WAS 24 - NYG 21"
  },
  {
   "id": "2026_10_NE_DET:RLM:spread:home",
@@ -9781,8 +9781,8 @@
   "model_line": 0.5,
   "flagged": "2026-11-09T08:55:47.364819-05:00",
   "kickoff_iso": "2026-11-12T20:15:00-05:00",
-  "status": "open",
-  "units": null,
+  "status": "L",
+  "units": -1.0,
   "close": null,
   "clv": null,
   "final": null
