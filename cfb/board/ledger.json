@@ -16214,7 +16214,11 @@
   "model": 1.8,
   "grp": "FBS",
   "limit": 7.0,
-  "status": "open"
+  "status": "L",
+  "clv": 3.5,
+  "close": 4.0,
+  "units": -1.0,
+  "final": "Memphis 52 - South Florida 41"
  },
  {
   "id": "401862824|moneyline|home|m",
@@ -16237,7 +16241,9 @@
   "model": 45.3,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Memphis 52 - South Florida 41"
  },
  {
   "id": "401866460|spread|away|m|STRONG",
@@ -17576,6 +17582,29 @@
   "edge": 5.1,
   "model": 55.6,
   "grp": "FCS-FCS",
+  "limit": null,
+  "status": "open"
+ },
+ {
+  "id": "401864537|total|under|wx",
+  "base": "401864537|total|under|wx",
+  "flagged": "2026-11-13T06:32-05:00",
+  "season": 2026,
+  "week": 11,
+  "game_id": 401864537,
+  "matchup": "North Dakota State @ Hawai'i",
+  "kickoff": "2026-11-14 23:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 38.5 (wind 15 mph)",
+  "book": "MGM",
+  "line": 38.5,
+  "odds": -108.0,
+  "stake": 0.5,
+  "edge": 15.3,
+  "model": null,
+  "grp": "FBS",
   "limit": null,
   "status": "open"
  }
