@@ -19868,13 +19868,17 @@
   "opener": -6.5,
   "grp": "power 6",
   "limit": -8.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 66,
   "money": 78,
   "bets": 6921,
   "moved": 2.0,
-  "mins": 138
+  "mins": 138,
+  "close": -8.0,
+  "clv": -0.5,
+  "units": 0.98,
+  "final": "Oklahoma State 69 - Texas A&M 88"
  },
  {
   "id": "401919041|total|under",
@@ -19899,7 +19903,11 @@
   "opener": 176.5,
   "grp": "power 6",
   "limit": 179.5,
-  "status": "open"
+  "status": "W",
+  "close": 179.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Oklahoma State 69 - Texas A&M 88"
  },
  {
   "id": "rlm|401911471|total|under",
