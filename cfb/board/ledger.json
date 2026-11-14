@@ -16433,7 +16433,11 @@
   "model": -7.6,
   "grp": "FBS",
   "limit": -2.5,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": -4.5,
+  "units": -1.0,
+  "final": "James Madison 22 - UConn 46"
  },
  {
   "id": "401861967|moneyline|away|m",
@@ -16456,7 +16460,9 @@
   "model": 68.8,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "James Madison 22 - UConn 46"
  },
  {
   "id": "401862825|spread|away|m",
@@ -16479,7 +16485,11 @@
   "model": -17.2,
   "grp": "FBS",
   "limit": -12.0,
-  "status": "open"
+  "status": "L",
+  "clv": -1.0,
+  "close": -10.5,
+  "units": -1.0,
+  "final": "East Carolina 17 - Charlotte 16"
  },
  {
   "id": "401856889|spread|away|m",
@@ -16502,7 +16512,11 @@
   "model": -21.5,
   "grp": "FBS",
   "limit": -16.0,
-  "status": "open"
+  "status": "L",
+  "clv": -1.5,
+  "close": -14.0,
+  "units": -1.0,
+  "final": "Alabama 21 - Vanderbilt 6"
  },
  {
   "id": "401858301|spread|away|m",
@@ -16525,7 +16539,11 @@
   "model": -4.0,
   "grp": "FBS",
   "limit": 1.0,
-  "status": "open"
+  "status": "W",
+  "clv": -1.0,
+  "close": 2.5,
+  "units": 0.833,
+  "final": "Wake Forest 49 - SMU 7"
  },
  {
   "id": "401858301|moneyline|away|m",
@@ -16548,7 +16566,9 @@
   "model": 60.2,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.227,
+  "final": "Wake Forest 49 - SMU 7"
  },
  {
   "id": "401867893|spread|home|m",
@@ -16571,7 +16591,11 @@
   "model": 11.2,
   "grp": "FCS-FCS",
   "limit": 14.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 15.5,
+  "units": -1.0,
+  "final": "South Dakota State 52 - Southern Illinois 16"
  },
  {
   "id": "401868058|spread|away|m",
@@ -16594,7 +16618,11 @@
   "model": 0.5,
   "grp": "FCS-FCS",
   "limit": 5.5,
-  "status": "open"
+  "status": "W",
+  "clv": -0.5,
+  "close": 8.0,
+  "units": 1.351,
+  "final": "Abilene Christian 34 - Austin Peay 31"
  },
  {
   "id": "401868058|moneyline|away|m",
@@ -16617,7 +16645,9 @@
   "model": 48.8,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.6,
+  "final": "Abilene Christian 34 - Austin Peay 31"
  },
  {
   "id": "401868239|spread|home|m",
@@ -16640,7 +16670,11 @@
   "model": 12.7,
   "grp": "FCS-FCS",
   "limit": 18.0,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 17.5,
+  "units": 0.885,
+  "final": "Tarleton State 31 - West Florida 17"
  },
  {
   "id": "401868099|spread|home|m",
@@ -16732,7 +16766,11 @@
   "model": 51.9,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 46.5,
+  "units": 0.442,
+  "final": "Bryant 31 - Sacred Heart 23"
  },
  {
   "id": "401866689|total|over|m",
@@ -16755,7 +16793,11 @@
   "model": 54.9,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 50.5,
+  "units": -0.5,
+  "final": "Towson 19 - Rhode Island 16"
  },
  {
   "id": "401867811|spread|home|m",
@@ -16778,7 +16820,11 @@
   "model": -14.3,
   "grp": "FCS-FCS",
   "limit": -11.0,
-  "status": "open"
+  "status": "L",
+  "clv": 2.5,
+  "close": -13.0,
+  "units": -0.5,
+  "final": "Columbia 20 - Brown 28"
  },
  {
   "id": "401867811|total|over|m",
@@ -16801,7 +16847,11 @@
   "model": 48.3,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": 42.5,
+  "units": 0.442,
+  "final": "Columbia 20 - Brown 28"
  },
  {
   "id": "401867970|spread|away|m",
@@ -16824,7 +16874,11 @@
   "model": -0.7,
   "grp": "FCS-FCS",
   "limit": 4.5,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 2.5,
+  "units": -1.0,
+  "final": "Norfolk State 7 - Morgan State 17"
  },
  {
   "id": "401867970|moneyline|away|m",
@@ -16847,7 +16901,9 @@
   "model": 51.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Norfolk State 7 - Morgan State 17"
  },
  {
   "id": "401868014|spread|home|m",
@@ -16870,7 +16926,11 @@
   "model": -4.3,
   "grp": "FCS-FCS",
   "limit": 1.0,
-  "status": "open"
+  "status": "W",
+  "clv": 2.5,
+  "close": -1.0,
+  "units": 0.901,
+  "final": "Georgetown 15 - Fordham 37"
  },
  {
   "id": "401868014|total|over|m",
@@ -16893,7 +16953,11 @@
   "model": 49.6,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 44.5,
+  "units": 0.442,
+  "final": "Georgetown 15 - Fordham 37"
  },
  {
   "id": "401868014|moneyline|home|m",
@@ -16916,7 +16980,9 @@
   "model": 61.0,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.245,
+  "final": "Georgetown 15 - Fordham 37"
  },
  {
   "id": "401868217|spread|away|m",
@@ -16939,7 +17005,11 @@
   "model": -9.8,
   "grp": "FCS-FCS",
   "limit": -6.5,
-  "status": "open"
+  "status": "W",
+  "clv": -0.5,
+  "close": -6.0,
+  "units": 0.442,
+  "final": "Butler 28 - Marist 0"
  },
  {
   "id": "401868272|spread|away|m",
@@ -16962,7 +17032,11 @@
   "model": -6.6,
   "grp": "FCS-FCS",
   "limit": -3.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -2.5,
+  "units": -1.0,
+  "final": "Presbyterian 25 - Morehead State 28"
  },
  {
   "id": "401867833|spread|home|m",
@@ -16985,7 +17059,11 @@
   "model": -4.5,
   "grp": "FCS-FCS",
   "limit": 0.5,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 1.5,
+  "units": 1.327,
+  "final": "Dartmouth 14 - Cornell 20"
  },
  {
   "id": "401867833|total|over|m",
@@ -17008,7 +17086,11 @@
   "model": 53.1,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 45.5,
+  "units": -0.5,
+  "final": "Dartmouth 14 - Cornell 20"
  },
  {
   "id": "401867833|moneyline|home|m",
@@ -17031,7 +17113,9 @@
   "model": 61.5,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.265,
+  "final": "Dartmouth 14 - Cornell 20"
  },
  {
   "id": "401867958|spread|home|m",
@@ -17054,7 +17138,11 @@
   "model": -1.2,
   "grp": "FCS-FCS",
   "limit": 2.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 3.5,
+  "units": 0.885,
+  "final": "Delaware State 24 - Howard 30"
  },
  {
   "id": "401868109|total|under|m",
@@ -17100,7 +17188,11 @@
   "model": 11.9,
   "grp": "FCS-FCS",
   "limit": 15.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 16.5,
+  "units": 0.885,
+  "final": "Houston Christian 28 - Northwestern State 21"
  },
  {
   "id": "401868091|spread|home|m",
@@ -17169,7 +17261,11 @@
   "model": -3.0,
   "grp": "FCS-FCS",
   "limit": 2.5,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 1.5,
+  "units": 0.885,
+  "final": "Jackson State 13 - Alabama State 20"
  },
  {
   "id": "401868332|total|under|m",
@@ -17192,7 +17288,11 @@
   "model": 51.4,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": 53.5,
+  "units": 0.885,
+  "final": "Jackson State 13 - Alabama State 20"
  },
  {
   "id": "401868332|moneyline|home|m",
@@ -17215,7 +17315,9 @@
   "model": 57.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.265,
+  "final": "Jackson State 13 - Alabama State 20"
  },
  {
   "id": "401868364|spread|home|m",
@@ -17284,7 +17386,11 @@
   "model": 3.6,
   "grp": "FCS-FCS",
   "limit": 7.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.5,
+  "close": 7.0,
+  "units": 0.442,
+  "final": "Mercer 38 - Tennessee Tech 31"
  },
  {
   "id": "401868940|spread|away|m",
@@ -17307,7 +17413,11 @@
   "model": -1.9,
   "grp": "FCS-FCS",
   "limit": 1.5,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": -2.5,
+  "units": 0.442,
+  "final": "Prairie View A&M 13 - Arkansas-Pine Bluff 10"
  },
  {
   "id": "401868217|spread|away|m|FCS",
@@ -17330,7 +17440,11 @@
   "model": -9.8,
   "grp": "FCS-FCS",
   "limit": -4.5,
-  "status": "open"
+  "status": "W",
+  "clv": 1.5,
+  "close": -6.0,
+  "units": 0.885,
+  "final": "Butler 28 - Marist 0"
  },
  {
   "id": "401868217|moneyline|away|m",
@@ -17353,7 +17467,9 @@
   "model": 73.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.125,
+  "final": "Butler 28 - Marist 0"
  },
  {
   "id": "401868027|spread|home|m",
@@ -17376,7 +17492,11 @@
   "model": 4.4,
   "grp": "FCS-FCS",
   "limit": 7.5,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 7.5,
+  "units": 0.442,
+  "final": "Villanova 27 - Holy Cross 30"
  },
  {
   "id": "401870842|spread|home|m",
@@ -17399,7 +17519,11 @@
   "model": -6.3,
   "grp": "FCS-FCS",
   "limit": -3.0,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": -5.5,
+  "units": 0.435,
+  "final": "Princeton 0 - Yale 28"
  },
  {
   "id": "401867893|spread|home|m|FCS",
@@ -17422,7 +17546,11 @@
   "model": 11.2,
   "grp": "FCS-FCS",
   "limit": 16.5,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 15.5,
+  "units": -1.0,
+  "final": "South Dakota State 52 - Southern Illinois 16"
  },
  {
   "id": "401858518|spread|away|m",
@@ -17468,7 +17596,11 @@
   "model": 54.5,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": 45.5,
+  "units": 0.435,
+  "final": "Northwestern 19 - Ohio State 28"
  },
  {
   "id": "401868157|spread|home|m",
@@ -17518,7 +17650,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": 45.5,
+  "units": 0.442,
+  "final": "The Citadel 24 - VMI 21"
  },
  {
   "id": "401866690|total|under|wx",
@@ -17541,7 +17677,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 45.5,
+  "units": -0.5,
+  "final": "North Carolina A&T 41 - Hampton 14"
  },
  {
   "id": "401867981|spread|away|m",
@@ -17564,7 +17704,11 @@
   "model": 8.5,
   "grp": "FCS-FCS",
   "limit": 11.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": 11.0,
+  "units": -0.5,
+  "final": "North Carolina Central 24 - South Carolina State 38"
  },
  {
   "id": "401869146|total|over|m",
@@ -17683,7 +17827,11 @@
   "model": 51.1,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 45.5,
+  "units": -0.5,
+  "final": "The Citadel 24 - VMI 21"
  },
  {
   "id": "401869135|spread|home|m|FCS",
@@ -17706,7 +17854,11 @@
   "model": 11.9,
   "grp": "FCS-FCS",
   "limit": 17.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.5,
+  "close": 16.5,
+  "units": 0.893,
+  "final": "Houston Christian 28 - Northwestern State 21"
  },
  {
   "id": "401869146|spread|home|m",
