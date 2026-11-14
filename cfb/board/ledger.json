@@ -17491,7 +17491,11 @@
   "model": 8.1,
   "grp": "FCS-FCS",
   "limit": 11.5,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": 10.5,
+  "units": 0.885,
+  "final": "Southern Utah 23 - Portland State 21"
  },
  {
   "id": "401868395|total|under|wx",
@@ -17629,6 +17633,10 @@
   "model": -12.6,
   "grp": "FBS",
   "limit": -7.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -7.5,
+  "units": -0.5,
+  "final": "Houston 32 - Colorado 42"
  }
 ]
