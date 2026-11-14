@@ -1,0 +1,23 @@
+{
+ "id": 82,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/82",
+ "board": "CFB",
+ "pick": "Northwestern State +17",
+ "odds": -112,
+ "book": "BetMGM",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Houston Christian @ Northwestern State",
+ "kickoff": "2026-11-14 14:00:00-05:00",
+ "play": "401869135|spread|home|m|FCS",
+ "logged": "2026-11-14T16:35:45Z",
+ "updated": "2026-11-14T16:35:53+00:00",
+ "tier": "FCS",
+ "game_id": 401869135,
+ "board_line": 17.0,
+ "board_odds": -112.0,
+ "board_book": "MGM",
+ "market": "spread",
+ "side": "home",
+ "line": 17.0
+}
