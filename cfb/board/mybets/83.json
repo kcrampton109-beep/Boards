@@ -1,0 +1,23 @@
+{
+ "id": 83,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/83",
+ "board": "CFB",
+ "pick": "Southern Illinois +16",
+ "odds": -110,
+ "book": "BetMGM",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "South Dakota State @ Southern Illinois",
+ "kickoff": "2026-11-14 14:00:00-05:00",
+ "play": "401867893|spread|home|m|FCS",
+ "logged": "2026-11-14T16:36:34Z",
+ "updated": "2026-11-14T16:36:42+00:00",
+ "tier": "FCS",
+ "game_id": 401867893,
+ "board_line": 16.5,
+ "board_odds": -115.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 16.0
+}
