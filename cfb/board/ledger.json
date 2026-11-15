@@ -16318,7 +16318,11 @@
   "model": -14.8,
   "grp": "FBS",
   "limit": -9.5,
-  "status": "open"
+  "status": "W",
+  "clv": 0.5,
+  "close": -10.0,
+  "units": 0.909,
+  "final": "Michigan 7 - Oregon 31"
  },
  {
   "id": "401860914|spread|home|m",
@@ -16341,7 +16345,11 @@
   "model": -11.6,
   "grp": "FBS",
   "limit": -6.5,
-  "status": "open"
+  "status": "W",
+  "clv": 12.0,
+  "close": -16.5,
+  "units": 0.87,
+  "final": "Oregon State 41 - Boise State 46"
  },
  {
   "id": "401860914|moneyline|home|m",
@@ -16364,7 +16372,9 @@
   "model": 77.2,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.135,
+  "final": "Oregon State 41 - Boise State 46"
  },
  {
   "id": "401860917|spread|home|m",
@@ -16743,7 +16753,11 @@
   "model": -29.6,
   "grp": "FCS-FCS",
   "limit": -24.5,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": -25.5,
+  "units": -1.0,
+  "final": "Nicholls 24 - Incarnate Word 42"
  },
  {
   "id": "401866688|total|over|m",
@@ -17340,7 +17354,11 @@
   "model": -2.2,
   "grp": "FCS-FCS",
   "limit": 3.0,
-  "status": "open"
+  "status": "W",
+  "clv": 1.5,
+  "close": 2.0,
+  "units": 0.885,
+  "final": "Alcorn State 28 - Southern 41"
  },
  {
   "id": "401868364|moneyline|home|m",
@@ -17363,7 +17381,9 @@
   "model": 55.6,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.35,
+  "final": "Alcorn State 28 - Southern 41"
  },
  {
   "id": "401868385|spread|away|m",
@@ -17573,7 +17593,11 @@
   "model": 4.9,
   "grp": "FBS",
   "limit": 10.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": 9.5,
+  "units": -0.5,
+  "final": "USC 13 - Indiana 27"
  },
  {
   "id": "401858522|total|over|m",
@@ -17731,7 +17755,11 @@
   "model": 55.6,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": -2.0,
+  "close": 48.5,
+  "units": 0.442,
+  "final": "East Texas A&M 26 - Lamar 45"
  },
  {
   "id": "401864537|total|under|wx",
@@ -17804,7 +17832,11 @@
   "model": -12.1,
   "grp": "FCS-FCS",
   "limit": -9.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.5,
+  "close": -9.5,
+  "units": -0.5,
+  "final": "Valparaiso 34 - Stetson 31"
  },
  {
   "id": "401868395|total|over|m",
@@ -17881,6 +17913,10 @@
   "model": -22.9,
   "grp": "FCS-FCS",
   "limit": -19.5,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": -20.5,
+  "units": -0.5,
+  "final": "East Texas A&M 26 - Lamar 45"
  }
 ]
