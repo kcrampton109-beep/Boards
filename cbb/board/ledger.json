@@ -24569,7 +24569,11 @@
   "opener": 4.5,
   "grp": "low-major",
   "limit": 4.5,
-  "status": "open"
+  "status": "W",
+  "close": 3.5,
+  "clv": 1.0,
+  "units": 0.82,
+  "final": "Quinnipiac 67 - Central Connecticut 72"
  },
  {
   "id": "401924858|total|over",
@@ -24594,7 +24598,11 @@
   "opener": 141.5,
   "grp": "low-major",
   "limit": 136.5,
-  "status": "open"
+  "status": "W",
+  "close": 135.5,
+  "clv": 4.0,
+  "units": 0.909,
+  "final": "Quinnipiac 67 - Central Connecticut 72"
  },
  {
   "id": "401920235|total|over",
@@ -24619,7 +24627,11 @@
   "opener": 142.5,
   "grp": "mid-major",
   "limit": 143.0,
-  "status": "open"
+  "status": "W",
+  "close": 142.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Dartmouth 75 - Boston University 90"
  },
  {
   "id": "401912210|total|over",
@@ -24644,7 +24656,11 @@
   "opener": 130.5,
   "grp": "mid-major",
   "limit": 132.5,
-  "status": "open"
+  "status": "W",
+  "close": 129.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Harvard 64 - American University 70"
  },
  {
   "id": "401918453|spread|2729",
@@ -24994,13 +25010,17 @@
   "opener": 141.5,
   "grp": "low-major",
   "limit": 134.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 75,
   "money": 95,
   "bets": 338,
   "moved": 7.0,
-  "mins": 331
+  "mins": 331,
+  "close": 135.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Quinnipiac 67 - Central Connecticut 72"
  },
  {
   "id": "401909554|total|over",
@@ -25025,7 +25045,11 @@
   "opener": 133.5,
   "grp": "power 6",
   "limit": 131.5,
-  "status": "open"
+  "status": "L",
+  "close": 131.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "New Hampshire 55 - Boston College 67"
  },
  {
   "id": "rlm|401918453|total|over",
@@ -25162,13 +25186,17 @@
   "opener": 133.5,
   "grp": "power 6",
   "limit": 133.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 70,
   "money": 32,
   "bets": 363,
   "moved": 1.0,
-  "mins": 227
+  "mins": 227,
+  "close": 131.5,
+  "clv": 2.0,
+  "units": 0.926,
+  "final": "New Hampshire 55 - Boston College 67"
  },
  {
   "id": "401925812|total|under",
@@ -25336,7 +25364,11 @@
   "opener": 157.5,
   "grp": "power 6",
   "limit": 160.0,
-  "status": "open"
+  "status": "L",
+  "close": 160.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Boise State 75 - Nebraska 102"
  },
  {
   "id": "rlm|401925896|total|under",
@@ -25361,13 +25393,17 @@
   "opener": 148.5,
   "grp": "mid-major",
   "limit": 144.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 65,
   "money": 27,
   "bets": 1045,
   "moved": 5.0,
-  "mins": 2
+  "mins": 2,
+  "close": 137.5,
+  "clv": 7.0,
+  "units": 0.87,
+  "final": "Norfolk State 53 - Georgia State 78"
  },
  {
   "id": "rlm|401920771|total|under",
@@ -25392,13 +25428,17 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 145.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 67,
   "money": 36,
   "bets": 827,
   "moved": 2.0,
-  "mins": 2
+  "mins": 2,
+  "close": 144.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Colgate 58 - Delaware 64"
  },
  {
   "id": "rlm|401912210|total|under",
@@ -25423,13 +25463,17 @@
   "opener": 130.5,
   "grp": "mid-major",
   "limit": 129.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 78,
   "money": 32,
   "bets": 1100,
   "moved": 1.0,
-  "mins": 2
+  "mins": 2,
+  "close": 129.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Harvard 64 - American University 70"
  },
  {
   "id": "401920065|spread|227|NOV_FAV",
@@ -25579,5 +25623,67 @@
   "bets": 3438,
   "moved": 1.0,
   "mins": 122
+ },
+ {
+  "id": "rlm|401917531|spread|2351",
+  "base": "rlm|401917531|spread|2351",
+  "flagged": "2026-11-15T15:22-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401917531,
+  "matchup": "Chicago State @ Loyola Marymount",
+  "kickoff": "2026-11-15T16:00:00-05:00",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2351,
+  "pick": "Loyola Marymount -17.5",
+  "book": "DK",
+  "line": -17.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 3.0,
+  "model": 16.6,
+  "opener": -15.5,
+  "grp": "mid-major",
+  "limit": -17.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 67,
+  "money": 50,
+  "bets": 928,
+  "moved": 3.0,
+  "mins": 38
+ },
+ {
+  "id": "rlm|401917175|spread|213",
+  "base": "rlm|401917175|spread|213",
+  "flagged": "2026-11-15T15:22-05:00",
+  "season": 2026,
+  "week": 2,
+  "game_id": 401917175,
+  "matchup": "New Haven @ Penn State",
+  "kickoff": "2026-11-15T16:30:00-05:00",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 213,
+  "pick": "Penn State -23.5",
+  "book": "FD",
+  "line": -23.5,
+  "odds": -122.0,
+  "stake": 1.0,
+  "edge": 1.0,
+  "model": 24.0,
+  "opener": -23.5,
+  "grp": "power 6",
+  "limit": -23.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 66,
+  "money": 74,
+  "bets": 489,
+  "moved": 1.0,
+  "mins": 68
  }
 ]
