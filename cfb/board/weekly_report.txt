@@ -1,8 +1,7 @@
-CFB weekly refresh, Sun Nov 08 09:22 AM ET
-Last week: Strong 9-13 (-4.4u, CLV +0.9); FCS 12-8 (+2.7u, CLV +1.4); Wind 0-0 (+0.0u)
-Research tiers last week: Leans 27-25-1 (-0.9u, CLV +0.3); Research 32-27 (+4.3u, CLV +1.9)
-Season: Strong 21-22 (-2.4u, CLV +1.1); FCS 47-27 (+15.1u, CLV +1.4); Wind 19-22 (-4.9u, CLV +0.9)
-This week's card so far: 1 play
-  Strong: Iowa -14.5 -114 FD (Purdue @ Iowa, playable to -15.5)
-Biggest FBS rating moves: Tulsa +5.8, Georgia +4.0, Florida Atlantic +3.9, Tulane -6.2, UTSA -4.2, Ole Miss -4.1
-Health: 0 engine errors, longest gap between checks 1.4h, 432 line snapshots this week, 904 data calls left this month
+CFB weekly refresh, Sun Nov 15 09:26 AM ET
+Last week: Strong 10-13 (-3.8u, CLV +1.9); FCS 11-8 (+3.1u, CLV +1.6); Wind 0-0 (+0.0u)
+Research tiers last week: Leans 20-22 (-4.0u, CLV +0.8); Research 32-27 (+3.7u, CLV +1.5)
+Season: Strong 27-27 (-2.1u, CLV +1.4); FCS 56-30 (+21.3u, CLV +1.4); Wind 19-22 (-4.9u, CLV +0.9)
+This week's card so far: 0 plays
+Biggest FBS rating moves: Arkansas +4.9, Washington State +4.9, Wake Forest +4.5, South Carolina -4.6, Colorado State -4.4, SMU -4.3
+Health: 0 engine errors, longest gap between checks 5.7h, 236 line snapshots this week, 852 data calls left this month
