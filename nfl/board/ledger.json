@@ -8997,11 +8997,11 @@
   "model_line": -0.1,
   "flagged": "2026-11-08T17:16:47.474938-05:00",
   "kickoff_iso": "2026-11-15T09:30:00-05:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": -2.5,
+  "clv": 4.0,
+  "final": "NE 10 - DET 35"
  },
  {
   "id": "2026_10_MIA_IND:LEAN:spread:home",
@@ -9473,11 +9473,11 @@
   "model_line": -0.1,
   "flagged": "2026-11-08T19:18:11.111828-05:00",
   "kickoff_iso": "2026-11-15T09:30:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": -2.5,
+  "clv": 1.0,
+  "final": "NE 10 - DET 35"
  },
  {
   "id": "2026_10_LA_ARI:RLM:total:under",
@@ -9529,11 +9529,11 @@
   "model_line": -0.1,
   "flagged": "2026-11-08T20:52:23.083492-05:00",
   "kickoff_iso": "2026-11-15T09:30:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": 2.5,
+  "clv": 0.0,
+  "final": "NE 10 - DET 35"
  },
  {
   "id": "2026_10_NE_DET:RLM:total:over",
@@ -9557,11 +9557,11 @@
   "model_line": -0.1,
   "flagged": "2026-11-08T20:52:23.083492-05:00",
   "kickoff_iso": "2026-11-15T09:30:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 49.5,
+  "clv": -1.0,
+  "final": "NE 10 - DET 35"
  },
  {
   "id": "2026_10_JAX_TEN:RLM:spread:home",
@@ -10145,11 +10145,11 @@
   "model_line": -1.1,
   "flagged": "2026-11-12T21:39:16.167119-05:00",
   "kickoff_iso": "2026-11-15T09:30:00-05:00",
-  "status": "open",
+  "status": "L",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 2.5,
+  "clv": 0.0,
+  "final": "NE 10 - DET 35"
  },
  {
   "id": "2026_10_LAC_BAL:STRONG:spread:away",
