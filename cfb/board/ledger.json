@@ -16141,7 +16141,11 @@
   "model": 0.1,
   "grp": "FBS",
   "limit": 5.5,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 4.5,
+  "units": 0.952,
+  "final": "Texas 22 - LSU 21"
  },
  {
   "id": "401856885|moneyline|away|m",
@@ -16164,7 +16168,9 @@
   "model": 49.7,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.41,
+  "final": "Texas 22 - LSU 21"
  },
  {
   "id": "401866460|spread|away|m",
@@ -16397,7 +16403,11 @@
   "model": -9.6,
   "grp": "FBS",
   "limit": -4.5,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": -7.5,
+  "units": 0.847,
+  "final": "Colorado State 7 - Washington State 73"
  },
  {
   "id": "401858519|spread|home|m",
@@ -16420,7 +16430,11 @@
   "model": -20.8,
   "grp": "FBS",
   "limit": -15.5,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": -18.5,
+  "units": 0.877,
+  "final": "Purdue 7 - Iowa 28"
  },
  {
   "id": "401861967|spread|away|m",
@@ -16707,7 +16721,11 @@
   "model": -11.1,
   "grp": "FCS-FCS",
   "limit": -8.0,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": -9.5,
+  "units": -1.0,
+  "final": "UC Davis 28 - Idaho 24"
  },
  {
   "id": "401868099|total|under|m",
@@ -16730,7 +16748,11 @@
   "model": 58.4,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 62.5,
+  "units": 0.885,
+  "final": "UC Davis 28 - Idaho 24"
  },
  {
   "id": "401869148|spread|home|m",
@@ -17179,7 +17201,11 @@
   "model": 62.1,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 5.0,
+  "close": 62.5,
+  "units": -1.0,
+  "final": "Idaho State 30 - Montana 38"
  },
  {
   "id": "401869135|spread|home|m",
@@ -17229,7 +17255,11 @@
   "model": -0.3,
   "grp": "FCS-FCS",
   "limit": 5.0,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": 3.5,
+  "units": 1.25,
+  "final": "Eastern Washington 31 - Utah Tech 28"
  },
  {
   "id": "401868091|moneyline|home|m",
@@ -17252,7 +17282,9 @@
   "model": 50.8,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Eastern Washington 31 - Utah Tech 28"
  },
  {
   "id": "401868332|spread|home|m",
@@ -17782,7 +17814,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": -1.0,
+  "close": 39.5,
+  "units": 0.463,
+  "final": "North Dakota State 21 - Hawai'i 13"
  },
  {
   "id": "401856860|spread|away|m",
