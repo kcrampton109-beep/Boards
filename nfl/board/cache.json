@@ -460,16 +460,16 @@
    }
   },
   "2026_10_PIT_CIN": {
-   "ts": "2026-11-15T15:35:36.185005-05:00",
+   "ts": "2026-11-15T19:23:28.378076-05:00",
    "wx": {
-    "wind": 4.6,
-    "gust": 12.5,
-    "temp": 42.0,
+    "wind": 3.3,
+    "gust": 6.5,
+    "temp": 38.0,
     "precip": 0
    }
   },
   "2026_10_LAC_BAL": {
-   "ts": "2026-11-15T15:35:36.185005-05:00",
+   "ts": "2026-11-15T19:23:28.378076-05:00",
    "wx": {
     "wind": 5.1,
     "gust": 10.3,
@@ -4276,19 +4276,19 @@
    }
   },
   "290981": {
-   "ts": "2026-11-15T15:35:36.185005-05:00",
+   "ts": "2026-11-15T19:23:28.378076-05:00",
    "odds": {
     "jamarr chase": {
      "name": "Ja'Marr Chase",
-     "FD": -115
+     "FD": -110
     },
     "chase brown": {
      "name": "Chase Brown",
-     "FD": 100
+     "FD": -105
     },
     "jaylen warren": {
      "name": "Jaylen Warren",
-     "FD": 105
+     "FD": 110
     },
     "tee higgins": {
      "name": "Tee Higgins",
@@ -4300,11 +4300,11 @@
     },
     "dk metcalf": {
      "name": "DK Metcalf",
-     "FD": 190
+     "FD": 195
     },
     "darnell washington": {
      "name": "Darnell Washington",
-     "FD": 220
+     "FD": 230
     },
     "mike gesicki": {
      "name": "Mike Gesicki",
@@ -4314,21 +4314,21 @@
      "name": "Samaje Perine",
      "FD": 260
     },
-    "germie bernard": {
-     "name": "Germie Bernard",
-     "FD": 280
-    },
     "pat freiermuth": {
      "name": "Pat Freiermuth",
-     "FD": 290
+     "FD": 280
     },
-    "dohnte meyers": {
-     "name": "Dohnte Meyers",
-     "FD": 450
+    "germie bernard": {
+     "name": "Germie Bernard",
+     "FD": 290
     },
     "joe burrow": {
      "name": "Joe Burrow",
-     "FD": 470
+     "FD": 460
+    },
+    "dohnte meyers": {
+     "name": "Dohnte Meyers",
+     "FD": 480
     },
     "pittsburgh defense": {
      "name": "Pittsburgh Defense",
@@ -4338,70 +4338,66 @@
      "name": "Cincinnati Defense",
      "FD": 900
     },
-    "jack endries": {
-     "name": "Jack Endries",
-     "FD": 900
-    },
     "drew sample": {
      "name": "Drew Sample",
      "FD": 950
     },
-    "brandon smith": {
-     "name": "Brandon Smith",
+    "jack endries": {
+     "name": "Jack Endries",
      "FD": 1000
     },
     "ben skowronek": {
      "name": "Ben Skowronek",
-     "FD": 1000
+     "FD": 1400
+    },
+    "brandon smith": {
+     "name": "Brandon Smith",
+     "FD": 1600
     },
     "aaron rodgers": {
      "name": "Aaron Rodgers",
-     "FD": 1500
-    },
-    "robert tonyan": {
-     "name": "Robert Tonyan",
-     "FD": 1700
-    },
-    "kaden wetjen": {
-     "name": "Kaden Wetjen",
-     "FD": 1900
-    },
-    "colbie young": {
-     "name": "Colbie Young",
-     "FD": 2200
+     "FD": 1600
     },
     "mitchell tinsley": {
      "name": "Mitchell Tinsley",
+     "FD": 1700
+    },
+    "colbie young": {
+     "name": "Colbie Young",
+     "FD": 1800
+    },
+    "kaden wetjen": {
+     "name": "Kaden Wetjen",
+     "FD": 2000
+    },
+    "robert tonyan": {
+     "name": "Robert Tonyan",
      "FD": 2200
     },
     "cam grandy": {
      "name": "Cam Grandy",
-     "FD": 2200
-    },
-    "lew nichols": {
-     "name": "Lew Nichols III",
-     "FD": 3300
-    },
-    "riley nowakowski": {
-     "name": "Riley Nowakowski",
-     "FD": 3300
+     "FD": 2700
     },
     "travis homer": {
      "name": "Travis Homer",
-     "FD": 3300
+     "FD": 3500
     },
-    "eli heidenreich": {
-     "name": "Eli Heidenreich",
-     "FD": 3300
+    "riley nowakowski": {
+     "name": "Riley Nowakowski",
+     "FD": 4000
     },
     "tahj brooks": {
      "name": "Tahj Brooks",
      "FD": 5000
+    },
+    "lew nichols": {
+     "name": "Lew Nichols III",
+     "FD": 5500
     }
    }
   },
   "290982": {
-   "ts": "2026-11-15T15:35:36.185005-05:00",
+   "ts": "2026-11-15T19:23:28.378076-05:00",
    "odds": {
     "derrick henry": {
      "name": "Derrick Henry",
@@ -4551,6 +4547,18 @@
   },
   "290987": {
    "ts": "2026-11-15T15:35:36.185005-05:00",
+   "odds": {}
+  },
+  "290991": {
+   "ts": "2026-11-15T19:23:28.378076-05:00",
+   "odds": {}
+  },
+  "290993": {
+   "ts": "2026-11-15T19:23:28.378076-05:00",
+   "odds": {}
+  },
+  "290992": {
+   "ts": "2026-11-15T19:23:28.378076-05:00",
    "odds": {}
   }
  }
