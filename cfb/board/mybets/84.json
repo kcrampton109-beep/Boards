@@ -1,0 +1,23 @@
+{
+ "id": 84,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/84",
+ "board": "CFB",
+ "pick": "Ohio -10.5",
+ "odds": -115,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Ball State @ Ohio",
+ "kickoff": "2026-11-17 19:00:00-05:00",
+ "play": "401866464|spread|home|m",
+ "logged": "2026-11-16T16:05:29Z",
+ "updated": "2026-11-16T16:05:41+00:00",
+ "tier": "STRONG",
+ "game_id": 401866464,
+ "board_line": -10.5,
+ "board_odds": -105.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": -10.5
+}
