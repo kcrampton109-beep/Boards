@@ -25372,13 +25372,17 @@
   "opener": 158.5,
   "grp": "power 6",
   "limit": 159.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 67,
   "money": 73,
   "bets": 353,
   "moved": 1.0,
-  "mins": 557
+  "mins": 557,
+  "close": 157.5,
+  "clv": -2.0,
+  "units": 0.909,
+  "final": "Arkansas-Pine Bluff 46 - USC 122"
  },
  {
   "id": "401926772|spread|2029",
@@ -25403,7 +25407,11 @@
   "opener": 41.5,
   "grp": "power 6",
   "limit": 45.0,
-  "status": "open"
+  "status": "L",
+  "close": 46.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Arkansas-Pine Bluff 46 - USC 122"
  },
  {
   "id": "401926063|total|under",
