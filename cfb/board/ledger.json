@@ -18046,5 +18046,28 @@
   "grp": "FBS",
   "limit": -10.5,
   "status": "open"
+ },
+ {
+  "id": "401858530|total|over|m",
+  "base": "401858530|total|over|m",
+  "flagged": "2026-11-16T15:13-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401858530,
+  "matchup": "Northwestern @ Minnesota",
+  "kickoff": "2026-11-21 12:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "over",
+  "pick": "Over 41.5",
+  "book": "FD",
+  "line": 41.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 9.3,
+  "model": 50.8,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
