@@ -2322,7 +2322,7 @@
   }
  },
  "2026_10_LAC_BAL": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
+  "ts": "2026-11-16T02:18:33.366075-05:00",
   "close_spread": -4.5,
   "close_total": 38.5,
   "best": {
@@ -2332,9 +2332,9 @@
     "book": "FD"
    },
    "away": {
-    "line": 5,
-    "odds": -110,
-    "book": "MGM"
+    "line": 4.5,
+    "odds": -108,
+    "book": "DK"
    },
    "over": {
     "line": 38.5,
@@ -2349,46 +2349,46 @@
   }
  },
  "2026_11_IND_HOU": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
+  "ts": "2026-11-16T02:18:33.366075-05:00",
   "close_spread": -10,
   "close_total": 44.5,
   "best": {
    "home": {
-    "line": -9.5,
-    "odds": -115,
-    "book": "DK"
+    "line": -10,
+    "odds": -110,
+    "book": "FD"
    },
    "away": {
     "line": 10,
-    "odds": -110,
-    "book": "MGM"
+    "odds": -108,
+    "book": "DK"
    },
    "over": {
     "line": 44.5,
-    "odds": -108,
-    "book": "MGM"
+    "odds": -105,
+    "book": "DK"
    },
    "under": {
     "line": 44.5,
-    "odds": -105,
+    "odds": -110,
     "book": "FD"
    }
   }
  },
  "2026_11_TB_DET": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
-  "close_spread": -6,
+  "ts": "2026-11-16T02:18:33.366075-05:00",
+  "close_spread": -5.5,
   "close_total": 46.5,
   "best": {
    "home": {
     "line": -5.5,
-    "odds": -115,
-    "book": "FD"
+    "odds": -110,
+    "book": "MGM"
    },
    "away": {
-    "line": 6,
-    "odds": -110,
-    "book": "DK"
+    "line": 5.5,
+    "odds": -105,
+    "book": "FD"
    },
    "over": {
     "line": 46.5,
@@ -2403,99 +2403,99 @@
   }
  },
  "2026_11_TEN_DAL": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
+  "ts": "2026-11-16T02:18:33.366075-05:00",
   "close_spread": -7.5,
-  "close_total": 52,
+  "close_total": 53.5,
   "best": {
    "home": {
     "line": -7.5,
-    "odds": -115,
-    "book": "DK"
-   },
-   "away": {
-    "line": 8,
-    "odds": -110,
+    "odds": -112,
     "book": "MGM"
    },
-   "over": {
-    "line": 51.5,
-    "odds": -120,
-    "book": "FD"
+   "away": {
+    "line": 7.5,
+    "odds": -105,
+    "book": "DK"
    },
-   "under": {
-    "line": 52.5,
+   "over": {
+    "line": 53.5,
     "odds": -110,
     "book": "DK"
+   },
+   "under": {
+    "line": 53.5,
+    "odds": -108,
+    "book": "MGM"
    }
   }
  },
  "2026_11_NO_CHI": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
-  "close_spread": -9.5,
-  "close_total": 49.5,
+  "ts": "2026-11-16T02:18:33.366075-05:00",
+  "close_spread": -10,
+  "close_total": 49,
   "best": {
    "home": {
-    "line": -9.5,
-    "odds": -110,
+    "line": -10,
+    "odds": -108,
     "book": "DK"
    },
    "away": {
-    "line": 9.5,
-    "odds": -105,
+    "line": 10.5,
+    "odds": -115,
     "book": "FD"
    },
    "over": {
-    "line": 49.5,
-    "odds": -108,
-    "book": "MGM"
+    "line": 48.5,
+    "odds": -115,
+    "book": "DK"
    },
    "under": {
     "line": 49.5,
     "odds": -110,
-    "book": "DK"
+    "book": "FD"
    }
   }
  },
  "2026_11_JAX_NYG": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
+  "ts": "2026-11-16T02:18:33.366075-05:00",
   "close_spread": 6.5,
   "close_total": 46.5,
   "best": {
    "home": {
     "line": 6.5,
-    "odds": -110,
+    "odds": -112,
     "book": "DK"
    },
    "away": {
-    "line": -6.5,
-    "odds": -105,
-    "book": "FD"
+    "line": -6,
+    "odds": -112,
+    "book": "MGM"
    },
    "over": {
     "line": 46.5,
-    "odds": -110,
-    "book": "DK"
+    "odds": -108,
+    "book": "MGM"
    },
    "under": {
     "line": 46.5,
-    "odds": -108,
-    "book": "MGM"
+    "odds": -110,
+    "book": "DK"
    }
   }
  },
  "2026_11_BAL_CAR": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
-  "close_spread": -1.5,
+  "ts": "2026-11-16T02:18:33.366075-05:00",
+  "close_spread": -2.5,
   "close_total": 44.5,
   "best": {
    "home": {
     "line": -1.5,
-    "odds": -110,
-    "book": "DK"
+    "odds": -120,
+    "book": "FD"
    },
    "away": {
     "line": 2.5,
-    "odds": -110,
+    "odds": -108,
     "book": "MGM"
    },
    "over": {
@@ -2505,25 +2505,25 @@
    },
    "under": {
     "line": 44.5,
-    "odds": -105,
+    "odds": -112,
     "book": "DK"
    }
   }
  },
  "2026_11_ARI_KC": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
-  "close_spread": -15,
+  "ts": "2026-11-16T02:18:33.366075-05:00",
+  "close_spread": -16.5,
   "close_total": 41,
   "best": {
    "home": {
-    "line": -14.5,
-    "odds": -110,
-    "book": "DK"
+    "line": -15.5,
+    "odds": -115,
+    "book": "FD"
    },
    "away": {
-    "line": 15.5,
-    "odds": -105,
-    "book": "FD"
+    "line": 16.5,
+    "odds": -115,
+    "book": "DK"
    },
    "over": {
     "line": 40.5,
@@ -2532,46 +2532,46 @@
    },
    "under": {
     "line": 41.5,
-    "odds": -110,
+    "odds": -115,
     "book": "DK"
    }
   }
  },
  "2026_11_MIA_BUF": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
+  "ts": "2026-11-16T02:18:33.366075-05:00",
   "close_spread": -16.5,
-  "close_total": 47,
+  "close_total": 46.5,
   "best": {
    "home": {
     "line": -16.5,
     "odds": -110,
-    "book": "DK"
+    "book": "FD"
    },
    "away": {
     "line": 16.5,
-    "odds": -108,
+    "odds": -105,
     "book": "MGM"
    },
    "over": {
-    "line": 46.5,
-    "odds": -115,
-    "book": "DK"
+    "line": 46,
+    "odds": -110,
+    "book": "MGM"
    },
    "under": {
-    "line": 47.5,
-    "odds": -110,
-    "book": "FD"
+    "line": 46.5,
+    "odds": -108,
+    "book": "DK"
    }
   }
  },
  "2026_11_NYJ_LAC": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
+  "ts": "2026-11-16T02:18:33.366075-05:00",
   "close_spread": -3,
   "close_total": 40.5,
   "best": {
    "home": {
     "line": -3,
-    "odds": -115,
+    "odds": -118,
     "book": "DK"
    },
    "away": {
@@ -2582,46 +2582,100 @@
    "over": {
     "line": 40.5,
     "odds": -110,
-    "book": "DK"
+    "book": "FD"
    },
    "under": {
     "line": 40.5,
-    "odds": -108,
-    "book": "MGM"
+    "odds": -105,
+    "book": "DK"
    }
   }
  },
  "2026_11_LV_DEN": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
-  "close_spread": -9,
+  "ts": "2026-11-16T02:18:33.366075-05:00",
+  "close_spread": -10,
   "close_total": 40.5,
   "best": {
    "home": {
-    "line": -8.5,
+    "line": -10,
+    "odds": -108,
+    "book": "DK"
+   },
+   "away": {
+    "line": 10.5,
     "odds": -115,
     "book": "FD"
    },
-   "away": {
-    "line": 9.5,
-    "odds": -110,
-    "book": "DK"
-   },
    "over": {
-    "line": 40.5,
-    "odds": -105,
-    "book": "FD"
+    "line": 40,
+    "odds": -108,
+    "book": "MGM"
    },
    "under": {
     "line": 40.5,
-    "odds": -110,
-    "book": "DK"
+    "odds": -115,
+    "book": "FD"
    }
   }
  },
  "2026_11_PIT_PHI": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
+  "ts": "2026-11-16T02:18:33.366075-05:00",
   "close_spread": 4.5,
   "close_total": 38.5,
+  "best": {
+   "home": {
+    "line": 4.5,
+    "odds": -110,
+    "book": "FD"
+   },
+   "away": {
+    "line": -4.5,
+    "odds": -105,
+    "book": "DK"
+   },
+   "over": {
+    "line": 38.5,
+    "odds": -108,
+    "book": "DK"
+   },
+   "under": {
+    "line": 38.5,
+    "odds": -110,
+    "book": "FD"
+   }
+  }
+ },
+ "2026_11_MIN_SF": {
+  "ts": "2026-11-16T02:18:33.366075-05:00",
+  "close_spread": -3,
+  "close_total": 46.5,
+  "best": {
+   "home": {
+    "line": -3,
+    "odds": -108,
+    "book": "MGM"
+   },
+   "away": {
+    "line": 3,
+    "odds": -110,
+    "book": "DK"
+   },
+   "over": {
+    "line": 45.5,
+    "odds": -115,
+    "book": "FD"
+   },
+   "under": {
+    "line": 46.5,
+    "odds": -115,
+    "book": "DK"
+   }
+  }
+ },
+ "2026_11_CIN_WAS": {
+  "ts": "2026-11-16T02:18:33.366075-05:00",
+  "close_spread": 4.5,
+  "close_total": 52,
   "best": {
    "home": {
     "line": 4.5,
@@ -2630,62 +2684,8 @@
    },
    "away": {
     "line": -4.5,
-    "odds": -108,
-    "book": "MGM"
-   },
-   "over": {
-    "line": 38.5,
-    "odds": -110,
-    "book": "DK"
-   },
-   "under": {
-    "line": 39,
-    "odds": -110,
-    "book": "MGM"
-   }
-  }
- },
- "2026_11_MIN_SF": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
-  "close_spread": -3.5,
-  "close_total": 46.5,
-  "best": {
-   "home": {
-    "line": -3.5,
-    "odds": -102,
-    "book": "DK"
-   },
-   "away": {
-    "line": 3.5,
-    "odds": -110,
-    "book": "FD"
-   },
-   "over": {
-    "line": 46.5,
-    "odds": -110,
-    "book": "DK"
-   },
-   "under": {
-    "line": 46.5,
     "odds": -105,
-    "book": "FD"
-   }
-  }
- },
- "2026_11_CIN_WAS": {
-  "ts": "2026-11-15T19:23:28.378076-05:00",
-  "close_spread": 4,
-  "close_total": 51.5,
-  "best": {
-   "home": {
-    "line": 4.5,
-    "odds": -120,
-    "book": "FD"
-   },
-   "away": {
-    "line": -3.5,
-    "odds": -115,
-    "book": "DK"
+    "book": "MGM"
    },
    "over": {
     "line": 51.5,
@@ -2693,9 +2693,9 @@
     "book": "DK"
    },
    "under": {
-    "line": 51.5,
+    "line": 52.5,
     "odds": -110,
-    "book": "DK"
+    "book": "FD"
    }
   }
  }

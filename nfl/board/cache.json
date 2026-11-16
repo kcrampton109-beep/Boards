@@ -469,11 +469,11 @@
    }
   },
   "2026_10_LAC_BAL": {
-   "ts": "2026-11-15T19:23:28.378076-05:00",
+   "ts": "2026-11-16T02:18:33.366075-05:00",
    "wx": {
-    "wind": 5.1,
-    "gust": 10.3,
-    "temp": 41.0,
+    "wind": 5.2,
+    "gust": 11.0,
+    "temp": 42.0,
     "precip": 0
    }
   }
@@ -4397,7 +4397,7 @@
    }
   },
   "290982": {
-   "ts": "2026-11-15T19:23:28.378076-05:00",
+   "ts": "2026-11-16T02:18:33.366075-05:00",
    "odds": {
     "derrick henry": {
      "name": "Derrick Henry",
@@ -4518,8 +4518,121 @@
    }
   },
   "290983": {
-   "ts": "2026-11-12T21:39:16.167119-05:00",
-   "odds": {}
+   "ts": "2026-11-16T02:18:33.366075-05:00",
+   "odds": {
+    "emari demercado": {
+     "name": "Emari Demercado",
+     "FD": -110
+    },
+    "david montgomery": {
+     "name": "David Montgomery",
+     "FD": -110
+    },
+    "jonathan taylor": {
+     "name": "Jonathan Taylor",
+     "FD": 100
+    },
+    "nico collins": {
+     "name": "Nico Collins",
+     "FD": 105
+    },
+    "dalton schultz": {
+     "name": "Dalton Schultz",
+     "FD": 190
+    },
+    "xavier hutchinson": {
+     "name": "Xavier Hutchinson",
+     "FD": 270
+    },
+    "kayshon boutte": {
+     "name": "Kayshon Boutte",
+     "FD": 280
+    },
+    "marvin harrison": {
+     "name": "Marvin Harrison Jr.",
+     "FD": 280
+    },
+    "tyler warren": {
+     "name": "Tyler Warren",
+     "FD": 320
+    },
+    "seth mcgowan": {
+     "name": "Seth McGowan",
+     "FD": 330
+    },
+    "tank dell": {
+     "name": "Tank Dell",
+     "FD": 330
+    },
+    "cj stroud": {
+     "name": "C.J. Stroud",
+     "FD": 420
+    },
+    "foster moreau": {
+     "name": "Foster Moreau",
+     "FD": 440
+    },
+    "laquon treadwell": {
+     "name": "Laquon Treadwell",
+     "FD": 460
+    },
+    "houston defense": {
+     "name": "Houston Defense",
+     "FD": 550
+    },
+    "daniel jones": {
+     "name": "Daniel Jones",
+     "FD": 700
+    },
+    "deion burks": {
+     "name": "Deion Burks",
+     "FD": 700
+    },
+    "indianapolis defense": {
+     "name": "Indianapolis Defense",
+     "FD": 900
+    },
+    "anthony gould": {
+     "name": "Anthony Gould",
+     "FD": 900
+    },
+    "ashton dulin": {
+     "name": "Ashton Dulin",
+     "FD": 1200
+    },
+    "cade stover": {
+     "name": "Cade Stover",
+     "FD": 1200
+    },
+    "marlin klein": {
+     "name": "Marlin Klein",
+     "FD": 1200
+    },
+    "mo alie-cox": {
+     "name": "Mo Alie-Cox",
+     "FD": 1600
+    },
+    "drew ogletree": {
+     "name": "Drew Ogletree",
+     "FD": 1600
+    },
+    "nick westbrook-ikhine": {
+     "name": "Nick Westbrook-Ikhine",
+     "FD": 2700
+    },
+    "nikko remigio": {
+     "name": "Nikko Remigio",
+     "FD": 3000
+    },
+    "dj giddens": {
+     "name": "DJ Giddens",
+     "FD": 3000
+    },
+    "pharaoh brown": {
+     "name": "Pharaoh Brown",
+     "FD": 3500
+    }
+   }
   },
   "290985": {
    "ts": "2026-11-15T15:35:36.185005-05:00",
@@ -4559,6 +4672,10 @@
   },
   "290992": {
    "ts": "2026-11-15T19:23:28.378076-05:00",
+   "odds": {}
+  },
+  "290824": {
+   "ts": "2026-11-16T02:18:33.366075-05:00",
    "odds": {}
   }
  }
