@@ -1,0 +1,23 @@
+{
+ "id": 88,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/88",
+ "board": "NFL",
+ "pick": "NO +11.5",
+ "odds": -108,
+ "book": "DraftKings",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "NO @ CHI",
+ "kickoff": "2026-11-22T13:00:00-05:00",
+ "play": "2026_11_NO_CHI:STRONG:spread:away",
+ "logged": "2026-11-17T14:29:31Z",
+ "updated": "2026-11-17T14:29:40+00:00",
+ "tier": "STRONG",
+ "game_id": "2026_11_NO_CHI",
+ "board_line": 12,
+ "board_odds": -110,
+ "board_book": "MGM",
+ "market": "spread",
+ "side": "away",
+ "line": 11.5
+}
