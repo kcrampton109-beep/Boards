@@ -14,15 +14,18 @@ BOARDS = {
     "cfb": dict(name="CFB Play Card", workbook="CFB_Model_2026.xlsx",
                 tiers=[("STRONG", "Strong"), ("FCS", "FCS"), ("WEATHER", "Wind unders"), ("LEAN", "Leans"),
                        ("RESEARCH", "Research")],
-                # FCS graduated Nov 4 (owner's call: 66 plays, CLV +1.5, beat close 70%); FBS strong stays on trial until
-                # 20 plays under the Oct 26 rule (gap 5-7 from week 7) are graded
+                # FCS graduated Nov 4 (owner's call: 66 plays, CLV +1.5, beat close 70%). FBS strong under the Oct 26 rule
+                # (gap 5-7 from week 7) met its scorecard Nov 16 but went 11-17, so the owner kept it on trial at $10 (Nov 17)
+                # until the end of the regular season
                 graduated={"FCS": "2026-11-04"},
                 scorecard=("STRONG",), scorecard_new_rule=True,
-                target=dict(n=20, clv=0.5, beat=0.55, review="when 20 new-rule strong plays are graded")),
+                target=dict(n=20, clv=0.5, beat=0.55, review="end of the regular season (kept on trial Nov 17)")),
     "nfl": dict(name="NFL Game Day Board", workbook="NFL_weekly.xlsx",
                 tiers=[("STRONG", "Strong"), ("LEAN", "Lean"), ("WEATHER", "Wind unders"), ("TEASER", "Teaser legs"),
                        ("RLM", "Reverse line move (tracked)"), ("TREND", "Trend (tracked)"), ("TD", "Anytime TD (research)")],
-                scorecard=("STRONG",), target=dict(n=40, clv=0.5, beat=0.55, review="2026-11-03")),
+                # Strong graduated Nov 17 (owner's call: 42 plays, 28-14, CLV +1.83, beat close 71%); unit stays $10
+                graduated={"STRONG": "2026-11-17"},
+                scorecard=("STRONG",), target=dict(n=40, clv=0.5, beat=0.55, review="graduated Nov 17")),
 }
 
 

@@ -86,8 +86,10 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   70%). 1 unit stays $10. FCS is 1u, and 1.5u at a 7+ gap on plays logged from Nov 6 (owner's call; `RULES["fcs_big_gap"]`, `fcs_big_from`; earlier
   entries keep 1u). Under the board's rules 2021-25: 7+ won 61.5% (200 bets), 5-7 won 57.2% (173). The 58.8% vs 57.5% quoted Nov 4 counted 96 bets the board
   wouldn't log (too few games).
-  FBS Strong stays on trial at $10 until 20 plays under the 5-point rule are graded (CLV +0.5, beat close 55%); NFL Strong
-  until 40 plays. `tools/checkin.py` scorecards track both; raise graduation as the owner's decision, never change stakes.
+  FBS Strong (5-point rule) met its scorecard Nov 16 (28 plays, CLV +1.29, beat close 68%) but went 11-17, so it stays on trial
+  at $10 until the end of the regular season (owner's call, Nov 17). NFL Strong graduated Nov 17 (owner's call: 42 plays, 28-14,
+  CLV +1.83, beat close 71%); unit stays $10, sizes unchanged (1u, 1.5u at 4+, 2u at 6+). `tools/checkin.py` scorecards track
+  both; raise graduation as the owner's decision, never change stakes.
 - **CBB paper board** (built Oct 28 2026, `/cbb/`): paper only, flat 1u, no alerts, no Bets/My Bets tab. Model = blend of
   a results ridge and a market-ratings ridge (fit to earlier games' closing lines), `cbb/research/REPORT.md`. Tiers
   (`RULES`): spreads 3-4 / 4+, totals 5-6 / 6+, November games in their own tier; spread gaps 12+ not logged. ESPN

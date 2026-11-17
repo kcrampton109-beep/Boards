@@ -163,7 +163,7 @@ tr:last-child td { border-bottom: 0 }
 <script>
 const BOOKN = { DK: "DraftKings", FD: "FanDuel", MGM: "BetMGM" };
 const TIER = {
-  STRONG: { name: "Strong spreads", code: "S", note: "Model differs from your best book by 3+ points. Backtest: 59.5% against the opening line in 2008-21 and 65% in 2023-25. Against the closing line the same picks hit 52-56%, so the value is in betting early in the week, at the playable number or better. Sized by edge: 3-4 pts 1u, 4-6 pts 1.5u, 6+ pts 2u." },
+  STRONG: { name: "Strong spreads", code: "S", note: "Model differs from your best book by 3+ points. Backtest: 59.5% against the opening line in 2008-21 and 65% in 2023-25. Against the closing line the same picks hit 52-56%, so the value is in betting early in the week, at the playable number or better. Sized by edge: 3-4 pts 1u, 4-6 pts 1.5u, 6+ pts 2u. Graduated to real bets on Nov 17 (42 plays, 28-14, beat the closing line on 71%)." },
   WEATHER: { name: "Weather unders", code: "W", note: "Forecast wind of 18+ mph at an open-air stadium, logged only within 24 hours of kickoff (since Oct 19; it was 15+ mph up to 4 days out, and forecasts that far out ran windy). Backtest: unders hit 56-58% against the closing total in every era since 2008." },
   TEASER: { name: "Teaser legs", code: "T", note: "6-point teaser underdogs at +1.5 to +2.5 (teased through 3 and 7) when the total is 49.5 or less. Legs won 75-78% in every era; a 2-team teaser at -120 needs 73.9% per leg. Pair any two legs; check your book's teaser price (-130 or better)." },
   LEAN: { name: "Leans", code: "L", note: "Model gap of 2 to 3 points, or a strong gap with a questionable starting QB. Logged at 0.5 unit to learn from." },
@@ -490,7 +490,7 @@ function render(S) {
     <h2>Tested and kept as tracking only</h2>
     <ul><li>${esc(bt.rlm)}</li><li>${esc(bt.trend)}</li><li>Model totals against the opener were 50-53% outside 2008-13, so totals only become plays through the wind rule.</li></ul>
     <h2>Stakes</h2>
-    <p>Bets are sized by the model's edge (switched 2026-10-06): strong spreads 1u at a 3-4 point gap, 1.5u at 4-6 and 2u at 6+ (2008-25 win rates 57.5%, 61.5% and about 70%); leans 0.5u (about 54%, barely above the 52.4% break-even); weather unders and 2-team teasers 1u; tracked tiers 1u. Over 2008-25 this sizing made +276u vs +204u flat on slightly less risked. Everything is paper for now; if you bet later, about 1% of bankroll per unit is sensible. Only bet at the playable number or better.</p>
+    <p>Bets are sized by the model's edge (switched 2026-10-06): strong spreads 1u at a 3-4 point gap, 1.5u at 4-6 and 2u at 6+ (2008-25 win rates 57.5%, 61.5% and about 70%); leans 0.5u (about 54%, barely above the 52.4% break-even); weather unders and 2-team teasers 1u; tracked tiers 1u. Over 2008-25 this sizing made +276u vs +204u flat on slightly less risked. Every play is tracked here as a paper bet. You bet real money on strong spreads at $10 a unit: strong graduated on Nov 17 after 42 plays (28-14, average CLV +1.83 points, beat the close on 71%). Only bet at the playable number or better.</p>
     <h2>Schedule</h2>
     <p>Lines, bets/money splits and CBS opens are checked every 30 minutes while this computer is on. Ratings and scores refresh each morning and after games finish; injuries and forecasts on every check.</p></div>`;
 
