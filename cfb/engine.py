@@ -395,12 +395,22 @@ def price(ml, live):
     return rows
 
 
+def _at_least(f, x):
+    """x is the flagged number or better for the flag's side."""
+    if x is None:
+        return False
+    return x <= f["line"] + 1e-9 if f["market"] == "total" and f["side"] == "over" else x >= f["line"] - 1e-9
+
+
 def load_flags():
-    """The owner's "Not available" flags that stand (tools/flag_play.py, verdict void): {game id as text: [flag]}."""
-    out = {}
+    """The owner's "Not available" flags that stand (tools/flag_play.py, verdict void) on games not started yet:
+    {game id as text: [flag]}."""
+    out, now = {}, pd.Timestamp.now(tz="UTC")
     for p in sorted((BOARD / "flags").glob("*.json")):
         try:
             f = json.loads(p.read_text(encoding="utf-8"))
+            if f.get("kickoff") and pd.Timestamp(str(f["kickoff"]).replace(" ", "T")) <= now:
+                continue
         except Exception:
             continue
         if f.get("verdict") == "void" and f.get("line") is not None and f.get("market") in ("spread", "total"):
@@ -408,38 +418,78 @@ def load_flags():
     return out
 
 
+def flag_lifted(f, game, board):
+    """The flagged number is real now: FanDuel's own site offers it (or better) and didn't when it was flagged. A flag
+    forced over FanDuel's number ("void anyway") isn't lifted this way; it waits for the quotes to change."""
+    then = f.get("fanduel") or {}
+    if then.get("offered") and _at_least(f, then.get("line")):
+        return False
+    try:
+        tools = str(ROOT.parent / "tools")
+        if tools not in sys.path:
+            sys.path.insert(0, tools)
+        import flag_play
+        now = flag_play.fd_check(board, game, f)
+    except Exception:
+        return False
+    return bool(now.get("offered") and _at_least(f, now.get("line")))
+
+
+def _same_quote(was, val, odds):
+    """A book's quote now is the very quote (number and price) it had when the play was flagged."""
+    if not was or val is None or abs(was[0] - val) > 1e-9:
+        return False
+    return (was[1] is None and odds is None) or (was[1] is not None and odds is not None and abs(was[1] - odds) < 1e-9)
+
+
 def drop_flagged(rec, flagged):
-    """Ignore every book quote at a number the owner flagged as not available at any of their books, or better for that
-    side, so it can't log again; a different number still can. Nov 17: NFL DAL -1.5 sat in the feed at all three books
-    hours before any of them offered it."""
+    """Ignore a book's quote while it is the very quote (number and price) the owner flagged as not available at any
+    of their books, so it can't log again. It counts again once that quote changes or FanDuel's own site offers the
+    number: a play that does become available still logs and alerts. Nov 17: NFL DAL -1.5 sat in the feed at all three
+    books hours before any of them offered it."""
     for f in flagged.get(str(rec["game_id"]), []):
+        if flag_lifted(f, rec, "cfb"):
+            rec.setdefault("flags_lifted", []).append(f.get("pick"))
+            continue
+        snap = (f.get("feed") or {}).get("books") or {}
         for k, v in rec["books"].items():
             if f["market"] == "spread":
                 val = v.get("sp_home") if f["side"] == "home" else v.get("sp_away")
                 if val is None:
                     other = v.get("sp_away") if f["side"] == "home" else v.get("sp_home")
                     val = -other if other is not None else None
-                hit = val is not None and val >= f["line"] - 1e-9
+                odds = v.get(f"sp_{f['side']}_odds")
                 fields = ("sp_home", "sp_home_odds", "sp_away", "sp_away_odds")
             else:
-                val = v.get("tot")
-                hit = val is not None and (val >= f["line"] - 1e-9 if f["side"] == "under" else val <= f["line"] + 1e-9)
+                val, odds = v.get("tot"), v.get(f"{f['side']}_odds")
                 fields = ("tot", "over_odds", "under_odds")
-            if hit:
+            if _same_quote(snap.get(k), val, odds) and _at_least(f, val):
                 for x in fields:
                     v[x] = None
                 rec.setdefault("flagged_books", []).append(f"{k} {f['market']} {val:g}")
 
 
 def void_flagged(led, flagged):
-    """Void the open ledger entry behind each standing flag: the owner couldn't get it at any of their books."""
+    """Void the open ledger entry behind each standing flag (logged before the flag: the owner couldn't get it at any
+    of their books), and forget that the play was alerted, so it alerts again if it later logs at a real number."""
+    forget = set()
     for fs in flagged.values():
         for f in fs:
-            for e in led:
-                if e["id"] == f["play"] and e["status"] == "open":
+            ents = [e for e in led if e["id"] == f["play"]]
+            for e in ents:
+                if e["status"] == "open" and pd.Timestamp(e["flagged"]) <= pd.Timestamp(f["checked_at"]):
                     e["status"] = "void"
                     e["note"] = ("Voided: flagged as not available at your books "
                                  f"({str(f.get('checked_at') or '')[:10]}). {f.get('reason') or ''}").strip()
+            if not any(e["status"] == "open" for e in ents):
+                forget |= {f["play"]} | {e["base"] for e in ents if e.get("base")}
+    p = BOARD / "notified.json"
+    if forget and p.exists():
+        memo = load_json(p, {})
+        ids = [i for i in memo.get("ids", []) if i not in forget]
+        if len(ids) != len(memo.get("ids", [])):
+            memo["ids"] = ids
+            save_json(p, memo)
 
 
 def drop_stale(rec):

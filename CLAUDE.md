@@ -81,8 +81,10 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   state.json). DraftKings and BetMGM refuse automated reads: don't try to get around it. Verdict void unless FanDuel offers the
   logged number or better right now; a "void anyway" comment forces it. One file per flag (`<board>/board/flags/<issue>.json`);
   the workflow publishes flags.json and starts a board run, and the engines (`load_flags`, `void_flagged`, `drop_flagged`) void
-  the open entry and ignore every DK/FD/MGM quote at that number or better for that side, so it can't log again (another number
-  can). Why: Nov 17 NFL DAL -1.5 logged at 4:12 AM from feed numbers at all three books before any of them offered it; NFL Strong
+  the open entry logged before the flag and ignore a DK/FD/MGM quote while it is the very quote (number and price) the feed had
+  when it was flagged, so it can't log again. Owner (Nov 17): if the number really becomes available it must still log and alert,
+  so a quote counts again once it changes, every quote counts once FanDuel's own site offers the number (`flag_lifted`; not for
+  a "void anyway" over FanDuel's number), and voiding drops the play from notified.json so its next real entry alerts. Why: Nov 17 NFL DAL -1.5 logged at 4:12 AM from feed numbers at all three books before any of them offered it; NFL Strong
   plays logged Monday night to Tuesday 2:40 PM for next week's games were 12-4, CLV +2.84 vs 16-10, CLV +1.21 for the rest.
 - **NFL book agreement**: a book whose spread is 1.5+ pts off the median of DK/FD/MGM is ignored for prices (Oct 20:
   DK and FD next-week lines up to 5 pts apart).
