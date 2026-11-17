@@ -5119,8 +5119,121 @@
    "odds": {}
   },
   "290993": {
-   "ts": "2026-11-15T19:23:28.378076-05:00",
-   "odds": {}
+   "ts": "2026-11-17T18:17:35.266631-05:00",
+   "odds": {
+    "jonah coleman": {
+     "name": "Jonah Coleman",
+     "FD": -150
+    },
+    "courtland sutton": {
+     "name": "Courtland Sutton",
+     "FD": 175
+    },
+    "jaylen waddle": {
+     "name": "Jaylen Waddle",
+     "FD": 175
+    },
+    "ashton jeanty": {
+     "name": "Ashton Jeanty",
+     "FD": 200
+    },
+    "pat bryant": {
+     "name": "Pat Bryant",
+     "FD": 230
+    },
+    "jk dobbins": {
+     "name": "J.K. Dobbins",
+     "FD": 250
+    },
+    "evan engram": {
+     "name": "Evan Engram",
+     "FD": 320
+    },
+    "bo nix": {
+     "name": "Bo Nix",
+     "FD": 340
+    },
+    "tre tucker": {
+     "name": "Tre Tucker",
+     "FD": 410
+    },
+    "mike washington": {
+     "name": "Mike Washington Jr.",
+     "FD": 410
+    },
+    "troy franklin": {
+     "name": "Troy Franklin",
+     "FD": 450
+    },
+    "marvin mims": {
+     "name": "Marvin Mims Jr.",
+     "FD": 500
+    },
+    "nate adkins": {
+     "name": "Nate Adkins",
+     "FD": 550
+    },
+    "fernando mendoza": {
+     "name": "Fernando Mendoza",
+     "FD": 600
+    },
+    "las vegas defense": {
+     "name": "Las Vegas Defense",
+     "FD": 600
+    },
+    "jalen nailor": {
+     "name": "Jalen Nailor",
+     "FD": 650
+    },
+    "michael mayer": {
+     "name": "Michael Mayer",
+     "FD": 650
+    },
+    "denver defense": {
+     "name": "Denver Defense",
+     "FD": 700
+    },
+    "jack bech": {
+     "name": "Jack Bech",
+     "FD": 700
+    },
+    "adam trautman": {
+     "name": "Adam Trautman",
+     "FD": 1000
+    },
+    "adam prentice": {
+     "name": "Adam Prentice",
+     "FD": 1600
+    },
+    "connor heyward": {
+     "name": "Connor Heyward",
+     "FD": 1700
+    },
+    "cody white": {
+     "name": "Cody White",
+     "FD": 2000
+    },
+    "donte thornton": {
+     "name": "Dont'e Thornton Jr.",
+     "FD": 2000
+    },
+    "ian thomas": {
+     "name": "Ian Thomas",
+     "FD": 2200
+    },
+    "dylan laube": {
+     "name": "Dylan Laube",
+     "FD": 2500
+    },
+    "malik benson": {
+     "name": "Malik Benson",
+     "FD": 3500
+    },
+    "dareke young": {
+     "name": "Dareke Young",
+     "FD": 3500
+    }
+   }
   },
   "290992": {
    "ts": "2026-11-15T19:23:28.378076-05:00",

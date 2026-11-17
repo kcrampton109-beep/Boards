@@ -11018,5 +11018,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_11_LV_DEN:TD:td:00-0038783",
+  "tier": "TD",
+  "market": "td",
+  "side": null,
+  "team": "DEN",
+  "pid": "00-0038783",
+  "game_id": "2026_11_LV_DEN",
+  "week": 11,
+  "matchup": "LV @ DEN",
+  "kickoff": "Sun Nov 22, 4:25 PM ET",
+  "pick": "Nate Adkins anytime TD",
+  "line": null,
+  "odds": 550,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": 0.062,
+  "note": "model 22% vs FD 15%",
+  "limit": null,
+  "model_line": -11.4,
+  "flagged": "2026-11-17T18:17:35.266631-05:00",
+  "kickoff_iso": "2026-11-22T16:25:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
