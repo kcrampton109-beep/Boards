@@ -1,0 +1,42 @@
+# Starts the boards' scheduled runs ourselves. Since Nov 13 2026 GitHub fires only about 1 in 6 of this repo's
+# scheduled runs, so CFB, NFL and CBB checked prices every 3-8 hours instead of every 30 minutes. Each ticker run covers
+# one half hour (tools/ticker.py: reads the boards' cron lines, starts each due workflow with input `slot`), then starts
+# the next ticker run (a workflow may start others with GITHUB_TOKEN via workflow_dispatch). The boards keep their own
+# schedules as a backup, and this workflow's cron only restarts the chain if it ever stops.
+name: Ticker
+on:
+  schedule:
+    - cron: "25,55 * * * *"
+  push:   # a change to the ticker starts the chain
+    branches: [main]
+    paths: [".github/workflows/ticker.yml", "tools/ticker.py"]
+  workflow_dispatch:
+concurrency:
+  group: ticker   # one chain: a newer queued run replaces a pending one, so a cron restart never makes a second chain
+  cancel-in-progress: false
+permissions:
+  actions: write
+  contents: read
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start the boards due in this half hour
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: python3 tools/ticker.py
+      - name: Start the next half hour
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run ticker.yml --ref main --repo "${{ github.repository }}"
+      - name: Start the next half hour after a failure (wait for the block to end, so a fault can't loop fast)
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          s=$(( 1800 - $(date +%s) % 1800 - 20 )); [ "$s" -gt 0 ] && sleep "$s"
+          gh workflow run ticker.yml --ref main --repo "${{ github.repository }}"

@@ -10,6 +10,11 @@ on:
     branches: [main]
     paths: [".github/workflows/cbb.yml", "cbb/*.py", "cbb/research/*.py", "cbb/requirements.txt", "cbb/board/index.html", "site/**", "tools/**"]
   workflow_dispatch:
+    inputs:
+      slot:
+        description: Cron slot this run stands in for (set by ticker.yml; GitHub fires only some scheduled runs)
+        type: string
+        default: ""
 concurrency:
   group: cbb   # one run at a time; never share a group with another board (GitHub cancels pending runs in a group)
   cancel-in-progress: false
@@ -30,9 +35,10 @@ jobs:
         name: Plan this run (Eastern time rules)
         run: |
           md=$(date +%m%d); hour=$((10#$(date +%H))); month=$((10#$(date +%m))); year=$(date +%Y)
-          half=${{ github.event_name == 'schedule' && github.event.schedule == '42 * * * *' }}
+          sched="${{ github.event.schedule || inputs.slot }}"   # the cron slot; ticker.yml passes it on workflow_dispatch
+          half=false; [ "$sched" = "42 * * * *" ] && half=true
           engine=true
-          if [ "${{ github.event_name }}" = "schedule" ]; then
+          if [ -n "$sched" ]; then
             if [ "$md" -gt 0412 ] && [ "$md" -lt 1025 ]; then engine=false; fi                # off-season
             if [ "$half" = "true" ] && [ "$hour" -ge 13 ] && [ "$hour" -lt 21 ]; then engine=false; fi   # afternoon: hourly
           fi

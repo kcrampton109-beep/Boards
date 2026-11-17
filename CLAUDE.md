@@ -21,9 +21,13 @@ matter more than win-loss; judge changes by CLV first. Ask the owner before chan
 | `workbooks.yml` | Mon 9 AM ET (13:00 / 14:00 UTC, gate) | both workbooks rebuilt from the published boards |
 | `cbb.yml` | :12 and :42, but :42 skipped 1-9 PM ET; Oct 25 - Apr 12 only | CBB paper board: fetch, refit, ledger commit, publish (no ntfy) |
 | `post.yml` | 9 AM ET daily (13:00 / 14:00 UTC, gate) | social post images + caption → site `/social/`, first image to ntfy |
+| `ticker.yml` | chain of half-hour runs (+ cron :25/:55 restart) | starts cfb/nfl/cbb at their cron slots via workflow_dispatch (input `slot`) |
 | `net-check.yml` | manual | can GitHub reach every data source? |
 
-GitHub skips some scheduled runs under load (~1 in 8 in week 1), so gaps of ~1 h happen. Keep Pages publishes under
+GitHub skips some scheduled runs under load (~1 in 8 in week 1); since Nov 13 2026 it fired only ~1 in 6, so
+`ticker.yml` + `tools/ticker.py` start the boards themselves (owner's OK, Nov 17): each run takes one half hour, reads every
+board's cron lines, dispatches each due slot with input `slot` (plan steps read `github.event.schedule || inputs.slot`),
+skips a slot the board's own cron already ran (last 4 min), then dispatches the next ticker run. Board crons stay as backup. Keep Pages publishes under
 ~10 an hour (GitHub's soft limit for branch-based Pages builds): each engine run publishes once.
 
 When lines post (measured Oct 2026): NFL DraftKings + opener right after Monday Night Football (Tue 4-10 AM ET),

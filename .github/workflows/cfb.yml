@@ -16,6 +16,10 @@ on:
         description: Force a CFBD data refresh (4 API calls)
         type: boolean
         default: false
+      slot:
+        description: Cron slot this run stands in for (set by ticker.yml; GitHub fires only some scheduled runs)
+        type: string
+        default: ""
 concurrency:
   group: cfb   # one run at a time per board; boards publish independently (tools/publish_site.sh)
   cancel-in-progress: false
@@ -38,8 +42,9 @@ jobs:
         name: Plan this run (Eastern time rules)
         run: |
           dow=$(date +%u)   # 1 Mon ... 7 Sun, Eastern because of TZ
-          half=${{ github.event_name == 'schedule' && github.event.schedule == '37 * * * *' }}
-          window=${{ github.event_name == 'schedule' && github.event.schedule == '*/15 8-14 * * 0' }}
+          sched="${{ github.event.schedule || inputs.slot }}"   # the cron slot; ticker.yml passes it on workflow_dispatch
+          half=false; [ "$sched" = "37 * * * *" ] && half=true
+          window=false; [ "$sched" = "*/15 8-14 * * 0" ] && window=true
           engine=true; snap=true
           if [ "$half" = "true" ]; then
             case "$dow" in 5|6) ;; *) snap=false ;; esac

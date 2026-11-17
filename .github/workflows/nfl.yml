@@ -15,6 +15,10 @@ on:
         description: Force a data refresh (nflverse scores, play-by-play, roster; rebuild ratings)
         type: boolean
         default: false
+      slot:
+        description: Cron slot this run stands in for (set by ticker.yml; GitHub fires only some scheduled runs)
+        type: string
+        default: ""
 concurrency:
   group: nfl   # one run at a time per board; boards publish independently (tools/publish_site.sh)
   cancel-in-progress: false
