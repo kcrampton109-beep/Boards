@@ -26657,7 +26657,11 @@
   "opener": 9.5,
   "grp": "mid-major",
   "limit": 12.5,
-  "status": "open"
+  "status": "L",
+  "close": 11.0,
+  "clv": 1.5,
+  "units": -1.0,
+  "final": "Hofstra 66 - Murray State 82"
  },
  {
   "id": "rlm|401920511|total|under",
@@ -27063,13 +27067,17 @@
   "opener": 149.5,
   "grp": "mid-major",
   "limit": 148.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 73,
   "money": 73,
   "bets": 398,
   "moved": 1.0,
-  "mins": 734
+  "mins": 734,
+  "close": 146.0,
+  "clv": 2.5,
+  "units": 0.952,
+  "final": "Hofstra 66 - Murray State 82"
  },
  {
   "id": "rlm|401906773|total|under",
