@@ -10990,5 +10990,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_NE_LAC:STRONG:spread:away",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "team": "NE",
+  "pid": null,
+  "game_id": "2026_12_NE_LAC",
+  "week": 12,
+  "matchup": "NE @ LAC",
+  "kickoff": "Sun Nov 29, 8:20 PM ET",
+  "pick": "NE +5.5",
+  "line": 5.5,
+  "odds": -105,
+  "book": "FD",
+  "stake": 2.0,
+  "edge": 7.1,
+  "note": null,
+  "limit": 1.5,
+  "model_line": 1.6,
+  "flagged": "2026-11-17T15:47:45.236451-05:00",
+  "kickoff_iso": "2026-11-29T20:20:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
