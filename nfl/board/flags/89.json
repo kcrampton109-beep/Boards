@@ -1,0 +1,42 @@
+{
+ "id": 89,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/89",
+ "board": "NFL",
+ "play": "2026_12_PHI_DAL:STRONG:spread:home",
+ "game_id": "2026_12_PHI_DAL",
+ "market": "spread",
+ "side": "home",
+ "line": -1.5,
+ "odds": -105,
+ "book": "MGM",
+ "pick": "DAL -1.5",
+ "tier": "STRONG",
+ "matchup": "PHI @ DAL",
+ "kickoff": "2026-11-26T16:30:00-05:00",
+ "verdict": "void",
+ "forced": false,
+ "reason": "FanDuel's site doesn't list this game. The board's feed (Tue Nov 17, 10:14 AM ET) had DraftKings \u22121.5, FanDuel \u22121.5, BetMGM \u22121.5. DraftKings and BetMGM can't be checked directly.",
+ "fanduel": {
+  "listed": false
+ },
+ "feed": {
+  "as_of": "Tue Nov 17, 10:14 AM ET",
+  "books": {
+   "DK": [
+    -1.5,
+    -110
+   ],
+   "FD": [
+    -1.5,
+    -110
+   ],
+   "MGM": [
+    -1.5,
+    -105
+   ]
+  }
+ },
+ "notes": "Nothing",
+ "flagged_at": "2026-11-17T15:17:28Z",
+ "checked_at": "2026-11-17T15:17:45+00:00"
+}
