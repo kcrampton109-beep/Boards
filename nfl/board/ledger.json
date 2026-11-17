@@ -10850,5 +10850,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_11_TB_DET:RLM:total:under",
+  "tier": "RLM",
+  "market": "total",
+  "side": "under",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_11_TB_DET",
+  "week": 11,
+  "matchup": "TB @ DET",
+  "kickoff": "Sun Nov 22, 1:00 PM ET",
+  "pick": "Under 46.5",
+  "line": 46.5,
+  "odds": -115,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": null,
+  "note": "72% of bets on the over, total moved 46.5 \u2192 45.5",
+  "limit": null,
+  "model_line": -4.5,
+  "flagged": "2026-11-17T09:35:25.629207-05:00",
+  "kickoff_iso": "2026-11-22T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
