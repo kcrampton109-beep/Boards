@@ -10906,5 +10906,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_SEA_SF:STRONG:spread:away",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "team": "SEA",
+  "pid": null,
+  "game_id": "2026_12_SEA_SF",
+  "week": 12,
+  "matchup": "SEA @ SF",
+  "kickoff": "Sun Nov 29, 4:25 PM ET",
+  "pick": "SEA +2.5",
+  "line": 2.5,
+  "odds": -110,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": 3.0,
+  "note": null,
+  "limit": 2.5,
+  "model_line": 0.5,
+  "flagged": "2026-11-17T14:17:37.963373-05:00",
+  "kickoff_iso": "2026-11-29T16:25:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
