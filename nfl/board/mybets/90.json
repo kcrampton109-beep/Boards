@@ -1,0 +1,23 @@
+{
+ "id": 90,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/90",
+ "board": "NFL",
+ "pick": "DET +2.5",
+ "odds": -100,
+ "book": "FanDuel",
+ "amount": 15.0,
+ "notes": "",
+ "matchup": "CHI @ DET",
+ "kickoff": "2026-11-26T13:00:00-05:00",
+ "play": "2026_12_CHI_DET:STRONG:spread:home",
+ "logged": "2026-11-17T22:51:23Z",
+ "updated": "2026-11-17T22:51:32+00:00",
+ "tier": "STRONG",
+ "game_id": "2026_12_CHI_DET",
+ "board_line": 2.5,
+ "board_odds": -100,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 2.5
+}
