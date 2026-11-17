@@ -1,0 +1,23 @@
+{
+ "id": 93,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/93",
+ "board": "NFL",
+ "pick": "NE +5.5",
+ "odds": -105,
+ "book": "FanDuel",
+ "amount": 20.0,
+ "notes": "",
+ "matchup": "NE @ LAC",
+ "kickoff": "2026-11-29T20:20:00-05:00",
+ "play": "2026_12_NE_LAC:STRONG:spread:away",
+ "logged": "2026-11-17T22:53:27Z",
+ "updated": "2026-11-17T22:53:36+00:00",
+ "tier": "STRONG",
+ "game_id": "2026_12_NE_LAC",
+ "board_line": 5.5,
+ "board_odds": -105,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "away",
+ "line": 5.5
+}
