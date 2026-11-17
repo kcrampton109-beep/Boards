@@ -1,0 +1,65 @@
+# "Not available" flag: the owner flags a board play that none of their books is offering (the Bets card's
+# "Not available" button opens a "Flag" issue). tools/flag_play.py checks FanDuel's own site and the board's feed and
+# records the flag (<board>/board/flags/<issue>.json); a standing flag starts a board run at once, and the engine voids
+# the play and ignores that number from then on. Only the repo owner's issues and comments are acted on (the repo is
+# public). If FanDuel still has the number the flag doesn't stand; comment "void anyway" to force it.
+name: Flag a play
+on:
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
+permissions:
+  contents: write
+  issues: write
+  actions: write
+jobs:
+  flag:
+    if: >-
+      startsWith(github.event.issue.title, 'Flag') && contains(github.event.issue.body, '### Board play') &&
+      github.event.issue.user.login == github.repository_owner &&
+      (github.event_name == 'issues' ||
+       (github.event.comment.user.login == github.repository_owner && contains(github.event.comment.body, 'void anyway')))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: America/New_York
+    steps:
+      - uses: actions/checkout@v4
+      - id: chk
+        name: Check the play
+        run: python tools/flag_play.py
+      - name: Save it
+        if: steps.chk.outputs.ok == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A "${{ steps.chk.outputs.board }}/board/flags"
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Flag: issue #${{ github.event.issue.number }}"
+            for i in 1 2 3 4 5; do   # a board run may have pushed first: rebase onto it and retry
+              git pull -q --rebase origin main && git push -q origin HEAD:main && break
+              [ "$i" = 5 ] && exit 1; sleep $((i * 5))
+            done
+          fi
+      - name: Publish flags.json
+        if: steps.chk.outputs.ok == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python tools/flag_play.py --combine "${{ steps.chk.outputs.board }}" _fl
+          bash tools/publish_site.sh "${{ steps.chk.outputs.board }}" _fl
+      - name: Run the board now (it voids the play)
+        if: steps.chk.outputs.ok == 'true' && steps.chk.outputs.verdict == 'void'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run "${{ steps.chk.outputs.workflow }}" --ref main
+      - name: Reply on the issue
+        if: always() && steps.chk.outcome != 'skipped'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --body-file _flag_reply.md
+          if [ "${{ steps.chk.outputs.close }}" = "true" ] && [ "${{ github.event.issue.state }}" = "open" ]; then
+            gh issue close "${{ github.event.issue.number }}"
+          fi

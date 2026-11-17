@@ -6,10 +6,14 @@
      LogBet.open(play, onSaved)   play: {board, play, game_id, matchup, away, home, kickoff, market, side, line, odds, book,
                                          amount, teaser?: [{pick, matchup}]}
      LogBet.edit(bet, onSaved)    a bet from mybets.json (or a pending one)
-     LogBet.pending(board)        bets saved here that mybets.json doesn't have yet */
+     LogBet.pending(board)        bets saved here that mybets.json doesn't have yet
+   "Not available" flags use the same key: a "Flag" issue that .github/workflows/flags.yml checks (tools/flag_play.py).
+     data-flag="<key>"            a play registered in window.__flagplays: {board, play, pick, loggedTxt, matchup, kickoffTxt}
+     data-flag-force="<issue>"    "void anyway" on a flag the check didn't uphold (data-flag-board, data-flag-play)
+     LogBet.flags(board, published)  flags sent from here that flags.json doesn't show yet */
 (function () {
   const REPO = "kcrampton109-beep/Boards", API = `https://api.github.com/repos/${REPO}`;
-  const TOKEN_KEY = "boards-gh-token", PEND_KEY = "boards-pending-bets";
+  const TOKEN_KEY = "boards-gh-token", PEND_KEY = "boards-pending-bets", FLAG_KEY = "boards-pending-flags";
   const store = {
     get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } },
@@ -198,6 +202,56 @@
     };
   }
 
+  // ------------------------------------------------------------ "Not available" flags
+  const flagsAll = () => store.get(FLAG_KEY, []);
+  // flags sent from this phone that flags.json doesn't show yet (a forced one until flags.json shows it forced)
+  function flags(board, published) {
+    const pub = {}; (published || []).forEach(f => { pub[f.id] = f; });
+    const keep = flagsAll().filter(f => Date.now() - f.saved < 864e5 && !(pub[f.id] && (!f.force || pub[f.id].forced)));
+    store.set(FLAG_KEY, keep);
+    return keep.filter(f => f.board === board);
+  }
+  const addFlag = f => store.set(FLAG_KEY, flagsAll().filter(x => !(x.id === f.id && !!x.force === !!f.force)).concat([Object.assign({ saved: Date.now() }, f)]));
+  function flagBody(p, notes) {
+    const rows = [["Board", p.board], ["Bet", p.pick], ["Board play (leave as is)", p.play], ["Board logged", p.loggedTxt],
+                  ["Game", p.matchup], ["Kickoff", p.kickoffTxt], ["Notes", notes]];
+    return rows.map(([k, v]) => `### ${k}\n\n${v == null || v === "" ? "_No response_" : v}`).join("\n\n");
+  }
+  function flagView(p, onSaved) {
+    if (!token()) return connectView(() => flagView(p, onSaved));
+    shell("Not available?", `
+      <div class="lb-play"><b>${esc(p.pick)}</b><span>${esc(p.matchup || "")}${p.kickoffTxt ? " · " + esc(p.kickoffTxt) : ""}</span>
+        ${p.loggedTxt ? `<span>Board logged: ${esc(p.loggedTxt)}</span>` : ""}</div>
+      <p>Flag it when none of your books (DraftKings, FanDuel, BetMGM) is offering this number or better.</p>
+      <p class="lb-note">The board checks FanDuel's own site and its feed; DraftKings and BetMGM block automated checks. Unless FanDuel has the number right now, the play is voided: it leaves the record and won't log again at this number. A different number can still log.</p>
+      <label class="lb-field"><span>What you see (optional)</span><input id="lb-notes" placeholder="e.g. DK has -3.5, FanDuel hasn't posted it"></label>
+      <div class="lb-err" id="lb-err" hidden></div>
+      <div class="lb-actions"><button class="lb-primary" id="lb-flag" type="button">Flag as not available</button></div>`);
+    const err = m => { const e = root.querySelector("#lb-err"); e.hidden = !m; e.textContent = m || ""; };
+    root.querySelector("#lb-flag").onclick = async () => {
+      const btn = root.querySelector("#lb-flag"); btn.disabled = true; btn.textContent = "Sending…"; err("");
+      try {
+        const issue = await gh("POST", "/issues", { title: `Flag (${p.board}): ${p.pick} not available`,
+                                                    body: flagBody(p, root.querySelector("#lb-notes").value.trim()) });
+        addFlag({ id: issue.number, board: p.board, play: p.play, pick: p.pick });
+        root.querySelector(".lb-body").innerHTML = `<p class="lb-ok">✓ Flagged: <b>${esc(p.pick)}</b>.</p>
+          <p class="lb-note">The board checks it within a minute or two; the card shows what it found.</p>
+          <div class="lb-actions"><button class="lb-primary" id="lb-done" type="button">Done</button></div>`;
+        root.querySelector("#lb-done").onclick = () => { close(); onSaved && onSaved(); };
+        root.querySelector("#lb-done").focus();
+      } catch (e) { btn.disabled = false; btn.textContent = "Flag as not available"; err(e.message); }
+    };
+  }
+  async function voidAnyway(id, board, play, onSaved) {
+    if (!token()) return connectView(() => voidAnyway(id, board, play, onSaved));
+    if (!confirm("Void this play anyway? It leaves the record and won't log again at this number.")) return;
+    try {
+      await gh("POST", `/issues/${id}/comments`, { body: "void anyway" });
+      addFlag({ id: +id, board, play, force: true });
+      onSaved && onSaved();
+    } catch (e) { alert(e.message); }
+  }
+
   function edit(b, onSaved) {
     const [away, home] = String(b.matchup || "").split(/ @ | vs /);
     betView({ board: b.board, play: b.play, game_id: b.game_id, matchup: b.matchup, away, home, kickoff: b.kickoff, kickoffTxt: "",
@@ -209,13 +263,15 @@
 
   // every board card's button carries data-take (a play registered in window.__takes) or data-edit (window.__edits)
   document.addEventListener("click", e => {
-    const t = e.target.closest && e.target.closest("[data-take], [data-edit]");
+    const t = e.target.closest && e.target.closest("[data-take], [data-edit], [data-flag], [data-flag-force]");
     if (!t) return;
     e.preventDefault();
     if (t.dataset.take && window.__takes && window.__takes[t.dataset.take]) betView(window.__takes[t.dataset.take], null, window.__afterLog);
     if (t.dataset.edit && window.__edits && window.__edits[t.dataset.edit]) edit(window.__edits[t.dataset.edit], window.__afterLog);
+    if (t.dataset.flag && window.__flagplays && window.__flagplays[t.dataset.flag]) flagView(window.__flagplays[t.dataset.flag], window.__afterLog);
+    if (t.dataset.flagForce) voidAnyway(t.dataset.flagForce, t.dataset.flagBoard, t.dataset.flagPlay, window.__afterLog);
   });
 
-  window.LogBet = { open: (p, onSaved) => betView(p, null, onSaved), edit, pending, removed, connected: () => !!token(),
+  window.LogBet = { open: (p, onSaved) => betView(p, null, onSaved), edit, pending, removed, flags, connected: () => !!token(),
                     disconnect: () => store.set(TOKEN_KEY, "") };
 })();

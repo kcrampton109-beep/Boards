@@ -19,6 +19,10 @@ def main(dest):
     bets = sorted((json.loads(p.read_text(encoding="utf-8")) for p in (BOARD / "mybets").glob("*.json")),
                   key=lambda b: (b.get("logged") or "", b.get("id") or 0))
     (dest / "mybets.json").write_text(json.dumps(bets), encoding="utf-8")
+    # "Not available" flags (one file per flag, .github/workflows/flags.yml), newest first
+    flags = sorted((json.loads(p.read_text(encoding="utf-8")) for p in (BOARD / "flags").glob("*.json")),
+                   key=lambda f: (f.get("checked_at") or "", f.get("id") or 0), reverse=True)
+    (dest / "flags.json").write_text(json.dumps(flags), encoding="utf-8")
     if (BOARD / "scores.json").exists():
         shutil.copy(BOARD / "scores.json", dest / "scores.json")
     gen = dt.datetime.fromisoformat(state["generated_iso"])

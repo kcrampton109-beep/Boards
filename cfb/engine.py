@@ -366,6 +366,7 @@ def price(ml, live):
     up = ml[(ml["completed"] != True)].merge(live[live["book"].isin(list(BOOKS))], on="game_id")
     up = up[up["status"].isin(["scheduled", None]) | up["status"].isna()]
     cons = live[live["book"] == 15].set_index("game_id")
+    flagged = load_flags()
     rows = []
     for gid, d in up.groupby("game_id"):
         if "next" in d and d["next"].any() and (d["sp_home"].notna().sum() if "sp_home" in d else 0) < 2:
@@ -389,8 +390,56 @@ def price(ml, live):
                                                      "under_odds", "ml_home", "ml_away", "h1_home", "h1_home_odds", "h1_away", "h1_away_odds")
                                            if hasattr(b, k)}
         drop_stale(rec)
+        drop_flagged(rec, flagged)
         rows.append(rec)
     return rows
+
+
+def load_flags():
+    """The owner's "Not available" flags that stand (tools/flag_play.py, verdict void): {game id as text: [flag]}."""
+    out = {}
+    for p in sorted((BOARD / "flags").glob("*.json")):
+        try:
+            f = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if f.get("verdict") == "void" and f.get("line") is not None and f.get("market") in ("spread", "total"):
+            out.setdefault(str(f["game_id"]), []).append(f)
+    return out
+
+
+def drop_flagged(rec, flagged):
+    """Ignore every book quote at a number the owner flagged as not available at any of their books, or better for that
+    side, so it can't log again; a different number still can. Nov 17: NFL DAL -1.5 sat in the feed at all three books
+    hours before any of them offered it."""
+    for f in flagged.get(str(rec["game_id"]), []):
+        for k, v in rec["books"].items():
+            if f["market"] == "spread":
+                val = v.get("sp_home") if f["side"] == "home" else v.get("sp_away")
+                if val is None:
+                    other = v.get("sp_away") if f["side"] == "home" else v.get("sp_home")
+                    val = -other if other is not None else None
+                hit = val is not None and val >= f["line"] - 1e-9
+                fields = ("sp_home", "sp_home_odds", "sp_away", "sp_away_odds")
+            else:
+                val = v.get("tot")
+                hit = val is not None and (val >= f["line"] - 1e-9 if f["side"] == "under" else val <= f["line"] + 1e-9)
+                fields = ("tot", "over_odds", "under_odds")
+            if hit:
+                for x in fields:
+                    v[x] = None
+                rec.setdefault("flagged_books", []).append(f"{k} {f['market']} {val:g}")
+
+
+def void_flagged(led, flagged):
+    """Void the open ledger entry behind each standing flag: the owner couldn't get it at any of their books."""
+    for fs in flagged.values():
+        for f in fs:
+            for e in led:
+                if e["id"] == f["play"] and e["status"] == "open":
+                    e["status"] = "void"
+                    e["note"] = ("Voided: flagged as not available at your books "
+                                 f"({str(f.get('checked_at') or '')[:10]}). {f.get('reason') or ''}").strip()
 
 
 def drop_stale(rec):
@@ -512,6 +561,7 @@ def flags(games, sit):
 # ---------------------------------------------------------------- 4/5. ledger
 def update_ledger(fl, games, ml, live):
     led = load_json(LEDGER, [])
+    void_flagged(led, load_flags())
     # best tier already logged per play; a play first logged as a lean that later reaches a main tier (the gap grew)
     # is logged again at the new tier and today's price, under id "<play id>|<tier>"
     have = {}

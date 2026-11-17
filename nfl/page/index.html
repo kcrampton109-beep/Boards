@@ -199,6 +199,7 @@ async function load() {
   try { const r = await fetch("ledger.json", { cache: "no-store" }); if (r.ok) S.fullLedger = await r.json(); } catch (e) {}
   // My Bets: the owner's logged bets and the final scores that grade them
   try { const r = await fetch("mybets.json", { cache: "no-store" }); if (r.ok) S.myBets = await r.json(); } catch (e) {}
+  try { const r = await fetch("flags.json", { cache: "no-store" }); if (r.ok) S.flags = await r.json(); } catch (e) {}
   try { const r = await fetch("scores.json", { cache: "no-store" }); if (r.ok) S.scores = await r.json(); } catch (e) {}
   return S;
 }
@@ -330,11 +331,33 @@ function render(S) {
   const nowOf = (g, p) => !g || g.started ? { kind: "live", text: "Kicked off, result pending" }
     : !p ? { kind: "gone", text: "No longer a play at current prices: skip it if you haven't bet it" }
     : { kind: "ok", text: `Still a play: ${p.pick} ${odds(p.odds)} at ${BOOKN[p.book] || p.book}${p.stake ? ` · bet ${+p.stake}u ($${+(p.stake * UNIT).toFixed(2)}) at this price` : ""}` };
+  // "Not available" flags (../logbet.js sends them, .github/workflows/flags.yml checks them); flags.json is newest first
+  const flagplays = window.__flagplays = {};
+  const flagList = S.flags || [];
+  const pendFlags = window.LogBet && LogBet.flags ? LogBet.flags("NFL", flagList) : [];
+  const tms = s => { const t = Date.parse(String(s || "").replace(" ", "T").replace(/\.\d+/, "")); return isNaN(t) ? 0 : t; };
+  const flagKeyFor = e => { const k = "f" + (++nKey);
+    flagplays[k] = { board: "NFL", play: e.id, pick: e.pick, loggedTxt: `${e.pick} ${odds(e.odds)} ${BOOKN[e.book] || e.book}`,
+                     matchup: e.matchup, kickoffTxt: e.kickoff };
+    return k; };
+  // a flag counts for the entry logged before it (a play voided by a flag can log again later at another number)
+  const flagOf = e => {
+    const pend = pendFlags.filter(f => f.play === e.id).pop();
+    if (pend) return { kind: "live", text: pend.force ? "Voiding it: the board drops it on its next update, within a few minutes."
+      : "Flag sent: the board is checking FanDuel's site and its feed (a minute or two)." };
+    const f = flagList.find(x => x.play === e.id && tms(x.checked_at) >= tms(e.flagged));
+    if (!f) return null;
+    if (f.verdict === "void") return { kind: "gone", text: `Flagged not available: it's voided on the board's next update. ${f.reason}` };
+    return { kind: "ok", text: `Not voided: ${f.reason} If you still can't get it at any of your books:`, force: { id: f.id, board: "NFL", play: e.id } };
+  };
+  const flaggedList = flagList.filter(f => f.verdict === "void" && Date.now() - tms(f.checked_at) < 14 * 864e5).map(f => ({
+    pick: f.pick, label: tierName(f.tier), matchup: f.matchup, kickoff: etTxt(f.kickoff), when: etTxt(f.checked_at), text: f.reason }));
   const openBets = betLed.filter(e => e.status === "open").map(e => {
     const g = games[e.game_id], p = playBy[e.id];
     return { label: tierName(e.tier), pick: e.pick, odds: odds(e.odds), app: BOOKN[e.book] || e.book, stake: e.stake, matchup: e.matchup,
              kickoff: e.kickoff, sortKey: (g && g.kickoff_iso) || e.kickoff, logged: etTxt(e.flagged), playTo: playTo(e, p), now: nowOf(g, p),
-             take: takeFor(e, p), mine: mineOf(e.id) };
+             take: takeFor(e, p), mine: mineOf(e.id), flag: flagOf(e),
+             flagKey: g && !g.started && ["spread", "total"].includes(e.market) ? flagKeyFor(e) : null };
   });
   plays.filter(p => BET.includes(p.tier) && !p.lookahead && !games[p.game_id].started && !betLed.some(e => e.id === p.id)).forEach(p => {
     const g = games[p.game_id];
@@ -362,6 +385,7 @@ function render(S) {
               { label: "2-team teasers", rec: `${tz.pairs_w || 0}-${tz.pairs_l || 0}`, units: tz.units || 0 }],
     open: openBets,
     pairs: teaserCards,
+    flagged: flaggedList,
     settled: betLed.filter(e => e.status !== "open").sort((a, b) => (b.flagged || "").localeCompare(a.flagged || "")).map(e => ({
       status: e.status, label: tierName(e.tier), pick: e.pick, matchup: e.matchup, kickoff: e.kickoff, odds: odds(e.odds),
       app: BOOKN[e.book] || e.book, stake: e.stake, units: e.units, clv: e.clv, final: e.final })),

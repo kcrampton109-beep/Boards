@@ -6,7 +6,9 @@
      data.open      [{label, pick, odds, app, stake, matchup, kickoff, logged, playTo, now: {kind: ok|gone|live, text}, sortKey}]
      data.pairs     [{legs: [{pick, matchup, kickoff}], stake, price, playTo, logged, now}]   2-team teasers to bet together
      data.settled   [{status, label, pick, matchup, kickoff, odds, app, stake, units, clv, final, logged}]
-     data.emptyOpen text shown when nothing is open */
+     data.flagged   [{pick, label, matchup, kickoff, when, text}]   plays the owner flagged "Not available" (voided)
+     data.emptyOpen text shown when nothing is open
+   An open card may carry flagKey (shows a "Not available" button, site/logbet.js) and flag: {kind, text, force?} */
 (function () {
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const sgn = (v, d = 1) => v == null || isNaN(v) ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d).replace(/\.0+$/, "");
@@ -21,8 +23,19 @@
     const now = n => n ? `<div class="now ${n.kind}">${esc(n.text)}</div>` : "";
     // "Log bet" (x.take: key of a play the page registered for the in-board panel, site/logbet.js) and the owner's
     // logged bets on the play (x.mine: short descriptions)
-    const took = x => (x.mine && x.mine.length ? `<div class="b-mine">✓ You bet ${x.mine.map(esc).join("; ")}</div>` : "")
-      + (x.take ? `<button class="b-take" type="button" data-take="${esc(x.take)}">${x.mine && x.mine.length ? "Log another bet on this" : "Log bet"}</button>` : "");
+    // "Not available" (x.flagKey: a play the page registered for the flag panel) and what the flag check found (x.flag)
+    const took = x => {
+      const bet = x.mine && x.mine.length;
+      const mine = bet ? `<div class="b-mine">✓ You bet ${x.mine.map(esc).join("; ")}</div>` : "";
+      const take = x.take ? `<button class="b-take" type="button" data-take="${esc(x.take)}">${bet ? "Log another bet on this" : "Log bet"}</button>` : "";
+      // not on "No longer plays" cards: a line that moved after it was logged was available, just missed
+      const flagBtn = x.flagKey && !x.flag && !bet && !(x.now && x.now.kind === "gone")
+        ? `<button class="b-take b-flagbtn" type="button" data-flag="${esc(x.flagKey)}">Not available</button>` : "";
+      const f = x.flag;
+      const flag = f ? `<div class="b-flag ${esc(f.kind)}">${esc(f.text)}${f.force ? ` <button class="b-take b-flagbtn" type="button" data-flag-force="${esc(f.force.id)}"
+          data-flag-board="${esc(f.force.board)}" data-flag-play="${esc(f.force.play)}">Void anyway</button>` : ""}</div>` : "";
+      return mine + (take || flagBtn ? `<div class="b-acts">${take}${flagBtn}</div>` : "") + flag;
+    };
 
     const betCard = b => `<article class="bet ${b.now ? b.now.kind : ""}">
         <div class="top"><span class="tag">${esc(b.label)}</span><span class="num">${stake(b.stake)}</span></div>
@@ -43,6 +56,7 @@
     const gone = open.filter(b => b.now && b.now.kind === "gone"), active = open.filter(b => !(b.now && b.now.kind === "gone"));
     const pairs = d.pairs || [];
     const settled = d.settled || [];
+    const flagged = d.flagged || [];
     el.innerHTML = `<div class="bets">
       <p>${d.intro} Dollars use $${unit} a unit. Bet at the price shown or better and never past the <b>playable to</b> number.</p>
       <div class="bets-sum">${(d.summary || []).map(s => `<div><span class="b-lab">${esc(s.label)}</span><span class="b-rec num">${esc(s.rec)}</span>
@@ -53,6 +67,11 @@
       ${gone.length ? `<h2>No longer plays<span class="n num">${gone.length}</span></h2>
       <p>Logged earlier, but the line has since moved past the playable number. Skip these unless you already bet them; they are still graded.</p>
       <div class="bets-grid">${gone.map(betCard).join("")}</div>` : ""}
+      ${flagged.length ? `<h2>Flagged not available<span class="n num">${flagged.length}</span></h2>
+      <p>Plays you flagged because none of your books offered the number. They're voided: they don't count in the record and won't log again at that number.</p>
+      <div class="bets-tbl"><table><thead><tr><th>Bet</th><th>Flagged</th><th>What the check found</th></tr></thead><tbody>
+        ${flagged.map(f => `<tr><td class="g"><b>${esc(f.pick)}</b> <span class="sub">${esc([f.label, f.matchup, f.kickoff].filter(Boolean).join(" · "))}</span></td>
+          <td class="num">${esc(f.when)}</td><td class="g"><span class="sub">${esc(f.text)}</span></td></tr>`).join("")}</tbody></table></div>` : ""}
       <h2>Settled<span class="n num">${settled.length}</span></h2>
       ${settled.length ? `<div class="bets-tbl"><table><thead><tr><th>Result</th><th>Bet</th><th class="r">Price</th><th class="r">Stake</th><th class="r">Won / lost</th><th class="r">CLV</th></tr></thead><tbody>
         ${settled.map(r => `<tr><td><span class="res ${esc(r.status)}">${esc(r.status)}</span></td>

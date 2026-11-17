@@ -47,3 +47,10 @@
 .bets p a { color: var(--ink) }
 .b-link { font: inherit; color: var(--ink); background: none; border: 0; padding: 0; text-decoration: underline; cursor: pointer }
 button.b-take { cursor: pointer }
+/* "Not available" flag (site/logbet.js, .github/workflows/flags.yml) */
+.b-acts { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+.b-flagbtn { border-color: var(--rule); color: var(--muted) }
+.b-flagbtn:hover, .b-flagbtn:focus-visible { background: var(--muted); border-color: var(--muted); color: var(--card) }
+.b-flag { font-size: 13px; line-height: 1.45; padding-top: 6px; border-top: 1px dashed var(--rule); color: var(--muted) }
+.b-flag.gone { color: var(--loss) }
+.b-flag .b-flagbtn { margin-top: 6px }

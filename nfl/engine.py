@@ -280,6 +280,59 @@ def team_name(t):
 
 
 # ---------------------------------------------------------------- 4. plays
+def load_flags():
+    """The owner's "Not available" flags that stand (tools/flag_play.py, verdict void): {game id: [flag]}."""
+    out = {}
+    for p in sorted((BOARD / "flags").glob("*.json")):
+        try:
+            f = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if f.get("verdict") == "void" and f.get("line") is not None and f.get("market") in ("spread", "total"):
+            out.setdefault(str(f["game_id"]), []).append(f)
+    return out
+
+
+def drop_flagged(books, flags):
+    """A copy of one game's book quotes without any DK / FD / BetMGM number the owner flagged as not available at any of
+    their books, or better for that side, so it can't log again; a different number still can. Nov 17: DAL -1.5 sat
+    in the feed at all three books hours before any of them offered it."""
+    if not flags:
+        return books
+    out = {k: dict(v) for k, v in books.items()}
+    for f in flags:
+        for k in ("68", "69", "75"):
+            v = out.get(k)
+            if not v:
+                continue
+            if f["market"] == "spread":
+                val = v.get("sp_home") if f["side"] == "home" else v.get("sp_away")
+                if val is None:
+                    other = v.get("sp_away") if f["side"] == "home" else v.get("sp_home")
+                    val = -other if other is not None else None
+                hit = val is not None and val >= f["line"] - 1e-9
+                fields = ("sp_home", "sp_home_odds", "sp_away", "sp_away_odds")
+            else:
+                val = v.get("total_u") if f["side"] == "under" and v.get("total_u") is not None else v.get("total")
+                hit = val is not None and (val >= f["line"] - 1e-9 if f["side"] == "under" else val <= f["line"] + 1e-9)
+                fields = ("total", "total_u", "over_odds", "under_odds")
+            if hit:
+                for x in fields:
+                    v.pop(x, None)
+    return out
+
+
+def void_flagged(ledger, flagged):
+    """Void the open ledger entry behind each standing flag: the owner couldn't get it at any of their books."""
+    for fs in flagged.values():
+        for f in fs:
+            for e in ledger:
+                if e["id"] == f["play"] and e.get("status") == "open":
+                    e["status"] = "void"
+                    e["note"] = ("Voided: flagged as not available at your books "
+                                 f"({str(f.get('checked_at') or '')[:10]}). {f.get('reason') or ''}").strip()
+
+
 def spread_play(gm, bp, qbs):
     ml = gm["model_line"]
     if "home" not in bp or "away" not in bp or ml is None or np.isnan(ml):
@@ -575,6 +628,8 @@ def main(args=()):
     for e in ledger:   # entries logged before Oct 19 have only a display kickoff: add the exact one
         if not e.get("kickoff_iso") and e.get("game_id") in starts:
             e["kickoff_iso"] = pd.Timestamp(starts[e["game_id"]]).isoformat()
+    flagged = load_flags()
+    void_flagged(ledger, flagged)   # the owner's "Not available" flags (tools/flag_play.py)
     have = {e["id"] for e in ledger if e.get("status") != "void"}   # a voided play can log again later
 
     # results for grading (Action Network finals; nflverse scores as a fallback)
@@ -612,7 +667,7 @@ def main(args=()):
         x = an_by.get((r.away, r.home, r.week)) or {}
         cb = cbs.get((r.away, r.home, r.week)) or cbs.get((r.home, r.away, r.week))
         started = r.start <= now or x.get("status") in ("inprogress", "complete")
-        books = x.get("books", {})
+        books = drop_flagged(x.get("books", {}), flagged.get(str(r.game_id)))
         # A book's line counts only if it agrees with the others: the user's books (DK/FD/MGM) whose spread is 1.5+
         # points off their median are ignored for prices (two books 3+ apart -> neither). Oct 20: next week's DK and FD
         # look-ahead lines were up to 5 points apart and neither matched the user's apps.

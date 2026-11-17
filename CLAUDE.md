@@ -74,6 +74,16 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   alerted), but each spread/total look-ahead card on the NFL Plays tab has a "Log bet" button. The bet is saved with
   play `look:<play id>` (`tools/log_bet.py` → tier LOOKAHEAD, "Look-ahead" on My Bets), tied to the game and graded
   from scores.json; `mineOf` also matches `look:<id>`, so the later regular play shows "You bet".
+- **Not available flag** (owner's request, Nov 17): open Bets cards on both boards have a "Not available" button for a logged
+  play that none of the owner's books offers (`site/logbet.js` panel, same phone token as Log bet; not on "No longer plays" cards:
+  a line that moved after logging was available, just missed). It opens a "Flag" issue; `.github/workflows/flags.yml` runs
+  `tools/flag_play.py`, which checks FanDuel's own site (public JSON, `customPageId` nfl / ncaaf) and the board's feed (published
+  state.json). DraftKings and BetMGM refuse automated reads: don't try to get around it. Verdict void unless FanDuel offers the
+  logged number or better right now; a "void anyway" comment forces it. One file per flag (`<board>/board/flags/<issue>.json`);
+  the workflow publishes flags.json and starts a board run, and the engines (`load_flags`, `void_flagged`, `drop_flagged`) void
+  the open entry and ignore every DK/FD/MGM quote at that number or better for that side, so it can't log again (another number
+  can). Why: Nov 17 NFL DAL -1.5 logged at 4:12 AM from feed numbers at all three books before any of them offered it; NFL Strong
+  plays logged Monday night to Tuesday 2:40 PM for next week's games were 12-4, CLV +2.84 vs 16-10, CLV +1.21 for the rest.
 - **NFL book agreement**: a book whose spread is 1.5+ pts off the median of DK/FD/MGM is ignored for prices (Oct 20:
   DK and FD next-week lines up to 5 pts apart).
 - **CFB stale lines**: a book 3+ points off consensus is ignored (`RULES["stale_pts"]`), checked through either side of

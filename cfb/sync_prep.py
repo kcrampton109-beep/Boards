@@ -17,6 +17,10 @@ shutil.copy(B / "ledger.json", out / "ledger.json")   # full history for the Tod
 bets = sorted((json.loads(p.read_text(encoding="utf-8")) for p in (B / "mybets").glob("*.json")),
               key=lambda b: (b.get("logged") or "", b.get("id") or 0))
 (out / "mybets.json").write_text(json.dumps(bets), encoding="utf-8")
+# "Not available" flags (one file per flag, .github/workflows/flags.yml), newest first
+flags = sorted((json.loads(p.read_text(encoding="utf-8")) for p in (B / "flags").glob("*.json")),
+               key=lambda f: (f.get("checked_at") or "", f.get("id") or 0), reverse=True)
+(out / "flags.json").write_text(json.dumps(flags), encoding="utf-8")
 if (B / "scores.json").exists():
     shutil.copy(B / "scores.json", out / "scores.json")
 
