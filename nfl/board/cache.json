@@ -4631,8 +4631,117 @@
    }
   },
   "290985": {
-   "ts": "2026-11-15T15:35:36.185005-05:00",
-   "odds": {}
+   "ts": "2026-11-17T22:17:34.519570-05:00",
+   "odds": {
+    "jahmyr gibbs": {
+     "name": "Jahmyr Gibbs",
+     "FD": -270
+    },
+    "amon-ra st brown": {
+     "name": "Amon-Ra St. Brown",
+     "FD": -135
+    },
+    "bucky irving": {
+     "name": "Bucky Irving",
+     "FD": 125
+    },
+    "sam laporta": {
+     "name": "Sam LaPorta",
+     "FD": 210
+    },
+    "jameson williams": {
+     "name": "Jameson Williams",
+     "FD": 220
+    },
+    "emeka egbuka": {
+     "name": "Emeka Egbuka",
+     "FD": 330
+    },
+    "jalon daniels": {
+     "name": "Jalon Daniels",
+     "FD": 380
+    },
+    "isaac teslaa": {
+     "name": "Isaac TeSlaa",
+     "FD": 450
+    },
+    "chris godwin": {
+     "name": "Chris Godwin",
+     "FD": 470
+    },
+    "kenneth gainwell": {
+     "name": "Kenneth Gainwell",
+     "FD": 490
+    },
+    "sione vaki": {
+     "name": "Sione Vaki",
+     "FD": 550
+    },
+    "tez johnson": {
+     "name": "Tez Johnson",
+     "FD": 550
+    },
+    "cade otton": {
+     "name": "Cade Otton",
+     "FD": 600
+    },
+    "sean tucker": {
+     "name": "Sean Tucker",
+     "FD": 700
+    },
+    "tampa bay defense": {
+     "name": "Tampa Bay Defense",
+     "FD": 800
+    },
+    "detroit defense": {
+     "name": "Detroit Defense",
+     "FD": 850
+    },
+    "jared goff": {
+     "name": "Jared Goff",
+     "FD": 1200
+    },
+    "brock wright": {
+     "name": "Brock Wright",
+     "FD": 1200
+    },
+    "ted hurst": {
+     "name": "Ted Hurst III",
+     "FD": 1200
+    },
+    "deandre carter": {
+     "name": "DeAndre Carter",
+     "FD": 1500
+    },
+    "payne durham": {
+     "name": "Payne Durham",
+     "FD": 1800
+    },
+    "tyler conklin": {
+     "name": "Tyler Conklin",
+     "FD": 1900
+    },
+    "jacob saylors": {
+     "name": "Jacob Saylors",
+     "FD": 2200
+    },
+    "tay martin": {
+     "name": "Tay Martin",
+     "FD": 3300
+    },
+    "bauer sharp": {
+     "name": "Bauer Sharp",
+     "FD": 3500
+    },
+    "kameron johnson": {
+     "name": "Kameron Johnson",
+     "FD": 3500
+    },
+    "ko kieft": {
+     "name": "Ko Kieft",
+     "FD": 5000
+    }
+   }
   },
   "290984": {
    "ts": "2026-11-17T20:17:33.138546-05:00",
