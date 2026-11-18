@@ -5273,7 +5273,7 @@
    }
   },
   "290986": {
-   "ts": "2026-11-18T11:47:55.598929-05:00",
+   "ts": "2026-11-18T15:17:36.394101-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -5285,7 +5285,7 @@
     },
     "travis kelce": {
      "name": "Travis Kelce",
-     "FD": 185
+     "FD": 190
     },
     "josh downs": {
      "name": "Josh Downs",
@@ -5299,57 +5299,57 @@
      "name": "Xavier Worthy",
      "FD": 370
     },
-    "noah gray": {
-     "name": "Noah Gray",
-     "FD": 380
-    },
-    "jake briningstool": {
-     "name": "Jake Briningstool",
-     "FD": 380
-    },
     "tyler allgeier": {
      "name": "Tyler Allgeier",
      "FD": 380
     },
     "bam knight": {
      "name": "Bam Knight",
-     "FD": 460
+     "FD": 440
+    },
+    "noah gray": {
+     "name": "Noah Gray",
+     "FD": 480
     },
     "patrick mahomes": {
      "name": "Patrick Mahomes",
-     "FD": 470
-    },
-    "cyrus allen": {
-     "name": "Cyrus Allen",
-     "FD": 490
+     "FD": 480
     },
     "arizona defense": {
      "name": "Arizona Defense",
-     "FD": 550
+     "FD": 500
+    },
+    "cyrus allen": {
+     "name": "Cyrus Allen",
+     "FD": 500
     },
     "jaydn ott": {
      "name": "Jaydn Ott",
      "FD": 750
     },
-    "reggie virgil": {
-     "name": "Reggie Virgil",
-     "FD": 800
-    },
     "elijah higgins": {
      "name": "Elijah Higgins",
      "FD": 850
     },
-    "devin duvernay": {
-     "name": "Devin Duvernay",
-     "FD": 950
+    "reggie virgil": {
+     "name": "Reggie Virgil",
+     "FD": 850
     },
     "simi fehoko": {
      "name": "Simi Fehoko",
-     "FD": 1000
+     "FD": 900
     },
     "kansas city defense": {
      "name": "Kansas City Defense",
      "FD": 1000
+    },
+    "devin duvernay": {
+     "name": "Devin Duvernay",
+     "FD": 1000
+    },
+    "jake briningstool": {
+     "name": "Jake Briningstool",
+     "FD": 1300
     },
     "carson beck": {
      "name": "Carson Beck",
@@ -5363,12 +5363,12 @@
      "name": "Andrew Armstrong",
      "FD": 1900
     },
-    "ben vansumeren": {
-     "name": "Ben VanSumeren",
-     "FD": 2200
-    },
     "hunter long": {
      "name": "Hunter Long",
+     "FD": 2000
+    },
+    "ben vansumeren": {
+     "name": "Ben VanSumeren",
      "FD": 2200
     },
     "evan hull": {

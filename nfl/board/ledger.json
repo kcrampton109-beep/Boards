@@ -11074,5 +11074,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_11_PIT_PHI:RLM:total:under",
+  "tier": "RLM",
+  "market": "total",
+  "side": "under",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_11_PIT_PHI",
+  "week": 11,
+  "matchup": "PIT @ PHI",
+  "kickoff": "Sun Nov 22, 4:25 PM ET",
+  "pick": "Under 37.5",
+  "line": 37.5,
+  "odds": -105,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "82% of bets on the over, total moved 38.5 \u2192 37.5",
+  "limit": null,
+  "model_line": 3.7,
+  "flagged": "2026-11-18T15:17:36.394101-05:00",
+  "kickoff_iso": "2026-11-22T16:25:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
