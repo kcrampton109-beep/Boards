@@ -27046,7 +27046,11 @@
   "opener": 142.5,
   "grp": "power 6",
   "limit": 148.0,
-  "status": "open"
+  "status": "L",
+  "close": 145.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Eastern Washington 71 - Utah 67"
  },
  {
   "id": "401911521|spread|302",
@@ -29679,6 +29683,31 @@
   "opener": 138.5,
   "grp": "power 6",
   "limit": 137.5,
+  "status": "open"
+ },
+ {
+  "id": "401920514|spread|248",
+  "base": "401920514|spread|248",
+  "flagged": "2026-11-17T23:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401920514,
+  "matchup": "Houston vs Florida",
+  "kickoff": "2026-11-18T16:30:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 248,
+  "pick": "Houston +2.5",
+  "book": "FD",
+  "line": 2.5,
+  "odds": -120.0,
+  "stake": 1.0,
+  "edge": 3.6,
+  "model": 1.1,
+  "opener": 1.5,
+  "grp": "power 6",
+  "limit": 2.0,
   "status": "open"
  }
 ]
