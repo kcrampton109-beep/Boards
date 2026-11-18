@@ -11102,5 +11102,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_11_NYJ_LAC:TD:td:00-0039391",
+  "tier": "TD",
+  "market": "td",
+  "side": null,
+  "team": "LAC",
+  "pid": "00-0039391",
+  "game_id": "2026_11_NYJ_LAC",
+  "week": 11,
+  "matchup": "NYJ @ LAC",
+  "kickoff": "Sun Nov 22, 4:05 PM ET",
+  "pick": "Kimani Vidal anytime TD",
+  "line": null,
+  "odds": 470,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": 0.054,
+  "note": "model 23% vs FD 18%",
+  "limit": null,
+  "model_line": -3.9,
+  "flagged": "2026-11-18T16:47:52.386313-05:00",
+  "kickoff_iso": "2026-11-22T16:05:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]

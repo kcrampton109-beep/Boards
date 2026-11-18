@@ -521,6 +521,24 @@
     "temp": 61.0,
     "precip": 11
    }
+  },
+  "2026_11_LV_DEN": {
+   "ts": "2026-11-18T16:47:52.386313-05:00",
+   "wx": {
+    "wind": 3.4,
+    "gust": 3.4,
+    "temp": 44.0,
+    "precip": 0
+   }
+  },
+  "2026_11_PIT_PHI": {
+   "ts": "2026-11-18T16:47:52.386313-05:00",
+   "wx": {
+    "wind": 3.4,
+    "gust": 10.7,
+    "temp": 61.0,
+    "precip": 37
+   }
   }
  },
  "props": {
@@ -5507,50 +5525,74 @@
    }
   },
   "290991": {
-   "ts": "2026-11-18T13:47:32.899395-05:00",
+   "ts": "2026-11-18T16:47:52.386313-05:00",
    "odds": {
     "omarion hampton": {
      "name": "Omarion Hampton",
-     "FD": 120
-    },
-    "breece hall": {
-     "name": "Breece Hall",
-     "FD": 160
+     "FD": 125
     },
     "garrett wilson": {
      "name": "Garrett Wilson",
-     "FD": 190
+     "FD": 175
     },
-    "braelon allen": {
-     "name": "Braelon Allen",
-     "FD": 230
+    "breece hall": {
+     "name": "Breece Hall",
+     "FD": 180
+    },
+    "tre harris": {
+     "name": "Tre Harris",
+     "FD": 220
+    },
+    "ladd mcconkey": {
+     "name": "Ladd McConkey",
+     "FD": 220
     },
     "adonai mitchell": {
      "name": "Adonai Mitchell",
+     "FD": 240
+    },
+    "braelon allen": {
+     "name": "Braelon Allen",
      "FD": 260
+    },
+    "charlie kolar": {
+     "name": "Charlie Kolar",
+     "FD": 350
     },
     "justin herbert": {
      "name": "Justin Herbert",
-     "FD": 350
+     "FD": 360
     },
-    "kimani vidal": {
-     "name": "Kimani Vidal",
-     "FD": 410
+    "quentin johnston": {
+     "name": "Quentin Johnston",
+     "FD": 370
     },
     "keaton mitchell": {
      "name": "Keaton Mitchell",
-     "FD": 440
+     "FD": 460
     },
     "mason taylor": {
      "name": "Mason Taylor",
-     "FD": 490
+     "FD": 460
     },
-    "la chargers defense": {
-     "name": "LA Chargers Defense",
-     "FD": 600
+    "kimani vidal": {
+     "name": "Kimani Vidal",
+     "FD": 470
+    },
+    "oronde gadsden": {
+     "name": "Oronde Gadsden",
+     "FD": 500
     },
     "kenyon sadiq": {
      "name": "Kenyon Sadiq",
+     "FD": 550
+    },
+    "david njoku": {
+     "name": "David Njoku",
+     "FD": 550
+    },
+    "la chargers defense": {
+     "name": "LA Chargers Defense",
      "FD": 600
     },
     "new york jets defense": {
@@ -5559,19 +5601,39 @@
     },
     "isaiah williams": {
      "name": "Isaiah Williams",
-     "FD": 800
+     "FD": 750
+    },
+    "tim patrick": {
+     "name": "Tim Patrick",
+     "FD": 750
+    },
+    "derius davis": {
+     "name": "Derius Davis",
+     "FD": 1000
     },
     "geno smith": {
      "name": "Geno Smith",
-     "FD": 1600
+     "FD": 1300
+    },
+    "jelani woods": {
+     "name": "Jelani Woods",
+     "FD": 1800
     },
     "malik mcclain": {
      "name": "Malik McClain",
-     "FD": 1700
+     "FD": 1800
     },
     "jeremy ruckert": {
      "name": "Jeremy Ruckert",
-     "FD": 2000
+     "FD": 1800
+    },
+    "theo wease": {
+     "name": "Theo Wease Jr.",
+     "FD": 1800
+    },
+    "keandre lambert-smith": {
+     "name": "KeAndre Lambert-Smith",
+     "FD": 2200
     },
     "isaiah davis": {
      "name": "Isaiah Davis",
@@ -5579,7 +5641,7 @@
     },
     "andrew beck": {
      "name": "Andrew Beck",
-     "FD": 3000
+     "FD": 3300
     },
     "scott matlock": {
      "name": "Scott Matlock",
