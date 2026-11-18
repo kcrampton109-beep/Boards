@@ -26810,7 +26810,11 @@
   "opener": 146.5,
   "grp": "mid-major",
   "limit": 149.0,
-  "status": "open"
+  "status": "W",
+  "close": 151.5,
+  "clv": 5.0,
+  "units": 0.87,
+  "final": "Cal State Northridge 74 - Troy 84"
  },
  {
   "id": "401920308|spread|59",
@@ -26893,7 +26897,11 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 155.0,
-  "status": "open"
+  "status": "W",
+  "close": 154.5,
+  "clv": 2.0,
+  "units": 0.87,
+  "final": "Mississippi State 86 - UCF 83"
  },
  {
   "id": "401921722|spread|2520",
@@ -26918,7 +26926,11 @@
   "opener": 42.5,
   "grp": "power 6",
   "limit": 42.5,
-  "status": "open"
+  "status": "L",
+  "close": 41.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Rider 48 - Miami 95"
  },
  {
   "id": "401921722|total|under",
@@ -26943,7 +26955,11 @@
   "opener": 150.0,
   "grp": "power 6",
   "limit": 150.0,
-  "status": "open"
+  "status": "W",
+  "close": 149.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Rider 48 - Miami 95"
  },
  {
   "id": "401929358|spread|250",
@@ -27163,7 +27179,11 @@
   "opener": -15.5,
   "grp": "power 6",
   "limit": -14.0,
-  "status": "open"
+  "status": "L",
+  "close": -15.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Monmouth 76 - Wake Forest 81"
  },
  {
   "id": "rlm|401909729|spread|2405",
@@ -27188,13 +27208,17 @@
   "opener": 15.5,
   "grp": "power 6",
   "limit": 14.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 65,
   "money": 72,
   "bets": 297,
   "moved": 1.0,
-  "mins": 736
+  "mins": 736,
+  "close": 15.5,
+  "clv": -1.0,
+  "units": 0.893,
+  "final": "Monmouth 76 - Wake Forest 81"
  },
  {
   "id": "rlm|401909729|total|under",
@@ -27219,13 +27243,17 @@
   "opener": 144.5,
   "grp": "power 6",
   "limit": 143.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 90,
   "money": 89,
   "bets": 297,
   "moved": 1.0,
-  "mins": 736
+  "mins": 736,
+  "close": 144.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Monmouth 76 - Wake Forest 81"
  },
  {
   "id": "401920308|spread|59|NOV_FAV",
@@ -27279,13 +27307,17 @@
   "opener": 160.5,
   "grp": "power 6",
   "limit": 163.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 72,
   "money": 79,
   "bets": 1994,
   "moved": 3.0,
-  "mins": 736
+  "mins": 736,
+  "close": 167.5,
+  "clv": 4.0,
+  "units": 0.909,
+  "final": "Illinois 99 - Duke 78"
  },
  {
   "id": "rlm|401926781|total|under",
@@ -27310,13 +27342,17 @@
   "opener": 136.5,
   "grp": "mid-major",
   "limit": 133.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 93,
   "money": 97,
   "bets": 267,
   "moved": 3.0,
-  "mins": 766
+  "mins": 766,
+  "close": 130.5,
+  "clv": 3.0,
+  "units": 0.909,
+  "final": "Jacksonville State 63 - Louisiana Tech 68"
  },
  {
   "id": "rlm|401919018|total|over",
@@ -27341,13 +27377,17 @@
   "opener": 162.5,
   "grp": "mid-major",
   "limit": 165.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 88,
   "money": 83,
   "bets": 333,
   "moved": 3.0,
-  "mins": 766
+  "mins": 766,
+  "close": 169.5,
+  "clv": 4.0,
+  "units": 0.87,
+  "final": "Florida International 82 - UAB 94"
  },
  {
   "id": "401919018|total|under",
@@ -27372,7 +27412,11 @@
   "opener": 162.5,
   "grp": "mid-major",
   "limit": 166.5,
-  "status": "open"
+  "status": "L",
+  "close": 169.5,
+  "clv": -3.0,
+  "units": -1.0,
+  "final": "Florida International 82 - UAB 94"
  },
  {
   "id": "rlm|401906761|spread|338",
@@ -27617,8 +27661,8 @@
   "bets": 393,
   "moved": 1.0,
   "mins": 565,
-  "close": -4.5,
-  "clv": -28.0,
+  "close": -32.5,
+  "clv": 0.0,
   "units": -1.0,
   "final": "Cleveland State 67 - Xavier 75"
  },
@@ -27709,7 +27753,11 @@
   "opener": 145.5,
   "grp": "low-major",
   "limit": 146.0,
-  "status": "open"
+  "status": "W",
+  "close": 145.0,
+  "clv": -0.5,
+  "units": 0.87,
+  "final": "Green Bay 69 - West Florida 87"
  },
  {
   "id": "rlm|401925775|total|under",
@@ -28371,13 +28419,17 @@
   "opener": 139.5,
   "grp": "mid-major",
   "limit": 137.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 91,
   "money": 72,
   "bets": 328,
   "moved": 2.0,
-  "mins": 292
+  "mins": 292,
+  "close": 137.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Wagner 65 - Saint Joseph's 84"
  },
  {
   "id": "rlm|401925775|spread|2429",
@@ -28437,7 +28489,11 @@
   "opener": 8.5,
   "grp": "power 6",
   "limit": 8.0,
-  "status": "open"
+  "status": "W",
+  "close": 9.0,
+  "clv": -0.5,
+  "units": 0.877,
+  "final": "Illinois 99 - Duke 78"
  },
  {
   "id": "401909566|total|under",
@@ -28462,7 +28518,11 @@
   "opener": 160.5,
   "grp": "power 6",
   "limit": 167.5,
-  "status": "open"
+  "status": "L",
+  "close": 167.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Illinois 99 - Duke 78"
  },
  {
   "id": "401926781|total|over",
@@ -28487,7 +28547,11 @@
   "opener": 136.5,
   "grp": "mid-major",
   "limit": 131.0,
-  "status": "open"
+  "status": "W",
+  "close": 130.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Jacksonville State 63 - Louisiana Tech 68"
  },
  {
   "id": "rlm|401921106|total|under",
@@ -28543,7 +28607,11 @@
   "opener": -16.5,
   "grp": "mid-major",
   "limit": -15.5,
-  "status": "open"
+  "status": "W",
+  "close": -16.0,
+  "clv": 0.5,
+  "units": 0.833,
+  "final": "Wagner 65 - Saint Joseph's 84"
  },
  {
   "id": "rlm|401920857|total|under",
@@ -28603,13 +28671,17 @@
   "opener": 2.5,
   "grp": "mid-major",
   "limit": 1.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 77,
   "money": 66,
   "bets": 1171,
   "moved": 1.0,
-  "mins": 190
+  "mins": 190,
+  "close": 2.0,
+  "clv": -0.5,
+  "units": -1.0,
+  "final": "Cal State Northridge 74 - Troy 84"
  },
  {
   "id": "rlm|401922251|total|under",
@@ -28634,13 +28706,17 @@
   "opener": 145.5,
   "grp": "low-major",
   "limit": 145.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 83,
   "money": 13,
   "bets": 949,
   "moved": 1.0,
-  "mins": 168
+  "mins": 168,
+  "close": 145.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Green Bay 69 - West Florida 87"
  },
  {
   "id": "401906761|total|under",
@@ -29146,6 +29222,81 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 153.5,
+  "status": "open"
+ },
+ {
+  "id": "401922283|spread|2908",
+  "base": "401922283|spread|2908",
+  "flagged": "2026-11-17T21:42-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401922283,
+  "matchup": "Samford @ South Carolina Upstate",
+  "kickoff": "2026-11-18T18:30:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2908,
+  "pick": "South Carolina Upstate +6.5",
+  "book": "MGM",
+  "line": 6.5,
+  "odds": -102.0,
+  "stake": 1.0,
+  "edge": 3.3,
+  "model": -3.2,
+  "opener": 6.5,
+  "grp": "low-major",
+  "limit": 6.5,
+  "status": "open"
+ },
+ {
+  "id": "401922055|spread|2515",
+  "base": "401922055|spread|2515",
+  "flagged": "2026-11-17T21:42-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401922055,
+  "matchup": "Furman @ Radford",
+  "kickoff": "2026-11-18T19:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2515,
+  "pick": "Radford +5.5",
+  "book": "MGM",
+  "line": 5.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 3.1,
+  "model": -2.4,
+  "opener": 5.5,
+  "grp": "low-major",
+  "limit": 5.5,
+  "status": "open"
+ },
+ {
+  "id": "401917535|total|over",
+  "base": "401917535|total|over",
+  "flagged": "2026-11-17T21:42-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401917535,
+  "matchup": "UC Riverside @ San Diego",
+  "kickoff": "2026-11-18T21:30:00-05:00",
+  "tier": "NOV_OVER",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 147.5",
+  "book": "MGM",
+  "line": 147.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.6,
+  "model": 153.1,
+  "opener": 148.0,
+  "grp": "mid-major",
+  "limit": 148.0,
   "status": "open"
  }
 ]
