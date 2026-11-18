@@ -18643,7 +18643,8 @@
   "model": 25.4,
   "grp": "FCS-FCS",
   "limit": 30.5,
-  "status": "open"
+  "status": "void",
+  "note": "Voided: flagged as not available at your books (2026-11-18). FanDuel's site doesn't list this game. The board's feed (Tue Nov 17 2026 10:07 PM ET) had FanDuel +33.5. DraftKings and BetMGM can't be checked directly."
  },
  {
   "id": "401868069|spread|home|m",
@@ -18850,6 +18851,29 @@
   "model": 12.5,
   "grp": "FCS-FCS",
   "limit": 15.5,
+  "status": "open"
+ },
+ {
+  "id": "401868234|moneyline|home|m",
+  "base": "401868234|moneyline|home|m",
+  "flagged": "2026-11-17T22:30-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401868234,
+  "matchup": "Tarleton State @ North Alabama",
+  "kickoff": "2026-11-21 16:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "moneyline",
+  "side": "home",
+  "pick": "North Alabama ML +360 (alt to spread)",
+  "book": "FD",
+  "line": null,
+  "odds": 360.0,
+  "stake": 0.25,
+  "edge": 34.2,
+  "model": 29.2,
+  "grp": "FCS-FCS",
+  "limit": null,
   "status": "open"
  }
 ]
