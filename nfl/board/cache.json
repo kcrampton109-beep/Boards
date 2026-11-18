@@ -5099,23 +5099,23 @@
    }
   },
   "290989": {
-   "ts": "2026-11-17T23:17:32.507898-05:00",
+   "ts": "2026-11-18T02:47:26.153351-05:00",
    "odds": {
+    "chuba hubbard": {
+     "name": "Chuba Hubbard",
+     "FD": -140
+    },
     "derrick henry": {
      "name": "Derrick Henry",
      "FD": -135
     },
-    "chuba hubbard": {
-     "name": "Chuba Hubbard",
-     "FD": -135
+    "zay flowers": {
+     "name": "Zay Flowers",
+     "FD": 185
     },
     "tetairoa mcmillan": {
      "name": "Tetairoa McMillan",
      "FD": 195
-    },
-    "zay flowers": {
-     "name": "Zay Flowers",
-     "FD": 190
     },
     "jalen coker": {
      "name": "Jalen Coker",
@@ -5139,11 +5139,11 @@
     },
     "justice hill": {
      "name": "Justice Hill",
-     "FD": 440
+     "FD": 430
     },
     "rashod bateman": {
      "name": "Rashod Bateman",
-     "FD": 500
+     "FD": 490
     },
     "bryce young": {
      "name": "Bryce Young",
@@ -5165,20 +5165,20 @@
      "name": "Baltimore Defense",
      "FD": 750
     },
-    "xavier legette": {
-     "name": "Xavier Legette",
-     "FD": 800
-    },
     "jatavion sanders": {
      "name": "Ja'Tavion Sanders",
-     "FD": 900
+     "FD": 850
     },
-    "josh cuevas": {
-     "name": "Josh Cuevas",
-     "FD": 900
+    "xavier legette": {
+     "name": "Xavier Legette",
+     "FD": 850
     },
     "mitchell evans": {
      "name": "Mitchell Evans",
+     "FD": 850
+    },
+    "josh cuevas": {
+     "name": "Josh Cuevas",
      "FD": 900
     },
     "brycen tremayne": {
@@ -5187,19 +5187,19 @@
     },
     "aj dillon": {
      "name": "AJ Dillon",
-     "FD": 1200
+     "FD": 1300
     },
     "trevor etienne": {
      "name": "Trevor Etienne",
-     "FD": 1200
+     "FD": 1300
+    },
+    "chris moore": {
+     "name": "Chris Moore",
+     "FD": 1600
     },
     "matthew hibner": {
      "name": "Matthew Hibner",
      "FD": 1600
-    },
-    "chris moore": {
-     "name": "Chris Moore",
-     "FD": 1700
     },
     "anthony tyus": {
      "name": "Anthony Tyus III",
@@ -5207,11 +5207,11 @@
     },
     "devontez walker": {
      "name": "Devontez Walker",
-     "FD": 2000
+     "FD": 1900
     },
     "lajohntay wester": {
      "name": "LaJohntay Wester",
-     "FD": 2500
+     "FD": 2700
     },
     "rasheen ali": {
      "name": "Rasheen Ali",
