@@ -18924,6 +18924,7 @@
   "model": 25.4,
   "grp": "FCS-FCS",
   "limit": 30.5,
-  "status": "open"
+  "status": "void",
+  "note": "Voided: flagged as not available at your books (2026-11-18). FanDuel's site doesn't list this game. The board's feed (Wed Nov 18 2026 07:51 AM ET) had FanDuel +32.5. DraftKings and BetMGM can't be checked directly."
  }
 ]
