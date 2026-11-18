@@ -4694,7 +4694,7 @@
    }
   },
   "290985": {
-   "ts": "2026-11-18T14:17:42.860183-05:00",
+   "ts": "2026-11-18T17:17:48.583561-05:00",
    "odds": {
     "jahmyr gibbs": {
      "name": "Jahmyr Gibbs",
@@ -4710,7 +4710,7 @@
     },
     "sam laporta": {
      "name": "Sam LaPorta",
-     "FD": 220
+     "FD": 210
     },
     "jameson williams": {
      "name": "Jameson Williams",
@@ -4724,13 +4724,13 @@
      "name": "Jalon Daniels",
      "FD": 320
     },
-    "chris godwin": {
-     "name": "Chris Godwin",
-     "FD": 450
-    },
     "isaac teslaa": {
      "name": "Isaac TeSlaa",
      "FD": 450
+    },
+    "chris godwin": {
+     "name": "Chris Godwin",
+     "FD": 470
     },
     "kenneth gainwell": {
      "name": "Kenneth Gainwell",
@@ -4742,7 +4742,7 @@
     },
     "cade otton": {
      "name": "Cade Otton",
-     "FD": 600
+     "FD": 550
     },
     "tez johnson": {
      "name": "Tez Johnson",
@@ -5654,7 +5654,7 @@
    }
   },
   "290993": {
-   "ts": "2026-11-18T14:17:42.860183-05:00",
+   "ts": "2026-11-18T17:17:48.583561-05:00",
    "odds": {
     "jonah coleman": {
      "name": "Jonah Coleman",
@@ -5692,36 +5692,36 @@
      "name": "Mike Washington Jr.",
      "FD": 410
     },
-    "tre tucker": {
-     "name": "Tre Tucker",
-     "FD": 470
-    },
     "troy franklin": {
      "name": "Troy Franklin",
      "FD": 450
-    },
-    "marvin mims": {
-     "name": "Marvin Mims Jr.",
-     "FD": 480
     },
     "michael mayer": {
      "name": "Michael Mayer",
      "FD": 460
     },
+    "tre tucker": {
+     "name": "Tre Tucker",
+     "FD": 470
+    },
+    "marvin mims": {
+     "name": "Marvin Mims Jr.",
+     "FD": 480
+    },
+    "fernando mendoza": {
+     "name": "Fernando Mendoza",
+     "FD": 550
+    },
     "nate adkins": {
      "name": "Nate Adkins",
      "FD": 550
     },
-    "fernando mendoza": {
-     "name": "Fernando Mendoza",
+    "jalen nailor": {
+     "name": "Jalen Nailor",
      "FD": 600
     },
     "las vegas defense": {
      "name": "Las Vegas Defense",
-     "FD": 600
-    },
-    "jalen nailor": {
-     "name": "Jalen Nailor",
      "FD": 600
     },
     "jack bech": {
@@ -5766,11 +5766,11 @@
     },
     "malik benson": {
      "name": "Malik Benson",
-     "FD": 3500
+     "FD": 3300
     },
     "dareke young": {
      "name": "Dareke Young",
-     "FD": 3500
+     "FD": 3300
     }
    }
   },
