@@ -5228,7 +5228,7 @@
    }
   },
   "290986": {
-   "ts": "2026-11-18T08:47:27.872009-05:00",
+   "ts": "2026-11-18T11:47:55.598929-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -5236,11 +5236,11 @@
     },
     "rashee rice": {
      "name": "Rashee Rice",
-     "FD": 145
+     "FD": 150
     },
     "travis kelce": {
      "name": "Travis Kelce",
-     "FD": 190
+     "FD": 185
     },
     "josh downs": {
      "name": "Josh Downs",
@@ -5252,23 +5252,23 @@
     },
     "xavier worthy": {
      "name": "Xavier Worthy",
-     "FD": 360
+     "FD": 370
+    },
+    "noah gray": {
+     "name": "Noah Gray",
+     "FD": 380
+    },
+    "jake briningstool": {
+     "name": "Jake Briningstool",
+     "FD": 380
     },
     "tyler allgeier": {
      "name": "Tyler Allgeier",
      "FD": 380
     },
-    "noah gray": {
-     "name": "Noah Gray",
-     "FD": 390
-    },
-    "jake briningstool": {
-     "name": "Jake Briningstool",
-     "FD": 390
-    },
     "bam knight": {
      "name": "Bam Knight",
-     "FD": 440
+     "FD": 460
     },
     "patrick mahomes": {
      "name": "Patrick Mahomes",
@@ -5276,7 +5276,7 @@
     },
     "cyrus allen": {
      "name": "Cyrus Allen",
-     "FD": 500
+     "FD": 490
     },
     "arizona defense": {
      "name": "Arizona Defense",
@@ -5286,17 +5286,17 @@
      "name": "Jaydn Ott",
      "FD": 750
     },
-    "elijah higgins": {
-     "name": "Elijah Higgins",
-     "FD": 800
-    },
     "reggie virgil": {
      "name": "Reggie Virgil",
      "FD": 800
     },
+    "elijah higgins": {
+     "name": "Elijah Higgins",
+     "FD": 850
+    },
     "devin duvernay": {
      "name": "Devin Duvernay",
-     "FD": 900
+     "FD": 950
     },
     "simi fehoko": {
      "name": "Simi Fehoko",
@@ -5316,27 +5316,27 @@
     },
     "andrew armstrong": {
      "name": "Andrew Armstrong",
-     "FD": 2200
+     "FD": 1900
     },
     "ben vansumeren": {
      "name": "Ben VanSumeren",
      "FD": 2200
     },
+    "hunter long": {
+     "name": "Hunter Long",
+     "FD": 2200
+    },
     "evan hull": {
      "name": "Evan Hull",
-     "FD": 2200
+     "FD": 2500
     },
     "harrison wallace": {
      "name": "Harrison Wallace III",
-     "FD": 3000
+     "FD": 2700
     },
     "teagan quitoriano": {
      "name": "Teagan Quitoriano",
-     "FD": 3000
-    },
-    "hunter long": {
-     "name": "Hunter Long",
-     "FD": 3300
+     "FD": 3500
     }
    }
   },
