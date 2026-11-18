@@ -131,6 +131,9 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   so later closes are the DK/FD median. Ticket / money shares of 0 or 100 are Action's "no bets counted yet" placeholder:
   treated as missing; 45 RLM plays logged on them (Nov 9-10) are voided. CFB `an_history.py` and NFL `pull_data.an` (history
   bootstraps, only on a cache miss) still call v1.
+  Nov 18 (owner's call, `research/season.py`): opener rule. A model play keeps its tier only if the gap clears it against both
+  the current price and Action's opener (`gap_open`); otherwise tier LATE (research). Live Nov 4-17: opener-qualified totals
+  76-59 +9.7u, late ones 75-70 -2.1u. The page's Main record counts from `MAIN_FROM` (Nov 18 1 PM ET, when the rule went live) only.
 
 ## Social post (faceless picks account, started Nov 4 2026)
 - Owner is building an audience for a possible paid early-alert tier next season: free game-day posts now, no selling yet.

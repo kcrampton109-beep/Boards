@@ -150,13 +150,16 @@ const TIER = {
   RLM: { name: "RLM spreads", code: "L", note: "Research since Nov 9. 65%+ of tickets on one side and the DK / FD / BetMGM line has moved 1+ point the other way from the opener: backs the other side at the best price when the signal first fires. At the closing number this went 51.4% in 2023-25 and 48.8% in 2025-26 (52.4% breaks even), so this tier tests whether the number when the signal fires is better." },
   RLM_80: { name: "RLM spreads 80%+", code: "X", note: "Research since Nov 9. The same signal with 80%+ of tickets on one side. At the closing number: 53.2% in 2023-25, 50.2% in 2025-26." },
   RLM_T: { name: "RLM totals", code: "U", note: "Research since Nov 9. 65%+ of tickets on the over (or under) and the total has moved 1+ point the other way. At the closing number: about 50%." },
+  LATE: { name: "Late gaps (research)", code: "Z", note: "Since Nov 18. The model's gap clears its tier at the current price but did not at the opener: the line moved against the model first. Live Nov 4-17 these lost (totals 75-70, -2.1u; overs 27-32) while gaps already there at the opener made money (totals 76-59, +9.7u), and the backtest only ever bet opener gaps." },
   NOV: { name: "November research", code: "R", note: "Every other November gap (underdogs, unders, spreads of 3-4): logged to learn from, not to bet. In the backtest November underdogs beat the close only 45% of the time and unders lost every season. Plays logged Nov 1-4 under the old model are here too." },
 };
-const ORDER = ["NOV_OVER", "SPREAD", "TOTAL", "SPREAD_LEAN", "TOTAL_LEAN", "RLM", "RLM_80", "RLM_T", "NOV_FAV", "NOV"];
+const ORDER = ["NOV_OVER", "SPREAD", "TOTAL", "SPREAD_LEAN", "TOTAL_LEAN", "LATE", "RLM", "RLM_80", "RLM_T", "NOV_FAV", "NOV"];
 const MAIN = ["NOV_OVER", "SPREAD", "TOTAL"];   // "Main plays" (Nov favourites moved to research Nov 8 after 21-32)
+const MAIN_FROM = "2026-11-18T13:00";   // the opener rule went live: the Main record starts here, a clean out-of-sample count
+const isMain = e => MAIN.includes(e.tier) && String(e.flagged || "") >= MAIN_FROM;
 const DT = e => e.tier;
 const dtName = k => TIER[k] ? TIER[k].name : k;
-const SHOW = ["NOV_OVER", "SPREAD", "TOTAL", "SPREAD_LEAN", "TOTAL_LEAN", "RLM", "RLM_80", "RLM_T", "NOV_FAV", "NOV"];
+const SHOW = ["NOV_OVER", "SPREAD", "TOTAL", "SPREAD_LEAN", "TOTAL_LEAN", "LATE", "RLM", "RLM_80", "RLM_T", "NOV_FAV", "NOV"];
 const UNIT = 10;   // $ per unit, for the paper dollars on Today / Results
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const sgn = (v, d = 1) => v == null || isNaN(v) ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d).replace(/\.0$/, "");
@@ -201,7 +204,7 @@ function render(S) {
   else if (!(S.games || []).length) { b.hidden = false; b.className = "banner"; b.textContent = "No D1 games with lines in the next few days yet. The season tips off Monday, November 2; lines usually post the night before."; }
   const inNov = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" }).slice(5, 7) === "11";
   if (b.hidden && inNov) { b.hidden = false; b.className = "banner";
-    b.innerHTML = "<b>November:</b> the only main play is <b>overs</b> with a total gap of 5+. Favourites (gap 4+) were moved to research on Nov 9 after a 21-32 (-13.6u) start, so the Main record leaves that loss out: its box is still below. The December tiers start <b>December 1</b>. <b>RLM</b> tiers are new research, logged at the number when the signal fires."; }
+    b.innerHTML = "<b>Since Nov 18 a play counts as a main play only if the model's gap was already there at the opener</b> (what the backtest measured); gaps that appear only after the line moves against the model log as Late gaps. The Main record starts Nov 18. In November the only main play is <b>overs</b> with a total gap of 5+; the December tiers start <b>December 1</b>."; }
 
   // records strip: everything first, then each group that has plays, then the empty ones
   const full = (S.fullLedger || S.ledger || []).filter(e => e.status !== "void");
@@ -214,7 +217,7 @@ function render(S) {
       <span class="sub num"><span class="${r.u > 0 ? "pos" : r.u < 0 ? "neg" : ""}">${sgn(r.u, 2)}u</span> · ROI ${r.roi == null ? "–" : sgn(r.roi * 100, 1) + "%"} · ${r.open} pending</span>
       <span class="sub num">${note || `CLV ${r.clv == null ? "–" : sgn(r.clv, 2) + " pts"} · beat close ${pct(r.beat)}`}</span></div>`;
   const groups = SHOW.map(k => [k, full.filter(e => DT(e) === k)]).sort((a, b) => (b[1].length > 0) - (a[1].length > 0));
-  document.getElementById("records").innerHTML = box("Main plays", rec(full.filter(e => MAIN.includes(e.tier)))) + box("All plays", rec(full)) + groups.map(([k, rows]) =>
+  document.getElementById("records").innerHTML = box("Main plays since Nov 18, 1 PM", rec(full.filter(isMain))) + box("All plays", rec(full)) + groups.map(([k, rows]) =>
     box(dtName(k), rec(rows), !rows.length && ["SPREAD", "TOTAL", "SPREAD_LEAN", "TOTAL_LEAN"].includes(k) && inNov ? "Starts December 1"
       : !rows.length && ["RLM", "RLM_80", "RLM_T"].includes(k) ? "New since Nov 9" : null)).join("");
 
@@ -242,12 +245,14 @@ function render(S) {
          <div><span>Gap</span><span class="num">${p.edge} pts</span></div>
          <div><span>Playable to</span><span class="num">${esc(p.team)} ${line(p.limit)}</span></div>
          <div><span>Opener</span><span class="num">${esc(favText(g, g.open_line))}</span></div>
+         <div><span>Gap at the opener</span><span class="num">${p.gap_open == null ? "–" : sgn(p.gap_open) + " pts"}</span></div>
          <div><span>Results model</span><span class="num">${esc(favText(g, g.model_pts))}</span></div>
          <div><span>Market model</span><span class="num">${esc(favText(g, g.model_mkt))}</span></div>`
       : `<div><span>Model total</span><span class="num">${g.model_total ?? "–"}</span></div>
          <div><span>Gap</span><span class="num">${p.edge} pts</span></div>
          <div><span>Playable to</span><span class="num">${p.side === "over" ? "Over " + p.limit : "Under " + p.limit}</span></div>
          <div><span>Opener</span><span class="num">${g.open_total ?? "–"}</span></div>
+         <div><span>Gap at the opener</span><span class="num">${p.gap_open == null ? "–" : sgn(p.gap_open) + " pts"}</span></div>
          <div><span>Results model</span><span class="num">${g.total_pts ?? "–"}</span></div>
          <div><span>Market model</span><span class="num">${g.total_mkt ?? "–"}</span></div>`;
     const log = e ? (e.status === "open" ? `Logged ${esc(etTxt(e.flagged))} at ${esc(e.pick)} ${odds(e.odds)} (${esc(e.book)})`
@@ -281,7 +286,7 @@ function render(S) {
   const trackRows = (S.fullLedger || S.ledger || []).filter(e => e.status !== "void").map(e => {
     const p = anyPlay[e.id] && anyPlay[e.id].tier === e.tier ? anyPlay[e.id] : null;
     return { id: e.id, date: etDate(e.kickoff), kickoff: etTxt(e.kickoff), sortKey: String(e.kickoff), week: e.week, tier: DT(e),
-             label: dtName(DT(e)), money: MAIN.includes(e.tier), status: e.status, units: e.units, stake: e.stake,
+             label: dtName(DT(e)), money: isMain(e), status: e.status, units: e.units, stake: e.stake,
              clv: e.clv, pick: e.pick, matchup: e.matchup, odds: odds(e.odds), app: BOOKN[e.book] || e.book, final: e.final, logged: etTxt(e.flagged),
              playTo: playTo(e, p), now: e.status === "open" ? nowOf(games[e.game_id], p) : null };
   });
@@ -352,9 +357,10 @@ function render(S) {
       <li>December on: spreads ${R.spread_lean}-${R.spread} and ${R.spread}+, totals ${R.total_lean}-${R.total} and ${R.total}+, either side.</li>
       <li>Spread gaps of ${R.max_spread}+ and total gaps of ${R.max_total}+ are not logged (usually news the model can't see). No prices worse than ${R.worst_odds}. A book ${R.stale_spread}+ points off the market (spread) or ${R.stale_total}+ (total) is ignored as stale.</li>
       <li>A play logged in a lower tier that later clears a higher one is logged again at the new price.</li>
+      <li>Opener rule (since Nov 18): a model play keeps its tier only if the gap also clears it against Action's opener (DraftKings' first number 89% of the time); otherwise it logs as a Late gap.</li>
       <li>RLM (research): ${R.rlm_tickets}%+ of tickets on one side (at least ${R.rlm_min_bets} bets counted) and the DK / FD / BetMGM line moved ${R.rlm_move}+ point the other way from the opener; ${R.rlm_strict}%+ is its own tier. Tracked separately from the model's plays.</li></ul>
     <h2>What the backtest found (corrected model, 2023-24 to 2025-26, research/EDGE.md)</h2>
-    <ul><li>${esc(B.spread)}</li><li>${esc(B.total)}</li><li>${esc(B.nov)}</li><li>${esc(B.rlm)}</li></ul>
+    <ul><li>${esc(B.spread)}</li><li>${esc(B.total)}</li><li>${esc(B.nov)}</li><li>${esc(B.rlm)}</li><li>${esc(B.opener)}</li></ul>
     <p>${esc(B.caveat)}</p>
     <p>Live CLV here is measured from the best of three books, so it also includes the value of shopping for the best number; the backtest's CLV was from the single opener. Compare the Openers tab before reading too much into either.</p>
   </div>`;

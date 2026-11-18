@@ -41,13 +41,16 @@ RULES = dict(spread_lean=3.0, spread=4.0, total_lean=5.0, total=6.0,
              # measured against the market's level: minus the average (model - opening total) over the last 7 days + today
              margin_scale=1.063, level_days=7,
              # RLM research (Nov 8 2026, owner's request, research/rlm.py): tickets on one side, line moved the other way
-             rlm_tickets=65, rlm_strict=80, rlm_move=1.0, rlm_min_bets=250)
+             rlm_tickets=65, rlm_strict=80, rlm_move=1.0, rlm_min_bets=250,
+             # Nov 18 2026 (owner's call, research/season.py): a model play keeps its tier only if the gap also holds against
+             # Action's opener (= DK's first number 89% of the time); one that clears only after the line moved is LATE
+             opener_rule_from="2026-11-18T13:00")
 TIERS = {
     "SPREAD": "Spread 4+", "SPREAD_LEAN": "Spread 3-4", "TOTAL": "Total 6+", "TOTAL_LEAN": "Total 5-6",
     "NOV_FAV": "Nov favourites 4+", "NOV_OVER": "Nov overs 5+", "NOV": "November research",
-    "RLM": "RLM spreads", "RLM_80": "RLM spreads 80%+", "RLM_T": "RLM totals",
+    "RLM": "RLM spreads", "RLM_80": "RLM spreads 80%+", "RLM_T": "RLM totals", "LATE": "Late gaps",
 }
-TIER_RANK = {"NOV": 1, "SPREAD_LEAN": 1, "TOTAL_LEAN": 1, "SPREAD": 2, "TOTAL": 2, "NOV_FAV": 2, "NOV_OVER": 2, "RLM": 1, "RLM_T": 1, "RLM_80": 2}
+TIER_RANK = {"NOV": 1, "SPREAD_LEAN": 1, "TOTAL_LEAN": 1, "SPREAD": 2, "TOTAL": 2, "NOV_FAV": 2, "NOV_OVER": 2, "RLM": 1, "RLM_T": 1, "RLM_80": 2, "LATE": 0}
 P6 = {"2", "4", "7", "8", "23"}   # ESPN conference ids: ACC, Big East, Big Ten, Big 12, SEC (the Pac-12 left in 2024)
 D1_CONF = {str(k) for k in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27,
                             29, 30, 44, 45, 46, 49, 62)}
@@ -56,6 +59,7 @@ BACKTEST = {   # corrected blend, against the opener at -110, 2023-24 / 2024-25 
     "total": "Totals, December-March: gap 5+ CLV +2.42, beat the close 76%, 56.3% ATS, +7.5% ROI (+3.6 / +7.1 / +11.2, about 2 a day); gap 6+ +9.9% ROI",
     "nov": "November: favourites at a spread gap of 4+ (+7.7% ROI; CLV +1.32, but only +0.68 beyond the normal November drift toward favourites) and overs at a total gap of 5+ (+8.2% ROI, CLV +1.82) were the only cuts that made money, and both were chosen after seeing those same seasons; underdogs beat the close 45% of the time and unders lost every season",
     "rlm": "Reverse line movement (65%+ of tickets on one side, line moved 1+ the other way), graded at the closing number: 2023-25 51.4% and 2025-26 48.8% on spreads (needs 52.4%), totals about 50%. It can only pay at the number when the signal first fires, which history can't show, so the RLM tiers log that number live",
+    "opener": "Live, Nov 4-17: model plays whose gap was already there at the opener made money on totals (76-59, +9.7u; overs 29-20) and plays that only qualified after the line moved against the model did not (totals 75-70, -2.1u; overs 27-32). Since Nov 18 only opener plays count as main plays",
     "caveat": "ROI assumes -110 at the opener. DraftKings' first number equals Action's opener 89% of the time (Openers tab); FanDuel and BetMGM 40-48%, so bet the DK number when you can.",
 }
 LEDGER, STATE = BOARD / "ledger.json", BOARD / "state.json"
@@ -501,7 +505,13 @@ def price(g, rts, now, publics=None):
             tt = tier_for(market, side, gap, day, line)
             if tt is None:
                 continue
-            tier, thr = tt
+            # the same gap against Action's opener (what the backtest measured): the tier needs both, else LATE (research)
+            op = gm["open_total"] if market == "total" else (
+                None if gm["open_line"] is None else (gm["open_line"] if side == "home" else -gm["open_line"]))
+            gap_open = None if op is None else (
+                (margin if side == "home" else -margin) + op if market == "spread" else (total - op if side == "over" else op - total))
+            t_open = None if gap_open is None else tier_for(market, side, min(gap, gap_open), day, line)
+            tier, thr = t_open if t_open is not None else ("LATE", tt[1])
             if gap >= cap:
                 gm.setdefault("suspect", []).append(f"{book} {side} {line:+g}" if market == "spread" else f"{book} {side} {line:g}")
                 continue
@@ -523,7 +533,8 @@ def price(g, rts, now, publics=None):
             team_eid = (gm["home_eid"] if side == "home" else gm["away_eid"]) if market == "spread" else None
             cand.append(dict(game_id=gm["game_id"], market=market, side=side, pick=pick, team=team, team_eid=team_eid,
                              line=line, odds=odds,
-                             book=book, edge=round(gap, 1), tier=tier, grp=grp, model=model_side, limit=limit, opener=opener))
+                             book=book, edge=round(gap, 1), tier=tier, grp=grp, model=model_side, limit=limit, opener=opener,
+                             gap_open=None if gap_open is None else round(gap_open, 1)))
         plays += cand
     return games, plays
 
@@ -692,7 +703,7 @@ def update_ledger(plays, games, g, season, now):
                         book=f["book"], line=f["line"],
                         odds=f["odds"], stake=RULES["stake"], edge=f["edge"], model=f["model"], opener=f["opener"],
                         grp=f["grp"], limit=f["limit"], status="open",
-                        **{k: f[k] for k in ("signal", "tix", "money", "bets", "moved", "mins") if f.get(k) is not None}))
+                        **{k: f[k] for k in ("signal", "tix", "money", "bets", "moved", "mins", "gap_open") if f.get(k) is not None}))
         have[base] = rank
     # grade: final score, and the DK/FD/MGM median closing number (Action consensus if none) for CLV. Every settled
     # play is re-graded each run (cheap), so a fix to grading or a late score correction reaches the whole record.
