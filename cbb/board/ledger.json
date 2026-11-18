@@ -31176,5 +31176,31 @@
   "bets": 439,
   "moved": 1.0,
   "mins": 498
+ },
+ {
+  "id": "401920075|spread|2244",
+  "base": "401920075|spread|2244",
+  "flagged": "2026-11-18T13:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401920075,
+  "matchup": "North Carolina Central @ George Mason",
+  "kickoff": "2026-11-18T19:00:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2244,
+  "pick": "George Mason -22.5",
+  "book": "DK",
+  "line": -22.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 3.0,
+  "model": 25.5,
+  "opener": -26.5,
+  "grp": "mid-major",
+  "limit": -22.5,
+  "status": "open",
+  "gap_open": -1.0
  }
 ]
