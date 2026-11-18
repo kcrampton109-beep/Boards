@@ -27589,13 +27589,17 @@
   "opener": 136.5,
   "grp": "mid-major",
   "limit": 135.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 92,
   "money": 72,
   "bets": 272,
   "moved": 1.0,
-  "mins": 916
+  "mins": 916,
+  "close": 133.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Seattle U 83 - California Baptist 54"
  },
  {
   "id": "rlm|401912230|total|under",
@@ -29272,7 +29276,11 @@
   "opener": -16.5,
   "grp": "power 6",
   "limit": -15.5,
-  "status": "open"
+  "status": "W",
+  "close": -15.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "UNLV 77 - Kansas 102"
  },
  {
   "id": "401926838|spread|119",
@@ -29791,5 +29799,30 @@
   "bets": 913,
   "moved": 3.5,
   "mins": 1008
+ },
+ {
+  "id": "401920158|total|under",
+  "base": "401920158|total|under",
+  "flagged": "2026-11-18T00:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401920158,
+  "matchup": "Cal State Fullerton @ UCLA",
+  "kickoff": "2026-11-18T22:30:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 166.5",
+  "book": "MGM",
+  "line": 166.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 6.1,
+  "model": 160.4,
+  "opener": 160.5,
+  "grp": "power 6",
+  "limit": 165.5,
+  "status": "open"
  }
 ]
