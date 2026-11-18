@@ -26723,7 +26723,11 @@
   "opener": -19.5,
   "grp": "power 6",
   "limit": -20.5,
-  "status": "open"
+  "status": "L",
+  "close": -22.0,
+  "clv": 1.5,
+  "units": -1.0,
+  "final": "Lipscomb 78 - Purdue 95"
  },
  {
   "id": "401902279|spread|2086",
@@ -26748,7 +26752,11 @@
   "opener": -11.5,
   "grp": "power 6",
   "limit": -13.5,
-  "status": "open"
+  "status": "W",
+  "close": -12.0,
+  "clv": 0.5,
+  "units": 0.87,
+  "final": "Western Carolina 64 - Butler 89"
  },
  {
   "id": "401918994|spread|58",
@@ -26773,7 +26781,11 @@
   "opener": -11.0,
   "grp": "mid-major",
   "limit": -12.5,
-  "status": "open"
+  "status": "W",
+  "close": -10.5,
+  "clv": -1.0,
+  "units": 0.952,
+  "final": "Tennessee State 71 - South Florida 98"
  },
  {
   "id": "401920297|total|over",
@@ -26823,7 +26835,11 @@
   "opener": -23.5,
   "grp": "power 6",
   "limit": -22.0,
-  "status": "open"
+  "status": "L",
+  "close": -20.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Norfolk State 79 - Georgia Tech 93"
  },
  {
   "id": "401920308|total|under",
@@ -26848,7 +26864,11 @@
   "opener": 158.5,
   "grp": "power 6",
   "limit": 153.0,
-  "status": "open"
+  "status": "L",
+  "close": 147.5,
+  "clv": 6.0,
+  "units": -1.0,
+  "final": "Norfolk State 79 - Georgia Tech 93"
  },
  {
   "id": "401921756|total|over",
@@ -27230,7 +27250,11 @@
   "opener": -23.5,
   "grp": "power 6",
   "limit": -21.5,
-  "status": "open"
+  "status": "L",
+  "close": -20.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Norfolk State 79 - Georgia Tech 93"
  },
  {
   "id": "rlm|401909566|total|over",
@@ -27551,13 +27575,17 @@
   "opener": -27.5,
   "grp": "power 6",
   "limit": -29.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 75,
   "money": 73,
   "bets": 323,
   "moved": 2.0,
-  "mins": 565
+  "mins": 565,
+  "close": -30.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Sacred Heart 67 - Providence 86"
  },
  {
   "id": "rlm|401909544|spread|2752",
@@ -27582,13 +27610,17 @@
   "opener": -32.5,
   "grp": "power 6",
   "limit": -32.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 65,
   "money": 82,
   "bets": 393,
   "moved": 1.0,
-  "mins": 565
+  "mins": 565,
+  "close": -4.5,
+  "clv": -28.0,
+  "units": -1.0,
+  "final": "Cleveland State 67 - Xavier 75"
  },
  {
   "id": "rlm|401918994|total|over",
@@ -27613,13 +27645,17 @@
   "opener": 163.0,
   "grp": "mid-major",
   "limit": 165.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 75,
   "money": 43,
   "bets": 565,
   "moved": 2.5,
-  "mins": 565
+  "mins": 565,
+  "close": 165.0,
+  "clv": -0.5,
+  "units": 0.952,
+  "final": "Tennessee State 71 - South Florida 98"
  },
  {
   "id": "401918994|total|under",
@@ -27644,7 +27680,11 @@
   "opener": 163.0,
   "grp": "mid-major",
   "limit": 165.0,
-  "status": "open"
+  "status": "L",
+  "close": 165.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Tennessee State 71 - South Florida 98"
  },
  {
   "id": "401922251|total|over",
@@ -27694,13 +27734,17 @@
   "opener": 133.5,
   "grp": "mid-major",
   "limit": 132.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 92,
   "money": 88,
   "bets": 555,
   "moved": 1.0,
-  "mins": 565
+  "mins": 565,
+  "close": 133.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Charlotte 73 - Davidson 66"
  },
  {
   "id": "401911020|spread|113",
@@ -28092,13 +28136,17 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 147.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 86,
   "money": 90,
   "bets": 757,
   "moved": 1.0,
-  "mins": 547
+  "mins": 547,
+  "close": 144.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Central Michigan 63 - Dayton 88"
  },
  {
   "id": "rlm|401925879|spread|147",
@@ -28154,13 +28202,17 @@
   "opener": 138.5,
   "grp": "low-major",
   "limit": 137.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 90,
   "money": 89,
   "bets": 252,
   "moved": 1.0,
-  "mins": 526
+  "mins": 526,
+  "close": 137.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Lehigh 99 - Mount St. Mary's 65"
  },
  {
   "id": "rlm|401923325|total|under",
@@ -28220,13 +28272,17 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 154.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 66,
   "money": 45,
   "bets": 681,
   "moved": 3.0,
-  "mins": 292
+  "mins": 292,
+  "close": 154.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Sacred Heart 67 - Providence 86"
  },
  {
   "id": "rlm|401909697|total|over",
@@ -28251,13 +28307,17 @@
   "opener": 149.5,
   "grp": "power 6",
   "limit": 150.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 66,
   "money": 73,
   "bets": 696,
   "moved": 1.0,
-  "mins": 292
+  "mins": 292,
+  "close": 151.0,
+  "clv": 0.5,
+  "units": 0.909,
+  "final": "Ball State 71 - Florida State 85"
  },
  {
   "id": "401911019|total|over",
@@ -28282,7 +28342,11 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 146.0,
-  "status": "open"
+  "status": "W",
+  "close": 144.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Central Michigan 63 - Dayton 88"
  },
  {
   "id": "rlm|401920194|total|under",
@@ -28338,13 +28402,17 @@
   "opener": 4.5,
   "grp": "mid-major",
   "limit": 4.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 69,
   "money": 58,
   "bets": 1272,
   "moved": 1.0,
-  "mins": 292
+  "mins": 292,
+  "close": 3.5,
+  "clv": 1.0,
+  "units": 0.847,
+  "final": "Charlotte 73 - Davidson 66"
  },
  {
   "id": "401909566|spread|356",
@@ -28500,13 +28568,17 @@
   "opener": 147.0,
   "grp": "mid-major",
   "limit": 146.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 68,
   "money": 59,
   "bets": 1368,
   "moved": 1.5,
-  "mins": 190
+  "mins": 190,
+  "close": 146.0,
+  "clv": 0.5,
+  "units": 0.87,
+  "final": "East Tennessee State 55 - Marshall 67"
  },
  {
   "id": "rlm|401920297|spread|2463",
@@ -28999,6 +29071,81 @@
   "opener": 34.5,
   "grp": "power 6",
   "limit": 34.0,
+  "status": "open"
+ },
+ {
+  "id": "401909787|spread|2305",
+  "base": "401909787|spread|2305",
+  "flagged": "2026-11-17T21:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401909787,
+  "matchup": "UNLV vs Kansas",
+  "kickoff": "2026-11-17T21:30:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2305,
+  "pick": "Kansas -15.5",
+  "book": "DK",
+  "line": -15.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 3.1,
+  "model": 18.6,
+  "opener": -16.5,
+  "grp": "power 6",
+  "limit": -15.5,
+  "status": "open"
+ },
+ {
+  "id": "401926838|spread|119",
+  "base": "401926838|spread|119",
+  "flagged": "2026-11-17T21:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401926838,
+  "matchup": "James Madison @ Towson",
+  "kickoff": "2026-11-18T19:00:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 119,
+  "pick": "Towson -3.5",
+  "book": "FD",
+  "line": -3.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 3.1,
+  "model": 6.6,
+  "opener": -4.5,
+  "grp": "mid-major",
+  "limit": -3.5,
+  "status": "open"
+ },
+ {
+  "id": "401920751|total|under",
+  "base": "401920751|total|under",
+  "flagged": "2026-11-17T21:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401920751,
+  "matchup": "Youngstown State @ Cincinnati",
+  "kickoff": "2026-11-18T19:30:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 153.5",
+  "book": "FD",
+  "line": 153.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.2,
+  "model": 148.3,
+  "opener": 152.5,
+  "grp": "power 6",
+  "limit": 153.5,
   "status": "open"
  }
 ]
