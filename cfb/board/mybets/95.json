@@ -1,0 +1,23 @@
+{
+ "id": 95,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/95",
+ "board": "CFB",
+ "pick": "Presbyterian +13.5",
+ "odds": -113,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Dayton @ Presbyterian",
+ "kickoff": "2026-11-21 13:00:00-05:00",
+ "play": "401868253|spread|home|m",
+ "logged": "2026-11-18T03:26:45Z",
+ "updated": "2026-11-18T03:26:53+00:00",
+ "tier": "FCS",
+ "game_id": 401868253,
+ "board_line": 13.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": 13.5
+}
