@@ -5291,7 +5291,7 @@
    }
   },
   "290986": {
-   "ts": "2026-11-18T15:17:36.394101-05:00",
+   "ts": "2026-11-18T18:17:37.529659-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -5299,11 +5299,11 @@
     },
     "rashee rice": {
      "name": "Rashee Rice",
-     "FD": 150
+     "FD": 155
     },
     "travis kelce": {
      "name": "Travis Kelce",
-     "FD": 190
+     "FD": 185
     },
     "josh downs": {
      "name": "Josh Downs",
@@ -5311,79 +5311,75 @@
     },
     "trey mcbride": {
      "name": "Trey McBride",
-     "FD": 300
+     "FD": 290
     },
     "xavier worthy": {
      "name": "Xavier Worthy",
-     "FD": 370
+     "FD": 360
     },
     "tyler allgeier": {
      "name": "Tyler Allgeier",
-     "FD": 380
+     "FD": 370
     },
     "bam knight": {
      "name": "Bam Knight",
-     "FD": 440
-    },
-    "noah gray": {
-     "name": "Noah Gray",
-     "FD": 480
+     "FD": 450
     },
     "patrick mahomes": {
      "name": "Patrick Mahomes",
-     "FD": 480
+     "FD": 470
     },
-    "arizona defense": {
-     "name": "Arizona Defense",
-     "FD": 500
+    "noah gray": {
+     "name": "Noah Gray",
+     "FD": 490
     },
     "cyrus allen": {
      "name": "Cyrus Allen",
      "FD": 500
     },
+    "arizona defense": {
+     "name": "Arizona Defense",
+     "FD": 550
+    },
     "jaydn ott": {
      "name": "Jaydn Ott",
      "FD": 750
+    },
+    "reggie virgil": {
+     "name": "Reggie Virgil",
+     "FD": 800
+    },
+    "simi fehoko": {
+     "name": "Simi Fehoko",
+     "FD": 850
     },
     "elijah higgins": {
      "name": "Elijah Higgins",
      "FD": 850
     },
-    "reggie virgil": {
-     "name": "Reggie Virgil",
-     "FD": 850
-    },
-    "simi fehoko": {
-     "name": "Simi Fehoko",
-     "FD": 900
+    "devin duvernay": {
+     "name": "Devin Duvernay",
+     "FD": 950
     },
     "kansas city defense": {
      "name": "Kansas City Defense",
      "FD": 1000
     },
-    "devin duvernay": {
-     "name": "Devin Duvernay",
-     "FD": 1000
-    },
     "jake briningstool": {
      "name": "Jake Briningstool",
-     "FD": 1300
+     "FD": 1400
+    },
+    "jalen royals": {
+     "name": "Jalen Royals",
+     "FD": 1500
     },
     "carson beck": {
      "name": "Carson Beck",
      "FD": 1500
     },
-    "jalen royals": {
-     "name": "Jalen Royals",
-     "FD": 1600
-    },
     "andrew armstrong": {
      "name": "Andrew Armstrong",
      "FD": 1900
-    },
-    "hunter long": {
-     "name": "Hunter Long",
-     "FD": 2000
     },
     "ben vansumeren": {
      "name": "Ben VanSumeren",
@@ -5391,7 +5387,11 @@
     },
     "evan hull": {
      "name": "Evan Hull",
-     "FD": 2500
+     "FD": 2200
+    },
+    "hunter long": {
+     "name": "Hunter Long",
+     "FD": 2200
     },
     "harrison wallace": {
      "name": "Harrison Wallace III",
