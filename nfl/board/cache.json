@@ -5228,8 +5228,117 @@
    }
   },
   "290986": {
-   "ts": "2026-11-15T15:35:36.185005-05:00",
-   "odds": {}
+   "ts": "2026-11-18T05:17:35.450441-05:00",
+   "odds": {
+    "emmett johnson": {
+     "name": "Emmett Johnson",
+     "FD": -240
+    },
+    "rashee rice": {
+     "name": "Rashee Rice",
+     "FD": 150
+    },
+    "travis kelce": {
+     "name": "Travis Kelce",
+     "FD": 190
+    },
+    "josh downs": {
+     "name": "Josh Downs",
+     "FD": 190
+    },
+    "trey mcbride": {
+     "name": "Trey McBride",
+     "FD": 300
+    },
+    "tyler allgeier": {
+     "name": "Tyler Allgeier",
+     "FD": 360
+    },
+    "noah gray": {
+     "name": "Noah Gray",
+     "FD": 370
+    },
+    "jake briningstool": {
+     "name": "Jake Briningstool",
+     "FD": 370
+    },
+    "xavier worthy": {
+     "name": "Xavier Worthy",
+     "FD": 380
+    },
+    "bam knight": {
+     "name": "Bam Knight",
+     "FD": 440
+    },
+    "patrick mahomes": {
+     "name": "Patrick Mahomes",
+     "FD": 470
+    },
+    "cyrus allen": {
+     "name": "Cyrus Allen",
+     "FD": 500
+    },
+    "arizona defense": {
+     "name": "Arizona Defense",
+     "FD": 550
+    },
+    "jaydn ott": {
+     "name": "Jaydn Ott",
+     "FD": 750
+    },
+    "elijah higgins": {
+     "name": "Elijah Higgins",
+     "FD": 800
+    },
+    "reggie virgil": {
+     "name": "Reggie Virgil",
+     "FD": 800
+    },
+    "devin duvernay": {
+     "name": "Devin Duvernay",
+     "FD": 900
+    },
+    "kansas city defense": {
+     "name": "Kansas City Defense",
+     "FD": 950
+    },
+    "simi fehoko": {
+     "name": "Simi Fehoko",
+     "FD": 1100
+    },
+    "carson beck": {
+     "name": "Carson Beck",
+     "FD": 1400
+    },
+    "jalen royals": {
+     "name": "Jalen Royals",
+     "FD": 1600
+    },
+    "ben vansumeren": {
+     "name": "Ben VanSumeren",
+     "FD": 2200
+    },
+    "andrew armstrong": {
+     "name": "Andrew Armstrong",
+     "FD": 2500
+    },
+    "harrison wallace": {
+     "name": "Harrison Wallace III",
+     "FD": 2700
+    },
+    "evan hull": {
+     "name": "Evan Hull",
+     "FD": 3000
+    },
+    "teagan quitoriano": {
+     "name": "Teagan Quitoriano",
+     "FD": 3000
+    },
+    "hunter long": {
+     "name": "Hunter Long",
+     "FD": 3000
+    }
+   }
   },
   "290987": {
    "ts": "2026-11-18T03:17:41.980148-05:00",
