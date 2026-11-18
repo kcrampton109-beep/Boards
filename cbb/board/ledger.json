@@ -30275,5 +30275,30 @@
   "bets": 323,
   "moved": 1.0,
   "mins": 828
+ },
+ {
+  "id": "401921134|total|under",
+  "base": "401921134|total|under",
+  "flagged": "2026-11-18T08:28-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401921134,
+  "matchup": "LSU New Orleans @ Texas Tech",
+  "kickoff": "2026-11-18T19:30:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 154.5",
+  "book": "FD",
+  "line": 154.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.9,
+  "model": 148.6,
+  "opener": 153.5,
+  "grp": "power 6",
+  "limit": 154.0,
+  "status": "open"
  }
 ]
