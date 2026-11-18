@@ -5095,8 +5095,133 @@
    }
   },
   "290989": {
-   "ts": "2026-11-15T15:35:36.185005-05:00",
-   "odds": {}
+   "ts": "2026-11-17T23:17:32.507898-05:00",
+   "odds": {
+    "derrick henry": {
+     "name": "Derrick Henry",
+     "FD": -135
+    },
+    "chuba hubbard": {
+     "name": "Chuba Hubbard",
+     "FD": -135
+    },
+    "tetairoa mcmillan": {
+     "name": "Tetairoa McMillan",
+     "FD": 195
+    },
+    "zay flowers": {
+     "name": "Zay Flowers",
+     "FD": 190
+    },
+    "jalen coker": {
+     "name": "Jalen Coker",
+     "FD": 250
+    },
+    "mark andrews": {
+     "name": "Mark Andrews",
+     "FD": 320
+    },
+    "darren waller": {
+     "name": "Darren Waller",
+     "FD": 330
+    },
+    "jakobi lane": {
+     "name": "Ja'Kobi Lane",
+     "FD": 410
+    },
+    "tommy tremble": {
+     "name": "Tommy Tremble",
+     "FD": 420
+    },
+    "justice hill": {
+     "name": "Justice Hill",
+     "FD": 440
+    },
+    "rashod bateman": {
+     "name": "Rashod Bateman",
+     "FD": 500
+    },
+    "bryce young": {
+     "name": "Bryce Young",
+     "FD": 500
+    },
+    "john metchie": {
+     "name": "John Metchie III",
+     "FD": 500
+    },
+    "jacoby brissett": {
+     "name": "Jacoby Brissett",
+     "FD": 700
+    },
+    "carolina defense": {
+     "name": "Carolina Defense",
+     "FD": 700
+    },
+    "baltimore defense": {
+     "name": "Baltimore Defense",
+     "FD": 750
+    },
+    "xavier legette": {
+     "name": "Xavier Legette",
+     "FD": 800
+    },
+    "jatavion sanders": {
+     "name": "Ja'Tavion Sanders",
+     "FD": 900
+    },
+    "josh cuevas": {
+     "name": "Josh Cuevas",
+     "FD": 900
+    },
+    "mitchell evans": {
+     "name": "Mitchell Evans",
+     "FD": 900
+    },
+    "brycen tremayne": {
+     "name": "Brycen Tremayne",
+     "FD": 1200
+    },
+    "aj dillon": {
+     "name": "AJ Dillon",
+     "FD": 1200
+    },
+    "trevor etienne": {
+     "name": "Trevor Etienne",
+     "FD": 1200
+    },
+    "matthew hibner": {
+     "name": "Matthew Hibner",
+     "FD": 1600
+    },
+    "chris moore": {
+     "name": "Chris Moore",
+     "FD": 1700
+    },
+    "anthony tyus": {
+     "name": "Anthony Tyus III",
+     "FD": 1800
+    },
+    "devontez walker": {
+     "name": "Devontez Walker",
+     "FD": 2000
+    },
+    "lajohntay wester": {
+     "name": "LaJohntay Wester",
+     "FD": 2500
+    },
+    "rasheen ali": {
+     "name": "Rasheen Ali",
+     "FD": 2700
+    },
+    "nick vannett": {
+     "name": "Nick Vannett",
+     "FD": 3000
+    },
+    "feleipe franks": {
+     "name": "Feleipe Franks",
+     "FD": 4000
+    }
+   }
   },
   "290986": {
    "ts": "2026-11-15T15:35:36.185005-05:00",
