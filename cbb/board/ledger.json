@@ -29840,5 +29840,30 @@
   "grp": "power 6",
   "limit": 165.5,
   "status": "open"
+ },
+ {
+  "id": "401921134|spread|2443",
+  "base": "401921134|spread|2443",
+  "flagged": "2026-11-18T03:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401921134,
+  "matchup": "LSU New Orleans @ Texas Tech",
+  "kickoff": "2026-11-18T19:30:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2443,
+  "pick": "LSU New Orleans +35.5",
+  "book": "MGM",
+  "line": 35.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 3.5,
+  "model": -32.0,
+  "opener": 34.5,
+  "grp": "power 6",
+  "limit": 35.0,
+  "status": "open"
  }
 ]
