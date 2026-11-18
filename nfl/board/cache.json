@@ -4631,7 +4631,7 @@
    }
   },
   "290985": {
-   "ts": "2026-11-18T01:47:33.938399-05:00",
+   "ts": "2026-11-18T04:47:35.703197-05:00",
    "odds": {
     "jahmyr gibbs": {
      "name": "Jahmyr Gibbs",
@@ -5357,7 +5357,7 @@
    "odds": {}
   },
   "290993": {
-   "ts": "2026-11-18T01:17:33.886857-05:00",
+   "ts": "2026-11-18T04:47:35.703197-05:00",
    "odds": {
     "jonah coleman": {
      "name": "Jonah Coleman",
@@ -5365,15 +5365,15 @@
     },
     "courtland sutton": {
      "name": "Courtland Sutton",
-     "FD": 175
+     "FD": 170
     },
     "jaylen waddle": {
      "name": "Jaylen Waddle",
-     "FD": 175
+     "FD": 170
     },
     "ashton jeanty": {
      "name": "Ashton Jeanty",
-     "FD": 200
+     "FD": 195
     },
     "pat bryant": {
      "name": "Pat Bryant",
@@ -5385,18 +5385,18 @@
     },
     "evan engram": {
      "name": "Evan Engram",
-     "FD": 320
+     "FD": 330
     },
     "bo nix": {
      "name": "Bo Nix",
-     "FD": 340
-    },
-    "tre tucker": {
-     "name": "Tre Tucker",
-     "FD": 410
+     "FD": 350
     },
     "mike washington": {
      "name": "Mike Washington Jr.",
+     "FD": 390
+    },
+    "tre tucker": {
+     "name": "Tre Tucker",
      "FD": 410
     },
     "troy franklin": {
@@ -5405,7 +5405,7 @@
     },
     "marvin mims": {
      "name": "Marvin Mims Jr.",
-     "FD": 500
+     "FD": 480
     },
     "nate adkins": {
      "name": "Nate Adkins",
@@ -5427,12 +5427,12 @@
      "name": "Michael Mayer",
      "FD": 650
     },
-    "denver defense": {
-     "name": "Denver Defense",
-     "FD": 700
-    },
     "jack bech": {
      "name": "Jack Bech",
+     "FD": 650
+    },
+    "denver defense": {
+     "name": "Denver Defense",
      "FD": 700
     },
     "adam trautman": {
@@ -5453,15 +5453,15 @@
     },
     "cody white": {
      "name": "Cody White",
-     "FD": 2000
+     "FD": 1900
     },
     "donte thornton": {
      "name": "Dont'e Thornton Jr.",
-     "FD": 2000
+     "FD": 1900
     },
     "ian thomas": {
      "name": "Ian Thomas",
-     "FD": 2200
+     "FD": 2000
     },
     "dylan laube": {
      "name": "Dylan Laube",
