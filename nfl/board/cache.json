@@ -5507,8 +5507,89 @@
    }
   },
   "290991": {
-   "ts": "2026-11-15T19:23:28.378076-05:00",
-   "odds": {}
+   "ts": "2026-11-18T13:47:32.899395-05:00",
+   "odds": {
+    "omarion hampton": {
+     "name": "Omarion Hampton",
+     "FD": 120
+    },
+    "breece hall": {
+     "name": "Breece Hall",
+     "FD": 160
+    },
+    "garrett wilson": {
+     "name": "Garrett Wilson",
+     "FD": 190
+    },
+    "braelon allen": {
+     "name": "Braelon Allen",
+     "FD": 230
+    },
+    "adonai mitchell": {
+     "name": "Adonai Mitchell",
+     "FD": 260
+    },
+    "justin herbert": {
+     "name": "Justin Herbert",
+     "FD": 350
+    },
+    "kimani vidal": {
+     "name": "Kimani Vidal",
+     "FD": 410
+    },
+    "keaton mitchell": {
+     "name": "Keaton Mitchell",
+     "FD": 440
+    },
+    "mason taylor": {
+     "name": "Mason Taylor",
+     "FD": 490
+    },
+    "la chargers defense": {
+     "name": "LA Chargers Defense",
+     "FD": 600
+    },
+    "kenyon sadiq": {
+     "name": "Kenyon Sadiq",
+     "FD": 600
+    },
+    "new york jets defense": {
+     "name": "New York Jets Defense",
+     "FD": 650
+    },
+    "isaiah williams": {
+     "name": "Isaiah Williams",
+     "FD": 800
+    },
+    "geno smith": {
+     "name": "Geno Smith",
+     "FD": 1600
+    },
+    "malik mcclain": {
+     "name": "Malik McClain",
+     "FD": 1700
+    },
+    "jeremy ruckert": {
+     "name": "Jeremy Ruckert",
+     "FD": 2000
+    },
+    "isaiah davis": {
+     "name": "Isaiah Davis",
+     "FD": 2700
+    },
+    "andrew beck": {
+     "name": "Andrew Beck",
+     "FD": 3000
+    },
+    "scott matlock": {
+     "name": "Scott Matlock",
+     "FD": 3500
+    },
+    "kene nwangwu": {
+     "name": "Kene Nwangwu",
+     "FD": 4000
+    }
+   }
   },
   "290993": {
    "ts": "2026-11-18T10:47:37.782378-05:00",
