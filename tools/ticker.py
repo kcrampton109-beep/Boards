@@ -6,7 +6,8 @@ the board workflows, waits for each slot that falls in the block and starts that
 passing the cron string as input `slot` (the plan steps read it like github.event.schedule). The workflow then starts
 the next ticker run at the end of the block (a workflow may start others with GITHUB_TOKEN via workflow_dispatch).
 
-A slot is skipped when the board already has a run created in the last few minutes (its own cron fired on time).
+The boards' own crons stay as a backup: each board's `gate` job skips a scheduled run while a ticker run was created in
+the last 45 minutes, so the ticker always starts every slot itself.
 
 Usage: python tools/ticker.py            (needs GH_TOKEN and REPO)
        python tools/ticker.py --dry [N]  (print the next N slots, start nothing)
@@ -17,7 +18,6 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 BOARDS = ("cfb.yml", "nfl.yml", "cbb.yml")
 BLOCK = 30          # minutes per ticker run
 LATE = 2            # a slot up to this many minutes past is still started
-DEDUPE = 4          # skip a slot if the board has a run created this recently
 UTC = dt.timezone.utc
 
 
@@ -74,14 +74,6 @@ def api(path, body=None):
     return json.loads(raw) if raw else {}
 
 
-def recent_run(wf, now):
-    runs = api(f"/actions/workflows/{wf}/runs?per_page=1").get("workflow_runs", [])
-    if not runs:
-        return False
-    created = dt.datetime.fromisoformat(runs[0]["created_at"].replace("Z", "+00:00"))
-    return (now - created) < dt.timedelta(minutes=DEDUPE)
-
-
 def main():
     now = dt.datetime.now(UTC)
     if "--dry" in sys.argv:
@@ -101,9 +93,6 @@ def main():
         if wait > 0:
             time.sleep(wait)
         try:
-            if recent_run(wf, dt.datetime.now(UTC)):
-                print(f"{t:%H:%M} {wf}: ran in the last {DEDUPE} min, skipped", flush=True)
-                continue
             api(f"/actions/workflows/{wf}/dispatches", {"ref": "main", "inputs": {"slot": c}})
             print(f"{t:%H:%M} {wf} started (slot {c})", flush=True)
         except Exception as e:   # one board's failure must not stop the others or the chain

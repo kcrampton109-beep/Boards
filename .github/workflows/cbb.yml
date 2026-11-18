@@ -20,10 +20,30 @@ concurrency:
   cancel-in-progress: false
 permissions:
   contents: write
+  actions: read   # the gate job reads the ticker's runs
 env:
   TZ: America/New_York   # naive local times are Eastern
 jobs:
+  gate:   # a scheduled run is only a backup while ticker.yml starts the board (a stale scheduled run collides on save)
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.g.outputs.go }}
+    steps:
+      - id: g
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          go=true
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            last=$(gh api "repos/${{ github.repository }}/actions/workflows/ticker.yml/runs?per_page=1" --jq '.workflow_runs[0].created_at' || true)
+            if [ -n "$last" ] && [ $(( $(date +%s) - $(date -d "$last" +%s) )) -lt 2700 ]; then
+              go=false; echo "ticker.yml is starting this board (last ticker run $last): scheduled backup run skipped"
+            fi
+          fi
+          echo "go=$go" >> "$GITHUB_OUTPUT"
   run:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 75   # the first run downloads five seasons of history (~35 min); normal runs take about a minute
     defaults:

@@ -27,7 +27,9 @@ matter more than win-loss; judge changes by CLV first. Ask the owner before chan
 GitHub skips some scheduled runs under load (~1 in 8 in week 1); since Nov 13 2026 it fired only ~1 in 6, so
 `ticker.yml` + `tools/ticker.py` start the boards themselves (owner's OK, Nov 17): each run takes one half hour, reads every
 board's cron lines, dispatches each due slot with input `slot` (plan steps read `github.event.schedule || inputs.slot`),
-skips a slot the board's own cron already ran (last 4 min), then dispatches the next ticker run. Board crons stay as backup. Keep Pages publishes under
+then dispatches the next ticker run. Board crons stay as backup:
+each board's `gate` job skips a *scheduled* run while a ticker run was created in the last 45 min (a late cron checks out
+a stale commit and its ledger save collides with the newer run: CFB failed this way Oct 18-Nov 18). Keep Pages publishes under
 ~10 an hour (GitHub's soft limit for branch-based Pages builds): each engine run publishes once.
 
 When lines post (measured Oct 2026): NFL DraftKings + opener right after Monday Night Football (Tue 4-10 AM ET),
