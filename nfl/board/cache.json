@@ -5228,7 +5228,7 @@
    }
   },
   "290986": {
-   "ts": "2026-11-18T05:17:35.450441-05:00",
+   "ts": "2026-11-18T08:47:27.872009-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -5236,7 +5236,7 @@
     },
     "rashee rice": {
      "name": "Rashee Rice",
-     "FD": 150
+     "FD": 145
     },
     "travis kelce": {
      "name": "Travis Kelce",
@@ -5244,27 +5244,27 @@
     },
     "josh downs": {
      "name": "Josh Downs",
-     "FD": 190
+     "FD": 200
     },
     "trey mcbride": {
      "name": "Trey McBride",
      "FD": 300
     },
+    "xavier worthy": {
+     "name": "Xavier Worthy",
+     "FD": 360
+    },
     "tyler allgeier": {
      "name": "Tyler Allgeier",
-     "FD": 360
+     "FD": 380
     },
     "noah gray": {
      "name": "Noah Gray",
-     "FD": 370
+     "FD": 390
     },
     "jake briningstool": {
      "name": "Jake Briningstool",
-     "FD": 370
-    },
-    "xavier worthy": {
-     "name": "Xavier Worthy",
-     "FD": 380
+     "FD": 390
     },
     "bam knight": {
      "name": "Bam Knight",
@@ -5298,36 +5298,36 @@
      "name": "Devin Duvernay",
      "FD": 900
     },
-    "kansas city defense": {
-     "name": "Kansas City Defense",
-     "FD": 950
-    },
     "simi fehoko": {
      "name": "Simi Fehoko",
-     "FD": 1100
+     "FD": 1000
+    },
+    "kansas city defense": {
+     "name": "Kansas City Defense",
+     "FD": 1000
     },
     "carson beck": {
      "name": "Carson Beck",
-     "FD": 1400
+     "FD": 1500
     },
     "jalen royals": {
      "name": "Jalen Royals",
      "FD": 1600
     },
+    "andrew armstrong": {
+     "name": "Andrew Armstrong",
+     "FD": 2200
+    },
     "ben vansumeren": {
      "name": "Ben VanSumeren",
      "FD": 2200
     },
-    "andrew armstrong": {
-     "name": "Andrew Armstrong",
-     "FD": 2500
+    "evan hull": {
+     "name": "Evan Hull",
+     "FD": 2200
     },
     "harrison wallace": {
      "name": "Harrison Wallace III",
-     "FD": 2700
-    },
-    "evan hull": {
-     "name": "Evan Hull",
      "FD": 3000
     },
     "teagan quitoriano": {
@@ -5336,7 +5336,7 @@
     },
     "hunter long": {
      "name": "Hunter Long",
-     "FD": 3000
+     "FD": 3300
     }
    }
   },
