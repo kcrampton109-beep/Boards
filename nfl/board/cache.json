@@ -5099,23 +5099,23 @@
    }
   },
   "290989": {
-   "ts": "2026-11-18T08:58:41.766744-05:00",
+   "ts": "2026-11-18T12:17:54.888891-05:00",
    "odds": {
     "chuba hubbard": {
      "name": "Chuba Hubbard",
-     "FD": -140
+     "FD": -135
     },
     "derrick henry": {
      "name": "Derrick Henry",
-     "FD": -135
+     "FD": -130
     },
     "zay flowers": {
      "name": "Zay Flowers",
-     "FD": 185
+     "FD": 190
     },
     "tetairoa mcmillan": {
      "name": "Tetairoa McMillan",
-     "FD": 195
+     "FD": 200
     },
     "jalen coker": {
      "name": "Jalen Coker",
@@ -5123,18 +5123,18 @@
     },
     "mark andrews": {
      "name": "Mark Andrews",
-     "FD": 320
+     "FD": 330
     },
     "darren waller": {
      "name": "Darren Waller",
-     "FD": 330
-    },
-    "jakobi lane": {
-     "name": "Ja'Kobi Lane",
-     "FD": 410
+     "FD": 340
     },
     "tommy tremble": {
      "name": "Tommy Tremble",
+     "FD": 420
+    },
+    "jakobi lane": {
+     "name": "Ja'Kobi Lane",
      "FD": 420
     },
     "justice hill": {
@@ -5143,7 +5143,7 @@
     },
     "rashod bateman": {
      "name": "Rashod Bateman",
-     "FD": 490
+     "FD": 500
     },
     "bryce young": {
      "name": "Bryce Young",
@@ -5165,21 +5165,21 @@
      "name": "Baltimore Defense",
      "FD": 750
     },
-    "jatavion sanders": {
-     "name": "Ja'Tavion Sanders",
-     "FD": 850
-    },
     "xavier legette": {
      "name": "Xavier Legette",
-     "FD": 850
-    },
-    "mitchell evans": {
-     "name": "Mitchell Evans",
-     "FD": 850
+     "FD": 800
     },
     "josh cuevas": {
      "name": "Josh Cuevas",
      "FD": 900
+    },
+    "jatavion sanders": {
+     "name": "Ja'Tavion Sanders",
+     "FD": 950
+    },
+    "mitchell evans": {
+     "name": "Mitchell Evans",
+     "FD": 950
     },
     "brycen tremayne": {
      "name": "Brycen Tremayne",
@@ -5193,20 +5193,20 @@
      "name": "Trevor Etienne",
      "FD": 1300
     },
-    "chris moore": {
-     "name": "Chris Moore",
-     "FD": 1600
-    },
     "matthew hibner": {
      "name": "Matthew Hibner",
      "FD": 1600
     },
-    "anthony tyus": {
-     "name": "Anthony Tyus III",
-     "FD": 1800
+    "chris moore": {
+     "name": "Chris Moore",
+     "FD": 1700
     },
     "devontez walker": {
      "name": "Devontez Walker",
+     "FD": 1900
+    },
+    "anthony tyus": {
+     "name": "Anthony Tyus III",
      "FD": 1900
     },
     "lajohntay wester": {
