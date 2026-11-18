@@ -1,0 +1,34 @@
+{
+ "id": 100,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/100",
+ "board": "CFB",
+ "play": "401891330|spread|away|m",
+ "game_id": 401891330,
+ "market": "spread",
+ "side": "away",
+ "line": 32.5,
+ "odds": -113.0,
+ "book": "FD",
+ "pick": "Chicago State +32.5",
+ "tier": "FCS",
+ "matchup": "Chicago State @ Southern Utah",
+ "kickoff": "2026-11-21 14:00:00-05:00",
+ "verdict": "void",
+ "forced": false,
+ "reason": "FanDuel's site doesn't list this game. The board's feed (Wed Nov 18 2026 07:51 AM ET) had FanDuel +32.5. DraftKings and BetMGM can't be checked directly.",
+ "fanduel": {
+  "listed": false
+ },
+ "feed": {
+  "as_of": "Wed Nov 18 2026 07:51 AM ET",
+  "books": {
+   "FD": [
+    32.5,
+    -113.0
+   ]
+  }
+ },
+ "notes": "",
+ "flagged_at": "2026-11-18T12:52:04Z",
+ "checked_at": "2026-11-18T12:52:13+00:00"
+}
