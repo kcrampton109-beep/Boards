@@ -22657,7 +22657,9 @@
   "opener": 144.5,
   "grp": "power 6",
   "limit": 145.0,
-  "status": "open"
+  "status": "void",
+  "note": "no result (postponed or cancelled)",
+  "auto_void": true
  },
  {
   "id": "401911347|spread|2433",
@@ -27106,13 +27108,17 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 150.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 74,
   "money": 66,
   "bets": 449,
   "moved": 1.0,
-  "mins": 1004
+  "mins": 1004,
+  "close": 150.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Notre Dame 78 - Florida 86"
  },
  {
   "id": "401909729|spread|154",
@@ -28630,5 +28636,36 @@
   "grp": "power 6",
   "limit": -25.5,
   "status": "open"
+ },
+ {
+  "id": "rlm|401916289|total|under",
+  "base": "rlm|401916289|total|under",
+  "flagged": "2026-11-17T19:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401916289,
+  "matchup": "Arkansas vs Indiana",
+  "kickoff": "2026-11-17T19:30:00-05:00",
+  "tier": "RLM_T",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 153.5",
+  "book": "MGM",
+  "line": 153.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 1.0,
+  "model": 161.2,
+  "opener": 154.5,
+  "grp": "power 6",
+  "limit": 153.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 65,
+  "money": 72,
+  "bets": 13838,
+  "moved": 1.0,
+  "mins": 18
  }
 ]
