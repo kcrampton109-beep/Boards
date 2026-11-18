@@ -27104,7 +27104,11 @@
   "opener": -7.5,
   "grp": "power 6",
   "limit": -7.5,
-  "status": "open"
+  "status": "L",
+  "close": -6.0,
+  "clv": -1.5,
+  "units": -1.0,
+  "final": "UC Irvine 61 - Stanford 65"
  },
  {
   "id": "rlm|401927381|total|under",
@@ -28212,13 +28216,17 @@
   "opener": 148.5,
   "grp": "power 6",
   "limit": 144.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 75,
   "money": 71,
   "bets": 424,
   "moved": 4.0,
-  "mins": 745
+  "mins": 745,
+  "close": 142.0,
+  "clv": 2.5,
+  "units": 0.952,
+  "final": "UC Irvine 61 - Stanford 65"
  },
  {
   "id": "401921729|spread|24|NOV_FAV",
@@ -28243,7 +28251,11 @@
   "opener": -7.5,
   "grp": "power 6",
   "limit": -6.5,
-  "status": "open"
+  "status": "L",
+  "close": -6.0,
+  "clv": -0.5,
+  "units": -1.0,
+  "final": "UC Irvine 61 - Stanford 65"
  },
  {
   "id": "rlm|401911019|total|under",
