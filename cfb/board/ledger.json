@@ -18995,5 +18995,28 @@
   "grp": "FCS-FCS",
   "limit": -19.0,
   "status": "open"
+ },
+ {
+  "id": "401856869|total|under|wx",
+  "base": "401856869|total|under|wx",
+  "flagged": "2026-11-18T18:37-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401856869,
+  "matchup": "Iowa State @ UCF",
+  "kickoff": "2026-11-20 18:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 48.5 (wind 15 mph)",
+  "book": "DK",
+  "line": 48.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 15.4,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
