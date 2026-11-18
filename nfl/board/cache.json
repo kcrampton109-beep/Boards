@@ -4631,7 +4631,7 @@
    }
   },
   "290985": {
-   "ts": "2026-11-17T22:17:34.519570-05:00",
+   "ts": "2026-11-18T01:47:33.938399-05:00",
    "odds": {
     "jahmyr gibbs": {
      "name": "Jahmyr Gibbs",
@@ -4655,23 +4655,23 @@
     },
     "emeka egbuka": {
      "name": "Emeka Egbuka",
-     "FD": 330
+     "FD": 320
     },
     "jalon daniels": {
      "name": "Jalon Daniels",
      "FD": 380
     },
+    "chris godwin": {
+     "name": "Chris Godwin",
+     "FD": 450
+    },
     "isaac teslaa": {
      "name": "Isaac TeSlaa",
      "FD": 450
     },
-    "chris godwin": {
-     "name": "Chris Godwin",
-     "FD": 470
-    },
     "kenneth gainwell": {
      "name": "Kenneth Gainwell",
-     "FD": 490
+     "FD": 500
     },
     "sione vaki": {
      "name": "Sione Vaki",
@@ -4697,12 +4697,12 @@
      "name": "Detroit Defense",
      "FD": 850
     },
-    "jared goff": {
-     "name": "Jared Goff",
-     "FD": 1200
-    },
     "brock wright": {
      "name": "Brock Wright",
+     "FD": 1100
+    },
+    "jared goff": {
+     "name": "Jared Goff",
      "FD": 1200
     },
     "ted hurst": {
@@ -4715,11 +4715,11 @@
     },
     "payne durham": {
      "name": "Payne Durham",
-     "FD": 1800
+     "FD": 1700
     },
     "tyler conklin": {
      "name": "Tyler Conklin",
-     "FD": 1900
+     "FD": 1800
     },
     "jacob saylors": {
      "name": "Jacob Saylors",
@@ -4727,7 +4727,7 @@
     },
     "tay martin": {
      "name": "Tay Martin",
-     "FD": 3300
+     "FD": 3500
     },
     "bauer sharp": {
      "name": "Bauer Sharp",
@@ -4735,11 +4735,11 @@
     },
     "kameron johnson": {
      "name": "Kameron Johnson",
-     "FD": 3500
+     "FD": 4000
     },
     "ko kieft": {
      "name": "Ko Kieft",
-     "FD": 5000
+     "FD": 4500
     }
    }
   },
