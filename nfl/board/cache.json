@@ -4518,7 +4518,7 @@
    }
   },
   "290983": {
-   "ts": "2026-11-17T23:47:29.516731-05:00",
+   "ts": "2026-11-18T03:17:41.980148-05:00",
    "odds": {
     "david montgomery": {
      "name": "David Montgomery",
@@ -4554,11 +4554,11 @@
     },
     "tyler warren": {
      "name": "Tyler Warren",
-     "FD": 320
+     "FD": 330
     },
     "seth mcgowan": {
      "name": "Seth McGowan",
-     "FD": 390
+     "FD": 380
     },
     "cj stroud": {
      "name": "C.J. Stroud",
@@ -4570,7 +4570,7 @@
     },
     "laquon treadwell": {
      "name": "Laquon Treadwell",
-     "FD": 460
+     "FD": 470
     },
     "houston defense": {
      "name": "Houston Defense",
@@ -4578,7 +4578,7 @@
     },
     "deion burks": {
      "name": "Deion Burks",
-     "FD": 700
+     "FD": 750
     },
     "daniel jones": {
      "name": "Daniel Jones",
@@ -4612,17 +4612,17 @@
      "name": "Nick Westbrook-Ikhine",
      "FD": 3000
     },
+    "dj giddens": {
+     "name": "DJ Giddens",
+     "FD": 3000
+    },
     "quez watkins": {
      "name": "Quez Watkins",
      "FD": 3000
     },
     "pharaoh brown": {
      "name": "Pharaoh Brown",
-     "FD": 3300
-    },
-    "dj giddens": {
-     "name": "DJ Giddens",
-     "FD": 3300
+     "FD": 3500
     },
     "nikko remigio": {
      "name": "Nikko Remigio",
@@ -4744,7 +4744,7 @@
    }
   },
   "290984": {
-   "ts": "2026-11-17T23:47:29.516731-05:00",
+   "ts": "2026-11-18T03:17:41.980148-05:00",
    "odds": {
     "javonte williams": {
      "name": "Javonte Williams",
@@ -4788,7 +4788,7 @@
     },
     "tennessee defense": {
      "name": "Tennessee Defense",
-     "FD": 470
+     "FD": 460
     },
     "cam ward": {
      "name": "Cam Ward",
@@ -4806,10 +4806,6 @@
      "name": "Hunter Luepke",
      "FD": 550
     },
-    "luke schoonmaker": {
-     "name": "Luke Schoonmaker",
-     "FD": 650
-    },
     "calvin ridley": {
      "name": "Calvin Ridley",
      "FD": 650
@@ -4825,6 +4821,10 @@
     "kylen granson": {
      "name": "Kylen Granson",
      "FD": 650
+    },
+    "luke schoonmaker": {
+     "name": "Luke Schoonmaker",
+     "FD": 700
     },
     "kavontae turpin": {
      "name": "KaVontae Turpin",
@@ -4861,7 +4861,7 @@
    }
   },
   "290990": {
-   "ts": "2026-11-17T23:47:29.516731-05:00",
+   "ts": "2026-11-18T03:17:41.980148-05:00",
    "odds": {
     "dandre swift": {
      "name": "D'Andre Swift",
@@ -4970,7 +4970,7 @@
    }
   },
   "290988": {
-   "ts": "2026-11-17T23:47:29.516731-05:00",
+   "ts": "2026-11-18T03:17:41.980148-05:00",
    "odds": {
     "bhayshul tuten": {
      "name": "Bhayshul Tuten",
@@ -5232,7 +5232,7 @@
    "odds": {}
   },
   "290987": {
-   "ts": "2026-11-17T23:47:29.516731-05:00",
+   "ts": "2026-11-18T03:17:41.980148-05:00",
    "odds": {
     "james cook": {
      "name": "James Cook",
@@ -5482,7 +5482,7 @@
    "odds": {}
   },
   "290824": {
-   "ts": "2026-11-17T23:47:29.516731-05:00",
+   "ts": "2026-11-18T03:17:41.980148-05:00",
    "odds": {
     "christian mccaffrey": {
      "name": "Christian McCaffrey",
@@ -5599,7 +5599,7 @@
    }
   },
   "290994": {
-   "ts": "2026-11-17T23:47:29.516731-05:00",
+   "ts": "2026-11-18T03:17:41.980148-05:00",
    "odds": {
     "jamarr chase": {
      "name": "Ja'Marr Chase",
