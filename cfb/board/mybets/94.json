@@ -1,0 +1,23 @@
+{
+ "id": 94,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/94",
+ "board": "CFB",
+ "pick": "Abilene Christian -14.5",
+ "odds": -113,
+ "book": "FanDuel",
+ "amount": 10.0,
+ "notes": "",
+ "matchup": "Eastern Kentucky @ Abilene Christian",
+ "kickoff": "2026-11-21 14:00:00-05:00",
+ "play": "401868059|spread|home|m",
+ "logged": "2026-11-18T03:26:39Z",
+ "updated": "2026-11-18T03:26:49+00:00",
+ "tier": "FCS",
+ "game_id": 401868059,
+ "board_line": -13.5,
+ "board_odds": -113.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "home",
+ "line": -14.5
+}
