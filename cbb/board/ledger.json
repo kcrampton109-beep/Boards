@@ -26988,7 +26988,11 @@
   "opener": 4.0,
   "grp": "mid-major",
   "limit": 3.0,
-  "status": "open"
+  "status": "W",
+  "close": 2.0,
+  "clv": 1.5,
+  "units": 0.893,
+  "final": "UT Arlington 83 - Southern Miss 72"
  },
  {
   "id": "401925064|spread|2447",
@@ -27013,7 +27017,11 @@
   "opener": 30.5,
   "grp": "power 6",
   "limit": 30.0,
-  "status": "open"
+  "status": "L",
+  "close": 27.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Nicholls 41 - Ole Miss 76"
  },
  {
   "id": "401920720|total|over",
@@ -27515,7 +27523,11 @@
   "opener": 150.5,
   "grp": "low-major",
   "limit": 154.5,
-  "status": "open"
+  "status": "L",
+  "close": 158.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Lamar 104 - Omaha 74"
  },
  {
   "id": "401921097|spread|242",
@@ -27540,7 +27552,11 @@
   "opener": -1.5,
   "grp": "mid-major",
   "limit": -1.5,
-  "status": "open"
+  "status": "W",
+  "close": -2.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Texas A&M-Corpus Christi 74 - Rice 81"
  },
  {
   "id": "rlm|401917533|total|under",
@@ -27928,7 +27944,11 @@
   "opener": 148.5,
   "grp": "mid-major",
   "limit": 149.5,
-  "status": "open"
+  "status": "L",
+  "close": 149.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "UT Arlington 83 - Southern Miss 72"
  },
  {
   "id": "401927388|total|under",
@@ -27953,7 +27973,11 @@
   "opener": 151.5,
   "grp": "mid-major",
   "limit": 154.5,
-  "status": "open"
+  "status": "L",
+  "close": 154.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Lindenwood 74 - Northern Iowa 81"
  },
  {
   "id": "rlm|401926143|total|under",
@@ -27978,13 +28002,17 @@
   "opener": 148.5,
   "grp": "low-major",
   "limit": 144.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 72,
   "money": 68,
   "bets": 378,
   "moved": 4.0,
-  "mins": 625
+  "mins": 625,
+  "close": 145.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "SIU Edwardsville 78 - North Dakota 83"
  },
  {
   "id": "401921106|total|over",
@@ -28038,13 +28066,17 @@
   "opener": 149.5,
   "grp": "power 6",
   "limit": 142.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 66,
   "money": 26,
   "bets": 307,
   "moved": 7.0,
-  "mins": 655
+  "mins": 655,
+  "close": 142.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Nicholls 41 - Ole Miss 76"
  },
  {
   "id": "rlm|401906851|total|under",
@@ -29622,6 +29654,31 @@
   "opener": 143.5,
   "grp": "mid-major",
   "limit": 142.5,
+  "status": "open"
+ },
+ {
+  "id": "401921141|total|over",
+  "base": "401921141|total|over",
+  "flagged": "2026-11-17T22:42-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401921141,
+  "matchup": "Elon @ South Carolina",
+  "kickoff": "2026-11-18T19:00:00-05:00",
+  "tier": "NOV_OVER",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 137.5",
+  "book": "MGM",
+  "line": 137.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.5,
+  "model": 143.0,
+  "opener": 138.5,
+  "grp": "power 6",
+  "limit": 137.5,
   "status": "open"
  }
 ]
