@@ -1,0 +1,23 @@
+{
+ "id": 96,
+ "issue": "https://github.com/kcrampton109-beep/Boards/issues/96",
+ "board": "CFB",
+ "pick": "Tennessee Tech +40.5",
+ "odds": -110,
+ "book": "FanDuel",
+ "amount": 15.0,
+ "notes": "",
+ "matchup": "Tennessee Tech @ Mississippi State",
+ "kickoff": "2026-11-21 13:00:00-05:00",
+ "play": "401856750|spread|away|m",
+ "logged": "2026-11-18T03:26:48Z",
+ "updated": "2026-11-18T03:27:01+00:00",
+ "tier": "STRONG",
+ "game_id": 401856750,
+ "board_line": 40.5,
+ "board_odds": -110.0,
+ "board_book": "FD",
+ "market": "spread",
+ "side": "away",
+ "line": 40.5
+}
