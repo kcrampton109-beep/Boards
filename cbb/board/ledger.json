@@ -28315,13 +28315,17 @@
   "opener": 23.5,
   "grp": "mid-major",
   "limit": 22.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 73,
   "money": 90,
   "bets": 509,
   "moved": 1.0,
-  "mins": 787
+  "mins": 787,
+  "close": 23.0,
+  "clv": -0.5,
+  "units": 0.926,
+  "final": "Montana State 62 - Gonzaga 74"
  },
  {
   "id": "rlm|401920921|total|under",
