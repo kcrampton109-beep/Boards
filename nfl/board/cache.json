@@ -5146,7 +5146,7 @@
    }
   },
   "290989": {
-   "ts": "2026-11-19T14:47:40.462279-05:00",
+   "ts": "2026-11-19T18:17:46.771783-05:00",
    "odds": {
     "chuba hubbard": {
      "name": "Chuba Hubbard",
@@ -5154,7 +5154,7 @@
     },
     "derrick henry": {
      "name": "Derrick Henry",
-     "FD": -130
+     "FD": -125
     },
     "tetairoa mcmillan": {
      "name": "Tetairoa McMillan",
@@ -5190,7 +5190,7 @@
     },
     "justice hill": {
      "name": "Justice Hill",
-     "FD": 460
+     "FD": 480
     },
     "rashod bateman": {
      "name": "Rashod Bateman",
@@ -5254,11 +5254,11 @@
     },
     "rasheen ali": {
      "name": "Rasheen Ali",
-     "FD": 2200
+     "FD": 2000
     },
     "adam randall": {
      "name": "Adam Randall",
-     "FD": 2200
+     "FD": 2000
     },
     "lajohntay wester": {
      "name": "LaJohntay Wester",
