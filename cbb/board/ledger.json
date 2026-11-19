@@ -29483,7 +29483,11 @@
   "opener": 148.0,
   "grp": "mid-major",
   "limit": 148.0,
-  "status": "open"
+  "status": "L",
+  "close": 147.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "UC Riverside 62 - San Diego 71"
  },
  {
   "id": "401922292|spread|2427",
@@ -29566,13 +29570,17 @@
   "opener": -2.5,
   "grp": "power 6",
   "limit": -2.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 80,
   "money": 83,
   "bets": 313,
   "moved": 1.0,
-  "mins": 1388
+  "mins": 1388,
+  "close": -3.5,
+  "clv": 1.0,
+  "units": 0.893,
+  "final": "UConn 79 - Arizona 85"
  },
  {
   "id": "401917181|spread|213|NOV_FAV",
@@ -29742,7 +29750,11 @@
   "opener": 151.0,
   "grp": "power 6",
   "limit": 149.0,
-  "status": "open"
+  "status": "L",
+  "close": 147.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Oakland 65 - Arizona State 68"
  },
  {
   "id": "401921816|spread|2016",
@@ -29767,7 +29779,11 @@
   "opener": 45.5,
   "grp": "power 6",
   "limit": 45.0,
-  "status": "open"
+  "status": "L",
+  "close": 40.5,
+  "clv": 5.0,
+  "units": -1.0,
+  "final": "Alcorn State 41 - Missouri 102"
  },
  {
   "id": "401929004|total|over",
@@ -31225,13 +31241,17 @@
   "opener": 151.0,
   "grp": "power 6",
   "limit": 147.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 66,
   "money": 22,
   "bets": 620,
   "moved": 3.5,
-  "mins": 557
+  "mins": 557,
+  "close": 147.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Oakland 65 - Arizona State 68"
  },
  {
   "id": "rlm|401911393|total|under",
@@ -32091,13 +32111,17 @@
   "opener": 153.5,
   "grp": "power 6",
   "limit": 155.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 88,
   "money": 92,
   "bets": 691,
   "moved": 3.0,
-  "mins": 288
+  "mins": 288,
+  "close": 156.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Portland 77 - Colorado 74"
  },
  {
   "id": "rlm|401911456|total|over",
@@ -32562,13 +32586,17 @@
   "opener": 153.5,
   "grp": "power 6",
   "limit": 154.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 92,
   "money": 94,
   "bets": 1201,
   "moved": 1.0,
-  "mins": 48
+  "mins": 48,
+  "close": 154.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Alcorn State 41 - Missouri 102"
  },
  {
   "id": "401920413|spread|147",
@@ -32673,5 +32701,31 @@
   "limit": -14.5,
   "status": "open",
   "gap_open": 3.3
+ },
+ {
+  "id": "401926773|total|under",
+  "base": "401926773|total|under",
+  "flagged": "2026-11-18T23:42-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401926773,
+  "matchup": "Tarleton State @ USC",
+  "kickoff": "2026-11-19T23:00:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 160.5",
+  "book": "DK",
+  "line": 160.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.0,
+  "model": 155.5,
+  "opener": 159.5,
+  "grp": "power 6",
+  "limit": 160.5,
+  "status": "open",
+  "gap_open": 4.0
  }
 ]
