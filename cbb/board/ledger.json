@@ -29118,7 +29118,11 @@
   "opener": -1.5,
   "grp": "mid-major",
   "limit": 1.5,
-  "status": "open"
+  "status": "W",
+  "close": -1.5,
+  "clv": 3.0,
+  "units": 0.833,
+  "final": "Wichita State 79 - Loyola Chicago 75"
  },
  {
   "id": "401927357|total|over",
@@ -29409,7 +29413,11 @@
   "opener": 6.5,
   "grp": "low-major",
   "limit": 6.5,
-  "status": "open"
+  "status": "L",
+  "close": 9.5,
+  "clv": -3.0,
+  "units": -1.0,
+  "final": "Samford 74 - South Carolina Upstate 64"
  },
  {
   "id": "401922055|spread|2515",
@@ -30912,7 +30920,11 @@
   "opener": 25.5,
   "grp": "mid-major",
   "limit": 28.5,
-  "status": "open"
+  "status": "L",
+  "close": 28.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Arkansas-Pine Bluff 69 - Arkansas State 100"
  },
  {
   "id": "rlm|401929201|total|under",
@@ -30972,7 +30984,11 @@
   "opener": 163.0,
   "grp": "power 6",
   "limit": 156.0,
-  "status": "open"
+  "status": "L",
+  "close": 156.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "South Dakota 47 - Nebraska 73"
  },
  {
   "id": "rlm|401920751|spread|2132",
@@ -31224,13 +31240,17 @@
   "opener": 150.5,
   "grp": "low-major",
   "limit": 148.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 65,
   "money": 66,
   "bets": 459,
   "moved": 2.0,
-  "mins": 485
+  "mins": 485,
+  "close": 148.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "UNC Greensboro 78 - Gardner-Webb 72"
  },
  {
   "id": "rlm|401911232|total|under",
@@ -31255,13 +31275,17 @@
   "opener": 150.5,
   "grp": "mid-major",
   "limit": 150.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 65,
   "money": 46,
   "bets": 1726,
   "moved": 1.0,
-  "mins": 485
+  "mins": 485,
+  "close": 150.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Wichita State 79 - Loyola Chicago 75"
  },
  {
   "id": "rlm|401919808|spread|112358",
@@ -31522,13 +31546,17 @@
   "opener": -25.5,
   "grp": "mid-major",
   "limit": -27.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 68,
   "money": 62,
   "bets": 444,
   "moved": 3.0,
-  "mins": 348
+  "mins": 348,
+  "close": -28.0,
+  "clv": 0.5,
+  "units": 0.833,
+  "final": "Arkansas-Pine Bluff 69 - Arkansas State 100"
  },
  {
   "id": "rlm|401929201|spread|2916",
@@ -31798,13 +31826,17 @@
   "opener": 160.5,
   "grp": "mid-major",
   "limit": 161.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 65,
   "money": 79,
   "bets": 504,
   "moved": 2.0,
-  "mins": 288
+  "mins": 288,
+  "close": 160.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Arkansas-Pine Bluff 69 - Arkansas State 100"
  },
  {
   "id": "rlm|401922047|total|over",
@@ -32380,13 +32412,17 @@
   "opener": 128.5,
   "grp": "power 6",
   "limit": 127.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 91,
   "money": 81,
   "bets": 2499,
   "moved": 1.0,
-  "mins": 107
+  "mins": 107,
+  "close": 127.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Boston College 74 - Harvard 69"
  },
  {
   "id": "401920349|spread|24",
