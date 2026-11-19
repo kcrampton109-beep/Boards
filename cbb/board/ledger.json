@@ -29263,7 +29263,11 @@
   "opener": -8.5,
   "grp": "mid-major",
   "limit": -9.0,
-  "status": "open"
+  "status": "W",
+  "close": -10.5,
+  "clv": 2.0,
+  "units": 0.87,
+  "final": "Louisiana 56 - San Francisco 77"
  },
  {
   "id": "401911456|spread|70",
@@ -29288,7 +29292,11 @@
   "opener": 19.5,
   "grp": "mid-major",
   "limit": 18.5,
-  "status": "open"
+  "status": "W",
+  "close": 18.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Idaho 74 - Nevada 91"
  },
  {
   "id": "401920158|spread|2239",
@@ -29808,7 +29816,11 @@
   "opener": 143.5,
   "grp": "mid-major",
   "limit": 142.5,
-  "status": "open"
+  "status": "L",
+  "close": 137.5,
+  "clv": -5.0,
+  "units": -1.0,
+  "final": "Washington State 79 - Hawai'i 63"
  },
  {
   "id": "401921141|total|over",
@@ -30403,13 +30415,17 @@
   "opener": 143.5,
   "grp": "mid-major",
   "limit": 141.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 82,
   "money": 89,
   "bets": 368,
   "moved": 2.0,
-  "mins": 828
+  "mins": 828,
+  "close": 137.5,
+  "clv": 4.0,
+  "units": -1.0,
+  "final": "Washington State 79 - Hawai'i 63"
  },
  {
   "id": "rlm|401921064|total|under",
@@ -30434,13 +30450,17 @@
   "opener": 135.5,
   "grp": "mid-major",
   "limit": 134.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 90,
   "money": 91,
   "bets": 323,
   "moved": 1.0,
-  "mins": 828
+  "mins": 828,
+  "close": 133.5,
+  "clv": 1.0,
+  "units": 0.952,
+  "final": "Louisiana 56 - San Francisco 77"
  },
  {
   "id": "401921134|total|under",
@@ -31146,7 +31166,11 @@
   "opener": -27.5,
   "grp": "mid-major",
   "limit": -25.0,
-  "status": "open"
+  "status": "W",
+  "close": -24.5,
+  "clv": 0.0,
+  "units": 0.833,
+  "final": "Texas Southern 51 - San Diego State 97"
  },
  {
   "id": "rlm|401925949|total|over",
@@ -32146,13 +32170,17 @@
   "opener": 145.5,
   "grp": "mid-major",
   "limit": 145.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 87,
   "money": 90,
   "bets": 474,
   "moved": 1.0,
-  "mins": 348
+  "mins": 348,
+  "close": 146.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Idaho 74 - Nevada 91"
  },
  {
   "id": "rlm|401929146|total|over",
@@ -32177,13 +32205,17 @@
   "opener": 155.5,
   "grp": "mid-major",
   "limit": 157.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 91,
   "money": 77,
   "bets": 550,
   "moved": 2.0,
-  "mins": 348
+  "mins": 348,
+  "close": 157.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Texas Southern 51 - San Diego State 97"
  },
  {
   "id": "rlm|401920158|spread|2239",
