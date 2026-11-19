@@ -11130,5 +11130,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_11_TB_DET:TD:td:00-0036919",
+  "tier": "TD",
+  "market": "td",
+  "side": null,
+  "team": "TB",
+  "pid": "00-0036919",
+  "game_id": "2026_11_TB_DET",
+  "week": 11,
+  "matchup": "TB @ DET",
+  "kickoff": "Sun Nov 22, 1:00 PM ET",
+  "pick": "Kenny Gainwell anytime TD",
+  "line": null,
+  "odds": 500,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": 0.05,
+  "note": "model 22% vs FD 17%",
+  "limit": null,
+  "model_line": -4.5,
+  "flagged": "2026-11-19T12:17:38.247554-05:00",
+  "kickoff_iso": "2026-11-22T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
