@@ -487,11 +487,11 @@
    }
   },
   "2026_11_JAX_NYG": {
-   "ts": "2026-11-19T10:48:06.773719-05:00",
+   "ts": "2026-11-19T14:17:54.117680-05:00",
    "wx": {
-    "wind": 6.0,
-    "gust": 15.2,
-    "temp": 59.0,
+    "wind": 10.9,
+    "gust": 27.1,
+    "temp": 56.0,
     "precip": 58
    }
   },
@@ -5291,7 +5291,7 @@
    }
   },
   "290986": {
-   "ts": "2026-11-19T10:48:06.773719-05:00",
+   "ts": "2026-11-19T14:17:54.117680-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -5303,7 +5303,7 @@
     },
     "travis kelce": {
      "name": "Travis Kelce",
-     "FD": 190
+     "FD": 185
     },
     "josh downs": {
      "name": "Josh Downs",
@@ -5311,19 +5311,19 @@
     },
     "trey mcbride": {
      "name": "Trey McBride",
-     "FD": 300
-    },
-    "xavier worthy": {
-     "name": "Xavier Worthy",
-     "FD": 370
+     "FD": 290
     },
     "tyler allgeier": {
      "name": "Tyler Allgeier",
-     "FD": 380
+     "FD": 320
     },
     "bam knight": {
      "name": "Bam Knight",
-     "FD": 450
+     "FD": 360
+    },
+    "xavier worthy": {
+     "name": "Xavier Worthy",
+     "FD": 360
     },
     "patrick mahomes": {
      "name": "Patrick Mahomes",
@@ -5333,10 +5333,6 @@
      "name": "Noah Gray",
      "FD": 480
     },
-    "arizona defense": {
-     "name": "Arizona Defense",
-     "FD": 500
-    },
     "cyrus allen": {
      "name": "Cyrus Allen",
      "FD": 500
@@ -5345,33 +5341,37 @@
      "name": "Jaydn Ott",
      "FD": 750
     },
+    "reggie virgil": {
+     "name": "Reggie Virgil",
+     "FD": 800
+    },
+    "simi fehoko": {
+     "name": "Simi Fehoko",
+     "FD": 850
+    },
     "elijah higgins": {
      "name": "Elijah Higgins",
      "FD": 850
     },
-    "reggie virgil": {
-     "name": "Reggie Virgil",
-     "FD": 850
+    "devin duvernay": {
+     "name": "Devin Duvernay",
+     "FD": 950
     },
-    "simi fehoko": {
-     "name": "Simi Fehoko",
-     "FD": 900
+    "arizona defense": {
+     "name": "Arizona Defense",
+     "FD": 1000
     },
     "kansas city defense": {
      "name": "Kansas City Defense",
      "FD": 1000
     },
-    "devin duvernay": {
-     "name": "Devin Duvernay",
-     "FD": 1000
+    "carson beck": {
+     "name": "Carson Beck",
+     "FD": 1200
     },
     "jake briningstool": {
      "name": "Jake Briningstool",
      "FD": 1300
-    },
-    "carson beck": {
-     "name": "Carson Beck",
-     "FD": 1500
     },
     "jalen royals": {
      "name": "Jalen Royals",
@@ -5379,7 +5379,7 @@
     },
     "andrew armstrong": {
      "name": "Andrew Armstrong",
-     "FD": 1900
+     "FD": 1800
     },
     "ben vansumeren": {
      "name": "Ben VanSumeren",
@@ -5395,11 +5395,11 @@
     },
     "harrison wallace": {
      "name": "Harrison Wallace III",
-     "FD": 2700
+     "FD": 3000
     },
     "teagan quitoriano": {
      "name": "Teagan Quitoriano",
-     "FD": 3500
+     "FD": 4000
     }
    }
   },
