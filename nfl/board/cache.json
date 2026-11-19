@@ -5162,7 +5162,7 @@
    }
   },
   "290989": {
-   "ts": "2026-11-18T22:17:52.675911-05:00",
+   "ts": "2026-11-19T01:17:57.797513-05:00",
    "odds": {
     "chuba hubbard": {
      "name": "Chuba Hubbard",
@@ -5174,11 +5174,11 @@
     },
     "tetairoa mcmillan": {
      "name": "Tetairoa McMillan",
-     "FD": 185
+     "FD": 190
     },
     "zay flowers": {
      "name": "Zay Flowers",
-     "FD": 190
+     "FD": 195
     },
     "jalen coker": {
      "name": "Jalen Coker",
@@ -5194,11 +5194,11 @@
     },
     "tommy tremble": {
      "name": "Tommy Tremble",
-     "FD": 400
+     "FD": 410
     },
     "mitchell evans": {
      "name": "Mitchell Evans",
-     "FD": 400
+     "FD": 410
     },
     "jakobi lane": {
      "name": "Ja'Kobi Lane",
@@ -5242,26 +5242,26 @@
     },
     "josh cuevas": {
      "name": "Josh Cuevas",
-     "FD": 900
+     "FD": 950
     },
     "aj dillon": {
      "name": "AJ Dillon",
-     "FD": 1300
+     "FD": 1200
     },
     "trevor etienne": {
      "name": "Trevor Etienne",
-     "FD": 1300
+     "FD": 1200
     },
     "matthew hibner": {
      "name": "Matthew Hibner",
      "FD": 1600
     },
-    "anthony tyus": {
-     "name": "Anthony Tyus III",
-     "FD": 1800
-    },
     "devontez walker": {
      "name": "Devontez Walker",
+     "FD": 1900
+    },
+    "anthony tyus": {
+     "name": "Anthony Tyus III",
      "FD": 1900
     },
     "chris moore": {
@@ -5278,7 +5278,7 @@
     },
     "lajohntay wester": {
      "name": "LaJohntay Wester",
-     "FD": 2500
+     "FD": 2700
     },
     "nick vannett": {
      "name": "Nick Vannett",
