@@ -29176,7 +29176,11 @@
   "opener": 6.0,
   "grp": "mid-major",
   "limit": 6.0,
-  "status": "open"
+  "status": "W",
+  "close": 6.5,
+  "clv": 0.0,
+  "units": 0.847,
+  "final": "Fresno State 86 - San Jos\u00e9 State 92"
  },
  {
   "id": "401925949|spread|2692",
@@ -29201,7 +29205,11 @@
   "opener": 32.5,
   "grp": "mid-major",
   "limit": 31.5,
-  "status": "open"
+  "status": "W",
+  "close": 28.5,
+  "clv": 4.0,
+  "units": 0.909,
+  "final": "Weber State 71 - Utah State 101"
  },
  {
   "id": "401925949|total|under",
@@ -29226,7 +29234,11 @@
   "opener": 168.5,
   "grp": "mid-major",
   "limit": 168.0,
-  "status": "open"
+  "status": "L",
+  "close": 172.0,
+  "clv": -3.5,
+  "units": -1.0,
+  "final": "Weber State 71 - Utah State 101"
  },
  {
   "id": "401921064|spread|2539",
@@ -29414,8 +29426,8 @@
   "grp": "low-major",
   "limit": 6.5,
   "status": "L",
-  "close": 9.5,
-  "clv": -3.0,
+  "close": 8.0,
+  "clv": -1.5,
   "units": -1.0,
   "final": "Samford 74 - South Carolina Upstate 64"
  },
@@ -31143,13 +31155,17 @@
   "opener": 168.5,
   "grp": "mid-major",
   "limit": 169.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 65,
   "money": 47,
   "bets": 509,
   "moved": 2.0,
-  "mins": 587
+  "mins": 587,
+  "close": 172.0,
+  "clv": 2.5,
+  "units": 0.909,
+  "final": "Weber State 71 - Utah State 101"
  },
  {
   "id": "rlm|401919735|total|under",
@@ -31415,13 +31431,17 @@
   "opener": 162.5,
   "grp": "power 6",
   "limit": 162.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 65,
   "money": 63,
   "bets": 439,
   "moved": 1.0,
-  "mins": 498
+  "mins": 498,
+  "close": 163.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Northern Colorado 54 - BYU 98"
  },
  {
   "id": "401920075|spread|2244",
@@ -32001,13 +32021,17 @@
   "opener": 153.5,
   "grp": "mid-major",
   "limit": 156.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 92,
   "money": 88,
   "bets": 944,
   "moved": 3.0,
-  "mins": 288
+  "mins": 288,
+  "close": 156.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Fresno State 86 - San Jos\u00e9 State 92"
  },
  {
   "id": "rlm|401909494|total|over",
@@ -32032,13 +32056,17 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 152.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 90,
   "money": 34,
   "bets": 843,
   "moved": 1.0,
-  "mins": 288
+  "mins": 288,
+  "close": 153.0,
+  "clv": 0.5,
+  "units": 0.87,
+  "final": "Bethune-Cookman 65 - Creighton 88"
  },
  {
   "id": "rlm|401909762|total|over",
@@ -32499,13 +32527,17 @@
   "opener": 29.5,
   "grp": "power 6",
   "limit": 28.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 65,
   "money": 73,
   "bets": 1267,
   "moved": 1.0,
-  "mins": 48
+  "mins": 48,
+  "close": 28.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Northern Colorado 54 - BYU 98"
  },
  {
   "id": "rlm|401921816|total|over",
