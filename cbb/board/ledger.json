@@ -33420,5 +33420,31 @@
   "bets": 2499,
   "moved": 3.0,
   "mins": 527
+ },
+ {
+  "id": "401918950|spread|56",
+  "base": "401918950|spread|56",
+  "flagged": "2026-11-19T12:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401918950,
+  "matchup": "Stetson @ Louisville",
+  "kickoff": "2026-11-19T20:00:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 56,
+  "pick": "Stetson +37.5",
+  "book": "DK",
+  "line": 37.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 4.0,
+  "model": -33.5,
+  "opener": 33.5,
+  "grp": "power 6",
+  "limit": 37.0,
+  "status": "open",
+  "gap_open": -0.0
  }
 ]
