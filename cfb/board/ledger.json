@@ -19225,5 +19225,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401871077|total|under|wx",
+  "base": "401871077|total|under|wx",
+  "flagged": "2026-11-19T15:07-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401871077,
+  "matchup": "Delaware @ New Mexico State",
+  "kickoff": "2026-11-21 15:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 54.5 (wind 21 mph)",
+  "book": "MGM",
+  "line": 54.5,
+  "odds": -108.0,
+  "stake": 0.5,
+  "edge": 20.7,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
