@@ -33182,5 +33182,31 @@
   "bets": 1580,
   "moved": 4.0,
   "mins": 737
+ },
+ {
+  "id": "401911534|total|over",
+  "base": "401911534|total|over",
+  "flagged": "2026-11-19T09:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401911534,
+  "matchup": "UTEP @ New Mexico State",
+  "kickoff": "2026-11-19T21:00:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 131.5",
+  "book": "MGM",
+  "line": 131.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 7.8,
+  "model": 139.3,
+  "opener": 136.5,
+  "grp": "mid-major",
+  "limit": 134.0,
+  "status": "open",
+  "gap_open": 2.8
  }
 ]
