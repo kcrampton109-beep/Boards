@@ -29343,7 +29343,11 @@
   "opener": -4.5,
   "grp": "mid-major",
   "limit": -3.5,
-  "status": "open"
+  "status": "L",
+  "close": -3.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "James Madison 70 - Towson 52"
  },
  {
   "id": "401920751|total|under",
@@ -29368,7 +29372,11 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 153.5,
-  "status": "open"
+  "status": "W",
+  "close": 153.0,
+  "clv": 0.5,
+  "units": 0.909,
+  "final": "Youngstown State 54 - Cincinnati 91"
  },
  {
   "id": "401922283|spread|2908",
@@ -29586,7 +29594,11 @@
   "opener": 2.5,
   "grp": "low-major",
   "limit": -0.5,
-  "status": "open"
+  "status": "W",
+  "close": 1.5,
+  "clv": 1.0,
+  "units": 0.952,
+  "final": "Wofford 79 - Charleston Southern 77"
  },
  {
   "id": "401920694|spread|43",
@@ -29611,7 +29623,11 @@
   "opener": -2.5,
   "grp": "mid-major",
   "limit": -5.0,
-  "status": "open"
+  "status": "L",
+  "close": -7.5,
+  "clv": 5.0,
+  "units": -1.0,
+  "final": "Vermont 74 - Yale 76"
  },
  {
   "id": "401911277|spread|322",
@@ -29665,7 +29681,11 @@
   "opener": -6.5,
   "grp": "low-major",
   "limit": -7.5,
-  "status": "open"
+  "status": "W",
+  "close": -8.5,
+  "clv": 2.0,
+  "units": 0.847,
+  "final": "Morgan State 70 - North Carolina A&T 82"
  },
  {
   "id": "401921734|total|over",
@@ -29918,7 +29938,11 @@
   "opener": 34.5,
   "grp": "power 6",
   "limit": 35.0,
-  "status": "open"
+  "status": "L",
+  "close": 36.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "LSU New Orleans 41 - Texas Tech 86"
  },
  {
   "id": "401920515|total|under",
@@ -30063,13 +30087,17 @@
   "opener": 140.5,
   "grp": "mid-major",
   "limit": 139.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 86,
   "money": 81,
   "bets": 272,
   "moved": 1.0,
-  "mins": 798
+  "mins": 798,
+  "close": 138.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "James Madison 70 - Towson 52"
  },
  {
   "id": "rlm|401906805|total|under",
@@ -30226,13 +30254,17 @@
   "opener": 151.5,
   "grp": "low-major",
   "limit": 151.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 82,
   "money": 72,
   "bets": 267,
   "moved": 1.0,
-  "mins": 678
+  "mins": 678,
+  "close": 151.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Morehead State 77 - Ohio 91"
  },
  {
   "id": "401919808|spread|112358",
@@ -30373,7 +30405,11 @@
   "opener": 153.5,
   "grp": "power 6",
   "limit": 154.0,
-  "status": "open"
+  "status": "W",
+  "close": 157.5,
+  "clv": -3.0,
+  "units": 0.909,
+  "final": "LSU New Orleans 41 - Texas Tech 86"
  },
  {
   "id": "401920974|spread|2737",
@@ -30485,13 +30521,17 @@
   "opener": 140.5,
   "grp": "mid-major",
   "limit": 139.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 73,
   "money": 77,
   "bets": 403,
   "moved": 1.0,
-  "mins": 618
+  "mins": 618,
+  "close": 137.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Vermont 74 - Yale 76"
  },
  {
   "id": "rlm|401909526|total|under",
@@ -30516,13 +30556,17 @@
   "opener": 145.5,
   "grp": "power 6",
   "limit": 144.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 88,
   "money": 92,
   "bets": 267,
   "moved": 1.0,
-  "mins": 648
+  "mins": 648,
+  "close": 144.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Northern Illinois 65 - Marquette 79"
  },
  {
   "id": "rlm|401922212|total|under",
@@ -30547,13 +30591,17 @@
   "opener": 155.5,
   "grp": "mid-major",
   "limit": 155.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 66,
   "money": 35,
   "bets": 287,
   "moved": 1.0,
-  "mins": 601
+  "mins": 601,
+  "close": 154.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Florida Gulf Coast 76 - Florida Atlantic 86"
  },
  {
   "id": "401922212|spread|2226",
@@ -30578,7 +30626,11 @@
   "opener": -6.5,
   "grp": "mid-major",
   "limit": -5.0,
-  "status": "open"
+  "status": "W",
+  "close": -6.0,
+  "clv": 1.5,
+  "units": 0.87,
+  "final": "Florida Gulf Coast 76 - Florida Atlantic 86"
  },
  {
   "id": "rlm|401909516|total|under",
@@ -30778,7 +30830,11 @@
   "opener": -6.5,
   "grp": "mid-major",
   "limit": -4.5,
-  "status": "open"
+  "status": "W",
+  "close": -5.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Howard 68 - Duquesne 74"
  },
  {
   "id": "401920751|spread|2754",
@@ -30803,7 +30859,11 @@
   "opener": 27.5,
   "grp": "power 6",
   "limit": 28.0,
-  "status": "open"
+  "status": "L",
+  "close": 29.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Youngstown State 54 - Cincinnati 91"
  },
  {
   "id": "401928398|spread|2029",
@@ -30909,13 +30969,17 @@
   "opener": -27.5,
   "grp": "power 6",
   "limit": -27.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 71,
   "money": 37,
   "bets": 615,
   "moved": 1.0,
-  "mins": 557
+  "mins": 557,
+  "close": -29.5,
+  "clv": 2.0,
+  "units": 0.87,
+  "final": "Youngstown State 54 - Cincinnati 91"
  },
  {
   "id": "rlm|401929420|total|under",
@@ -31058,13 +31122,17 @@
   "opener": 141.5,
   "grp": "mid-major",
   "limit": 139.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 85,
   "money": 90,
   "bets": 287,
   "moved": 2.0,
-  "mins": 437
+  "mins": 437,
+  "close": 136.5,
+  "clv": 3.0,
+  "units": 0.926,
+  "final": "Chicago State 52 - UIC 60"
  },
  {
   "id": "rlm|401921734|total|under",
@@ -31213,13 +31281,17 @@
   "opener": -6.5,
   "grp": "low-major",
   "limit": -6.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 72,
   "money": 72,
   "bets": 484,
   "moved": 1.0,
-  "mins": 378
+  "mins": 378,
+  "close": -8.5,
+  "clv": 2.0,
+  "units": 0.833,
+  "final": "Morgan State 70 - North Carolina A&T 82"
  },
  {
   "id": "rlm|401922212|spread|526",
@@ -31244,13 +31316,17 @@
   "opener": 6.5,
   "grp": "mid-major",
   "limit": 5.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 69,
   "money": 63,
   "bets": 883,
   "moved": 1.0,
-  "mins": 378
+  "mins": 378,
+  "close": 6.0,
+  "clv": -0.5,
+  "units": -1.0,
+  "final": "Florida Gulf Coast 76 - Florida Atlantic 86"
  },
  {
   "id": "rlm|401921742|total|over",
@@ -31371,13 +31447,17 @@
   "opener": 143.5,
   "grp": "mid-major",
   "limit": 139.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 68,
   "money": 29,
   "bets": 1277,
   "moved": 4.0,
-  "mins": 288
+  "mins": 288,
+  "close": 139.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Howard 68 - Duquesne 74"
  },
  {
   "id": "rlm|401928398|spread|2032",
@@ -31499,13 +31579,17 @@
   "opener": 161.5,
   "grp": "low-major",
   "limit": 162.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 67,
   "money": 78,
   "bets": 1635,
   "moved": 2.0,
-  "mins": 228
+  "mins": 228,
+  "close": 163.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Wofford 79 - Charleston Southern 77"
  },
  {
   "id": "rlm|401920682|total|over",
@@ -31600,13 +31684,17 @@
   "opener": 153.5,
   "grp": "power 6",
   "limit": 157.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 68,
   "money": 54,
   "bets": 1176,
   "moved": 4.0,
-  "mins": 258
+  "mins": 258,
+  "close": 157.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "LSU New Orleans 41 - Texas Tech 86"
  },
  {
   "id": "rlm|401919848|total|under",
@@ -31693,13 +31781,17 @@
   "opener": 151.5,
   "grp": "low-major",
   "limit": 154.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 74,
   "money": 83,
   "bets": 742,
   "moved": 3.0,
-  "mins": 168
+  "mins": 168,
+  "close": 154.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "VMI 76 - Longwood 82"
  },
  {
   "id": "rlm|401921156|total|over",
@@ -31724,13 +31816,17 @@
   "opener": 148.5,
   "grp": "low-major",
   "limit": 150.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 76,
   "money": 83,
   "bets": 732,
   "moved": 2.0,
-  "mins": 168
+  "mins": 168,
+  "close": 150.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Morgan State 70 - North Carolina A&T 82"
  },
  {
   "id": "rlm|401920751|total|over",
@@ -31755,13 +31851,17 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 153.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 82,
   "money": 17,
   "bets": 1388,
   "moved": 1.0,
-  "mins": 198
+  "mins": 198,
+  "close": 153.0,
+  "clv": -0.5,
+  "units": -1.0,
+  "final": "Youngstown State 54 - Cincinnati 91"
  },
  {
   "id": "rlm|401909526|total|over",
@@ -31786,13 +31886,17 @@
   "opener": 145.5,
   "grp": "power 6",
   "limit": 146.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 66,
   "money": 46,
   "bets": 1034,
   "moved": 1.0,
-  "mins": 198
+  "mins": 198,
+  "close": 144.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Northern Illinois 65 - Marquette 79"
  },
  {
   "id": "rlm|401911473|total|over",
@@ -32003,8 +32107,12 @@
   "opener": 140.5,
   "grp": "mid-major",
   "limit": 137.5,
-  "status": "open",
-  "gap_open": 2.3
+  "status": "W",
+  "gap_open": 2.3,
+  "close": 137.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Vermont 74 - Yale 76"
  },
  {
   "id": "401918959|spread|152",
