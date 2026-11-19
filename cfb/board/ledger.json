@@ -19248,5 +19248,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401856752|total|under|wx",
+  "base": "401856752|total|under|wx",
+  "flagged": "2026-11-19T16:07-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401856752,
+  "matchup": "Texas A&M @ Oklahoma",
+  "kickoff": "2026-11-21 15:45:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 38.5 (wind 19 mph)",
+  "book": "DK",
+  "line": 38.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 19.1,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
