@@ -19018,5 +19018,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401856749|total|under|m",
+  "base": "401856749|total|under|m",
+  "flagged": "2026-11-18T19:07-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401856749,
+  "matchup": "Wofford @ Ole Miss",
+  "kickoff": "2026-11-21 12:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 60.5",
+  "book": "DK",
+  "line": 60.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 9.2,
+  "model": 51.3,
+  "grp": "FBS-FCS",
+  "limit": null,
+  "status": "open"
  }
 ]
