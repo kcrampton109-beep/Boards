@@ -33446,5 +33446,31 @@
   "limit": 37.0,
   "status": "open",
   "gap_open": -0.0
+ },
+ {
+  "id": "401925941|spread|264",
+  "base": "401925941|spread|264",
+  "flagged": "2026-11-19T12:42-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401925941,
+  "matchup": "Utah Tech @ Washington",
+  "kickoff": "2026-11-19T21:00:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 264,
+  "pick": "Washington -16.5",
+  "book": "DK",
+  "line": -16.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 3.2,
+  "model": 19.7,
+  "opener": -17.5,
+  "grp": "power 6",
+  "limit": -16.5,
+  "status": "open",
+  "gap_open": 2.2
  }
 ]
