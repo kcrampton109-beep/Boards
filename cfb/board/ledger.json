@@ -19156,5 +19156,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401867959|total|under|wx",
+  "base": "401867959|total|under|wx",
+  "flagged": "2026-11-19T13:38-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401867959,
+  "matchup": "Delaware State @ South Carolina State",
+  "kickoff": "2026-11-21 13:30:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 53.5 (wind 17 mph)",
+  "book": "FD",
+  "line": 53.5,
+  "odds": -113.0,
+  "stake": 0.5,
+  "edge": 16.9,
+  "model": null,
+  "grp": "FCS-FCS",
+  "limit": null,
+  "status": "open"
  }
 ]
