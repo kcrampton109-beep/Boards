@@ -28973,7 +28973,11 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 151.0,
-  "status": "open"
+  "status": "L",
+  "close": 145.5,
+  "clv": 6.0,
+  "units": -1.0,
+  "final": "Houston 86 - Florida 76"
  },
  {
   "id": "401917181|spread|213",
@@ -29758,7 +29762,11 @@
   "opener": 1.5,
   "grp": "power 6",
   "limit": 2.0,
-  "status": "open"
+  "status": "W",
+  "close": 1.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "Houston 86 - Florida 76"
  },
  {
   "id": "rlm|401920513|total|under",
@@ -29818,13 +29826,17 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 148.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 73,
   "money": 48,
   "bets": 913,
   "moved": 3.5,
-  "mins": 1008
+  "mins": 1008,
+  "close": 145.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Houston 86 - Florida 76"
  },
  {
   "id": "401920158|total|under",
@@ -32133,5 +32145,31 @@
   "limit": -15.5,
   "status": "open",
   "gap_open": 3.3
+ },
+ {
+  "id": "401919050|spread|245",
+  "base": "401919050|spread|245",
+  "flagged": "2026-11-18T19:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401919050,
+  "matchup": "Texas A&M @ TCU",
+  "kickoff": "2026-11-19T20:00:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 245,
+  "pick": "Texas A&M +1.5",
+  "book": "MGM",
+  "line": 1.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 3.3,
+  "model": 1.8,
+  "opener": -1.5,
+  "grp": "power 6",
+  "limit": 1.5,
+  "status": "open",
+  "gap_open": 0.3
  }
 ]
