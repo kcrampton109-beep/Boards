@@ -29321,7 +29321,11 @@
   "opener": 34.5,
   "grp": "power 6",
   "limit": 34.0,
-  "status": "open"
+  "status": "W",
+  "close": 31.0,
+  "clv": 3.5,
+  "units": 0.909,
+  "final": "Cal State Fullerton 71 - UCLA 75"
  },
  {
   "id": "401909787|spread|2305",
@@ -29973,7 +29977,11 @@
   "opener": 160.5,
   "grp": "power 6",
   "limit": 165.5,
-  "status": "open"
+  "status": "W",
+  "close": 167.5,
+  "clv": -1.0,
+  "units": 0.87,
+  "final": "Cal State Fullerton 71 - UCLA 75"
  },
  {
   "id": "401921134|spread|2443",
@@ -30221,13 +30229,17 @@
   "opener": 160.5,
   "grp": "power 6",
   "limit": 165.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 67,
   "money": 72,
   "bets": 469,
   "moved": 5.0,
-  "mins": 978
+  "mins": 978,
+  "close": 167.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Cal State Fullerton 71 - UCLA 75"
  },
  {
   "id": "rlm|401923401|total|under",
@@ -32240,13 +32252,17 @@
   "opener": 34.5,
   "grp": "power 6",
   "limit": 31.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 65,
   "money": 75,
   "bets": 1746,
   "moved": 3.0,
-  "mins": 378
+  "mins": 378,
+  "close": 31.0,
+  "clv": 0.5,
+  "units": 0.952,
+  "final": "Cal State Fullerton 71 - UCLA 75"
  },
  {
   "id": "401920694|total|over",
@@ -32759,5 +32775,36 @@
   "limit": 160.5,
   "status": "open",
   "gap_open": 4.0
+ },
+ {
+  "id": "rlm|401920888|total|under",
+  "base": "rlm|401920888|total|under",
+  "flagged": "2026-11-19T00:42-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401920888,
+  "matchup": "Seton Hall vs Wisconsin",
+  "kickoff": "2026-11-19T20:30:00-05:00",
+  "tier": "RLM_T",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 140.5",
+  "book": "FD",
+  "line": 140.5,
+  "odds": -108.0,
+  "stake": 1.0,
+  "edge": 1.0,
+  "model": 142.0,
+  "opener": 140.5,
+  "grp": "power 6",
+  "limit": 140.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 92,
+  "money": 89,
+  "bets": 429,
+  "moved": 1.0,
+  "mins": 1188
  }
 ]
