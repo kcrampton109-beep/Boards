@@ -30064,7 +30064,11 @@
   "opener": -8.5,
   "grp": "power 6",
   "limit": -8.5,
-  "status": "open"
+  "status": "W",
+  "close": -9.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "UNLV 71 - Auburn 86"
  },
  {
   "id": "rlm|401920947|spread|2174",
@@ -32806,5 +32810,36 @@
   "bets": 429,
   "moved": 1.0,
   "mins": 1188
+ },
+ {
+  "id": "rlm|401911534|total|under",
+  "base": "rlm|401911534|total|under",
+  "flagged": "2026-11-19T01:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401911534,
+  "matchup": "UTEP @ New Mexico State",
+  "kickoff": "2026-11-19T21:00:00-05:00",
+  "tier": "RLM_T",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 135.5",
+  "book": "FD",
+  "line": 135.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 1.0,
+  "model": 139.3,
+  "opener": 136.5,
+  "grp": "mid-major",
+  "limit": 135.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 94,
+  "money": 96,
+  "bets": 297,
+  "moved": 1.0,
+  "mins": 1187
  }
 ]
