@@ -5162,7 +5162,7 @@
    }
   },
   "290989": {
-   "ts": "2026-11-18T15:47:43.947404-05:00",
+   "ts": "2026-11-18T19:17:37.077179-05:00",
    "odds": {
     "chuba hubbard": {
      "name": "Chuba Hubbard",
@@ -5194,11 +5194,11 @@
     },
     "tommy tremble": {
      "name": "Tommy Tremble",
-     "FD": 410
+     "FD": 400
     },
     "mitchell evans": {
      "name": "Mitchell Evans",
-     "FD": 410
+     "FD": 400
     },
     "jakobi lane": {
      "name": "Ja'Kobi Lane",
@@ -5256,12 +5256,12 @@
      "name": "Matthew Hibner",
      "FD": 1600
     },
-    "devontez walker": {
-     "name": "Devontez Walker",
-     "FD": 1900
-    },
     "anthony tyus": {
      "name": "Anthony Tyus III",
+     "FD": 1800
+    },
+    "devontez walker": {
+     "name": "Devontez Walker",
      "FD": 1900
     },
     "chris moore": {
@@ -5278,7 +5278,7 @@
     },
     "lajohntay wester": {
      "name": "LaJohntay Wester",
-     "FD": 2500
+     "FD": 2700
     },
     "nick vannett": {
      "name": "Nick Vannett",
