@@ -19133,5 +19133,28 @@
   "grp": "FBS",
   "limit": 12.5,
   "status": "open"
+ },
+ {
+  "id": "401866697|total|under|wx",
+  "base": "401866697|total|under|wx",
+  "flagged": "2026-11-19T12:37-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401866697,
+  "matchup": "Monmouth @ Campbell",
+  "kickoff": "2026-11-21 12:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 64.5 (wind 15 mph)",
+  "book": "FD",
+  "line": 64.5,
+  "odds": -113.0,
+  "stake": 0.5,
+  "edge": 15.3,
+  "model": null,
+  "grp": "FCS-FCS",
+  "limit": null,
+  "status": "open"
  }
 ]
