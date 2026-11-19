@@ -29002,7 +29002,11 @@
   "opener": -18.5,
   "grp": "power 6",
   "limit": -18.5,
-  "status": "open"
+  "status": "L",
+  "close": -16.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "IU Indianapolis 74 - Penn State 81"
  },
  {
   "id": "401920682|spread|2561",
@@ -29027,7 +29031,11 @@
   "opener": 30.5,
   "grp": "power 6",
   "limit": 30.5,
-  "status": "open"
+  "status": "L",
+  "close": 29.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Siena 72 - St. John's 119"
  },
  {
   "id": "401920682|total|under",
@@ -29052,7 +29060,11 @@
   "opener": 164.5,
   "grp": "power 6",
   "limit": 162.5,
-  "status": "open"
+  "status": "L",
+  "close": 173.5,
+  "clv": -10.0,
+  "units": -1.0,
+  "final": "Siena 72 - St. John's 119"
  },
  {
   "id": "401906805|spread|2097",
@@ -29406,7 +29418,11 @@
   "opener": 5.5,
   "grp": "low-major",
   "limit": 5.5,
-  "status": "open"
+  "status": "L",
+  "close": 4.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Furman 78 - Radford 71"
  },
  {
   "id": "401917535|total|over",
@@ -29456,7 +29472,11 @@
   "opener": 3.5,
   "grp": "low-major",
   "limit": 0.0,
-  "status": "open"
+  "status": "L",
+  "close": 3.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Tennessee Tech 98 - UNC Asheville 77"
  },
  {
   "id": "401906805|total|over",
@@ -29537,7 +29557,11 @@
   "opener": -18.5,
   "grp": "power 6",
   "limit": -17.5,
-  "status": "open"
+  "status": "L",
+  "close": -16.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "IU Indianapolis 74 - Penn State 81"
  },
  {
   "id": "401911377|spread|2127",
@@ -29612,7 +29636,11 @@
   "opener": -2.5,
   "grp": "low-major",
   "limit": -2.5,
-  "status": "open"
+  "status": "W",
+  "close": -3.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Binghamton 65 - Lafayette 80"
  },
  {
   "id": "401921156|spread|2448",
@@ -29737,7 +29765,11 @@
   "opener": 138.5,
   "grp": "power 6",
   "limit": 137.5,
-  "status": "open"
+  "status": "W",
+  "close": 136.5,
+  "clv": -1.0,
+  "units": 0.87,
+  "final": "Elon 72 - South Carolina 80"
  },
  {
   "id": "401920514|spread|248",
@@ -29961,13 +29993,17 @@
   "opener": 12.5,
   "grp": "low-major",
   "limit": 11.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 68,
   "money": 77,
   "bets": 252,
   "moved": 1.0,
-  "mins": 798
+  "mins": 798,
+  "close": 10.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Detroit Mercy 62 - Eastern Michigan 99"
  },
  {
   "id": "rlm|401920947|total|under",
@@ -29992,13 +30028,17 @@
   "opener": 142.5,
   "grp": "low-major",
   "limit": 142.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 71,
   "money": 57,
   "bets": 277,
   "moved": 1.0,
-  "mins": 768
+  "mins": 768,
+  "close": 141.0,
+  "clv": 1.5,
+  "units": -1.0,
+  "final": "Detroit Mercy 62 - Eastern Michigan 99"
  },
  {
   "id": "rlm|401926838|total|under",
@@ -30116,13 +30156,17 @@
   "opener": 137.5,
   "grp": "low-major",
   "limit": 134.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 81,
   "money": 67,
   "bets": 252,
   "moved": 4.0,
-  "mins": 748
+  "mins": 748,
+  "close": 132.5,
+  "clv": 2.0,
+  "units": 0.952,
+  "final": "Boston University 65 - Merrimack 60"
  },
  {
   "id": "rlm|401921141|total|under",
@@ -30147,13 +30191,17 @@
   "opener": 138.5,
   "grp": "power 6",
   "limit": 137.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 86,
   "money": 84,
   "bets": 252,
   "moved": 2.0,
-  "mins": 738
+  "mins": 738,
+  "close": 136.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Elon 72 - South Carolina 80"
  },
  {
   "id": "rlm|401920963|total|under",
@@ -30234,7 +30282,11 @@
   "opener": 142.5,
   "grp": "low-major",
   "limit": 141.0,
-  "status": "open"
+  "status": "W",
+  "close": 141.0,
+  "clv": 0.5,
+  "units": 0.893,
+  "final": "Detroit Mercy 62 - Eastern Michigan 99"
  },
  {
   "id": "rlm|401929004|total|under",
@@ -30346,7 +30398,11 @@
   "opener": 1.5,
   "grp": "low-major",
   "limit": 3.0,
-  "status": "open"
+  "status": "L",
+  "close": 4.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Chattanooga 90 - Winthrop 79"
  },
  {
   "id": "401920974|total|under",
@@ -30371,7 +30427,11 @@
   "opener": 164.5,
   "grp": "low-major",
   "limit": 166.0,
-  "status": "open"
+  "status": "L",
+  "close": 165.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Chattanooga 90 - Winthrop 79"
  },
  {
   "id": "401911277|total|over",
@@ -30396,7 +30456,11 @@
   "opener": 133.5,
   "grp": "low-major",
   "limit": 133.0,
-  "status": "open"
+  "status": "W",
+  "close": 133.5,
+  "clv": 2.0,
+  "units": 0.87,
+  "final": "Binghamton 65 - Lafayette 80"
  },
  {
   "id": "rlm|401920694|total|under",
@@ -30539,13 +30603,17 @@
   "opener": 142.5,
   "grp": "power 6",
   "limit": 140.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 92,
   "money": 88,
   "bets": 282,
   "moved": 3.0,
-  "mins": 558
+  "mins": 558,
+  "close": 137.0,
+  "clv": 3.5,
+  "units": 0.909,
+  "final": "Navy 53 - Georgetown 84"
  },
  {
   "id": "rlm|401911277|total|under",
@@ -30570,13 +30638,17 @@
   "opener": 133.5,
   "grp": "low-major",
   "limit": 133.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 86,
   "money": 88,
   "bets": 257,
   "moved": 1.0,
-  "mins": 588
+  "mins": 588,
+  "close": 133.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Binghamton 65 - Lafayette 80"
  },
  {
   "id": "rlm|401922055|total|under",
@@ -30601,13 +30673,17 @@
   "opener": 150.5,
   "grp": "low-major",
   "limit": 149.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 69,
   "money": 35,
   "bets": 252,
   "moved": 1.0,
-  "mins": 588
+  "mins": 588,
+  "close": 151.5,
+  "clv": -2.0,
+  "units": 0.926,
+  "final": "Furman 78 - Radford 71"
  },
  {
   "id": "rlm|401911309|total|under",
@@ -30632,13 +30708,17 @@
   "opener": 140.5,
   "grp": "mid-major",
   "limit": 138.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 90,
   "money": 88,
   "bets": 262,
   "moved": 2.0,
-  "mins": 557
+  "mins": 557,
+  "close": 138.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Brown 74 - Holy Cross 63"
  },
  {
   "id": "rlm|401920075|total|under",
@@ -30663,13 +30743,17 @@
   "opener": 133.5,
   "grp": "mid-major",
   "limit": 132.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 89,
   "money": 95,
   "bets": 272,
   "moved": 1.0,
-  "mins": 557
+  "mins": 557,
+  "close": 131.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "North Carolina Central 60 - George Mason 83"
  },
  {
   "id": "401925782|spread|2184",
@@ -31222,8 +31306,12 @@
   "opener": -26.5,
   "grp": "mid-major",
   "limit": -22.5,
-  "status": "open",
-  "gap_open": -1.0
+  "status": "W",
+  "gap_open": -1.0,
+  "close": -21.5,
+  "clv": -1.0,
+  "units": 0.847,
+  "final": "North Carolina Central 60 - George Mason 83"
  },
  {
   "id": "rlm|401921141|spread|2210",
@@ -31248,13 +31336,17 @@
   "opener": 16.5,
   "grp": "power 6",
   "limit": 15.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 65,
   "money": 72,
   "bets": 827,
   "moved": 1.0,
-  "mins": 288
+  "mins": 288,
+  "close": 15.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Elon 72 - South Carolina 80"
  },
  {
   "id": "rlm|401925782|total|under",
@@ -31372,13 +31464,17 @@
   "opener": 161.5,
   "grp": "low-major",
   "limit": 163.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 76,
   "money": 84,
   "bets": 1403,
   "moved": 2.0,
-  "mins": 198
+  "mins": 198,
+  "close": 164.0,
+  "clv": 0.5,
+  "units": 0.893,
+  "final": "Tennessee Tech 98 - UNC Asheville 77"
  },
  {
   "id": "rlm|401911377|total|over",
@@ -31434,13 +31530,17 @@
   "opener": 164.5,
   "grp": "power 6",
   "limit": 171.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 66,
   "money": 61,
   "bets": 2004,
   "moved": 7.0,
-  "mins": 228
+  "mins": 228,
+  "close": 173.5,
+  "clv": 2.0,
+  "units": 0.952,
+  "final": "Siena 72 - St. John's 119"
  },
  {
   "id": "rlm|401922055|spread|2515",
@@ -31465,13 +31565,17 @@
   "opener": 5.5,
   "grp": "low-major",
   "limit": 4.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 73,
   "money": 89,
   "bets": 838,
   "moved": 1.0,
-  "mins": 228
+  "mins": 228,
+  "close": 4.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Furman 78 - Radford 71"
  },
  {
   "id": "rlm|401921134|total|over",
@@ -32055,13 +32159,17 @@
   "opener": 164.5,
   "grp": "low-major",
   "limit": 164.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 73,
   "money": 69,
   "bets": 2489,
   "moved": 1.0,
-  "mins": 17
+  "mins": 17,
+  "close": 165.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Chattanooga 90 - Winthrop 79"
  },
  {
   "id": "401909516|total|over",
@@ -32086,8 +32194,12 @@
   "opener": 142.5,
   "grp": "power 6",
   "limit": 137.5,
-  "status": "open",
-  "gap_open": 0.4
+  "status": "L",
+  "gap_open": 0.4,
+  "close": 137.0,
+  "clv": -0.5,
+  "units": -1.0,
+  "final": "Navy 53 - Georgetown 84"
  },
  {
   "id": "rlm|401909555|total|under",
