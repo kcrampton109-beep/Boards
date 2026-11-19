@@ -19041,5 +19041,28 @@
   "grp": "FBS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401856747|total|under|m",
+  "base": "401856747|total|under|m",
+  "flagged": "2026-11-18T19:39-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401856747,
+  "matchup": "Samford @ Auburn",
+  "kickoff": "2026-11-21 15:30:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 59.5",
+  "book": "DK",
+  "line": 59.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 14.8,
+  "model": 44.7,
+  "grp": "FBS-FCS",
+  "limit": null,
+  "status": "open"
  }
 ]
