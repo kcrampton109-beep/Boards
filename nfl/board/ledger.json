@@ -10621,11 +10621,11 @@
   "model_line": -8.0,
   "flagged": "2026-11-16T02:18:33.366075-05:00",
   "kickoff_iso": "2026-11-19T20:15:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": 12.5,
+  "clv": -2.5,
+  "final": "IND 3 - HOU 26"
  },
  {
   "id": "2026_11_NO_CHI:LEAN:spread:away",
@@ -10677,11 +10677,11 @@
   "model_line": -8.0,
   "flagged": "2026-11-16T12:27:53.523350-05:00",
   "kickoff_iso": "2026-11-19T20:15:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": 12.5,
+  "clv": -1.5,
+  "final": "IND 3 - HOU 26"
  },
  {
   "id": "2026_11_MIA_BUF:RLM:total:under",
