@@ -35278,5 +35278,31 @@
   "bets": 287,
   "moved": 4.0,
   "mins": 527
+ },
+ {
+  "id": "401926134|total|over",
+  "base": "401926134|total|over",
+  "flagged": "2026-11-20T10:42-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401926134,
+  "matchup": "Oakland @ Purdue",
+  "kickoff": "2026-11-20T19:00:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 146.5",
+  "book": "MGM",
+  "line": 146.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.7,
+  "model": 152.2,
+  "opener": 148.5,
+  "grp": "power 6",
+  "limit": 147.0,
+  "status": "open",
+  "gap_open": 3.7
  }
 ]
