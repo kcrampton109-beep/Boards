@@ -32821,8 +32821,12 @@
   "opener": 159.5,
   "grp": "power 6",
   "limit": 160.5,
-  "status": "open",
-  "gap_open": 4.0
+  "status": "W",
+  "gap_open": 4.0,
+  "close": 159.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Tarleton State 51 - USC 96"
  },
  {
   "id": "rlm|401920888|total|under",
@@ -33885,13 +33889,17 @@
   "opener": 159.5,
   "grp": "power 6",
   "limit": 159.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 83,
   "money": 76,
   "bets": 2024,
   "moved": 1.0,
-  "mins": 288
+  "mins": 288,
+  "close": 159.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Tarleton State 51 - USC 96"
  },
  {
   "id": "401921419|total|over",
