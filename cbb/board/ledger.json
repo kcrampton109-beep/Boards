@@ -32351,8 +32351,12 @@
   "opener": -14.5,
   "grp": "power 6",
   "limit": -14.5,
-  "status": "open",
-  "gap_open": 4.3
+  "status": "L",
+  "gap_open": 4.3,
+  "close": -16.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Northeastern 77 - Butler 84"
  },
  {
   "id": "401926814|total|under",
@@ -32377,8 +32381,12 @@
   "opener": 158.5,
   "grp": "mid-major",
   "limit": 158.5,
-  "status": "open",
-  "gap_open": 5.3
+  "status": "W",
+  "gap_open": 5.3,
+  "close": 158.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Charleston 70 - Drake 86"
  },
  {
   "id": "401906867|spread|253",
@@ -32677,8 +32685,12 @@
   "opener": 10.5,
   "grp": "low-major",
   "limit": 13.5,
-  "status": "open",
-  "gap_open": 0.2
+  "status": "W",
+  "gap_open": 0.2,
+  "close": 11.5,
+  "clv": 2.0,
+  "units": 0.98,
+  "final": "Montana State 74 - High Point 85"
  },
  {
   "id": "401916318|spread|2378",
@@ -32943,13 +32955,17 @@
   "opener": 144.5,
   "grp": "mid-major",
   "limit": 143.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 90,
   "money": 74,
   "bets": 252,
   "moved": 1.0,
-  "mins": 857
+  "mins": 857,
+  "close": 142.0,
+  "clv": 1.5,
+  "units": 0.909,
+  "final": "Tulane 67 - Louisiana Tech 74"
  },
  {
   "id": "rlm|401918950|total|under",
@@ -33036,13 +33052,17 @@
   "opener": 138.5,
   "grp": "low-major",
   "limit": 136.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 91,
   "money": 64,
   "bets": 277,
   "moved": 2.0,
-  "mins": 677
+  "mins": 677,
+  "close": 133.5,
+  "clv": 3.0,
+  "units": 0.909,
+  "final": "Maine 69 - Quinnipiac 67"
  },
  {
   "id": "rlm|401920413|total|under",
@@ -33067,13 +33087,17 @@
   "opener": 144.5,
   "grp": "low-major",
   "limit": 144.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 91,
   "money": 81,
   "bets": 545,
   "moved": 1.0,
-  "mins": 677
+  "mins": 677,
+  "close": 144.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Montana State 74 - High Point 85"
  },
  {
   "id": "rlm|401920519|total|under",
@@ -33256,13 +33280,17 @@
   "opener": 2.5,
   "grp": "mid-major",
   "limit": 1.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 71,
   "money": 76,
   "bets": 555,
   "moved": 1.0,
-  "mins": 558
+  "mins": 558,
+  "close": 1.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Little Rock 78 - Jacksonville 72"
  },
  {
   "id": "401919005|spread|2655",
@@ -33287,8 +33315,12 @@
   "opener": -1.5,
   "grp": "mid-major",
   "limit": 2.5,
-  "status": "open",
-  "gap_open": -0.7
+  "status": "L",
+  "gap_open": -0.7,
+  "close": 2.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Tulane 67 - Louisiana Tech 74"
  },
  {
   "id": "rlm|401930884|spread|204",
@@ -33524,13 +33556,17 @@
   "opener": 164.5,
   "grp": "power 6",
   "limit": 163.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 65,
   "money": 36,
   "bets": 1019,
   "moved": 1.0,
-  "mins": 288
+  "mins": 288,
+  "close": 163.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Northeastern 77 - Butler 84"
  },
  {
   "id": "rlm|401928354|spread|2492",
@@ -33918,6 +33954,58 @@
   "opener": -16.5,
   "grp": "power 6",
   "limit": -15.5,
+  "status": "open",
+  "gap_open": 2.0
+ },
+ {
+  "id": "401919826|spread|2710",
+  "base": "401919826|spread|2710",
+  "flagged": "2026-11-19T21:42-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401919826,
+  "matchup": "Western Illinois vs UAlbany",
+  "kickoff": "2026-11-20T15:00:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2710,
+  "pick": "Western Illinois +8.5",
+  "book": "MGM",
+  "line": 8.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 4.2,
+  "model": -4.3,
+  "opener": 5.5,
+  "grp": "low-major",
+  "limit": 7.5,
+  "status": "open",
+  "gap_open": 1.2
+ },
+ {
+  "id": "401916124|spread|79",
+  "base": "401916124|spread|79",
+  "flagged": "2026-11-19T21:42-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401916124,
+  "matchup": "UT Martin vs Southern Illinois",
+  "kickoff": "2026-11-20T17:30:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 79,
+  "pick": "Southern Illinois -0.5",
+  "book": "FD",
+  "line": -0.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 3.0,
+  "model": 3.5,
+  "opener": -1.5,
+  "grp": "mid-major",
+  "limit": -0.5,
   "status": "open",
   "gap_open": 2.0
  }
