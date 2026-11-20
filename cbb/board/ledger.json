@@ -32441,8 +32441,12 @@
   "opener": 164.5,
   "grp": "power 6",
   "limit": 163.5,
-  "status": "open",
-  "gap_open": 6.0
+  "status": "W",
+  "gap_open": 6.0,
+  "close": 156.5,
+  "clv": 8.0,
+  "units": 0.909,
+  "final": "Oregon State 82 - Oregon 71"
  },
  {
   "id": "rlm|401920974|total|over",
@@ -32835,13 +32839,17 @@
   "opener": 140.5,
   "grp": "power 6",
   "limit": 140.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 92,
   "money": 89,
   "bets": 429,
   "moved": 1.0,
-  "mins": 1188
+  "mins": 1188,
+  "close": 138.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Seton Hall 74 - Wisconsin 69"
  },
  {
   "id": "rlm|401911534|total|under",
@@ -32932,13 +32940,17 @@
   "opener": 159.5,
   "grp": "power 6",
   "limit": 159.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 71,
   "money": 67,
   "bets": 313,
   "moved": 1.0,
-  "mins": 1098
+  "mins": 1098,
+  "close": 155.5,
+  "clv": 4.0,
+  "units": 0.87,
+  "final": "Utah Tech 69 - Washington 82"
  },
  {
   "id": "rlm|401919005|total|under",
@@ -33243,13 +33255,17 @@
   "opener": 164.5,
   "grp": "power 6",
   "limit": 161.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 87,
   "money": 86,
   "bets": 1580,
   "moved": 4.0,
-  "mins": 737
+  "mins": 737,
+  "close": 156.5,
+  "clv": 5.0,
+  "units": 0.87,
+  "final": "Oregon State 82 - Oregon 71"
  },
  {
   "id": "401911534|total|over",
@@ -33365,13 +33381,17 @@
   "opener": 2.5,
   "grp": "power 6",
   "limit": 1.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 68,
   "money": 77,
   "bets": 1908,
   "moved": 1.0,
-  "mins": 678
+  "mins": 678,
+  "close": -0.5,
+  "clv": 2.0,
+  "units": 0.98,
+  "final": "Oregon State 82 - Oregon 71"
  },
  {
   "id": "rlm|401918056|spread|2837",
@@ -33558,8 +33578,12 @@
   "opener": -17.5,
   "grp": "power 6",
   "limit": -16.5,
-  "status": "open",
-  "gap_open": 2.2
+  "status": "L",
+  "gap_open": 2.2,
+  "close": -17.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Utah Tech 69 - Washington 82"
  },
  {
   "id": "rlm|401902280|total|under",
