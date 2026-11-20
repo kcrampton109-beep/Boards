@@ -487,21 +487,21 @@
    }
   },
   "2026_11_JAX_NYG": {
-   "ts": "2026-11-20T14:17:34.591417-05:00",
+   "ts": "2026-11-20T17:17:35.461597-05:00",
    "wx": {
-    "wind": 7.2,
+    "wind": 7.1,
     "gust": 18.6,
     "temp": 58.0,
-    "precip": 82
+    "precip": 69
    }
   },
   "2026_11_BAL_CAR": {
-   "ts": "2026-11-20T14:17:34.591417-05:00",
+   "ts": "2026-11-20T17:17:35.461597-05:00",
    "wx": {
-    "wind": 6.5,
+    "wind": 6.7,
     "gust": 14.1,
     "temp": 57.0,
-    "precip": 61
+    "precip": 45
    }
   },
   "2026_11_ARI_KC": {
@@ -5175,7 +5175,7 @@
    }
   },
   "290989": {
-   "ts": "2026-11-20T14:17:34.591417-05:00",
+   "ts": "2026-11-20T17:17:35.461597-05:00",
    "odds": {
     "chuba hubbard": {
      "name": "Chuba Hubbard",
@@ -5197,13 +5197,13 @@
      "name": "Jalen Coker",
      "FD": 230
     },
-    "darren waller": {
-     "name": "Darren Waller",
-     "FD": 340
-    },
     "mark andrews": {
      "name": "Mark Andrews",
      "FD": 340
+    },
+    "darren waller": {
+     "name": "Darren Waller",
+     "FD": 350
     },
     "tommy tremble": {
      "name": "Tommy Tremble",
@@ -5275,7 +5275,7 @@
     },
     "devontez walker": {
      "name": "Devontez Walker",
-     "FD": 1600
+     "FD": 1700
     },
     "anthony tyus": {
      "name": "Anthony Tyus III",
@@ -5283,11 +5283,11 @@
     },
     "rasheen ali": {
      "name": "Rasheen Ali",
-     "FD": 2000
+     "FD": 2200
     },
     "adam randall": {
      "name": "Adam Randall",
-     "FD": 2000
+     "FD": 2200
     },
     "lajohntay wester": {
      "name": "LaJohntay Wester",
@@ -5300,7 +5300,7 @@
    }
   },
   "290986": {
-   "ts": "2026-11-20T14:17:34.591417-05:00",
+   "ts": "2026-11-20T17:17:35.461597-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -5386,13 +5386,17 @@
      "name": "Andrew Armstrong",
      "FD": 2000
     },
-    "ben vansumeren": {
-     "name": "Ben VanSumeren",
-     "FD": 2200
-    },
     "hunter long": {
      "name": "Hunter Long",
      "FD": 2200
+    },
+    "ben vansumeren": {
+     "name": "Ben VanSumeren",
+     "FD": 2500
+    },
+    "evan hull": {
+     "name": "Evan Hull",
+     "FD": 2700
     },
     "teagan quitoriano": {
      "name": "Teagan Quitoriano",
@@ -5400,10 +5404,6 @@
     },
     "harrison wallace": {
      "name": "Harrison Wallace III",
-     "FD": 3000
-    },
-    "evan hull": {
-     "name": "Evan Hull",
      "FD": 3000
     }
    }
