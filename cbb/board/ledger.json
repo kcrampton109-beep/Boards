@@ -33082,13 +33082,17 @@
   "opener": 152.5,
   "grp": "power 6",
   "limit": 152.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 78,
   "money": 84,
   "bets": 848,
   "moved": 1.0,
-  "mins": 497
+  "mins": 497,
+  "close": 152.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Notre Dame 78 - Auburn 73"
  },
  {
   "id": "rlm|401928826|spread|2523",
