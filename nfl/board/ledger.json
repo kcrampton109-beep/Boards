@@ -11270,5 +11270,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_11_NO_CHI:TD:td:00-0039373",
+  "tier": "TD",
+  "market": "td",
+  "side": null,
+  "team": "NO",
+  "pid": "00-0039373",
+  "game_id": "2026_11_NO_CHI",
+  "week": 11,
+  "matchup": "NO @ CHI",
+  "kickoff": "Sun Nov 22, 1:00 PM ET",
+  "pick": "Audric Estime anytime TD",
+  "line": null,
+  "odds": 550,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": 0.062,
+  "note": "model 22% vs FD 15%",
+  "limit": null,
+  "model_line": -7.8,
+  "flagged": "2026-11-20T15:17:47.565364-05:00",
+  "kickoff_iso": "2026-11-22T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
