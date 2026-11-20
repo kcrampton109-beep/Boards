@@ -32321,8 +32321,12 @@
   "opener": -3.5,
   "grp": "power 6",
   "limit": -3.5,
-  "status": "open",
-  "gap_open": 3.2
+  "status": "W",
+  "gap_open": 3.2,
+  "close": -3.5,
+  "clv": 0.0,
+  "units": 0.833,
+  "final": "Murray State 83 - NC State 93"
  },
  {
   "id": "401902280|spread|2086",
@@ -32699,8 +32703,12 @@
   "opener": 33.5,
   "grp": "power 6",
   "limit": 32.5,
-  "status": "open",
-  "gap_open": 4.1
+  "status": "L",
+  "gap_open": 4.1,
+  "close": 28.5,
+  "clv": 5.0,
+  "units": -1.0,
+  "final": "UMBC 62 - Ohio State 101"
  },
  {
   "id": "401916318|total|under",
@@ -32725,8 +32733,12 @@
   "opener": 159.5,
   "grp": "power 6",
   "limit": 157.5,
-  "status": "open",
-  "gap_open": 7.4
+  "status": "L",
+  "gap_open": 7.4,
+  "close": 155.5,
+  "clv": 4.0,
+  "units": -1.0,
+  "final": "UMBC 62 - Ohio State 101"
  },
  {
   "id": "401918056|spread|25",
@@ -32865,13 +32877,17 @@
   "opener": 159.5,
   "grp": "power 6",
   "limit": 158.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 67,
   "money": 62,
   "bets": 262,
   "moved": 1.0,
-  "mins": 978
+  "mins": 978,
+  "close": 155.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "UMBC 62 - Ohio State 101"
  },
  {
   "id": "rlm|401925941|total|under",
@@ -33117,13 +33133,17 @@
   "opener": 7.5,
   "grp": "low-major",
   "limit": 7.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 74,
   "money": 88,
   "bets": 509,
   "moved": 1.0,
-  "mins": 617
+  "mins": 617,
+  "close": 7.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Robert Morris 76 - Toledo 83"
  },
  {
   "id": "rlm|401919050|total|under",
