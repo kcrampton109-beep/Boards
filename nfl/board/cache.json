@@ -487,11 +487,11 @@
    }
   },
   "2026_11_JAX_NYG": {
-   "ts": "2026-11-20T04:17:50.937556-05:00",
+   "ts": "2026-11-20T07:47:36.265948-05:00",
    "wx": {
-    "wind": 8.2,
+    "wind": 8.5,
     "gust": 20.6,
-    "temp": 59.0,
+    "temp": 58.0,
     "precip": 78
    }
   },
@@ -5171,11 +5171,11 @@
    }
   },
   "290989": {
-   "ts": "2026-11-20T04:17:50.937556-05:00",
+   "ts": "2026-11-20T07:47:36.265948-05:00",
    "odds": {
     "chuba hubbard": {
      "name": "Chuba Hubbard",
-     "FD": -140
+     "FD": -135
     },
     "derrick henry": {
      "name": "Derrick Henry",
@@ -5211,11 +5211,11 @@
     },
     "jakobi lane": {
      "name": "Ja'Kobi Lane",
-     "FD": 430
+     "FD": 440
     },
     "justice hill": {
      "name": "Justice Hill",
-     "FD": 480
+     "FD": 490
     },
     "rashod bateman": {
      "name": "Rashod Bateman",
@@ -5251,7 +5251,7 @@
     },
     "josh cuevas": {
      "name": "Josh Cuevas",
-     "FD": 900
+     "FD": 950
     },
     "aj dillon": {
      "name": "AJ Dillon",
@@ -5263,27 +5263,27 @@
     },
     "matthew hibner": {
      "name": "Matthew Hibner",
-     "FD": 1600
-    },
-    "rasheen ali": {
-     "name": "Rasheen Ali",
-     "FD": 1800
+     "FD": 1700
     },
     "anthony tyus": {
      "name": "Anthony Tyus III",
      "FD": 1800
     },
-    "adam randall": {
-     "name": "Adam Randall",
+    "chris moore": {
+     "name": "Chris Moore",
      "FD": 1800
     },
     "devontez walker": {
      "name": "Devontez Walker",
-     "FD": 1900
+     "FD": 2000
     },
-    "chris moore": {
-     "name": "Chris Moore",
-     "FD": 1900
+    "rasheen ali": {
+     "name": "Rasheen Ali",
+     "FD": 2000
+    },
+    "adam randall": {
+     "name": "Adam Randall",
+     "FD": 2000
     },
     "lajohntay wester": {
      "name": "LaJohntay Wester",
@@ -5291,7 +5291,7 @@
     },
     "nick vannett": {
      "name": "Nick Vannett",
-     "FD": 3500
+     "FD": 3300
     },
     "feleipe franks": {
      "name": "Feleipe Franks",
@@ -5300,7 +5300,7 @@
    }
   },
   "290986": {
-   "ts": "2026-11-20T04:17:50.937556-05:00",
+   "ts": "2026-11-20T07:47:36.265948-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
