@@ -5171,11 +5171,11 @@
    }
   },
   "290989": {
-   "ts": "2026-11-19T21:17:48.018646-05:00",
+   "ts": "2026-11-20T00:47:46.410595-05:00",
    "odds": {
     "chuba hubbard": {
      "name": "Chuba Hubbard",
-     "FD": -135
+     "FD": -140
     },
     "derrick henry": {
      "name": "Derrick Henry",
@@ -5211,7 +5211,7 @@
     },
     "jakobi lane": {
      "name": "Ja'Kobi Lane",
-     "FD": 440
+     "FD": 430
     },
     "justice hill": {
      "name": "Justice Hill",
@@ -5263,35 +5263,35 @@
     },
     "matthew hibner": {
      "name": "Matthew Hibner",
-     "FD": 1700
+     "FD": 1600
+    },
+    "rasheen ali": {
+     "name": "Rasheen Ali",
+     "FD": 1800
     },
     "anthony tyus": {
      "name": "Anthony Tyus III",
      "FD": 1800
     },
-    "chris moore": {
-     "name": "Chris Moore",
+    "adam randall": {
+     "name": "Adam Randall",
      "FD": 1800
     },
     "devontez walker": {
      "name": "Devontez Walker",
-     "FD": 2000
+     "FD": 1900
     },
-    "rasheen ali": {
-     "name": "Rasheen Ali",
-     "FD": 2000
-    },
-    "adam randall": {
-     "name": "Adam Randall",
-     "FD": 2000
+    "chris moore": {
+     "name": "Chris Moore",
+     "FD": 1900
     },
     "lajohntay wester": {
      "name": "LaJohntay Wester",
-     "FD": 2700
+     "FD": 3000
     },
     "nick vannett": {
      "name": "Nick Vannett",
-     "FD": 3300
+     "FD": 3500
     },
     "feleipe franks": {
      "name": "Feleipe Franks",
@@ -5300,7 +5300,7 @@
    }
   },
   "290986": {
-   "ts": "2026-11-19T21:17:48.018646-05:00",
+   "ts": "2026-11-20T00:47:46.410595-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -5340,7 +5340,7 @@
     },
     "noah gray": {
      "name": "Noah Gray",
-     "FD": 480
+     "FD": 490
     },
     "cyrus allen": {
      "name": "Cyrus Allen",
