@@ -19271,5 +19271,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401867971|spread|home|m",
+  "base": "401867971|spread|home|m",
+  "flagged": "2026-11-19T20:07-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401867971,
+  "matchup": "Morgan State @ North Carolina Central",
+  "kickoff": "2026-11-21 14:00:00-05:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "North Carolina Central -7.5",
+  "book": "FD",
+  "line": -7.5,
+  "odds": -102.0,
+  "stake": 0.5,
+  "edge": 3.2,
+  "model": -10.7,
+  "grp": "FCS-FCS",
+  "limit": -7.5,
+  "status": "open"
  }
 ]
