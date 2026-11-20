@@ -33870,5 +33870,31 @@
   "limit": -0.5,
   "status": "open",
   "gap_open": 2.1
+ },
+ {
+  "id": "401909799|spread|2306",
+  "base": "401909799|spread|2306",
+  "flagged": "2026-11-19T19:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401909799,
+  "matchup": "Campbell @ Kansas State",
+  "kickoff": "2026-11-20T20:00:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2306,
+  "pick": "Kansas State -15.5",
+  "book": "DK",
+  "line": -15.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 3.0,
+  "model": 18.5,
+  "opener": -16.5,
+  "grp": "power 6",
+  "limit": -15.5,
+  "status": "open",
+  "gap_open": 2.0
  }
 ]
