@@ -35910,8 +35910,12 @@
   "opener": 7.5,
   "grp": "mid-major",
   "limit": 7.5,
-  "status": "open",
-  "gap_open": 3.1
+  "status": "W",
+  "gap_open": 3.1,
+  "close": 7.5,
+  "clv": 0.0,
+  "units": 0.926,
+  "final": "Denver 68 - Eastern Michigan 70"
  },
  {
   "id": "401920948|total|over",
@@ -35936,8 +35940,12 @@
   "opener": 137.5,
   "grp": "mid-major",
   "limit": 141.0,
-  "status": "open",
-  "gap_open": 8.9
+  "status": "W",
+  "gap_open": 8.9,
+  "close": 139.5,
+  "clv": 2.0,
+  "units": 0.87,
+  "final": "Denver 68 - Eastern Michigan 70"
  },
  {
   "id": "401921183|total|under",
@@ -36084,8 +36092,12 @@
   "opener": 149.5,
   "grp": "low-major",
   "limit": 151.0,
-  "status": "open",
-  "gap_open": 6.6
+  "status": "L",
+  "gap_open": 6.6,
+  "close": 145.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Kent State 69 - Cleveland State 62"
  },
  {
   "id": "401927365|spread|2623",
@@ -36266,8 +36278,12 @@
   "opener": 1.5,
   "grp": "low-major",
   "limit": 2.5,
-  "status": "open",
-  "gap_open": 2.1
+  "status": "W",
+  "gap_open": 2.1,
+  "close": 1.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "New Hampshire 47 - New Haven 50"
  },
  {
   "id": "401909730|total|over",
@@ -36749,13 +36765,17 @@
   "opener": 145.5,
   "grp": "mid-major",
   "limit": 142.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 92,
   "money": 73,
   "bets": 277,
   "moved": 3.0,
-  "mins": 497
+  "mins": 497,
+  "close": 142.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Columbia 80 - Boston University 71"
  },
  {
   "id": "rlm|401921776|total|under",
@@ -37658,13 +37678,17 @@
   "opener": 26.5,
   "grp": "power 6",
   "limit": 25.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 76,
   "money": 61,
   "bets": 1767,
   "moved": 1.0,
-  "mins": 17
+  "mins": 17,
+  "close": 25.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Queens University 75 - LSU 106"
  },
  {
   "id": "rlm|401921169|total|under",
@@ -37689,13 +37713,17 @@
   "opener": 149.5,
   "grp": "low-major",
   "limit": 146.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 76,
   "money": 75,
   "bets": 2054,
   "moved": 3.0,
-  "mins": 17
+  "mins": 17,
+  "close": 145.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Kent State 69 - Cleveland State 62"
  },
  {
   "id": "rlm|401928998|total|under",
@@ -37789,5 +37817,31 @@
   "bets": 575,
   "moved": 1.0,
   "mins": 228
+ },
+ {
+  "id": "401920975|total|over",
+  "base": "401920975|total|over",
+  "flagged": "2026-11-21T15:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401920975,
+  "matchup": "Radford @ Chattanooga",
+  "kickoff": "2026-11-21T19:00:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 150.5",
+  "book": "DK",
+  "line": 150.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.3,
+  "model": 155.8,
+  "opener": 155.5,
+  "grp": "low-major",
+  "limit": 150.5,
+  "status": "open",
+  "gap_open": 0.3
  }
 ]
