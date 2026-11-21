@@ -17999,7 +17999,11 @@
   "model": -8.2,
   "grp": "FBS",
   "limit": -3.0,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": -2.5,
+  "units": -1.0,
+  "final": "Northwestern 17 - Minnesota 20"
  },
  {
   "id": "401858530|moneyline|away|m",
@@ -18022,7 +18026,9 @@
   "model": 70.1,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Northwestern 17 - Minnesota 20"
  },
  {
   "id": "401866464|spread|home|m",
@@ -18072,7 +18078,11 @@
   "model": 50.8,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 41.5,
+  "units": -0.5,
+  "final": "Northwestern 17 - Minnesota 20"
  },
  {
   "id": "401866695|spread|home|m",
@@ -18095,7 +18105,11 @@
   "model": -26.5,
   "grp": "FCS-FCS",
   "limit": -23.0,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": -24.5,
+  "units": -1.0,
+  "final": "Hampton 10 - Stony Brook 20"
  },
  {
   "id": "401866700|spread|home|m",
@@ -18118,7 +18132,11 @@
   "model": -4.9,
   "grp": "FCS-FCS",
   "limit": -1.5,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": -2.5,
+  "units": -0.5,
+  "final": "Sacred Heart 35 - Merrimack 10"
  },
  {
   "id": "401866700|total|over|m",
@@ -18141,7 +18159,11 @@
   "model": 53.0,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 46.5,
+  "units": -0.5,
+  "final": "Sacred Heart 35 - Merrimack 10"
  },
  {
   "id": "401867965|spread|away|m",
@@ -18164,7 +18186,11 @@
   "model": 2.2,
   "grp": "FCS-FCS",
   "limit": 5.5,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": 3.5,
+  "units": -1.0,
+  "final": "Howard 7 - Norfolk State 35"
  },
  {
   "id": "401868178|spread|home|m",
@@ -18187,7 +18213,11 @@
   "model": -1.9,
   "grp": "FCS-FCS",
   "limit": 1.5,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": -2.5,
+  "units": 0.435,
+  "final": "Charleston Southern 17 - Eastern Illinois 20"
  },
  {
   "id": "401868226|spread|home|m",
@@ -18210,7 +18240,11 @@
   "model": 10.4,
   "grp": "FCS-FCS",
   "limit": 13.5,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 12.5,
+  "units": -1.0,
+  "final": "Marist 35 - Davidson 7"
  },
  {
   "id": "401868253|spread|home|m",
@@ -18233,7 +18267,11 @@
   "model": 8.3,
   "grp": "FCS-FCS",
   "limit": 13.5,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 13.5,
+  "units": -1.0,
+  "final": "Dayton 27 - Presbyterian 11"
  },
  {
   "id": "401868253|moneyline|home|m",
@@ -18256,7 +18294,9 @@
   "model": 29.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Dayton 27 - Presbyterian 11"
  },
  {
   "id": "401868396|spread|home|m",
@@ -18279,7 +18319,11 @@
   "model": -13.5,
   "grp": "FCS-FCS",
   "limit": -10.5,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": -13.5,
+  "units": 0.442,
+  "final": "The Citadel 23 - Western Carolina 38"
  },
  {
   "id": "401867812|total|over|m",
@@ -18302,7 +18346,11 @@
   "model": 46.0,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": 40.5,
+  "units": -0.5,
+  "final": "Brown 7 - Dartmouth 17"
  },
  {
   "id": "401867873|spread|home|m",
@@ -18348,7 +18396,11 @@
   "model": 42.5,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 6.0,
+  "close": 42.5,
+  "units": 0.885,
+  "final": "Colgate 21 - Bucknell 20"
  },
  {
   "id": "401868059|spread|home|m",
@@ -18394,7 +18446,11 @@
   "model": 39.7,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": 42.5,
+  "units": 0.885,
+  "final": "Tennessee State 16 - Gardner-Webb 12"
  },
  {
   "id": "401868218|total|under|m",
@@ -18417,7 +18473,11 @@
   "model": 50.9,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 5.0,
+  "close": 53.5,
+  "units": 0.885,
+  "final": "Morehead State 7 - Butler 24"
  },
  {
   "id": "401856746|total|under|m",
@@ -18440,7 +18500,11 @@
   "model": 42.5,
   "grp": "FBS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": 55.5,
+  "units": 0.909,
+  "final": "Chattanooga 0 - Alabama 47"
  },
  {
   "id": "401856750|spread|away|m",
@@ -18463,7 +18527,11 @@
   "model": 23.7,
   "grp": "FBS-FCS",
   "limit": 29.0,
-  "status": "open"
+  "status": "W",
+  "clv": 11.0,
+  "close": 29.5,
+  "units": 1.364,
+  "final": "Tennessee Tech 16 - Mississippi State 34"
  },
  {
   "id": "401867864|total|under|m",
@@ -18555,7 +18623,11 @@
   "model": 43.8,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": 46.5,
+  "units": 0.885,
+  "final": "West Florida 24 - West Georgia 16"
  },
  {
   "id": "401868304|total|under|m",
@@ -18578,7 +18650,11 @@
   "model": 54.4,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 4.0,
+  "close": 55.5,
+  "units": -1.0,
+  "final": "Alabama A&M 51 - Mississippi Valley State 19"
  },
  {
   "id": "401868352|spread|home|m",
@@ -18948,7 +19024,11 @@
   "model": -26.5,
   "grp": "FCS-FCS",
   "limit": -21.0,
-  "status": "open"
+  "status": "L",
+  "clv": 4.0,
+  "close": -24.5,
+  "units": -1.0,
+  "final": "Hampton 10 - Stony Brook 20"
  },
  {
   "id": "401867864|spread|home|m",
@@ -19044,7 +19124,11 @@
   "model": 51.3,
   "grp": "FBS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 59.5,
+  "units": -1.0,
+  "final": "Wofford 17 - Ole Miss 59"
  },
  {
   "id": "401856747|total|under|m",
@@ -19117,7 +19201,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 46.5,
+  "units": -0.5,
+  "final": "BYU 31 - Kansas 29"
  },
  {
   "id": "401860920|spread|away|m",
@@ -19163,7 +19251,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 64.5,
+  "units": -0.5,
+  "final": "Monmouth 55 - Campbell 49"
  },
  {
   "id": "401867959|total|under|wx",
@@ -19186,7 +19278,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": 49.5,
+  "units": 0.442,
+  "final": "Delaware State 16 - South Carolina State 26"
  },
  {
   "id": "401858532|spread|away|m",
@@ -19370,7 +19466,11 @@
   "model": -4.9,
   "grp": "FCS-FCS",
   "limit": -1.5,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": -2.5,
+  "units": 0.49,
+  "final": "Elon 24 - Towson 28"
  },
  {
   "id": "401862832|total|under|wx",
@@ -19439,7 +19539,11 @@
   "model": 56.6,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": -1.0,
+  "close": 49.5,
+  "units": -0.5,
+  "final": "Delaware State 16 - South Carolina State 26"
  },
  {
   "id": "401866697|spread|away|m",
@@ -19462,7 +19566,11 @@
   "model": 1.8,
   "grp": "FCS-FCS",
   "limit": 5.0,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 4.5,
+  "units": 0.435,
+  "final": "Monmouth 55 - Campbell 49"
  },
  {
   "id": "401868117|spread|home|m",
@@ -19508,7 +19616,11 @@
   "model": -52.3,
   "grp": "FBS-FCS",
   "limit": -47.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.5,
+  "close": -47.0,
+  "units": 0.435,
+  "final": "Chattanooga 0 - Alabama 47"
  },
  {
   "id": "401867854|spread|home|m",
@@ -19531,7 +19643,11 @@
   "model": 0.2,
   "grp": "FCS-FCS",
   "limit": 3.5,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 2.5,
+  "units": -0.5,
+  "final": "South Dakota 10 - Illinois State 3"
  },
  {
   "id": "401868069|total|over|m",
