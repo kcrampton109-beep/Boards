@@ -19090,7 +19090,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 37.5,
+  "units": -0.5,
+  "final": "New Mexico 24 - Wyoming 17"
  },
  {
   "id": "401856866|total|under|wx",
