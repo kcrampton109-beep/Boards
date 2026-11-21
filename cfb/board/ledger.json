@@ -19394,5 +19394,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401862833|total|under|wx",
+  "base": "401862833|total|under|wx",
+  "flagged": "2026-11-21T06:37-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401862833,
+  "matchup": "South Florida @ Florida Atlantic",
+  "kickoff": "2026-11-21 14:30:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 64.5 (wind 15 mph)",
+  "book": "FD",
+  "line": 64.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 15.2,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
