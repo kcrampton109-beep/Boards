@@ -487,21 +487,21 @@
    }
   },
   "2026_11_JAX_NYG": {
-   "ts": "2026-11-20T20:17:37.811753-05:00",
+   "ts": "2026-11-20T23:47:34.186305-05:00",
    "wx": {
-    "wind": 6.8,
-    "gust": 14.0,
-    "temp": 58.0,
-    "precip": 69
+    "wind": 4.8,
+    "gust": 11.6,
+    "temp": 61.0,
+    "precip": 86
    }
   },
   "2026_11_BAL_CAR": {
-   "ts": "2026-11-20T20:17:37.811753-05:00",
+   "ts": "2026-11-20T23:47:34.186305-05:00",
    "wx": {
-    "wind": 6.5,
-    "gust": 15.7,
-    "temp": 58.0,
-    "precip": 45
+    "wind": 8.8,
+    "gust": 18.3,
+    "temp": 60.0,
+    "precip": 51
    }
   },
   "2026_11_ARI_KC": {
@@ -5171,7 +5171,7 @@
    }
   },
   "290989": {
-   "ts": "2026-11-20T20:17:37.811753-05:00",
+   "ts": "2026-11-20T23:47:34.186305-05:00",
    "odds": {
     "chuba hubbard": {
      "name": "Chuba Hubbard",
@@ -5211,7 +5211,7 @@
     },
     "jakobi lane": {
      "name": "Ja'Kobi Lane",
-     "FD": 410
+     "FD": 400
     },
     "justice hill": {
      "name": "Justice Hill",
@@ -5267,27 +5267,31 @@
     },
     "matthew hibner": {
      "name": "Matthew Hibner",
-     "FD": 1300
-    },
-    "devontez walker": {
-     "name": "Devontez Walker",
-     "FD": 1700
+     "FD": 1200
     },
     "anthony tyus": {
      "name": "Anthony Tyus III",
      "FD": 1800
     },
+    "devontez walker": {
+     "name": "Devontez Walker",
+     "FD": 1900
+    },
+    "elijah sarratt": {
+     "name": "Elijah Sarratt",
+     "FD": 1900
+    },
     "rasheen ali": {
      "name": "Rasheen Ali",
-     "FD": 2000
+     "FD": 2200
     },
     "adam randall": {
      "name": "Adam Randall",
-     "FD": 2000
+     "FD": 2200
     },
     "lajohntay wester": {
      "name": "LaJohntay Wester",
-     "FD": 2700
+     "FD": 3000
     },
     "feleipe franks": {
      "name": "Feleipe Franks",
@@ -5296,7 +5300,7 @@
    }
   },
   "290986": {
-   "ts": "2026-11-20T20:17:37.811753-05:00",
+   "ts": "2026-11-20T23:47:34.186305-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -5304,7 +5308,7 @@
     },
     "rashee rice": {
      "name": "Rashee Rice",
-     "FD": 155
+     "FD": 160
     },
     "travis kelce": {
      "name": "Travis Kelce",
@@ -5322,12 +5326,12 @@
      "name": "Tyler Allgeier",
      "FD": 320
     },
-    "xavier worthy": {
-     "name": "Xavier Worthy",
-     "FD": 370
-    },
     "bam knight": {
      "name": "Bam Knight",
+     "FD": 380
+    },
+    "xavier worthy": {
+     "name": "Xavier Worthy",
      "FD": 380
     },
     "patrick mahomes": {
@@ -5344,7 +5348,7 @@
     },
     "jaydn ott": {
      "name": "Jaydn Ott",
-     "FD": 600
+     "FD": 650
     },
     "elijah higgins": {
      "name": "Elijah Higgins",
@@ -5380,7 +5384,7 @@
     },
     "andrew armstrong": {
      "name": "Andrew Armstrong",
-     "FD": 2000
+     "FD": 1900
     },
     "ben vansumeren": {
      "name": "Ben VanSumeren",
