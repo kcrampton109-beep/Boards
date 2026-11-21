@@ -34691,8 +34691,12 @@
   "opener": 2.5,
   "grp": "mid-major",
   "limit": 2.0,
-  "status": "open",
-  "gap_open": 3.5
+  "status": "L",
+  "gap_open": 3.5,
+  "close": 11.5,
+  "clv": -9.0,
+  "units": -1.0,
+  "final": "Saint Louis 78 - Saint Mary's 95"
  },
  {
   "id": "rlm|401909709|total|under",
@@ -35871,13 +35875,17 @@
   "opener": 158.5,
   "grp": "mid-major",
   "limit": 161.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 67,
   "money": 18,
   "bets": 3322,
   "moved": 3.0,
-  "mins": 468
+  "mins": 468,
+  "close": 169.0,
+  "clv": 7.5,
+  "units": 0.909,
+  "final": "Saint Louis 78 - Saint Mary's 95"
  },
  {
   "id": "401920948|spread|2172",
@@ -36598,5 +36606,31 @@
   "limit": 136.5,
   "status": "open",
   "gap_open": 2.1
+ },
+ {
+  "id": "401920570|spread|79",
+  "base": "401920570|spread|79",
+  "flagged": "2026-11-21T01:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401920570,
+  "matchup": "Southern Illinois vs East Carolina",
+  "kickoff": "2026-11-21T17:30:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 79,
+  "pick": "Southern Illinois +1.5",
+  "book": "DK",
+  "line": 1.5,
+  "odds": -122.0,
+  "stake": 1.0,
+  "edge": 3.1,
+  "model": 1.6,
+  "opener": 1.5,
+  "grp": "mid-major",
+  "limit": 1.5,
+  "status": "open",
+  "gap_open": 3.1
  }
 ]
