@@ -36226,8 +36226,12 @@
   "opener": -6.5,
   "grp": "mid-major",
   "limit": -6.5,
-  "status": "open",
-  "gap_open": 3.1
+  "status": "W",
+  "gap_open": 3.1,
+  "close": -5.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Cornell 84 - Morgan State 63"
  },
  {
   "id": "401917538|total|over",
@@ -36308,8 +36312,12 @@
   "opener": 149.5,
   "grp": "power 6",
   "limit": 147.0,
-  "status": "open",
-  "gap_open": 2.6
+  "status": "W",
+  "gap_open": 2.6,
+  "close": 147.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Western Carolina 63 - Wake Forest 90"
  },
  {
   "id": "401922048|spread|2193",
@@ -36542,8 +36550,12 @@
   "opener": -15.5,
   "grp": "power 6",
   "limit": -14.5,
-  "status": "open",
-  "gap_open": 2.1
+  "status": "W",
+  "gap_open": 2.1,
+  "close": -14.0,
+  "clv": -0.5,
+  "units": 0.847,
+  "final": "Western Carolina 63 - Wake Forest 90"
  },
  {
   "id": "401911022|spread|189",
@@ -36568,8 +36580,12 @@
   "opener": -5.5,
   "grp": "low-major",
   "limit": -5.0,
-  "status": "open",
-  "gap_open": 2.9
+  "status": "L",
+  "gap_open": 2.9,
+  "close": -5.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Northern Illinois 86 - Bowling Green 68"
  },
  {
   "id": "401923322|total|under",
@@ -36703,13 +36719,17 @@
   "opener": 149.5,
   "grp": "mid-major",
   "limit": 148.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 88,
   "money": 62,
   "bets": 262,
   "moved": 1.0,
-  "mins": 677
+  "mins": 677,
+  "close": 153.0,
+  "clv": -4.5,
+  "units": -1.0,
+  "final": "Fordham 87 - Portland 69"
  },
  {
   "id": "rlm|401920846|total|under",
@@ -36924,13 +36944,17 @@
   "opener": 139.5,
   "grp": "low-major",
   "limit": 136.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 88,
   "money": 80,
   "bets": 257,
   "moved": 4.0,
-  "mins": 558
+  "mins": 558,
+  "close": 131.5,
+  "clv": 5.0,
+  "units": 0.87,
+  "final": "Navy 66 - Rider 69"
  },
  {
   "id": "rlm|401909730|total|under",
@@ -36955,13 +36979,17 @@
   "opener": 149.5,
   "grp": "power 6",
   "limit": 147.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 69,
   "money": 68,
   "bets": 257,
   "moved": 2.0,
-  "mins": 378
+  "mins": 378,
+  "close": 147.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Western Carolina 63 - Wake Forest 90"
  },
  {
   "id": "rlm|401919828|total|under",
@@ -36986,13 +37014,17 @@
   "opener": 135.5,
   "grp": "low-major",
   "limit": 130.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 97,
   "money": 93,
   "bets": 262,
   "moved": 6.0,
-  "mins": 317
+  "mins": 317,
+  "close": 129.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Western Illinois 65 - Mercyhurst 68"
  },
  {
   "id": "rlm|401909719|total|under",
@@ -37559,13 +37591,17 @@
   "opener": 148.5,
   "grp": "low-major",
   "limit": 147.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 91,
   "money": 89,
   "bets": 1040,
   "moved": 1.0,
-  "mins": 167
+  "mins": 167,
+  "close": 147.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Northern Illinois 86 - Bowling Green 68"
  },
  {
   "id": "401911022|total|over",
@@ -37590,8 +37626,12 @@
   "opener": 148.5,
   "grp": "low-major",
   "limit": 147.5,
-  "status": "open",
-  "gap_open": 4.0
+  "status": "W",
+  "gap_open": 4.0,
+  "close": 147.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Northern Illinois 86 - Bowling Green 68"
  },
  {
   "id": "rlm|401923322|total|under",
@@ -37843,5 +37883,36 @@
   "limit": 150.5,
   "status": "open",
   "gap_open": 0.3
+ },
+ {
+  "id": "rlm|401920125|total|under",
+  "base": "rlm|401920125|total|under",
+  "flagged": "2026-11-21T16:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401920125,
+  "matchup": "Northern Arizona @ Cal Poly",
+  "kickoff": "2026-11-21T19:00:00-05:00",
+  "tier": "RLM_T",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 154.5",
+  "book": "MGM",
+  "line": 154.5,
+  "odds": -105.0,
+  "stake": 1.0,
+  "edge": 2.0,
+  "model": 162.6,
+  "opener": 156.5,
+  "grp": "mid-major",
+  "limit": 154.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 67,
+  "money": 67,
+  "bets": 787,
+  "moved": 2.0,
+  "mins": 167
  }
 ]
