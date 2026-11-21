@@ -19509,5 +19509,28 @@
   "grp": "FBS-FCS",
   "limit": -47.0,
   "status": "open"
+ },
+ {
+  "id": "401867854|spread|home|m",
+  "base": "401867854|spread|home|m",
+  "flagged": "2026-11-21T12:07-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401867854,
+  "matchup": "South Dakota @ Illinois State",
+  "kickoff": "2026-11-21 13:00:00-05:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "pick": "Illinois State +3.5",
+  "book": "MGM",
+  "line": 3.5,
+  "odds": -118.0,
+  "stake": 0.5,
+  "edge": 3.3,
+  "model": 0.2,
+  "grp": "FCS-FCS",
+  "limit": 3.5,
+  "status": "open"
  }
 ]
