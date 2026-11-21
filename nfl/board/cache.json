@@ -487,21 +487,21 @@
    }
   },
   "2026_11_JAX_NYG": {
-   "ts": "2026-11-21T12:17:44.316377-05:00",
+   "ts": "2026-11-21T15:47:46.362508-05:00",
    "wx": {
-    "wind": 4.5,
-    "gust": 10.1,
-    "temp": 61.0,
-    "precip": 68
+    "wind": 5.0,
+    "gust": 10.7,
+    "temp": 57.0,
+    "precip": 61
    }
   },
   "2026_11_BAL_CAR": {
-   "ts": "2026-11-21T12:17:44.316377-05:00",
+   "ts": "2026-11-21T15:47:46.362508-05:00",
    "wx": {
-    "wind": 7.2,
-    "gust": 15.4,
-    "temp": 60.0,
-    "precip": 29
+    "wind": 7.9,
+    "gust": 19.0,
+    "temp": 59.0,
+    "precip": 41
    }
   },
   "2026_11_ARI_KC": {
@@ -5167,7 +5167,7 @@
    }
   },
   "290989": {
-   "ts": "2026-11-21T12:17:44.316377-05:00",
+   "ts": "2026-11-21T15:47:46.362508-05:00",
    "odds": {
     "chuba hubbard": {
      "name": "Chuba Hubbard",
@@ -5191,7 +5191,7 @@
     },
     "mark andrews": {
      "name": "Mark Andrews",
-     "FD": 320
+     "FD": 330
     },
     "darren waller": {
      "name": "Darren Waller",
@@ -5207,7 +5207,7 @@
     },
     "jakobi lane": {
      "name": "Ja'Kobi Lane",
-     "FD": 400
+     "FD": 410
     },
     "justice hill": {
      "name": "Justice Hill",
@@ -5263,7 +5263,7 @@
     },
     "matthew hibner": {
      "name": "Matthew Hibner",
-     "FD": 1400
+     "FD": 1200
     },
     "anthony tyus": {
      "name": "Anthony Tyus III",
@@ -5287,7 +5287,7 @@
     },
     "lajohntay wester": {
      "name": "LaJohntay Wester",
-     "FD": 3300
+     "FD": 3000
     },
     "feleipe franks": {
      "name": "Feleipe Franks",
@@ -5296,11 +5296,11 @@
    }
   },
   "290986": {
-   "ts": "2026-11-21T12:17:44.316377-05:00",
+   "ts": "2026-11-21T15:47:46.362508-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
-     "FD": -220
+     "FD": -240
     },
     "rashee rice": {
      "name": "Rashee Rice",
@@ -5314,28 +5314,28 @@
      "name": "Josh Downs",
      "FD": 200
     },
-    "trey mcbride": {
-     "name": "Trey McBride",
-     "FD": 290
-    },
     "tyler allgeier": {
      "name": "Tyler Allgeier",
      "FD": 310
     },
-    "bam knight": {
-     "name": "Bam Knight",
-     "FD": 380
+    "trey mcbride": {
+     "name": "Trey McBride",
+     "FD": 330
     },
     "xavier worthy": {
      "name": "Xavier Worthy",
      "FD": 380
     },
-    "noah gray": {
-     "name": "Noah Gray",
-     "FD": 500
+    "bam knight": {
+     "name": "Bam Knight",
+     "FD": 390
     },
     "patrick mahomes": {
      "name": "Patrick Mahomes",
+     "FD": 490
+    },
+    "noah gray": {
+     "name": "Noah Gray",
      "FD": 500
     },
     "cyrus allen": {
@@ -5344,19 +5344,23 @@
     },
     "jaydn ott": {
      "name": "Jaydn Ott",
-     "FD": 650
+     "FD": 600
+    },
+    "josh johnson": {
+     "name": "Josh Johnson",
+     "FD": 700
     },
     "elijah higgins": {
      "name": "Elijah Higgins",
-     "FD": 850
+     "FD": 950
     },
     "reggie virgil": {
      "name": "Reggie Virgil",
-     "FD": 850
+     "FD": 950
     },
     "simi fehoko": {
      "name": "Simi Fehoko",
-     "FD": 950
+     "FD": 1000
     },
     "arizona defense": {
      "name": "Arizona Defense",
@@ -5368,7 +5372,7 @@
     },
     "devin duvernay": {
      "name": "Devin Duvernay",
-     "FD": 1100
+     "FD": 1200
     },
     "jake briningstool": {
      "name": "Jake Briningstool",
@@ -5376,7 +5380,7 @@
     },
     "jalen royals": {
      "name": "Jalen Royals",
-     "FD": 1500
+     "FD": 1600
     },
     "andrew armstrong": {
      "name": "Andrew Armstrong",
@@ -5388,19 +5392,19 @@
     },
     "hunter long": {
      "name": "Hunter Long",
-     "FD": 2200
-    },
-    "teagan quitoriano": {
-     "name": "Teagan Quitoriano",
-     "FD": 2700
+     "FD": 2500
     },
     "evan hull": {
      "name": "Evan Hull",
      "FD": 3000
     },
+    "teagan quitoriano": {
+     "name": "Teagan Quitoriano",
+     "FD": 3000
+    },
     "harrison wallace": {
      "name": "Harrison Wallace III",
-     "FD": 3300
+     "FD": 3500
     }
    }
   },
