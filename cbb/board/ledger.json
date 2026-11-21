@@ -34693,8 +34693,8 @@
   "limit": 2.0,
   "status": "L",
   "gap_open": 3.5,
-  "close": 11.5,
-  "clv": -9.0,
+  "close": 1.5,
+  "clv": 1.0,
   "units": -1.0,
   "final": "Saint Louis 78 - Saint Mary's 95"
  },
@@ -35882,8 +35882,8 @@
   "bets": 3322,
   "moved": 3.0,
   "mins": 468,
-  "close": 169.0,
-  "clv": 7.5,
+  "close": 163.5,
+  "clv": 2.0,
   "units": 0.909,
   "final": "Saint Louis 78 - Saint Mary's 95"
  },
