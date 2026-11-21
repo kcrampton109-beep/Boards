@@ -19363,5 +19363,28 @@
   "grp": "FCS-FCS",
   "limit": -1.5,
   "status": "open"
+ },
+ {
+  "id": "401862832|total|under|wx",
+  "base": "401862832|total|under|wx",
+  "flagged": "2026-11-20T21:37-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401862832,
+  "matchup": "Charlotte @ Tulsa",
+  "kickoff": "2026-11-21 14:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 51.5 (wind 15 mph)",
+  "book": "DK",
+  "line": 51.5,
+  "odds": -105.0,
+  "stake": 0.5,
+  "edge": 15.2,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
