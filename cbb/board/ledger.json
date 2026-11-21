@@ -34752,8 +34752,12 @@
   "opener": -10.5,
   "grp": "mid-major",
   "limit": -9.5,
-  "status": "open",
-  "gap_open": 2.4
+  "status": "W",
+  "gap_open": 2.4,
+  "close": -10.0,
+  "clv": 0.5,
+  "units": 0.833,
+  "final": "Alabama State 68 - Fresno State 80"
  },
  {
   "id": "rlm|401925865|total|under",
@@ -35293,13 +35297,17 @@
   "opener": 152.5,
   "grp": "mid-major",
   "limit": 147.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 98,
   "money": 95,
   "bets": 292,
   "moved": 5.0,
-  "mins": 768
+  "mins": 768,
+  "close": 146.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Alabama State 68 - Fresno State 80"
  },
  {
   "id": "rlm|401922022|spread|304",
@@ -35794,12 +35802,16 @@
   "opener": 143.5,
   "grp": "power 6",
   "limit": 140.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 98,
   "bets": 1438,
   "moved": 3.0,
-  "mins": 498
+  "mins": 498,
+  "close": 140.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Seton Hall 87 - NC State 81"
  },
  {
   "id": "rlm|401925740|spread|2400",
