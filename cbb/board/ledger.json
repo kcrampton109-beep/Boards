@@ -37297,8 +37297,12 @@
   "opener": 152.5,
   "grp": "low-major",
   "limit": 157.5,
-  "status": "open",
-  "gap_open": 0.4
+  "status": "L",
+  "gap_open": 0.4,
+  "close": 161.0,
+  "clv": -3.5,
+  "units": -1.0,
+  "final": "Siena 93 - Bucknell 87"
  },
  {
   "id": "rlm|401922222|total|under",
@@ -37754,5 +37758,36 @@
   "bets": 833,
   "moved": 3.0,
   "mins": 108
+ },
+ {
+  "id": "rlm|401909517|total|under",
+  "base": "rlm|401909517|total|under",
+  "flagged": "2026-11-21T14:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401909517,
+  "matchup": "Coppin State @ Georgetown",
+  "kickoff": "2026-11-21T18:00:00-05:00",
+  "tier": "RLM_T",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 142.5",
+  "book": "FD",
+  "line": 142.5,
+  "odds": -106.0,
+  "stake": 1.0,
+  "edge": 1.0,
+  "model": 141.1,
+  "opener": 143.5,
+  "grp": "power 6",
+  "limit": 142.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 83,
+  "money": 88,
+  "bets": 575,
+  "moved": 1.0,
+  "mins": 228
  }
 ]
