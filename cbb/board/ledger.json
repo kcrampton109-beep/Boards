@@ -34070,8 +34070,12 @@
   "opener": -16.5,
   "grp": "power 6",
   "limit": -15.5,
-  "status": "open",
-  "gap_open": 2.0
+  "status": "L",
+  "gap_open": 2.0,
+  "close": -16.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Campbell 80 - Kansas State 70"
  },
  {
   "id": "401919826|spread|2710",
@@ -34248,8 +34252,8 @@
   "limit": 147.5,
   "status": "W",
   "gap_open": 2.3,
-  "close": 146.5,
-  "clv": -1.0,
+  "close": 145.5,
+  "clv": -2.0,
   "units": 0.909,
   "final": "South Alabama 55 - SMU 101"
  },
@@ -34336,8 +34340,12 @@
   "opener": 43.5,
   "grp": "power 6",
   "limit": 43.0,
-  "status": "open",
-  "gap_open": 4.0
+  "status": "L",
+  "gap_open": 4.0,
+  "close": 35.5,
+  "clv": 8.0,
+  "units": -1.0,
+  "final": "Mississippi Valley State 48 - Arkansas 92"
  },
  {
   "id": "401919827|total|under",
@@ -34917,13 +34925,17 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 150.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 97,
   "money": 95,
   "bets": 257,
   "moved": 1.0,
-  "mins": 798
+  "mins": 798,
+  "close": 152.5,
+  "clv": -2.0,
+  "units": 0.909,
+  "final": "Mississippi Valley State 48 - Arkansas 92"
  },
  {
   "id": "rlm|401909799|total|under",
@@ -34948,13 +34960,17 @@
   "opener": 156.5,
   "grp": "power 6",
   "limit": 155.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 75,
   "money": 69,
   "bets": 257,
   "moved": 1.0,
-  "mins": 737
+  "mins": 737,
+  "close": 154.5,
+  "clv": 1.0,
+  "units": 0.893,
+  "final": "Campbell 80 - Kansas State 70"
  },
  {
   "id": "rlm|401919827|total|under",
@@ -35186,8 +35202,8 @@
   "bets": 267,
   "moved": 4.0,
   "mins": 677,
-  "close": 146.5,
-  "clv": 0.0,
+  "close": 145.5,
+  "clv": 1.0,
   "units": -1.0,
   "final": "South Alabama 55 - SMU 101"
  },
@@ -35415,13 +35431,17 @@
   "opener": 136.5,
   "grp": "low-major",
   "limit": 132.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 99,
   "money": 96,
   "bets": 287,
   "moved": 4.0,
-  "mins": 527
+  "mins": 527,
+  "close": 135.5,
+  "clv": -3.0,
+  "units": -1.0,
+  "final": "Niagara 103 - Delaware State 101"
  },
  {
   "id": "401926134|total|over",
@@ -35606,13 +35626,17 @@
   "opener": 154.5,
   "grp": "power 6",
   "limit": 154.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 81,
   "money": 70,
   "bets": 3387,
   "moved": 1.0,
-  "mins": 498
+  "mins": 498,
+  "close": 153.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Kentucky 76 - Indiana 90"
  },
  {
   "id": "rlm|401920137|total|under",
@@ -35703,13 +35727,17 @@
   "opener": 155.5,
   "grp": "power 6",
   "limit": 155.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 69,
   "money": 35,
   "bets": 343,
   "moved": 1.0,
-  "mins": 438
+  "mins": 438,
+  "close": 154.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Le Moyne 64 - Missouri 91"
  },
  {
   "id": "rlm|401921691|total|under",
@@ -35764,13 +35792,17 @@
   "opener": 43.5,
   "grp": "power 6",
   "limit": 38.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 66,
   "money": 66,
   "bets": 1075,
   "moved": 5.0,
-  "mins": 288
+  "mins": 288,
+  "close": 35.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Mississippi Valley State 48 - Arkansas 92"
  },
  {
   "id": "rlm|401911252|total|over",
@@ -36366,5 +36398,31 @@
   "limit": 160.5,
   "status": "open",
   "gap_open": 5.1
+ },
+ {
+  "id": "401926217|spread|2506",
+  "base": "401926217|spread|2506",
+  "flagged": "2026-11-20T22:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401926217,
+  "matchup": "Presbyterian @ Tennessee Tech",
+  "kickoff": "2026-11-21T19:30:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2506,
+  "pick": "Presbyterian +8.5",
+  "book": "DK",
+  "line": 8.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 4.0,
+  "model": -4.5,
+  "opener": 5.5,
+  "grp": "low-major",
+  "limit": 8.0,
+  "status": "open",
+  "gap_open": 1.0
  }
 ]
