@@ -33966,8 +33966,12 @@
   "opener": 51.5,
   "grp": "power 6",
   "limit": 50.0,
-  "status": "open",
-  "gap_open": 4.8
+  "status": "L",
+  "gap_open": 4.8,
+  "close": 45.5,
+  "clv": 6.0,
+  "units": -1.0,
+  "final": "Eastern Illinois 52 - Illinois 114"
  },
  {
   "id": "401913529|total|under",
@@ -33992,8 +33996,12 @@
   "opener": 162.5,
   "grp": "power 6",
   "limit": 161.5,
-  "status": "open",
-  "gap_open": 6.1
+  "status": "L",
+  "gap_open": 6.1,
+  "close": 163.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Eastern Illinois 52 - Illinois 114"
  },
  {
   "id": "401928795|spread|68",
@@ -34044,8 +34052,12 @@
   "opener": -1.5,
   "grp": "mid-major",
   "limit": -0.5,
-  "status": "open",
-  "gap_open": 2.1
+  "status": "W",
+  "gap_open": 2.1,
+  "close": -2.0,
+  "clv": 1.5,
+  "units": 0.847,
+  "final": "Cal State Bakersfield 81 - Idaho 84"
  },
  {
   "id": "401909799|spread|2306",
@@ -34828,13 +34840,17 @@
   "opener": 162.5,
   "grp": "power 6",
   "limit": 164.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 77,
   "money": 64,
   "bets": 318,
   "moved": 3.0,
-  "mins": 888
+  "mins": 888,
+  "close": 163.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Eastern Illinois 52 - Illinois 114"
  },
  {
   "id": "rlm|401919826|total|under",
@@ -35665,13 +35681,17 @@
   "opener": 154.5,
   "grp": "mid-major",
   "limit": 153.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 66,
   "money": 62,
   "bets": 742,
   "moved": 1.0,
-  "mins": 558
+  "mins": 558,
+  "close": 153.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Cal State Bakersfield 81 - Idaho 84"
  },
  {
   "id": "rlm|401919019|spread|5",
