@@ -33932,8 +33932,12 @@
   "opener": 141.5,
   "grp": "power 6",
   "limit": 141.5,
-  "status": "open",
-  "gap_open": 5.1
+  "status": "L",
+  "gap_open": 5.1,
+  "close": 139.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Dayton 63 - Utah 46"
  },
  {
   "id": "401913529|spread|2197",
@@ -34118,8 +34122,12 @@
   "opener": -1.5,
   "grp": "mid-major",
   "limit": -0.5,
-  "status": "open",
-  "gap_open": 2.0
+  "status": "L",
+  "gap_open": 2.0,
+  "close": -2.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "UT Martin 76 - Southern Illinois 73"
  },
  {
   "id": "401921107|total|over",
@@ -34326,8 +34334,12 @@
   "opener": 137.5,
   "grp": "low-major",
   "limit": 138.5,
-  "status": "open",
-  "gap_open": 4.1
+  "status": "W",
+  "gap_open": 4.1,
+  "close": 136.0,
+  "clv": 2.5,
+  "units": 0.909,
+  "final": "Mercyhurst 56 - Canisius 63"
  },
  {
   "id": "rlm|401920380|total|under",
@@ -34457,13 +34469,17 @@
   "opener": 141.5,
   "grp": "power 6",
   "limit": 141.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 94,
   "money": 94,
   "bets": 398,
   "moved": 1.0,
-  "mins": 1008
+  "mins": 1008,
+  "close": 139.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Dayton 63 - Utah 46"
  },
  {
   "id": "rlm|401909698|spread|2739",
@@ -34923,13 +34939,17 @@
   "opener": 137.5,
   "grp": "low-major",
   "limit": 135.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 97,
   "money": 90,
   "bets": 257,
   "moved": 3.0,
-  "mins": 558
+  "mins": 558,
+  "close": 136.0,
+  "clv": -0.5,
+  "units": 0.909,
+  "final": "Mercyhurst 56 - Canisius 63"
  },
  {
   "id": "rlm|401909698|spread|2739|RLM_80",
@@ -34989,13 +35009,17 @@
   "opener": 149.5,
   "grp": "mid-major",
   "limit": 148.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 97,
   "money": 93,
   "bets": 641,
   "moved": 1.0,
-  "mins": 527
+  "mins": 527,
+  "close": 149.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "UT Martin 76 - Southern Illinois 73"
  },
  {
   "id": "rlm|401921107|total|under",
