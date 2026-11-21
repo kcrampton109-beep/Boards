@@ -11298,5 +11298,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_WAS_ARI:STRONG:spread:home",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "home",
+  "team": "ARI",
+  "pid": null,
+  "game_id": "2026_12_WAS_ARI",
+  "week": 12,
+  "matchup": "WAS @ ARI",
+  "kickoff": "Sun Nov 29, 4:25 PM ET",
+  "pick": "ARI +6.5",
+  "line": 6.5,
+  "odds": -105,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": 3.1,
+  "note": "ARI QB: Carson Beck out, model uses Josh Johnson",
+  "limit": 6.5,
+  "model_line": 3.4,
+  "flagged": "2026-11-21T14:47:37.999496-05:00",
+  "kickoff_iso": "2026-11-29T16:25:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
