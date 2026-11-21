@@ -19440,5 +19440,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401866697|spread|away|m",
+  "base": "401866697|spread|away|m",
+  "flagged": "2026-11-21T09:07-05:00",
+  "season": 2026,
+  "week": 12,
+  "game_id": 401866697,
+  "matchup": "Monmouth @ Campbell",
+  "kickoff": "2026-11-21 12:00:00-05:00",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "away",
+  "pick": "Monmouth +5.5",
+  "book": "FD",
+  "line": 5.5,
+  "odds": -115.0,
+  "stake": 0.5,
+  "edge": 3.7,
+  "model": 1.8,
+  "grp": "FCS-FCS",
+  "limit": 5.0,
+  "status": "open"
  }
 ]
