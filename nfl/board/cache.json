@@ -487,20 +487,20 @@
    }
   },
   "2026_11_JAX_NYG": {
-   "ts": "2026-11-20T17:17:35.461597-05:00",
+   "ts": "2026-11-20T20:17:37.811753-05:00",
    "wx": {
-    "wind": 7.1,
-    "gust": 18.6,
+    "wind": 6.8,
+    "gust": 14.0,
     "temp": 58.0,
     "precip": 69
    }
   },
   "2026_11_BAL_CAR": {
-   "ts": "2026-11-20T17:17:35.461597-05:00",
+   "ts": "2026-11-20T20:17:37.811753-05:00",
    "wx": {
-    "wind": 6.7,
-    "gust": 14.1,
-    "temp": 57.0,
+    "wind": 6.5,
+    "gust": 15.7,
+    "temp": 58.0,
     "precip": 45
    }
   },
@@ -5175,7 +5175,7 @@
    }
   },
   "290989": {
-   "ts": "2026-11-20T17:17:35.461597-05:00",
+   "ts": "2026-11-20T20:17:37.811753-05:00",
    "odds": {
     "chuba hubbard": {
      "name": "Chuba Hubbard",
@@ -5183,27 +5183,27 @@
     },
     "derrick henry": {
      "name": "Derrick Henry",
-     "FD": -130
+     "FD": -135
     },
     "tetairoa mcmillan": {
      "name": "Tetairoa McMillan",
-     "FD": 180
+     "FD": 185
     },
     "zay flowers": {
      "name": "Zay Flowers",
-     "FD": 185
+     "FD": 180
     },
     "jalen coker": {
      "name": "Jalen Coker",
      "FD": 230
     },
+    "darren waller": {
+     "name": "Darren Waller",
+     "FD": 340
+    },
     "mark andrews": {
      "name": "Mark Andrews",
      "FD": 340
-    },
-    "darren waller": {
-     "name": "Darren Waller",
-     "FD": 350
     },
     "tommy tremble": {
      "name": "Tommy Tremble",
@@ -5247,27 +5247,27 @@
     },
     "baltimore defense": {
      "name": "Baltimore Defense",
-     "FD": 750
+     "FD": 800
+    },
+    "jatavion sanders": {
+     "name": "Ja'Tavion Sanders",
+     "FD": 850
+    },
+    "brycen tremayne": {
+     "name": "Brycen Tremayne",
+     "FD": 850
     },
     "josh cuevas": {
      "name": "Josh Cuevas",
      "FD": 850
     },
-    "jatavion sanders": {
-     "name": "Ja'Tavion Sanders",
-     "FD": 900
-    },
-    "brycen tremayne": {
-     "name": "Brycen Tremayne",
-     "FD": 900
-    },
     "aj dillon": {
      "name": "AJ Dillon",
-     "FD": 1200
+     "FD": 1100
     },
     "trevor etienne": {
      "name": "Trevor Etienne",
-     "FD": 1200
+     "FD": 1100
     },
     "matthew hibner": {
      "name": "Matthew Hibner",
@@ -5283,11 +5283,11 @@
     },
     "rasheen ali": {
      "name": "Rasheen Ali",
-     "FD": 2200
+     "FD": 2000
     },
     "adam randall": {
      "name": "Adam Randall",
-     "FD": 2200
+     "FD": 2000
     },
     "lajohntay wester": {
      "name": "LaJohntay Wester",
@@ -5295,12 +5295,12 @@
     },
     "feleipe franks": {
      "name": "Feleipe Franks",
-     "FD": 4000
+     "FD": 3500
     }
    }
   },
   "290986": {
-   "ts": "2026-11-20T17:17:35.461597-05:00",
+   "ts": "2026-11-20T20:17:37.811753-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -5386,13 +5386,13 @@
      "name": "Andrew Armstrong",
      "FD": 2000
     },
+    "ben vansumeren": {
+     "name": "Ben VanSumeren",
+     "FD": 2200
+    },
     "hunter long": {
      "name": "Hunter Long",
      "FD": 2200
-    },
-    "ben vansumeren": {
-     "name": "Ben VanSumeren",
-     "FD": 2500
     },
     "evan hull": {
      "name": "Evan Hull",

@@ -11069,8 +11069,8 @@
   "model_line": -8.0,
   "flagged": "2026-11-17T20:17:33.138546-05:00",
   "kickoff_iso": "2026-11-19T20:15:00-05:00",
-  "status": "open",
-  "units": null,
+  "status": "L",
+  "units": -1.0,
   "close": null,
   "clv": null,
   "final": null
