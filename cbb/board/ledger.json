@@ -37247,5 +37247,31 @@
   "bets": 277,
   "moved": 5.0,
   "mins": 617
+ },
+ {
+  "id": "401911394|total|over",
+  "base": "401911394|total|over",
+  "flagged": "2026-11-21T09:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401911394,
+  "matchup": "Gardner-Webb @ VMI",
+  "kickoff": "2026-11-21T19:00:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 144.5",
+  "book": "MGM",
+  "line": 144.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.0,
+  "model": 149.5,
+  "opener": 150.5,
+  "grp": "low-major",
+  "limit": 144.5,
+  "status": "open",
+  "gap_open": -1.0
  }
 ]
