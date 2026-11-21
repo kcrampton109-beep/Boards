@@ -34158,8 +34158,8 @@
   "limit": 144.5,
   "status": "W",
   "gap_open": 5.3,
-  "close": 146.5,
-  "clv": 2.0,
+  "close": 145.5,
+  "clv": 1.0,
   "units": 0.87,
   "final": "Bellarmine 79 - Eastern Kentucky 76"
  },
@@ -34246,8 +34246,12 @@
   "opener": 150.5,
   "grp": "power 6",
   "limit": 147.5,
-  "status": "open",
-  "gap_open": 2.3
+  "status": "W",
+  "gap_open": 2.3,
+  "close": 146.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "South Alabama 55 - SMU 101"
  },
  {
   "id": "401925927|spread|2643",
@@ -34746,13 +34750,17 @@
   "opener": 154.5,
   "grp": "power 6",
   "limit": 154.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 75,
   "money": 77,
   "bets": 252,
   "moved": 1.0,
-  "mins": 827
+  "mins": 827,
+  "close": 152.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Tulsa 61 - Mississippi State 72"
  },
  {
   "id": "rlm|401927396|total|under",
@@ -35083,8 +35091,8 @@
   "bets": 277,
   "moved": 1.0,
   "mins": 617,
-  "close": 146.5,
-  "clv": -2.0,
+  "close": 145.5,
+  "clv": -1.0,
   "units": -1.0,
   "final": "Bellarmine 79 - Eastern Kentucky 76"
  },
@@ -35171,13 +35179,17 @@
   "opener": 150.5,
   "grp": "power 6",
   "limit": 146.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 97,
   "money": 94,
   "bets": 267,
   "moved": 4.0,
-  "mins": 677
+  "mins": 677,
+  "close": 146.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "South Alabama 55 - SMU 101"
  },
  {
   "id": "rlm|401921007|total|under",
@@ -35338,13 +35350,17 @@
   "opener": 146.5,
   "grp": "power 6",
   "limit": 144.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 67,
   "money": 79,
   "bets": 1312,
   "moved": 2.0,
-  "mins": 588
+  "mins": 588,
+  "close": 145.0,
+  "clv": -0.5,
+  "units": -1.0,
+  "final": "Iowa 83 - Xavier 65"
  },
  {
   "id": "401926134|spread|2509",
@@ -35467,8 +35483,8 @@
   "bets": 353,
   "moved": 2.0,
   "mins": 467,
-  "close": 143.5,
-  "clv": 0.0,
+  "close": 142.5,
+  "clv": 1.0,
   "units": 0.909,
   "final": "South Carolina State 63 - The Citadel 79"
  },
@@ -35949,13 +35965,17 @@
   "opener": 4.5,
   "grp": "mid-major",
   "limit": 4.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 82,
   "money": 92,
   "bets": 913,
   "moved": 1.0,
-  "mins": 138
+  "mins": 138,
+  "close": 4.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "UT Arlington 69 - Northwestern State 62"
  },
  {
   "id": "401921169|total|over",
