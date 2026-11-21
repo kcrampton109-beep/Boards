@@ -487,21 +487,21 @@
    }
   },
   "2026_11_JAX_NYG": {
-   "ts": "2026-11-21T09:17:41.101195-05:00",
+   "ts": "2026-11-21T12:17:44.316377-05:00",
    "wx": {
     "wind": 4.5,
     "gust": 10.1,
     "temp": 61.0,
-    "precip": 43
+    "precip": 68
    }
   },
   "2026_11_BAL_CAR": {
-   "ts": "2026-11-21T09:17:41.101195-05:00",
+   "ts": "2026-11-21T12:17:44.316377-05:00",
    "wx": {
     "wind": 7.2,
     "gust": 15.4,
     "temp": 60.0,
-    "precip": 35
+    "precip": 29
    }
   },
   "2026_11_ARI_KC": {
@@ -5167,7 +5167,7 @@
    }
   },
   "290989": {
-   "ts": "2026-11-21T09:17:41.101195-05:00",
+   "ts": "2026-11-21T12:17:44.316377-05:00",
    "odds": {
     "chuba hubbard": {
      "name": "Chuba Hubbard",
@@ -5177,24 +5177,24 @@
      "name": "Derrick Henry",
      "FD": -135
     },
+    "zay flowers": {
+     "name": "Zay Flowers",
+     "FD": 175
+    },
     "tetairoa mcmillan": {
      "name": "Tetairoa McMillan",
      "FD": 185
-    },
-    "zay flowers": {
-     "name": "Zay Flowers",
-     "FD": 180
     },
     "jalen coker": {
      "name": "Jalen Coker",
      "FD": 230
     },
-    "darren waller": {
-     "name": "Darren Waller",
-     "FD": 340
-    },
     "mark andrews": {
      "name": "Mark Andrews",
+     "FD": 320
+    },
+    "darren waller": {
+     "name": "Darren Waller",
      "FD": 340
     },
     "tommy tremble": {
@@ -5211,7 +5211,7 @@
     },
     "justice hill": {
      "name": "Justice Hill",
-     "FD": 470
+     "FD": 460
     },
     "rashod bateman": {
      "name": "Rashod Bateman",
@@ -5237,6 +5237,10 @@
      "name": "Carolina Defense",
      "FD": 700
     },
+    "josh cuevas": {
+     "name": "Josh Cuevas",
+     "FD": 800
+    },
     "baltimore defense": {
      "name": "Baltimore Defense",
      "FD": 800
@@ -5249,10 +5253,6 @@
      "name": "Brycen Tremayne",
      "FD": 850
     },
-    "josh cuevas": {
-     "name": "Josh Cuevas",
-     "FD": 850
-    },
     "aj dillon": {
      "name": "AJ Dillon",
      "FD": 1100
@@ -5263,7 +5263,7 @@
     },
     "matthew hibner": {
      "name": "Matthew Hibner",
-     "FD": 1200
+     "FD": 1400
     },
     "anthony tyus": {
      "name": "Anthony Tyus III",
@@ -5271,23 +5271,23 @@
     },
     "devontez walker": {
      "name": "Devontez Walker",
-     "FD": 1900
+     "FD": 2200
     },
     "elijah sarratt": {
      "name": "Elijah Sarratt",
-     "FD": 1900
+     "FD": 2200
     },
     "rasheen ali": {
      "name": "Rasheen Ali",
-     "FD": 2200
+     "FD": 2500
     },
     "adam randall": {
      "name": "Adam Randall",
-     "FD": 2200
+     "FD": 2500
     },
     "lajohntay wester": {
      "name": "LaJohntay Wester",
-     "FD": 3000
+     "FD": 3300
     },
     "feleipe franks": {
      "name": "Feleipe Franks",
@@ -5296,7 +5296,7 @@
    }
   },
   "290986": {
-   "ts": "2026-11-21T09:17:41.101195-05:00",
+   "ts": "2026-11-21T12:17:44.316377-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -5304,7 +5304,7 @@
     },
     "rashee rice": {
      "name": "Rashee Rice",
-     "FD": 160
+     "FD": 165
     },
     "travis kelce": {
      "name": "Travis Kelce",
@@ -5312,7 +5312,7 @@
     },
     "josh downs": {
      "name": "Josh Downs",
-     "FD": 210
+     "FD": 200
     },
     "trey mcbride": {
      "name": "Trey McBride",
@@ -5320,7 +5320,7 @@
     },
     "tyler allgeier": {
      "name": "Tyler Allgeier",
-     "FD": 320
+     "FD": 310
     },
     "bam knight": {
      "name": "Bam Knight",
@@ -5330,12 +5330,12 @@
      "name": "Xavier Worthy",
      "FD": 380
     },
-    "patrick mahomes": {
-     "name": "Patrick Mahomes",
-     "FD": 480
-    },
     "noah gray": {
      "name": "Noah Gray",
+     "FD": 500
+    },
+    "patrick mahomes": {
+     "name": "Patrick Mahomes",
      "FD": 500
     },
     "cyrus allen": {
@@ -5390,17 +5390,17 @@
      "name": "Hunter Long",
      "FD": 2200
     },
-    "evan hull": {
-     "name": "Evan Hull",
-     "FD": 2700
-    },
     "teagan quitoriano": {
      "name": "Teagan Quitoriano",
      "FD": 2700
     },
+    "evan hull": {
+     "name": "Evan Hull",
+     "FD": 3000
+    },
     "harrison wallace": {
      "name": "Harrison Wallace III",
-     "FD": 3000
+     "FD": 3300
     }
    }
   },
