@@ -36002,8 +36002,8 @@
   "limit": 13.0,
   "status": "W",
   "gap_open": 3.6,
-  "close": 7.0,
-  "clv": 6.5,
+  "close": 13.5,
+  "clv": 0.0,
   "units": 0.847,
   "final": "Loyola Marymount 80 - California Baptist 73"
  },
@@ -36396,8 +36396,12 @@
   "opener": 9.5,
   "grp": "low-major",
   "limit": 9.5,
-  "status": "open",
-  "gap_open": 3.1
+  "status": "W",
+  "gap_open": 3.1,
+  "close": 9.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Charleston Southern 64 - Mercer 69"
  },
  {
   "id": "401926217|total|under",
@@ -36422,8 +36426,12 @@
   "opener": 163.5,
   "grp": "low-major",
   "limit": 163.5,
-  "status": "open",
-  "gap_open": 5.3
+  "status": "L",
+  "gap_open": 5.3,
+  "close": 163.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Presbyterian 69 - Tennessee Tech 97"
  },
  {
   "id": "401925099|spread|357",
@@ -36526,8 +36534,12 @@
   "opener": 5.5,
   "grp": "low-major",
   "limit": 8.0,
-  "status": "open",
-  "gap_open": 1.0
+  "status": "L",
+  "gap_open": 1.0,
+  "close": 7.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Presbyterian 69 - Tennessee Tech 97"
  },
  {
   "id": "401928998|total|over",
@@ -36868,13 +36880,17 @@
   "opener": 160.5,
   "grp": "power 6",
   "limit": 160.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 72,
   "money": 70,
   "bets": 681,
   "moved": 1.0,
-  "mins": 917
+  "mins": 917,
+  "close": 159.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Michigan 73 - Villanova 79"
  },
  {
   "id": "rlm|401911310|total|under",
@@ -37415,8 +37431,12 @@
   "opener": 150.5,
   "grp": "low-major",
   "limit": 144.5,
-  "status": "open",
-  "gap_open": -1.0
+  "status": "L",
+  "gap_open": -1.0,
+  "close": 145.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Gardner-Webb 68 - VMI 71"
  },
  {
   "id": "401924884|total|under",
@@ -37576,13 +37596,17 @@
   "opener": 150.5,
   "grp": "low-major",
   "limit": 146.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 90,
   "money": 11,
   "bets": 287,
   "moved": 4.0,
-  "mins": 528
+  "mins": 528,
+  "close": 145.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Gardner-Webb 68 - VMI 71"
  },
  {
   "id": "401925065|total|over",
@@ -38604,5 +38628,31 @@
   "limit": 138.0,
   "status": "open",
   "gap_open": 4.9
+ },
+ {
+  "id": "401928999|total|over",
+  "base": "401928999|total|over",
+  "flagged": "2026-11-21T21:42-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401928999,
+  "matchup": "Southern Miss vs Valparaiso",
+  "kickoff": "2026-11-22T18:00:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 143.5",
+  "book": "MGM",
+  "line": 143.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.6,
+  "model": 149.1,
+  "opener": 144.5,
+  "grp": "mid-major",
+  "limit": 144.0,
+  "status": "open",
+  "gap_open": 4.6
  }
 ]
