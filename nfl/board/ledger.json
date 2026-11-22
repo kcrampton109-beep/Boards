@@ -12054,5 +12054,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_CAR_TB:TEASER:teaser:away",
+  "tier": "TEASER",
+  "market": "teaser",
+  "side": "away",
+  "team": "CAR",
+  "pid": null,
+  "game_id": "2026_12_CAR_TB",
+  "week": 12,
+  "matchup": "CAR @ TB",
+  "kickoff": "Mon Nov 30, 8:15 PM ET",
+  "pick": "CAR +2.5 \u2192 +8.5",
+  "line": 2.5,
+  "odds": -120,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": null,
+  "note": "total 42.5",
+  "limit": null,
+  "model_line": -2.7,
+  "flagged": "2026-11-22T18:17:41.888630-05:00",
+  "kickoff_iso": "2026-11-30T20:15:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
