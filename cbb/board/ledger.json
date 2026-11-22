@@ -36456,8 +36456,12 @@
   "opener": 3.5,
   "grp": "low-major",
   "limit": 3.0,
-  "status": "open",
-  "gap_open": 3.7
+  "status": "L",
+  "gap_open": 3.7,
+  "close": 3.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Texas A&M-Corpus Christi 74 - Oral Roberts 78"
  },
  {
   "id": "401925049|spread|2443",
@@ -36482,8 +36486,12 @@
   "opener": 1.5,
   "grp": "low-major",
   "limit": 1.0,
-  "status": "open",
-  "gap_open": 3.9
+  "status": "W",
+  "gap_open": 3.9,
+  "close": 1.5,
+  "clv": 0.0,
+  "units": 0.847,
+  "final": "LSU New Orleans 75 - Texas Southern 70"
  },
  {
   "id": "401925049|total|under",
@@ -36508,8 +36516,12 @@
   "opener": 160.5,
   "grp": "low-major",
   "limit": 160.5,
-  "status": "open",
-  "gap_open": 5.1
+  "status": "W",
+  "gap_open": 5.1,
+  "close": 154.0,
+  "clv": 6.5,
+  "units": 0.909,
+  "final": "LSU New Orleans 75 - Texas Southern 70"
  },
  {
   "id": "401926217|spread|2506",
@@ -37835,13 +37847,17 @@
   "opener": 141.5,
   "grp": "low-major",
   "limit": 140.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 97,
   "money": 97,
   "bets": 252,
   "moved": 2.0,
-  "mins": 497
+  "mins": 497,
+  "close": 143.0,
+  "clv": -2.5,
+  "units": -1.0,
+  "final": "Texas A&M-Corpus Christi 74 - Oral Roberts 78"
  },
  {
   "id": "rlm|401921811|spread|2511",
@@ -38210,13 +38226,17 @@
   "opener": 160.5,
   "grp": "low-major",
   "limit": 154.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 68,
   "money": 31,
   "bets": 1004,
   "moved": 6.0,
-  "mins": 138
+  "mins": 138,
+  "close": 154.0,
+  "clv": 0.5,
+  "units": 0.952,
+  "final": "LSU New Orleans 75 - Texas Southern 70"
  },
  {
   "id": "401925942|spread|3101",
