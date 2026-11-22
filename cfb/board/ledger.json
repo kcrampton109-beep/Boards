@@ -20060,5 +20060,28 @@
   "grp": "FBS",
   "limit": -19.0,
   "status": "open"
+ },
+ {
+  "id": "401862840|total|under|m",
+  "base": "401862840|total|under|m",
+  "flagged": "2026-11-22T08:45-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401862840,
+  "matchup": "Tulsa @ UTSA",
+  "kickoff": "2026-11-27 12:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 67.5",
+  "book": "FD",
+  "line": 67.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 11.9,
+  "model": 55.6,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
