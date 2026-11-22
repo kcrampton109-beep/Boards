@@ -18914,7 +18914,11 @@
   "model": -24.3,
   "grp": "FCS-FCS",
   "limit": -21.0,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": -20.5,
+  "units": 0.442,
+  "final": "Stetson 21 - San Diego 59"
  },
  {
   "id": "401868365|spread|home|m",
@@ -19146,7 +19150,11 @@
   "model": -24.3,
   "grp": "FCS-FCS",
   "limit": -19.0,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": -20.5,
+  "units": 0.87,
+  "final": "Stetson 21 - San Diego 59"
  },
  {
   "id": "401856869|total|under|wx",
@@ -19867,6 +19875,52 @@
   "model": -12.7,
   "grp": "FBS",
   "limit": -7.5,
+  "status": "open"
+ },
+ {
+  "id": "401856761|spread|away|m",
+  "base": "401856761|spread|away|m",
+  "flagged": "2026-11-22T02:08-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401856761,
+  "matchup": "Louisville @ Kentucky",
+  "kickoff": "2026-11-28 12:00:00-05:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "pick": "Louisville +1.5",
+  "book": "FD",
+  "line": 1.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 7.2,
+  "model": -5.7,
+  "grp": "FBS",
+  "limit": -0.5,
+  "status": "open"
+ },
+ {
+  "id": "401856761|moneyline|away|m",
+  "base": "401856761|moneyline|away|m",
+  "flagged": "2026-11-22T02:08-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401856761,
+  "matchup": "Louisville @ Kentucky",
+  "kickoff": "2026-11-28 12:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "moneyline",
+  "side": "away",
+  "pick": "Louisville ML -104 (alt to spread)",
+  "book": "FD",
+  "line": null,
+  "odds": -104.0,
+  "stake": 0.25,
+  "edge": 26.1,
+  "model": 64.3,
+  "grp": "FBS",
+  "limit": null,
   "status": "open"
  }
 ]
