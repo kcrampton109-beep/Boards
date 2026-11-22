@@ -17976,7 +17976,11 @@
   "model": -28.7,
   "grp": "FBS",
   "limit": -23.5,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": -21.5,
+  "units": -1.0,
+  "final": "Virginia Tech 20 - Miami 28"
  },
  {
   "id": "401858530|spread|away|m",
@@ -18829,7 +18833,11 @@
   "model": 57.3,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": 61.5,
+  "units": 0.885,
+  "final": "Idaho 5 - Idaho State 19"
  },
  {
   "id": "401868208|total|over|m",
@@ -18983,7 +18991,11 @@
   "model": 12.5,
   "grp": "FCS-FCS",
   "limit": 15.5,
-  "status": "open"
+  "status": "W",
+  "clv": 1.5,
+  "close": 14.0,
+  "units": 0.442,
+  "final": "Lamar 19 - McNeese 17"
  },
  {
   "id": "401868234|moneyline|home|m",
@@ -19292,7 +19304,11 @@
   "model": 7.0,
   "grp": "FBS",
   "limit": 12.5,
-  "status": "open"
+  "status": "L",
+  "clv": -1.0,
+  "close": 13.5,
+  "units": -0.5,
+  "final": "Washington State 14 - Texas State 42"
  },
  {
   "id": "401866697|total|under|wx",
@@ -19504,7 +19520,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 0.0,
+  "close": 51.5,
+  "units": 0.472,
+  "final": "Georgia 34 - South Carolina 6"
  },
  {
   "id": "401891330|spread|away|m",
@@ -19527,7 +19547,11 @@
   "model": 25.4,
   "grp": "FCS-FCS",
   "limit": 30.5,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 33.5,
+  "units": -1.5,
+  "final": "Chicago State 3 - Southern Utah 65"
  },
  {
   "id": "401866698|spread|home|m",
@@ -19604,7 +19628,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 63.5,
+  "units": 0.455,
+  "final": "South Florida 14 - Florida Atlantic 35"
  },
  {
   "id": "401867959|total|over|m",
@@ -19816,6 +19844,29 @@
   "model": -16.7,
   "grp": "FBS",
   "limit": -11.5,
+  "status": "open"
+ },
+ {
+  "id": "401856756|spread|away|m",
+  "base": "401856756|spread|away|m",
+  "flagged": "2026-11-21T23:09-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401856756,
+  "matchup": "Texas @ Texas A&M",
+  "kickoff": "2026-11-27 19:30:00-05:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "pick": "Texas -7.5",
+  "book": "DK",
+  "line": -7.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.2,
+  "model": -12.7,
+  "grp": "FBS",
+  "limit": -7.5,
   "status": "open"
  }
 ]
