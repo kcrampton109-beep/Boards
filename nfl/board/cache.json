@@ -4703,7 +4703,7 @@
    }
   },
   "290985": {
-   "ts": "2026-11-22T03:47:38.544816-05:00",
+   "ts": "2026-11-22T06:47:48.923004-05:00",
    "odds": {
     "jahmyr gibbs": {
      "name": "Jahmyr Gibbs",
@@ -4816,7 +4816,7 @@
    }
   },
   "290984": {
-   "ts": "2026-11-22T03:47:38.544816-05:00",
+   "ts": "2026-11-22T06:47:48.923004-05:00",
    "odds": {
     "javonte williams": {
      "name": "Javonte Williams",
@@ -4933,7 +4933,7 @@
    }
   },
   "290990": {
-   "ts": "2026-11-22T03:47:38.544816-05:00",
+   "ts": "2026-11-22T06:47:48.923004-05:00",
    "odds": {
     "dandre swift": {
      "name": "D'Andre Swift",
@@ -4983,21 +4983,21 @@
      "name": "Tyler Shough",
      "FD": 420
     },
-    "devaughn vele": {
-     "name": "Devaughn Vele",
-     "FD": 470
-    },
     "juwan johnson": {
      "name": "Juwan Johnson",
      "FD": 480
     },
+    "devaughn vele": {
+     "name": "Devaughn Vele",
+     "FD": 480
+    },
     "audric estime": {
      "name": "Audric Estime",
-     "FD": 600
+     "FD": 550
     },
     "cj donaldson": {
      "name": "CJ Donaldson",
-     "FD": 600
+     "FD": 550
     },
     "new orleans defense": {
      "name": "New Orleans Defense",
@@ -5037,7 +5037,7 @@
     },
     "stephen carlson": {
      "name": "Stephen Carlson",
-     "FD": 1800
+     "FD": 1700
     },
     "barion brown": {
      "name": "Barion Brown",
@@ -5050,31 +5050,31 @@
    }
   },
   "290988": {
-   "ts": "2026-11-22T03:47:38.544816-05:00",
+   "ts": "2026-11-22T06:47:48.923004-05:00",
    "odds": {
     "bhayshul tuten": {
      "name": "Bhayshul Tuten",
-     "FD": -110
+     "FD": -105
     },
     "cam skattebo": {
      "name": "Cam Skattebo",
-     "FD": 100
+     "FD": 105
     },
     "parker washington": {
      "name": "Parker Washington",
-     "FD": 140
+     "FD": 145
     },
     "malik nabers": {
      "name": "Malik Nabers",
-     "FD": 190
+     "FD": 195
     },
     "isaiah likely": {
      "name": "Isaiah Likely",
-     "FD": 220
+     "FD": 230
     },
     "jakobi meyers": {
      "name": "Jakobi Meyers",
-     "FD": 240
+     "FD": 250
     },
     "chris rodriguez": {
      "name": "Chris Rodriguez Jr.",
@@ -5082,11 +5082,11 @@
     },
     "brenton strange": {
      "name": "Brenton Strange",
-     "FD": 290
+     "FD": 300
     },
     "trevor lawrence": {
      "name": "Trevor Lawrence",
-     "FD": 480
+     "FD": 490
     },
     "jj mccarthy": {
      "name": "J.J McCarthy",
@@ -5116,12 +5116,12 @@
      "name": "Josh Cameron",
      "FD": 650
     },
-    "darnell mooney": {
-     "name": "Darnell Mooney",
-     "FD": 650
-    },
     "travis hunter": {
      "name": "Travis Hunter",
+     "FD": 700
+    },
+    "darnell mooney": {
+     "name": "Darnell Mooney",
      "FD": 700
     },
     "theo johnson": {
@@ -5152,29 +5152,29 @@
      "name": "Jalin Hyatt",
      "FD": 2000
     },
-    "xavier gipson": {
-     "name": "Xavier Gipson",
-     "FD": 2000
-    },
     "phil mafah": {
      "name": "Phil Mafah",
      "FD": 2000
     },
+    "xavier gipson": {
+     "name": "Xavier Gipson",
+     "FD": 2200
+    },
     "chris manhertz": {
      "name": "Chris Manhertz",
-     "FD": 2500
+     "FD": 2700
     },
     "thomas fidone": {
      "name": "Thomas Fidone II",
-     "FD": 2500
+     "FD": 2700
     },
     "patrick ricard": {
      "name": "Patrick Ricard",
-     "FD": 3000
+     "FD": 3300
     },
     "quintin morris": {
      "name": "Quintin Morris",
-     "FD": 3000
+     "FD": 3300
     }
    }
   },
@@ -5433,7 +5433,7 @@
    }
   },
   "290987": {
-   "ts": "2026-11-22T03:47:38.544816-05:00",
+   "ts": "2026-11-22T06:47:48.923004-05:00",
    "odds": {
     "james cook": {
      "name": "James Cook",
@@ -5554,7 +5554,7 @@
    }
   },
   "290991": {
-   "ts": "2026-11-22T03:47:38.544816-05:00",
+   "ts": "2026-11-22T06:47:48.923004-05:00",
    "odds": {
     "omarion hampton": {
      "name": "Omarion Hampton",
@@ -5562,23 +5562,23 @@
     },
     "breece hall": {
      "name": "Breece Hall",
-     "FD": 175
+     "FD": 180
     },
     "garrett wilson": {
      "name": "Garrett Wilson",
      "FD": 180
     },
-    "adonai mitchell": {
-     "name": "Adonai Mitchell",
-     "FD": 240
-    },
     "ladd mcconkey": {
      "name": "Ladd McConkey",
      "FD": 240
     },
+    "adonai mitchell": {
+     "name": "Adonai Mitchell",
+     "FD": 250
+    },
     "braelon allen": {
      "name": "Braelon Allen",
-     "FD": 270
+     "FD": 280
     },
     "tre harris": {
      "name": "Tre Harris",
@@ -5590,30 +5590,30 @@
     },
     "quentin johnston": {
      "name": "Quentin Johnston",
-     "FD": 450
+     "FD": 460
     },
     "keaton mitchell": {
      "name": "Keaton Mitchell",
-     "FD": 460
+     "FD": 470
     },
     "kimani vidal": {
      "name": "Kimani Vidal",
-     "FD": 480
+     "FD": 490
     },
     "mason taylor": {
      "name": "Mason Taylor",
-     "FD": 480
+     "FD": 490
     },
     "kenyon sadiq": {
      "name": "Kenyon Sadiq",
      "FD": 550
     },
-    "charlie kolar": {
-     "name": "Charlie Kolar",
-     "FD": 550
-    },
     "la chargers defense": {
      "name": "LA Chargers Defense",
+     "FD": 600
+    },
+    "charlie kolar": {
+     "name": "Charlie Kolar",
      "FD": 600
     },
     "oronde gadsden": {
@@ -5650,14 +5650,10 @@
     },
     "sterling shepard": {
      "name": "Sterling Shepard",
-     "FD": 1800
+     "FD": 1900
     },
     "jelani woods": {
      "name": "Jelani Woods",
-     "FD": 2000
-    },
-    "malik mcclain": {
-     "name": "Malik McClain",
      "FD": 2000
     },
     "jeremy ruckert": {
@@ -5668,9 +5664,13 @@
      "name": "Andrew Beck",
      "FD": 2200
     },
+    "malik mcclain": {
+     "name": "Malik McClain",
+     "FD": 2200
+    },
     "isaiah davis": {
      "name": "Isaiah Davis",
-     "FD": 2200
+     "FD": 2500
     },
     "kene nwangwu": {
      "name": "Kene Nwangwu",
@@ -5678,16 +5678,16 @@
     },
     "scott matlock": {
      "name": "Scott Matlock",
-     "FD": 4000
+     "FD": 4500
     }
    }
   },
   "290993": {
-   "ts": "2026-11-22T03:47:38.544816-05:00",
+   "ts": "2026-11-22T06:47:48.923004-05:00",
    "odds": {
     "jonah coleman": {
      "name": "Jonah Coleman",
-     "FD": -140
+     "FD": -135
     },
     "jaylen waddle": {
      "name": "Jaylen Waddle",
@@ -5707,11 +5707,11 @@
     },
     "brock bowers": {
      "name": "Brock Bowers",
-     "FD": 310
+     "FD": 320
     },
     "pat bryant": {
      "name": "Pat Bryant",
-     "FD": 310
+     "FD": 320
     },
     "bo nix": {
      "name": "Bo Nix",
@@ -5719,7 +5719,7 @@
     },
     "mike washington": {
      "name": "Mike Washington Jr.",
-     "FD": 380
+     "FD": 390
     },
     "evan engram": {
      "name": "Evan Engram",
@@ -5727,11 +5727,11 @@
     },
     "tre tucker": {
      "name": "Tre Tucker",
-     "FD": 450
+     "FD": 460
     },
     "michael mayer": {
      "name": "Michael Mayer",
-     "FD": 450
+     "FD": 460
     },
     "fernando mendoza": {
      "name": "Fernando Mendoza",
@@ -5741,12 +5741,12 @@
      "name": "Denver Defense",
      "FD": 500
     },
-    "nate adkins": {
-     "name": "Nate Adkins",
-     "FD": 600
-    },
     "jalen nailor": {
      "name": "Jalen Nailor",
+     "FD": 650
+    },
+    "nate adkins": {
+     "name": "Nate Adkins",
      "FD": 650
     },
     "jack bech": {
@@ -5783,19 +5783,19 @@
     },
     "adam prentice": {
      "name": "Adam Prentice",
-     "FD": 1600
+     "FD": 1700
     },
     "cody schrader": {
      "name": "Cody Schrader",
-     "FD": 2000
+     "FD": 2200
     },
     "cody white": {
      "name": "Cody White",
-     "FD": 2500
+     "FD": 2700
     },
     "donte thornton": {
      "name": "Dont'e Thornton Jr.",
-     "FD": 2500
+     "FD": 2700
     },
     "dylan laube": {
      "name": "Dylan Laube",
@@ -5803,20 +5803,20 @@
     },
     "carter runyon": {
      "name": "Carter Runyon",
-     "FD": 3000
+     "FD": 3300
     },
     "malik benson": {
      "name": "Malik Benson",
-     "FD": 3300
+     "FD": 3500
     },
     "dareke young": {
      "name": "Dareke Young",
-     "FD": 3300
+     "FD": 3500
     }
    }
   },
   "290992": {
-   "ts": "2026-11-22T03:47:38.544816-05:00",
+   "ts": "2026-11-22T06:47:48.923004-05:00",
    "odds": {
     "jaylen warren": {
      "name": "Jaylen Warren",
@@ -5902,24 +5902,24 @@
      "name": "Britain Covey",
      "FD": 2200
     },
-    "elijah moore": {
-     "name": "Elijah Moore",
-     "FD": 2200
-    },
     "robert tonyan": {
      "name": "Robert Tonyan",
      "FD": 2200
     },
-    "kaden wetjen": {
-     "name": "Kaden Wetjen",
-     "FD": 2200
-    },
-    "max hurleman": {
-     "name": "Max Hurleman",
-     "FD": 2200
+    "elijah moore": {
+     "name": "Elijah Moore",
+     "FD": 2500
     },
     "grant calcaterra": {
      "name": "Grant Calcaterra",
+     "FD": 2500
+    },
+    "kaden wetjen": {
+     "name": "Kaden Wetjen",
+     "FD": 2500
+    },
+    "max hurleman": {
+     "name": "Max Hurleman",
      "FD": 2500
     },
     "jaydon blue": {
@@ -5949,7 +5949,7 @@
    }
   },
   "290824": {
-   "ts": "2026-11-22T03:47:38.544816-05:00",
+   "ts": "2026-11-22T06:47:48.923004-05:00",
    "odds": {
     "christian mccaffrey": {
      "name": "Christian McCaffrey",
@@ -6070,7 +6070,7 @@
    }
   },
   "290994": {
-   "ts": "2026-11-22T03:47:38.544816-05:00",
+   "ts": "2026-11-22T06:47:48.923004-05:00",
    "odds": {
     "jamarr chase": {
      "name": "Ja'Marr Chase",
