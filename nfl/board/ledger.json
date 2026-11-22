@@ -11410,5 +11410,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_11_PIT_PHI:RLM:spread:home",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team": "PHI",
+  "pid": null,
+  "game_id": "2026_11_PIT_PHI",
+  "week": 11,
+  "matchup": "PIT @ PHI",
+  "kickoff": "Sun Nov 22, 4:25 PM ET",
+  "pick": "PHI +3.5",
+  "line": 3.5,
+  "odds": -108,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "57% of bets on PIT, line moved -4.5 \u2192 -3.5 for PIT",
+  "limit": null,
+  "model_line": 3.7,
+  "flagged": "2026-11-22T03:47:38.544816-05:00",
+  "kickoff_iso": "2026-11-22T16:25:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
