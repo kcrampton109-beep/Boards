@@ -18373,7 +18373,11 @@
   "model": 5.9,
   "grp": "FCS-FCS",
   "limit": 9.0,
-  "status": "open"
+  "status": "W",
+  "clv": 1.0,
+  "close": 9.5,
+  "units": 0.885,
+  "final": "Northern Iowa 14 - Murray State 51"
  },
  {
   "id": "401867998|total|under|m",
@@ -18423,7 +18427,11 @@
   "model": -20.2,
   "grp": "FCS-FCS",
   "limit": -15.0,
-  "status": "open"
+  "status": "L",
+  "clv": 2.5,
+  "close": -16.0,
+  "units": -1.0,
+  "final": "Eastern Kentucky 44 - Abilene Christian 25"
  },
  {
   "id": "401868193|total|under|m",
@@ -18554,7 +18562,11 @@
   "model": 55.2,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 5.0,
+  "close": 57.5,
+  "units": -1.0,
+  "final": "Indiana State 13 - South Dakota State 52"
  },
  {
   "id": "401868167|spread|away|m",
@@ -18577,7 +18589,11 @@
   "model": 15.6,
   "grp": "FCS-FCS",
   "limit": 19.0,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": 16.5,
+  "units": 0.885,
+  "final": "Utah Tech 24 - Weber State 31"
  },
  {
   "id": "401868167|total|under|m",
@@ -18600,7 +18616,11 @@
   "model": 57.2,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 7.0,
+  "close": 59.5,
+  "units": 0.885,
+  "final": "Utah Tech 24 - Weber State 31"
  },
  {
   "id": "401868244|total|under|m",
@@ -18677,7 +18697,11 @@
   "model": -7.8,
   "grp": "FCS-FCS",
   "limit": -4.5,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": -6.5,
+  "units": -0.5,
+  "final": "East Tennessee State 25 - Mercer 28"
  },
  {
   "id": "401868353|total|under|m",
@@ -18700,7 +18724,11 @@
   "model": 45.6,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 49.5,
+  "units": -1.0,
+  "final": "Prairie View A&M 45 - Alabama State 10"
  },
  {
   "id": "401891330|spread|away|m",
@@ -18747,7 +18775,11 @@
   "model": 5.9,
   "grp": "FCS-FCS",
   "limit": 11.0,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": 11.5,
+  "units": 1.327,
+  "final": "Austin Peay 17 - Central Arkansas 24"
  },
  {
   "id": "401868083|total|under|m",
@@ -18770,7 +18802,11 @@
   "model": 56.0,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 5.0,
+  "close": 57.5,
+  "units": -1.0,
+  "final": "Cal Poly 43 - UC Davis 44"
  },
  {
   "id": "401868100|total|under|m",
@@ -18816,7 +18852,11 @@
   "model": 60.9,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 3.0,
+  "close": 55.5,
+  "units": -0.5,
+  "final": "Western Illinois 41 - Lindenwood 7"
  },
  {
   "id": "401868234|spread|home|m",
@@ -18839,7 +18879,11 @@
   "model": 8.5,
   "grp": "FCS-FCS",
   "limit": 13.5,
-  "status": "open"
+  "status": "W",
+  "clv": 4.5,
+  "close": 10.0,
+  "units": 0.885,
+  "final": "Tarleton State 31 - North Alabama 24"
  },
  {
   "id": "401868287|spread|home|m",
@@ -18885,7 +18929,11 @@
   "model": 1.9,
   "grp": "FCS-FCS",
   "limit": 5.0,
-  "status": "open"
+  "status": "L",
+  "clv": 2.0,
+  "close": 4.5,
+  "units": -1.0,
+  "final": "Jackson State 54 - Alcorn State 40"
  },
  {
   "id": "401868947|total|under|m",
@@ -18908,7 +18956,11 @@
   "model": 52.1,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 4.0,
+  "close": 54.5,
+  "units": 0.885,
+  "final": "Florida A&M 27 - Bethune-Cookman 14"
  },
  {
   "id": "401869141|spread|home|m",
@@ -18954,7 +19006,9 @@
   "model": 29.2,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "units": -0.25,
+  "final": "Tarleton State 31 - North Alabama 24"
  },
  {
   "id": "401868069|moneyline|home|m",
@@ -18977,7 +19031,9 @@
   "model": 35.1,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "units": 0.975,
+  "final": "Austin Peay 17 - Central Arkansas 24"
  },
  {
   "id": "401891330|spread|away|m",
@@ -19051,7 +19107,11 @@
   "model": -36.2,
   "grp": "FCS-FCS",
   "limit": -33.0,
-  "status": "open"
+  "status": "W",
+  "clv": 3.0,
+  "close": -35.5,
+  "units": 0.442,
+  "final": "Indiana State 13 - South Dakota State 52"
  },
  {
   "id": "401868287|spread|home|m|FCS",
@@ -19151,7 +19211,11 @@
   "model": 44.7,
   "grp": "FBS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 59.5,
+  "units": -1.0,
+  "final": "Samford 17 - Auburn 59"
  },
  {
   "id": "401864542|total|under|wx",
@@ -19305,7 +19369,11 @@
   "model": 20.0,
   "grp": "FBS",
   "limit": 25.5,
-  "status": "open"
+  "status": "W",
+  "clv": 0.5,
+  "close": 25.0,
+  "units": 0.463,
+  "final": "Rutgers 25 - Penn State 24"
  },
  {
   "id": "401868059|total|under|wx",
@@ -19328,7 +19396,11 @@
   "model": null,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 51.5,
+  "units": -0.5,
+  "final": "Eastern Kentucky 44 - Abilene Christian 25"
  },
  {
   "id": "401871077|total|under|wx",
@@ -19351,7 +19423,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 53.5,
+  "units": -0.5,
+  "final": "Delaware 42 - New Mexico State 30"
  },
  {
   "id": "401856752|total|under|wx",
@@ -19374,7 +19450,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": 36.5,
+  "units": 0.455,
+  "final": "Texas A&M 7 - Oklahoma 28"
  },
  {
   "id": "401867971|spread|home|m",
@@ -19397,7 +19477,11 @@
   "model": -10.7,
   "grp": "FCS-FCS",
   "limit": -7.5,
-  "status": "open"
+  "status": "W",
+  "clv": -1.0,
+  "close": -6.5,
+  "units": 0.49,
+  "final": "Morgan State 31 - North Carolina Central 41"
  },
  {
   "id": "401856753|total|under|wx",
@@ -19493,7 +19577,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 51.5,
+  "units": -0.5,
+  "final": "Charlotte 14 - Tulsa 42"
  },
  {
   "id": "401862833|total|under|wx",
@@ -19593,7 +19681,11 @@
   "model": -10.9,
   "grp": "FCS-FCS",
   "limit": -7.5,
-  "status": "open"
+  "status": "W",
+  "clv": 2.0,
+  "close": -9.5,
+  "units": 0.463,
+  "final": "Montana 16 - Montana State 42"
  },
  {
   "id": "401856746|spread|home|m",
@@ -19670,7 +19762,11 @@
   "model": 59.9,
   "grp": "FCS-FCS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 55.5,
+  "units": -0.5,
+  "final": "Austin Peay 17 - Central Arkansas 24"
  },
  {
   "id": "401856754|spread|home|m",
@@ -19693,6 +19789,10 @@
   "model": -3.1,
   "grp": "FBS",
   "limit": 2.0,
-  "status": "open"
+  "status": "W",
+  "clv": -0.5,
+  "close": 2.5,
+  "units": 0.463,
+  "final": "LSU 13 - Tennessee 27"
  }
 ]
