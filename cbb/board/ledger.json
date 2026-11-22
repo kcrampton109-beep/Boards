@@ -38337,8 +38337,12 @@
   "opener": -7.5,
   "grp": "mid-major",
   "limit": -7.5,
-  "status": "open",
-  "gap_open": 4.4
+  "status": "W",
+  "gap_open": 4.4,
+  "close": -8.0,
+  "clv": 0.5,
+  "units": 0.952,
+  "final": "West Florida 66 - South Alabama 79"
  },
  {
   "id": "401923323|spread|2385",
@@ -38504,8 +38508,12 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 145.5,
-  "status": "open",
-  "gap_open": 3.1
+  "status": "W",
+  "gap_open": 3.1,
+  "close": 148.0,
+  "clv": 2.5,
+  "units": 0.87,
+  "final": "George Washington 78 - Western Kentucky 86"
  },
  {
   "id": "401921748|total|under",
@@ -38777,8 +38785,12 @@
   "opener": 145.5,
   "grp": "mid-major",
   "limit": 141.0,
-  "status": "open",
-  "gap_open": 0.8
+  "status": "W",
+  "gap_open": 0.8,
+  "close": 143.5,
+  "clv": 3.0,
+  "units": 0.87,
+  "final": "West Florida 66 - South Alabama 79"
  },
  {
   "id": "401920736|total|over|NOV_OVER",
@@ -39245,13 +39257,17 @@
   "opener": 145.5,
   "grp": "mid-major",
   "limit": 141.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 94,
   "money": 95,
   "bets": 262,
   "moved": 4.0,
-  "mins": 378
+  "mins": 378,
+  "close": 143.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "West Florida 66 - South Alabama 79"
  },
  {
   "id": "401911233|total|over",
@@ -39332,13 +39348,17 @@
   "opener": 137.5,
   "grp": "mid-major",
   "limit": 136.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 78,
   "money": 81,
   "bets": 434,
   "moved": 1.0,
-  "mins": 317
+  "mins": 317,
+  "close": 135.0,
+  "clv": 1.5,
+  "units": -1.0,
+  "final": "Robert Morris 84 - New Mexico State 79"
  },
  {
   "id": "401928790|total|over",
@@ -39363,8 +39383,12 @@
   "opener": 137.5,
   "grp": "mid-major",
   "limit": 137.0,
-  "status": "open",
-  "gap_open": 4.7
+  "status": "W",
+  "gap_open": 4.7,
+  "close": 135.0,
+  "clv": -0.5,
+  "units": 0.909,
+  "final": "Robert Morris 84 - New Mexico State 79"
  },
  {
   "id": "rlm|401925066|total|under",
@@ -39389,13 +39413,17 @@
   "opener": 136.5,
   "grp": "mid-major",
   "limit": 135.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 97,
   "money": 99,
   "bets": 282,
   "moved": 1.0,
-  "mins": 347
+  "mins": 347,
+  "close": 146.0,
+  "clv": -10.5,
+  "units": -1.0,
+  "final": "Troy 78 - Nicholls 77"
  },
  {
   "id": "rlm|401917540|total|under",
@@ -39503,8 +39531,12 @@
   "opener": -5.5,
   "grp": "mid-major",
   "limit": -3.5,
-  "status": "open",
-  "gap_open": 1.5
+  "status": "L",
+  "gap_open": 1.5,
+  "close": -3.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "George Washington 78 - Western Kentucky 86"
  },
  {
   "id": "rlm|401921176|total|under",
@@ -39936,5 +39968,57 @@
   "limit": 158.0,
   "status": "open",
   "gap_open": 5.8
+ },
+ {
+  "id": "401921658|total|over",
+  "base": "401921658|total|over",
+  "flagged": "2026-11-22T17:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401921658,
+  "matchup": "Tulsa vs Oregon State",
+  "kickoff": "2026-11-23T14:00:00-05:00",
+  "tier": "NOV_OVER",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 151.5",
+  "book": "DK",
+  "line": 151.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.7,
+  "model": 157.2,
+  "opener": 151.5,
+  "grp": "mid-major",
+  "limit": 152.0,
+  "status": "open",
+  "gap_open": 5.7
+ },
+ {
+  "id": "401913102|total|under",
+  "base": "401913102|total|under",
+  "flagged": "2026-11-22T17:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401913102,
+  "matchup": "Monmouth @ North Carolina",
+  "kickoff": "2026-11-23T20:00:00-05:00",
+  "tier": "NOV",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 153.5",
+  "book": "DK",
+  "line": 153.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.2,
+  "model": 148.3,
+  "opener": 153.5,
+  "grp": "power 6",
+  "limit": 153.5,
+  "status": "open",
+  "gap_open": 5.2
  }
 ]
