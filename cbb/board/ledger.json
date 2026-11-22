@@ -38130,8 +38130,12 @@
   "opener": 3.5,
   "grp": "power 6",
   "limit": 3.5,
-  "status": "open",
-  "gap_open": 3.2
+  "status": "W",
+  "gap_open": 3.2,
+  "close": 3.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Dayton 55 - Northwestern 79"
  },
  {
   "id": "401920736|total|over",
@@ -38156,8 +38160,12 @@
   "opener": 136.5,
   "grp": "power 6",
   "limit": 136.0,
-  "status": "open",
-  "gap_open": 4.9
+  "status": "L",
+  "gap_open": 4.9,
+  "close": 135.0,
+  "clv": -0.5,
+  "units": -1.0,
+  "final": "Dayton 55 - Northwestern 79"
  },
  {
   "id": "401921420|total|over",
@@ -38458,8 +38466,12 @@
   "opener": -2.5,
   "grp": "low-major",
   "limit": -3.0,
-  "status": "open",
-  "gap_open": 3.5
+  "status": "L",
+  "gap_open": 3.5,
+  "close": -2.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Fairfield 74 - Long Island University 71"
  },
  {
   "id": "401928802|total|over",
@@ -38718,13 +38730,17 @@
   "opener": 136.5,
   "grp": "power 6",
   "limit": 135.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 83,
   "money": 90,
   "bets": 257,
   "moved": 1.0,
-  "mins": 798
+  "mins": 798,
+  "close": 135.0,
+  "clv": 0.5,
+  "units": 0.952,
+  "final": "Dayton 55 - Northwestern 79"
  },
  {
   "id": "401922252|total|over",
@@ -38775,8 +38791,12 @@
   "opener": 136.5,
   "grp": "power 6",
   "limit": 136.5,
-  "status": "open",
-  "gap_open": 5.1
+  "status": "L",
+  "gap_open": 5.1,
+  "close": 135.0,
+  "clv": -0.5,
+  "units": -1.0,
+  "final": "Dayton 55 - Northwestern 79"
  },
  {
   "id": "401918988|spread|339",
@@ -39614,13 +39634,17 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 148.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 66,
   "money": 27,
   "bets": 2701,
   "moved": 1.0,
-  "mins": 17
+  "mins": 17,
+  "close": 148.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Miami (OH) 71 - UIC 60"
  },
  {
   "id": "rlm|401909527|total|under",
@@ -39645,13 +39669,17 @@
   "opener": 139.5,
   "grp": "power 6",
   "limit": 139.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 88,
   "money": 90,
   "bets": 575,
   "moved": 1.0,
-  "mins": 77
+  "mins": 77,
+  "close": 138.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Chicago State 62 - Marquette 106"
  },
  {
   "id": "rlm|401911200|total|under",
@@ -39745,5 +39773,36 @@
   "bets": 797,
   "moved": 2.0,
   "mins": 587
+ },
+ {
+  "id": "rlm|401920381|total|under",
+  "base": "rlm|401920381|total|under",
+  "flagged": "2026-11-22T15:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401920381,
+  "matchup": "Virginia Tech vs Oklahoma State",
+  "kickoff": "2026-11-22T15:30:00-05:00",
+  "tier": "RLM_T",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 158.5",
+  "book": "FD",
+  "line": 158.5,
+  "odds": -105.0,
+  "stake": 1.0,
+  "edge": 1.0,
+  "model": 162.7,
+  "opener": 159.5,
+  "grp": "power 6",
+  "limit": 158.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 76,
+  "money": 81,
+  "bets": 4397,
+  "moved": 1.0,
+  "mins": 17
  }
 ]
