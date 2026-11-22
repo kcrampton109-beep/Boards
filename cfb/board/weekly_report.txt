@@ -1,7 +1,13 @@
-CFB weekly refresh, Sun Nov 15 09:26 AM ET
-Last week: Strong 10-13 (-3.8u, CLV +1.9); FCS 11-8 (+3.1u, CLV +1.6); Wind 0-0 (+0.0u)
-Research tiers last week: Leans 20-22 (-4.0u, CLV +0.8); Research 32-27 (+3.7u, CLV +1.5)
-Season: Strong 27-27 (-2.1u, CLV +1.4); FCS 56-30 (+21.3u, CLV +1.4); Wind 19-22 (-4.9u, CLV +0.9)
-This week's card so far: 0 plays
-Biggest FBS rating moves: Arkansas +4.9, Washington State +4.9, Wake Forest +4.5, South Carolina -4.6, Colorado State -4.4, SMU -4.3
-Health: 0 engine errors, longest gap between checks 5.7h, 236 line snapshots this week, 852 data calls left this month
+CFB weekly refresh, Sun Nov 22 03:29 PM ET
+Last week: Strong 5-3 (+1.9u, CLV +4.0); FCS 4-4 (-0.2u, CLV +2.8); Wind 0-0 (+0.0u)
+Research tiers last week: Leans 14-12 (-1.3u, CLV +1.5); Research 17-24 (-2.7u, CLV +2.0)
+Season: Strong 28-30 (-3.8u, CLV +1.5); FCS 59-34 (+19.9u, CLV +1.5); Wind 19-22 (-4.9u, CLV +0.9)
+This week's card so far: 6 plays
+  Strong: Tennessee -10.5 -110 DK (Tennessee @ Vanderbilt, playable to -10.5)
+  Strong: Virginia +3.5 -115 FD (Virginia @ Virginia Tech, playable to +3)
+  Strong: Ohio State -10.5 -105 MGM (Michigan @ Ohio State, playable to -11.5)
+  Strong: UCLA +7.5 -122 FD (USC @ UCLA, playable to +5)
+  Strong: Washington State +2.5 -105 FD (San Diego State @ Washington State, playable to +1)
+  Strong: North Texas -3.5 -115 FD (UAB @ North Texas, playable to -4)
+Biggest FBS rating moves: UCF +3.6, Georgia Southern +3.5, Wisconsin +3.2, Iowa State -3.6, UTEP -3.3, Arkansas State -3.1
+Health: 0 engine errors, longest gap between checks 8.2h, 370 line snapshots this week, 784 data calls left this month

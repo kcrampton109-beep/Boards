@@ -20244,5 +20244,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401856765|spread|away|m",
+  "base": "401856765|spread|away|m",
+  "flagged": "2026-11-22T15:29-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401856765,
+  "matchup": "Tennessee @ Vanderbilt",
+  "kickoff": "2026-11-28 19:00:00-05:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "away",
+  "pick": "Tennessee -10.5",
+  "book": "DK",
+  "line": -10.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.1,
+  "model": -15.6,
+  "grp": "FBS",
+  "limit": -10.5,
+  "status": "open"
  }
 ]
