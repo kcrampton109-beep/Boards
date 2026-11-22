@@ -541,12 +541,12 @@
    }
   },
   "2026_11_CIN_WAS": {
-   "ts": "2026-11-22T13:47:31.975671-05:00",
+   "ts": "2026-11-22T16:47:36.943642-05:00",
    "wx": {
-    "wind": 12.1,
-    "gust": 30.9,
-    "temp": 47.0,
-    "precip": 1
+    "wind": 13.8,
+    "gust": 30.6,
+    "temp": 48.0,
+    "precip": 2
    }
   }
  },
@@ -5933,31 +5933,31 @@
    }
   },
   "290824": {
-   "ts": "2026-11-22T13:47:31.975671-05:00",
+   "ts": "2026-11-22T16:47:36.943642-05:00",
    "odds": {
     "christian mccaffrey": {
      "name": "Christian McCaffrey",
-     "FD": -155
+     "FD": -160
     },
     "justin jefferson": {
      "name": "Justin Jefferson",
-     "FD": 130
+     "FD": 135
     },
     "aaron jones": {
      "name": "Aaron Jones",
-     "FD": 180
+     "FD": 185
     },
     "george kittle": {
      "name": "George Kittle",
-     "FD": 195
+     "FD": 190
     },
     "mike evans": {
      "name": "Mike Evans",
-     "FD": 210
+     "FD": 200
     },
     "jordan mason": {
      "name": "Jordan Mason",
-     "FD": 230
+     "FD": 240
     },
     "tj hockenson": {
      "name": "T.J. Hockenson",
@@ -5969,18 +5969,18 @@
     },
     "keenan allen": {
      "name": "Keenan Allen",
-     "FD": 330
+     "FD": 320
     },
     "kaelon black": {
      "name": "Kaelon Black",
      "FD": 340
     },
-    "jauan jennings": {
-     "name": "Jauan Jennings",
-     "FD": 460
-    },
     "brock purdy": {
      "name": "Brock Purdy",
+     "FD": 470
+    },
+    "jauan jennings": {
+     "name": "Jauan Jennings",
      "FD": 480
     },
     "myles price": {
@@ -5995,36 +5995,36 @@
      "name": "Minnesota Defense",
      "FD": 700
     },
+    "san francisco defense": {
+     "name": "San Francisco Defense",
+     "FD": 800
+    },
     "jordan watkins": {
      "name": "Jordan Watkins",
      "FD": 800
     },
-    "san francisco defense": {
-     "name": "San Francisco Defense",
-     "FD": 850
-    },
-    "gavin bartholomew": {
-     "name": "Gavin Bartholomew",
-     "FD": 1100
-    },
     "demarcus robinson": {
      "name": "DeMarcus Robinson",
-     "FD": 1200
-    },
-    "kirk cousins": {
-     "name": "Kirk Cousins",
      "FD": 1200
     },
     "luke farrell": {
      "name": "Luke Farrell",
      "FD": 1200
     },
-    "ben yurosek": {
-     "name": "Ben Yurosek",
-     "FD": 1400
+    "gavin bartholomew": {
+     "name": "Gavin Bartholomew",
+     "FD": 1200
     },
     "kyle juszczyk": {
      "name": "Kyle Juszczyk",
+     "FD": 1300
+    },
+    "kirk cousins": {
+     "name": "Kirk Cousins",
+     "FD": 1300
+    },
+    "ben yurosek": {
+     "name": "Ben Yurosek",
      "FD": 1400
     },
     "jacob cowing": {
@@ -6037,7 +6037,11 @@
     },
     "jeshaun jones": {
      "name": "Jeshaun Jones",
-     "FD": 2000
+     "FD": 2200
+    },
+    "brayden willis": {
+     "name": "Brayden Willis",
+     "FD": 3000
     },
     "max bredeson": {
      "name": "Max Bredeson",
@@ -6046,15 +6050,11 @@
     "jordan james": {
      "name": "Jordan James",
      "FD": 3000
-    },
-    "brayden willis": {
-     "name": "Brayden Willis",
-     "FD": 3300
     }
    }
   },
   "290994": {
-   "ts": "2026-11-22T13:47:31.975671-05:00",
+   "ts": "2026-11-22T16:47:36.943642-05:00",
    "odds": {
     "jamarr chase": {
      "name": "Ja'Marr Chase",
@@ -6220,6 +6220,14 @@
   },
   "291006": {
    "ts": "2026-11-22T16:17:32.862368-05:00",
+   "odds": {}
+  },
+  "291005": {
+   "ts": "2026-11-22T16:47:36.943642-05:00",
+   "odds": {}
+  },
+  "291004": {
+   "ts": "2026-11-22T16:47:36.943642-05:00",
    "odds": {}
   }
  }
