@@ -487,21 +487,21 @@
    }
   },
   "2026_11_JAX_NYG": {
-   "ts": "2026-11-21T22:47:39.773878-05:00",
+   "ts": "2026-11-22T01:47:43.099698-05:00",
    "wx": {
-    "wind": 7.1,
-    "gust": 15.4,
-    "temp": 62.0,
-    "precip": 24
+    "wind": 6.5,
+    "gust": 13.9,
+    "temp": 59.0,
+    "precip": 15
    }
   },
   "2026_11_BAL_CAR": {
-   "ts": "2026-11-21T22:47:39.773878-05:00",
+   "ts": "2026-11-22T01:47:43.099698-05:00",
    "wx": {
-    "wind": 7.5,
-    "gust": 19.2,
-    "temp": 61.0,
-    "precip": 30
+    "wind": 8.3,
+    "gust": 16.6,
+    "temp": 62.0,
+    "precip": 23
    }
   },
   "2026_11_ARI_KC": {
@@ -5179,7 +5179,7 @@
    }
   },
   "290989": {
-   "ts": "2026-11-21T22:47:39.773878-05:00",
+   "ts": "2026-11-22T01:47:43.099698-05:00",
    "odds": {
     "chuba hubbard": {
      "name": "Chuba Hubbard",
@@ -5312,15 +5312,15 @@
    }
   },
   "290986": {
-   "ts": "2026-11-21T22:47:39.773878-05:00",
+   "ts": "2026-11-22T01:47:43.099698-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
-     "FD": -230
+     "FD": -220
     },
     "rashee rice": {
      "name": "Rashee Rice",
-     "FD": 165
+     "FD": 170
     },
     "travis kelce": {
      "name": "Travis Kelce",
@@ -5328,54 +5328,50 @@
     },
     "josh downs": {
      "name": "Josh Downs",
-     "FD": 200
+     "FD": 210
     },
     "tyler allgeier": {
      "name": "Tyler Allgeier",
-     "FD": 310
+     "FD": 290
     },
     "trey mcbride": {
      "name": "Trey McBride",
-     "FD": 330
+     "FD": 340
+    },
+    "bam knight": {
+     "name": "Bam Knight",
+     "FD": 380
     },
     "xavier worthy": {
      "name": "Xavier Worthy",
      "FD": 380
     },
-    "bam knight": {
-     "name": "Bam Knight",
-     "FD": 400
-    },
-    "cyrus allen": {
-     "name": "Cyrus Allen",
-     "FD": 490
-    },
     "noah gray": {
      "name": "Noah Gray",
      "FD": 500
     },
+    "kansas city defense": {
+     "name": "Kansas City Defense",
+     "FD": 500
+    },
+    "cyrus allen": {
+     "name": "Cyrus Allen",
+     "FD": 500
+    },
     "patrick mahomes": {
      "name": "Patrick Mahomes",
-     "FD": 500
+     "FD": 550
     },
     "josh johnson": {
      "name": "Josh Johnson",
-     "FD": 700
+     "FD": 650
     },
     "nate carter": {
      "name": "Nate Carter",
-     "FD": 900
+     "FD": 950
     },
     "jaydn ott": {
      "name": "Jaydn Ott",
-     "FD": 950
-    },
-    "arizona defense": {
-     "name": "Arizona Defense",
-     "FD": 1000
-    },
-    "kansas city defense": {
-     "name": "Kansas City Defense",
      "FD": 1000
     },
     "elijah higgins": {
@@ -5401,6 +5397,10 @@
     "devin duvernay": {
      "name": "Devin Duvernay",
      "FD": 1500
+    },
+    "arizona defense": {
+     "name": "Arizona Defense",
+     "FD": 1600
     },
     "andrew armstrong": {
      "name": "Andrew Armstrong",
