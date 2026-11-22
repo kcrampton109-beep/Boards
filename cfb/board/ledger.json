@@ -20083,5 +20083,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401862843|total|over|m",
+  "base": "401862843|total|over|m",
+  "flagged": "2026-11-22T09:45-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401862843,
+  "matchup": "UAB @ North Texas",
+  "kickoff": "2026-11-28 16:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "over",
+  "pick": "Over 48.5",
+  "book": "FD",
+  "line": 48.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 10.1,
+  "model": 58.6,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
