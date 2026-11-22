@@ -36872,8 +36872,8 @@
   "bets": 277,
   "moved": 3.0,
   "mins": 497,
-  "close": null,
-  "clv": null,
+  "close": 142.0,
+  "clv": 0.5,
   "units": -1.0,
   "final": "Columbia 80 - Boston University 71"
  },
