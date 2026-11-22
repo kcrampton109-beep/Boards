@@ -11438,5 +11438,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_11_LV_DEN:RLM:spread:home",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team": "DEN",
+  "pid": null,
+  "game_id": "2026_11_LV_DEN",
+  "week": 11,
+  "matchup": "LV @ DEN",
+  "kickoff": "Sun Nov 22, 4:25 PM ET",
+  "pick": "DEN -10.5",
+  "line": -10.5,
+  "odds": -104,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "60% of bets on LV, line moved +7.5 \u2192 +10.5 for LV",
+  "limit": null,
+  "model_line": -11.4,
+  "flagged": "2026-11-22T05:47:34.311106-05:00",
+  "kickoff_iso": "2026-11-22T16:25:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
