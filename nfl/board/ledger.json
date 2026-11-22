@@ -11466,5 +11466,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_11_NO_CHI:RLM:total:under",
+  "tier": "RLM",
+  "market": "total",
+  "side": "under",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_11_NO_CHI",
+  "week": 11,
+  "matchup": "NO @ CHI",
+  "kickoff": "Sun Nov 22, 1:00 PM ET",
+  "pick": "Under 48.5",
+  "line": 48.5,
+  "odds": -113,
+  "book": "DK",
+  "stake": 1.0,
+  "edge": null,
+  "note": "81% of bets on the over, total moved 48.5 \u2192 47.5",
+  "limit": null,
+  "model_line": -7.8,
+  "flagged": "2026-11-22T09:17:31.524997-05:00",
+  "kickoff_iso": "2026-11-22T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
