@@ -37487,8 +37487,8 @@
   "limit": 157.5,
   "status": "L",
   "gap_open": 0.4,
-  "close": null,
-  "clv": null,
+  "close": 161.0,
+  "clv": -3.5,
   "units": -1.0,
   "final": "Siena 93 - Bucknell 87"
  },
