@@ -36686,8 +36686,12 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": 1.5,
-  "status": "open",
-  "gap_open": 3.1
+  "status": "W",
+  "gap_open": 3.1,
+  "close": -1.5,
+  "clv": 3.0,
+  "units": 0.82,
+  "final": "Southern Illinois 85 - East Carolina 69"
  },
  {
   "id": "rlm|401917538|total|under",
@@ -37613,13 +37617,17 @@
   "opener": 150.5,
   "grp": "low-major",
   "limit": 149.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 75,
   "money": 87,
   "bets": 383,
   "moved": 1.0,
-  "mins": 438
+  "mins": 438,
+  "close": 149.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "UNC Wilmington 89 - Norfolk State 80"
  },
  {
   "id": "rlm|401920975|total|under",
@@ -37942,13 +37950,17 @@
   "opener": 143.5,
   "grp": "power 6",
   "limit": 142.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 83,
   "money": 88,
   "bets": 575,
   "moved": 1.0,
-  "mins": 228
+  "mins": 228,
+  "close": 144.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Coppin State 60 - Georgetown 84"
  },
  {
   "id": "401920975|total|over",
@@ -38534,5 +38546,31 @@
   "limit": 143.5,
   "status": "open",
   "gap_open": 13.3
+ },
+ {
+  "id": "401917540|total|over",
+  "base": "401917540|total|over",
+  "flagged": "2026-11-21T20:12-05:00",
+  "season": 2026,
+  "week": 3,
+  "game_id": 401917540,
+  "matchup": "UC Irvine vs Loyola Marymount",
+  "kickoff": "2026-11-22T16:30:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 137.5",
+  "book": "MGM",
+  "line": 137.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.9,
+  "model": 143.4,
+  "opener": 138.5,
+  "grp": "mid-major",
+  "limit": 138.0,
+  "status": "open",
+  "gap_open": 4.9
  }
 ]
