@@ -36564,8 +36564,12 @@
   "opener": 138.5,
   "grp": "mid-major",
   "limit": 137.5,
-  "status": "open",
-  "gap_open": 4.4
+  "status": "W",
+  "gap_open": 4.4,
+  "close": 137.0,
+  "clv": -0.5,
+  "units": 0.87,
+  "final": "Valparaiso 77 - Troy 72"
  },
  {
   "id": "401909730|spread|154",
@@ -37932,13 +37936,17 @@
   "opener": 138.5,
   "grp": "mid-major",
   "limit": 136.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 94,
   "money": 93,
   "bets": 615,
   "moved": 2.0,
-  "mins": 437
+  "mins": 437,
+  "close": 137.0,
+  "clv": -0.5,
+  "units": -1.0,
+  "final": "Valparaiso 77 - Troy 72"
  },
  {
   "id": "rlm|401917953|total|under",
