@@ -19794,5 +19794,28 @@
   "close": 2.5,
   "units": 0.463,
   "final": "LSU 13 - Tennessee 27"
+ },
+ {
+  "id": "401858540|spread|home|m",
+  "base": "401858540|spread|home|m",
+  "flagged": "2026-11-21T22:37-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401858540,
+  "matchup": "Michigan @ Ohio State",
+  "kickoff": "2026-11-28 12:00:00-05:00",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "home",
+  "pick": "Ohio State -11.5",
+  "book": "FD",
+  "line": -11.5,
+  "odds": -106.0,
+  "stake": 1.0,
+  "edge": 5.2,
+  "model": -16.7,
+  "grp": "FBS",
+  "limit": -11.5,
+  "status": "open"
  }
 ]
