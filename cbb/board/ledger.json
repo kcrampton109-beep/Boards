@@ -36000,8 +36000,12 @@
   "opener": 13.5,
   "grp": "mid-major",
   "limit": 13.0,
-  "status": "open",
-  "gap_open": 3.6
+  "status": "W",
+  "gap_open": 3.6,
+  "close": 7.0,
+  "clv": 6.5,
+  "units": 0.847,
+  "final": "Loyola Marymount 80 - California Baptist 73"
  },
  {
   "id": "rlm|401926782|spread|2247",
@@ -36186,8 +36190,12 @@
   "opener": 156.5,
   "grp": "mid-major",
   "limit": 157.5,
-  "status": "open",
-  "gap_open": 6.1
+  "status": "W",
+  "gap_open": 6.1,
+  "close": 154.5,
+  "clv": -2.0,
+  "units": 0.87,
+  "final": "Northern Arizona 88 - Cal Poly 89"
  },
  {
   "id": "401917537|total|over",
@@ -36660,8 +36668,12 @@
   "opener": 139.5,
   "grp": "mid-major",
   "limit": 136.5,
-  "status": "open",
-  "gap_open": 2.1
+  "status": "W",
+  "gap_open": 2.1,
+  "close": 135.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Loyola Marymount 80 - California Baptist 73"
  },
  {
   "id": "401920570|spread|79",
@@ -36887,13 +36899,17 @@
   "opener": 134.5,
   "grp": "mid-major",
   "limit": 133.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 97,
   "money": 94,
   "bets": 282,
   "moved": 1.0,
-  "mins": 917
+  "mins": 917,
+  "close": 133.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Brown 71 - Vermont 84"
  },
  {
   "id": "rlm|401909567|total|under",
@@ -37364,13 +37380,17 @@
   "opener": 139.5,
   "grp": "mid-major",
   "limit": 134.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 94,
   "money": 97,
   "bets": 277,
   "moved": 5.0,
-  "mins": 617
+  "mins": 617,
+  "close": 135.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Loyola Marymount 80 - California Baptist 73"
  },
  {
   "id": "401911394|total|over",
@@ -37652,13 +37672,17 @@
   "opener": 155.5,
   "grp": "low-major",
   "limit": 152.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 68,
   "money": 38,
   "bets": 267,
   "moved": 3.0,
-  "mins": 498
+  "mins": 498,
+  "close": 150.5,
+  "clv": 2.0,
+  "units": 0.952,
+  "final": "Radford 73 - Chattanooga 65"
  },
  {
   "id": "rlm|401911022|total|under",
@@ -37985,8 +38009,12 @@
   "opener": 155.5,
   "grp": "low-major",
   "limit": 150.5,
-  "status": "open",
-  "gap_open": 0.3
+  "status": "L",
+  "gap_open": 0.3,
+  "close": 150.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Radford 73 - Chattanooga 65"
  },
  {
   "id": "rlm|401920125|total|under",
@@ -38011,13 +38039,17 @@
   "opener": 156.5,
   "grp": "mid-major",
   "limit": 154.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 67,
   "money": 67,
   "bets": 787,
   "moved": 2.0,
-  "mins": 167
+  "mins": 167,
+  "close": 154.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Northern Arizona 88 - Cal Poly 89"
  },
  {
   "id": "401920736|spread|77",
