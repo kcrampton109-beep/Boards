@@ -11914,5 +11914,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_CHI_DET:RLM:total:over",
+  "tier": "RLM",
+  "market": "total",
+  "side": "over",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_12_CHI_DET",
+  "week": 12,
+  "matchup": "CHI @ DET",
+  "kickoff": "Thu Nov 26, 1:00 PM ET",
+  "pick": "Over 55.5",
+  "line": 55.5,
+  "odds": -105,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "84% of bets on the under, total moved 54.5 \u2192 55.5",
+  "limit": null,
+  "model_line": -1.5,
+  "flagged": "2026-11-22T17:17:41.821703-05:00",
+  "kickoff_iso": "2026-11-26T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
