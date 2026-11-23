@@ -6293,8 +6293,109 @@
    }
   },
   "290841": {
-   "ts": "2026-11-19T13:17:44.460131-05:00",
-   "odds": {}
+   "ts": "2026-11-22T21:17:30.438012-05:00",
+   "odds": {
+    "jahmyr gibbs": {
+     "name": "Jahmyr Gibbs",
+     "FD": -270
+    },
+    "amon-ra st brown": {
+     "name": "Amon-Ra St. Brown",
+     "FD": -140
+    },
+    "dandre swift": {
+     "name": "D'Andre Swift",
+     "FD": -120
+    },
+    "luther burden": {
+     "name": "Luther Burden III",
+     "FD": 125
+    },
+    "colston loveland": {
+     "name": "Colston Loveland",
+     "FD": 125
+    },
+    "kyle monangai": {
+     "name": "Kyle Monangai",
+     "FD": 150
+    },
+    "rome odunze": {
+     "name": "Rome Odunze",
+     "FD": 160
+    },
+    "sam laporta": {
+     "name": "Sam LaPorta",
+     "FD": 185
+    },
+    "jameson williams": {
+     "name": "Jameson Williams",
+     "FD": 200
+    },
+    "kalif raymond": {
+     "name": "Kalif Raymond",
+     "FD": 330
+    },
+    "caleb williams": {
+     "name": "Caleb Williams",
+     "FD": 330
+    },
+    "isaac teslaa": {
+     "name": "Isaac TeSlaa",
+     "FD": 410
+    },
+    "sione vaki": {
+     "name": "Sione Vaki",
+     "FD": 550
+    },
+    "chicago defense": {
+     "name": "Chicago Defense",
+     "FD": 650
+    },
+    "detroit defense": {
+     "name": "Detroit Defense",
+     "FD": 700
+    },
+    "sam roush": {
+     "name": "Sam Roush",
+     "FD": 750
+    },
+    "zavion thomas": {
+     "name": "Zavion Thomas",
+     "FD": 800
+    },
+    "brock wright": {
+     "name": "Brock Wright",
+     "FD": 1100
+    },
+    "jared goff": {
+     "name": "Jared Goff",
+     "FD": 1200
+    },
+    "jahdae walker": {
+     "name": "Jahdae Walker",
+     "FD": 1200
+    },
+    "deandre carter": {
+     "name": "DeAndre Carter",
+     "FD": 1600
+    },
+    "stephen carlson": {
+     "name": "Stephen Carlson",
+     "FD": 1700
+    },
+    "tyler conklin": {
+     "name": "Tyler Conklin",
+     "FD": 1800
+    },
+    "jacob saylors": {
+     "name": "Jacob Saylors",
+     "FD": 2500
+    },
+    "tay martin": {
+     "name": "Tay Martin",
+     "FD": 3300
+    }
+   }
   },
   "290805": {
    "ts": "2026-11-19T16:47:34.908869-05:00",
