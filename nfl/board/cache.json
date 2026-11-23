@@ -541,12 +541,12 @@
    }
   },
   "2026_11_CIN_WAS": {
-   "ts": "2026-11-22T22:47:41.546013-05:00",
+   "ts": "2026-11-23T02:17:31.508442-05:00",
    "wx": {
     "wind": 11.3,
     "gust": 28.4,
     "temp": 51.0,
-    "precip": 26
+    "precip": 3
    }
   },
   "2026_12_KC_BUF": {
@@ -6059,7 +6059,7 @@
    }
   },
   "290994": {
-   "ts": "2026-11-22T22:47:41.546013-05:00",
+   "ts": "2026-11-23T02:17:31.508442-05:00",
    "odds": {
     "jamarr chase": {
      "name": "Ja'Marr Chase",
@@ -6089,12 +6089,12 @@
      "name": "Mike Gesicki",
      "FD": 180
     },
-    "jayden daniels": {
-     "name": "Jayden Daniels",
-     "FD": 220
-    },
     "samaje perine": {
      "name": "Samaje Perine",
+     "FD": 210
+    },
+    "jayden daniels": {
+     "name": "Jayden Daniels",
      "FD": 220
     },
     "austin ekeler": {
@@ -6115,15 +6115,15 @@
     },
     "dohnte meyers": {
      "name": "Dohnte Meyers",
-     "FD": 350
+     "FD": 360
     },
     "joe burrow": {
      "name": "Joe Burrow",
-     "FD": 430
+     "FD": 420
     },
     "drew sample": {
      "name": "Drew Sample",
-     "FD": 550
+     "FD": 500
     },
     "washington defense": {
      "name": "Washington Defense",
@@ -6153,13 +6153,13 @@
      "name": "John Bates",
      "FD": 1300
     },
+    "mitchell tinsley": {
+     "name": "Mitchell Tinsley",
+     "FD": 1300
+    },
     "colson yankoff": {
      "name": "Colson Yankoff",
      "FD": 1300
-    },
-    "mitchell tinsley": {
-     "name": "Mitchell Tinsley",
-     "FD": 1400
     },
     "colbie young": {
      "name": "Colbie Young",
@@ -6175,7 +6175,7 @@
     },
     "tahj brooks": {
      "name": "Tahj Brooks",
-     "FD": 2500
+     "FD": 2700
     }
    }
   },
@@ -6511,19 +6511,19 @@
    }
   },
   "290995": {
-   "ts": "2026-11-22T22:47:41.546013-05:00",
+   "ts": "2026-11-23T02:17:31.508442-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
      "FD": -130
     },
-    "james cook": {
-     "name": "James Cook",
-     "FD": -125
-    },
     "kenneth walker": {
      "name": "Kenneth Walker III",
      "FD": -130
+    },
+    "james cook": {
+     "name": "James Cook",
+     "FD": -125
     },
     "josh allen": {
      "name": "Josh Allen",
@@ -6539,7 +6539,7 @@
     },
     "travis kelce": {
      "name": "Travis Kelce",
-     "FD": 220
+     "FD": 210
     },
     "josh downs": {
      "name": "Josh Downs",
@@ -6551,11 +6551,11 @@
     },
     "dalton kincaid": {
      "name": "Dalton Kincaid",
-     "FD": 300
+     "FD": 310
     },
     "dawson knox": {
      "name": "Dawson Knox",
-     "FD": 300
+     "FD": 310
     },
     "keon coleman": {
      "name": "Keon Coleman",
@@ -6563,7 +6563,7 @@
     },
     "xavier worthy": {
      "name": "Xavier Worthy",
-     "FD": 390
+     "FD": 380
     },
     "buffalo defense": {
      "name": "Buffalo Defense",
@@ -6571,10 +6571,6 @@
     },
     "cyrus allen": {
      "name": "Cyrus Allen",
-     "FD": 550
-    },
-    "noah gray": {
-     "name": "Noah Gray",
      "FD": 550
     },
     "ty johnson": {
@@ -6585,13 +6581,17 @@
      "name": "Kansas City Defense",
      "FD": 600
     },
-    "jaydn ott": {
-     "name": "Jaydn Ott",
-     "FD": 800
+    "jake briningstool": {
+     "name": "Jake Briningstool",
+     "FD": 700
     },
     "patrick mahomes": {
      "name": "Patrick Mahomes",
      "FD": 750
+    },
+    "jaydn ott": {
+     "name": "Jaydn Ott",
+     "FD": 800
     },
     "ray davis": {
      "name": "Ray Davis",
@@ -6601,10 +6601,6 @@
      "name": "Jackson Hawes",
      "FD": 1000
     },
-    "keleki latu": {
-     "name": "Keleki Latu",
-     "FD": 1100
-    },
     "skyler bell": {
      "name": "Skyler Bell",
      "FD": 1200
@@ -6613,13 +6609,13 @@
      "name": "Tyrell Shavers",
      "FD": 1200
     },
-    "jake briningstool": {
-     "name": "Jake Briningstool",
-     "FD": 1400
+    "keleki latu": {
+     "name": "Keleki Latu",
+     "FD": 1200
     },
     "jalen royals": {
      "name": "Jalen Royals",
-     "FD": 1900
+     "FD": 1500
     },
     "greg dortch": {
      "name": "Greg Dortch",
