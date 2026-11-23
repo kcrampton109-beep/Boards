@@ -40632,13 +40632,17 @@
   "opener": 141.5,
   "grp": "mid-major",
   "limit": 140.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 81,
   "money": 77,
   "bets": 252,
   "moved": 1.0,
-  "mins": 768
+  "mins": 768,
+  "close": 145.5,
+  "clv": -5.0,
+  "units": 0.952,
+  "final": "Northern Iowa 48 - Davidson 79"
  },
  {
   "id": "401921177|total|over",
