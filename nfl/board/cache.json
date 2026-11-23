@@ -6180,7 +6180,7 @@
    }
   },
   "290825": {
-   "ts": "2026-11-22T20:17:32.167546-05:00",
+   "ts": "2026-11-22T23:17:47.270740-05:00",
    "odds": {
     "blake corum": {
      "name": "Blake Corum",
@@ -6220,7 +6220,7 @@
     },
     "tutu atwell": {
      "name": "Tutu Atwell",
-     "FD": 390
+     "FD": 400
     },
     "marshawn lloyd": {
      "name": "MarShawn Lloyd",
@@ -6238,13 +6238,13 @@
      "name": "Savion Williams",
      "FD": 550
     },
+    "davis allen": {
+     "name": "Davis Allen",
+     "FD": 650
+    },
     "xavier smith": {
      "name": "Xavier Smith",
      "FD": 650
-    },
-    "davis allen": {
-     "name": "Davis Allen",
-     "FD": 700
     },
     "ronnie rivers": {
      "name": "Ronnie Rivers",
@@ -6262,16 +6262,16 @@
      "name": "Green Bay Defense",
      "FD": 950
     },
-    "skyy moore": {
-     "name": "Skyy Moore",
-     "FD": 950
-    },
     "mark redman": {
      "name": "Mark Redman",
      "FD": 1000
     },
     "bo melton": {
      "name": "Bo Melton",
+     "FD": 1000
+    },
+    "skyy moore": {
+     "name": "Skyy Moore",
      "FD": 1000
     },
     "jordan love": {
