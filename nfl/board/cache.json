@@ -541,11 +541,11 @@
    }
   },
   "2026_11_CIN_WAS": {
-   "ts": "2026-11-22T19:47:40.772462-05:00",
+   "ts": "2026-11-22T22:47:41.546013-05:00",
    "wx": {
-    "wind": 13.8,
-    "gust": 30.6,
-    "temp": 48.0,
+    "wind": 11.3,
+    "gust": 28.4,
+    "temp": 51.0,
     "precip": 26
    }
   },
@@ -6059,7 +6059,7 @@
    }
   },
   "290994": {
-   "ts": "2026-11-22T19:47:40.772462-05:00",
+   "ts": "2026-11-22T22:47:41.546013-05:00",
    "odds": {
     "jamarr chase": {
      "name": "Ja'Marr Chase",
@@ -6402,8 +6402,125 @@
    "odds": {}
   },
   "290995": {
-   "ts": "2026-11-19T20:47:38.585678-05:00",
-   "odds": {}
+   "ts": "2026-11-22T22:47:41.546013-05:00",
+   "odds": {
+    "emmett johnson": {
+     "name": "Emmett Johnson",
+     "FD": -130
+    },
+    "james cook": {
+     "name": "James Cook",
+     "FD": -125
+    },
+    "kenneth walker": {
+     "name": "Kenneth Walker III",
+     "FD": -130
+    },
+    "josh allen": {
+     "name": "Josh Allen",
+     "FD": -115
+    },
+    "rashee rice": {
+     "name": "Rashee Rice",
+     "FD": 190
+    },
+    "dj moore": {
+     "name": "D.J. Moore",
+     "FD": 200
+    },
+    "travis kelce": {
+     "name": "Travis Kelce",
+     "FD": 220
+    },
+    "josh downs": {
+     "name": "Josh Downs",
+     "FD": 240
+    },
+    "khalil shakir": {
+     "name": "Khalil Shakir",
+     "FD": 250
+    },
+    "dalton kincaid": {
+     "name": "Dalton Kincaid",
+     "FD": 300
+    },
+    "dawson knox": {
+     "name": "Dawson Knox",
+     "FD": 300
+    },
+    "keon coleman": {
+     "name": "Keon Coleman",
+     "FD": 370
+    },
+    "xavier worthy": {
+     "name": "Xavier Worthy",
+     "FD": 390
+    },
+    "buffalo defense": {
+     "name": "Buffalo Defense",
+     "FD": 500
+    },
+    "cyrus allen": {
+     "name": "Cyrus Allen",
+     "FD": 550
+    },
+    "noah gray": {
+     "name": "Noah Gray",
+     "FD": 550
+    },
+    "ty johnson": {
+     "name": "Ty Johnson",
+     "FD": 600
+    },
+    "kansas city defense": {
+     "name": "Kansas City Defense",
+     "FD": 600
+    },
+    "jaydn ott": {
+     "name": "Jaydn Ott",
+     "FD": 800
+    },
+    "patrick mahomes": {
+     "name": "Patrick Mahomes",
+     "FD": 750
+    },
+    "ray davis": {
+     "name": "Ray Davis",
+     "FD": 850
+    },
+    "jackson hawes": {
+     "name": "Jackson Hawes",
+     "FD": 1000
+    },
+    "keleki latu": {
+     "name": "Keleki Latu",
+     "FD": 1100
+    },
+    "skyler bell": {
+     "name": "Skyler Bell",
+     "FD": 1200
+    },
+    "tyrell shavers": {
+     "name": "Tyrell Shavers",
+     "FD": 1200
+    },
+    "jake briningstool": {
+     "name": "Jake Briningstool",
+     "FD": 1400
+    },
+    "jalen royals": {
+     "name": "Jalen Royals",
+     "FD": 1900
+    },
+    "greg dortch": {
+     "name": "Greg Dortch",
+     "FD": 1800
+    },
+    "andrew armstrong": {
+     "name": "Andrew Armstrong",
+     "FD": 2000
+    }
+   }
   },
   "290996": {
    "ts": "2026-11-20T15:17:47.565364-05:00",
