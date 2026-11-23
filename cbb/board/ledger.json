@@ -39370,8 +39370,8 @@
   "limit": 147.5,
   "status": "L",
   "gap_open": 4.1,
-  "close": 147.5,
-  "clv": 0.0,
+  "close": null,
+  "clv": null,
   "units": -1.0,
   "final": "Loyola Chicago 72 - San Jos\u00e9 State 63"
  },
@@ -39965,8 +39965,8 @@
   "bets": 797,
   "moved": 2.0,
   "mins": 587,
-  "close": 147.5,
-  "clv": -1.0,
+  "close": null,
+  "clv": null,
   "units": 0.909,
   "final": "Loyola Chicago 72 - San Jos\u00e9 State 63"
  },
