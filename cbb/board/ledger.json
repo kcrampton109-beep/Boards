@@ -38220,8 +38220,12 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": 0.5,
-  "status": "open",
-  "gap_open": 4.5
+  "status": "W",
+  "gap_open": 4.5,
+  "close": 0.0,
+  "clv": 1.5,
+  "units": 0.833,
+  "final": "UC San Diego 64 - Seattle U 90"
  },
  {
   "id": "rlm|401925049|total|under",
