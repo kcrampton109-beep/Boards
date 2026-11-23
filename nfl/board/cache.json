@@ -550,11 +550,11 @@
    }
   },
   "2026_12_KC_BUF": {
-   "ts": "2026-11-23T00:17:31.643362-05:00",
+   "ts": "2026-11-23T03:17:42.710500-05:00",
    "wx": {
-    "wind": 14.4,
-    "gust": 35.1,
-    "temp": 39.0,
+    "wind": 16.6,
+    "gust": 45.9,
+    "temp": 41.0,
     "precip": 90
    }
   }
@@ -6293,7 +6293,7 @@
    }
   },
   "290841": {
-   "ts": "2026-11-23T00:17:31.643362-05:00",
+   "ts": "2026-11-23T03:17:42.710500-05:00",
    "odds": {
     "jahmyr gibbs": {
      "name": "Jahmyr Gibbs",
@@ -6398,7 +6398,7 @@
    }
   },
   "290805": {
-   "ts": "2026-11-22T23:47:37.740997-05:00",
+   "ts": "2026-11-23T03:17:42.710500-05:00",
    "odds": {
     "javonte williams": {
      "name": "Javonte Williams",
@@ -6438,11 +6438,11 @@
     },
     "brevyn spann-ford": {
      "name": "Brevyn Spann-Ford",
-     "FD": 350
+     "FD": 340
     },
     "makai lemon": {
      "name": "Makai Lemon",
-     "FD": 390
+     "FD": 400
     },
     "dallas defense": {
      "name": "Dallas Defense",
@@ -6451,10 +6451,6 @@
     "darius cooper": {
      "name": "Darius Cooper",
      "FD": 550
-    },
-    "luke schoonmaker": {
-     "name": "Luke Schoonmaker",
-     "FD": 600
     },
     "philadelphia defense": {
      "name": "Philadelphia Defense",
@@ -6470,6 +6466,10 @@
     },
     "dak prescott": {
      "name": "Dak Prescott",
+     "FD": 650
+    },
+    "luke schoonmaker": {
+     "name": "Luke Schoonmaker",
      "FD": 650
     },
     "jashaun corbin": {
@@ -6500,13 +6500,13 @@
      "name": "Britain Covey",
      "FD": 2000
     },
+    "grant calcaterra": {
+     "name": "Grant Calcaterra",
+     "FD": 2200
+    },
     "jaydon blue": {
      "name": "Jaydon Blue",
      "FD": 2200
-    },
-    "grant calcaterra": {
-     "name": "Grant Calcaterra",
-     "FD": 2500
     }
    }
   },
