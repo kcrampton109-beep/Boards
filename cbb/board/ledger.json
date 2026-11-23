@@ -39189,13 +39189,17 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 146.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 82,
   "money": 82,
   "bets": 257,
   "moved": 1.0,
-  "mins": 767
+  "mins": 767,
+  "close": 144.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "UT Martin 76 - Utah Valley 78"
  },
  {
   "id": "rlm|401921748|total|under",
@@ -39741,8 +39745,12 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 144.5,
-  "status": "open",
-  "gap_open": 2.2
+  "status": "W",
+  "gap_open": 2.2,
+  "close": 144.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "UT Martin 76 - Utah Valley 78"
  },
  {
   "id": "rlm|401928999|total|under",
