@@ -12334,5 +12334,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_ATL_MIN:RLM:total:under",
+  "tier": "RLM",
+  "market": "total",
+  "side": "under",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_12_ATL_MIN",
+  "week": 12,
+  "matchup": "ATL @ MIN",
+  "kickoff": "Sun Nov 29, 1:00 PM ET",
+  "pick": "Under 42.5",
+  "line": 42.5,
+  "odds": -115,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "71% of bets on the over, total moved 42.5 \u2192 41.5",
+  "limit": null,
+  "model_line": -3.4,
+  "flagged": "2026-11-23T10:17:41.824024-05:00",
+  "kickoff_iso": "2026-11-29T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
