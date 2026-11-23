@@ -6398,8 +6398,117 @@
    }
   },
   "290805": {
-   "ts": "2026-11-19T16:47:34.908869-05:00",
-   "odds": {}
+   "ts": "2026-11-22T23:47:37.740997-05:00",
+   "odds": {
+    "javonte williams": {
+     "name": "Javonte Williams",
+     "FD": -190
+    },
+    "ceedee lamb": {
+     "name": "CeeDee Lamb",
+     "FD": -135
+    },
+    "george pickens": {
+     "name": "George Pickens",
+     "FD": 105
+    },
+    "will shipley": {
+     "name": "Will Shipley",
+     "FD": 110
+    },
+    "saquon barkley": {
+     "name": "Saquon Barkley",
+     "FD": 110
+    },
+    "devonta smith": {
+     "name": "DeVonta Smith",
+     "FD": 230
+    },
+    "ryan flournoy": {
+     "name": "Ryan Flournoy",
+     "FD": 250
+    },
+    "joe milton": {
+     "name": "Joe Milton III",
+     "FD": 260
+    },
+    "dallas goedert": {
+     "name": "Dallas Goedert",
+     "FD": 310
+    },
+    "brevyn spann-ford": {
+     "name": "Brevyn Spann-Ford",
+     "FD": 350
+    },
+    "makai lemon": {
+     "name": "Makai Lemon",
+     "FD": 390
+    },
+    "dallas defense": {
+     "name": "Dallas Defense",
+     "FD": 500
+    },
+    "darius cooper": {
+     "name": "Darius Cooper",
+     "FD": 550
+    },
+    "luke schoonmaker": {
+     "name": "Luke Schoonmaker",
+     "FD": 600
+    },
+    "philadelphia defense": {
+     "name": "Philadelphia Defense",
+     "FD": 650
+    },
+    "hunter luepke": {
+     "name": "Hunter Luepke",
+     "FD": 650
+    },
+    "kavontae turpin": {
+     "name": "KaVontae Turpin",
+     "FD": 650
+    },
+    "dak prescott": {
+     "name": "Dak Prescott",
+     "FD": 650
+    },
+    "jashaun corbin": {
+     "name": "Jashaun Corbin",
+     "FD": 850
+    },
+    "zach ertz": {
+     "name": "Zach Ertz",
+     "FD": 1200
+    },
+    "eli stowers": {
+     "name": "Eli Stowers",
+     "FD": 1600
+    },
+    "camden brown": {
+     "name": "Camden Brown",
+     "FD": 1600
+    },
+    "james mitchell": {
+     "name": "James Mitchell",
+     "FD": 1700
+    },
+    "elijah moore": {
+     "name": "Elijah Moore",
+     "FD": 1800
+    },
+    "britain covey": {
+     "name": "Britain Covey",
+     "FD": 2000
+    },
+    "jaydon blue": {
+     "name": "Jaydon Blue",
+     "FD": 2200
+    },
+    "grant calcaterra": {
+     "name": "Grant Calcaterra",
+     "FD": 2500
+    }
+   }
   },
   "290995": {
    "ts": "2026-11-22T22:47:41.546013-05:00",

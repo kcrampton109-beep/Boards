@@ -10593,11 +10593,11 @@
   "model_line": -2.8,
   "flagged": "2026-11-15T19:23:28.378076-05:00",
   "kickoff_iso": "2026-11-22T20:20:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.95,
+  "close": 45.5,
+  "clv": 1.0,
+  "final": "MIN 10 - SF 35"
  },
  {
   "id": "2026_11_IND_HOU:LEAN:spread:away",
@@ -11181,11 +11181,11 @@
   "model_line": -1.2,
   "flagged": "2026-11-19T17:17:35.932820-05:00",
   "kickoff_iso": "2026-11-22T20:20:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -0.5,
+  "close": 4.5,
+  "clv": -1.0,
+  "final": "MIN 10 - SF 35"
  },
  {
   "id": "2026_11_ARI_KC:LEAN:spread:away",
