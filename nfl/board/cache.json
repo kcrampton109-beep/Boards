@@ -6180,7 +6180,7 @@
    }
   },
   "290825": {
-   "ts": "2026-11-22T23:17:47.270740-05:00",
+   "ts": "2026-11-23T02:47:36.350782-05:00",
    "odds": {
     "blake corum": {
      "name": "Blake Corum",
@@ -6192,11 +6192,11 @@
     },
     "christian watson": {
      "name": "Christian Watson",
-     "FD": 160
+     "FD": 165
     },
     "matthew golden": {
      "name": "Matthew Golden",
-     "FD": 200
+     "FD": 195
     },
     "kaleb johnson": {
      "name": "Kaleb Johnson",
@@ -6204,19 +6204,19 @@
     },
     "colby parkinson": {
      "name": "Colby Parkinson",
-     "FD": 230
+     "FD": 240
     },
     "tucker kraft": {
      "name": "Tucker Kraft",
-     "FD": 230
+     "FD": 240
     },
     "tyler higbee": {
      "name": "Tyler Higbee",
-     "FD": 270
+     "FD": 260
     },
     "konata mumpfield": {
      "name": "Konata Mumpfield",
-     "FD": 370
+     "FD": 360
     },
     "tutu atwell": {
      "name": "Tutu Atwell",
@@ -6224,7 +6224,7 @@
     },
     "marshawn lloyd": {
      "name": "MarShawn Lloyd",
-     "FD": 430
+     "FD": 440
     },
     "cj daniels": {
      "name": "CJ Daniels",
@@ -6232,23 +6232,23 @@
     },
     "chris brooks": {
      "name": "Chris Brooks",
-     "FD": 470
+     "FD": 460
     },
     "savion williams": {
      "name": "Savion Williams",
      "FD": 550
     },
+    "xavier smith": {
+     "name": "Xavier Smith",
+     "FD": 600
+    },
     "davis allen": {
      "name": "Davis Allen",
      "FD": 650
     },
-    "xavier smith": {
-     "name": "Xavier Smith",
-     "FD": 650
-    },
     "ronnie rivers": {
      "name": "Ronnie Rivers",
-     "FD": 750
+     "FD": 700
     },
     "los angeles rams defense": {
      "name": "Los Angeles Rams Defense",
@@ -6284,7 +6284,7 @@
     },
     "jonnu smith": {
      "name": "Jonnu Smith",
-     "FD": 1600
+     "FD": 1500
     },
     "matthew stafford": {
      "name": "Matthew Stafford",
