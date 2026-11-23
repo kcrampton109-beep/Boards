@@ -541,12 +541,12 @@
    }
   },
   "2026_11_CIN_WAS": {
-   "ts": "2026-11-23T02:17:31.508442-05:00",
+   "ts": "2026-11-23T05:17:40.565073-05:00",
    "wx": {
-    "wind": 11.3,
-    "gust": 28.4,
-    "temp": 51.0,
-    "precip": 3
+    "wind": 10.9,
+    "gust": 28.6,
+    "temp": 53.0,
+    "precip": 2
    }
   },
   "2026_12_KC_BUF": {
@@ -6059,7 +6059,7 @@
    }
   },
   "290994": {
-   "ts": "2026-11-23T02:17:31.508442-05:00",
+   "ts": "2026-11-23T05:17:40.565073-05:00",
    "odds": {
     "jamarr chase": {
      "name": "Ja'Marr Chase",
@@ -6123,7 +6123,7 @@
     },
     "drew sample": {
      "name": "Drew Sample",
-     "FD": 500
+     "FD": 550
     },
     "washington defense": {
      "name": "Washington Defense",
@@ -6147,19 +6147,19 @@
     },
     "luke mccaffrey": {
      "name": "Luke McCaffrey",
-     "FD": 1100
+     "FD": 1200
     },
     "john bates": {
      "name": "John Bates",
      "FD": 1300
     },
-    "mitchell tinsley": {
-     "name": "Mitchell Tinsley",
-     "FD": 1300
-    },
     "colson yankoff": {
      "name": "Colson Yankoff",
      "FD": 1300
+    },
+    "mitchell tinsley": {
+     "name": "Mitchell Tinsley",
+     "FD": 1400
     },
     "colbie young": {
      "name": "Colbie Young",
@@ -6171,7 +6171,7 @@
     },
     "robert henry": {
      "name": "Robert Henry",
-     "FD": 1900
+     "FD": 2000
     },
     "tahj brooks": {
      "name": "Tahj Brooks",
@@ -6511,7 +6511,7 @@
    }
   },
   "290995": {
-   "ts": "2026-11-23T02:17:31.508442-05:00",
+   "ts": "2026-11-23T05:17:40.565073-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",

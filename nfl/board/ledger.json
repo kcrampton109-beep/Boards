@@ -12194,5 +12194,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_GB_LA:STRONG:spread:home",
+  "tier": "STRONG",
+  "market": "spread",
+  "side": "home",
+  "team": "LA",
+  "pid": null,
+  "game_id": "2026_12_GB_LA",
+  "week": 12,
+  "matchup": "GB @ LA",
+  "kickoff": "Wed Nov 25, 8:00 PM ET",
+  "pick": "LA -2.5",
+  "line": -2.5,
+  "odds": -118,
+  "book": "MGM",
+  "stake": 1.0,
+  "edge": 3.0,
+  "note": null,
+  "limit": -2.5,
+  "model_line": -5.5,
+  "flagged": "2026-11-23T05:17:40.565073-05:00",
+  "kickoff_iso": "2026-11-25T20:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
