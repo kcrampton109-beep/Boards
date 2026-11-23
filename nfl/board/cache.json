@@ -6171,8 +6171,117 @@
    }
   },
   "290825": {
-   "ts": "2026-11-18T20:17:50.348327-05:00",
-   "odds": {}
+   "ts": "2026-11-22T20:17:32.167546-05:00",
+   "odds": {
+    "blake corum": {
+     "name": "Blake Corum",
+     "FD": -125
+    },
+    "kyren williams": {
+     "name": "Kyren Williams",
+     "FD": -125
+    },
+    "christian watson": {
+     "name": "Christian Watson",
+     "FD": 160
+    },
+    "matthew golden": {
+     "name": "Matthew Golden",
+     "FD": 200
+    },
+    "kaleb johnson": {
+     "name": "Kaleb Johnson",
+     "FD": 200
+    },
+    "colby parkinson": {
+     "name": "Colby Parkinson",
+     "FD": 230
+    },
+    "tucker kraft": {
+     "name": "Tucker Kraft",
+     "FD": 230
+    },
+    "tyler higbee": {
+     "name": "Tyler Higbee",
+     "FD": 270
+    },
+    "konata mumpfield": {
+     "name": "Konata Mumpfield",
+     "FD": 370
+    },
+    "tutu atwell": {
+     "name": "Tutu Atwell",
+     "FD": 390
+    },
+    "marshawn lloyd": {
+     "name": "MarShawn Lloyd",
+     "FD": 430
+    },
+    "cj daniels": {
+     "name": "CJ Daniels",
+     "FD": 460
+    },
+    "chris brooks": {
+     "name": "Chris Brooks",
+     "FD": 470
+    },
+    "savion williams": {
+     "name": "Savion Williams",
+     "FD": 550
+    },
+    "xavier smith": {
+     "name": "Xavier Smith",
+     "FD": 650
+    },
+    "davis allen": {
+     "name": "Davis Allen",
+     "FD": 700
+    },
+    "ronnie rivers": {
+     "name": "Ronnie Rivers",
+     "FD": 750
+    },
+    "los angeles rams defense": {
+     "name": "Los Angeles Rams Defense",
+     "FD": 750
+    },
+    "j michael sturdivant": {
+     "name": "J. Michael Sturdivant",
+     "FD": 850
+    },
+    "green bay defense": {
+     "name": "Green Bay Defense",
+     "FD": 950
+    },
+    "skyy moore": {
+     "name": "Skyy Moore",
+     "FD": 950
+    },
+    "mark redman": {
+     "name": "Mark Redman",
+     "FD": 1000
+    },
+    "bo melton": {
+     "name": "Bo Melton",
+     "FD": 1000
+    },
+    "jordan love": {
+     "name": "Jordan Love",
+     "FD": 1100
+    },
+    "max klare": {
+     "name": "Max Klare",
+     "FD": 1500
+    },
+    "jonnu smith": {
+     "name": "Jonnu Smith",
+     "FD": 1600
+    },
+    "matthew stafford": {
+     "name": "Matthew Stafford",
+     "FD": 1800
+    }
+   }
   },
   "290841": {
    "ts": "2026-11-19T13:17:44.460131-05:00",
