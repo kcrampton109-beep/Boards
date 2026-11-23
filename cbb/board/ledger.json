@@ -40714,5 +40714,31 @@
   "bets": 257,
   "moved": 1.0,
   "mins": 918
+ },
+ {
+  "id": "401929445|total|under",
+  "base": "401929445|total|under",
+  "flagged": "2026-11-23T01:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401929445,
+  "matchup": "Arkansas State vs Southern Utah",
+  "kickoff": "2026-11-23T15:30:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 162.5",
+  "book": "MGM",
+  "line": 162.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.0,
+  "model": 157.5,
+  "opener": 159.5,
+  "grp": "mid-major",
+  "limit": 162.5,
+  "status": "open",
+  "gap_open": 2.0
  }
 ]
