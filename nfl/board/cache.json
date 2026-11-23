@@ -541,12 +541,12 @@
    }
   },
   "2026_11_CIN_WAS": {
-   "ts": "2026-11-22T16:47:36.943642-05:00",
+   "ts": "2026-11-22T19:47:40.772462-05:00",
    "wx": {
     "wind": 13.8,
     "gust": 30.6,
     "temp": 48.0,
-    "precip": 2
+    "precip": 26
    }
   }
  },
@@ -5933,7 +5933,7 @@
    }
   },
   "290824": {
-   "ts": "2026-11-22T16:47:36.943642-05:00",
+   "ts": "2026-11-22T19:47:40.772462-05:00",
    "odds": {
     "christian mccaffrey": {
      "name": "Christian McCaffrey",
@@ -5943,24 +5943,24 @@
      "name": "Justin Jefferson",
      "FD": 135
     },
+    "george kittle": {
+     "name": "George Kittle",
+     "FD": 185
+    },
     "aaron jones": {
      "name": "Aaron Jones",
      "FD": 185
-    },
-    "george kittle": {
-     "name": "George Kittle",
-     "FD": 190
     },
     "mike evans": {
      "name": "Mike Evans",
      "FD": 200
     },
-    "jordan mason": {
-     "name": "Jordan Mason",
-     "FD": 240
-    },
     "tj hockenson": {
      "name": "T.J. Hockenson",
+     "FD": 220
+    },
+    "jordan mason": {
+     "name": "Jordan Mason",
      "FD": 240
     },
     "deebo samuel": {
@@ -5981,38 +5981,30 @@
     },
     "jauan jennings": {
      "name": "Jauan Jennings",
-     "FD": 480
+     "FD": 500
     },
     "myles price": {
      "name": "Myles Price",
-     "FD": 700
-    },
-    "tai felton": {
-     "name": "Tai Felton",
      "FD": 700
     },
     "minnesota defense": {
      "name": "Minnesota Defense",
      "FD": 700
     },
+    "jordan watkins": {
+     "name": "Jordan Watkins",
+     "FD": 700
+    },
     "san francisco defense": {
      "name": "San Francisco Defense",
      "FD": 800
     },
-    "jordan watkins": {
-     "name": "Jordan Watkins",
+    "tai felton": {
+     "name": "Tai Felton",
      "FD": 800
-    },
-    "demarcus robinson": {
-     "name": "DeMarcus Robinson",
-     "FD": 1200
     },
     "luke farrell": {
      "name": "Luke Farrell",
-     "FD": 1200
-    },
-    "gavin bartholomew": {
-     "name": "Gavin Bartholomew",
      "FD": 1200
     },
     "kyle juszczyk": {
@@ -6023,13 +6015,17 @@
      "name": "Kirk Cousins",
      "FD": 1300
     },
+    "gavin bartholomew": {
+     "name": "Gavin Bartholomew",
+     "FD": 1300
+    },
     "ben yurosek": {
      "name": "Ben Yurosek",
-     "FD": 1400
+     "FD": 1600
     },
     "jacob cowing": {
      "name": "Jacob Cowing",
-     "FD": 1800
+     "FD": 1900
     },
     "deejay dallas": {
      "name": "DeeJay Dallas",
@@ -6054,7 +6050,7 @@
    }
   },
   "290994": {
-   "ts": "2026-11-22T16:47:36.943642-05:00",
+   "ts": "2026-11-22T19:47:40.772462-05:00",
    "odds": {
     "jamarr chase": {
      "name": "Ja'Marr Chase",
