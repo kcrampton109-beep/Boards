@@ -38190,8 +38190,12 @@
   "opener": 130.5,
   "grp": "power 6",
   "limit": 130.5,
-  "status": "open",
-  "gap_open": 5.3
+  "status": "W",
+  "gap_open": 5.3,
+  "close": 132.0,
+  "clv": 1.5,
+  "units": 0.952,
+  "final": "Utah 62 - Minnesota 77"
  },
  {
   "id": "401917542|spread|2547",
@@ -38426,7 +38430,11 @@
   "opener": null,
   "grp": "power 6",
   "limit": -24.0,
-  "status": "open"
+  "status": "L",
+  "close": -22.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "NJIT 59 - Boston College 79"
  },
  {
   "id": "rlm|401909567|spread|265",
@@ -38606,8 +38614,12 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": 0.5,
-  "status": "open",
-  "gap_open": 4.4
+  "status": "W",
+  "gap_open": 4.4,
+  "close": -0.0,
+  "clv": 1.5,
+  "units": 0.952,
+  "final": "Richmond 92 - Liberty 88"
  },
  {
   "id": "401925013|total|under",
@@ -38632,8 +38644,12 @@
   "opener": 159.5,
   "grp": "mid-major",
   "limit": 160.0,
-  "status": "open",
-  "gap_open": 4.7
+  "status": "L",
+  "gap_open": 4.7,
+  "close": 162.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "Rice 85 - Lamar 81"
  },
  {
   "id": "401917541|spread|2856",
@@ -38891,8 +38907,12 @@
   "opener": 159.5,
   "grp": "mid-major",
   "limit": 159.5,
-  "status": "open",
-  "gap_open": 5.1
+  "status": "L",
+  "gap_open": 5.1,
+  "close": 162.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Rice 85 - Lamar 81"
  },
  {
   "id": "401909556|spread|103|NOV",
@@ -38917,8 +38937,12 @@
   "opener": -23.5,
   "grp": "power 6",
   "limit": -24.5,
-  "status": "open",
-  "gap_open": 4.1
+  "status": "L",
+  "gap_open": 4.1,
+  "close": -22.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "NJIT 59 - Boston College 79"
  },
  {
   "id": "rlm|401925942|total|under",
@@ -38978,13 +39002,17 @@
   "opener": 143.5,
   "grp": "mid-major",
   "limit": 143.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 84,
   "money": 90,
   "bets": 459,
   "moved": 1.0,
-  "mins": 888
+  "mins": 888,
+  "close": 141.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Richmond 92 - Liberty 88"
  },
  {
   "id": "rlm|401929202|total|under",
@@ -39507,8 +39535,12 @@
   "opener": -23.5,
   "grp": "power 6",
   "limit": -23.5,
-  "status": "open",
-  "gap_open": 4.1
+  "status": "L",
+  "gap_open": 4.1,
+  "close": -22.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "NJIT 59 - Boston College 79"
  },
  {
   "id": "401921205|spread|2617",
@@ -39533,8 +39565,12 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": 2.5,
-  "status": "open",
-  "gap_open": 2.1
+  "status": "W",
+  "gap_open": 2.1,
+  "close": 2.0,
+  "clv": 0.5,
+  "units": 0.926,
+  "final": "Temple 70 - Stephen F. Austin 72"
  },
  {
   "id": "401928802|spread|45",
@@ -39624,8 +39660,12 @@
   "opener": 6.5,
   "grp": "low-major",
   "limit": 10.5,
-  "status": "open",
-  "gap_open": -0.8
+  "status": "W",
+  "gap_open": -0.8,
+  "close": 10.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "UNC Asheville 77 - Samford 80"
  },
  {
   "id": "rlm|401909556|total|under",
@@ -39650,13 +39690,17 @@
   "opener": 137.5,
   "grp": "power 6",
   "limit": 135.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 94,
   "money": 97,
   "bets": 287,
   "moved": 2.0,
-  "mins": 407
+  "mins": 407,
+  "close": 137.5,
+  "clv": -2.0,
+  "units": -1.0,
+  "final": "NJIT 59 - Boston College 79"
  },
  {
   "id": "401921206|total|over",
