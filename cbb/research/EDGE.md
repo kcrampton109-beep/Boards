@@ -19,6 +19,19 @@ November was weak but not that weak (CLV about +0.5). Two model biases explain t
 set that is profitable in every backtest season and in this season's first games. Tables come from `edge.py`. ROI is
 at the opener at -110: DraftKings' first number equals Action's opener 89% of the time (live Openers tab, 133 games).
 
+## Three ways to improve the model (Nov 23 2026, `deep.py`, `tempo.py`, `box.py`): none helped
+
+Each was chosen or rejected by prediction accuracy on 2023-25, then checked once on 2025-26.
+
+| test | result |
+|---|---|
+| weight of the results model vs the market model (0 to 1) | 50/50 is the most accurate for margins and totals, against the close and the final score, on 2023-25 and 2025-26 |
+| only plays where both models clear the gap on their own | at equal gap sizes no better: "agreement" just meant bigger gaps |
+| possession-based (pace x efficiency) results model, ESPN box scores 2022-26 | equal to the points model inside the blend (margins 11.46 vs 11.45 RMSE, totals 16.665 vs 16.674); the rules come out the same |
+
+What does hold everywhere: CLV rises steadily with the gap against the opener (spreads about +0.9 at 3-3.5 points to
++3.6 at 6+). The model is at a plateau; the edge is the gap itself, taken at the opener.
+
 ## Reverse line movement (Nov 8 2026, `rlm.py`)
 
 Graded at the closing number at -110, since the move must happen before the bet exists. Rules were fixed on 2023-25 and
