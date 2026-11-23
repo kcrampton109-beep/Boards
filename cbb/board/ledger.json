@@ -40124,8 +40124,12 @@
   "opener": 151.5,
   "grp": "mid-major",
   "limit": 152.0,
-  "status": "open",
-  "gap_open": 5.7
+  "status": "L",
+  "gap_open": 5.7,
+  "close": 155.5,
+  "clv": 4.0,
+  "units": -1.0,
+  "final": "Tulsa 66 - Oregon State 69"
  },
  {
   "id": "401913102|total|under",
@@ -40176,8 +40180,12 @@
   "opener": 6.5,
   "grp": "mid-major",
   "limit": 7.5,
-  "status": "open",
-  "gap_open": 2.2
+  "status": "W",
+  "gap_open": 2.2,
+  "close": 5.5,
+  "clv": 2.0,
+  "units": 0.847,
+  "final": "Tulsa 66 - Oregon State 69"
  },
  {
   "id": "401929286|total|over",
@@ -40838,13 +40846,17 @@
   "opener": 145.5,
   "grp": "mid-major",
   "limit": 145.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 69,
   "money": 78,
   "bets": 252,
   "moved": 1.0,
-  "mins": 467
+  "mins": 467,
+  "close": 143.0,
+  "clv": 2.5,
+  "units": 0.909,
+  "final": "Charlotte 71 - Florida Gulf Coast 58"
  },
  {
   "id": "rlm|401921207|total|under",
@@ -40900,13 +40912,17 @@
   "opener": 160.5,
   "grp": "mid-major",
   "limit": 160.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 88,
   "money": 89,
   "bets": 393,
   "moved": 1.0,
-  "mins": 347
+  "mins": 347,
+  "close": 161.0,
+  "clv": -0.5,
+  "units": 0.893,
+  "final": "Long Beach State 75 - Florida International 79"
  },
  {
   "id": "rlm|401918057|total|under",
@@ -40962,13 +40978,17 @@
   "opener": 147.5,
   "grp": "low-major",
   "limit": 148.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 65,
   "money": 64,
   "bets": 1353,
   "moved": 1.0,
-  "mins": 288
+  "mins": 288,
+  "close": 150.0,
+  "clv": 1.5,
+  "units": -1.0,
+  "final": "Akron 64 - Wright State 66"
  },
  {
   "id": "rlm|401921208|total|under",
