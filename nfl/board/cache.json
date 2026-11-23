@@ -550,12 +550,12 @@
    }
   },
   "2026_12_KC_BUF": {
-   "ts": "2026-11-22T20:47:38.522653-05:00",
+   "ts": "2026-11-23T00:17:31.643362-05:00",
    "wx": {
     "wind": 14.4,
     "gust": 35.1,
     "temp": 39.0,
-    "precip": 81
+    "precip": 90
    }
   }
  },
@@ -6293,7 +6293,7 @@
    }
   },
   "290841": {
-   "ts": "2026-11-22T21:17:30.438012-05:00",
+   "ts": "2026-11-23T00:17:31.643362-05:00",
    "odds": {
     "jahmyr gibbs": {
      "name": "Jahmyr Gibbs",
@@ -6301,7 +6301,7 @@
     },
     "amon-ra st brown": {
      "name": "Amon-Ra St. Brown",
-     "FD": -140
+     "FD": -135
     },
     "dandre swift": {
      "name": "D'Andre Swift",
@@ -6313,39 +6313,39 @@
     },
     "colston loveland": {
      "name": "Colston Loveland",
-     "FD": 125
+     "FD": 130
     },
     "kyle monangai": {
      "name": "Kyle Monangai",
-     "FD": 150
+     "FD": 145
     },
     "rome odunze": {
      "name": "Rome Odunze",
-     "FD": 160
+     "FD": 165
     },
     "sam laporta": {
      "name": "Sam LaPorta",
-     "FD": 185
+     "FD": 190
     },
     "jameson williams": {
      "name": "Jameson Williams",
-     "FD": 200
+     "FD": 210
+    },
+    "caleb williams": {
+     "name": "Caleb Williams",
+     "FD": 320
     },
     "kalif raymond": {
      "name": "Kalif Raymond",
      "FD": 330
     },
-    "caleb williams": {
-     "name": "Caleb Williams",
-     "FD": 330
-    },
     "isaac teslaa": {
      "name": "Isaac TeSlaa",
-     "FD": 410
+     "FD": 440
     },
     "sione vaki": {
      "name": "Sione Vaki",
-     "FD": 550
+     "FD": 500
     },
     "chicago defense": {
      "name": "Chicago Defense",
@@ -6365,11 +6365,11 @@
     },
     "brock wright": {
      "name": "Brock Wright",
-     "FD": 1100
+     "FD": 1000
     },
     "jared goff": {
      "name": "Jared Goff",
-     "FD": 1200
+     "FD": 1100
     },
     "jahdae walker": {
      "name": "Jahdae Walker",
@@ -6377,23 +6377,23 @@
     },
     "deandre carter": {
      "name": "DeAndre Carter",
-     "FD": 1600
-    },
-    "stephen carlson": {
-     "name": "Stephen Carlson",
-     "FD": 1700
+     "FD": 1400
     },
     "tyler conklin": {
      "name": "Tyler Conklin",
+     "FD": 1700
+    },
+    "stephen carlson": {
+     "name": "Stephen Carlson",
      "FD": 1800
     },
     "jacob saylors": {
      "name": "Jacob Saylors",
-     "FD": 2500
+     "FD": 2200
     },
     "tay martin": {
      "name": "Tay Martin",
-     "FD": 3300
+     "FD": 3000
     }
    }
   },
