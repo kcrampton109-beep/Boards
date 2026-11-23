@@ -38674,8 +38674,12 @@
   "opener": 13.5,
   "grp": "mid-major",
   "limit": 12.0,
-  "status": "open",
-  "gap_open": 4.9
+  "status": "W",
+  "gap_open": 4.9,
+  "close": 6.5,
+  "clv": 7.0,
+  "units": 0.909,
+  "final": "Portland 71 - California Baptist 79"
  },
  {
   "id": "401917541|total|over",
@@ -38700,8 +38704,12 @@
   "opener": 135.5,
   "grp": "mid-major",
   "limit": 143.5,
-  "status": "open",
-  "gap_open": 13.3
+  "status": "W",
+  "gap_open": 13.3,
+  "close": 145.5,
+  "clv": 10.0,
+  "units": 0.952,
+  "final": "Portland 71 - California Baptist 79"
  },
  {
   "id": "401917540|total|over",
@@ -40031,13 +40039,17 @@
   "opener": 13.5,
   "grp": "mid-major",
   "limit": 7.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 70,
   "money": 58,
   "bets": 1024,
   "moved": 6.0,
-  "mins": 168
+  "mins": 168,
+  "close": 6.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Portland 71 - California Baptist 79"
  },
  {
   "id": "401909743|total|under",
@@ -40537,5 +40549,36 @@
   "limit": -19.5,
   "status": "open",
   "gap_open": 3.2
+ },
+ {
+  "id": "rlm|401918076|total|under",
+  "base": "rlm|401918076|total|under",
+  "flagged": "2026-11-22T21:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401918076,
+  "matchup": "Ole Miss vs Clemson",
+  "kickoff": "2026-11-23T14:30:00-05:00",
+  "tier": "RLM_T",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 149.5",
+  "book": "FD",
+  "line": 149.5,
+  "odds": -105.0,
+  "stake": 1.0,
+  "edge": 1.0,
+  "model": 146.9,
+  "opener": 150.5,
+  "grp": "power 6",
+  "limit": 149.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 83,
+  "money": 89,
+  "bets": 277,
+  "moved": 1.0,
+  "mins": 1007
  }
 ]
