@@ -42,6 +42,7 @@ RULES = dict(spread_lean=3.0, spread=4.0, total_lean=5.0, total=6.0,
              margin_scale=1.063, level_days=7,
              # RLM research (Nov 8 2026, owner's request, research/rlm.py): tickets on one side, line moved the other way
              rlm_tickets=65, rlm_strict=80, rlm_move=1.0, rlm_min_bets=250,
+             rlm_totals=False,   # Nov 23 (owner's call): RLM totals stopped after 145-167, -34.5u (CLV +0.6 never paid)
              # Nov 18 2026 (owner's call, research/season.py): a model play keeps its tier only if the gap also holds against
              # Action's opener (= DK's first number 89% of the time); one that clears only after the line moved is LATE
              opener_rule_from="2026-11-18T13:00")
@@ -442,7 +443,7 @@ def rlm_plays(gm, pub, same, margin, total, now):
                 b = best(gm["books"], side)
                 if b:
                     add("spread", side, share, money, moved, "RLM_80" if share >= RULES["rlm_strict"] else "RLM", *b)
-    tt = [v["tot"] for v in gm["books"].values() if v["tot"] is not None]
+    tt = [v["tot"] for v in gm["books"].values() if v["tot"] is not None] if RULES["rlm_totals"] else []
     if tt and gm["open_total"] is not None and pub.get("tot_tix") is not None:
         mv = float(np.median(tt)) - gm["open_total"]
         o, om = pub["tot_tix"], pub.get("tot_mon")

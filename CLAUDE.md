@@ -134,6 +134,7 @@ FanDuel Tue ~2:40 PM ET, BetMGM appears in the feed late in the week. CFB: Actio
   Nov 18 (owner's call, `research/season.py`): opener rule. A model play keeps its tier only if the gap clears it against both
   the current price and Action's opener (`gap_open`); otherwise tier LATE (research). Live Nov 4-17: opener-qualified totals
   76-59 +9.7u, late ones 75-70 -2.1u. The page's Main record counts from `MAIN_FROM` (Nov 18 1 PM ET, when the rule went live) only.
+  Nov 23 (owner's call): RLM totals stopped (`RULES["rlm_totals"] = False`) after 145-167, -34.5u; its history stays on the page.
 
 ## Social post (faceless picks account, started Nov 4 2026)
 - Owner is building an audience for a possible paid early-alert tier next season: free game-day posts now, no selling yet.
