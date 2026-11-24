@@ -41888,8 +41888,12 @@
   "opener": -1.5,
   "grp": "power 6",
   "limit": -1.5,
-  "status": "open",
-  "gap_open": 3.3
+  "status": "L",
+  "gap_open": 3.3,
+  "close": 2.5,
+  "clv": -4.0,
+  "units": -1.0,
+  "final": "Ole Miss 73 - BYU 63"
  },
  {
   "id": "401929285|spread|43",
@@ -41914,8 +41918,12 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": 1.0,
-  "status": "open",
-  "gap_open": 3.6
+  "status": "W",
+  "gap_open": 3.6,
+  "close": 0.0,
+  "clv": 1.5,
+  "units": 0.952,
+  "final": "App State 50 - Yale 57"
  },
  {
   "id": "401929285|total|over",
@@ -41940,8 +41948,12 @@
   "opener": 132.5,
   "grp": "mid-major",
   "limit": 133.5,
-  "status": "open",
-  "gap_open": 6.2
+  "status": "L",
+  "gap_open": 6.2,
+  "close": 135.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "App State 50 - Yale 57"
  },
  {
   "id": "401916291|spread|84",
@@ -42964,13 +42976,17 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": -1.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 65,
   "money": 50,
   "bets": 1539,
   "moved": 3.0,
-  "mins": 198
+  "mins": 198,
+  "close": 0.0,
+  "clv": -1.5,
+  "units": 0.98,
+  "final": "App State 50 - Yale 57"
  },
  {
   "id": "401909699|spread|2427",
@@ -43189,5 +43205,36 @@
   "limit": 150.0,
   "status": "open",
   "gap_open": 5.0
+ },
+ {
+  "id": "rlm|401909699|spread|52",
+  "base": "rlm|401909699|spread|52",
+  "flagged": "2026-11-24T17:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401909699,
+  "matchup": "UNC Asheville @ Florida State",
+  "kickoff": "2026-11-24T21:00:00-05:00",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 52,
+  "pick": "Florida State -29.5",
+  "book": "DK",
+  "line": -29.5,
+  "odds": -112.0,
+  "stake": 1.0,
+  "edge": 4.0,
+  "model": 26.6,
+  "opener": -25.5,
+  "grp": "power 6",
+  "limit": -29.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 68,
+  "money": 49,
+  "bets": 691,
+  "moved": 4.0,
+  "mins": 228
  }
 ]
