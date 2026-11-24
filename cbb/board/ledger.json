@@ -41503,8 +41503,12 @@
   "opener": 140.5,
   "grp": "mid-major",
   "limit": 145.0,
-  "status": "open",
-  "gap_open": 9.9
+  "status": "W",
+  "gap_open": 9.9,
+  "close": 140.0,
+  "clv": -0.5,
+  "units": 0.909,
+  "final": "Belmont 64 - Akron 87"
  },
  {
   "id": "401921707|spread|2751",
@@ -41581,8 +41585,12 @@
   "opener": 2.5,
   "grp": "mid-major",
   "limit": 3.5,
-  "status": "open",
-  "gap_open": 2.1
+  "status": "L",
+  "gap_open": 2.1,
+  "close": 2.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Belmont 64 - Akron 87"
  },
  {
   "id": "401911458|spread|2541",
@@ -41850,8 +41858,12 @@
   "opener": -9.5,
   "grp": "mid-major",
   "limit": -8.0,
-  "status": "open",
-  "gap_open": 1.8
+  "status": "W",
+  "gap_open": 1.8,
+  "close": -8.0,
+  "clv": 0.5,
+  "units": 0.833,
+  "final": "Southern Utah 66 - Florida International 81"
  },
  {
   "id": "401921709|spread|252",
@@ -42110,8 +42122,12 @@
   "opener": 163.5,
   "grp": "mid-major",
   "limit": 165.5,
-  "status": "open",
-  "gap_open": 3.1
+  "status": "W",
+  "gap_open": 3.1,
+  "close": 168.0,
+  "clv": -2.5,
+  "units": 0.909,
+  "final": "Southern Utah 66 - Florida International 81"
  },
  {
   "id": "401920889|spread|2550",
