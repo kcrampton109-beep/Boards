@@ -12558,5 +12558,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_WAS_ARI:LEAN:spread:home",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "team": "ARI",
+  "pid": null,
+  "game_id": "2026_12_WAS_ARI",
+  "week": 12,
+  "matchup": "WAS @ ARI",
+  "kickoff": "Sun Nov 29, 4:25 PM ET",
+  "pick": "ARI +7",
+  "line": 7,
+  "odds": -105,
+  "book": "FD",
+  "stake": 0.5,
+  "edge": 2.9,
+  "note": null,
+  "limit": 6.0,
+  "model_line": 4.1,
+  "flagged": "2026-11-24T18:17:37.263216-05:00",
+  "kickoff_iso": "2026-11-29T16:25:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
