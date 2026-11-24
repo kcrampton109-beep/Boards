@@ -559,10 +559,10 @@
    }
   },
   "2026_12_DEN_PIT": {
-   "ts": "2026-11-23T18:47:41.275691-05:00",
+   "ts": "2026-11-23T22:17:33.853874-05:00",
    "wx": {
-    "wind": 12.1,
-    "gust": 42.3,
+    "wind": 15.2,
+    "gust": 41.4,
     "temp": 39.0,
     "precip": 67
    }
@@ -6181,7 +6181,7 @@
    }
   },
   "290825": {
-   "ts": "2026-11-23T18:47:41.275691-05:00",
+   "ts": "2026-11-23T22:17:33.853874-05:00",
    "odds": {
     "kyren williams": {
      "name": "Kyren Williams",
@@ -6189,7 +6189,7 @@
     },
     "blake corum": {
      "name": "Blake Corum",
-     "FD": 135
+     "FD": 130
     },
     "christian watson": {
      "name": "Christian Watson",
@@ -6221,7 +6221,7 @@
     },
     "tutu atwell": {
      "name": "Tutu Atwell",
-     "FD": 430
+     "FD": 440
     },
     "marshawn lloyd": {
      "name": "MarShawn Lloyd",
@@ -6249,7 +6249,7 @@
     },
     "xavier smith": {
      "name": "Xavier Smith",
-     "FD": 900
+     "FD": 850
     },
     "green bay defense": {
      "name": "Green Bay Defense",
@@ -6520,19 +6520,19 @@
    }
   },
   "290995": {
-   "ts": "2026-11-23T18:47:41.275691-05:00",
+   "ts": "2026-11-23T22:17:33.853874-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
-     "FD": -130
+     "FD": -125
     },
     "kenneth walker": {
      "name": "Kenneth Walker III",
-     "FD": -130
+     "FD": -125
     },
     "josh allen": {
      "name": "Josh Allen",
-     "FD": -120
+     "FD": -115
     },
     "james cook": {
      "name": "James Cook",
@@ -6560,7 +6560,7 @@
     },
     "khalil shakir": {
      "name": "Khalil Shakir",
-     "FD": 270
+     "FD": 280
     },
     "keon coleman": {
      "name": "Keon Coleman",
@@ -6576,7 +6576,7 @@
     },
     "ty johnson": {
      "name": "Ty Johnson",
-     "FD": 600
+     "FD": 650
     },
     "cyrus allen": {
      "name": "Cyrus Allen",
@@ -6592,7 +6592,7 @@
     },
     "jaydn ott": {
      "name": "Jaydn Ott",
-     "FD": 900
+     "FD": 850
     },
     "buffalo defense": {
      "name": "Buffalo Defense",
@@ -6616,11 +6616,11 @@
     },
     "jackson hawes": {
      "name": "Jackson Hawes",
-     "FD": 1400
+     "FD": 1500
     },
     "keleki latu": {
      "name": "Keleki Latu",
-     "FD": 1400
+     "FD": 1500
     },
     "jalen royals": {
      "name": "Jalen Royals",
@@ -6628,11 +6628,11 @@
     },
     "greg dortch": {
      "name": "Greg Dortch",
-     "FD": 1900
+     "FD": 1800
     },
     "andrew armstrong": {
      "name": "Andrew Armstrong",
-     "FD": 2200
+     "FD": 2000
     }
    }
   },
