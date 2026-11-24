@@ -42614,13 +42614,17 @@
   "opener": 6.0,
   "grp": "power 6",
   "limit": 4.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 80,
   "money": 67,
   "bets": 1544,
   "moved": 1.5,
-  "mins": 797
+  "mins": 797,
+  "close": 2.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Tennessee 72 - Maryland 64"
  },
  {
   "id": "401920923|total|under",
@@ -42950,8 +42954,12 @@
   "opener": -6.0,
   "grp": "power 6",
   "limit": -2.0,
-  "status": "open",
-  "gap_open": -0.5
+  "status": "W",
+  "gap_open": -0.5,
+  "close": -2.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Tennessee 72 - Maryland 64"
  },
  {
   "id": "rlm|401929285|spread|43",
@@ -43037,13 +43045,17 @@
   "opener": 7.5,
   "grp": "power 6",
   "limit": 5.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 68,
   "money": 63,
   "bets": 6043,
   "moved": 3.0,
-  "mins": 137
+  "mins": 137,
+  "close": 5.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Miami 71 - TCU 84"
  },
  {
   "id": "401922231|spread|2747",
