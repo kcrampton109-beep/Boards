@@ -40098,8 +40098,12 @@
   "opener": 158.5,
   "grp": "power 6",
   "limit": 158.0,
-  "status": "open",
-  "gap_open": 5.8
+  "status": "L",
+  "gap_open": 5.8,
+  "close": 158.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Colorado State 83 - Arizona 96"
  },
  {
   "id": "401921658|total|over",
@@ -41202,13 +41206,17 @@
   "opener": 158.5,
   "grp": "power 6",
   "limit": 158.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 75,
   "money": 75,
   "bets": 1211,
   "moved": 1.0,
-  "mins": 828
+  "mins": 828,
+  "close": 158.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Colorado State 83 - Arizona 96"
  },
  {
   "id": "rlm|401920752|total|under",
@@ -41807,13 +41815,17 @@
   "opener": 17.5,
   "grp": "power 6",
   "limit": 16.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 66,
   "money": 56,
   "bets": 5523,
   "moved": 1.0,
-  "mins": 198
+  "mins": 198,
+  "close": 17.0,
+  "clv": -0.5,
+  "units": 0.909,
+  "final": "Colorado State 83 - Arizona 96"
  },
  {
   "id": "401928358|spread|2229",
