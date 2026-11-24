@@ -42860,5 +42860,31 @@
   "limit": 141.0,
   "status": "open",
   "gap_open": 3.8
+ },
+ {
+  "id": "401909505|spread|2509",
+  "base": "401909505|spread|2509",
+  "flagged": "2026-11-24T11:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401909505,
+  "matchup": "DePaul vs Purdue",
+  "kickoff": "2026-11-24T18:00:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2509,
+  "pick": "Purdue -2.5",
+  "book": "DK",
+  "line": -2.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 3.0,
+  "model": 5.5,
+  "opener": -4.5,
+  "grp": "power 6",
+  "limit": -2.5,
+  "status": "open",
+  "gap_open": 1.0
  }
 ]
