@@ -559,11 +559,11 @@
    }
   },
   "2026_12_DEN_PIT": {
-   "ts": "2026-11-24T04:17:42.736169-05:00",
+   "ts": "2026-11-24T07:47:48.752969-05:00",
    "wx": {
-    "wind": 16.0,
+    "wind": 14.6,
     "gust": 38.5,
-    "temp": 38.0,
+    "temp": 37.0,
     "precip": 65
    }
   }
@@ -6181,7 +6181,7 @@
    }
   },
   "290825": {
-   "ts": "2026-11-24T04:17:42.736169-05:00",
+   "ts": "2026-11-24T07:47:48.752969-05:00",
    "odds": {
     "kyren williams": {
      "name": "Kyren Williams",
@@ -6520,15 +6520,15 @@
    }
   },
   "290995": {
-   "ts": "2026-11-24T04:17:42.736169-05:00",
+   "ts": "2026-11-24T07:47:48.752969-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
-     "FD": -125
+     "FD": -140
     },
     "kenneth walker": {
      "name": "Kenneth Walker III",
-     "FD": -125
+     "FD": -140
     },
     "josh allen": {
      "name": "Josh Allen",
@@ -6536,27 +6536,27 @@
     },
     "james cook": {
      "name": "James Cook",
-     "FD": -115
+     "FD": -110
     },
     "travis kelce": {
      "name": "Travis Kelce",
-     "FD": 180
+     "FD": 190
     },
     "rashee rice": {
      "name": "Rashee Rice",
-     "FD": 200
+     "FD": 220
     },
     "dj moore": {
      "name": "D.J. Moore",
-     "FD": 220
+     "FD": 230
     },
     "dalton kincaid": {
      "name": "Dalton Kincaid",
-     "FD": 250
+     "FD": 260
     },
     "josh downs": {
      "name": "Josh Downs",
-     "FD": 250
+     "FD": 270
     },
     "khalil shakir": {
      "name": "Khalil Shakir",
@@ -6568,15 +6568,19 @@
     },
     "xavier worthy": {
      "name": "Xavier Worthy",
-     "FD": 420
+     "FD": 460
     },
     "dawson knox": {
      "name": "Dawson Knox",
      "FD": 500
     },
+    "patrick mahomes": {
+     "name": "Patrick Mahomes",
+     "FD": 550
+    },
     "ty johnson": {
      "name": "Ty Johnson",
-     "FD": 650
+     "FD": 600
     },
     "cyrus allen": {
      "name": "Cyrus Allen",
@@ -6584,55 +6588,51 @@
     },
     "jake briningstool": {
      "name": "Jake Briningstool",
-     "FD": 700
-    },
-    "patrick mahomes": {
-     "name": "Patrick Mahomes",
      "FD": 750
     },
     "jaydn ott": {
      "name": "Jaydn Ott",
      "FD": 850
     },
-    "buffalo defense": {
-     "name": "Buffalo Defense",
-     "FD": 900
-    },
     "kansas city defense": {
      "name": "Kansas City Defense",
      "FD": 900
     },
+    "buffalo defense": {
+     "name": "Buffalo Defense",
+     "FD": 950
+    },
     "ray davis": {
      "name": "Ray Davis",
-     "FD": 950
+     "FD": 1000
     },
     "skyler bell": {
      "name": "Skyler Bell",
-     "FD": 1200
+     "FD": 1300
     },
     "tyrell shavers": {
      "name": "Tyrell Shavers",
-     "FD": 1200
+     "FD": 1300
     },
     "jackson hawes": {
      "name": "Jackson Hawes",
-     "FD": 1500
+     "FD": 1400
     },
     "keleki latu": {
      "name": "Keleki Latu",
-     "FD": 1500
+     "FD": 1400
     },
     "jalen royals": {
      "name": "Jalen Royals",
-     "FD": 1600
+     "FD": 1800
     },
     "greg dortch": {
      "name": "Greg Dortch",
-     "FD": 1800
+     "FD": 1900
     },
     "andrew armstrong": {
      "name": "Andrew Armstrong",
-     "FD": 2000
+     "FD": 2200
     }
    }
   },
