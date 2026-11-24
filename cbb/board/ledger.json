@@ -40627,8 +40627,12 @@
   "opener": -19.5,
   "grp": "power 6",
   "limit": -19.5,
-  "status": "open",
-  "gap_open": 3.2
+  "status": "W",
+  "gap_open": 3.2,
+  "close": -17.5,
+  "clv": -2.0,
+  "units": 0.926,
+  "final": "Alabama State 54 - California 96"
  },
  {
   "id": "rlm|401918076|total|under",
@@ -41023,13 +41027,17 @@
   "opener": 146.5,
   "grp": "power 6",
   "limit": 145.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 99,
   "money": 95,
   "bets": 257,
   "moved": 1.0,
-  "mins": 827
+  "mins": 827,
+  "close": 142.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Alabama State 54 - California 96"
  },
  {
   "id": "rlm|401928830|total|over",
@@ -42482,5 +42490,31 @@
   "limit": 3.0,
   "status": "open",
   "gap_open": 2.7
+ },
+ {
+  "id": "401921666|total|over|NOV_OVER",
+  "base": "401921666|total|over",
+  "flagged": "2026-11-24T00:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401921666,
+  "matchup": "Tulsa vs Illinois State",
+  "kickoff": "2026-11-24T16:30:00-05:00",
+  "tier": "NOV_OVER",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 141.5",
+  "book": "FD",
+  "line": 141.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 6.0,
+  "model": 147.5,
+  "opener": 142.5,
+  "grp": "mid-major",
+  "limit": 142.5,
+  "status": "open",
+  "gap_open": 5.0
  }
 ]
