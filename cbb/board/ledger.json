@@ -41085,13 +41085,17 @@
   "opener": 152.5,
   "grp": "mid-major",
   "limit": 151.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 86,
   "money": 42,
   "bets": 272,
   "moved": 5.0,
-  "mins": 648
+  "mins": 648,
+  "close": 145.0,
+  "clv": 6.5,
+  "units": 1.0,
+  "final": "Stephen F. Austin 77 - Utah Valley 72"
  },
  {
   "id": "rlm|401921210|total|under",
@@ -42448,5 +42452,31 @@
   "limit": 166.0,
   "status": "open",
   "gap_open": 4.4
+ },
+ {
+  "id": "401909763|spread|38",
+  "base": "401909763|spread|38",
+  "flagged": "2026-11-23T23:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401909763,
+  "matchup": "Stanford vs Colorado",
+  "kickoff": "2026-11-24T23:59:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 38,
+  "pick": "Colorado +3.5",
+  "book": "FD",
+  "line": 3.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 3.7,
+  "model": 0.2,
+  "opener": 2.5,
+  "grp": "power 6",
+  "limit": 3.0,
+  "status": "open",
+  "gap_open": 2.7
  }
 ]
