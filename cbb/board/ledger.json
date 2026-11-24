@@ -42516,5 +42516,31 @@
   "limit": 142.5,
   "status": "open",
   "gap_open": 5.0
+ },
+ {
+  "id": "401920309|total|under",
+  "base": "401920309|total|under",
+  "flagged": "2026-11-24T00:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401920309,
+  "matchup": "Samford @ Georgia Tech",
+  "kickoff": "2026-11-24T19:00:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 161.5",
+  "book": "MGM",
+  "line": 161.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.2,
+  "model": 156.3,
+  "opener": 160.5,
+  "grp": "power 6",
+  "limit": 161.5,
+  "status": "open",
+  "gap_open": 4.2
  }
 ]
