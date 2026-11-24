@@ -42943,5 +42943,31 @@
   "bets": 1539,
   "moved": 3.0,
   "mins": 198
+ },
+ {
+  "id": "401909699|spread|2427",
+  "base": "401909699|spread|2427",
+  "flagged": "2026-11-24T12:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401909699,
+  "matchup": "UNC Asheville @ Florida State",
+  "kickoff": "2026-11-24T21:00:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2427,
+  "pick": "UNC Asheville +30.5",
+  "book": "MGM",
+  "line": 30.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 3.9,
+  "model": -26.6,
+  "opener": 25.5,
+  "grp": "power 6",
+  "limit": 30.0,
+  "status": "open",
+  "gap_open": -1.1
  }
 ]
