@@ -40477,8 +40477,12 @@
   "opener": -1.5,
   "grp": "power 6",
   "limit": 0.5,
-  "status": "open",
-  "gap_open": 1.3
+  "status": "W",
+  "gap_open": 1.3,
+  "close": -2.0,
+  "clv": 3.5,
+  "units": 0.833,
+  "final": "VCU 66 - Providence 72"
  },
  {
   "id": "401919761|total|over",
