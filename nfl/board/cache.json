@@ -550,10 +550,10 @@
    }
   },
   "2026_12_KC_BUF": {
-   "ts": "2026-11-23T23:17:51.747898-05:00",
+   "ts": "2026-11-24T02:47:36.532149-05:00",
    "wx": {
-    "wind": 13.7,
-    "gust": 29.8,
+    "wind": 11.1,
+    "gust": 26.8,
     "temp": 36.0,
     "precip": 96
    }
@@ -6294,7 +6294,7 @@
    }
   },
   "290841": {
-   "ts": "2026-11-23T23:17:51.747898-05:00",
+   "ts": "2026-11-24T02:47:36.532149-05:00",
    "odds": {
     "jahmyr gibbs": {
      "name": "Jahmyr Gibbs",
@@ -6403,7 +6403,7 @@
    }
   },
   "290805": {
-   "ts": "2026-11-23T23:17:51.747898-05:00",
+   "ts": "2026-11-24T02:47:36.532149-05:00",
    "odds": {
     "javonte williams": {
      "name": "Javonte Williams",
@@ -6637,7 +6637,7 @@
    }
   },
   "290996": {
-   "ts": "2026-11-23T23:17:51.747898-05:00",
+   "ts": "2026-11-24T02:47:36.532149-05:00",
    "odds": {
     "jonah coleman": {
      "name": "Jonah Coleman",
@@ -6665,7 +6665,7 @@
     },
     "darnell washington": {
      "name": "Darnell Washington",
-     "FD": 400
+     "FD": 410
     },
     "germie bernard": {
      "name": "Germie Bernard",
@@ -6687,13 +6687,13 @@
      "name": "Bo Nix",
      "FD": 500
     },
-    "roman wilson": {
-     "name": "Roman Wilson",
-     "FD": 550
-    },
     "jk dobbins": {
      "name": "J.K. Dobbins",
      "FD": 550
+    },
+    "roman wilson": {
+     "name": "Roman Wilson",
+     "FD": 600
     },
     "michael pittman": {
      "name": "Michael Pittman Jr.",
@@ -6735,13 +6735,13 @@
      "name": "Ben Skowronek",
      "FD": 2700
     },
-    "adam prentice": {
-     "name": "Adam Prentice",
-     "FD": 2700
-    },
     "robert tonyan": {
      "name": "Robert Tonyan",
      "FD": 2700
+    },
+    "adam prentice": {
+     "name": "Adam Prentice",
+     "FD": 3000
     },
     "kaden wetjen": {
      "name": "Kaden Wetjen",
@@ -6794,7 +6794,7 @@
    "odds": {}
   },
   "291005": {
-   "ts": "2026-11-23T23:47:36.383829-05:00",
+   "ts": "2026-11-24T02:47:36.532149-05:00",
    "odds": {
     "christian mccaffrey": {
      "name": "Christian McCaffrey",
@@ -6802,7 +6802,7 @@
     },
     "zach charbonnet": {
      "name": "Zach Charbonnet",
-     "FD": 115
+     "FD": 110
     },
     "jaxon smith-njigba": {
      "name": "Jaxon Smith-Njigba",
@@ -6810,7 +6810,7 @@
     },
     "george kittle": {
      "name": "George Kittle",
-     "FD": 180
+     "FD": 175
     },
     "mike evans": {
      "name": "Mike Evans",
@@ -6818,7 +6818,7 @@
     },
     "jadarian price": {
      "name": "Jadarian Price",
-     "FD": 290
+     "FD": 280
     },
     "aj barner": {
      "name": "AJ Barner",
@@ -6826,18 +6826,18 @@
     },
     "keenan allen": {
      "name": "Keenan Allen",
-     "FD": 310
+     "FD": 320
     },
     "kaelon black": {
      "name": "Kaelon Black",
-     "FD": 350
-    },
-    "deebo samuel": {
-     "name": "Deebo Samuel",
-     "FD": 390
+     "FD": 360
     },
     "cooper kupp": {
      "name": "Cooper Kupp",
+     "FD": 380
+    },
+    "deebo samuel": {
+     "name": "Deebo Samuel",
      "FD": 390
     },
     "rashid shaheed": {
@@ -6846,7 +6846,7 @@
     },
     "brock purdy": {
      "name": "Brock Purdy",
-     "FD": 480
+     "FD": 470
     },
     "seattle defense": {
      "name": "Seattle Defense",
@@ -6864,13 +6864,13 @@
      "name": "San Francisco Defense",
      "FD": 800
     },
-    "eric saubert": {
-     "name": "Eric Saubert",
-     "FD": 1200
-    },
     "luke farrell": {
      "name": "Luke Farrell",
      "FD": 1200
+    },
+    "eric saubert": {
+     "name": "Eric Saubert",
+     "FD": 1300
     },
     "kyle juszczyk": {
      "name": "Kyle Juszczyk",
@@ -6880,13 +6880,13 @@
      "name": "Sam Darnold",
      "FD": 1400
     },
-    "nick kallerup": {
-     "name": "Nick Kallerup",
-     "FD": 1900
-    },
     "emanuel wilson": {
      "name": "Emanuel Wilson",
      "FD": 1900
+    },
+    "nick kallerup": {
+     "name": "Nick Kallerup",
+     "FD": 2000
     },
     "jacob cowing": {
      "name": "Jacob Cowing",
@@ -6900,13 +6900,13 @@
      "name": "Irv Charles",
      "FD": 3000
     },
+    "brayden willis": {
+     "name": "Brayden Willis",
+     "FD": 3500
+    },
     "brady russell": {
      "name": "Brady Russell",
      "FD": 3500
-    },
-    "brayden willis": {
-     "name": "Brayden Willis",
-     "FD": 4000
     }
    }
   },
