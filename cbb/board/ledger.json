@@ -42611,5 +42611,31 @@
   "limit": 148.0,
   "status": "open",
   "gap_open": 2.7
+ },
+ {
+  "id": "401921712|spread|36",
+  "base": "401921712|spread|36",
+  "flagged": "2026-11-24T05:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401921712,
+  "matchup": "VCU vs Colorado State",
+  "kickoff": "2026-11-24T22:30:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 36,
+  "pick": "Colorado State +8.5",
+  "book": "DK",
+  "line": 8.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 3.6,
+  "model": -4.9,
+  "opener": 5.5,
+  "grp": "mid-major",
+  "limit": 8.0,
+  "status": "open",
+  "gap_open": 0.6
  }
 ]
