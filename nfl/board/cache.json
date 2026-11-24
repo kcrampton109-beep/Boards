@@ -6794,8 +6794,121 @@
    "odds": {}
   },
   "291005": {
-   "ts": "2026-11-22T16:47:36.943642-05:00",
-   "odds": {}
+   "ts": "2026-11-23T23:47:36.383829-05:00",
+   "odds": {
+    "christian mccaffrey": {
+     "name": "Christian McCaffrey",
+     "FD": -175
+    },
+    "zach charbonnet": {
+     "name": "Zach Charbonnet",
+     "FD": 115
+    },
+    "jaxon smith-njigba": {
+     "name": "Jaxon Smith-Njigba",
+     "FD": 120
+    },
+    "george kittle": {
+     "name": "George Kittle",
+     "FD": 180
+    },
+    "mike evans": {
+     "name": "Mike Evans",
+     "FD": 185
+    },
+    "jadarian price": {
+     "name": "Jadarian Price",
+     "FD": 290
+    },
+    "aj barner": {
+     "name": "AJ Barner",
+     "FD": 290
+    },
+    "keenan allen": {
+     "name": "Keenan Allen",
+     "FD": 310
+    },
+    "kaelon black": {
+     "name": "Kaelon Black",
+     "FD": 350
+    },
+    "deebo samuel": {
+     "name": "Deebo Samuel",
+     "FD": 390
+    },
+    "cooper kupp": {
+     "name": "Cooper Kupp",
+     "FD": 390
+    },
+    "rashid shaheed": {
+     "name": "Rashid Shaheed",
+     "FD": 460
+    },
+    "brock purdy": {
+     "name": "Brock Purdy",
+     "FD": 480
+    },
+    "seattle defense": {
+     "name": "Seattle Defense",
+     "FD": 600
+    },
+    "tory horton": {
+     "name": "Tory Horton",
+     "FD": 650
+    },
+    "jordan watkins": {
+     "name": "Jordan Watkins",
+     "FD": 750
+    },
+    "san francisco defense": {
+     "name": "San Francisco Defense",
+     "FD": 800
+    },
+    "eric saubert": {
+     "name": "Eric Saubert",
+     "FD": 1200
+    },
+    "luke farrell": {
+     "name": "Luke Farrell",
+     "FD": 1200
+    },
+    "kyle juszczyk": {
+     "name": "Kyle Juszczyk",
+     "FD": 1400
+    },
+    "sam darnold": {
+     "name": "Sam Darnold",
+     "FD": 1400
+    },
+    "nick kallerup": {
+     "name": "Nick Kallerup",
+     "FD": 1900
+    },
+    "emanuel wilson": {
+     "name": "Emanuel Wilson",
+     "FD": 1900
+    },
+    "jacob cowing": {
+     "name": "Jacob Cowing",
+     "FD": 2000
+    },
+    "jordan james": {
+     "name": "Jordan James",
+     "FD": 2200
+    },
+    "irv charles": {
+     "name": "Irv Charles",
+     "FD": 3000
+    },
+    "brady russell": {
+     "name": "Brady Russell",
+     "FD": 3500
+    },
+    "brayden willis": {
+     "name": "Brayden Willis",
+     "FD": 4000
+    }
+   }
   },
   "291004": {
    "ts": "2026-11-22T16:47:36.943642-05:00",
