@@ -40699,8 +40699,8 @@
   "bets": 252,
   "moved": 1.0,
   "mins": 768,
-  "close": 145.5,
-  "clv": -5.0,
+  "close": null,
+  "clv": null,
   "units": 0.952,
   "final": "Northern Iowa 48 - Davidson 79"
  },
