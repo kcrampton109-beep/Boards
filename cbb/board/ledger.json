@@ -42422,8 +42422,12 @@
   "opener": -4.5,
   "grp": "mid-major",
   "limit": -0.5,
-  "status": "open",
-  "gap_open": -0.5
+  "status": "W",
+  "gap_open": -0.5,
+  "close": -5.0,
+  "clv": 10.5,
+  "units": 0.87,
+  "final": "Ohio 69 - New Mexico State 68"
  },
  {
   "id": "401921666|total|over",
