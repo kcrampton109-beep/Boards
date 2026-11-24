@@ -559,12 +559,12 @@
    }
   },
   "2026_12_DEN_PIT": {
-   "ts": "2026-11-24T01:17:41.208406-05:00",
+   "ts": "2026-11-24T04:17:42.736169-05:00",
    "wx": {
     "wind": 16.0,
     "gust": 38.5,
     "temp": 38.0,
-    "precip": 67
+    "precip": 65
    }
   }
  },
@@ -6181,7 +6181,7 @@
    }
   },
   "290825": {
-   "ts": "2026-11-24T01:17:41.208406-05:00",
+   "ts": "2026-11-24T04:17:42.736169-05:00",
    "odds": {
     "kyren williams": {
      "name": "Kyren Williams",
@@ -6213,7 +6213,7 @@
     },
     "tyler higbee": {
      "name": "Tyler Higbee",
-     "FD": 300
+     "FD": 290
     },
     "konata mumpfield": {
      "name": "Konata Mumpfield",
@@ -6221,15 +6221,15 @@
     },
     "tutu atwell": {
      "name": "Tutu Atwell",
-     "FD": 440
+     "FD": 430
     },
     "marshawn lloyd": {
      "name": "MarShawn Lloyd",
-     "FD": 450
+     "FD": 440
     },
     "cj daniels": {
      "name": "CJ Daniels",
-     "FD": 490
+     "FD": 480
     },
     "chris brooks": {
      "name": "Chris Brooks",
@@ -6253,19 +6253,19 @@
     },
     "green bay defense": {
      "name": "Green Bay Defense",
-     "FD": 950
+     "FD": 1000
     },
     "jordan love": {
      "name": "Jordan Love",
      "FD": 1100
     },
+    "mark redman": {
+     "name": "Mark Redman",
+     "FD": 1100
+    },
     "skyy moore": {
      "name": "Skyy Moore",
      "FD": 1100
-    },
-    "mark redman": {
-     "name": "Mark Redman",
-     "FD": 1200
     },
     "bo melton": {
      "name": "Bo Melton",
@@ -6277,15 +6277,15 @@
     },
     "jonnu smith": {
      "name": "Jonnu Smith",
-     "FD": 1600
-    },
-    "max klare": {
-     "name": "Max Klare",
-     "FD": 1700
+     "FD": 1500
     },
     "ronnie rivers": {
      "name": "Ronnie Rivers",
-     "FD": 1800
+     "FD": 1900
+    },
+    "max klare": {
+     "name": "Max Klare",
+     "FD": 1900
     },
     "matthew stafford": {
      "name": "Matthew Stafford",
@@ -6520,7 +6520,7 @@
    }
   },
   "290995": {
-   "ts": "2026-11-24T01:17:41.208406-05:00",
+   "ts": "2026-11-24T04:17:42.736169-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -6564,7 +6564,7 @@
     },
     "keon coleman": {
      "name": "Keon Coleman",
-     "FD": 410
+     "FD": 420
     },
     "xavier worthy": {
      "name": "Xavier Worthy",
