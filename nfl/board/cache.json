@@ -550,12 +550,12 @@
    }
   },
   "2026_12_KC_BUF": {
-   "ts": "2026-11-23T19:47:44.648821-05:00",
+   "ts": "2026-11-23T23:17:51.747898-05:00",
    "wx": {
     "wind": 13.7,
-    "gust": 49.9,
+    "gust": 29.8,
     "temp": 36.0,
-    "precip": 90
+    "precip": 96
    }
   },
   "2026_12_DEN_PIT": {
@@ -6294,7 +6294,7 @@
    }
   },
   "290841": {
-   "ts": "2026-11-23T19:47:44.648821-05:00",
+   "ts": "2026-11-23T23:17:51.747898-05:00",
    "odds": {
     "jahmyr gibbs": {
      "name": "Jahmyr Gibbs",
@@ -6403,7 +6403,7 @@
    }
   },
   "290805": {
-   "ts": "2026-11-23T19:47:44.648821-05:00",
+   "ts": "2026-11-23T23:17:51.747898-05:00",
    "odds": {
     "javonte williams": {
      "name": "Javonte Williams",
@@ -6431,7 +6431,7 @@
     },
     "ryan flournoy": {
      "name": "Ryan Flournoy",
-     "FD": 280
+     "FD": 290
     },
     "dallas goedert": {
      "name": "Dallas Goedert",
@@ -6443,7 +6443,7 @@
     },
     "makai lemon": {
      "name": "Makai Lemon",
-     "FD": 410
+     "FD": 420
     },
     "dallas defense": {
      "name": "Dallas Defense",
@@ -6483,7 +6483,7 @@
     },
     "zach ertz": {
      "name": "Zach Ertz",
-     "FD": 1500
+     "FD": 1400
     },
     "james mitchell": {
      "name": "James Mitchell",
@@ -6507,11 +6507,11 @@
     },
     "eli stowers": {
      "name": "Eli Stowers",
-     "FD": 3000
+     "FD": 2700
     },
     "grant calcaterra": {
      "name": "Grant Calcaterra",
-     "FD": 3000
+     "FD": 2700
     },
     "johnny mundt": {
      "name": "Johnny Mundt",
@@ -6637,7 +6637,7 @@
    }
   },
   "290996": {
-   "ts": "2026-11-23T19:47:44.648821-05:00",
+   "ts": "2026-11-23T23:17:51.747898-05:00",
    "odds": {
     "jonah coleman": {
      "name": "Jonah Coleman",
