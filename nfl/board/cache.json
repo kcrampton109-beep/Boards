@@ -559,12 +559,12 @@
    }
   },
   "2026_12_DEN_PIT": {
-   "ts": "2026-11-24T07:47:48.752969-05:00",
+   "ts": "2026-11-24T11:17:40.760980-05:00",
    "wx": {
     "wind": 14.6,
-    "gust": 38.5,
+    "gust": 32.4,
     "temp": 37.0,
-    "precip": 65
+    "precip": 58
    }
   }
  },
@@ -6181,7 +6181,7 @@
    }
   },
   "290825": {
-   "ts": "2026-11-24T07:47:48.752969-05:00",
+   "ts": "2026-11-24T11:17:40.760980-05:00",
    "odds": {
     "kyren williams": {
      "name": "Kyren Williams",
@@ -6189,11 +6189,11 @@
     },
     "blake corum": {
      "name": "Blake Corum",
-     "FD": 130
+     "FD": 135
     },
     "christian watson": {
      "name": "Christian Watson",
-     "FD": 170
+     "FD": 165
     },
     "matthew golden": {
      "name": "Matthew Golden",
@@ -6213,11 +6213,11 @@
     },
     "tyler higbee": {
      "name": "Tyler Higbee",
-     "FD": 290
+     "FD": 300
     },
     "konata mumpfield": {
      "name": "Konata Mumpfield",
-     "FD": 370
+     "FD": 380
     },
     "tutu atwell": {
      "name": "Tutu Atwell",
@@ -6225,11 +6225,11 @@
     },
     "marshawn lloyd": {
      "name": "MarShawn Lloyd",
-     "FD": 440
+     "FD": 450
     },
     "cj daniels": {
      "name": "CJ Daniels",
-     "FD": 480
+     "FD": 490
     },
     "chris brooks": {
      "name": "Chris Brooks",
@@ -6253,19 +6253,19 @@
     },
     "green bay defense": {
      "name": "Green Bay Defense",
-     "FD": 1000
+     "FD": 950
     },
     "jordan love": {
      "name": "Jordan Love",
      "FD": 1100
     },
-    "mark redman": {
-     "name": "Mark Redman",
-     "FD": 1100
-    },
     "skyy moore": {
      "name": "Skyy Moore",
      "FD": 1100
+    },
+    "mark redman": {
+     "name": "Mark Redman",
+     "FD": 1200
     },
     "bo melton": {
      "name": "Bo Melton",
@@ -6279,13 +6279,13 @@
      "name": "Jonnu Smith",
      "FD": 1500
     },
-    "ronnie rivers": {
-     "name": "Ronnie Rivers",
-     "FD": 1900
-    },
     "max klare": {
      "name": "Max Klare",
-     "FD": 1900
+     "FD": 1700
+    },
+    "ronnie rivers": {
+     "name": "Ronnie Rivers",
+     "FD": 1800
     },
     "matthew stafford": {
      "name": "Matthew Stafford",
@@ -6520,7 +6520,7 @@
    }
   },
   "290995": {
-   "ts": "2026-11-24T07:47:48.752969-05:00",
+   "ts": "2026-11-24T11:17:40.760980-05:00",
    "odds": {
     "emmett johnson": {
      "name": "Emmett Johnson",
@@ -6911,8 +6911,133 @@
    "odds": {}
   },
   "291007": {
-   "ts": "2026-11-23T20:17:42.951750-05:00",
-   "odds": {}
+   "ts": "2026-11-24T11:17:40.760980-05:00",
+   "odds": {
+    "bucky irving": {
+     "name": "Bucky Irving",
+     "FD": -130
+    },
+    "chuba hubbard": {
+     "name": "Chuba Hubbard",
+     "FD": 100
+    },
+    "tetairoa mcmillan": {
+     "name": "Tetairoa McMillan",
+     "FD": 165
+    },
+    "emeka egbuka": {
+     "name": "Emeka Egbuka",
+     "FD": 185
+    },
+    "jalen coker": {
+     "name": "Jalen Coker",
+     "FD": 270
+    },
+    "kenneth gainwell": {
+     "name": "Kenneth Gainwell",
+     "FD": 290
+    },
+    "cade otton": {
+     "name": "Cade Otton",
+     "FD": 350
+    },
+    "darren waller": {
+     "name": "Darren Waller",
+     "FD": 350
+    },
+    "tommy tremble": {
+     "name": "Tommy Tremble",
+     "FD": 360
+    },
+    "ted hurst": {
+     "name": "Ted Hurst III",
+     "FD": 380
+    },
+    "chris godwin": {
+     "name": "Chris Godwin",
+     "FD": 430
+    },
+    "baker mayfield": {
+     "name": "Baker Mayfield",
+     "FD": 490
+    },
+    "tez johnson": {
+     "name": "Tez Johnson",
+     "FD": 500
+    },
+    "tampa bay defense": {
+     "name": "Tampa Bay Defense",
+     "FD": 600
+    },
+    "bryce young": {
+     "name": "Bryce Young",
+     "FD": 650
+    },
+    "trevor etienne": {
+     "name": "Trevor Etienne",
+     "FD": 700
+    },
+    "jonathon brooks": {
+     "name": "Jonathon Brooks",
+     "FD": 700
+    },
+    "mitchell evans": {
+     "name": "Mitchell Evans",
+     "FD": 700
+    },
+    "john metchie": {
+     "name": "John Metchie III",
+     "FD": 700
+    },
+    "carolina defense": {
+     "name": "Carolina Defense",
+     "FD": 750
+    },
+    "payne durham": {
+     "name": "Payne Durham",
+     "FD": 1300
+    },
+    "sean tucker": {
+     "name": "Sean Tucker",
+     "FD": 1500
+    },
+    "brycen tremayne": {
+     "name": "Brycen Tremayne",
+     "FD": 1700
+    },
+    "xavier legette": {
+     "name": "Xavier Legette",
+     "FD": 1800
+    },
+    "bauer sharp": {
+     "name": "Bauer Sharp",
+     "FD": 2500
+    },
+    "ko kieft": {
+     "name": "Ko Kieft",
+     "FD": 3000
+    },
+    "kameron johnson": {
+     "name": "Kameron Johnson",
+     "FD": 3000
+    },
+    "feleipe franks": {
+     "name": "Feleipe Franks",
+     "FD": 4000
+    },
+    "jatavion sanders": {
+     "name": "Ja'Tavion Sanders",
+     "FD": 4000
+    },
+    "anthony tyus": {
+     "name": "Anthony Tyus III",
+     "FD": 4500
+    },
+    "aj dillon": {
+     "name": "AJ Dillon",
+     "FD": 4500
+    }
+   }
   }
  }
 }
