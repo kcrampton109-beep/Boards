@@ -12586,5 +12586,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_NYG_IND:TD:td:00-0035250",
+  "tier": "TD",
+  "market": "td",
+  "side": null,
+  "team": "NYG",
+  "pid": "00-0035250",
+  "game_id": "2026_12_NYG_IND",
+  "week": 12,
+  "matchup": "NYG @ IND",
+  "kickoff": "Sun Nov 29, 1:00 PM ET",
+  "pick": "Devin Singletary anytime TD",
+  "line": null,
+  "odds": 650,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": 0.093,
+  "note": "model 23% vs FD 13%",
+  "limit": null,
+  "model_line": -0.0,
+  "flagged": "2026-11-25T02:17:49.620591-05:00",
+  "kickoff_iso": "2026-11-29T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
