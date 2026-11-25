@@ -6758,8 +6758,109 @@
    "odds": {}
   },
   "291003": {
-   "ts": "2026-11-22T13:17:33.897864-05:00",
-   "odds": {}
+   "ts": "2026-11-25T08:47:31.872606-05:00",
+   "odds": {
+    "parker washington": {
+     "name": "Parker Washington",
+     "FD": -105
+    },
+    "tony pollard": {
+     "name": "Tony Pollard",
+     "FD": 120
+    },
+    "jakobi meyers": {
+     "name": "Jakobi Meyers",
+     "FD": 170
+    },
+    "brenton strange": {
+     "name": "Brenton Strange",
+     "FD": 220
+    },
+    "carnell tate": {
+     "name": "Carnell Tate",
+     "FD": 260
+    },
+    "brian thomas": {
+     "name": "Brian Thomas Jr.",
+     "FD": 360
+    },
+    "trevor lawrence": {
+     "name": "Trevor Lawrence",
+     "FD": 380
+    },
+    "nate boerkircher": {
+     "name": "Nate Boerkircher",
+     "FD": 380
+    },
+    "josh cameron": {
+     "name": "Josh Cameron",
+     "FD": 410
+    },
+    "gunnar helm": {
+     "name": "Gunnar Helm",
+     "FD": 430
+    },
+    "elic ayomanor": {
+     "name": "Elic Ayomanor",
+     "FD": 460
+    },
+    "travis hunter": {
+     "name": "Travis Hunter",
+     "FD": 500
+    },
+    "chimere dike": {
+     "name": "Chimere Dike",
+     "FD": 550
+    },
+    "tennessee defense": {
+     "name": "Tennessee Defense",
+     "FD": 600
+    },
+    "jacksonville defense": {
+     "name": "Jacksonville Defense",
+     "FD": 600
+    },
+    "cam ward": {
+     "name": "Cam Ward",
+     "FD": 750
+    },
+    "calvin ridley": {
+     "name": "Calvin Ridley",
+     "FD": 800
+    },
+    "daniel bellinger": {
+     "name": "Daniel Bellinger",
+     "FD": 850
+    },
+    "quintin morris": {
+     "name": "Quintin Morris",
+     "FD": 1300
+    },
+    "tanner koziol": {
+     "name": "Tanner Koziol",
+     "FD": 1300
+    },
+    "xavier restrepo": {
+     "name": "Xavier Restrepo",
+     "FD": 1400
+    },
+    "nicholas singleton": {
+     "name": "Nicholas Singleton",
+     "FD": 1500
+    },
+    "julius chestnut": {
+     "name": "Julius Chestnut",
+     "FD": 2700
+    },
+    "kylen granson": {
+     "name": "Kylen Granson",
+     "FD": 2700
+    },
+    "david martin-robinson": {
+     "name": "David Martin-Robinson",
+     "FD": 2700
+    }
+   }
   },
   "291001": {
    "ts": "2026-11-25T05:47:33.889889-05:00",
