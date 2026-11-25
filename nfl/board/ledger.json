@@ -12670,5 +12670,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_NE_LAC:TEASER:teaser:home",
+  "tier": "TEASER",
+  "market": "teaser",
+  "side": "home",
+  "team": "LAC",
+  "pid": null,
+  "game_id": "2026_12_NE_LAC",
+  "week": 12,
+  "matchup": "NE @ LAC",
+  "kickoff": "Sun Nov 29, 4:05 PM ET",
+  "pick": "LAC +1.5 \u2192 +7.5",
+  "line": 1.5,
+  "odds": -120,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": null,
+  "note": "total 35.5",
+  "limit": null,
+  "model_line": 1.4,
+  "flagged": "2026-11-25T17:17:39.968473-05:00",
+  "kickoff_iso": "2026-11-29T16:05:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
