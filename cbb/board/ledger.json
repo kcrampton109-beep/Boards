@@ -42576,8 +42576,8 @@
   "limit": -0.5,
   "status": "W",
   "gap_open": -0.5,
-  "close": -5.0,
-  "clv": 10.5,
+  "close": null,
+  "clv": null,
   "units": 0.87,
   "final": "Ohio 69 - New Mexico State 68"
  },
@@ -42815,8 +42815,12 @@
   "opener": 5.5,
   "grp": "mid-major",
   "limit": 8.0,
-  "status": "open",
-  "gap_open": 0.6
+  "status": "W",
+  "gap_open": 0.6,
+  "close": 6.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "VCU 84 - Colorado State 81"
  },
  {
   "id": "rlm|401906774|spread|270",
