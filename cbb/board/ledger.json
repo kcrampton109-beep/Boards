@@ -40398,8 +40398,12 @@
   "opener": 178.5,
   "grp": "power 6",
   "limit": 178.0,
-  "status": "open",
-  "gap_open": 5.6
+  "status": "W",
+  "gap_open": 5.6,
+  "close": 174.5,
+  "clv": 4.0,
+  "units": 0.87,
+  "final": "Baylor 68 - Alabama 63"
  },
  {
   "id": "rlm|401926774|spread|309",
@@ -41485,8 +41489,12 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": 0.0,
-  "status": "open",
-  "gap_open": 4.6
+  "status": "L",
+  "gap_open": 4.6,
+  "close": 2.0,
+  "clv": -0.5,
+  "units": -1.0,
+  "final": "Saint Louis 88 - Grand Canyon 91"
  },
  {
   "id": "401928835|total|over",
@@ -42626,8 +42634,12 @@
   "opener": 165.0,
   "grp": "mid-major",
   "limit": 166.0,
-  "status": "open",
-  "gap_open": 4.4
+  "status": "L",
+  "gap_open": 4.4,
+  "close": 163.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Saint Louis 88 - Grand Canyon 91"
  },
  {
   "id": "401909763|spread|38",
