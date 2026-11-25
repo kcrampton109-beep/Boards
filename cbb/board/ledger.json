@@ -41631,8 +41631,12 @@
   "opener": 2.5,
   "grp": "mid-major",
   "limit": 2.5,
-  "status": "open",
-  "gap_open": 3.1
+  "status": "L",
+  "gap_open": 3.1,
+  "close": 1.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Santa Clara 66 - Nevada 85"
  },
  {
   "id": "401920742|spread|2097",
@@ -41717,8 +41721,12 @@
   "opener": 17.5,
   "grp": "mid-major",
   "limit": 15.5,
-  "status": "open",
-  "gap_open": 5.1
+  "status": "L",
+  "gap_open": 5.1,
+  "close": 13.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "West Georgia 85 - Tennessee Tech 124"
  },
  {
   "id": "401917904|total|under",
@@ -41743,8 +41751,12 @@
   "opener": 164.5,
   "grp": "mid-major",
   "limit": 162.5,
-  "status": "open",
-  "gap_open": 7.2
+  "status": "L",
+  "gap_open": 7.2,
+  "close": 184.5,
+  "clv": -21.0,
+  "units": -1.0,
+  "final": "West Georgia 85 - Tennessee Tech 124"
  },
  {
   "id": "401929359|spread|250",
@@ -42058,8 +42070,12 @@
   "opener": -15.5,
   "grp": "mid-major",
   "limit": -15.5,
-  "status": "open",
-  "gap_open": 3.4
+  "status": "W",
+  "gap_open": 3.4,
+  "close": -16.0,
+  "clv": 0.5,
+  "units": 0.833,
+  "final": "Alcorn State 41 - Louisiana Tech 83"
  },
  {
   "id": "401929421|spread|6",
@@ -42488,8 +42504,12 @@
   "opener": 146.5,
   "grp": "mid-major",
   "limit": 147.5,
-  "status": "open",
-  "gap_open": 4.4
+  "status": "W",
+  "gap_open": 4.4,
+  "close": 145.0,
+  "clv": 2.5,
+  "units": 0.909,
+  "final": "Alcorn State 41 - Louisiana Tech 83"
  },
  {
   "id": "401928791|spread|195",
@@ -42721,8 +42741,12 @@
   "opener": 145.5,
   "grp": "low-major",
   "limit": 148.0,
-  "status": "open",
-  "gap_open": 2.7
+  "status": "L",
+  "gap_open": 2.7,
+  "close": 147.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Mount St. Mary's 75 - Morgan State 74"
  },
  {
   "id": "401921712|spread|36",
@@ -43815,5 +43839,83 @@
   "limit": 162.5,
   "status": "open",
   "gap_open": 6.4
+ },
+ {
+  "id": "401921669|total|over",
+  "base": "401921669|total|over",
+  "flagged": "2026-11-24T21:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401921669,
+  "matchup": "Arizona State vs LSU",
+  "kickoff": "2026-11-25T14:00:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 146.5",
+  "book": "DK",
+  "line": 146.5,
+  "odds": -112.0,
+  "stake": 1.0,
+  "edge": 5.6,
+  "model": 152.1,
+  "opener": 148.5,
+  "grp": "power 6",
+  "limit": 147.0,
+  "status": "open",
+  "gap_open": 3.6
+ },
+ {
+  "id": "401928359|total|under",
+  "base": "401928359|total|under",
+  "flagged": "2026-11-24T21:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401928359,
+  "matchup": "Arkansas State @ Florida International",
+  "kickoff": "2026-11-25T15:30:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 173.5",
+  "book": "DK",
+  "line": 173.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.5,
+  "model": 168.0,
+  "opener": 171.5,
+  "grp": "mid-major",
+  "limit": 173.5,
+  "status": "open",
+  "gap_open": 3.5
+ },
+ {
+  "id": "401909720|total|under",
+  "base": "401909720|total|under",
+  "flagged": "2026-11-24T21:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401909720,
+  "matchup": "UAlbany @ Syracuse",
+  "kickoff": "2026-11-25T18:00:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "under",
+  "team_eid": null,
+  "pick": "Under 150.5",
+  "book": "MGM",
+  "line": 150.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.6,
+  "model": 144.9,
+  "opener": 147.5,
+  "grp": "power 6",
+  "limit": 150.0,
+  "status": "open",
+  "gap_open": 2.6
  }
 ]
