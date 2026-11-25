@@ -43532,8 +43532,12 @@
   "opener": 125.5,
   "grp": "mid-major",
   "limit": 125.0,
-  "status": "open",
-  "gap_open": 4.6
+  "status": "L",
+  "gap_open": 4.6,
+  "close": 125.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Saint Peter's 44 - Columbia 65"
  },
  {
   "id": "401917967|spread|2571",
@@ -44025,8 +44029,12 @@
   "opener": 137.5,
   "grp": "mid-major",
   "limit": 137.0,
-  "status": "open",
-  "gap_open": 4.9
+  "status": "L",
+  "gap_open": 4.9,
+  "close": 137.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Tulane 47 - Davidson 74"
  },
  {
   "id": "401922253|total|over",
@@ -44207,13 +44215,17 @@
   "opener": 15.5,
   "grp": "mid-major",
   "limit": 14.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 73,
   "money": 85,
   "bets": 292,
   "moved": 1.0,
-  "mins": 378
+  "mins": 378,
+  "close": 12.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Saint Peter's 44 - Columbia 65"
  },
  {
   "id": "rlm|401917182|spread|213",
@@ -44269,8 +44281,12 @@
   "opener": 157.5,
   "grp": "low-major",
   "limit": 153.5,
-  "status": "open",
-  "gap_open": 1.2
+  "status": "L",
+  "gap_open": 1.2,
+  "close": 151.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Arkansas-Pine Bluff 50 - South Dakota 86"
  },
  {
   "id": "401921703|total|over",
@@ -44461,8 +44477,12 @@
   "opener": 19.5,
   "grp": "low-major",
   "limit": 22.5,
-  "status": "open",
-  "gap_open": 0.3
+  "status": "L",
+  "gap_open": 0.3,
+  "close": 20.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Arkansas-Pine Bluff 50 - South Dakota 86"
  },
  {
   "id": "401920916|total|over",
