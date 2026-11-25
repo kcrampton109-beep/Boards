@@ -41393,8 +41393,12 @@
   "opener": 12.5,
   "grp": "power 6",
   "limit": 14.0,
-  "status": "open",
-  "gap_open": 1.6
+  "status": "L",
+  "gap_open": 1.6,
+  "close": 14.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Gonzaga 101 - Kansas State 61"
  },
  {
   "id": "rlm|401917543|spread|2287",
@@ -42664,8 +42668,12 @@
   "opener": 2.5,
   "grp": "power 6",
   "limit": 3.0,
-  "status": "open",
-  "gap_open": 2.7
+  "status": "W",
+  "gap_open": 2.7,
+  "close": 4.5,
+  "clv": -1.0,
+  "units": 0.847,
+  "final": "Colorado 70 - Stanford 65"
  },
  {
   "id": "401921666|total|over|NOV_OVER",
@@ -43070,8 +43078,12 @@
   "opener": 142.5,
   "grp": "power 6",
   "limit": 141.0,
-  "status": "open",
-  "gap_open": 3.8
+  "status": "L",
+  "gap_open": 3.8,
+  "close": 140.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Colorado 70 - Stanford 65"
  },
  {
   "id": "401909505|spread|2509",
