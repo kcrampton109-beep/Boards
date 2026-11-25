@@ -41811,8 +41811,12 @@
   "opener": 163.5,
   "grp": "mid-major",
   "limit": 162.5,
-  "status": "open",
-  "gap_open": 6.4
+  "status": "W",
+  "gap_open": 6.4,
+  "close": 163.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Idaho State 71 - Boise State 88"
  },
  {
   "id": "401926184|spread|2430",
@@ -41837,8 +41841,12 @@
   "opener": 19.5,
   "grp": "mid-major",
   "limit": 19.0,
-  "status": "open",
-  "gap_open": 3.6
+  "status": "L",
+  "gap_open": 3.6,
+  "close": 18.0,
+  "clv": 1.5,
+  "units": -1.0,
+  "final": "UNC Greensboro 65 - UC Santa Barbara 85"
  },
  {
   "id": "rlm|401909743|spread|36",
@@ -42856,13 +42864,17 @@
   "opener": 5.5,
   "grp": "power 6",
   "limit": 3.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 74,
   "money": 79,
   "bets": 1817,
   "moved": 2.0,
-  "mins": 737
+  "mins": 737,
+  "close": 2.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Texas Tech 64 - Louisville 72"
  },
  {
   "id": "401909505|total|over",
@@ -43163,8 +43175,12 @@
   "opener": 25.5,
   "grp": "power 6",
   "limit": 30.0,
-  "status": "open",
-  "gap_open": -1.1
+  "status": "L",
+  "gap_open": -1.1,
+  "close": 30.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "UNC Asheville 61 - Florida State 97"
  },
  {
   "id": "rlm|401915941|spread|2628",
@@ -43393,13 +43409,17 @@
   "opener": -25.5,
   "grp": "power 6",
   "limit": -29.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 68,
   "money": 49,
   "bets": 691,
   "moved": 4.0,
-  "mins": 228
+  "mins": 228,
+  "close": -30.5,
+  "clv": 1.0,
+  "units": 0.893,
+  "final": "UNC Asheville 61 - Florida State 97"
  },
  {
   "id": "401927399|total|over",
