@@ -12614,5 +12614,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_NO_CIN:TD:td:00-0033906",
+  "tier": "TD",
+  "market": "td",
+  "side": null,
+  "team": "NO",
+  "pid": "00-0033906",
+  "game_id": "2026_12_NO_CIN",
+  "week": 12,
+  "matchup": "NO @ CIN",
+  "kickoff": "Sun Nov 29, 1:00 PM ET",
+  "pick": "Alvin Kamara anytime TD",
+  "line": null,
+  "odds": 490,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": 0.092,
+  "note": "model 26% vs FD 17%",
+  "limit": null,
+  "model_line": -9.8,
+  "flagged": "2026-11-25T14:17:47.624669-05:00",
+  "kickoff_iso": "2026-11-29T13:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
