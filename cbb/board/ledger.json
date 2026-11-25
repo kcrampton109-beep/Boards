@@ -42580,8 +42580,8 @@
   "limit": -0.5,
   "status": "W",
   "gap_open": -0.5,
-  "close": null,
-  "clv": null,
+  "close": -5.0,
+  "clv": 10.5,
   "units": 0.87,
   "final": "Ohio 69 - New Mexico State 68"
  },
