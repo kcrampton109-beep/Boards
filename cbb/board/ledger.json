@@ -43177,8 +43177,8 @@
   "limit": 30.0,
   "status": "L",
   "gap_open": -1.1,
-  "close": 30.5,
-  "clv": 0.0,
+  "close": 30.0,
+  "clv": 0.5,
   "units": -1.0,
   "final": "UNC Asheville 61 - Florida State 97"
  },
@@ -43416,8 +43416,8 @@
   "bets": 691,
   "moved": 4.0,
   "mins": 228,
-  "close": -30.5,
-  "clv": 1.0,
+  "close": -30.0,
+  "clv": 0.5,
   "units": 0.893,
   "final": "UNC Asheville 61 - Florida State 97"
  },
@@ -43991,5 +43991,31 @@
   "limit": 137.0,
   "status": "open",
   "gap_open": 4.9
+ },
+ {
+  "id": "401922253|total|over",
+  "base": "401922253|total|over",
+  "flagged": "2026-11-24T23:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401922253,
+  "matchup": "West Florida @ Northwestern State",
+  "kickoff": "2026-11-25T18:00:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 139.5",
+  "book": "MGM",
+  "line": 139.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.5,
+  "model": 145.0,
+  "opener": 141.5,
+  "grp": "low-major",
+  "limit": 139.5,
+  "status": "open",
+  "gap_open": 3.5
  }
 ]
