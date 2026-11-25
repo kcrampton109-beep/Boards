@@ -559,12 +559,12 @@
    }
   },
   "2026_12_DEN_PIT": {
-   "ts": "2026-11-24T21:17:35.523527-05:00",
+   "ts": "2026-11-25T00:47:35.025468-05:00",
    "wx": {
-    "wind": 13.0,
+    "wind": 11.5,
     "gust": 28.0,
-    "temp": 39.0,
-    "precip": 66
+    "temp": 38.0,
+    "precip": 73
    }
   }
  },
@@ -6992,8 +6992,113 @@
    }
   },
   "290997": {
-   "ts": "2026-11-22T13:17:33.897864-05:00",
-   "odds": {}
+   "ts": "2026-11-25T00:47:35.025468-05:00",
+   "odds": {
+    "chase brown": {
+     "name": "Chase Brown",
+     "FD": -150
+    },
+    "jamarr chase": {
+     "name": "Ja'Marr Chase",
+     "FD": -130
+    },
+    "tee higgins": {
+     "name": "Tee Higgins",
+     "FD": 105
+    },
+    "samaje perine": {
+     "name": "Samaje Perine",
+     "FD": 165
+    },
+    "travis etienne": {
+     "name": "Travis Etienne",
+     "FD": 175
+    },
+    "mike gesicki": {
+     "name": "Mike Gesicki",
+     "FD": 175
+    },
+    "chris olave": {
+     "name": "Chris Olave",
+     "FD": 220
+    },
+    "jordyn tyson": {
+     "name": "Jordyn Tyson",
+     "FD": 280
+    },
+    "alvin kamara": {
+     "name": "Alvin Kamara",
+     "FD": 310
+    },
+    "joe burrow": {
+     "name": "Joe Burrow",
+     "FD": 330
+    },
+    "tyler shough": {
+     "name": "Tyler Shough",
+     "FD": 370
+    },
+    "devaughn vele": {
+     "name": "Devaughn Vele",
+     "FD": 400
+    },
+    "juwan johnson": {
+     "name": "Juwan Johnson",
+     "FD": 440
+    },
+    "noah fant": {
+     "name": "Noah Fant",
+     "FD": 440
+    },
+    "dohnte meyers": {
+     "name": "Dohnte Meyers",
+     "FD": 500
+    },
+    "new orleans defense": {
+     "name": "New Orleans Defense",
+     "FD": 600
+    },
+    "cj donaldson": {
+     "name": "CJ Donaldson",
+     "FD": 600
+    },
+    "jack endries": {
+     "name": "Jack Endries",
+     "FD": 650
+    },
+    "cincinnati defense": {
+     "name": "Cincinnati Defense",
+     "FD": 700
+    },
+    "drew sample": {
+     "name": "Drew Sample",
+     "FD": 750
+    },
+    "colbie young": {
+     "name": "Colbie Young",
+     "FD": 900
+    },
+    "bryce lance": {
+     "name": "Bryce Lance",
+     "FD": 1100
+    },
+    "barion brown": {
+     "name": "Barion Brown",
+     "FD": 1300
+    },
+    "cam grandy": {
+     "name": "Cam Grandy",
+     "FD": 1600
+    },
+    "oscar delp": {
+     "name": "Oscar Delp",
+     "FD": 1700
+    },
+    "tahj brooks": {
+     "name": "Tahj Brooks",
+     "FD": 2700
+    }
+   }
   },
   "291006": {
    "ts": "2026-11-22T16:17:32.862368-05:00",
