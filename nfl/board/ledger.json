@@ -12698,5 +12698,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_WAS_ARI:TD:td:00-0037256",
+  "tier": "TD",
+  "market": "td",
+  "side": null,
+  "team": "WAS",
+  "pid": "00-0037256",
+  "game_id": "2026_12_WAS_ARI",
+  "week": 12,
+  "matchup": "WAS @ ARI",
+  "kickoff": "Sun Nov 29, 4:25 PM ET",
+  "pick": "Rachaad White anytime TD",
+  "line": null,
+  "odds": 360,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": 0.064,
+  "note": "model 28% vs FD 22%",
+  "limit": null,
+  "model_line": 4.1,
+  "flagged": "2026-11-25T18:47:33.408114-05:00",
+  "kickoff_iso": "2026-11-29T16:25:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]

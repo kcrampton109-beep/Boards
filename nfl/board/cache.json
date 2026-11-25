@@ -7605,8 +7605,73 @@
    }
   },
   "291004": {
-   "ts": "2026-11-22T16:47:36.943642-05:00",
-   "odds": {}
+   "ts": "2026-11-25T18:47:33.408114-05:00",
+   "odds": {
+    "jacory croskey-merritt": {
+     "name": "Jacory Croskey-Merritt",
+     "FD": 130
+    },
+    "stefon diggs": {
+     "name": "Stefon Diggs",
+     "FD": 145
+    },
+    "chigoziem okonkwo": {
+     "name": "Chigoziem Okonkwo",
+     "FD": 230
+    },
+    "antonio williams": {
+     "name": "Antonio Williams",
+     "FD": 250
+    },
+    "jayden daniels": {
+     "name": "Jayden Daniels",
+     "FD": 270
+    },
+    "treylon burks": {
+     "name": "Treylon Burks",
+     "FD": 320
+    },
+    "rachaad white": {
+     "name": "Rachaad White",
+     "FD": 360
+    },
+    "austin ekeler": {
+     "name": "Austin Ekeler",
+     "FD": 370
+    },
+    "josh johnson": {
+     "name": "Josh Johnson",
+     "FD": 500
+    },
+    "arizona defense": {
+     "name": "Arizona Defense",
+     "FD": 700
+    },
+    "washington defense": {
+     "name": "Washington Defense",
+     "FD": 800
+    },
+    "van jefferson": {
+     "name": "Van Jefferson",
+     "FD": 850
+    },
+    "ben sinnott": {
+     "name": "Ben Sinnott",
+     "FD": 900
+    },
+    "luke mccaffrey": {
+     "name": "Luke McCaffrey",
+     "FD": 1300
+    },
+    "colson yankoff": {
+     "name": "Colson Yankoff",
+     "FD": 1300
+    },
+    "john bates": {
+     "name": "John Bates",
+     "FD": 1300
+    }
+   }
   },
   "291002": {
    "ts": "2026-11-25T17:47:33.027253-05:00",
