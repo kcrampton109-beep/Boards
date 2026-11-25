@@ -20428,5 +20428,28 @@
   "grp": "FCS-FCS",
   "limit": 3.5,
   "status": "open"
+ },
+ {
+  "id": "401864546|total|under|wx",
+  "base": "401864546|total|under|wx",
+  "flagged": "2026-11-25T16:37-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401864546,
+  "matchup": "Air Force @ New Mexico",
+  "kickoff": "2026-11-27 16:30:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 42.5 (wind 16 mph)",
+  "book": "DK",
+  "line": 42.5,
+  "odds": -115.0,
+  "stake": 0.5,
+  "edge": 15.5,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
