@@ -44123,5 +44123,31 @@
   "limit": 152.5,
   "status": "open",
   "gap_open": 6.5
+ },
+ {
+  "id": "401920540|spread|239",
+  "base": "401920540|spread|239",
+  "flagged": "2026-11-25T03:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401920540,
+  "matchup": "Gonzaga vs Baylor",
+  "kickoff": "2026-11-26T23:30:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 239,
+  "pick": "Baylor +4.5",
+  "book": "DK",
+  "line": 4.5,
+  "odds": -112.0,
+  "stake": 1.0,
+  "edge": 4.0,
+  "model": -0.5,
+  "opener": 4.5,
+  "grp": "power 6",
+  "limit": 3.5,
+  "status": "open",
+  "gap_open": 4.0
  }
 ]
