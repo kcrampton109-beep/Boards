@@ -41395,8 +41395,8 @@
   "limit": 14.0,
   "status": "L",
   "gap_open": 1.6,
-  "close": 14.5,
-  "clv": 0.0,
+  "close": null,
+  "clv": null,
   "units": -1.0,
   "final": "Gonzaga 101 - Kansas State 61"
  },
@@ -43502,8 +43502,12 @@
   "opener": 141.5,
   "grp": "mid-major",
   "limit": 143.0,
-  "status": "open",
-  "gap_open": 6.5
+  "status": "W",
+  "gap_open": 6.5,
+  "close": 137.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Yale 72 - Wright State 70"
  },
  {
   "id": "401924705|total|over",
@@ -44672,5 +44676,36 @@
   "limit": -4.0,
   "status": "open",
   "gap_open": 1.5
+ },
+ {
+  "id": "rlm|401911028|spread|111",
+  "base": "rlm|401911028|spread|111",
+  "flagged": "2026-11-25T15:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401911028,
+  "matchup": "Northeastern @ Wisconsin",
+  "kickoff": "2026-11-25T19:00:00-05:00",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 111,
+  "pick": "Northeastern +19.5",
+  "book": "MGM",
+  "line": 19.5,
+  "odds": -105.0,
+  "stake": 1.0,
+  "edge": 1.0,
+  "model": -22.2,
+  "opener": 20.5,
+  "grp": "power 6",
+  "limit": 19.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 67,
+  "money": 64,
+  "bets": 1075,
+  "moved": 1.0,
+  "mins": 227
  }
 ]
