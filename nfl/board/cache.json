@@ -6774,8 +6774,105 @@
    "odds": {}
   },
   "290999": {
-   "ts": "2026-11-22T13:17:33.897864-05:00",
-   "odds": {}
+   "ts": "2026-11-24T21:47:38.438133-05:00",
+   "odds": {
+    "david montgomery": {
+     "name": "David Montgomery",
+     "FD": -145
+    },
+    "derrick henry": {
+     "name": "Derrick Henry",
+     "FD": -115
+    },
+    "nico collins": {
+     "name": "Nico Collins",
+     "FD": 105
+    },
+    "zay flowers": {
+     "name": "Zay Flowers",
+     "FD": 175
+    },
+    "xavier hutchinson": {
+     "name": "Xavier Hutchinson",
+     "FD": 230
+    },
+    "dalton schultz": {
+     "name": "Dalton Schultz",
+     "FD": 250
+    },
+    "tank dell": {
+     "name": "Tank Dell",
+     "FD": 250
+    },
+    "mark andrews": {
+     "name": "Mark Andrews",
+     "FD": 340
+    },
+    "jakobi lane": {
+     "name": "Ja'Kobi Lane",
+     "FD": 380
+    },
+    "kayshon boutte": {
+     "name": "Kayshon Boutte",
+     "FD": 420
+    },
+    "foster moreau": {
+     "name": "Foster Moreau",
+     "FD": 470
+    },
+    "rashod bateman": {
+     "name": "Rashod Bateman",
+     "FD": 480
+    },
+    "justice hill": {
+     "name": "Justice Hill",
+     "FD": 480
+    },
+    "houston defense": {
+     "name": "Houston Defense",
+     "FD": 500
+    },
+    "cj stroud": {
+     "name": "C.J. Stroud",
+     "FD": 550
+    },
+    "josh cuevas": {
+     "name": "Josh Cuevas",
+     "FD": 800
+    },
+    "baltimore defense": {
+     "name": "Baltimore Defense",
+     "FD": 900
+    },
+    "jacoby brissett": {
+     "name": "Jacoby Brissett",
+     "FD": 1000
+    },
+    "marlin klein": {
+     "name": "Marlin Klein",
+     "FD": 1000
+    },
+    "matthew hibner": {
+     "name": "Matthew Hibner",
+     "FD": 1400
+    },
+    "devontez walker": {
+     "name": "Devontez Walker",
+     "FD": 1600
+    },
+    "elijah sarratt": {
+     "name": "Elijah Sarratt",
+     "FD": 2700
+    },
+    "nikko remigio": {
+     "name": "Nikko Remigio",
+     "FD": 2700
+    },
+    "nick vannett": {
+     "name": "Nick Vannett",
+     "FD": 4000
+    }
+   }
   },
   "291000": {
    "ts": "2026-11-24T20:47:44.605482-05:00",
