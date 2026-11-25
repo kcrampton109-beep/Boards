@@ -42048,8 +42048,12 @@
   "opener": 138.5,
   "grp": "mid-major",
   "limit": 141.5,
-  "status": "open",
-  "gap_open": 8.0
+  "status": "W",
+  "gap_open": 8.0,
+  "close": 140.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Duquesne 70 - High Point 75"
  },
  {
   "id": "401925687|spread|2348",
@@ -42254,8 +42258,12 @@
   "opener": 143.5,
   "grp": "low-major",
   "limit": 141.5,
-  "status": "open",
-  "gap_open": 3.1
+  "status": "W",
+  "gap_open": 3.1,
+  "close": 146.0,
+  "clv": 4.5,
+  "units": 0.87,
+  "final": "Green Bay 77 - Kansas City 72"
  },
  {
   "id": "401906806|spread|201",
@@ -43246,13 +43254,17 @@
   "opener": -10.5,
   "grp": "mid-major",
   "limit": -10.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 95,
   "money": 88,
   "bets": 575,
   "moved": 1.0,
-  "mins": 347
+  "mins": 347,
+  "close": -11.5,
+  "clv": 1.0,
+  "units": 0.847,
+  "final": "Bucknell 71 - Cornell 92"
  },
  {
   "id": "401917182|spread|213",
@@ -43933,5 +43945,31 @@
   "limit": 150.0,
   "status": "open",
   "gap_open": 2.6
+ },
+ {
+  "id": "401919007|total|over",
+  "base": "401919007|total|over",
+  "flagged": "2026-11-24T22:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401919007,
+  "matchup": "Tulane vs Davidson",
+  "kickoff": "2026-11-25T13:30:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 136.5",
+  "book": "DK",
+  "line": 136.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.9,
+  "model": 142.4,
+  "opener": 137.5,
+  "grp": "mid-major",
+  "limit": 137.0,
+  "status": "open",
+  "gap_open": 4.9
  }
 ]
