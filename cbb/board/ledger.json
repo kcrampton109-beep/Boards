@@ -41753,8 +41753,8 @@
   "limit": 162.5,
   "status": "L",
   "gap_open": 7.2,
-  "close": 184.5,
-  "clv": -21.0,
+  "close": 163.5,
+  "clv": 0.0,
   "units": -1.0,
   "final": "West Georgia 85 - Tennessee Tech 124"
  },
@@ -41781,8 +41781,12 @@
   "opener": -5.5,
   "grp": "mid-major",
   "limit": -5.0,
-  "status": "open",
-  "gap_open": 2.5
+  "status": "L",
+  "gap_open": 2.5,
+  "close": -5.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Oral Roberts 84 - UT Arlington 80"
  },
  {
   "id": "401922023|total|under",
@@ -42100,8 +42104,12 @@
   "opener": -16.0,
   "grp": "mid-major",
   "limit": -16.0,
-  "status": "open",
-  "gap_open": 3.1
+  "status": "W",
+  "gap_open": 3.1,
+  "close": -17.5,
+  "clv": 2.0,
+  "units": 0.833,
+  "final": "Florida A&M 49 - South Alabama 74"
  },
  {
   "id": "401925642|spread|2453",
@@ -42126,8 +42134,12 @@
   "opener": -3.0,
   "grp": "mid-major",
   "limit": -3.0,
-  "status": "open",
-  "gap_open": 3.3
+  "status": "W",
+  "gap_open": 3.3,
+  "close": -3.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "Alabama A&M 74 - North Alabama 77"
  },
  {
   "id": "401920709|spread|2",
@@ -42152,8 +42164,12 @@
   "opener": -19.5,
   "grp": "power 6",
   "limit": -21.0,
-  "status": "open",
-  "gap_open": 4.7
+  "status": "W",
+  "gap_open": 4.7,
+  "close": -24.5,
+  "clv": 4.0,
+  "units": 0.909,
+  "final": "Lipscomb 66 - Auburn 101"
  },
  {
   "id": "401928358|total|under",
