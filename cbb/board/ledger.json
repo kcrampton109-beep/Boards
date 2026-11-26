@@ -44171,8 +44171,8 @@
   "limit": 152.0,
   "status": "W",
   "gap_open": 6.7,
-  "close": 147.5,
-  "clv": 6.0,
+  "close": null,
+  "clv": null,
   "units": 0.909,
   "final": "Clemson 75 - Colorado State 77"
  },
@@ -45652,5 +45652,31 @@
   "bets": 9531,
   "moved": 3.0,
   "mins": 408
+ },
+ {
+  "id": "401920529|spread|2633",
+  "base": "401920529|spread|2633",
+  "flagged": "2026-11-26T15:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401920529,
+  "matchup": "Tennessee vs Iowa State",
+  "kickoff": "2026-11-26T15:30:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2633,
+  "pick": "Tennessee +5.5",
+  "book": "FD",
+  "line": 5.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 3.2,
+  "model": -2.3,
+  "opener": 1.5,
+  "grp": "power 6",
+  "limit": 5.5,
+  "status": "open",
+  "gap_open": -0.8
  }
 ]
