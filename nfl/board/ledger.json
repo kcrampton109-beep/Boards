@@ -12754,5 +12754,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_DEN_PIT:LEAN:spread:home",
+  "tier": "LEAN",
+  "market": "spread",
+  "side": "home",
+  "team": "PIT",
+  "pid": null,
+  "game_id": "2026_12_DEN_PIT",
+  "week": 12,
+  "matchup": "DEN @ PIT",
+  "kickoff": "Fri Nov 27, 3:00 PM ET",
+  "pick": "PIT +5",
+  "line": 5,
+  "odds": -110,
+  "book": "MGM",
+  "stake": 0.5,
+  "edge": 2.0,
+  "note": null,
+  "limit": 5.0,
+  "model_line": 3.0,
+  "flagged": "2026-11-26T15:17:54.020103-05:00",
+  "kickoff_iso": "2026-11-27T15:00:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]

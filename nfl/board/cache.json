@@ -7501,11 +7501,11 @@
    }
   },
   "291006": {
-   "ts": "2026-11-26T11:47:41.355842-05:00",
+   "ts": "2026-11-26T15:17:54.020103-05:00",
    "odds": {
     "rhamondre stevenson": {
      "name": "Rhamondre Stevenson",
-     "FD": 130
+     "FD": 125
     },
     "omarion hampton": {
      "name": "Omarion Hampton",
@@ -7513,30 +7513,30 @@
     },
     "corey kiner": {
      "name": "Corey Kiner",
-     "FD": 370
+     "FD": 360
     },
     "dj uiagalelei": {
      "name": "DJ Uiagalelei",
-     "FD": 380
+     "FD": 400
     },
     "ladd mcconkey": {
      "name": "Ladd McConkey",
-     "FD": 440
+     "FD": 450
+    },
+    "hunter henry": {
+     "name": "Hunter Henry",
+     "FD": 460
     },
     "tommy devito": {
      "name": "Tommy DeVito",
      "FD": 460
     },
-    "hunter henry": {
-     "name": "Hunter Henry",
-     "FD": 470
+    "mack hollins": {
+     "name": "Mack Hollins",
+     "FD": 490
     },
     "demario douglas": {
      "name": "Demario Douglas",
-     "FD": 500
-    },
-    "mack hollins": {
-     "name": "Mack Hollins",
      "FD": 500
     },
     "tre harris": {
@@ -7555,20 +7555,20 @@
      "name": "Keaton Mitchell",
      "FD": 600
     },
-    "la chargers defense": {
-     "name": "LA Chargers Defense",
-     "FD": 800
-    },
-    "charlie kolar": {
-     "name": "Charlie Kolar",
-     "FD": 800
-    },
     "quentin johnston": {
      "name": "Quentin Johnston",
-     "FD": 800
+     "FD": 750
     },
     "new england defense": {
      "name": "New England Defense",
+     "FD": 800
+    },
+    "la chargers defense": {
+     "name": "LA Chargers Defense",
+     "FD": 850
+    },
+    "charlie kolar": {
+     "name": "Charlie Kolar",
      "FD": 850
     },
     "efton chism": {
@@ -7577,11 +7577,11 @@
     },
     "oronde gadsden": {
      "name": "Oronde Gadsden",
-     "FD": 1100
+     "FD": 1200
     },
     "david njoku": {
      "name": "David Njoku",
-     "FD": 1100
+     "FD": 1200
     },
     "keandre lambert-smith": {
      "name": "KeAndre Lambert-Smith",
@@ -7597,7 +7597,7 @@
     },
     "kyle williams": {
      "name": "Kyle Williams",
-     "FD": 1700
+     "FD": 1600
     },
     "theo wease": {
      "name": "Theo Wease Jr.",
@@ -7605,11 +7605,11 @@
     },
     "cameron latu": {
      "name": "Cameron Latu",
-     "FD": 3300
+     "FD": 3000
     },
     "scott matlock": {
      "name": "Scott Matlock",
-     "FD": 4000
+     "FD": 3500
     },
     "reggie gilliam": {
      "name": "Reggie Gilliam",
