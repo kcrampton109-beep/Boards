@@ -12726,5 +12726,33 @@
   "close": null,
   "clv": null,
   "final": null
+ },
+ {
+  "id": "2026_12_KC_BUF:WEATHER:total:under",
+  "tier": "WEATHER",
+  "market": "total",
+  "side": "under",
+  "team": null,
+  "pid": null,
+  "game_id": "2026_12_KC_BUF",
+  "week": 12,
+  "matchup": "KC @ BUF",
+  "kickoff": "Thu Nov 26, 8:20 PM ET",
+  "pick": "Under 46.5 (21 mph wind)",
+  "line": 46.5,
+  "odds": -110,
+  "book": "FD",
+  "stake": 1.0,
+  "edge": 20.6,
+  "note": "gusts 49 mph, 38F",
+  "limit": null,
+  "model_line": -2.4,
+  "flagged": "2026-11-25T20:47:47.528789-05:00",
+  "kickoff_iso": "2026-11-26T20:20:00-05:00",
+  "status": "open",
+  "units": null,
+  "close": null,
+  "clv": null,
+  "final": null
  }
 ]
