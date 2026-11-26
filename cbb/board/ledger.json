@@ -44683,8 +44683,12 @@
   "opener": 9.5,
   "grp": "power 6",
   "limit": 6.0,
-  "status": "open",
-  "gap_open": 6.6
+  "status": "W",
+  "gap_open": 6.6,
+  "close": 9.5,
+  "clv": 0.0,
+  "units": 0.952,
+  "final": "Grand Canyon 79 - Colorado 73"
  },
  {
   "id": "401921713|total|over",
