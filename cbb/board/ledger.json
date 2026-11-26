@@ -43333,8 +43333,12 @@
   "opener": 4.5,
   "grp": "power 6",
   "limit": 3.5,
-  "status": "open",
-  "gap_open": 4.1
+  "status": "L",
+  "gap_open": 4.1,
+  "close": 4.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Memphis 83 - Penn State 70"
  },
  {
   "id": "401918971|total|under",
@@ -43883,8 +43887,12 @@
   "opener": 151.5,
   "grp": "low-major",
   "limit": 150.5,
-  "status": "open",
-  "gap_open": 4.4
+  "status": "L",
+  "gap_open": 4.4,
+  "close": 147.0,
+  "clv": -2.5,
+  "units": -1.0,
+  "final": "Bellarmine 66 - Northern Kentucky 52"
  },
  {
   "id": "401918960|spread|152",
@@ -43909,8 +43917,12 @@
   "opener": -26.5,
   "grp": "power 6",
   "limit": -28.5,
-  "status": "open",
-  "gap_open": 6.4
+  "status": "W",
+  "gap_open": 6.4,
+  "close": -28.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Norfolk State 49 - NC State 80"
  },
  {
   "id": "401920537|spread|130",
@@ -44306,13 +44318,17 @@
   "opener": 4.5,
   "grp": "power 6",
   "limit": 4.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 65,
   "money": 52,
   "bets": 1166,
   "moved": 1.0,
-  "mins": 558
+  "mins": 558,
+  "close": 4.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Memphis 83 - Penn State 70"
  },
  {
   "id": "401929406|total|over",
@@ -44427,8 +44443,12 @@
   "opener": 139.5,
   "grp": "low-major",
   "limit": 137.0,
-  "status": "open",
-  "gap_open": 2.7
+  "status": "L",
+  "gap_open": 2.7,
+  "close": 138.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "South Carolina Upstate 54 - The Citadel 72"
  },
  {
   "id": "rlm|401917967|spread|2000",
@@ -44804,13 +44824,17 @@
   "opener": 20.5,
   "grp": "power 6",
   "limit": 19.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 67,
   "money": 64,
   "bets": 1075,
   "moved": 1.0,
-  "mins": 227
+  "mins": 227,
+  "close": 19.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Northeastern 54 - Wisconsin 91"
  },
  {
   "id": "rlm|401922285|spread|2908",
@@ -44835,13 +44859,17 @@
   "opener": 4.5,
   "grp": "low-major",
   "limit": 4.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 68,
   "money": 72,
   "bets": 1504,
   "moved": 1.0,
-  "mins": 107
+  "mins": 107,
+  "close": 3.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "South Carolina Upstate 54 - The Citadel 72"
  },
  {
   "id": "rlm|401920847|spread|2900",
@@ -44897,8 +44925,12 @@
   "opener": -4.5,
   "grp": "low-major",
   "limit": -2.5,
-  "status": "open",
-  "gap_open": 1.0
+  "status": "W",
+  "gap_open": 1.0,
+  "close": -3.5,
+  "clv": 1.0,
+  "units": 0.833,
+  "final": "South Carolina Upstate 54 - The Citadel 72"
  },
  {
   "id": "401906807|total|over",
