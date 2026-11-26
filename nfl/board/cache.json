@@ -550,11 +550,11 @@
    }
   },
   "2026_12_KC_BUF": {
-   "ts": "2026-11-26T10:47:46.886572-05:00",
+   "ts": "2026-11-26T14:17:38.622741-05:00",
    "wx": {
-    "wind": 15.7,
-    "gust": 36.9,
-    "temp": 37.0,
+    "wind": 14.8,
+    "gust": 40.0,
+    "temp": 36.0,
     "precip": 100
    }
   },
@@ -7735,7 +7735,7 @@
    }
   },
   "291004": {
-   "ts": "2026-11-26T11:17:35.165232-05:00",
+   "ts": "2026-11-26T14:17:38.622741-05:00",
    "odds": {
     "jacory croskey-merritt": {
      "name": "Jacory Croskey-Merritt",
@@ -7775,7 +7775,7 @@
     },
     "austin ekeler": {
      "name": "Austin Ekeler",
-     "FD": 370
+     "FD": 360
     },
     "rachaad white": {
      "name": "Rachaad White",
