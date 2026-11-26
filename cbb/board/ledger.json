@@ -45473,5 +45473,31 @@
   "limit": -8.0,
   "status": "open",
   "gap_open": 2.9
+ },
+ {
+  "id": "401917547|spread|26",
+  "base": "401917547|spread|26",
+  "flagged": "2026-11-26T10:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401917547,
+  "matchup": "Saint Mary's vs UCLA",
+  "kickoff": "2026-11-26T17:00:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 26,
+  "pick": "UCLA -6.5",
+  "book": "FD",
+  "line": -6.5,
+  "odds": -120.0,
+  "stake": 1.0,
+  "edge": 3.3,
+  "model": 9.8,
+  "opener": -7.5,
+  "grp": "power 6",
+  "limit": -6.5,
+  "status": "open",
+  "gap_open": 2.3
  }
 ]
