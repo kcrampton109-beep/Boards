@@ -10957,11 +10957,11 @@
   "model_line": -2.0,
   "flagged": "2026-11-17T15:32:57.018602-05:00",
   "kickoff_iso": "2026-11-26T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.5,
+  "close": 1.5,
+  "clv": 1.0,
+  "final": "CHI 39 - DET 35"
  },
  {
   "id": "2026_12_NYG_IND:STRONG:spread:home",
@@ -11937,11 +11937,11 @@
   "model_line": -1.5,
   "flagged": "2026-11-22T17:17:41.821703-05:00",
   "kickoff_iso": "2026-11-26T13:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.95,
+  "close": 56.5,
+  "clv": 1.0,
+  "final": "CHI 39 - DET 35"
  },
  {
   "id": "2026_12_PHI_DAL:RLM:total:over",
