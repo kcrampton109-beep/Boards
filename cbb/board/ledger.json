@@ -43363,8 +43363,12 @@
   "opener": 169.5,
   "grp": "power 6",
   "limit": 168.5,
-  "status": "open",
-  "gap_open": 6.1
+  "status": "W",
+  "gap_open": 6.1,
+  "close": 163.5,
+  "clv": 6.0,
+  "units": 0.909,
+  "final": "SMU 59 - Utah State 93"
  },
  {
   "id": "401909568|spread|150",
@@ -43753,8 +43757,12 @@
   "opener": 11.5,
   "grp": "mid-major",
   "limit": 11.0,
-  "status": "open",
-  "gap_open": 3.6
+  "status": "W",
+  "gap_open": 3.6,
+  "close": 9.5,
+  "clv": 2.0,
+  "units": 0.909,
+  "final": "Cal State Bakersfield 68 - Pepperdine 70"
  },
  {
   "id": "401925050|total|under",
@@ -45086,5 +45094,36 @@
   "limit": 150.0,
   "status": "open",
   "gap_open": 3.7
+ },
+ {
+  "id": "rlm|401920529|spread|66",
+  "base": "rlm|401920529|spread|66",
+  "flagged": "2026-11-25T22:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401920529,
+  "matchup": "Tennessee vs Iowa State",
+  "kickoff": "2026-11-26T15:30:00-05:00",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 66,
+  "pick": "Iowa State -2.5",
+  "book": "DK",
+  "line": -2.5,
+  "odds": -108.0,
+  "stake": 1.0,
+  "edge": 1.0,
+  "model": 2.2,
+  "opener": -1.5,
+  "grp": "power 6",
+  "limit": -2.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 75,
+  "money": 31,
+  "bets": 757,
+  "moved": 1.0,
+  "mins": 1038
  }
 ]
