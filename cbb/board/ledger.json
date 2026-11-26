@@ -44838,8 +44838,12 @@
   "opener": -5.5,
   "grp": "mid-major",
   "limit": -4.0,
-  "status": "open",
-  "gap_open": 1.5
+  "status": "L",
+  "gap_open": 1.5,
+  "close": -4.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Pacific 76 - Jacksonville State 83"
  },
  {
   "id": "rlm|401911028|spread|111",
