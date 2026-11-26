@@ -43755,8 +43755,12 @@
   "opener": 154.5,
   "grp": "low-major",
   "limit": 154.5,
-  "status": "open",
-  "gap_open": 5.3
+  "status": "L",
+  "gap_open": 5.3,
+  "close": 149.0,
+  "clv": 6.5,
+  "units": -1.0,
+  "final": "Grambling 81 - LSU New Orleans 80"
  },
  {
   "id": "401925917|total|under",
@@ -43781,8 +43785,12 @@
   "opener": 152.5,
   "grp": "mid-major",
   "limit": 153.0,
-  "status": "open",
-  "gap_open": 4.8
+  "status": "W",
+  "gap_open": 4.8,
+  "close": 152.0,
+  "clv": 1.5,
+  "units": 0.952,
+  "final": "Portland State 72 - UC Riverside 65"
  },
  {
   "id": "401925688|spread|326",
@@ -43807,8 +43815,12 @@
   "opener": -21.5,
   "grp": "mid-major",
   "limit": -22.5,
-  "status": "open",
-  "gap_open": 5.2
+  "status": "W",
+  "gap_open": 5.2,
+  "close": -27.5,
+  "clv": 5.0,
+  "units": 0.909,
+  "final": "Alcorn State 70 - Texas State 97"
  },
  {
   "id": "401922253|spread|2466",
