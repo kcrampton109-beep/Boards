@@ -43651,8 +43651,12 @@
   "opener": -4.0,
   "grp": "power 6",
   "limit": -3.5,
-  "status": "open",
-  "gap_open": 2.7
+  "status": "L",
+  "gap_open": 2.7,
+  "close": -2.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "BYU 85 - Providence 82"
  },
  {
   "id": "401921716|total|over",
@@ -43677,8 +43681,12 @@
   "opener": 154.0,
   "grp": "power 6",
   "limit": 155.5,
-  "status": "open",
-  "gap_open": 7.0
+  "status": "W",
+  "gap_open": 7.0,
+  "close": 154.0,
+  "clv": 1.5,
+  "units": 0.87,
+  "final": "BYU 85 - Providence 82"
  },
  {
   "id": "401920847|spread|2900",
@@ -43845,8 +43853,12 @@
   "opener": -1.5,
   "grp": "low-major",
   "limit": -2.0,
-  "status": "open",
-  "gap_open": 3.7
+  "status": "W",
+  "gap_open": 3.7,
+  "close": -1.0,
+  "clv": -0.5,
+  "units": 0.952,
+  "final": "West Florida 57 - Northwestern State 71"
  },
  {
   "id": "401921108|total|over",
@@ -44035,8 +44047,12 @@
   "opener": 147.5,
   "grp": "power 6",
   "limit": 150.0,
-  "status": "open",
-  "gap_open": 2.6
+  "status": "W",
+  "gap_open": 2.6,
+  "close": 145.5,
+  "clv": 5.0,
+  "units": 0.909,
+  "final": "UAlbany 53 - Syracuse 74"
  },
  {
   "id": "401919007|total|over",
@@ -44091,8 +44107,12 @@
   "opener": 141.5,
   "grp": "low-major",
   "limit": 139.5,
-  "status": "open",
-  "gap_open": 3.5
+  "status": "L",
+  "gap_open": 3.5,
+  "close": 139.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "West Florida 57 - Northwestern State 71"
  },
  {
   "id": "401921714|total|under",
@@ -44377,8 +44397,12 @@
   "opener": 150.5,
   "grp": "mid-major",
   "limit": 146.5,
-  "status": "open",
-  "gap_open": 1.3
+  "status": "W",
+  "gap_open": 1.3,
+  "close": 149.5,
+  "clv": 3.0,
+  "units": 0.909,
+  "final": "Bethune-Cookman 79 - Richmond 86"
  },
  {
   "id": "401922285|total|over",
@@ -44464,13 +44488,17 @@
   "opener": 4.0,
   "grp": "power 6",
   "limit": 3.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 84,
   "money": 71,
   "bets": 1565,
   "moved": 1.5,
-  "mins": 468
+  "mins": 468,
+  "close": 2.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "BYU 85 - Providence 82"
  },
  {
   "id": "401921713|spread|264",
@@ -44720,8 +44748,12 @@
   "opener": 149.5,
   "grp": "power 6",
   "limit": 145.0,
-  "status": "open",
-  "gap_open": 0.6
+  "status": "L",
+  "gap_open": 0.6,
+  "close": 145.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "South Carolina 69 - USC 71"
  },
  {
   "id": "401917544|spread|279",
@@ -44919,5 +44951,62 @@
   "limit": 1.5,
   "status": "open",
   "gap_open": 3.0
+ },
+ {
+  "id": "401920550|total|over",
+  "base": "401920550|total|over",
+  "flagged": "2026-11-25T20:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401920550,
+  "matchup": "Eastern Michigan vs UTEP",
+  "kickoff": "2026-11-25T20:30:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 128.5",
+  "book": "FD",
+  "line": 128.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.3,
+  "model": 133.8,
+  "opener": 133.5,
+  "grp": "mid-major",
+  "limit": 128.5,
+  "status": "open",
+  "gap_open": 0.3
+ },
+ {
+  "id": "rlm|401921713|spread|2670",
+  "base": "rlm|401921713|spread|2670",
+  "flagged": "2026-11-25T20:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401921713,
+  "matchup": "Washington vs VCU",
+  "kickoff": "2026-11-25T22:00:00-05:00",
+  "tier": "RLM",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2670,
+  "pick": "VCU -3.5",
+  "book": "MGM",
+  "line": -3.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 1.0,
+  "model": 1.2,
+  "opener": -3.5,
+  "grp": "power 6",
+  "limit": -3.5,
+  "status": "open",
+  "signal": "rlm",
+  "tix": 68,
+  "money": 66,
+  "bets": 2998,
+  "moved": 1.0,
+  "mins": 107
  }
 ]
