@@ -45039,8 +45039,12 @@
   "opener": 133.5,
   "grp": "mid-major",
   "limit": 128.5,
-  "status": "open",
-  "gap_open": 0.3
+  "status": "L",
+  "gap_open": 0.3,
+  "close": 129.0,
+  "clv": 0.5,
+  "units": -1.0,
+  "final": "Eastern Michigan 54 - UTEP 72"
  },
  {
   "id": "rlm|401921713|spread|2670",
