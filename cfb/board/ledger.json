@@ -20543,5 +20543,28 @@
   "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401856875|total|under|wx",
+  "base": "401856875|total|under|wx",
+  "flagged": "2026-11-26T14:07-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401856875,
+  "matchup": "UCF @ Colorado",
+  "kickoff": "2026-11-28 14:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 50.5 (wind 16 mph)",
+  "book": "FD",
+  "line": 50.5,
+  "odds": -114.0,
+  "stake": 0.5,
+  "edge": 16.1,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
