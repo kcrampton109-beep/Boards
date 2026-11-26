@@ -20451,5 +20451,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401866473|total|under|wx",
+  "base": "401866473|total|under|wx",
+  "flagged": "2026-11-26T03:37-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401866473,
+  "matchup": "Toledo @ Ohio",
+  "kickoff": "2026-11-27 12:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 45.5 (wind 16 mph)",
+  "book": "DK",
+  "line": 45.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 15.6,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
