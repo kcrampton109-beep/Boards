@@ -43967,8 +43967,12 @@
   "opener": 2.5,
   "grp": "power 6",
   "limit": 2.0,
-  "status": "open",
-  "gap_open": 3.7
+  "status": "L",
+  "gap_open": 3.7,
+  "close": 1.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Miami 97 - Michigan 70"
  },
  {
   "id": "401920537|total|under",
@@ -43993,8 +43997,12 @@
   "opener": 163.5,
   "grp": "power 6",
   "limit": 162.5,
-  "status": "open",
-  "gap_open": 6.4
+  "status": "L",
+  "gap_open": 6.4,
+  "close": 161.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "Miami 97 - Michigan 70"
  },
  {
   "id": "401921669|total|over",
@@ -44199,8 +44207,12 @@
   "opener": -1.5,
   "grp": "power 6",
   "limit": 1.0,
-  "status": "open",
-  "gap_open": 0.7
+  "status": "L",
+  "gap_open": 0.7,
+  "close": -5.5,
+  "clv": 7.0,
+  "units": -1.0,
+  "final": "Tennessee 75 - Iowa State 64"
  },
  {
   "id": "401920531|total|under",
@@ -45154,13 +45166,17 @@
   "opener": -1.5,
   "grp": "power 6",
   "limit": -2.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 75,
   "money": 31,
   "bets": 757,
   "moved": 1.0,
-  "mins": 1038
+  "mins": 1038,
+  "close": -5.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Tennessee 75 - Iowa State 64"
  },
  {
   "id": "401920539|spread|2306",
@@ -45293,13 +45309,17 @@
   "opener": -1.5,
   "grp": "power 6",
   "limit": -2.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 80,
   "money": 53,
   "bets": 1756,
   "moved": 1.0,
-  "mins": 828
+  "mins": 828,
+  "close": -5.5,
+  "clv": 3.0,
+  "units": -1.0,
+  "final": "Tennessee 75 - Iowa State 64"
  },
  {
   "id": "rlm|401929281|spread|2132",
@@ -45688,8 +45708,12 @@
   "opener": 1.5,
   "grp": "power 6",
   "limit": 5.5,
-  "status": "open",
-  "gap_open": -0.8
+  "status": "W",
+  "gap_open": -0.8,
+  "close": 5.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Tennessee 75 - Iowa State 64"
  },
  {
   "id": "rlm|401920540|spread|239|RLM_80",
@@ -45903,5 +45927,31 @@
   "limit": -13.0,
   "status": "open",
   "gap_open": 3.6
+ },
+ {
+  "id": "401927366|spread|68",
+  "base": "401927366|spread|68",
+  "flagged": "2026-11-26T18:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401927366,
+  "matchup": "Drake vs Boise State",
+  "kickoff": "2026-11-27T17:30:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 68,
+  "pick": "Boise State -5.5",
+  "book": "DK",
+  "line": -5.5,
+  "odds": -108.0,
+  "stake": 1.0,
+  "edge": 3.5,
+  "model": 9.0,
+  "opener": -5.5,
+  "grp": "mid-major",
+  "limit": -6.0,
+  "status": "open",
+  "gap_open": 3.5
  }
 ]
