@@ -7735,7 +7735,7 @@
    }
   },
   "291004": {
-   "ts": "2026-11-25T18:47:33.408114-05:00",
+   "ts": "2026-11-25T21:47:42.189867-05:00",
    "odds": {
     "jacory croskey-merritt": {
      "name": "Jacory Croskey-Merritt",
@@ -7743,7 +7743,15 @@
     },
     "stefon diggs": {
      "name": "Stefon Diggs",
-     "FD": 145
+     "FD": 150
+    },
+    "tyler allgeier": {
+     "name": "Tyler Allgeier",
+     "FD": 210
+    },
+    "trey mcbride": {
+     "name": "Trey McBride",
+     "FD": 220
     },
     "chigoziem okonkwo": {
      "name": "Chigoziem Okonkwo",
@@ -7753,6 +7761,10 @@
      "name": "Antonio Williams",
      "FD": 250
     },
+    "bam knight": {
+     "name": "Bam Knight",
+     "FD": 260
+    },
     "jayden daniels": {
      "name": "Jayden Daniels",
      "FD": 270
@@ -7761,24 +7773,36 @@
      "name": "Treylon Burks",
      "FD": 320
     },
-    "rachaad white": {
-     "name": "Rachaad White",
-     "FD": 360
-    },
     "austin ekeler": {
      "name": "Austin Ekeler",
      "FD": 370
+    },
+    "rachaad white": {
+     "name": "Rachaad White",
+     "FD": 380
     },
     "josh johnson": {
      "name": "Josh Johnson",
      "FD": 500
     },
+    "simi fehoko": {
+     "name": "Simi Fehoko",
+     "FD": 550
+    },
     "arizona defense": {
      "name": "Arizona Defense",
+     "FD": 650
+    },
+    "harrison wallace": {
+     "name": "Harrison Wallace III",
      "FD": 700
     },
     "washington defense": {
      "name": "Washington Defense",
+     "FD": 800
+    },
+    "elijah higgins": {
+     "name": "Elijah Higgins",
      "FD": 800
     },
     "van jefferson": {
@@ -7789,9 +7813,13 @@
      "name": "Ben Sinnott",
      "FD": 900
     },
+    "zay jones": {
+     "name": "Zay Jones",
+     "FD": 950
+    },
     "luke mccaffrey": {
      "name": "Luke McCaffrey",
-     "FD": 1300
+     "FD": 1200
     },
     "colson yankoff": {
      "name": "Colson Yankoff",
@@ -7800,6 +7828,26 @@
     "john bates": {
      "name": "John Bates",
      "FD": 1300
+    },
+    "hunter long": {
+     "name": "Hunter Long",
+     "FD": 1300
+    },
+    "evan hull": {
+     "name": "Evan Hull",
+     "FD": 1900
+    },
+    "teagan quitoriano": {
+     "name": "Teagan Quitoriano",
+     "FD": 2200
+    },
+    "reggie virgil": {
+     "name": "Reggie Virgil",
+     "FD": 2200
+    },
+    "devin duvernay": {
+     "name": "Devin Duvernay",
+     "FD": 2200
     }
    }
   },
