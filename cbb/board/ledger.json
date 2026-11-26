@@ -45556,5 +45556,31 @@
   "limit": 155.5,
   "status": "open",
   "gap_open": 0.0
+ },
+ {
+  "id": "401911523|total|over",
+  "base": "401911523|total|over",
+  "flagged": "2026-11-26T12:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401911523,
+  "matchup": "Jacksonville State vs UC Davis",
+  "kickoff": "2026-11-26T20:00:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 137.5",
+  "book": "DK",
+  "line": 137.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 5.5,
+  "model": 143.0,
+  "opener": 138.5,
+  "grp": "mid-major",
+  "limit": 138.0,
+  "status": "open",
+  "gap_open": 4.5
  }
 ]
