@@ -43389,8 +43389,12 @@
   "opener": 1.5,
   "grp": "power 6",
   "limit": 1.0,
-  "status": "open",
-  "gap_open": 4.0
+  "status": "W",
+  "gap_open": 4.0,
+  "close": 1.5,
+  "clv": 1.0,
+  "units": 0.87,
+  "final": "Duke 77 - UConn 63"
  },
  {
   "id": "401909568|total|under",
@@ -43415,8 +43419,12 @@
   "opener": 149.5,
   "grp": "power 6",
   "limit": 150.0,
-  "status": "open",
-  "gap_open": 5.0
+  "status": "W",
+  "gap_open": 5.0,
+  "close": 146.5,
+  "clv": 5.0,
+  "units": 0.87,
+  "final": "Duke 77 - UConn 63"
  },
  {
   "id": "rlm|401909699|spread|52",
@@ -43715,8 +43723,12 @@
   "opener": 7.5,
   "grp": "low-major",
   "limit": 7.5,
-  "status": "open",
-  "gap_open": 3.3
+  "status": "L",
+  "gap_open": 3.3,
+  "close": 5.5,
+  "clv": 2.0,
+  "units": -1.0,
+  "final": "St. Thomas 77 - UNC Wilmington 86"
  },
  {
   "id": "401920138|spread|2934",
@@ -44599,8 +44611,12 @@
   "opener": 138.5,
   "grp": "low-major",
   "limit": 137.5,
-  "status": "open",
-  "gap_open": 4.1
+  "status": "L",
+  "gap_open": 4.1,
+  "close": 137.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Northern Illinois 68 - SIU Edwardsville 65"
  },
  {
   "id": "401911522|spread|302",
@@ -44894,13 +44910,17 @@
   "opener": 7.5,
   "grp": "low-major",
   "limit": 5.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 72,
   "money": 69,
   "bets": 2246,
   "moved": 2.0,
-  "mins": 107
+  "mins": 107,
+  "close": 5.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "St. Thomas 77 - UNC Wilmington 86"
  },
  {
   "id": "401922285|spread|2643",
@@ -45040,5 +45060,31 @@
   "bets": 2998,
   "moved": 1.0,
   "mins": 107
+ },
+ {
+  "id": "401925757|total|over",
+  "base": "401925757|total|over",
+  "flagged": "2026-11-25T21:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401925757,
+  "matchup": "Arkansas vs Michigan State",
+  "kickoff": "2026-11-26T16:30:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 149.5",
+  "book": "MGM",
+  "line": 149.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 5.7,
+  "model": 155.2,
+  "opener": 151.5,
+  "grp": "power 6",
+  "limit": 150.0,
+  "status": "open",
+  "gap_open": 3.7
  }
 ]
