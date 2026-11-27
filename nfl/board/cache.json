@@ -7752,7 +7752,7 @@
    }
   },
   "291004": {
-   "ts": "2026-11-26T21:17:29.914498-05:00",
+   "ts": "2026-11-27T00:17:42.140110-05:00",
    "odds": {
     "jacory croskey-merritt": {
      "name": "Jacory Croskey-Merritt",
@@ -7778,12 +7778,12 @@
      "name": "Antonio Williams",
      "FD": 250
     },
-    "bam knight": {
-     "name": "Bam Knight",
-     "FD": 260
-    },
     "jayden daniels": {
      "name": "Jayden Daniels",
+     "FD": 270
+    },
+    "bam knight": {
+     "name": "Bam Knight",
      "FD": 270
     },
     "treylon burks": {
