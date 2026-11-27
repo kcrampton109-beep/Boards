@@ -12245,11 +12245,11 @@
   "model_line": -2.4,
   "flagged": "2026-11-23T09:47:43.402660-05:00",
   "kickoff_iso": "2026-11-26T20:20:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.83,
+  "close": -3,
+  "clv": 0.5,
+  "final": "KC 10 - BUF 13"
  },
  {
   "id": "2026_12_DEN_PIT:TREND:spread:away",
@@ -12749,11 +12749,11 @@
   "model_line": -2.4,
   "flagged": "2026-11-25T20:47:47.528789-05:00",
   "kickoff_iso": "2026-11-26T20:20:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 46.5,
+  "clv": 0.0,
+  "final": "KC 10 - BUF 13"
  },
  {
   "id": "2026_12_DEN_PIT:LEAN:spread:home",
