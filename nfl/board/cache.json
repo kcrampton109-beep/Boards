@@ -7522,7 +7522,7 @@
    }
   },
   "291006": {
-   "ts": "2026-11-27T07:17:45.573506-05:00",
+   "ts": "2026-11-27T10:47:42.757881-05:00",
    "odds": {
     "rhamondre stevenson": {
      "name": "Rhamondre Stevenson",
@@ -7538,19 +7538,19 @@
     },
     "dj uiagalelei": {
      "name": "DJ Uiagalelei",
-     "FD": 400
+     "FD": 390
+    },
+    "hunter henry": {
+     "name": "Hunter Henry",
+     "FD": 450
+    },
+    "tommy devito": {
+     "name": "Tommy DeVito",
+     "FD": 450
     },
     "ladd mcconkey": {
      "name": "Ladd McConkey",
      "FD": 450
-    },
-    "hunter henry": {
-     "name": "Hunter Henry",
-     "FD": 460
-    },
-    "tommy devito": {
-     "name": "Tommy DeVito",
-     "FD": 460
     },
     "mack hollins": {
      "name": "Mack Hollins",
@@ -7566,7 +7566,7 @@
     },
     "eli raridon": {
      "name": "Eli Raridon",
-     "FD": 600
+     "FD": 550
     },
     "kimani vidal": {
      "name": "Kimani Vidal",
@@ -7576,44 +7576,44 @@
      "name": "Keaton Mitchell",
      "FD": 600
     },
-    "quentin johnston": {
-     "name": "Quentin Johnston",
-     "FD": 750
-    },
     "new england defense": {
      "name": "New England Defense",
      "FD": 800
     },
     "la chargers defense": {
      "name": "LA Chargers Defense",
+     "FD": 800
+    },
+    "quentin johnston": {
+     "name": "Quentin Johnston",
+     "FD": 800
+    },
+    "efton chism": {
+     "name": "Efton Chism III",
      "FD": 850
     },
     "charlie kolar": {
      "name": "Charlie Kolar",
      "FD": 850
     },
-    "efton chism": {
-     "name": "Efton Chism III",
-     "FD": 900
+    "david njoku": {
+     "name": "David Njoku",
+     "FD": 1100
     },
     "oronde gadsden": {
      "name": "Oronde Gadsden",
      "FD": 1200
     },
-    "david njoku": {
-     "name": "David Njoku",
-     "FD": 1200
+    "lan larison": {
+     "name": "Lan Larison",
+     "FD": 1400
     },
     "keandre lambert-smith": {
      "name": "KeAndre Lambert-Smith",
-     "FD": 1300
+     "FD": 1400
     },
     "derius davis": {
      "name": "Derius Davis",
-     "FD": 1300
-    },
-    "lan larison": {
-     "name": "Lan Larison",
      "FD": 1400
     },
     "kyle williams": {
