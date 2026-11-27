@@ -45209,8 +45209,12 @@
   "opener": 13.5,
   "grp": "power 6",
   "limit": 15.5,
-  "status": "open",
-  "gap_open": 1.3
+  "status": "W",
+  "gap_open": 1.3,
+  "close": 13.5,
+  "clv": 2.0,
+  "units": 0.87,
+  "final": "Alabama 104 - Kansas State 91"
  },
  {
   "id": "401917546|spread|279",
@@ -45426,13 +45430,17 @@
   "opener": 4.5,
   "grp": "power 6",
   "limit": 2.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 65,
   "money": 71,
   "bets": 2438,
   "moved": 2.0,
-  "mins": 738
+  "mins": 738,
+  "close": 1.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Louisville 93 - St. John's 90"
  },
  {
   "id": "rlm|401920540|spread|239",
@@ -45713,13 +45721,17 @@
   "opener": 4.5,
   "grp": "power 6",
   "limit": 1.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 82,
   "money": 77,
   "bets": 9531,
   "moved": 3.0,
-  "mins": 408
+  "mins": 408,
+  "close": 1.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Louisville 93 - St. John's 90"
  },
  {
   "id": "401920529|spread|2633",
