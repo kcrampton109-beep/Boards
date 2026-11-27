@@ -7752,7 +7752,7 @@
    }
   },
   "291004": {
-   "ts": "2026-11-27T06:47:43.520401-05:00",
+   "ts": "2026-11-27T09:47:54.627617-05:00",
    "odds": {
     "jacory croskey-merritt": {
      "name": "Jacory Croskey-Merritt",
@@ -7778,12 +7778,12 @@
      "name": "Antonio Williams",
      "FD": 250
     },
-    "jayden daniels": {
-     "name": "Jayden Daniels",
-     "FD": 270
-    },
     "bam knight": {
      "name": "Bam Knight",
+     "FD": 260
+    },
+    "jayden daniels": {
+     "name": "Jayden Daniels",
      "FD": 270
     },
     "treylon burks": {
@@ -7792,7 +7792,7 @@
     },
     "austin ekeler": {
      "name": "Austin Ekeler",
-     "FD": 360
+     "FD": 370
     },
     "rachaad white": {
      "name": "Rachaad White",
@@ -7818,17 +7818,17 @@
      "name": "Washington Defense",
      "FD": 800
     },
+    "van jefferson": {
+     "name": "Van Jefferson",
+     "FD": 800
+    },
     "elijah higgins": {
      "name": "Elijah Higgins",
      "FD": 800
     },
-    "van jefferson": {
-     "name": "Van Jefferson",
-     "FD": 850
-    },
     "ben sinnott": {
      "name": "Ben Sinnott",
-     "FD": 900
+     "FD": 950
     },
     "zay jones": {
      "name": "Zay Jones",
@@ -7852,7 +7852,7 @@
     },
     "evan hull": {
      "name": "Evan Hull",
-     "FD": 1900
+     "FD": 2000
     },
     "teagan quitoriano": {
      "name": "Teagan Quitoriano",
