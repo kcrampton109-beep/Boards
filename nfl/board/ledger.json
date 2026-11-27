@@ -11601,11 +11601,11 @@
   "model_line": 2.2,
   "flagged": "2026-11-22T16:47:36.943642-05:00",
   "kickoff_iso": "2026-11-27T15:00:00-05:00",
-  "status": "open",
+  "status": "W",
   "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "close": 4.5,
+  "clv": -3.0,
+  "final": "DEN 5 - PIT 27"
  },
  {
   "id": "2026_12_DEN_PIT:RLM:total:under",
@@ -11629,11 +11629,11 @@
   "model_line": 2.2,
   "flagged": "2026-11-22T16:47:36.943642-05:00",
   "kickoff_iso": "2026-11-27T15:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.91,
+  "close": 37,
+  "clv": 3.5,
+  "final": "DEN 5 - PIT 27"
  },
  {
   "id": "2026_12_NYG_IND:RLM:total:under",
@@ -12273,11 +12273,11 @@
   "model_line": 3.0,
   "flagged": "2026-11-23T09:47:43.402660-05:00",
   "kickoff_iso": "2026-11-27T15:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": -4.5,
+  "clv": 1.5,
+  "final": "DEN 5 - PIT 27"
  },
  {
   "id": "2026_12_ATL_MIN:STRONG:spread:away",
@@ -12777,11 +12777,11 @@
   "model_line": 3.0,
   "flagged": "2026-11-26T15:17:54.020103-05:00",
   "kickoff_iso": "2026-11-27T15:00:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.45,
+  "close": 4.5,
+  "clv": 0.5,
+  "final": "DEN 5 - PIT 27"
  },
  {
   "id": "2026_12_NYG_IND:RLM:spread:home",
