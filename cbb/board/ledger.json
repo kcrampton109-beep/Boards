@@ -46415,5 +46415,31 @@
   "limit": 4.0,
   "status": "open",
   "gap_open": 1.7
+ },
+ {
+  "id": "401920535|spread|2641",
+  "base": "401920535|spread|2641",
+  "flagged": "2026-11-27T08:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401920535,
+  "matchup": "Texas Tech vs San Diego State",
+  "kickoff": "2026-11-27T23:30:00-05:00",
+  "tier": "NOV",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2641,
+  "pick": "Texas Tech -6.5",
+  "book": "FD",
+  "line": -6.5,
+  "odds": -110.0,
+  "stake": 1.0,
+  "edge": 3.4,
+  "model": 9.9,
+  "opener": -6.5,
+  "grp": "power 6",
+  "limit": -6.5,
+  "status": "open",
+  "gap_open": 3.4
  }
 ]
