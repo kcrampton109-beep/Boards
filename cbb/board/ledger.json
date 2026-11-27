@@ -45379,8 +45379,8 @@
   "bets": 1277,
   "moved": 1.0,
   "mins": 467,
-  "close": null,
-  "clv": null,
+  "close": -3.5,
+  "clv": 2.0,
   "units": 0.833,
   "final": "Georgia 81 - Cincinnati 83"
  },
