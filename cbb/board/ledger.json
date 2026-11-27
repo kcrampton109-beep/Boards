@@ -46045,8 +46045,12 @@
   "opener": 1.5,
   "grp": "low-major",
   "limit": 2.0,
-  "status": "open",
-  "gap_open": 2.8
+  "status": "L",
+  "gap_open": 2.8,
+  "close": 1.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "UMass Lowell 72 - Hampton 55"
  },
  {
   "id": "401921416|total|under",
@@ -46071,8 +46075,12 @@
   "opener": 142.5,
   "grp": "low-major",
   "limit": 141.5,
-  "status": "open",
-  "gap_open": 6.2
+  "status": "W",
+  "gap_open": 6.2,
+  "close": 138.5,
+  "clv": 4.0,
+  "units": 0.909,
+  "final": "UMass Lowell 72 - Hampton 55"
  },
  {
   "id": "401921827|spread|238",
@@ -46469,8 +46477,12 @@
   "opener": 131.5,
   "grp": "low-major",
   "limit": 128.5,
-  "status": "open",
-  "gap_open": 2.1
+  "status": "W",
+  "gap_open": 2.1,
+  "close": 128.5,
+  "clv": 0.0,
+  "units": 0.87,
+  "final": "Merrimack 75 - Vermont 57"
  },
  {
   "id": "401928468|spread|326",
