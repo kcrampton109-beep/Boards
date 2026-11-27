@@ -20082,7 +20082,11 @@
   "model": 55.6,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "W",
+  "clv": 10.0,
+  "close": 57.5,
+  "units": 0.909,
+  "final": "Tulsa 22 - UTSA 28"
  },
  {
   "id": "401862843|total|over|m",
@@ -20473,7 +20477,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 1.0,
+  "close": 44.5,
+  "units": -0.5,
+  "final": "Toledo 34 - Ohio 31"
  },
  {
   "id": "401856761|total|under|wx",
@@ -20656,6 +20664,52 @@
   "edge": 21.1,
   "model": null,
   "grp": "FBS",
+  "limit": null,
+  "status": "open"
+ },
+ {
+  "id": "401934102|spread|away|m|FCS",
+  "base": "401934102|spread|away|m",
+  "flagged": "2026-11-27T17:09-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401934102,
+  "matchup": "Incarnate Word @ Montana",
+  "kickoff": "2026-11-28 20:00:00-05:00",
+  "tier": "FCS",
+  "market": "spread",
+  "side": "away",
+  "pick": "Incarnate Word +5.5",
+  "book": "DK",
+  "line": 5.5,
+  "odds": -112.0,
+  "stake": 1.0,
+  "edge": 5.2,
+  "model": 0.3,
+  "grp": "FCS-FCS",
+  "limit": 5.5,
+  "status": "open"
+ },
+ {
+  "id": "401934102|moneyline|away|m",
+  "base": "401934102|moneyline|away|m",
+  "flagged": "2026-11-27T17:09-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401934102,
+  "matchup": "Incarnate Word @ Montana",
+  "kickoff": "2026-11-28 20:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "moneyline",
+  "side": "away",
+  "pick": "Incarnate Word ML +172 (alt to spread)",
+  "book": "DK",
+  "line": null,
+  "odds": 172.0,
+  "stake": 0.25,
+  "edge": 33.7,
+  "model": 49.2,
+  "grp": "FCS-FCS",
   "limit": null,
   "status": "open"
  }
