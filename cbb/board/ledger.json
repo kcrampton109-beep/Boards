@@ -45049,8 +45049,12 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": 1.5,
-  "status": "open",
-  "gap_open": 3.0
+  "status": "W",
+  "gap_open": 3.0,
+  "close": 3.5,
+  "clv": -2.0,
+  "units": 0.909,
+  "final": "UC Davis 68 - Jacksonville State 63"
  },
  {
   "id": "401920550|total|over",
@@ -45387,13 +45391,17 @@
   "opener": 6.5,
   "grp": "power 6",
   "limit": 5.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 84,
   "money": 88,
   "bets": 610,
   "moved": 1.0,
-  "mins": 947
+  "mins": 947,
+  "close": 6.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "LSU 95 - SMU 86"
  },
  {
   "id": "rlm|401920530|spread|97",
@@ -45610,8 +45618,12 @@
   "opener": 160.5,
   "grp": "power 6",
   "limit": 155.5,
-  "status": "open",
-  "gap_open": 0.0
+  "status": "W",
+  "gap_open": 0.0,
+  "close": 155.5,
+  "clv": 0.0,
+  "units": 0.926,
+  "final": "LSU 95 - SMU 86"
  },
  {
   "id": "401911523|total|over",
@@ -45636,8 +45648,12 @@
   "opener": 138.5,
   "grp": "mid-major",
   "limit": 138.0,
-  "status": "open",
-  "gap_open": 4.5
+  "status": "L",
+  "gap_open": 4.5,
+  "close": 137.0,
+  "clv": -0.5,
+  "units": -1.0,
+  "final": "UC Davis 68 - Jacksonville State 63"
  },
  {
   "id": "rlm|401920538|spread|156",
