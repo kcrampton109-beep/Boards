@@ -46382,13 +46382,17 @@
   "opener": 1.5,
   "grp": "mid-major",
   "limit": -1.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 91,
   "money": 47,
   "bets": 550,
   "moved": 3.0,
-  "mins": 497
+  "mins": 497,
+  "close": 1.5,
+  "clv": -3.0,
+  "units": 1.1,
+  "final": "St. Thomas 67 - Liberty 76"
  },
  {
   "id": "401920533|spread|66",
@@ -46574,8 +46578,12 @@
   "opener": 147.5,
   "grp": "mid-major",
   "limit": 144.5,
-  "status": "open",
-  "gap_open": 2.0
+  "status": "L",
+  "gap_open": 2.0,
+  "close": 143.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "St. Thomas 67 - Liberty 76"
  },
  {
   "id": "rlm|401921417|spread|2325",
