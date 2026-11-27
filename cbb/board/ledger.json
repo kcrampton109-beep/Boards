@@ -44237,8 +44237,12 @@
   "opener": 153.5,
   "grp": "power 6",
   "limit": 152.5,
-  "status": "open",
-  "gap_open": 6.5
+  "status": "W",
+  "gap_open": 6.5,
+  "close": 149.5,
+  "clv": 4.0,
+  "units": 0.909,
+  "final": "Texas Tech 62 - Oregon 59"
  },
  {
   "id": "401920540|spread|239",
@@ -44263,8 +44267,12 @@
   "opener": 4.5,
   "grp": "power 6",
   "limit": 3.5,
-  "status": "open",
-  "gap_open": 4.0
+  "status": "L",
+  "gap_open": 4.0,
+  "close": 3.0,
+  "clv": 1.5,
+  "units": -1.0,
+  "final": "Baylor 64 - Gonzaga 72"
  },
  {
   "id": "401921669|spread|99",
@@ -45469,13 +45477,17 @@
   "opener": 4.5,
   "grp": "power 6",
   "limit": 4.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 66,
   "money": 74,
   "bets": 2160,
   "moved": 1.0,
-  "mins": 888
+  "mins": 888,
+  "close": 3.0,
+  "clv": 1.5,
+  "units": -1.0,
+  "final": "Baylor 64 - Gonzaga 72"
  },
  {
   "id": "rlm|401906869|spread|46",
@@ -45790,13 +45802,17 @@
   "opener": 4.5,
   "grp": "power 6",
   "limit": 4.5,
-  "status": "open",
+  "status": "L",
   "signal": "rlm",
   "tix": 81,
   "money": 74,
   "bets": 8592,
   "moved": 1.0,
-  "mins": 438
+  "mins": 438,
+  "close": 3.0,
+  "clv": 1.5,
+  "units": -1.0,
+  "final": "Baylor 64 - Gonzaga 72"
  },
  {
   "id": "401929288|spread|154",
