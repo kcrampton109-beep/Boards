@@ -20589,5 +20589,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401862841|total|under|wx",
+  "base": "401862841|total|under|wx",
+  "flagged": "2026-11-27T00:07-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401862841,
+  "matchup": "Army @ Rice",
+  "kickoff": "2026-11-28 14:00:00-05:00",
+  "tier": "RESEARCH",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 47.5 (wind 15 mph)",
+  "book": "FD",
+  "line": 47.5,
+  "odds": -110.0,
+  "stake": 0.5,
+  "edge": 15.1,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
