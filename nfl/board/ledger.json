@@ -11573,11 +11573,11 @@
   "model_line": -7.6,
   "flagged": "2026-11-22T16:47:36.943642-05:00",
   "kickoff_iso": "2026-11-26T16:30:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "L",
+  "units": -1.0,
+  "close": -8.5,
+  "clv": 1.0,
+  "final": "PHI 39 - DAL 38"
  },
  {
   "id": "2026_12_DEN_PIT:TEASER:teaser:home",
@@ -11965,11 +11965,11 @@
   "model_line": -7.6,
   "flagged": "2026-11-22T17:47:31.543620-05:00",
   "kickoff_iso": "2026-11-26T16:30:00-05:00",
-  "status": "open",
-  "units": null,
-  "close": null,
-  "clv": null,
-  "final": null
+  "status": "W",
+  "units": 0.95,
+  "close": 49.5,
+  "clv": 1.0,
+  "final": "PHI 39 - DAL 38"
  },
  {
   "id": "2026_12_NYJ_MIA:LEAN:spread:home",
