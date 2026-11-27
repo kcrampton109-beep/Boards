@@ -45239,8 +45239,12 @@
   "opener": 10.5,
   "grp": "mid-major",
   "limit": -9.0,
-  "status": "open",
-  "gap_open": 23.6
+  "status": "W",
+  "gap_open": 23.6,
+  "close": -7.0,
+  "clv": -1.5,
+  "units": 0.952,
+  "final": "Pacific 71 - Omaha 62"
  },
  {
   "id": "401920528|spread|21",
