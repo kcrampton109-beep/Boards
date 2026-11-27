@@ -7768,7 +7768,7 @@
    }
   },
   "291004": {
-   "ts": "2026-11-27T09:47:54.627617-05:00",
+   "ts": "2026-11-27T13:17:30.785710-05:00",
    "odds": {
     "jacory croskey-merritt": {
      "name": "Jacory Croskey-Merritt",
@@ -7844,7 +7844,7 @@
     },
     "ben sinnott": {
      "name": "Ben Sinnott",
-     "FD": 950
+     "FD": 900
     },
     "zay jones": {
      "name": "Zay Jones",
@@ -7854,17 +7854,17 @@
      "name": "Luke McCaffrey",
      "FD": 1200
     },
-    "colson yankoff": {
-     "name": "Colson Yankoff",
-     "FD": 1300
-    },
-    "john bates": {
-     "name": "John Bates",
-     "FD": 1300
-    },
     "hunter long": {
      "name": "Hunter Long",
      "FD": 1300
+    },
+    "colson yankoff": {
+     "name": "Colson Yankoff",
+     "FD": 1400
+    },
+    "john bates": {
+     "name": "John Bates",
+     "FD": 1400
     },
     "evan hull": {
      "name": "Evan Hull",
