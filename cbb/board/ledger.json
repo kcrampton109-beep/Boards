@@ -45662,13 +45662,17 @@
   "opener": 1.5,
   "grp": "power 6",
   "limit": -1.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 69,
   "money": 66,
   "bets": 5952,
   "moved": 3.0,
-  "mins": 228
+  "mins": 228,
+  "close": -2.0,
+  "clv": 0.5,
+  "units": 0.962,
+  "final": "TCU 87 - Creighton 95"
  },
  {
   "id": "rlm|401920530|spread|97|RLM_80",
@@ -46125,5 +46129,30 @@
   "limit": 3.0,
   "status": "open",
   "gap_open": 2.6
+ },
+ {
+  "id": "401921717|spread|26",
+  "base": "401921717|spread|26",
+  "flagged": "2026-11-26T21:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401921717,
+  "matchup": "Georgetown vs UCLA",
+  "kickoff": "2026-11-27T14:30:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 26,
+  "pick": "UCLA -7.5",
+  "book": "FD",
+  "line": -7.5,
+  "odds": -120.0,
+  "stake": 1.0,
+  "edge": 4.3,
+  "model": 11.8,
+  "opener": null,
+  "grp": "power 6",
+  "limit": -7.5,
+  "status": "open"
  }
 ]
