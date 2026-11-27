@@ -45140,8 +45140,12 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 150.0,
-  "status": "open",
-  "gap_open": 3.7
+  "status": "L",
+  "gap_open": 3.7,
+  "close": 148.0,
+  "clv": -1.5,
+  "units": -1.0,
+  "final": "Arkansas 67 - Michigan State 70"
  },
  {
   "id": "rlm|401920529|spread|66",
@@ -45283,8 +45287,12 @@
   "opener": 162.5,
   "grp": "power 6",
   "limit": 165.5,
-  "status": "open",
-  "gap_open": 2.1
+  "status": "W",
+  "gap_open": 2.1,
+  "close": 156.5,
+  "clv": 9.0,
+  "units": 0.87,
+  "final": "USC 74 - Utah State 78"
  },
  {
   "id": "rlm|401920529|spread|66|RLM_80",
@@ -45563,13 +45571,17 @@
   "opener": 3.5,
   "grp": "power 6",
   "limit": 2.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 66,
   "money": 46,
   "bets": 4463,
   "moved": 1.0,
-  "mins": 318
+  "mins": 318,
+  "close": 1.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "USC 74 - Utah State 78"
  },
  {
   "id": "401918972|total|over",
