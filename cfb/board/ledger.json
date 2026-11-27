@@ -20612,5 +20612,28 @@
   "grp": "FBS",
   "limit": null,
   "status": "open"
+ },
+ {
+  "id": "401861969|total|under|wx|WEATHER",
+  "base": "401861969|total|under|wx",
+  "flagged": "2026-11-27T12:37-05:00",
+  "season": 2026,
+  "week": 13,
+  "game_id": 401861969,
+  "matchup": "UConn @ Wyoming",
+  "kickoff": "2026-11-28 12:00:00-05:00",
+  "tier": "WEATHER",
+  "market": "total",
+  "side": "under",
+  "pick": "Under 45.5 (wind 19 mph)",
+  "book": "MGM",
+  "line": 45.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 18.6,
+  "model": null,
+  "grp": "FBS",
+  "limit": null,
+  "status": "open"
  }
 ]
