@@ -19875,7 +19875,11 @@
   "model": -12.7,
   "grp": "FBS",
   "limit": -7.5,
-  "status": "open"
+  "status": "W",
+  "clv": 2.5,
+  "close": -10.0,
+  "units": 0.87,
+  "final": "Texas 16 - Texas A&M 6"
  },
  {
   "id": "401856761|spread|away|m",
@@ -20059,7 +20063,11 @@
   "model": -24.2,
   "grp": "FBS",
   "limit": -19.0,
-  "status": "open"
+  "status": "W",
+  "clv": 6.5,
+  "close": -25.0,
+  "units": 0.909,
+  "final": "West Virginia 28 - Utah 52"
  },
  {
   "id": "401862840|total|under|m",
