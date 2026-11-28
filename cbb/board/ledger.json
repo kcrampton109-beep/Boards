@@ -47658,5 +47658,31 @@
   "limit": 10.5,
   "status": "open",
   "gap_open": 2.2
+ },
+ {
+  "id": "401911381|spread|2127",
+  "base": "401911381|spread|2127",
+  "flagged": "2026-11-27T22:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401911381,
+  "matchup": "Morehead State vs Charleston Southern",
+  "kickoff": "2026-11-28T19:00:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2127,
+  "pick": "Charleston Southern -1.5",
+  "book": "FD",
+  "line": -1.5,
+  "odds": -120.0,
+  "stake": 1.0,
+  "edge": 3.5,
+  "model": 5.0,
+  "opener": -3.5,
+  "grp": "low-major",
+  "limit": -1.5,
+  "status": "open",
+  "gap_open": 1.5
  }
 ]
