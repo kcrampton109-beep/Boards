@@ -47760,5 +47760,31 @@
   "limit": 0.5,
   "status": "open",
   "gap_open": 1.1
+ },
+ {
+  "id": "401924779|spread|2363",
+  "base": "401924779|spread|2363",
+  "flagged": "2026-11-28T01:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401924779,
+  "matchup": "Manhattan @ Morgan State",
+  "kickoff": "2026-11-28T14:00:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2363,
+  "pick": "Manhattan +3.5",
+  "book": "MGM",
+  "line": 3.5,
+  "odds": -115.0,
+  "stake": 1.0,
+  "edge": 3.5,
+  "model": -0.0,
+  "opener": 3.0,
+  "grp": "low-major",
+  "limit": 3.5,
+  "status": "open",
+  "gap_open": 3.0
  }
 ]
