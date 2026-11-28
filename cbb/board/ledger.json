@@ -45957,8 +45957,12 @@
   "opener": -3.5,
   "grp": "power 6",
   "limit": -4.5,
-  "status": "open",
-  "gap_open": 5.0
+  "status": "L",
+  "gap_open": 5.0,
+  "close": -4.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Wichita State 73 - Kentucky 71"
  },
  {
   "id": "401921185|total|under",
@@ -46869,13 +46873,17 @@
   "opener": 1.5,
   "grp": "power 6",
   "limit": -2.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 71,
   "money": 81,
   "bets": 2802,
   "moved": 4.0,
-  "mins": 588
+  "mins": 588,
+  "close": -3.5,
+  "clv": 1.0,
+  "units": 0.909,
+  "final": "Tennessee 64 - Louisville 84"
  },
  {
   "id": "rlm|401920533|spread|66",
@@ -46965,8 +46973,12 @@
   "opener": -1.5,
   "grp": "power 6",
   "limit": 3.0,
-  "status": "open",
-  "gap_open": -1.4
+  "status": "L",
+  "gap_open": -1.4,
+  "close": 3.5,
+  "clv": 0.0,
+  "units": -1.0,
+  "final": "Tennessee 64 - Louisville 84"
  },
  {
   "id": "rlm|401920810|spread|269",
@@ -47395,13 +47407,17 @@
   "opener": 1.5,
   "grp": "power 6",
   "limit": -3.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 80,
   "money": 67,
   "bets": 11273,
   "moved": 5.0,
-  "mins": 108
+  "mins": 108,
+  "close": -3.5,
+  "clv": 0.0,
+  "units": 0.909,
+  "final": "Tennessee 64 - Louisville 84"
  },
  {
   "id": "401920310|total|under",
