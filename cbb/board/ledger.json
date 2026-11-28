@@ -47049,8 +47049,12 @@
   "opener": 151.5,
   "grp": "power 6",
   "limit": 143.5,
-  "status": "open",
-  "gap_open": -2.9
+  "status": "L",
+  "gap_open": -2.9,
+  "close": 144.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Oakland 46 - Houston 77"
  },
  {
   "id": "401920890|total|under",
@@ -47614,6 +47618,32 @@
   "opener": -16.5,
   "grp": "mid-major",
   "limit": -15.5,
+  "status": "open",
+  "gap_open": 2.2
+ },
+ {
+  "id": "401926757|spread|2329",
+  "base": "401926757|spread|2329",
+  "flagged": "2026-11-27T21:42-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401926757,
+  "matchup": "Lehigh vs Pepperdine",
+  "kickoff": "2026-11-28T13:30:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "away",
+  "team_eid": 2329,
+  "pick": "Lehigh +10.5",
+  "book": "MGM",
+  "line": 10.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 3.2,
+  "model": -7.3,
+  "opener": 9.5,
+  "grp": "mid-major",
+  "limit": 10.5,
   "status": "open",
   "gap_open": 2.2
  }
