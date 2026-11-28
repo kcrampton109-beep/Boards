@@ -46834,13 +46834,17 @@
   "opener": -1.5,
   "grp": "power 6",
   "limit": -2.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 76,
   "money": 66,
   "bets": 1681,
   "moved": 1.0,
-  "mins": 558
+  "mins": 558,
+  "close": -1.5,
+  "clv": -1.0,
+  "units": 0.909,
+  "final": "Miami 87 - Alabama 81"
  },
  {
   "id": "rlm|401920534|spread|97",
@@ -47684,5 +47688,31 @@
   "limit": -1.5,
   "status": "open",
   "gap_open": 1.5
+ },
+ {
+  "id": "401927367|total|over",
+  "base": "401927367|total|over",
+  "flagged": "2026-11-27T23:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401927367,
+  "matchup": "Drake vs North Dakota State",
+  "kickoff": "2026-11-28T18:00:00-05:00",
+  "tier": "LATE",
+  "market": "total",
+  "side": "over",
+  "team_eid": null,
+  "pick": "Over 142.5",
+  "book": "DK",
+  "line": 142.5,
+  "odds": -116.0,
+  "stake": 1.0,
+  "edge": 5.2,
+  "model": 147.7,
+  "opener": 143.5,
+  "grp": "mid-major",
+  "limit": 142.5,
+  "status": "open",
+  "gap_open": 4.2
  }
 ]
