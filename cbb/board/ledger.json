@@ -47303,8 +47303,12 @@
   "opener": 145.5,
   "grp": "mid-major",
   "limit": 138.5,
-  "status": "open",
-  "gap_open": -1.5
+  "status": "W",
+  "gap_open": -1.5,
+  "close": 138.5,
+  "clv": 0.0,
+  "units": 0.901,
+  "final": "Omaha 78 - Jacksonville State 69"
  },
  {
   "id": "401911312|total|under",
