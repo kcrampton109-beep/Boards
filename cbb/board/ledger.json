@@ -46436,8 +46436,12 @@
   "opener": 161.5,
   "grp": "power 6",
   "limit": 159.5,
-  "status": "open",
-  "gap_open": 7.2
+  "status": "L",
+  "gap_open": 7.2,
+  "close": 160.5,
+  "clv": 1.0,
+  "units": -1.0,
+  "final": "Creighton 97 - Gonzaga 89"
  },
  {
   "id": "rlm|401920848|spread|2335",
@@ -46469,8 +46473,8 @@
   "bets": 550,
   "moved": 3.0,
   "mins": 497,
-  "close": 1.5,
-  "clv": -3.0,
+  "close": null,
+  "clv": null,
   "units": 1.1,
   "final": "St. Thomas 67 - Liberty 76"
  },
@@ -46527,8 +46531,12 @@
   "opener": -6.5,
   "grp": "power 6",
   "limit": -6.5,
-  "status": "open",
-  "gap_open": 3.4
+  "status": "L",
+  "gap_open": 3.4,
+  "close": -9.0,
+  "clv": 2.5,
+  "units": -1.0,
+  "final": "San Diego State 75 - Texas Tech 78"
  },
  {
   "id": "401924810|total|over",
@@ -46680,8 +46688,8 @@
   "limit": 144.5,
   "status": "L",
   "gap_open": 2.0,
-  "close": 143.5,
-  "clv": -1.0,
+  "close": null,
+  "clv": null,
   "units": -1.0,
   "final": "St. Thomas 67 - Liberty 76"
  },
