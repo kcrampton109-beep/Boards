@@ -47730,5 +47730,31 @@
   "limit": 142.5,
   "status": "open",
   "gap_open": 4.2
+ },
+ {
+  "id": "401921414|spread|2515",
+  "base": "401921414|spread|2515",
+  "flagged": "2026-11-28T00:12-05:00",
+  "season": 2026,
+  "week": 4,
+  "game_id": 401921414,
+  "matchup": "Hampton vs Radford",
+  "kickoff": "2026-11-28T13:00:00-05:00",
+  "tier": "LATE",
+  "market": "spread",
+  "side": "home",
+  "team_eid": 2515,
+  "pick": "Radford +1.5",
+  "book": "MGM",
+  "line": 1.5,
+  "odds": -118.0,
+  "stake": 1.0,
+  "edge": 4.1,
+  "model": 2.6,
+  "opener": -1.5,
+  "grp": "low-major",
+  "limit": 0.5,
+  "status": "open",
+  "gap_open": 1.1
  }
 ]
