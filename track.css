@@ -1,0 +1,48 @@
+/* Shared Today + Results tabs (site/track.js); builds on bets.css (cards, tables) and the page's colour tokens. */
+.trk { display: grid; gap: 14px; font-family: "Public Sans", "Segoe UI", system-ui, sans-serif; color: var(--ink) }
+.trk h2 { text-transform: none; font: 700 19px/1.25 "Public Sans", "Segoe UI", system-ui, sans-serif; margin: 0; letter-spacing: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px }
+.trk .num { font-variant-numeric: tabular-nums }
+.trk .pos { color: var(--win) } .trk .neg { color: var(--loss) }
+.trk-nav { display: flex; align-items: center; gap: 10px; flex-wrap: wrap }
+.trk-nav h2 { flex: 1 1 auto; min-width: 0 }
+.trk-month { flex-wrap: nowrap } .trk-month h2 { justify-content: center }
+.trk-arrow { width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--rule); background: var(--card); color: var(--ink);
+             font: 700 20px/1 "Public Sans", system-ui, sans-serif; cursor: pointer }
+.trk-badge { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 3px 7px; border-radius: 4px; background: var(--ink); color: var(--card) }
+.trk-chips { display: flex; flex-wrap: wrap; gap: 6px }
+.trk-chip { font: 500 13px/1 "Public Sans", system-ui, sans-serif; padding: 8px 12px; border-radius: 999px; border: 1px solid var(--rule);
+            background: var(--card); color: var(--ink); cursor: pointer }
+.trk-chip[aria-pressed="true"] { background: var(--ink); color: var(--card); border-color: var(--ink) }
+.trk-arrow:focus-visible, .trk-chip:focus-visible, .trk-day:focus-visible, .trk-wk:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px }
+.trk-line { margin: 0; font-size: 14px; color: var(--muted) }
+.trk-msum { font-size: 14px; font-weight: 500; color: var(--muted) }
+.bet.won { border-left-color: var(--win) } .bet.lost { border-left-color: var(--loss) }
+/* period tiles */
+.trk-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); gap: 10px }
+.trk-tile { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; display: grid; gap: 2px; min-width: 0 }
+.trk-tile .t-lab { font-size: 11px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--muted) }
+.trk-tile .t-rec { font-size: 24px; font-weight: 700; line-height: 1.1 }
+.trk-tile .t-sub { font-size: 12.5px; color: var(--muted) }
+/* calendar: diverging green/red by the day's units, the signed number always printed (never colour alone) */
+.trk-cal { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 12px; display: grid; gap: 10px }
+.trk-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px }
+.trk-wd { font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); text-align: center; padding-bottom: 2px }
+.trk-day { min-height: 58px; border-radius: 6px; border: 1px solid var(--rule); background: var(--card); color: var(--ink); padding: 4px 5px;
+           display: grid; align-content: space-between; text-align: left; font: inherit; min-width: 0 }
+button.trk-day { cursor: pointer }
+.trk-day.blank { border: 0; background: none }
+.trk-day.none { background: var(--soft); border-color: transparent; opacity: .7 }
+.trk-day.now { box-shadow: inset 0 0 0 2px var(--ink) }
+.trk-day.sel { outline: 2px solid var(--ink); outline-offset: 1px }
+.trk-day .dn { font-size: 11px; color: var(--muted); font-weight: 600 }
+.trk-day .du { font-size: 13px; font-weight: 700; line-height: 1.1 }
+.trk-day .dr { font-size: 10.5px; color: var(--muted) }
+.trk-key { margin: 0; font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px }
+.trk-key .sw { display: inline-block; width: 14px; height: 14px; border-radius: 3px; vertical-align: middle }
+.trk-key .sw.win { background: color-mix(in srgb, var(--win) 55%, var(--card)) } .trk-key .sw.loss { background: color-mix(in srgb, var(--loss) 55%, var(--card)) }
+#trk-detail { display: grid; gap: 10px; scroll-margin-top: 12px }
+#trk-detail:empty { display: none }
+#trk-detail h2 .trk-chip { margin-left: auto }
+tr.trk-wk { cursor: pointer }
+tr.trk-wk:hover td, tr.trk-wk.sel td { background: var(--soft) }
+@media (max-width: 420px) { .trk-day { min-height: 50px; padding: 3px } .trk-day .du { font-size: 11.5px } .trk-day .dr { display: none } }
