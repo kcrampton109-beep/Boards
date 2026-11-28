@@ -46013,8 +46013,12 @@
   "opener": -12.5,
   "grp": "power 6",
   "limit": -13.0,
-  "status": "open",
-  "gap_open": 3.6
+  "status": "L",
+  "gap_open": 3.6,
+  "close": -11.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Northeastern 61 - Northwestern 65"
  },
  {
   "id": "401927366|spread|68",
@@ -46219,8 +46223,12 @@
   "opener": 2.5,
   "grp": "mid-major",
   "limit": 3.0,
-  "status": "open",
-  "gap_open": 2.6
+  "status": "L",
+  "gap_open": 2.6,
+  "close": 4.5,
+  "clv": -1.0,
+  "units": -1.0,
+  "final": "Missouri State 66 - Oral Roberts 72"
  },
  {
   "id": "401921717|spread|26",
@@ -47218,13 +47226,17 @@
   "opener": -5.5,
   "grp": "mid-major",
   "limit": -6.5,
-  "status": "open",
+  "status": "W",
   "signal": "rlm",
   "tix": 75,
   "money": 94,
   "bets": 944,
   "moved": 1.0,
-  "mins": 168
+  "mins": 168,
+  "close": -6.5,
+  "clv": 0.0,
+  "units": 0.877,
+  "final": "Pacific 78 - UC Davis 61"
  },
  {
   "id": "401924811|spread|2275",
