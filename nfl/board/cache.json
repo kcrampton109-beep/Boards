@@ -613,12 +613,12 @@
    }
   },
   "2026_12_CAR_TB": {
-   "ts": "2026-11-27T19:47:33.923894-05:00",
+   "ts": "2026-11-27T22:47:41.916254-05:00",
    "wx": {
     "wind": 5.3,
-    "gust": 9.4,
+    "gust": 8.7,
     "temp": 67.0,
-    "precip": 34
+    "precip": 21
    }
   }
  },
@@ -7724,7 +7724,7 @@
    }
   },
   "291004": {
-   "ts": "2026-11-27T19:47:33.923894-05:00",
+   "ts": "2026-11-27T22:47:41.916254-05:00",
    "odds": {
     "jacory croskey-merritt": {
      "name": "Jacory Croskey-Merritt",
@@ -7738,36 +7738,36 @@
      "name": "Tyler Allgeier",
      "FD": 210
     },
+    "trey mcbride": {
+     "name": "Trey McBride",
+     "FD": 220
+    },
     "chigoziem okonkwo": {
      "name": "Chigoziem Okonkwo",
      "FD": 230
-    },
-    "trey mcbride": {
-     "name": "Trey McBride",
-     "FD": 230
-    },
-    "antonio williams": {
-     "name": "Antonio Williams",
-     "FD": 250
     },
     "jayden daniels": {
      "name": "Jayden Daniels",
      "FD": 260
     },
+    "antonio williams": {
+     "name": "Antonio Williams",
+     "FD": 260
+    },
     "bam knight": {
      "name": "Bam Knight",
-     "FD": 270
+     "FD": 260
     },
     "treylon burks": {
      "name": "Treylon Burks",
      "FD": 310
     },
-    "rachaad white": {
-     "name": "Rachaad White",
-     "FD": 370
-    },
     "austin ekeler": {
      "name": "Austin Ekeler",
+     "FD": 360
+    },
+    "rachaad white": {
+     "name": "Rachaad White",
      "FD": 370
     },
     "josh johnson": {
@@ -7790,12 +7790,12 @@
      "name": "Washington Defense",
      "FD": 800
     },
-    "van jefferson": {
-     "name": "Van Jefferson",
-     "FD": 850
-    },
     "elijah higgins": {
      "name": "Elijah Higgins",
+     "FD": 800
+    },
+    "van jefferson": {
+     "name": "Van Jefferson",
      "FD": 850
     },
     "ben sinnott": {
@@ -7806,16 +7806,16 @@
      "name": "Zay Jones",
      "FD": 950
     },
-    "luke mccaffrey": {
-     "name": "Luke McCaffrey",
-     "FD": 1200
-    },
     "colson yankoff": {
      "name": "Colson Yankoff",
      "FD": 1300
     },
     "john bates": {
      "name": "John Bates",
+     "FD": 1300
+    },
+    "luke mccaffrey": {
+     "name": "Luke McCaffrey",
      "FD": 1300
     },
     "hunter long": {
@@ -7828,14 +7828,14 @@
     },
     "reggie virgil": {
      "name": "Reggie Virgil",
-     "FD": 2000
-    },
-    "devin duvernay": {
-     "name": "Devin Duvernay",
      "FD": 2200
     },
     "teagan quitoriano": {
      "name": "Teagan Quitoriano",
+     "FD": 2500
+    },
+    "devin duvernay": {
+     "name": "Devin Duvernay",
      "FD": 2500
     }
    }
