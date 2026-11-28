@@ -20454,7 +20454,11 @@
   "model": null,
   "grp": "FBS",
   "limit": null,
-  "status": "open"
+  "status": "L",
+  "clv": 0.0,
+  "close": 42.5,
+  "units": -0.5,
+  "final": "Air Force 19 - New Mexico 42"
  },
  {
   "id": "401866473|total|under|wx",
