@@ -613,11 +613,11 @@
    }
   },
   "2026_12_CAR_TB": {
-   "ts": "2026-11-27T22:47:41.916254-05:00",
+   "ts": "2026-11-28T02:17:34.741298-05:00",
    "wx": {
-    "wind": 5.3,
-    "gust": 8.7,
-    "temp": 67.0,
+    "wind": 6.7,
+    "gust": 12.1,
+    "temp": 66.0,
     "precip": 21
    }
   }
@@ -7732,7 +7732,7 @@
    }
   },
   "291004": {
-   "ts": "2026-11-27T22:47:41.916254-05:00",
+   "ts": "2026-11-28T02:17:34.741298-05:00",
    "odds": {
     "jacory croskey-merritt": {
      "name": "Jacory Croskey-Merritt",
@@ -7768,7 +7768,7 @@
     },
     "treylon burks": {
      "name": "Treylon Burks",
-     "FD": 310
+     "FD": 320
     },
     "austin ekeler": {
      "name": "Austin Ekeler",
